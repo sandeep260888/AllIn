@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Ledger Transactions</title>
+
+  <!-- PWA & iOS Safari Meta Tags -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Ledger">
+  <link rel="apple-touch-icon" href="icon-192.png">
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --accent: #10b981;
+      --danger: #ef4444;
+      --warning: #f59e0b;
+      --text: #f8fafc;
+      --subtext: #94a3b8;
+      --border: #334155;
+      --primary: #3b82f6;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; -webkit-tap-highlight-color: transparent; }
+    
+    body { background-color: var(--bg); color: var(--text); padding: 12px; max-width: 950px; margin: 0 auto; line-height: 1.4; }
+    header { text-align: center; margin: 6px 0 16px; }
+    h1 { font-size: 1.5rem; color: var(--text); }
+    h2 { font-size: 1.05rem; margin-bottom: 10px; }
+
+    .card { background-color: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 14px; margin-bottom: 14px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.3); }
+    
+    /* Compact Settings Bar */
+    .compact-settings {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #0f172a;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      color: var(--subtext);
+      margin-bottom: 12px;
+      border: 1px solid var(--border);
+    }
+    .compact-inputs { display: flex; align-items: center; gap: 6px; }
+    .compact-inputs input { width: 50px; padding: 4px; font-size: 0.8rem; text-align: center; background: var(--card-bg); border: 1px solid var(--border); border-radius: 4px; color: var(--text); }
+
+    /* Top Add Player Grid */
+    .add-player-grid { display: grid; grid-template-columns: 1fr 1.5fr auto; gap: 8px; align-items: end; }
+    label { display: block; font-size: 0.8rem; color: var(--subtext); margin-bottom: 4px; }
+    input, select { width: 100%; padding: 10px; background: #0f172a; border: 1px solid var(--border); border-radius: 8px; color: var(--text); font-size: 0.95rem; outline: none; }
+    input:focus, select:focus { border-color: var(--primary); }
+
+    .btn-group { display: flex; gap: 8px; }
+    button { background: var(--primary); color: white; border: none; padding: 10px 14px; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 0.9rem; display: inline-flex; align-items: center; justify-content: center; gap: 4px; transition: all 0.2s; }
+    button:active { opacity: 0.8; }
+    
+    /* Add Button State */
+    button.btn-add { background: var(--accent); white-space: nowrap; height: 42px; padding: 0 20px; font-size: 0.95rem; }
+    button.btn-add.disabled {
+      background: #334155 !important;
+      color: #94a3b8 !important;
+      cursor: not-allowed !important;
+      opacity: 0.6;
+    }
+
+    button.btn-sync { background: #8b5cf6; }
+    button.btn-danger { background: var(--danger); padding: 4px 8px; font-size: 0.75rem; border-radius: 4px; }
+
+    .summary-bar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; background: #0f172a; padding: 12px; border-radius: 10px; margin-bottom: 14px; text-align: center; border: 1px solid var(--border); }
+    .summary-item .label { font-size: 0.7rem; color: var(--subtext); text-transform: uppercase; }
+    .summary-item .value { font-size: 1.1rem; font-weight: bold; color: var(--accent); margin-top: 2px; }
+
+    /* 2 Column Player Grid */
+    .player-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    
+    .player-card { 
+      background: #0f172a; 
+      border: 1px solid var(--border); 
+      border-radius: 10px; 
+      padding: 12px; 
+      border-top: 4px solid var(--accent); 
+      display: flex; 
+      flex-direction: column; 
+      gap: 10px; 
+    }
+    
+    .player-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1e293b; padding-bottom: 6px; }
+    .player-name { font-weight: bold; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    
+    .player-body-row { display: flex; flex-direction: column; gap: 8px; }
+    
+    .counter-wrapper { display: flex; align-items: center; justify-content: space-between; background: var(--card-bg); padding: 6px 8px; border-radius: 6px; border: 1px solid var(--border); }
+    .counter-btn { width: 32px; height: 32px; border-radius: 6px; border: 1px solid var(--border); background: #0f172a; color: var(--text); font-size: 1.2rem; font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+    .buyin-cnt { font-weight: bold; font-size: 1rem; min-width: 24px; text-align: center; }
+
+    /* Color Themes */
+    .color-0 { border-top-color: #10b981; }
+    .color-1 { border-top-color: #3b82f6; }
+    .color-2 { border-top-color: #8b5cf6; }
+    .color-3 { border-top-color: #f59e0b; }
+    .color-4 { border-top-color: #ef4444; }
+    .color-5 { border-top-color: #06b6d4; }
+    .color-6 { border-top-color: #ec4899; }
+    .color-7 { border-top-color: #6366f1; }
+
+    /* Activity Logs */
+    .logs-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+    .logs-filter-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 8px; }
+    .logs-container { max-height: 180px; overflow-y: auto; background: #0f172a; padding: 8px; border-radius: 8px; border: 1px solid var(--border); }
+    .logs-list { list-style: none; }
+    .logs-list li { font-family: monospace; font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid #1e293b; color: var(--subtext); word-break: break-word; }
+
+    /* Mode Selector Toggle */
+    .mode-toggle { display: flex; background: #0f172a; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
+    .mode-btn { flex: 1; padding: 6px; font-size: 0.8rem; border-radius: 0; background: transparent; color: var(--subtext); }
+    .mode-btn.active { background: var(--primary); color: white; }
+
+    /* Tables & Tabs */
+    table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+    th, td { padding: 8px; text-align: left; border-bottom: 1px solid var(--border); font-size: 0.85rem; }
+    th { color: var(--subtext); font-size: 0.75rem; text-transform: uppercase; }
+
+    .tabs { display: flex; gap: 6px; margin-bottom: 8px; }
+    .tab { flex: 1; padding: 8px; text-align: center; background: #0f172a; border-radius: 6px; font-size: 0.8rem; cursor: pointer; border: 1px solid var(--border); }
+    .tab.active { background: var(--primary); color: white; border-color: var(--primary); }
+
+    .stats-box { background: #0f172a; border: 1px solid var(--border); padding: 10px; border-radius: 8px; margin-bottom: 8px; display: flex; justify-content: space-between; font-size: 0.85rem; }
+    
+    details { background: #0f172a; border: 1px solid var(--border); border-radius: 8px; padding: 10px; margin-top: 10px; }
+    summary { font-weight: bold; cursor: pointer; font-size: 0.9rem; outline: none; color: var(--text); }
+    .history-item { border-bottom: 1px solid var(--border); padding: 8px 0; font-size: 0.8rem; }
+
+    .settlement-list { list-style: none; }
+    .settlement-list li { background: #0f172a; padding: 10px; border-radius: 8px; margin-bottom: 6px; border-left: 4px solid var(--accent); font-size: 0.9rem; }
+    .file-input { display: none; }
+
+    @media (min-width: 768px) {
+      body { padding: 24px; }
+      h1 { font-size: 1.8rem; }
+      h2 { font-size: 1.2rem; }
+      .card { padding: 18px; margin-bottom: 18px; }
+      
+      .player-grid { grid-template-columns: repeat(3, 1fr); gap: 14px; }
+      .player-card { padding: 14px; }
+      .player-name { font-size: 1.1rem; }
+      .counter-btn { width: 36px; height: 36px; font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ledger Transactions</h1>
+  </header>
+
+  <!-- Setup Section -->
+  <div class="card">
+    <div class="compact-settings">
+      <span>Rate Ratio:</span>
+      <div class="compact-inputs">
+        <input type="number" id="coinCount" value="2" min="1" onchange="saveState(); renderAll();">
+        <span>Coins = ₹</span>
+        <input type="number" id="currencyVal" value="1" min="0.1" step="0.1" onchange="saveState(); renderAll();">
+      </div>
+      <span id="rateNotice" style="color:var(--accent); font-weight:bold;">1c = ₹0.50</span>
+    </div>
+
+    <div class="add-player-grid">
+      <div>
+        <label>Buy-in Coins</label>
+        <input type="number" id="buyInCoins" value="1000" min="1" onchange="saveState(); renderAll();">
+      </div>
+      <div>
+        <label>Participant Name</label>
+        <input type="text" id="playerName" placeholder="Select or type name..." list="playerSuggestions" autocomplete="off" style="text-transform: uppercase;" oninput="validateAddButton()">
+        <datalist id="playerSuggestions"></datalist>
+      </div>
+      <button type="button" id="btnAddPlayer" class="btn-add disabled" onclick="addPlayer()">+ Add</button>
+    </div>
+  </div>
+
+  <div class="summary-bar">
+    <div class="summary-item"><div class="label">Total Coins</div><div class="value" id="totalCoins">0</div></div>
+    <div class="summary-item"><div class="label">Total Value</div><div class="value" id="totalVal">₹0</div></div>
+    <div class="summary-item"><div class="label">Diff Value</div><div class="value" id="diffVal">₹0</div></div>
+  </div>
+
+  <div class="card">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+      <h2>Participants Dashboard</h2>
+      <div class="mode-toggle" style="width:160px;">
+        <button type="button" id="modeCoinsBtn" class="mode-btn active" onclick="setEntryMode('COINS')">Coins</button>
+        <button type="button" id="modeCurrBtn" class="mode-btn" onclick="setEntryMode('CURRENCY')">₹ Value</button>
+      </div>
+    </div>
+
+    <div id="playerList" class="player-grid"></div>
+
+    <div class="btn-group" style="margin-top:14px;">
+      <button type="button" class="btn-add" style="width:100%;" onclick="saveSessionLocally()">Save Session to Database</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>End of Session Settlement</h2>
+    <button type="button" style="width:100%; padding: 12px; font-size: 0.95rem;" onclick="calculateSettlement()">Calculate Minimum Transactions</button>
+    <ul id="settlementResults" class="settlement-list" style="margin-top: 10px;"></ul>
+  </div>
+
+  <div class="card">
+    <div class="logs-header">
+      <h2>Activity Logs</h2>
+      <button type="button" class="btn-danger" onclick="resetLogs()">Reset Logs</button>
+    </div>
+    <div class="logs-filter-grid">
+      <div>
+        <label>Filter Date</label>
+        <select id="logDateSelect" onchange="renderLogs()">
+          <option value="ALL">All Dates</option>
+        </select>
+      </div>
+      <div>
+        <label>Filter Participant</label>
+        <select id="logFilterSelect" onchange="renderLogs()">
+          <option value="ALL">All Participants</option>
+        </select>
+      </div>
+    </div>
+    <div class="logs-container"><ul id="logsList" class="logs-list"></ul></div>
+  </div>
+
+  <div class="card">
+    <h2>Sync Data Across Systems</h2>
+    <div class="btn-group">
+      <button type="button" class="btn-sync" onclick="exportData()">📥 Export File</button>
+      <button type="button" class="btn-sync" onclick="document.getElementById('importFile').click()">📤 Import File</button>
+      <input type="file" id="importFile" class="file-input" accept=".json" onchange="importData(event)">
+    </div>
+  </div>
+
+  <details class="card" id="performanceDetails">
+    <summary>Performance & Cumulative Leaderboard</summary>
+    <div style="margin-top: 10px;">
+      <div class="tabs">
+        <div class="tab active" onclick="switchFilter('ALL', this)">All Time</div>
+        <div class="tab" onclick="switchFilter('MONTH', this)">This Month</div>
+        <div class="tab" onclick="switchFilter('WEEK', this)">This Week</div>
+      </div>
+      
+      <div id="statsBox" class="stats-box">
+        <div><strong>Top Winner:</strong> <br><span id="statWinner" style="color:var(--accent)">-</span></div>
+        <div><strong>Biggest Loser:</strong> <br><span id="statLoser" style="color:var(--danger)">-</span></div>
+      </div>
+
+      <table>
+        <thead><tr><th>Rank</th><th>Participant</th><th>Sessions</th><th>Net P/L (₹)</th></tr></thead>
+        <tbody id="leaderboardBody"></tbody>
+      </table>
+
+      <details style="margin-top: 8px;">
+        <summary style="font-size: 0.8rem; color: var(--subtext);">View Session History</summary>
+        <div id="sessionHistoryBox" style="margin-top: 6px;"></div>
+      </details>
+    </div>
+  </details>
+
+  <script>
+    // PWA Service Worker Registration
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js').then((reg) => {
+          console.log('Service Worker Registered!', reg);
+        }).catch((err) => {
+          console.error('Service Worker Registration Failed:', err);
+        });
+      });
+    }
+
+    const strictMasterRoster = ["SANDEEP", "RISHI", "KUNAL", "MOHINI", "HARI", "AKSHAY", "RAVI", "GAGAN", "ALOK"];
+    const colorThemes = ["color-0", "color-1", "color-2", "color-3", "color-4", "color-5", "color-6", "color-7"];
+
+    const initialLiveSessions = [
+      {
+        sessionId: "S_1785008887866",
+        date: "2026-07-25T19:48:07.866Z",
+        entries: [
+          { name: "RISHI", investedCoins: 3000, finalCoins: 3000, netVal: 0 },
+          { name: "HARI", investedCoins: 4000, finalCoins: 700, netVal: -1650 },
+          { name: "KUNAL", investedCoins: 4000, finalCoins: 1500, netVal: -1250 },
+          { name: "MOHINI", investedCoins: 2000, finalCoins: 3600, netVal: 800 },
+          { name: "SANDEEP", investedCoins: 1000, finalCoins: 5200, netVal: 2100 }
+        ]
+      }
+    ];
+
+    const initialLiveLogs = [
+      { time: "2026-07-25 20:59:00", text: "Logs reset." },
+      { time: "2026-07-25 21:22:00", text: "Buy-in increased for RISHI: count = 2." },
+      { time: "2026-07-25 21:27:00", text: "Buy-in increased for RISHI: count = 3." },
+      { time: "2026-07-25 21:51:00", text: "Buy-in increased for HARI: count = 2." },
+      { time: "2026-07-25 22:05:00", text: "Buy-in increased for HARI: count = 3." },
+      { time: "2026-07-25 22:05:00", text: "Buy-in increased for MOHINI: count = 2." },
+      { time: "2026-07-25 22:12:00", text: "Buy-in increased for KUNAL: count = 2." },
+      { time: "2026-07-25 23:17:00", text: "Buy-in increased for KUNAL: count = 3." },
+      { time: "2026-07-25 23:31:00", text: "Buy-in increased for HARI: count = 4." },
+      { time: "2026-07-25 23:33:00", text: "Buy-in increased for KUNAL: count = 4." },
+      { time: "2026-07-25 23:44:00", text: "Calculated minimum transaction settlement." },
+      { time: "2026-07-26 01:07:00", text: "Calculated minimum transaction settlement." },
+      { time: "2026-07-26 01:08:00", text: "Calculated minimum transaction settlement." },
+      { time: "2026-07-26 01:12:00", text: "Calculated minimum transaction settlement." },
+      { time: "2026-07-26 01:17:00", text: "Calculated minimum transaction settlement." },
+      { time: "2026-07-26 01:18:00", text: "Saved session to database." }
+    ];
+
+    let entryMode = 'COINS'; 
+    let currentFilter = 'ALL';
+    
+    let rawSaved = JSON.parse(localStorage.getItem("ledger_db_sessions"));
+    let savedSessions = initialLiveSessions;
+
+    if (rawSaved && Array.isArray(rawSaved)) {
+      savedSessions = rawSaved.filter(session => {
+        return session.entries.every(e => !["ALEX", "BOB", "CHARLIE", "DAVID", "EMMA", "FRANK", "GRACE", "HENRY", "IVY", "JACK"].includes(e.name.toUpperCase()));
+      });
+      if (savedSessions.length === 0) savedSessions = initialLiveSessions;
+    }
+
+    let players = JSON.parse(localStorage.getItem("ledger_active_players")) || [];
+    let logs = JSON.parse(localStorage.getItem("ledger_activity_logs")) || initialLiveLogs;
+
+    if (localStorage.getItem("ledger_coin_count")) document.getElementById("coinCount").value = localStorage.getItem("ledger_coin_count");
+    if (localStorage.getItem("ledger_curr_val")) document.getElementById("currencyVal").value = localStorage.getItem("ledger_curr_val");
+    if (localStorage.getItem("ledger_buyin_coins")) document.getElementById("buyInCoins").value = localStorage.getItem("ledger_buyin_coins");
+
+    function validateAddButton() {
+      const input = document.getElementById("playerName");
+      const btn = document.getElementById("btnAddPlayer");
+      const name = input.value.trim();
+
+      if (name.length > 0) {
+        btn.classList.remove("disabled");
+      } else {
+        btn.classList.add("disabled");
+      }
+    }
+
+    function updateSuggestions() {
+      const datalist = document.getElementById("playerSuggestions");
+      const logFilterSelect = document.getElementById("logFilterSelect");
+      const logDateSelect = document.getElementById("logDateSelect");
+      
+      datalist.innerHTML = "";
+      const currentFilterVal = logFilterSelect.value;
+      const currentDateVal = logDateSelect.value;
+
+      logFilterSelect.innerHTML = `<option value="ALL">All Participants</option>`;
+      logDateSelect.innerHTML = `<option value="ALL">All Dates</option>`;
+      
+      let allNames = new Set(strictMasterRoster);
+      savedSessions.forEach(s => s.entries.forEach(e => {
+        if (!["ALEX", "BOB", "CHARLIE", "DAVID", "EMMA", "FRANK", "GRACE", "HENRY", "IVY", "JACK"].includes(e.name.toUpperCase())) {
+          allNames.add(e.name.toUpperCase());
+        }
+      }));
+
+      const activeNamesInSession = players.map(p => p.name.toUpperCase());
+
+      Array.from(allNames).sort().forEach(name => {
+        if (!activeNamesInSession.includes(name)) {
+          let option = document.createElement("option");
+          option.value = name;
+          datalist.appendChild(option);
+        }
+
+        let filterOpt = document.createElement("option");
+        filterOpt.value = name;
+        filterOpt.textContent = name;
+        logFilterSelect.appendChild(filterOpt);
+      });
+
+      let uniqueDates = new Set();
+      logs.forEach(l => {
+        if (l.time && l.time.length >= 10) {
+          uniqueDates.add(l.time.substring(0, 10));
+        }
+      });
+
+      Array.from(uniqueDates).sort().reverse().forEach(d => {
+        let dateOpt = document.createElement("option");
+        dateOpt.value = d;
+        dateOpt.textContent = d;
+        logDateSelect.appendChild(dateOpt);
+      });
+
+      logFilterSelect.value = currentFilterVal;
+      logDateSelect.value = currentDateVal;
+    }
+
+    function setEntryMode(mode) {
+      entryMode = mode;
+      document.getElementById("modeCoinsBtn").classList.toggle("active", mode === 'COINS');
+      document.getElementById("modeCurrBtn").classList.toggle("active", mode === 'CURRENCY');
+      renderPlayerCards();
+    }
+
+    function saveState() {
+      localStorage.setItem("ledger_active_players", JSON.stringify(players));
+      localStorage.setItem("ledger_activity_logs", JSON.stringify(logs));
+      localStorage.setItem("ledger_db_sessions", JSON.stringify(savedSessions));
+      localStorage.setItem("ledger_coin_count", document.getElementById("coinCount").value);
+      localStorage.setItem("ledger_curr_val", document.getElementById("currencyVal").value);
+      localStorage.setItem("ledger_buyin_coins", document.getElementById("buyInCoins").value);
+    }
+
+    function addLog(text) {
+      const nowStr = new Date().toISOString().replace('T', ' ').substring(0, 19);
+      logs.unshift({ time: nowStr, text: text });
+      saveState();
+      renderLogs();
+    }
+
+    function resetLogs() {
+      if (confirm("Clear all logs?")) {
+        const nowStr = new Date().toISOString().replace('T', ' ').substring(0, 19);
+        logs = [{ time: nowStr, text: "Logs reset." }];
+        saveState(); renderLogs();
+      }
+    }
+
+    function renderLogs() {
+      const list = document.getElementById("logsList");
+      const selectedDate = document.getElementById("logDateSelect").value;
+      const selectedName = document.getElementById("logFilterSelect").value;
+      
+      list.innerHTML = "";
+
+      let filtered = logs.filter(log => {
+        let matchDate = true;
+        let matchName = true;
+
+        if (selectedDate !== "ALL") {
+          matchDate = log.time.startsWith(selectedDate);
+        }
+        if (selectedName !== "ALL") {
+          matchName = log.text.toUpperCase().includes(selectedName);
+        }
+
+        return matchDate && matchName;
+      });
+
+      if (filtered.length === 0) {
+        list.innerHTML = "<li>No logs found for selected date/filter.</li>";
+        return;
+      }
+
+      filtered.forEach(log => {
+        let li = document.createElement("li");
+        li.innerHTML = `[${log.time}] <strong>${log.text}</strong>`;
+        list.appendChild(li);
+      });
+    }
+
+    function getCoinRate() {
+      const cCount = parseFloat(document.getElementById("coinCount").value) || 2;
+      const cVal = parseFloat(document.getElementById("currencyVal").value) || 1;
+      return cVal / cCount;
+    }
+
+    function addPlayer() {
+      const input = document.getElementById("playerName");
+      let name = input.value.trim().toUpperCase();
+
+      if (!name) {
+        alert("Please enter a valid participant name!");
+        return;
+      }
+
+      if (players.some(p => p.name.toUpperCase() === name)) {
+        alert(`DUPLICATE ERROR: "${name}" is already in the active session!`);
+        return;
+      }
+
+      let isKnown = strictMasterRoster.includes(name) || savedSessions.some(s => s.entries.some(e => e.name.toUpperCase() === name));
+
+      if (!isKnown) {
+        let confirm1 = confirm(`"${name}" is NOT in the database roster.\n\nAre you sure you want to create a NEW participant?`);
+        if (!confirm1) return;
+
+        let confirm2 = confirm(`Double Confirmation:\n\nPlease confirm adding "${name}" permanently to the roster database.`);
+        if (!confirm2) return;
+
+        strictMasterRoster.push(name);
+      }
+      
+      const buyInCoins = parseFloat(document.getElementById("buyInCoins").value) || 1000;
+      players.push({ id: Date.now(), name: name, buyIns: 1, buyInCoins: buyInCoins, cashOutCoins: 0 });
+      input.value = "";
+      
+      addLog(`Added "${name}" with 1 buy-in (${buyInCoins}c).`);
+      validateAddButton();
+      renderAll();
+    }
+
+    function removePlayer(id) {
+      const p = players.find(p => p.id === id);
+      if (p) {
+        players = players.filter(p => p.id !== id);
+        addLog(`Removed "${p.name}".`);
+        renderAll();
+      }
+    }
+
+    function updateBuyIns(id, delta) {
+      const p = players.find(p => p.id === id);
+      if (p) {
+        const prev = p.buyIns;
+        p.buyIns = Math.max(1, p.buyIns + delta);
+        if (p.buyIns !== prev) {
+          addLog(`Buy-in ${delta>0?'increased':'decreased'} for ${p.name}: count = ${p.buyIns}.`);
+          renderAll();
+        }
+      }
+    }
+
+    function handleCashOutInput(id, val) {
+      const p = players.find(p => p.id === id);
+      if (!p) return;
+      const rate = getCoinRate();
+      const numVal = parseFloat(val) || 0;
+      p.cashOutCoins = entryMode === 'COINS' ? numVal : (rate > 0 ? (numVal / rate) : 0);
+      updateSummary();
+      saveState();
+    }
+
+    function updateSummary() {
+      const rate = getCoinRate();
+      let totalCoinsIn = 0, totalCoinsOut = 0;
+
+      players.forEach(p => {
+        totalCoinsIn += (p.buyIns * p.buyInCoins);
+        totalCoinsOut += (p.cashOutCoins || 0);
+      });
+
+      const totalVal = totalCoinsIn * rate;
+      const diffVal = (totalCoinsOut - totalCoinsIn) * rate;
+
+      document.getElementById("totalCoins").innerText = totalCoinsIn;
+      document.getElementById("totalVal").innerText = `₹${totalVal.toFixed(2)}`;
+      document.getElementById("diffVal").innerText = `₹${diffVal.toFixed(2)}`;
+      document.getElementById("diffVal").style.color = Math.abs(diffVal) < 0.01 ? "var(--accent)" : "var(--danger)";
+
+      players.forEach(p => {
+        const netVal = (p.cashOutCoins - (p.buyIns * p.buyInCoins)) * rate;
+        const elem = document.getElementById(`net-${p.id}`);
+        if (elem) {
+          elem.innerText = `${netVal >= 0 ? '+' : ''}₹${netVal.toFixed(1)}`;
+          elem.style.color = netVal >= 0 ? "var(--accent)" : "var(--danger)";
+        }
+      });
+    }
+
+    function renderPlayerCards() {
+      const rate = getCoinRate();
+      const container = document.getElementById("playerList");
+      container.innerHTML = "";
+
+      players.forEach((p, idx) => {
+        const investedCoins = p.buyIns * p.buyInCoins;
+        const investedVal = investedCoins * rate;
+        const netVal = (p.cashOutCoins - investedCoins) * rate;
+        
+        let inputLabel = entryMode === 'COINS' ? 'Final Coins' : 'Final Value (₹)';
+        let inputValue = p.cashOutCoins ? (entryMode === 'COINS' ? p.cashOutCoins : (p.cashOutCoins * rate).toFixed(2)) : '';
+        
+        let colorClass = colorThemes[idx % colorThemes.length];
+
+        const card = document.createElement("div");
+        card.className = `player-card ${colorClass}`;
+        card.innerHTML = `
+          <div class="player-header">
+            <span class="player-name" title="${p.name}">${p.name}</span>
+            <button type="button" class="btn-danger" onclick="removePlayer(${p.id})">✕</button>
+          </div>
+          <div class="player-body-row">
+            <div class="counter-wrapper">
+              <button type="button" class="counter-btn" onclick="updateBuyIns(${p.id}, -1)">-</button>
+              <div style="text-align:center;">
+                <span class="buyin-cnt">${p.buyIns}</span>
+                <span style="font-size:0.7rem; color:var(--subtext); display:block;">${investedCoins}c (₹${investedVal.toFixed(0)})</span>
+              </div>
+              <button type="button" class="counter-btn" onclick="updateBuyIns(${p.id}, 1)">+</button>
+            </div>
+            <div>
+              <label>${inputLabel}</label>
+              <input type="number" step="any" value="${inputValue}" placeholder="0" oninput="handleCashOutInput(${p.id}, this.value)">
+            </div>
+            <div style="display:flex; justify-content:space-between; align-items:center; background:var(--card-bg); padding:4px 8px; border-radius:4px;">
+              <span style="font-size:0.75rem; color:var(--subtext);">Net:</span>
+              <span id="net-${p.id}" style="font-weight:bold; font-size:0.95rem; color:${netVal >= 0 ? 'var(--accent)' : 'var(--danger)'}">
+                ${netVal >= 0 ? '+' : ''}₹${netVal.toFixed(1)}
+              </span>
+            </div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function renderAll() {
+      const rate = getCoinRate();
+      document.getElementById("rateNotice").innerText = `1c = ₹${rate.toFixed(2)}`;
+
+      updateSuggestions();
+      renderPlayerCards();
+      updateSummary();
+      renderLogs();
+      renderLeaderboard();
+      saveState();
+    }
+
+    function saveSessionLocally() {
+      if (players.length === 0) return alert("Add participants first!");
+      const rate = getCoinRate();
+
+      const sessionRecord = {
+        sessionId: "S_" + Date.now(),
+        date: new Date().toISOString(),
+        entries: players.map(p => {
+          const investedCoins = p.buyIns * p.buyInCoins;
+          return {
+            name: p.name.toUpperCase(),
+            investedCoins: investedCoins,
+            finalCoins: p.cashOutCoins,
+            netVal: (p.cashOutCoins - investedCoins) * rate
+          };
+        })
+      };
+
+      savedSessions.unshift(sessionRecord);
+      addLog("Saved session to database.");
+      
+      players = [];
+      saveState();
+      alert("Session saved successfully! Board cleared for next session.");
+      renderAll();
+    }
+
+    function calculateSettlement() {
+      const list = document.getElementById("settlementResults");
+      list.innerHTML = "";
+      const rate = getCoinRate();
+
+      let nets = players.map(p => ({ name: p.name.toUpperCase(), amt: (p.cashOutCoins - (p.buyIns * p.buyInCoins)) * rate }));
+      let debtors = nets.filter(p => p.amt < -0.01).map(p => ({ name: p.name, amount: Math.abs(p.amt) }));
+      let creditors = nets.filter(p => p.amt > 0.01).map(p => ({ name: p.name, amount: p.amt }));
+
+      let transactions = [];
+
+      for (let i = debtors.length - 1; i >= 0; i--) {
+        for (let j = creditors.length - 1; j >= 0; j--) {
+          if (Math.abs(debtors[i].amount - creditors[j].amount) < 0.01) {
+            transactions.push(`<strong>${debtors[i].name}</strong> pays <strong>${creditors[j].name}</strong>: <span style="color:var(--accent)">₹${debtors[i].amount.toFixed(2)}</span>`);
+            debtors.splice(i, 1);
+            creditors.splice(j, 1);
+            break;
+          }
+        }
+      }
+
+      debtors.sort((a,b) => b.amount - a.amount);
+      creditors.sort((a,b) => b.amount - a.amount);
+
+      let i = 0, j = 0;
+      while (i < debtors.length && j < creditors.length) {
+        let payment = Math.min(debtors[i].amount, creditors[j].amount);
+        if (payment > 0.01) {
+          transactions.push(`<strong>${debtors[i].name}</strong> pays <strong>${creditors[j].name}</strong>: <span style="color:var(--accent)">₹${payment.toFixed(2)}</span>`);
+        }
+        debtors[i].amount -= payment;
+        creditors[j].amount -= payment;
+        if (debtors[i].amount < 0.01) i++;
+        if (creditors[j].amount < 0.01) j++;
+      }
+
+      if (transactions.length === 0) list.innerHTML = "<li>All balances are settled!</li>";
+      else transactions.forEach(t => { let li = document.createElement("li"); li.innerHTML = t; list.appendChild(li); });
+      addLog("Calculated minimum transaction settlement.");
+    }
+
+    function renderLeaderboard() {
+      const tbody = document.getElementById("leaderboardBody");
+      const historyBox = document.getElementById("sessionHistoryBox");
+      tbody.innerHTML = ""; historyBox.innerHTML = "";
+
+      const nowD = new Date();
+      let filtered = savedSessions.filter(s => {
+        const sDate = new Date(s.date);
+        if (currentFilter === 'WEEK') return (nowD - sDate) / (1000 * 3600 * 24) <= 7;
+        if (currentFilter === 'MONTH') return (nowD - sDate) / (1000 * 3600 * 24) <= 30;
+        return true;
+      });
+
+      if (filtered.length === 0) {
+        historyBox.innerHTML = "<div class='history-item'>No sessions found in this period.</div>";
+      } else {
+        filtered.forEach(session => {
+          let dateStr = new Date(session.date).toLocaleDateString('en-US', { weekday:'short', month:'short', day:'numeric', year:'numeric' });
+          let item = document.createElement("div");
+          item.className = "history-item";
+          
+          let detailsHTML = session.entries.map(e => 
+            `<span style="color:${e.netVal>=0?'var(--accent)':'var(--danger)'}">
+              ${e.name.toUpperCase()}: ${e.netVal>=0?'+':''}₹${e.netVal.toFixed(1)}
+            </span>`
+          ).join(' | ');
+
+          item.innerHTML = `<strong>${dateStr}</strong><br>${detailsHTML}`;
+          historyBox.appendChild(item);
+        });
+      }
+
+      let totals = {};
+      filtered.forEach(session => {
+        session.entries.forEach(e => {
+          let uName = e.name.toUpperCase();
+          if (!totals[uName]) totals[uName] = { sessions: 0, netVal: 0 };
+          totals[uName].sessions += 1;
+          totals[uName].netVal += e.netVal;
+        });
+      });
+
+      let sorted = Object.keys(totals).map(k => ({ name: k, sessions: totals[k].sessions, netVal: totals[k].netVal })).sort((a, b) => b.netVal - a.netVal);
+
+      if (sorted.length > 0) {
+        let best = sorted[0];
+        let worst = sorted[sorted.length - 1];
+        document.getElementById("statWinner").innerText = `${best.name} (+₹${best.netVal.toFixed(2)})`;
+        document.getElementById("statLoser").innerText = `${worst.name} (₹${worst.netVal.toFixed(2)})`;
+      } else {
+        document.getElementById("statWinner").innerText = "-";
+        document.getElementById("statLoser").innerText = "-";
+      }
+
+      sorted.forEach((p, idx) => {
+        const row = document.createElement("tr");
+        row.innerHTML = `<td>#${idx + 1}</td><td><strong>${p.name}</strong></td><td>${p.sessions}</td><td style="color:${p.netVal >= 0 ? 'var(--accent)' : 'var(--danger)'}; font-weight:bold;">${p.netVal >= 0 ? '+' : ''}₹${p.netVal.toFixed(2)}</td>`;
+        tbody.appendChild(row);
+      });
+    }
+
+    function switchFilter(filter, elem) {
+      currentFilter = filter;
+      document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+      elem.classList.add("active");
+      renderLeaderboard();
+    }
+
+    function exportData() {
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify({ savedSessions, logs, knownRoster: strictMasterRoster }, null, 2));
+      const anchor = document.createElement('a');
+      anchor.href = dataStr;
+      anchor.download = `ledger_data_${new Date().toISOString().slice(0,10)}.json`;
+      document.body.appendChild(anchor); anchor.click(); anchor.remove();
+      addLog("Exported data file.");
+    }
+    
+    function importData(e) {
+      const file = e.target.files[0]; if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        try {
+          const imp = JSON.parse(e.target.result);
+          let impSessions = Array.isArray(imp) ? imp : (imp.savedSessions || []);
+          let impLogs = Array.isArray(imp) ? [] : (imp.logs || []);
+          
+          let addedS = 0;
+          impSessions.forEach(s => { 
+            if (!savedSessions.some(curr => curr.sessionId === s.sessionId)) { 
+              savedSessions.push(s); 
+              addedS++; 
+            }
+          });
+
+          impLogs.forEach(l => { 
+            if (!logs.some(curr => curr.time === l.time && curr.text === l.text)) { 
+              logs.push(l); 
+            }
+          });
+          
+          savedSessions.sort((a,b) => new Date(b.date) - new Date(a.date));
+          saveState(); renderAll();
+          alert(`Merged: Added ${addedS} session(s)!`);
+        } catch (err) { alert("Invalid file."); }
+      };
+      reader.readAsText(file);
+    }
+
+    // Initialize
+    renderAll();
+    validateAddButton();
+  </script>
+</body>
+</html>
