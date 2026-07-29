@@ -72,6 +72,9 @@
     button.btn-warning { background: var(--warning); color: #000; padding: 6px 10px; font-size: 0.8rem; }
     button.btn-sm { padding: 6px 10px; font-size: 0.8rem; }
 
+    /* Side-by-side Sync Buttons */
+    .sync-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+
     .summary-bar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; background: #0f172a; padding: 12px; border-radius: 10px; margin-bottom: 14px; text-align: center; border: 1px solid var(--border); }
     .summary-item .label { font-size: 0.7rem; color: var(--subtext); text-transform: uppercase; }
     .summary-item .value { font-size: 1.1rem; font-weight: bold; color: var(--accent); margin-top: 2px; }
@@ -237,24 +240,15 @@
     <div class="logs-container"><ul id="logsList" class="logs-list"></ul></div>
   </div>
 
-  <!-- Sync Data (Public Pull & Admin Push) -->
+  <!-- Side-by-Side Sync Data -->
   <div class="card">
     <h2>Sync Data Across Systems</h2>
-    <p style="font-size:0.75rem; color:var(--subtext); margin-bottom:10px;">Tap below to instantly update your app with the latest scores from GitHub. No password required!</p>
+    <p style="font-size:0.75rem; color:var(--subtext); margin-bottom:10px;">Sync active dashboard, session history, and logs with GitHub.</p>
     
-    <div class="btn-group">
-      <button type="button" class="btn-sm" style="width:100%; background:#334155; padding: 12px; font-size: 0.95rem;" onclick="fetchFromGitHub()">🔄 Pull Latest Data</button>
+    <div class="sync-grid">
+      <button type="button" class="btn-sync btn-sm" onclick="pushToGitHub()">🚀 Push Data</button>
+      <button type="button" class="btn-sm" style="background:#334155;" onclick="fetchFromGitHub()">🔄 Pull Data</button>
     </div>
-
-    <details style="margin-top: 12px; background:#0f172a;">
-      <summary style="font-size:0.8rem; color:var(--primary);">🔒 Admin Tools (Push Access Only)</summary>
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px; margin-top:8px;">
-        <input type="text" id="ghUser" placeholder="GitHub Username" value="sandeep260888" onchange="saveGhConfig()">
-        <input type="text" id="ghRepo" placeholder="Repo Name" value="AllIn" onchange="saveGhConfig()">
-        <input type="password" id="ghToken" placeholder="Personal Access Token" style="grid-column:span 2;" onchange="saveGhConfig()">
-        <button type="button" class="btn-sync btn-sm" style="grid-column:span 2; margin-top:4px;" onclick="pushToGitHub()">🚀 Push Data to GitHub</button>
-      </div>
-    </details>
   </div>
 
   <!-- Collapsible Performance & Leaderboard -->
@@ -307,6 +301,9 @@
       });
     }
 
+    const GH_USER = "sandeep260888";
+    const GH_REPO = "AllIn";
+
     const strictMasterRoster = ["SANDEEP", "RISHI", "KUNAL", "MOHINI", "HARI", "AKSHAY", "RAVI", "GAGAN", "ALOK"];
     const colorThemes = ["color-0", "color-1", "color-2", "color-3", "color-4", "color-5", "color-6", "color-7"];
 
@@ -320,16 +317,6 @@
     if (localStorage.getItem("ledger_coin_count")) document.getElementById("coinCount").value = localStorage.getItem("ledger_coin_count");
     if (localStorage.getItem("ledger_curr_val")) document.getElementById("currencyVal").value = localStorage.getItem("ledger_curr_val");
     if (localStorage.getItem("ledger_buyin_coins")) document.getElementById("buyInCoins").value = localStorage.getItem("ledger_buyin_coins");
-
-    document.getElementById("ghUser").value = localStorage.getItem("gh_user") || "sandeep260888";
-    document.getElementById("ghRepo").value = localStorage.getItem("gh_repo") || "AllIn";
-    document.getElementById("ghToken").value = localStorage.getItem("gh_token") || "";
-
-    function saveGhConfig() {
-      localStorage.setItem("gh_user", document.getElementById("ghUser").value.trim());
-      localStorage.setItem("gh_repo", document.getElementById("ghRepo").value.trim());
-      localStorage.setItem("gh_token", document.getElementById("ghToken").value.trim());
-    }
 
     function validateAddButton() {
       const input = document.getElementById("playerName");
@@ -747,29 +734,51 @@
       renderLeaderboard();
     }
 
-    // Zero-Credential Public Fetch Function
+    // Zero-Credential Public Fetch with Double Confirmation Safeguard
     async function fetchFromGitHub() {
-      let user = document.getElementById("ghUser").value.trim() || "sandeep260888";
-      let repo = document.getElementById("ghRepo").value.trim() || "AllIn";
+      // 1. Double Confirmation Check if board has active players
+      if (players.length > 0) {
+        const warn1 = confirm("⚠️ ALERT: Pulling live data from GitHub will overwrite and replace your current active Participants Dashboard!\n\nDo you want to proceed?");
+        if (!warn1) return;
 
-      const rawUrl = `https://raw.githubusercontent.com/${user}/${repo}/main/data.json?t=${Date.now()}`;
+        const warn2 = confirm("DOUBLE CONFIRMATION:\n\nAre you sure? Any unsaved edits or buy-ins on your board will be lost!");
+        if (!warn2) return;
+      }
+
+      const rawUrl = `https://raw.githubusercontent.com/${GH_USER}/${GH_REPO}/main/data.json?t=${Date.now()}`;
 
       try {
         const res = await fetch(rawUrl);
         if (res.ok) {
           const data = await res.json();
+          
           if (data.savedSessions && Array.isArray(data.savedSessions)) savedSessions = data.savedSessions;
           if (data.logs && Array.isArray(data.logs)) logs = data.logs;
+          
+          // Restore Rate Settings if present
+          if (data.settings) {
+            if (data.settings.coinCount) document.getElementById("coinCount").value = data.settings.coinCount;
+            if (data.settings.currencyVal) document.getElementById("currencyVal").value = data.settings.currencyVal;
+            if (data.settings.buyInCoins) document.getElementById("buyInCoins").value = data.settings.buyInCoins;
+          }
+
+          // Restore Active Players Dashboard only if available in pulled data
+          if (data.activePlayers && Array.isArray(data.activePlayers) && data.activePlayers.length > 0) {
+            players = data.activePlayers;
+          }
+
           if (data.knownRoster && Array.isArray(data.knownRoster)) {
             data.knownRoster.forEach(name => {
               if (!strictMasterRoster.includes(name.toUpperCase())) strictMasterRoster.push(name.toUpperCase());
             });
           }
-          saveState(); renderAll();
-          alert("✅ Successfully pulled the latest live database from GitHub!");
-          addLog("Pulled latest live data from GitHub.");
+
+          saveState(); 
+          renderAll();
+          alert("✅ Successfully pulled and synchronized live data from GitHub!");
+          addLog("Pulled latest live state from GitHub.");
         } else {
-          alert(`Could not find data.json on GitHub repository (${user}/${repo}).`);
+          alert(`Could not find data.json on GitHub repository (${GH_USER}/${GH_REPO}).`);
         }
       } catch (err) {
         console.error("Fetch error:", err);
@@ -777,19 +786,34 @@
       }
     }
 
-    // Direct Token-Authenticated Push Function
+    // Token-Authenticated Push Function (Prompting only when needed)
     async function pushToGitHub() {
-      const user = document.getElementById("ghUser").value.trim();
-      const repo = document.getElementById("ghRepo").value.trim();
-      const token = document.getElementById("ghToken").value.trim();
+      let token = localStorage.getItem("gh_token") || "";
 
-      if (!user || !repo || !token) {
-        return alert("Please enter Admin Access Token in Admin Settings first!");
+      if (!token) {
+        const tokenInput = prompt("🔒 ADMIN AUTHENTICATION REQUIRED:\n\nEnter your GitHub Personal Access Token to push live data:");
+        if (!tokenInput || tokenInput.trim().length === 0) {
+          return alert("Push cancelled. Personal Access Token is required to update the live cloud database.");
+        }
+        token = tokenInput.trim();
+        localStorage.setItem("gh_token", token);
       }
 
       const filePath = "data.json";
-      const apiUrl = `https://api.github.com/repos/${user}/${repo}/contents/${filePath}`;
-      const payload = { savedSessions, logs, knownRoster: strictMasterRoster };
+      const apiUrl = `https://api.github.com/repos/${GH_USER}/${GH_REPO}/contents/${filePath}`;
+      
+      const payload = {
+        savedSessions: savedSessions,
+        activePlayers: players,
+        settings: {
+          coinCount: document.getElementById("coinCount").value,
+          currencyVal: document.getElementById("currencyVal").value,
+          buyInCoins: document.getElementById("buyInCoins").value
+        },
+        logs: logs,
+        knownRoster: strictMasterRoster
+      };
+
       const contentEncoded = btoa(unescape(encodeURIComponent(JSON.stringify(payload, null, 2))));
 
       try {
@@ -804,6 +828,9 @@
         if (getRes.ok) {
           const getData = await getRes.json();
           sha = getData.sha;
+        } else if (getRes.status === 401 || getRes.status === 403) {
+          localStorage.removeItem("gh_token");
+          return alert("Authentication Failed! Invalid or expired token. Please try again.");
         }
 
         const putRes = await fetch(apiUrl, {
@@ -814,15 +841,15 @@
             "Accept": "application/vnd.github.v3+json"
           },
           body: JSON.stringify({
-            message: `Update ledger data [${new Date().toISOString().substring(0, 10)}]`,
+            message: `Update live state [${new Date().toISOString().substring(0, 19).replace('T', ' ')}]`,
             content: contentEncoded,
             sha: sha || undefined
           })
         });
 
         if (putRes.ok) {
-          alert("✅ Successfully pushed data to GitHub repository!");
-          addLog("Pushed live data to GitHub repo.");
+          alert("✅ LIVE STATE PUSHED TO GITHUB!\nActive dashboard and game history updated across all devices.");
+          addLog("Pushed live state to GitHub repo.");
         } else {
           const errData = await putRes.json();
           alert(`GitHub Push Failed (${putRes.status}): ${errData.message}`);
