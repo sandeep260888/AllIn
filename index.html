@@ -72,7 +72,6 @@
     button.btn-warning { background: var(--warning); color: #000; padding: 6px 10px; font-size: 0.8rem; }
     button.btn-sm { padding: 6px 10px; font-size: 0.8rem; }
 
-    /* Side-by-side Sync Buttons */
     .sync-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 
     .summary-bar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; background: #0f172a; padding: 12px; border-radius: 10px; margin-bottom: 14px; text-align: center; border: 1px solid var(--border); }
@@ -240,7 +239,7 @@
     <div class="logs-container"><ul id="logsList" class="logs-list"></ul></div>
   </div>
 
-  <!-- Side-by-Side Sync Data -->
+  <!-- Sync Data -->
   <div class="card">
     <h2>Sync Data Across Systems</h2>
     <p style="font-size:0.75rem; color:var(--subtext); margin-bottom:10px;">Sync active dashboard, session history, and logs with GitHub.</p>
@@ -248,6 +247,10 @@
     <div class="sync-grid">
       <button type="button" class="btn-sync btn-sm" onclick="pushToGitHub()">🚀 Push Data</button>
       <button type="button" class="btn-sm" style="background:#334155;" onclick="fetchFromGitHub()">🔄 Pull Data</button>
+    </div>
+
+    <div style="margin-top: 10px;">
+      <button type="button" class="btn-danger" style="width:100%; padding: 8px; font-size:0.75rem;" onclick="clearLocalDeviceCache()">⚠️ Clear Local Device Cache / Reset Device</button>
     </div>
   </div>
 
@@ -433,6 +436,16 @@
       return cVal / cCount;
     }
 
+    function getDiffValue() {
+      const rate = getCoinRate();
+      let totalCoinsIn = 0, totalCoinsOut = 0;
+      players.forEach(p => {
+        totalCoinsIn += (p.buyIns * p.buyInCoins);
+        totalCoinsOut += (p.cashOutCoins || 0);
+      });
+      return (totalCoinsOut - totalCoinsIn) * rate;
+    }
+
     function addPlayer() {
       const input = document.getElementById("playerName");
       let name = input.value.trim().toUpperCase();
@@ -575,8 +588,15 @@
       saveState();
     }
 
+    // Settlement & Save Session with Diff Check
     function confirmAndSaveSession() {
       if (players.length === 0) return alert("Add participants first!");
+
+      // Diff Check Rule
+      const diffVal = getDiffValue();
+      if (Math.abs(diffVal) > 0.01) {
+        return alert(`SETTLEMENT ERROR: Diff Value is ₹${diffVal.toFixed(2)}.\n\nPlease adjust participant final coins/values so Diff Value is ₹0.00 before saving!`);
+      }
 
       const confirm1 = confirm("CRUCIAL ACTION: Save current session to database?");
       if (!confirm1) return;
@@ -604,7 +624,7 @@
       savedSessions.unshift(sessionRecord);
       addLog("Saved session to database.");
       saveState();
-      alert("Session saved successfully to local database!");
+      alert("Session saved successfully to database!");
       renderLeaderboard();
     }
 
@@ -734,14 +754,13 @@
       renderLeaderboard();
     }
 
-    // Zero-Credential Public Fetch with Double Confirmation Safeguard
+    // Intelligent Fetching (De-duplicates Sessions by sessionId & restores screen)
     async function fetchFromGitHub() {
-      // 1. Double Confirmation Check if board has active players
       if (players.length > 0) {
         const warn1 = confirm("⚠️ ALERT: Pulling live data from GitHub will overwrite and replace your current active Participants Dashboard!\n\nDo you want to proceed?");
         if (!warn1) return;
 
-        const warn2 = confirm("DOUBLE CONFIRMATION:\n\nAre you sure? Any unsaved edits or buy-ins on your board will be lost!");
+        const warn2 = confirm("DOUBLE CONFIRMATION:\n\nAre you sure? Any unsaved edits on your current board will be lost!");
         if (!warn2) return;
       }
 
@@ -752,18 +771,23 @@
         if (res.ok) {
           const data = await res.json();
           
-          if (data.savedSessions && Array.isArray(data.savedSessions)) savedSessions = data.savedSessions;
+          // De-duplicate & Merge Sessions by unique sessionId
+          if (data.savedSessions && Array.isArray(data.savedSessions)) {
+            let sessionMap = new Map();
+            savedSessions.forEach(s => sessionMap.set(s.sessionId, s));
+            data.savedSessions.forEach(s => sessionMap.set(s.sessionId, s));
+            savedSessions = Array.from(sessionMap.values()).sort((a,b) => new Date(b.date) - new Date(a.date));
+          }
+
           if (data.logs && Array.isArray(data.logs)) logs = data.logs;
           
-          // Restore Rate Settings if present
           if (data.settings) {
             if (data.settings.coinCount) document.getElementById("coinCount").value = data.settings.coinCount;
             if (data.settings.currencyVal) document.getElementById("currencyVal").value = data.settings.currencyVal;
             if (data.settings.buyInCoins) document.getElementById("buyInCoins").value = data.settings.buyInCoins;
           }
 
-          // Restore Active Players Dashboard only if available in pulled data
-          if (data.activePlayers && Array.isArray(data.activePlayers) && data.activePlayers.length > 0) {
+          if (data.activePlayers && Array.isArray(data.activePlayers)) {
             players = data.activePlayers;
           }
 
@@ -786,7 +810,7 @@
       }
     }
 
-    // Token-Authenticated Push Function (Prompting only when needed)
+    // Token-Authenticated Push Function
     async function pushToGitHub() {
       let token = localStorage.getItem("gh_token") || "";
 
@@ -802,8 +826,36 @@
       const filePath = "data.json";
       const apiUrl = `https://api.github.com/repos/${GH_USER}/${GH_REPO}/contents/${filePath}`;
       
+      // Step A: Fetch remote data first to merge historical sessions safely
+      let remoteSha = "";
+      let remoteSessions = [];
+      try {
+        const getRes = await fetch(apiUrl, {
+          headers: { 
+            "Authorization": `Bearer ${token}`,
+            "Accept": "application/vnd.github.v3+json"
+          }
+        });
+
+        if (getRes.ok) {
+          const getData = await getRes.json();
+          remoteSha = getData.sha;
+          const decodedContent = JSON.parse(decodeURIComponent(escape(atob(getData.content))));
+          if (decodedContent.savedSessions) remoteSessions = decodedContent.savedSessions;
+        } else if (getRes.status === 401 || getRes.status === 403) {
+          localStorage.removeItem("gh_token");
+          return alert("Authentication Failed! Invalid or expired token.");
+        }
+      } catch(e) { console.warn("Could not pre-fetch remote SHA", e); }
+
+      // Merge local and remote savedSessions by sessionId
+      let sessionMap = new Map();
+      remoteSessions.forEach(s => sessionMap.set(s.sessionId, s));
+      savedSessions.forEach(s => sessionMap.set(s.sessionId, s));
+      let mergedSavedSessions = Array.from(sessionMap.values()).sort((a,b) => new Date(b.date) - new Date(a.date));
+
       const payload = {
-        savedSessions: savedSessions,
+        savedSessions: mergedSavedSessions,
         activePlayers: players,
         settings: {
           coinCount: document.getElementById("coinCount").value,
@@ -817,22 +869,6 @@
       const contentEncoded = btoa(unescape(encodeURIComponent(JSON.stringify(payload, null, 2))));
 
       try {
-        let sha = "";
-        const getRes = await fetch(apiUrl, {
-          headers: { 
-            "Authorization": `Bearer ${token}`,
-            "Accept": "application/vnd.github.v3+json"
-          }
-        });
-
-        if (getRes.ok) {
-          const getData = await getRes.json();
-          sha = getData.sha;
-        } else if (getRes.status === 401 || getRes.status === 403) {
-          localStorage.removeItem("gh_token");
-          return alert("Authentication Failed! Invalid or expired token. Please try again.");
-        }
-
         const putRes = await fetch(apiUrl, {
           method: "PUT",
           headers: {
@@ -843,11 +879,13 @@
           body: JSON.stringify({
             message: `Update live state [${new Date().toISOString().substring(0, 19).replace('T', ' ')}]`,
             content: contentEncoded,
-            sha: sha || undefined
+            sha: remoteSha || undefined
           })
         });
 
         if (putRes.ok) {
+          savedSessions = mergedSavedSessions;
+          saveState(); renderAll();
           alert("✅ LIVE STATE PUSHED TO GITHUB!\nActive dashboard and game history updated across all devices.");
           addLog("Pushed live state to GitHub repo.");
         } else {
@@ -858,6 +896,24 @@
         console.error(err);
         alert("Error connecting to GitHub API.");
       }
+    }
+
+    // Wipe Device Cache & Storage Safeguard
+    function clearLocalDeviceCache() {
+      const confirm1 = confirm("⚠️ DANGER: Clear all local browser storage, cached sessions, and active memory on THIS device?");
+      if (!confirm1) return;
+
+      const confirm2 = confirm("DOUBLE CONFIRMATION:\n\nThis will reset your local app cache to zero and re-pull clean state from GitHub. Proceed?");
+      if (!confirm2) return;
+
+      localStorage.clear();
+      if ('caches' in window) {
+        caches.keys().then(names => {
+          for (let name of names) caches.delete(name);
+        });
+      }
+      alert("Device cache cleared! The page will now reload.");
+      window.location.reload();
     }
 
     // Experimental Tools
