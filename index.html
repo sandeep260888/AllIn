@@ -35,7 +35,6 @@
 
     .card { background-color: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 14px; margin-bottom: 14px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.3); }
     
-    /* Compact Settings Bar */
     .compact-settings {
       display: flex;
       align-items: center;
@@ -51,18 +50,16 @@
     .compact-inputs { display: flex; align-items: center; gap: 6px; }
     .compact-inputs input { width: 50px; padding: 4px; font-size: 0.8rem; text-align: center; background: var(--card-bg); border: 1px solid var(--border); border-radius: 4px; color: var(--text); }
 
-    /* Top Add Player Grid */
     .add-player-grid { display: grid; grid-template-columns: 1fr 1.5fr auto; gap: 8px; align-items: end; }
     label { display: block; font-size: 0.8rem; color: var(--subtext); margin-bottom: 4px; }
     input, select { width: 100%; padding: 10px; background: #0f172a; border: 1px solid var(--border); border-radius: 8px; color: var(--text); font-size: 0.95rem; outline: none; }
     input:focus, select:focus { border-color: var(--primary); }
 
-    .btn-group { display: flex; gap: 8px; }
-    button { background: var(--primary); color: white; border: none; padding: 10px 14px; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 0.9rem; display: inline-flex; align-items: center; justify-content: center; gap: 4px; transition: all 0.2s; }
+    .btn-group { display: flex; gap: 8px; flex-wrap: wrap; }
+    button { background: var(--primary); color: white; border: none; padding: 8px 12px; border-radius: 6px; font-weight: bold; cursor: pointer; font-size: 0.85rem; display: inline-flex; align-items: center; justify-content: center; gap: 4px; transition: all 0.2s; }
     button:active { opacity: 0.8; }
     
-    /* Add Button State */
-    button.btn-add { background: var(--accent); white-space: nowrap; height: 42px; padding: 0 20px; font-size: 0.95rem; }
+    button.btn-add { background: var(--accent); white-space: nowrap; height: 38px; padding: 0 16px; font-size: 0.9rem; }
     button.btn-add.disabled {
       background: #334155 !important;
       color: #94a3b8 !important;
@@ -72,14 +69,14 @@
 
     button.btn-sync { background: #8b5cf6; }
     button.btn-danger { background: var(--danger); padding: 4px 8px; font-size: 0.75rem; border-radius: 4px; }
+    button.btn-warning { background: var(--warning); color: #000; padding: 6px 10px; font-size: 0.8rem; }
+    button.btn-sm { padding: 6px 10px; font-size: 0.8rem; }
 
     .summary-bar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; background: #0f172a; padding: 12px; border-radius: 10px; margin-bottom: 14px; text-align: center; border: 1px solid var(--border); }
     .summary-item .label { font-size: 0.7rem; color: var(--subtext); text-transform: uppercase; }
     .summary-item .value { font-size: 1.1rem; font-weight: bold; color: var(--accent); margin-top: 2px; }
 
-    /* 2 Column Player Grid */
     .player-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
-    
     .player-card { 
       background: #0f172a; 
       border: 1px solid var(--border); 
@@ -93,14 +90,12 @@
     
     .player-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1e293b; padding-bottom: 6px; }
     .player-name { font-weight: bold; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-    
     .player-body-row { display: flex; flex-direction: column; gap: 8px; }
     
     .counter-wrapper { display: flex; align-items: center; justify-content: space-between; background: var(--card-bg); padding: 6px 8px; border-radius: 6px; border: 1px solid var(--border); }
     .counter-btn { width: 32px; height: 32px; border-radius: 6px; border: 1px solid var(--border); background: #0f172a; color: var(--text); font-size: 1.2rem; font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; }
     .buyin-cnt { font-weight: bold; font-size: 1rem; min-width: 24px; text-align: center; }
 
-    /* Color Themes */
     .color-0 { border-top-color: #10b981; }
     .color-1 { border-top-color: #3b82f6; }
     .color-2 { border-top-color: #8b5cf6; }
@@ -110,19 +105,16 @@
     .color-6 { border-top-color: #ec4899; }
     .color-7 { border-top-color: #6366f1; }
 
-    /* Activity Logs */
     .logs-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
     .logs-filter-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 8px; }
     .logs-container { max-height: 180px; overflow-y: auto; background: #0f172a; padding: 8px; border-radius: 8px; border: 1px solid var(--border); }
     .logs-list { list-style: none; }
     .logs-list li { font-family: monospace; font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid #1e293b; color: var(--subtext); word-break: break-word; }
 
-    /* Mode Selector Toggle */
     .mode-toggle { display: flex; background: #0f172a; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
     .mode-btn { flex: 1; padding: 6px; font-size: 0.8rem; border-radius: 0; background: transparent; color: var(--subtext); }
     .mode-btn.active { background: var(--primary); color: white; }
 
-    /* Tables & Tabs */
     table { width: 100%; border-collapse: collapse; margin-top: 8px; }
     th, td { padding: 8px; text-align: left; border-bottom: 1px solid var(--border); font-size: 0.85rem; }
     th { color: var(--subtext); font-size: 0.75rem; text-transform: uppercase; }
@@ -140,6 +132,9 @@
     .settlement-list { list-style: none; }
     .settlement-list li { background: #0f172a; padding: 10px; border-radius: 8px; margin-bottom: 6px; border-left: 4px solid var(--accent); font-size: 0.9rem; }
     .file-input { display: none; }
+
+    /* Experimental Fun Box */
+    .exp-box { background: #0f172a; border: 1px dashed #8b5cf6; padding: 10px; border-radius: 8px; margin-top: 8px; }
 
     @media (min-width: 768px) {
       body { padding: 24px; }
@@ -192,6 +187,7 @@
     <div class="summary-item"><div class="label">Diff Value</div><div class="value" id="diffVal">₹0</div></div>
   </div>
 
+  <!-- Active Session Ledger -->
   <div class="card">
     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
       <h2>Participants Dashboard</h2>
@@ -202,18 +198,25 @@
     </div>
 
     <div id="playerList" class="player-grid"></div>
+  </div>
 
-    <div class="btn-group" style="margin-top:14px;">
-      <button type="button" class="btn-add" style="width:100%;" onclick="saveSessionLocally()">Save Session to Database</button>
+  <!-- Relocated Session Management Card -->
+  <div class="card">
+    <h2>Session Actions</h2>
+    <div class="btn-group">
+      <button type="button" class="btn-add btn-sm" style="flex:2;" onclick="confirmAndSaveSession()">💾 Save Session to Database</button>
+      <button type="button" class="btn-warning btn-sm" style="flex:1;" onclick="confirmAndClearSession()">🧹 Clear Board</button>
     </div>
   </div>
 
+  <!-- Settlement Section -->
   <div class="card">
     <h2>End of Session Settlement</h2>
-    <button type="button" style="width:100%; padding: 12px; font-size: 0.95rem;" onclick="calculateSettlement()">Calculate Minimum Transactions</button>
+    <button type="button" style="width:100%; padding: 10px; font-size: 0.9rem;" onclick="calculateSettlement()">Calculate Minimum Transactions</button>
     <ul id="settlementResults" class="settlement-list" style="margin-top: 10px;"></ul>
   </div>
 
+  <!-- Activity Logs -->
   <div class="card">
     <div class="logs-header">
       <h2>Activity Logs</h2>
@@ -236,15 +239,27 @@
     <div class="logs-container"><ul id="logsList" class="logs-list"></ul></div>
   </div>
 
+  <!-- Sync Data -->
   <div class="card">
     <h2>Sync Data Across Systems</h2>
+    <p style="font-size:0.75rem; color:var(--subtext); margin-bottom:8px;">Push live data directly to your GitHub repository so all users see updated history automatically.</p>
+    
+    <details style="margin-bottom: 10px; background:#0f172a;">
+      <summary style="font-size:0.8rem; color:var(--primary);">⚙️ Configure GitHub Credentials</summary>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px; margin-top:8px;">
+        <input type="text" id="ghUser" placeholder="GitHub Username" onchange="saveGhConfig()">
+        <input type="text" id="ghRepo" placeholder="Repo Name (e.g. ledger-app)" onchange="saveGhConfig()">
+        <input type="password" id="ghToken" placeholder="Personal Access Token" style="grid-column:span 2;" onchange="saveGhConfig()">
+      </div>
+    </details>
+
     <div class="btn-group">
-      <button type="button" class="btn-sync" onclick="exportData()">📥 Export File</button>
-      <button type="button" class="btn-sync" onclick="document.getElementById('importFile').click()">📤 Import File</button>
-      <input type="file" id="importFile" class="file-input" accept=".json" onchange="importData(event)">
+      <button type="button" class="btn-sync btn-sm" style="width:100%;" onclick="pushToGitHub()">🚀 Push Data to GitHub</button>
+      <button type="button" class="btn-sm" style="width:100%; background:#334155;" onclick="fetchFromGitHub()">🔄 Pull Latest Data</button>
     </div>
   </div>
 
+  <!-- Collapsible Performance & Leaderboard -->
   <details class="card" id="performanceDetails">
     <summary>Performance & Cumulative Leaderboard</summary>
     <div style="margin-top: 10px;">
@@ -256,7 +271,7 @@
       
       <div id="statsBox" class="stats-box">
         <div><strong>Top Winner:</strong> <br><span id="statWinner" style="color:var(--accent)">-</span></div>
-        <div><strong>Biggest Loser:</strong> <br><span id="statLoser" style="color:var(--danger)">-</span></div>
+        <div><strong>Biggest Contributor:</strong> <br><span id="statContributor" style="color:var(--danger)">-</span></div>
       </div>
 
       <table>
@@ -271,84 +286,58 @@
     </div>
   </details>
 
+  <!-- Experimental Playground Section (Isolated) -->
+  <details class="card" style="border-color:#8b5cf6;">
+    <summary style="color:#8b5cf6;">🧪 Experimental Tools & Fun Playground</summary>
+    
+    <div class="exp-box">
+      <h3 style="font-size:0.85rem; margin-bottom:6px;">🎲 Random Participant Picker (Dealer / Picker)</h3>
+      <button type="button" class="btn-sm" style="background:#8b5cf6; width:100%;" onclick="pickRandomParticipant()">Spin / Pick Random Active Player</button>
+      <div id="randomPickerResult" style="font-size:0.9rem; font-weight:bold; color:var(--accent); text-align:center; margin-top:6px;"></div>
+    </div>
+
+    <div class="exp-box">
+      <h3 style="font-size:0.85rem; margin-bottom:6px;">🏆 Active Session MVP</h3>
+      <div id="activeMvpDisplay" style="font-size:0.85rem; color:var(--subtext);">No active session data yet.</div>
+    </div>
+  </details>
+
   <script>
-    // PWA Service Worker Registration
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js').then((reg) => {
-          console.log('Service Worker Registered!', reg);
-        }).catch((err) => {
-          console.error('Service Worker Registration Failed:', err);
-        });
+        navigator.serviceWorker.register('./sw.js').catch(err => console.error(err));
       });
     }
 
     const strictMasterRoster = ["SANDEEP", "RISHI", "KUNAL", "MOHINI", "HARI", "AKSHAY", "RAVI", "GAGAN", "ALOK"];
     const colorThemes = ["color-0", "color-1", "color-2", "color-3", "color-4", "color-5", "color-6", "color-7"];
 
-    const initialLiveSessions = [
-      {
-        sessionId: "S_1785008887866",
-        date: "2026-07-25T19:48:07.866Z",
-        entries: [
-          { name: "RISHI", investedCoins: 3000, finalCoins: 3000, netVal: 0 },
-          { name: "HARI", investedCoins: 4000, finalCoins: 700, netVal: -1650 },
-          { name: "KUNAL", investedCoins: 4000, finalCoins: 1500, netVal: -1250 },
-          { name: "MOHINI", investedCoins: 2000, finalCoins: 3600, netVal: 800 },
-          { name: "SANDEEP", investedCoins: 1000, finalCoins: 5200, netVal: 2100 }
-        ]
-      }
-    ];
-
-    const initialLiveLogs = [
-      { time: "2026-07-25 20:59:00", text: "Logs reset." },
-      { time: "2026-07-25 21:22:00", text: "Buy-in increased for RISHI: count = 2." },
-      { time: "2026-07-25 21:27:00", text: "Buy-in increased for RISHI: count = 3." },
-      { time: "2026-07-25 21:51:00", text: "Buy-in increased for HARI: count = 2." },
-      { time: "2026-07-25 22:05:00", text: "Buy-in increased for HARI: count = 3." },
-      { time: "2026-07-25 22:05:00", text: "Buy-in increased for MOHINI: count = 2." },
-      { time: "2026-07-25 22:12:00", text: "Buy-in increased for KUNAL: count = 2." },
-      { time: "2026-07-25 23:17:00", text: "Buy-in increased for KUNAL: count = 3." },
-      { time: "2026-07-25 23:31:00", text: "Buy-in increased for HARI: count = 4." },
-      { time: "2026-07-25 23:33:00", text: "Buy-in increased for KUNAL: count = 4." },
-      { time: "2026-07-25 23:44:00", text: "Calculated minimum transaction settlement." },
-      { time: "2026-07-26 01:07:00", text: "Calculated minimum transaction settlement." },
-      { time: "2026-07-26 01:08:00", text: "Calculated minimum transaction settlement." },
-      { time: "2026-07-26 01:12:00", text: "Calculated minimum transaction settlement." },
-      { time: "2026-07-26 01:17:00", text: "Calculated minimum transaction settlement." },
-      { time: "2026-07-26 01:18:00", text: "Saved session to database." }
-    ];
-
     let entryMode = 'COINS'; 
     let currentFilter = 'ALL';
     
-    let rawSaved = JSON.parse(localStorage.getItem("ledger_db_sessions"));
-    let savedSessions = initialLiveSessions;
-
-    if (rawSaved && Array.isArray(rawSaved)) {
-      savedSessions = rawSaved.filter(session => {
-        return session.entries.every(e => !["ALEX", "BOB", "CHARLIE", "DAVID", "EMMA", "FRANK", "GRACE", "HENRY", "IVY", "JACK"].includes(e.name.toUpperCase()));
-      });
-      if (savedSessions.length === 0) savedSessions = initialLiveSessions;
-    }
-
+    let savedSessions = JSON.parse(localStorage.getItem("ledger_db_sessions")) || [];
     let players = JSON.parse(localStorage.getItem("ledger_active_players")) || [];
-    let logs = JSON.parse(localStorage.getItem("ledger_activity_logs")) || initialLiveLogs;
+    let logs = JSON.parse(localStorage.getItem("ledger_activity_logs")) || [];
 
     if (localStorage.getItem("ledger_coin_count")) document.getElementById("coinCount").value = localStorage.getItem("ledger_coin_count");
     if (localStorage.getItem("ledger_curr_val")) document.getElementById("currencyVal").value = localStorage.getItem("ledger_curr_val");
     if (localStorage.getItem("ledger_buyin_coins")) document.getElementById("buyInCoins").value = localStorage.getItem("ledger_buyin_coins");
 
+    document.getElementById("ghUser").value = localStorage.getItem("gh_user") || "";
+    document.getElementById("ghRepo").value = localStorage.getItem("gh_repo") || "";
+    document.getElementById("ghToken").value = localStorage.getItem("gh_token") || "";
+
+    function saveGhConfig() {
+      localStorage.setItem("gh_user", document.getElementById("ghUser").value.trim());
+      localStorage.setItem("gh_repo", document.getElementById("ghRepo").value.trim());
+      localStorage.setItem("gh_token", document.getElementById("ghToken").value.trim());
+    }
+
     function validateAddButton() {
       const input = document.getElementById("playerName");
       const btn = document.getElementById("btnAddPlayer");
-      const name = input.value.trim();
-
-      if (name.length > 0) {
-        btn.classList.remove("disabled");
-      } else {
-        btn.classList.add("disabled");
-      }
+      if (input.value.trim().length > 0) btn.classList.remove("disabled");
+      else btn.classList.add("disabled");
     }
 
     function updateSuggestions() {
@@ -364,11 +353,7 @@
       logDateSelect.innerHTML = `<option value="ALL">All Dates</option>`;
       
       let allNames = new Set(strictMasterRoster);
-      savedSessions.forEach(s => s.entries.forEach(e => {
-        if (!["ALEX", "BOB", "CHARLIE", "DAVID", "EMMA", "FRANK", "GRACE", "HENRY", "IVY", "JACK"].includes(e.name.toUpperCase())) {
-          allNames.add(e.name.toUpperCase());
-        }
-      }));
+      savedSessions.forEach(s => s.entries.forEach(e => allNames.add(e.name.toUpperCase())));
 
       const activeNamesInSession = players.map(p => p.name.toUpperCase());
 
@@ -387,9 +372,7 @@
 
       let uniqueDates = new Set();
       logs.forEach(l => {
-        if (l.time && l.time.length >= 10) {
-          uniqueDates.add(l.time.substring(0, 10));
-        }
+        if (l.time && l.time.length >= 10) uniqueDates.add(l.time.substring(0, 10));
       });
 
       Array.from(uniqueDates).sort().reverse().forEach(d => {
@@ -427,7 +410,7 @@
     }
 
     function resetLogs() {
-      if (confirm("Clear all logs?")) {
+      if (confirm("Clear all activity logs?")) {
         const nowStr = new Date().toISOString().replace('T', ' ').substring(0, 19);
         logs = [{ time: nowStr, text: "Logs reset." }];
         saveState(); renderLogs();
@@ -442,21 +425,13 @@
       list.innerHTML = "";
 
       let filtered = logs.filter(log => {
-        let matchDate = true;
-        let matchName = true;
-
-        if (selectedDate !== "ALL") {
-          matchDate = log.time.startsWith(selectedDate);
-        }
-        if (selectedName !== "ALL") {
-          matchName = log.text.toUpperCase().includes(selectedName);
-        }
-
+        let matchDate = (selectedDate === "ALL") || log.time.startsWith(selectedDate);
+        let matchName = (selectedName === "ALL") || log.text.toUpperCase().includes(selectedName);
         return matchDate && matchName;
       });
 
       if (filtered.length === 0) {
-        list.innerHTML = "<li>No logs found for selected date/filter.</li>";
+        list.innerHTML = "<li>No logs found.</li>";
         return;
       }
 
@@ -477,25 +452,14 @@
       const input = document.getElementById("playerName");
       let name = input.value.trim().toUpperCase();
 
-      if (!name) {
-        alert("Please enter a valid participant name!");
-        return;
-      }
-
-      if (players.some(p => p.name.toUpperCase() === name)) {
-        alert(`DUPLICATE ERROR: "${name}" is already in the active session!`);
-        return;
-      }
+      if (!name) return alert("Please enter a valid participant name!");
+      if (players.some(p => p.name.toUpperCase() === name)) return alert(`DUPLICATE ERROR: "${name}" is already in active session!`);
 
       let isKnown = strictMasterRoster.includes(name) || savedSessions.some(s => s.entries.some(e => e.name.toUpperCase() === name));
 
       if (!isKnown) {
-        let confirm1 = confirm(`"${name}" is NOT in the database roster.\n\nAre you sure you want to create a NEW participant?`);
-        if (!confirm1) return;
-
-        let confirm2 = confirm(`Double Confirmation:\n\nPlease confirm adding "${name}" permanently to the roster database.`);
-        if (!confirm2) return;
-
+        if (!confirm(`"${name}" is NOT in database. Add new participant?`)) return;
+        if (!confirm(`Double Confirmation: Add "${name}" permanently?`)) return;
         strictMasterRoster.push(name);
       }
       
@@ -564,6 +528,8 @@
           elem.style.color = netVal >= 0 ? "var(--accent)" : "var(--danger)";
         }
       });
+
+      updateExperimentalMvp();
     }
 
     function renderPlayerCards() {
@@ -578,7 +544,6 @@
         
         let inputLabel = entryMode === 'COINS' ? 'Final Coins' : 'Final Value (₹)';
         let inputValue = p.cashOutCoins ? (entryMode === 'COINS' ? p.cashOutCoins : (p.cashOutCoins * rate).toFixed(2)) : '';
-        
         let colorClass = colorThemes[idx % colorThemes.length];
 
         const card = document.createElement("div");
@@ -625,10 +590,19 @@
       saveState();
     }
 
-    function saveSessionLocally() {
+    // Double Confirmation + Math Challenge (2 + 4 = 6)
+    function confirmAndSaveSession() {
       if (players.length === 0) return alert("Add participants first!");
-      const rate = getCoinRate();
 
+      const confirm1 = confirm("CRUCIAL ACTION: Save current session to database?");
+      if (!confirm1) return;
+
+      const mathAnswer = prompt("SECURITY VERIFICATION (Step 2 of 2):\n\nWhat is 2 + 4?");
+      if (mathAnswer === null || mathAnswer.trim() !== "6") {
+        return alert("Security check failed! Session was NOT saved.");
+      }
+
+      const rate = getCoinRate();
       const sessionRecord = {
         sessionId: "S_" + Date.now(),
         date: new Date().toISOString(),
@@ -645,10 +619,24 @@
 
       savedSessions.unshift(sessionRecord);
       addLog("Saved session to database.");
-      
-      players = [];
       saveState();
-      alert("Session saved successfully! Board cleared for next session.");
+      alert("Session saved successfully to database!");
+      renderLeaderboard();
+    }
+
+    function confirmAndClearSession() {
+      if (players.length === 0) return alert("No active participants on board!");
+
+      const confirm1 = confirm("CRUCIAL ACTION: Clear all active participants from dashboard?");
+      if (!confirm1) return;
+
+      const mathAnswer = prompt("SECURITY VERIFICATION (Step 2 of 2):\n\nWhat is 2 + 4?");
+      if (mathAnswer === null || mathAnswer.trim() !== "6") {
+        return alert("Security check failed! Board was NOT cleared.");
+      }
+
+      players = [];
+      addLog("Cleared active session dashboard.");
       renderAll();
     }
 
@@ -742,10 +730,10 @@
         let best = sorted[0];
         let worst = sorted[sorted.length - 1];
         document.getElementById("statWinner").innerText = `${best.name} (+₹${best.netVal.toFixed(2)})`;
-        document.getElementById("statLoser").innerText = `${worst.name} (₹${worst.netVal.toFixed(2)})`;
+        document.getElementById("statContributor").innerText = `${worst.name} (₹${worst.netVal.toFixed(2)})`;
       } else {
         document.getElementById("statWinner").innerText = "-";
-        document.getElementById("statLoser").innerText = "-";
+        document.getElementById("statContributor").innerText = "-";
       }
 
       sorted.forEach((p, idx) => {
@@ -762,44 +750,117 @@
       renderLeaderboard();
     }
 
-    function exportData() {
-      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify({ savedSessions, logs, knownRoster: strictMasterRoster }, null, 2));
-      const anchor = document.createElement('a');
-      anchor.href = dataStr;
-      anchor.download = `ledger_data_${new Date().toISOString().slice(0,10)}.json`;
-      document.body.appendChild(anchor); anchor.click(); anchor.remove();
-      addLog("Exported data file.");
-    }
-    
-    function importData(e) {
-      const file = e.target.files[0]; if (!file) return;
-      const reader = new FileReader();
-      reader.onload = function(e) {
-        try {
-          const imp = JSON.parse(e.target.result);
-          let impSessions = Array.isArray(imp) ? imp : (imp.savedSessions || []);
-          let impLogs = Array.isArray(imp) ? [] : (imp.logs || []);
-          
-          let addedS = 0;
-          impSessions.forEach(s => { 
-            if (!savedSessions.some(curr => curr.sessionId === s.sessionId)) { 
-              savedSessions.push(s); 
-              addedS++; 
-            }
-          });
+    // Direct GitHub Integration
+    async function pushToGitHub() {
+      const user = document.getElementById("ghUser").value.trim();
+      const repo = document.getElementById("ghRepo").value.trim();
+      const token = document.getElementById("ghToken").value.trim();
 
-          impLogs.forEach(l => { 
-            if (!logs.some(curr => curr.time === l.time && curr.text === l.text)) { 
-              logs.push(l); 
-            }
-          });
-          
-          savedSessions.sort((a,b) => new Date(b.date) - new Date(a.date));
+      if (!user || !repo || !token) {
+        return alert("Please configure your GitHub credentials in settings first!");
+      }
+
+      const filePath = "data.json";
+      const apiUrl = `https://api.github.com/repos/${user}/${repo}/contents/${filePath}`;
+      const payload = { savedSessions, logs, knownRoster: strictMasterRoster };
+      const contentEncoded = btoa(unescape(encodeURIComponent(JSON.stringify(payload, null, 2))));
+
+      try {
+        let sha = "";
+        const getRes = await fetch(apiUrl, {
+          headers: { "Authorization": `token ${token}` }
+        });
+
+        if (getRes.ok) {
+          const getData = await getRes.json();
+          sha = getData.sha;
+        }
+
+        const putRes = await fetch(apiUrl, {
+          method: "PUT",
+          headers: {
+            "Authorization": `token ${token}`,
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            message: `Update ledger data [${new Date().toISOString().substring(0, 10)}]`,
+            content: contentEncoded,
+            sha: sha || undefined
+          })
+        });
+
+        if (putRes.ok) {
+          alert("Successfully pushed data to GitHub repository!");
+          addLog("Pushed live data to GitHub repo.");
+        } else {
+          alert("GitHub Push Failed. Check credentials and token permissions.");
+        }
+      } catch (err) {
+        console.error(err);
+        alert("Error connecting to GitHub API.");
+      }
+    }
+
+    async function fetchFromGitHub() {
+      const user = document.getElementById("ghUser").value.trim();
+      const repo = document.getElementById("ghRepo").value.trim();
+
+      if (!user || !repo) return alert("Enter Username and Repo Name first!");
+
+      const rawUrl = `https://raw.githubusercontent.com/${user}/${repo}/main/data.json`;
+
+      try {
+        const res = await fetch(rawUrl + `?t=${Date.now()}`);
+        if (res.ok) {
+          const data = await res.json();
+          if (data.savedSessions) savedSessions = data.savedSessions;
+          if (data.logs) logs = data.logs;
           saveState(); renderAll();
-          alert(`Merged: Added ${addedS} session(s)!`);
-        } catch (err) { alert("Invalid file."); }
-      };
-      reader.readAsText(file);
+          alert("Pulled latest live data from GitHub!");
+        } else {
+          alert("Could not find data.json on GitHub branch.");
+        }
+      } catch (err) {
+        alert("Failed to fetch data from GitHub.");
+      }
+    }
+
+    // --- EXPERIMENTAL FUN FEATURES (Isolated) ---
+    function pickRandomParticipant() {
+      const resultElem = document.getElementById("randomPickerResult");
+      if (players.length === 0) {
+        resultElem.innerText = "Add active participants first!";
+        return;
+      }
+      const randomIndex = Math.floor(Math.random() * players.length);
+      const chosen = players[randomIndex].name;
+      resultElem.innerText = `🎲 Chosen Participant: ${chosen}`;
+    }
+
+    function updateExperimentalMvp() {
+      const display = document.getElementById("activeMvpDisplay");
+      if (players.length === 0) {
+        display.innerText = "No active session data yet.";
+        return;
+      }
+
+      const rate = getCoinRate();
+      let bestNet = -Infinity;
+      let mvpName = "-";
+
+      players.forEach(p => {
+        const netVal = (p.cashOutCoins - (p.buyIns * p.buyInCoins)) * rate;
+        if (netVal > bestNet) {
+          bestNet = netVal;
+          mvpName = p.name;
+        }
+      });
+
+      if (bestNet > 0) {
+        display.innerHTML = `⭐ <strong>${mvpName}</strong> is leading with <span style="color:var(--accent)">+₹${bestNet.toFixed(2)}</span>`;
+      } else {
+        display.innerText = "Session in progress... No positive net leader yet.";
+      }
     }
 
     // Initialize

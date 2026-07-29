@@ -1,0 +1,20 @@
+{
+  "savedSessions": [
+    {
+      "sessionId": "S_1785008887866",
+      "date": "2026-07-25T19:48:07.866Z",
+      "entries": [
+        { "name": "RISHI", "investedCoins": 3000, "finalCoins": 3000, "netVal": 0 },
+        { "name": "HARI", "investedCoins": 4000, "finalCoins": 700, "netVal": -1650 },
+        { "name": "KUNAL", "investedCoins": 4000, "finalCoins": 1500, "netVal": -1250 },
+        { "name": "MOHINI", "investedCoins": 2000, "finalCoins": 3600, "netVal": 800 },
+        { "name": "SANDEEP", "investedCoins": 1000, "finalCoins": 5200, "netVal": 2100 }
+      ]
+    }
+  ],
+  "logs": [
+    { "time": "2026-07-25 20:59:00", "text": "Logs reset." },
+    { "time": "2026-07-26 01:18:00", "text": "Saved session to database." }
+  ],
+  "knownRoster": ["SANDEEP", "RISHI", "KUNAL", "MOHINI", "HARI", "AKSHAY", "RAVI", "GAGAN", "ALOK"]
+}
