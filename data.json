@@ -189,11 +189,11 @@
   ],
   "activePlayers": [
     {
-      "id": 1785358948050,
-      "name": "SANDEEP",
+      "id": 1785361006344,
+      "name": "GAGAN",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 1000
+      "cashOutCoins": 0
     }
   ],
   "settings": {
@@ -202,6 +202,22 @@
     "buyInCoins": "1000"
   },
   "logs": [
+    {
+      "time": "2026-07-29 21:36:46",
+      "text": "Added \"GAGAN\" with 1 buy-in (1000c)."
+    },
+    {
+      "time": "2026-07-29 21:35:30",
+      "text": "Removed \"SANDEEP\"."
+    },
+    {
+      "time": "2026-07-29 21:19:34",
+      "text": "Calculated minimum transaction settlement."
+    },
+    {
+      "time": "2026-07-29 21:08:33",
+      "text": "Pushed live state to GitHub repo."
+    },
     {
       "time": "2026-07-29 21:08:04",
       "text": "Pushed live state to GitHub repo."
