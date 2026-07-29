@@ -175,7 +175,29 @@
       ]
     }
   ],
+  "activePlayers": [
+    {
+      "id": 1785358948050,
+      "name": "SANDEEP",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 1000
+    }
+  ],
+  "settings": {
+    "coinCount": "2",
+    "currencyVal": "1",
+    "buyInCoins": "1000"
+  },
   "logs": [
+    {
+      "time": "2026-07-29 21:02:28",
+      "text": "Added \"SANDEEP\" with 1 buy-in (1000c)."
+    },
+    {
+      "time": "2026-07-29 21:01:57",
+      "text": "Pulled latest live state from GitHub."
+    },
     {
       "time": "2026-07-29 20:49:44",
       "text": "Exported data file."
