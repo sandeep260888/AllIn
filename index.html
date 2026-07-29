@@ -131,9 +131,7 @@
 
     .settlement-list { list-style: none; }
     .settlement-list li { background: #0f172a; padding: 10px; border-radius: 8px; margin-bottom: 6px; border-left: 4px solid var(--accent); font-size: 0.9rem; }
-    .file-input { display: none; }
 
-    /* Experimental Fun Box */
     .exp-box { background: #0f172a; border: 1px dashed #8b5cf6; padding: 10px; border-radius: 8px; margin-top: 8px; }
 
     @media (min-width: 768px) {
@@ -200,7 +198,7 @@
     <div id="playerList" class="player-grid"></div>
   </div>
 
-  <!-- Relocated Session Management Card -->
+  <!-- Session Actions -->
   <div class="card">
     <h2>Session Actions</h2>
     <div class="btn-group">
@@ -239,24 +237,24 @@
     <div class="logs-container"><ul id="logsList" class="logs-list"></ul></div>
   </div>
 
-  <!-- Sync Data -->
+  <!-- Sync Data (Public Pull & Admin Push) -->
   <div class="card">
     <h2>Sync Data Across Systems</h2>
-    <p style="font-size:0.75rem; color:var(--subtext); margin-bottom:8px;">Push live data directly to your GitHub repository so all users see updated history automatically.</p>
+    <p style="font-size:0.75rem; color:var(--subtext); margin-bottom:10px;">Tap below to instantly update your app with the latest scores from GitHub. No password required!</p>
     
-    <details style="margin-bottom: 10px; background:#0f172a;">
-      <summary style="font-size:0.8rem; color:var(--primary);">⚙️ Configure GitHub Credentials</summary>
+    <div class="btn-group">
+      <button type="button" class="btn-sm" style="width:100%; background:#334155; padding: 12px; font-size: 0.95rem;" onclick="fetchFromGitHub()">🔄 Pull Latest Data</button>
+    </div>
+
+    <details style="margin-top: 12px; background:#0f172a;">
+      <summary style="font-size:0.8rem; color:var(--primary);">🔒 Admin Tools (Push Access Only)</summary>
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px; margin-top:8px;">
-        <input type="text" id="ghUser" placeholder="GitHub Username" onchange="saveGhConfig()">
-        <input type="text" id="ghRepo" placeholder="Repo Name (e.g. ledger-app)" onchange="saveGhConfig()">
+        <input type="text" id="ghUser" placeholder="GitHub Username" value="sandeep260888" onchange="saveGhConfig()">
+        <input type="text" id="ghRepo" placeholder="Repo Name" value="AllIn" onchange="saveGhConfig()">
         <input type="password" id="ghToken" placeholder="Personal Access Token" style="grid-column:span 2;" onchange="saveGhConfig()">
+        <button type="button" class="btn-sync btn-sm" style="grid-column:span 2; margin-top:4px;" onclick="pushToGitHub()">🚀 Push Data to GitHub</button>
       </div>
     </details>
-
-    <div class="btn-group">
-      <button type="button" class="btn-sync btn-sm" style="width:100%;" onclick="pushToGitHub()">🚀 Push Data to GitHub</button>
-      <button type="button" class="btn-sm" style="width:100%; background:#334155;" onclick="fetchFromGitHub()">🔄 Pull Latest Data</button>
-    </div>
   </div>
 
   <!-- Collapsible Performance & Leaderboard -->
@@ -286,7 +284,7 @@
     </div>
   </details>
 
-  <!-- Experimental Playground Section (Isolated) -->
+  <!-- Experimental Playground Section -->
   <details class="card" style="border-color:#8b5cf6;">
     <summary style="color:#8b5cf6;">🧪 Experimental Tools & Fun Playground</summary>
     
@@ -323,8 +321,8 @@
     if (localStorage.getItem("ledger_curr_val")) document.getElementById("currencyVal").value = localStorage.getItem("ledger_curr_val");
     if (localStorage.getItem("ledger_buyin_coins")) document.getElementById("buyInCoins").value = localStorage.getItem("ledger_buyin_coins");
 
-    document.getElementById("ghUser").value = localStorage.getItem("gh_user") || "";
-    document.getElementById("ghRepo").value = localStorage.getItem("gh_repo") || "";
+    document.getElementById("ghUser").value = localStorage.getItem("gh_user") || "sandeep260888";
+    document.getElementById("ghRepo").value = localStorage.getItem("gh_repo") || "AllIn";
     document.getElementById("ghToken").value = localStorage.getItem("gh_token") || "";
 
     function saveGhConfig() {
@@ -590,7 +588,6 @@
       saveState();
     }
 
-    // Double Confirmation + Math Challenge (2 + 4 = 6)
     function confirmAndSaveSession() {
       if (players.length === 0) return alert("Add participants first!");
 
@@ -620,7 +617,7 @@
       savedSessions.unshift(sessionRecord);
       addLog("Saved session to database.");
       saveState();
-      alert("Session saved successfully to database!");
+      alert("Session saved successfully to local database!");
       renderLeaderboard();
     }
 
@@ -750,14 +747,44 @@
       renderLeaderboard();
     }
 
-    // Direct GitHub Integration
+    // Zero-Credential Public Fetch Function
+    async function fetchFromGitHub() {
+      let user = document.getElementById("ghUser").value.trim() || "sandeep260888";
+      let repo = document.getElementById("ghRepo").value.trim() || "AllIn";
+
+      const rawUrl = `https://raw.githubusercontent.com/${user}/${repo}/main/data.json?t=${Date.now()}`;
+
+      try {
+        const res = await fetch(rawUrl);
+        if (res.ok) {
+          const data = await res.json();
+          if (data.savedSessions && Array.isArray(data.savedSessions)) savedSessions = data.savedSessions;
+          if (data.logs && Array.isArray(data.logs)) logs = data.logs;
+          if (data.knownRoster && Array.isArray(data.knownRoster)) {
+            data.knownRoster.forEach(name => {
+              if (!strictMasterRoster.includes(name.toUpperCase())) strictMasterRoster.push(name.toUpperCase());
+            });
+          }
+          saveState(); renderAll();
+          alert("✅ Successfully pulled the latest live database from GitHub!");
+          addLog("Pulled latest live data from GitHub.");
+        } else {
+          alert(`Could not find data.json on GitHub repository (${user}/${repo}).`);
+        }
+      } catch (err) {
+        console.error("Fetch error:", err);
+        alert("Network error trying to pull data from GitHub.");
+      }
+    }
+
+    // Direct Token-Authenticated Push Function
     async function pushToGitHub() {
       const user = document.getElementById("ghUser").value.trim();
       const repo = document.getElementById("ghRepo").value.trim();
       const token = document.getElementById("ghToken").value.trim();
 
       if (!user || !repo || !token) {
-        return alert("Please configure your GitHub credentials in settings first!");
+        return alert("Please enter Admin Access Token in Admin Settings first!");
       }
 
       const filePath = "data.json";
@@ -768,7 +795,10 @@
       try {
         let sha = "";
         const getRes = await fetch(apiUrl, {
-          headers: { "Authorization": `token ${token}` }
+          headers: { 
+            "Authorization": `Bearer ${token}`,
+            "Accept": "application/vnd.github.v3+json"
+          }
         });
 
         if (getRes.ok) {
@@ -779,8 +809,9 @@
         const putRes = await fetch(apiUrl, {
           method: "PUT",
           headers: {
-            "Authorization": `token ${token}`,
-            "Content-Type": "application/json"
+            "Authorization": `Bearer ${token}`,
+            "Content-Type": "application/json",
+            "Accept": "application/vnd.github.v3+json"
           },
           body: JSON.stringify({
             message: `Update ledger data [${new Date().toISOString().substring(0, 10)}]`,
@@ -790,10 +821,11 @@
         });
 
         if (putRes.ok) {
-          alert("Successfully pushed data to GitHub repository!");
+          alert("✅ Successfully pushed data to GitHub repository!");
           addLog("Pushed live data to GitHub repo.");
         } else {
-          alert("GitHub Push Failed. Check credentials and token permissions.");
+          const errData = await putRes.json();
+          alert(`GitHub Push Failed (${putRes.status}): ${errData.message}`);
         }
       } catch (err) {
         console.error(err);
@@ -801,31 +833,7 @@
       }
     }
 
-    async function fetchFromGitHub() {
-      const user = document.getElementById("ghUser").value.trim();
-      const repo = document.getElementById("ghRepo").value.trim();
-
-      if (!user || !repo) return alert("Enter Username and Repo Name first!");
-
-      const rawUrl = `https://raw.githubusercontent.com/${user}/${repo}/main/data.json`;
-
-      try {
-        const res = await fetch(rawUrl + `?t=${Date.now()}`);
-        if (res.ok) {
-          const data = await res.json();
-          if (data.savedSessions) savedSessions = data.savedSessions;
-          if (data.logs) logs = data.logs;
-          saveState(); renderAll();
-          alert("Pulled latest live data from GitHub!");
-        } else {
-          alert("Could not find data.json on GitHub branch.");
-        }
-      } catch (err) {
-        alert("Failed to fetch data from GitHub.");
-      }
-    }
-
-    // --- EXPERIMENTAL FUN FEATURES (Isolated) ---
+    // Experimental Tools
     function pickRandomParticipant() {
       const resultElem = document.getElementById("randomPickerResult");
       if (players.length === 0) {
@@ -863,7 +871,7 @@
       }
     }
 
-    // Initialize
+    // Boot Application
     renderAll();
     validateAddButton();
   </script>
