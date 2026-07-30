@@ -187,21 +187,15 @@
       ]
     }
   ],
-  "activePlayers": [
-    {
-      "id": 1785361006344,
-      "name": "GAGAN",
-      "buyIns": 1,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    }
-  ],
-  "settings": {
-    "coinCount": "2",
-    "currencyVal": "1",
-    "buyInCoins": "1000"
-  },
   "logs": [
+    {
+      "time": "2026-07-30 03:57:15",
+      "text": "Removed \"GAGAN\"."
+    },
+    {
+      "time": "2026-07-29 21:36:54",
+      "text": "Pushed live state to GitHub repo."
+    },
     {
       "time": "2026-07-29 21:36:46",
       "text": "Added \"GAGAN\" with 1 buy-in (1000c)."
