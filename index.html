@@ -29,9 +29,32 @@
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; -webkit-tap-highlight-color: transparent; }
     
     body { background-color: var(--bg); color: var(--text); padding: 12px; max-width: 950px; margin: 0 auto; line-height: 1.4; }
-    header { text-align: center; margin: 6px 0 16px; }
-    h1 { font-size: 1.5rem; color: var(--text); }
+    
+    /* Top Header with Embedded Refresh Button */
+    header { 
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
+      margin: 6px 0 16px; 
+      padding: 0 4px;
+    }
+    h1 { font-size: 1.4rem; color: var(--text); }
     h2 { font-size: 1.05rem; margin-bottom: 10px; }
+
+    .header-actions { display: flex; align-items: center; gap: 8px; }
+    .btn-header-sync {
+      background: #334155;
+      color: var(--text);
+      font-size: 0.8rem;
+      padding: 6px 12px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .btn-header-sync:active { opacity: 0.8; }
 
     .card { background-color: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 14px; margin-bottom: 14px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.3); }
     
@@ -71,8 +94,6 @@
     button.btn-danger { background: var(--danger); padding: 4px 8px; font-size: 0.75rem; border-radius: 4px; }
     button.btn-warning { background: var(--warning); color: #000; padding: 6px 10px; font-size: 0.8rem; }
     button.btn-sm { padding: 6px 10px; font-size: 0.8rem; }
-
-    .sync-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 
     .summary-bar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; background: #0f172a; padding: 12px; border-radius: 10px; margin-bottom: 14px; text-align: center; border: 1px solid var(--border); }
     .summary-item .label { font-size: 0.7rem; color: var(--subtext); text-transform: uppercase; }
@@ -151,8 +172,14 @@
 </head>
 <body>
 
+  <!-- Top Header with Quick Refresh -->
   <header>
     <h1>Ledger Transactions</h1>
+    <div class="header-actions">
+      <button type="button" class="btn-header-sync" onclick="manualRefreshData()">
+        <span>🔄</span> <span id="syncStatusText">Refresh</span>
+      </button>
+    </div>
   </header>
 
   <!-- Setup Section -->
@@ -239,18 +266,17 @@
     <div class="logs-container"><ul id="logsList" class="logs-list"></ul></div>
   </div>
 
-  <!-- Sync Data -->
+  <!-- Sync Data Card -->
   <div class="card">
-    <h2>Sync Data Across Systems</h2>
-    <p style="font-size:0.75rem; color:var(--subtext); margin-bottom:10px;">Sync active dashboard, session history, and logs with GitHub.</p>
+    <h2>Cloud Backup & Admin Sync</h2>
+    <p style="font-size:0.75rem; color:var(--subtext); margin-bottom:10px;">The app auto-syncs with GitHub every 15 minutes. Admin push is protected.</p>
     
-    <div class="sync-grid">
-      <button type="button" class="btn-sync btn-sm" onclick="pushToGitHub()">🚀 Push Data</button>
-      <button type="button" class="btn-sm" style="background:#334155;" onclick="fetchFromGitHub()">🔄 Pull Data</button>
+    <div class="btn-group">
+      <button type="button" class="btn-sync btn-sm" style="width:100%; padding: 10px;" onclick="pushToGitHub()">🚀 Push Current Screen to GitHub</button>
     </div>
 
     <div style="margin-top: 10px;">
-      <button type="button" class="btn-danger" style="width:100%; padding: 8px; font-size:0.75rem;" onclick="clearLocalDeviceCache()">⚠️ Clear Local Device Cache / Reset Device</button>
+      <button type="button" class="btn-danger" style="width:100%; padding: 8px; font-size:0.75rem;" onclick="clearLocalDeviceCache()">⚠️ Clear Local Cache / Reset Device</button>
     </div>
   </div>
 
@@ -592,7 +618,6 @@
     function confirmAndSaveSession() {
       if (players.length === 0) return alert("Add participants first!");
 
-      // Diff Check Rule
       const diffVal = getDiffValue();
       if (Math.abs(diffVal) > 0.01) {
         return alert(`SETTLEMENT ERROR: Diff Value is ₹${diffVal.toFixed(2)}.\n\nPlease adjust participant final coins/values so Diff Value is ₹0.00 before saving!`);
@@ -754,15 +779,10 @@
       renderLeaderboard();
     }
 
-    // Intelligent Fetching (De-duplicates Sessions by sessionId & restores screen)
-    async function fetchFromGitHub() {
-      if (players.length > 0) {
-        const warn1 = confirm("⚠️ ALERT: Pulling live data from GitHub will overwrite and replace your current active Participants Dashboard!\n\nDo you want to proceed?");
-        if (!warn1) return;
-
-        const warn2 = confirm("DOUBLE CONFIRMATION:\n\nAre you sure? Any unsaved edits on your current board will be lost!");
-        if (!warn2) return;
-      }
+    // --- SMART AUTO-SYNC & FETCH LOGIC ---
+    async function autoFetchFromGitHub(isManual = false) {
+      const statusText = document.getElementById("syncStatusText");
+      if (statusText) statusText.innerText = "Syncing...";
 
       const rawUrl = `https://raw.githubusercontent.com/${GH_USER}/${GH_REPO}/main/data.json?t=${Date.now()}`;
 
@@ -771,7 +791,7 @@
         if (res.ok) {
           const data = await res.json();
           
-          // De-duplicate & Merge Sessions by unique sessionId
+          // 1. Always Merge Saved Sessions safely by unique sessionId
           if (data.savedSessions && Array.isArray(data.savedSessions)) {
             let sessionMap = new Map();
             savedSessions.forEach(s => sessionMap.set(s.sessionId, s));
@@ -780,15 +800,19 @@
           }
 
           if (data.logs && Array.isArray(data.logs)) logs = data.logs;
-          
-          if (data.settings) {
-            if (data.settings.coinCount) document.getElementById("coinCount").value = data.settings.coinCount;
-            if (data.settings.currencyVal) document.getElementById("currencyVal").value = data.settings.currencyVal;
-            if (data.settings.buyInCoins) document.getElementById("buyInCoins").value = data.settings.buyInCoins;
-          }
 
-          if (data.activePlayers && Array.isArray(data.activePlayers)) {
-            players = data.activePlayers;
+          // 2. Dashboard Update Logic
+          // If local board is empty OR user manually clicked refresh:
+          if (players.length === 0 || isManual) {
+            if (data.settings) {
+              if (data.settings.coinCount) document.getElementById("coinCount").value = data.settings.coinCount;
+              if (data.settings.currencyVal) document.getElementById("currencyVal").value = data.settings.currencyVal;
+              if (data.settings.buyInCoins) document.getElementById("buyInCoins").value = data.settings.buyInCoins;
+            }
+
+            if (data.activePlayers && Array.isArray(data.activePlayers)) {
+              players = data.activePlayers;
+            }
           }
 
           if (data.knownRoster && Array.isArray(data.knownRoster)) {
@@ -799,15 +823,23 @@
 
           saveState(); 
           renderAll();
-          alert("✅ Successfully pulled and synchronized live data from GitHub!");
-          addLog("Pulled latest live state from GitHub.");
+          if (statusText) statusText.innerText = "Synced";
+          if (isManual) alert("✅ Data synchronized with GitHub!");
         } else {
-          alert(`Could not find data.json on GitHub repository (${GH_USER}/${GH_REPO}).`);
+          if (statusText) statusText.innerText = "Error";
         }
       } catch (err) {
-        console.error("Fetch error:", err);
-        alert("Network error trying to pull data from GitHub.");
+        console.error("Auto fetch error:", err);
+        if (statusText) statusText.innerText = "Offline";
       }
+    }
+
+    function manualRefreshData() {
+      if (players.length > 0) {
+        const warn1 = confirm("⚠️ OVERWRITE NOTICE: Refreshing from GitHub will sync your active board with the latest cloud state.\n\nDo you want to proceed?");
+        if (!warn1) return;
+      }
+      autoFetchFromGitHub(true);
     }
 
     // Token-Authenticated Push Function
@@ -826,7 +858,6 @@
       const filePath = "data.json";
       const apiUrl = `https://api.github.com/repos/${GH_USER}/${GH_REPO}/contents/${filePath}`;
       
-      // Step A: Fetch remote data first to merge historical sessions safely
       let remoteSha = "";
       let remoteSessions = [];
       try {
@@ -848,7 +879,6 @@
         }
       } catch(e) { console.warn("Could not pre-fetch remote SHA", e); }
 
-      // Merge local and remote savedSessions by sessionId
       let sessionMap = new Map();
       remoteSessions.forEach(s => sessionMap.set(s.sessionId, s));
       savedSessions.forEach(s => sessionMap.set(s.sessionId, s));
@@ -898,7 +928,6 @@
       }
     }
 
-    // Wipe Device Cache & Storage Safeguard
     function clearLocalDeviceCache() {
       const confirm1 = confirm("⚠️ DANGER: Clear all local browser storage, cached sessions, and active memory on THIS device?");
       if (!confirm1) return;
@@ -954,9 +983,24 @@
       }
     }
 
-    // Boot Application
+    // Boot Application & Enable Auto-Polling
     renderAll();
     validateAddButton();
+
+    // Auto-fetch on page boot
+    autoFetchFromGitHub(false);
+
+    // Auto-fetch every 15 minutes in background
+    setInterval(() => {
+      autoFetchFromGitHub(false);
+    }, 15 * 60 * 1000);
+
+    // Auto-fetch when user switches back to app tab
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "visible") {
+        autoFetchFromGitHub(false);
+      }
+    });
   </script>
 </body>
 </html>
