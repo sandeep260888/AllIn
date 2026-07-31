@@ -213,25 +213,46 @@
   ],
   "activePlayers": [
     {
-      "id": 1785425368370,
-      "name": "RAVI",
+      "id": 1785487141443,
+      "name": "AKSHAY",
       "buyIns": 1,
-      "buyInCoins": 1000,
-      "cashOutCoins": 3150
-    },
-    {
-      "id": 1785425378453,
-      "name": "KUNAL",
-      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
     {
-      "id": 1785425385975,
+      "id": 1785487145836,
+      "name": "HARI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1785487149685,
+      "name": "RAVI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1785487159244,
+      "name": "SANDEEP",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1785487186544,
       "name": "RISHI",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 1850
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1785487198657,
+      "name": "KUNAL",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "settings": {
@@ -240,6 +261,46 @@
     "buyInCoins": "1000"
   },
   "logs": [
+    {
+      "time": "2026-07-31 08:39:58",
+      "text": "Added \"KUNAL\" with 1 buy-in (1000c)."
+    },
+    {
+      "time": "2026-07-31 08:39:46",
+      "text": "Added \"RISHI\" with 1 buy-in (1000c)."
+    },
+    {
+      "time": "2026-07-31 08:39:19",
+      "text": "Added \"SANDEEP\" with 1 buy-in (1000c)."
+    },
+    {
+      "time": "2026-07-31 08:39:09",
+      "text": "Added \"RAVI\" with 1 buy-in (1000c)."
+    },
+    {
+      "time": "2026-07-31 08:39:05",
+      "text": "Added \"HARI\" with 1 buy-in (1000c)."
+    },
+    {
+      "time": "2026-07-31 08:39:01",
+      "text": "Added \"AKSHAY\" with 1 buy-in (1000c)."
+    },
+    {
+      "time": "2026-07-31 08:38:55",
+      "text": "Cleared active session dashboard."
+    },
+    {
+      "time": "2026-07-31 08:38:42",
+      "text": "Buy-in decreased for KUNAL: count = 1."
+    },
+    {
+      "time": "2026-07-31 08:38:42",
+      "text": "Buy-in decreased for KUNAL: count = 2."
+    },
+    {
+      "time": "2026-07-31 08:38:39",
+      "text": "Pushed live state to GitHub repo."
+    },
     {
       "time": "2026-07-30 03:57:15",
       "text": "Removed \"GAGAN\"."
