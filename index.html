@@ -70,9 +70,9 @@
     }
     .lock-banner.active-host { border-left-color: var(--accent); background: #064e3b; }
     .lock-banner.spectator { border-left-color: var(--warning); background: #451a03; }
-    .lock-banner.building { border-left-color: var(--warning); background: #78350f; animation: pulse 1.5s infinite; }
+    .lock-banner.building { border-left-color: var(--warning); background: #78350f; animation: pulse 1.2s infinite; }
 
-    @keyframes pulse { 0% { opacity: 0.85; } 50% { opacity: 1; } 100% { opacity: 0.85; } }
+    @keyframes pulse { 0% { opacity: 0.75; } 50% { opacity: 1; } 100% { opacity: 0.75; } }
 
     .card { background-color: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 14px; margin-bottom: 14px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.3); }
     
@@ -392,7 +392,7 @@
     }
 
     let activeSessionLock = null;
-    let syncStatusFlag = "IDLE"; // IDLE, BUILD_IN_PROGRESS, COMPLETE
+    let syncStatusFlag = "IDLE"; // IDLE, BUILD_IN_PROGRESS
     let savedSessions = JSON.parse(localStorage.getItem("ledger_db_sessions")) || [];
     let players = JSON.parse(localStorage.getItem("ledger_active_players")) || [];
     let logs = JSON.parse(localStorage.getItem("ledger_activity_logs")) || [];
@@ -651,8 +651,8 @@
 
       if (syncStatusFlag === "BUILD_IN_PROGRESS") {
         banner.className = "lock-banner building";
-        title.innerText = "⏳ CLOUD SYNC IN PROGRESS";
-        subtitle.innerText = "GitHub build deploying. Controls locked across all devices.";
+        title.innerText = "⏳ SYNCHRONIZING WITH CLOUD...";
+        subtitle.innerText = "Processing live state on GitHub. Controls temporarily locked across all devices.";
         actions.innerHTML = `<span style="font-size:0.75rem; color:var(--warning);">Syncing...</span>`;
 
         setupCard.classList.add("disabled-overlay");
@@ -696,20 +696,25 @@
       }
     }
 
-    // --- SESSION LOCK CONTROL ACTIONS ---
+    // --- OPTIMISTIC SESSION LOCK CONTROL ACTIONS ---
     async function startNewSession() {
       let token = getAdminToken();
       if (!token) return;
 
+      // 1. Optimistic Local Lock (Instantly disables UI buttons)
       activeSessionLock = {
         hostName: myUserName,
         hostDeviceId: myDeviceId,
         startTime: new Date().toISOString(),
         lastPushTime: new Date().toISOString()
       };
-
       players = [];
       addLog(`Started new active session`);
+
+      // 2. Render immediately so host sees instant transition
+      renderAll();
+
+      // 3. Push to GitHub
       await pushFullPayloadToGitHub(token, false, "BUILD_IN_PROGRESS");
     }
 
@@ -722,6 +727,8 @@
 
       activeSessionLock = null;
       addLog(`Released active session lock for handoff`);
+      renderAll();
+
       await pushFullPayloadToGitHub(token, false, "BUILD_IN_PROGRESS");
     }
 
@@ -735,6 +742,8 @@
       activeSessionLock = null;
       players = [];
       addLog(`Terminated active session`);
+      renderAll();
+
       await pushFullPayloadToGitHub(token, false, "BUILD_IN_PROGRESS");
     }
 
@@ -752,6 +761,8 @@
       };
 
       addLog(`Took over host duties for active session`);
+      renderAll();
+
       await pushFullPayloadToGitHub(token, false, "BUILD_IN_PROGRESS");
     }
 
@@ -791,6 +802,7 @@
       
       activeSessionLock = null;
       players = [];
+      renderAll();
 
       await pushFullPayloadToGitHub(token, false, "BUILD_IN_PROGRESS");
       alert("✅ Session saved successfully and live board closed!");
@@ -1074,7 +1086,7 @@
       if (token) await pushFullPayloadToGitHub(token, true, "IDLE");
     }
 
-    // SHA-SAFE PUSH ENGINE WITH BUILD-STATUS LOCKING
+    // SHA-SAFE PUSH ENGINE WITH OPTIMISTIC LOCKING
     async function pushFullPayloadToGitHub(token, isSilent = false, targetSyncStatus = "IDLE") {
       syncStatusFlag = targetSyncStatus;
       renderAll();
@@ -1085,6 +1097,10 @@
       let remoteSha = "";
       let remoteSessions = [];
       let remoteLogs = [];
+
+      // Preserve local state before pre-fetch
+      const currentLocalLock = activeSessionLock;
+      const currentLocalPlayers = players;
 
       try {
         const getRes = await fetch(apiUrl, {
@@ -1112,18 +1128,18 @@
 
       let mergedLogs = mergeLogs(logs, remoteLogs);
 
-      if (activeSessionLock && activeSessionLock.hostDeviceId === myDeviceId) {
-        activeSessionLock.lastPushTime = new Date().toISOString();
+      if (currentLocalLock && currentLocalLock.hostDeviceId === myDeviceId) {
+        currentLocalLock.lastPushTime = new Date().toISOString();
       }
 
       deviceRegistry[myDeviceId] = myUserName;
 
       const payload = {
         syncStatusFlag: targetSyncStatus,
-        activeSessionLock: activeSessionLock,
+        activeSessionLock: currentLocalLock,
         deviceRegistry: deviceRegistry,
         savedSessions: mergedSavedSessions,
-        activePlayers: players,
+        activePlayers: currentLocalPlayers,
         settings: {
           coinCount: document.getElementById("coinCount").value,
           currencyVal: document.getElementById("currencyVal").value,
@@ -1159,7 +1175,7 @@
           if (targetSyncStatus === "BUILD_IN_PROGRESS") {
             setTimeout(async () => {
               await pushFullPayloadToGitHub(token, true, "IDLE");
-            }, 8000); // 8-second build settling buffer
+            }, 6000); // 6-second build settling buffer
           } else {
             syncStatusFlag = "IDLE";
             renderAll();
