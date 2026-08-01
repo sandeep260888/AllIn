@@ -1,10 +1,5 @@
 {
-  "activeSessionLock": {
-    "hostName": "SANDEEP PHONE",
-    "hostDeviceId": "DEV_msacyyya_EZ4X",
-    "startTime": "2026-08-01T12:53:37.507Z",
-    "lastPushTime": "2026-08-01T12:53:38.603Z"
-  },
+  "activeSessionLock": null,
   "deviceRegistry": {
     "DEV_msabxpqv_Y2VU": "SANDEEP MAC",
     "DEV_msacyyya_EZ4X": "SANDEEP PHONE"
@@ -288,6 +283,11 @@
     "buyInCoins": "1000"
   },
   "logs": [
+    {
+      "id": "L_1785588824498_pnid",
+      "time": "2026-08-01 12:53:44",
+      "text": "Terminated active session • by SANDEEP PHONE"
+    },
     {
       "id": "L_1785588817507_yu5h",
       "time": "2026-08-01 12:53:37",
