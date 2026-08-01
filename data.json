@@ -3,7 +3,7 @@
     "hostName": "SANDEEP MAC",
     "hostDeviceId": "DEV_msabxpqv_Y2VU",
     "startTime": "2026-08-01T12:13:56.058Z",
-    "lastPushTime": "2026-08-01T12:14:30.920Z"
+    "lastPushTime": "2026-08-01T12:14:38.830Z"
   },
   "deviceRegistry": {
     "DEV_msabxpqv_Y2VU": "SANDEEP MAC"
@@ -301,6 +301,13 @@
       "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1785586478404,
+      "name": "SANDEEP",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "settings": {
@@ -309,6 +316,11 @@
     "buyInCoins": "1000"
   },
   "logs": [
+    {
+      "id": "L_1785586478404_ehp0",
+      "time": "2026-08-01 12:14:38",
+      "text": "Added \"SANDEEP\" with 1 buy-in (1000c) • by SANDEEP MAC"
+    },
     {
       "id": "L_1785586470361_8i6d",
       "time": "2026-08-01 12:14:30",
