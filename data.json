@@ -1,5 +1,10 @@
 {
-  "activeSessionLock": null,
+  "activeSessionLock": {
+    "hostName": "SANDEEP PHONE",
+    "hostDeviceId": "DEV_msacyyya_EZ4X",
+    "startTime": "2026-08-01T12:49:34.994Z",
+    "lastPushTime": "2026-08-01T12:49:35.899Z"
+  },
   "deviceRegistry": {
     "DEV_msabxpqv_Y2VU": "SANDEEP MAC",
     "DEV_msacyyya_EZ4X": "SANDEEP PHONE"
@@ -276,42 +281,18 @@
       ]
     }
   ],
-  "activePlayers": [
-    {
-      "id": 1785586452257,
-      "name": "AKSHAY",
-      "buyIns": 5,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1785586463055,
-      "name": "ABHISHEK",
-      "buyIns": 6,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1785586470361,
-      "name": "HARSHIT",
-      "buyIns": 3,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1785586478404,
-      "name": "SANDEEP",
-      "buyIns": 3,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    }
-  ],
+  "activePlayers": [],
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
     "buyInCoins": "1000"
   },
   "logs": [
+    {
+      "id": "L_1785588574994_j310",
+      "time": "2026-08-01 12:49:34",
+      "text": "Started new active session • by SANDEEP PHONE"
+    },
     {
       "id": "L_1785588456588_y3du",
       "time": "2026-08-01 12:47:36",
