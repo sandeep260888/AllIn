@@ -4,7 +4,7 @@
     "hostName": "SANDEEP MAC",
     "hostDeviceId": "DEV_msad5lur_EK0L",
     "startTime": "2026-08-01T14:14:05.831Z",
-    "lastPushTime": "2026-08-01T14:14:14.129Z"
+    "lastPushTime": "2026-08-01T14:15:17.623Z"
   },
   "deviceRegistry": {
     "DEV_msad5lur_EK0L": "SANDEEP MAC"
@@ -281,13 +281,105 @@
       ]
     }
   ],
-  "activePlayers": [],
+  "activePlayers": [
+    {
+      "id": 1785593664813,
+      "name": "ABHISHEK",
+      "buyIns": 6,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1785593667114,
+      "name": "AKSHAY",
+      "buyIns": 4,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1785593669512,
+      "name": "ALOK",
+      "buyIns": 2,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    }
+  ],
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
     "buyInCoins": "1000"
   },
   "logs": [
+    {
+      "id": "L_1785593686550_kydk",
+      "time": "2026-08-01 14:14:46",
+      "text": "Buy-in decreased for ALOK: count = 2 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785593685016_w7ky",
+      "time": "2026-08-01 14:14:45",
+      "text": "Buy-in increased for ALOK: count = 3 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785593684825_qpf8",
+      "time": "2026-08-01 14:14:44",
+      "text": "Buy-in increased for ALOK: count = 2 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785593683240_qf9v",
+      "time": "2026-08-01 14:14:43",
+      "text": "Buy-in increased for AKSHAY: count = 4 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785593681281_yf71",
+      "time": "2026-08-01 14:14:41",
+      "text": "Buy-in increased for ABHISHEK: count = 6 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785593680921_8y9h",
+      "time": "2026-08-01 14:14:40",
+      "text": "Buy-in increased for ABHISHEK: count = 5 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785593673448_kora",
+      "time": "2026-08-01 14:14:33",
+      "text": "Buy-in increased for AKSHAY: count = 3 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785593673283_n7qc",
+      "time": "2026-08-01 14:14:33",
+      "text": "Buy-in increased for AKSHAY: count = 2 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785593671830_rw5e",
+      "time": "2026-08-01 14:14:31",
+      "text": "Buy-in increased for ABHISHEK: count = 4 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785593671680_curh",
+      "time": "2026-08-01 14:14:31",
+      "text": "Buy-in increased for ABHISHEK: count = 3 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785593671481_1h4y",
+      "time": "2026-08-01 14:14:31",
+      "text": "Buy-in increased for ABHISHEK: count = 2 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785593669512_23eb",
+      "time": "2026-08-01 14:14:29",
+      "text": "Added \"ALOK\" with 1 buy-in (1000c) • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785593667114_o57j",
+      "time": "2026-08-01 14:14:27",
+      "text": "Added \"AKSHAY\" with 1 buy-in (1000c) • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785593664813_gm17",
+      "time": "2026-08-01 14:14:24",
+      "text": "Added \"ABHISHEK\" with 1 buy-in (1000c) • by SANDEEP MAC"
+    },
     {
       "id": "L_1785593645831_j6ja",
       "time": "2026-08-01 14:14:05",
