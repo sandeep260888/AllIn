@@ -1,10 +1,5 @@
 {
-  "activeSessionLock": {
-    "hostName": "SANDEEP MAC",
-    "hostDeviceId": "DEV_msabxpqv_Y2VU",
-    "startTime": "2026-08-01T12:13:56.058Z",
-    "lastPushTime": "2026-08-01T12:28:11.657Z"
-  },
+  "activeSessionLock": null,
   "deviceRegistry": {
     "DEV_msabxpqv_Y2VU": "SANDEEP MAC"
   },
@@ -316,6 +311,11 @@
     "buyInCoins": "1000"
   },
   "logs": [
+    {
+      "id": "L_1785588195978_t4no",
+      "time": "2026-08-01 12:43:15",
+      "text": "Released active session lock for handoff • by SANDEEP MAC"
+    },
     {
       "id": "L_1785587290907_8p7g",
       "time": "2026-08-01 12:28:10",
