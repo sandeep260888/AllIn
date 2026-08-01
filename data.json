@@ -4,7 +4,7 @@
     "hostName": "SANDEEP MAC",
     "hostDeviceId": "DEV_msad5lur_EK0L",
     "startTime": "2026-08-01T13:14:11.594Z",
-    "lastPushTime": "2026-08-01T13:46:23.805Z"
+    "lastPushTime": "2026-08-01T13:50:34.974Z"
   },
   "deviceRegistry": {
     "DEV_msad5lur_EK0L": "SANDEEP MAC"
@@ -299,7 +299,7 @@
     {
       "id": 1785590368906,
       "name": "AKSHAY",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -310,6 +310,11 @@
     "buyInCoins": "1000"
   },
   "logs": [
+    {
+      "id": "L_1785592234228_32j5",
+      "time": "2026-08-01 13:50:34",
+      "text": "Buy-in increased for AKSHAY: count = 3 • by SANDEEP MAC"
+    },
     {
       "id": "L_1785591983142_xjce",
       "time": "2026-08-01 13:46:23",
