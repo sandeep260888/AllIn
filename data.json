@@ -2,7 +2,8 @@
   "activeSessionLock": null,
   "deviceRegistry": {
     "DEV_msabxpqv_Y2VU": "SANDEEP MAC",
-    "DEV_msacyyya_EZ4X": "SANDEEP PHONE"
+    "DEV_msacyyya_EZ4X": "SANDEEP PHONE",
+    "DEV_msad5lur_EK0L": "SANDEEP MAC"
   },
   "savedSessions": [
     {
@@ -283,6 +284,11 @@
     "buyInCoins": "1000"
   },
   "logs": [
+    {
+      "id": "L_1785588965876_0jso",
+      "time": "2026-08-01 12:56:05",
+      "text": "Started new active session • by SANDEEP MAC"
+    },
     {
       "id": "L_1785588824498_pnid",
       "time": "2026-08-01 12:53:44",
