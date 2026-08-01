@@ -3,7 +3,7 @@
     "hostName": "SANDEEP MAC",
     "hostDeviceId": "DEV_msad5lur_EK0L",
     "startTime": "2026-08-01T13:00:07.931Z",
-    "lastPushTime": "2026-08-01T13:02:32.139Z"
+    "lastPushTime": "2026-08-01T13:02:40.501Z"
   },
   "deviceRegistry": {
     "DEV_msabxpqv_Y2VU": "SANDEEP MAC",
@@ -289,6 +289,20 @@
       "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1785589353593,
+      "name": "GAGAN",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1785589360077,
+      "name": "HARSHIT",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "settings": {
@@ -297,6 +311,11 @@
     "buyInCoins": "1000"
   },
   "logs": [
+    {
+      "id": "L_1785589360077_t0s5",
+      "time": "2026-08-01 13:02:40",
+      "text": "Added \"HARSHIT\" with 1 buy-in (1000c) • by SANDEEP MAC"
+    },
     {
       "id": "L_1785589351527_bjz4",
       "time": "2026-08-01 13:02:31",
