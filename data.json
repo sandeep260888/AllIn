@@ -3,7 +3,7 @@
     "hostName": "SANDEEP MAC",
     "hostDeviceId": "DEV_msad5lur_EK0L",
     "startTime": "2026-08-01T13:14:11.594Z",
-    "lastPushTime": "2026-08-01T13:19:29.478Z"
+    "lastPushTime": "2026-08-01T13:19:33.983Z"
   },
   "deviceRegistry": {
     "DEV_msad5lur_EK0L": "SANDEEP MAC"
@@ -294,6 +294,13 @@
       "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1785590373397,
+      "name": "ALOK",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "settings": {
@@ -302,6 +309,11 @@
     "buyInCoins": "1000"
   },
   "logs": [
+    {
+      "id": "L_1785590373397_t18w",
+      "time": "2026-08-01 13:19:33",
+      "text": "Added \"ALOK\" with 1 buy-in (1000c) • by SANDEEP MAC"
+    },
     {
       "id": "L_1785590368906_sf1c",
       "time": "2026-08-01 13:19:28",
