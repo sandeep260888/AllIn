@@ -4,7 +4,7 @@
     "hostName": "SANDEEP MAC",
     "hostDeviceId": "DEV_msad5lur_EK0L",
     "startTime": "2026-08-01T13:14:11.594Z",
-    "lastPushTime": "2026-08-01T13:50:34.974Z"
+    "lastPushTime": "2026-08-01T14:04:49.492Z"
   },
   "deviceRegistry": {
     "DEV_msad5lur_EK0L": "SANDEEP MAC"
@@ -285,7 +285,14 @@
     {
       "id": 1785590373397,
       "name": "ALOK",
-      "buyIns": 5,
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1785590368906,
+      "name": "AKSHAY",
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -293,13 +300,6 @@
       "id": 1785590366568,
       "name": "ABHISHEK",
       "buyIns": 2,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1785590368906,
-      "name": "AKSHAY",
-      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -310,6 +310,31 @@
     "buyInCoins": "1000"
   },
   "logs": [
+    {
+      "id": "L_1785593089383_icnb",
+      "time": "2026-08-01 14:04:49",
+      "text": "Buy-in decreased for ALOK: count = 1 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785593089203_6s4p",
+      "time": "2026-08-01 14:04:49",
+      "text": "Buy-in decreased for ALOK: count = 2 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785593089021_8wdi",
+      "time": "2026-08-01 14:04:49",
+      "text": "Buy-in decreased for ALOK: count = 3 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785593088837_ulog",
+      "time": "2026-08-01 14:04:48",
+      "text": "Buy-in decreased for ALOK: count = 4 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785593062320_fpso",
+      "time": "2026-08-01 14:04:22",
+      "text": "Calculated minimum transaction settlement • by SANDEEP MAC"
+    },
     {
       "id": "L_1785592234228_32j5",
       "time": "2026-08-01 13:50:34",
