@@ -3,7 +3,7 @@
     "hostName": "SANDEEP MAC",
     "hostDeviceId": "DEV_msad5lur_EK0L",
     "startTime": "2026-08-01T13:00:07.931Z",
-    "lastPushTime": "2026-08-01T13:02:57.704Z"
+    "lastPushTime": "2026-08-01T13:02:59.361Z"
   },
   "deviceRegistry": {
     "DEV_msabxpqv_Y2VU": "SANDEEP MAC",
@@ -293,7 +293,7 @@
     {
       "id": 1785589353593,
       "name": "GAGAN",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -311,6 +311,11 @@
     "buyInCoins": "1000"
   },
   "logs": [
+    {
+      "id": "L_1785589378986_g4oa",
+      "time": "2026-08-01 13:02:58",
+      "text": "Buy-in increased for GAGAN: count = 2 • by SANDEEP MAC"
+    },
     {
       "id": "L_1785589377226_q0jw",
       "time": "2026-08-01 13:02:57",
