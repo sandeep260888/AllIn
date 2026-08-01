@@ -3,7 +3,7 @@
     "hostName": "SANDEEP MAC",
     "hostDeviceId": "DEV_msabxpqv_Y2VU",
     "startTime": "2026-08-01T12:13:56.058Z",
-    "lastPushTime": "2026-08-01T12:24:03.506Z"
+    "lastPushTime": "2026-08-01T12:28:11.657Z"
   },
   "deviceRegistry": {
     "DEV_msabxpqv_Y2VU": "SANDEEP MAC"
@@ -291,7 +291,7 @@
     {
       "id": 1785586463055,
       "name": "ABHISHEK",
-      "buyIns": 5,
+      "buyIns": 6,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -316,6 +316,11 @@
     "buyInCoins": "1000"
   },
   "logs": [
+    {
+      "id": "L_1785587290907_8p7g",
+      "time": "2026-08-01 12:28:10",
+      "text": "Released active session lock for handoff • by SANDEEP MAC"
+    },
     {
       "id": "L_1785587043108_3128",
       "time": "2026-08-01 12:24:03",
