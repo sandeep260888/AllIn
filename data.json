@@ -2,8 +2,8 @@
   "activeSessionLock": {
     "hostName": "SANDEEP PHONE",
     "hostDeviceId": "DEV_msacyyya_EZ4X",
-    "startTime": "2026-08-01T12:49:34.994Z",
-    "lastPushTime": "2026-08-01T12:49:35.899Z"
+    "startTime": "2026-08-01T12:51:37.446Z",
+    "lastPushTime": "2026-08-01T12:51:38.541Z"
   },
   "deviceRegistry": {
     "DEV_msabxpqv_Y2VU": "SANDEEP MAC",
@@ -288,6 +288,11 @@
     "buyInCoins": "1000"
   },
   "logs": [
+    {
+      "id": "L_1785588697446_uvpd",
+      "time": "2026-08-01 12:51:37",
+      "text": "Started new active session • by SANDEEP PHONE"
+    },
     {
       "id": "L_1785588574994_j310",
       "time": "2026-08-01 12:49:34",
