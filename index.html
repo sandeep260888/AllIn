@@ -28,7 +28,7 @@
 
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; -webkit-tap-highlight-color: transparent; }
     
-    body { background-color: var(--bg); color: var(--text); padding: 12px; max-width: 950px; margin: 0 auto; line-height: 1.4; }
+    body { background-color: var(--bg); color: var(--text); padding: 12px; max-width: 950px; margin: 0 auto; line-height: 1.4; position: relative; }
     
     header { 
       display: flex; 
@@ -55,7 +55,7 @@
     }
     .btn-header-sync:active { opacity: 0.8; }
 
-    /* Session Lock Banner */
+    /* Session Lock & Build Banner */
     .lock-banner {
       background: #1e293b;
       border: 1px solid var(--border);
@@ -70,6 +70,9 @@
     }
     .lock-banner.active-host { border-left-color: var(--accent); background: #064e3b; }
     .lock-banner.spectator { border-left-color: var(--warning); background: #451a03; }
+    .lock-banner.building { border-left-color: var(--warning); background: #78350f; animation: pulse 1.5s infinite; }
+
+    @keyframes pulse { 0% { opacity: 0.85; } 50% { opacity: 1; } 100% { opacity: 0.85; } }
 
     .card { background-color: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 14px; margin-bottom: 14px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.3); }
     
@@ -96,15 +99,14 @@
     .btn-group { display: flex; gap: 8px; flex-wrap: wrap; }
     button { background: var(--primary); color: white; border: none; padding: 8px 12px; border-radius: 6px; font-weight: bold; cursor: pointer; font-size: 0.85rem; display: inline-flex; align-items: center; justify-content: center; gap: 4px; transition: all 0.2s; }
     button:active { opacity: 0.8; }
-    
-    button.btn-add { background: var(--accent); white-space: nowrap; height: 38px; padding: 0 16px; font-size: 0.9rem; }
-    button.btn-add.disabled {
+    button:disabled, button.disabled {
       background: #334155 !important;
       color: #94a3b8 !important;
       cursor: not-allowed !important;
       opacity: 0.6;
     }
-
+    
+    button.btn-add { background: var(--accent); white-space: nowrap; height: 38px; padding: 0 16px; font-size: 0.9rem; }
     button.btn-sync { background: #8b5cf6; }
     button.btn-danger { background: var(--danger); padding: 4px 8px; font-size: 0.75rem; border-radius: 4px; }
     button.btn-warning { background: var(--warning); color: #000; padding: 6px 10px; font-size: 0.8rem; }
@@ -172,6 +174,32 @@
 
     .disabled-overlay { opacity: 0.5; pointer-events: none; }
 
+    /* Sorting Cooldown Overlay */
+    #sortingOverlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(4px);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: var(--text);
+      font-weight: bold;
+      font-size: 1rem;
+      text-align: center;
+    }
+    .spinner {
+      width: 40px; height: 40px;
+      border: 4px solid var(--border);
+      border-top: 4px solid var(--primary);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-bottom: 12px;
+    }
+    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
     @media (min-width: 768px) {
       body { padding: 24px; }
       h1 { font-size: 1.8rem; }
@@ -186,6 +214,12 @@
 </head>
 <body>
 
+  <!-- Sorting / Processing Overlay -->
+  <div id="sortingOverlay">
+    <div class="spinner"></div>
+    <div id="overlayText">Sorting Participants Dashboard...</div>
+  </div>
+
   <!-- Top Header with Quick Refresh -->
   <header>
     <div>
@@ -193,13 +227,13 @@
       <div id="deviceBadge" style="font-size:0.7rem; color:var(--subtext);">Device: Loading...</div>
     </div>
     <div class="header-actions">
-      <button type="button" class="btn-header-sync" onclick="autoFetchFromGitHub(true)">
+      <button type="button" class="btn-header-sync" id="btnRefresh" onclick="autoFetchFromGitHub(true)">
         <span>🔄</span> <span id="syncStatusText">Refresh</span>
       </button>
     </div>
   </header>
 
-  <!-- Session Control Banner -->
+  <!-- Session Control & Build Status Banner -->
   <div id="lockBanner" class="lock-banner spectator">
     <div>
       <strong id="lockTitle">Checking Session Lock...</strong>
@@ -294,11 +328,11 @@
 
   <!-- Collapsible Performance & Leaderboard -->
   <details class="card" id="performanceDetails">
-    <summary id="historySummaryHeader" onclick="handleHistoryHeaderTap()">Performance & Cumulative Leaderboard <span id="testModeBadge" style="color:var(--warning); font-size:0.75rem;"></span></summary>
+    <summary>Performance & Cumulative Leaderboard <span id="testModeBadge" style="color:var(--warning); font-size:0.75rem; margin-left:6px;"></span></summary>
     <div style="margin-top: 10px;">
       <div class="tabs">
         <div class="tab active" onclick="switchFilter('ALL', this)">All Time</div>
-        <div class="tab" onclick="switchFilter('MONTH', this)">This Month</div>
+        <div class="tab" id="tabThisMonth" onclick="handleMonthTabTap(this)">This Month</div>
         <div class="tab" onclick="switchFilter('WEEK', this)">This Week</div>
       </div>
       
@@ -308,7 +342,7 @@
       </div>
 
       <table>
-        <thead><tr><th>Rank</th><th>Participant</th><th>Sessions</th><th>Net P/L (₹)</th></tr></thead>
+        <thead><tr><th>Rank</th><th>Participant</th><th>Sessions</th><th>Net P/L (₹)</th>${isTestModeActive ? '<th>Action</th>' : ''}</tr></thead>
         <tbody id="leaderboardBody"></tbody>
       </table>
 
@@ -334,16 +368,19 @@
     const GH_USER = "sandeep260888";
     const GH_REPO = "AllIn";
 
-    const strictMasterRoster = ["SANDEEP", "RISHI", "KUNAL", "MOHINI", "HARI", "AKSHAY", "RAVI", "GAGAN", "ALOK"];
+    const strictMasterRoster = ["SANDEEP", "RISHI", "KUNAL", "MOHINI", "HARI", "AKSHAY", "RAVI", "GAGAN", "ALOK", "ABHISHEK", "HARSHIT"];
     const colorThemes = ["color-0", "color-1", "color-2", "color-3", "color-4", "color-5", "color-6", "color-7"];
 
     let entryMode = 'COINS'; 
     let currentFilter = 'ALL';
     
-    // Testing mode 5-tap state
-    let historyTapCount = 0;
-    let historyTapTimer = null;
+    // 5-Tap Developer Mode
+    let monthTapCount = 0;
+    let monthTapTimer = null;
     let isTestModeActive = false;
+
+    // 30-Second Sorting Debounce
+    let sortDebounceTimer = null;
 
     // Device Identification State
     let myDeviceId = localStorage.getItem("device_id") || "";
@@ -354,7 +391,8 @@
       localStorage.setItem("device_id", myDeviceId);
     }
 
-    let activeSessionLock = null; // Stores { hostName, hostDeviceId, startTime, lastPushTime }
+    let activeSessionLock = null;
+    let syncStatusFlag = "IDLE"; // IDLE, BUILD_IN_PROGRESS, COMPLETE
     let savedSessions = JSON.parse(localStorage.getItem("ledger_db_sessions")) || [];
     let players = JSON.parse(localStorage.getItem("ledger_active_players")) || [];
     let logs = JSON.parse(localStorage.getItem("ledger_activity_logs")) || [];
@@ -366,10 +404,9 @@
         if (!requestedName) requestedName = "GUEST_" + Math.floor(Math.random() * 1000);
         requestedName = requestedName.trim().toUpperCase();
 
-        // Check if name is taken by another device
         let isTaken = Object.keys(existingRegistry).some(devId => devId !== myDeviceId && existingRegistry[devId] === requestedName);
         if (isTaken) {
-          alert(`❌ IDENTITY BLOCKED: "${requestedName}" is already registered to another device!\n\nPlease enter your distinct name.`);
+          alert(`❌ IDENTITY BLOCKED: "${requestedName}" is registered to another device!\n\nPlease enter your distinct name.`);
           return initUserIdentity(existingRegistry);
         }
 
@@ -423,11 +460,30 @@
     function validateAddButton() {
       const input = document.getElementById("playerName");
       const btn = document.getElementById("btnAddPlayer");
-      if (input.value.trim().length > 0 && isCurrentHost()) btn.classList.remove("disabled");
-      else btn.classList.add("disabled");
+      if (input.value.trim().length > 0 && isCurrentHost() && syncStatusFlag !== "BUILD_IN_PROGRESS") {
+        btn.classList.remove("disabled");
+      } else {
+        btn.classList.add("disabled");
+      }
+    }
+
+    function scheduleDashboardSort() {
+      clearTimeout(sortDebounceTimer);
+      sortDebounceTimer = setTimeout(() => {
+        const overlay = document.getElementById("sortingOverlay");
+        document.getElementById("overlayText").innerText = "Sorting Participants Dashboard by Buy-ins...";
+        overlay.style.display = "flex";
+
+        setTimeout(() => {
+          players.sort((a, b) => (b.buyIns * b.buyInCoins) - (a.buyIns * a.buyInCoins));
+          renderPlayerCards();
+          overlay.style.display = "none";
+        }, 2000);
+      }, 30000);
     }
 
     function addPlayer() {
+      if (syncStatusFlag === "BUILD_IN_PROGRESS") return alert("⏳ Sync in Progress: Please wait until GitHub finishes processing.");
       if (!isCurrentHost()) return alert("Read-Only Mode: Only the session host can add players.");
 
       const input = document.getElementById("playerName");
@@ -450,21 +506,25 @@
       addLog(`Added "${name}" with 1 buy-in (${buyInCoins}c)`);
       validateAddButton();
       renderAll();
+      scheduleDashboardSort();
       autoPushStateToGitHub();
     }
 
     function removePlayer(id) {
+      if (syncStatusFlag === "BUILD_IN_PROGRESS") return alert("⏳ Sync in Progress: Please wait until GitHub finishes processing.");
       if (!isCurrentHost()) return alert("Read-Only Mode: Only the session host can remove players.");
       const p = players.find(p => p.id === id);
       if (p) {
         players = players.filter(p => p.id !== id);
         addLog(`Removed "${p.name}"`);
         renderAll();
+        scheduleDashboardSort();
         autoPushStateToGitHub();
       }
     }
 
     function updateBuyIns(id, delta) {
+      if (syncStatusFlag === "BUILD_IN_PROGRESS") return alert("⏳ Sync in Progress: Please wait until GitHub finishes processing.");
       if (!isCurrentHost()) return alert("Read-Only Mode: Only the session host can adjust buy-ins.");
       const p = players.find(p => p.id === id);
       if (p) {
@@ -473,6 +533,7 @@
         if (p.buyIns !== prev) {
           addLog(`Buy-in ${delta>0?'increased':'decreased'} for ${p.name}: count = ${p.buyIns}`);
           renderAll();
+          scheduleDashboardSort();
           autoPushStateToGitHub();
         }
       }
@@ -487,6 +548,7 @@
       p.cashOutCoins = entryMode === 'COINS' ? numVal : (rate > 0 ? (numVal / rate) : 0);
       updateSummary();
       saveState();
+      scheduleDashboardSort();
     }
 
     function renderPlayerCards() {
@@ -494,10 +556,7 @@
       const container = document.getElementById("playerList");
       container.innerHTML = "";
 
-      // AUTO-SORT PARTICIPANTS DESCENDING BY BUY-IN COUNT
-      let sortedPlayers = [...players].sort((a, b) => (b.buyIns * b.buyInCoins) - (a.buyIns * a.buyInCoins));
-
-      sortedPlayers.forEach((p, idx) => {
+      players.forEach((p, idx) => {
         const investedCoins = p.buyIns * p.buyInCoins;
         const investedVal = investedCoins * rate;
         const netVal = (p.cashOutCoins - investedCoins) * rate;
@@ -505,14 +564,14 @@
         let inputLabel = entryMode === 'COINS' ? 'Final Coins' : 'Final Value (₹)';
         let inputValue = p.cashOutCoins ? (entryMode === 'COINS' ? p.cashOutCoins : (p.cashOutCoins * rate).toFixed(2)) : '';
         let colorClass = colorThemes[idx % colorThemes.length];
-        let disabledAttr = isCurrentHost() ? "" : "disabled";
+        let disabledAttr = (isCurrentHost() && syncStatusFlag !== "BUILD_IN_PROGRESS") ? "" : "disabled";
 
         const card = document.createElement("div");
         card.className = `player-card ${colorClass}`;
         card.innerHTML = `
           <div class="player-header">
             <span class="player-name" title="${p.name}">${p.name}</span>
-            ${isCurrentHost() ? `<button type="button" class="btn-danger" onclick="removePlayer(${p.id})">✕</button>` : ''}
+            ${isCurrentHost() ? `<button type="button" class="btn-danger" ${disabledAttr} onclick="removePlayer(${p.id})">✕</button>` : ''}
           </div>
           <div class="player-body-row">
             <div class="counter-wrapper">
@@ -590,21 +649,32 @@
 
       actions.innerHTML = "";
 
+      if (syncStatusFlag === "BUILD_IN_PROGRESS") {
+        banner.className = "lock-banner building";
+        title.innerText = "⏳ CLOUD SYNC IN PROGRESS";
+        subtitle.innerText = "GitHub build deploying. Controls locked across all devices.";
+        actions.innerHTML = `<span style="font-size:0.75rem; color:var(--warning);">Syncing...</span>`;
+
+        setupCard.classList.add("disabled-overlay");
+        actionsCard.classList.add("disabled-overlay");
+        return;
+      }
+
       if (!activeSessionLock) {
         banner.className = "lock-banner";
         title.innerText = "🟢 IDLE • No Active Session";
         subtitle.innerText = "Start a new session to host the live game.";
-        actions.innerHTML = `<button type="button" class="btn-add btn-sm" onclick="startNewSession()">🚀 Start Session</button>`;
+        actions.innerHTML = `<button type="button" id="btnStartSession" class="btn-add btn-sm" onclick="startNewSession()">🚀 Start Session</button>`;
 
         setupCard.classList.add("disabled-overlay");
         actionsCard.classList.add("disabled-overlay");
       } else if (isCurrentHost()) {
         banner.className = "lock-banner active-host";
         title.innerText = `👑 YOU ARE HOSTING (${myUserName})`;
-        subtitle.innerText = `Live session locked to your device. Auto-sync active.`;
+        subtitle.innerText = `Live session locked to your device. Event sync active.`;
         actions.innerHTML = `
-          <button type="button" class="btn-warning btn-sm" onclick="passSessionHandoff()">🤝 Pass Session</button>
-          <button type="button" class="btn-danger btn-sm" onclick="forceCloseSession()">🛑 Stop</button>
+          <button type="button" id="btnPassSession" class="btn-warning btn-sm" onclick="passSessionHandoff()">🤝 Pass Session</button>
+          <button type="button" id="btnStopSession" class="btn-danger btn-sm" onclick="forceCloseSession()">🛑 Stop</button>
         `;
 
         setupCard.classList.remove("disabled-overlay");
@@ -614,12 +684,11 @@
         title.innerText = `🔒 LIVE SESSION IN PROGRESS`;
         subtitle.innerText = `Host: ${activeSessionLock.hostName} (${activeSessionLock.hostDeviceId.slice(-6)}) • Read-Only Mode`;
 
-        // Check if session lock is expired (>12 Hours)
         const elapsedHours = (Date.now() - new Date(activeSessionLock.lastPushTime).getTime()) / (1000 * 3600);
         if (elapsedHours >= 12) {
-          actions.innerHTML = `<button type="button" class="btn-warning btn-sm" onclick="takeOverExpiredSession()">⚡ Take Over (Expired)</button>`;
+          actions.innerHTML = `<button type="button" id="btnTakeover" class="btn-warning btn-sm" onclick="takeOverExpiredSession()">⚡ Take Over (Expired)</button>`;
         } else {
-          actions.innerHTML = `<span style="font-size:0.75rem; color:var(--subtext);">Auto-Refreshing</span>`;
+          actions.innerHTML = `<span style="font-size:0.75rem; color:var(--subtext);">Spectator Mode</span>`;
         }
 
         setupCard.classList.add("disabled-overlay");
@@ -641,7 +710,7 @@
 
       players = [];
       addLog(`Started new active session`);
-      await pushFullPayloadToGitHub(token);
+      await pushFullPayloadToGitHub(token, false, "BUILD_IN_PROGRESS");
     }
 
     async function passSessionHandoff() {
@@ -651,15 +720,14 @@
       let token = getAdminToken();
       if (!token) return;
 
-      activeSessionLock = null; // Unlocks host requirement
+      activeSessionLock = null;
       addLog(`Released active session lock for handoff`);
-      await pushFullPayloadToGitHub(token);
+      await pushFullPayloadToGitHub(token, false, "BUILD_IN_PROGRESS");
     }
 
     async function forceCloseSession() {
       if (!isCurrentHost()) return;
       if (!confirm("🛑 STOP SESSION: Are you sure you want to terminate this live session?")) return;
-      if (!confirm("Double Confirmation: Unsaved live player cards will be cleared.")) return;
 
       let token = getAdminToken();
       if (!token) return;
@@ -667,7 +735,7 @@
       activeSessionLock = null;
       players = [];
       addLog(`Terminated active session`);
-      await pushFullPayloadToGitHub(token);
+      await pushFullPayloadToGitHub(token, false, "BUILD_IN_PROGRESS");
     }
 
     async function takeOverExpiredSession() {
@@ -684,10 +752,9 @@
       };
 
       addLog(`Took over host duties for active session`);
-      await pushFullPayloadToGitHub(token);
+      await pushFullPayloadToGitHub(token, false, "BUILD_IN_PROGRESS");
     }
 
-    // Settlement & Save Session
     async function confirmAndSaveSession() {
       if (!isCurrentHost()) return alert("Read-Only Mode: Only the host can save the session.");
       if (players.length === 0) return alert("Add participants first!");
@@ -722,11 +789,10 @@
       savedSessions.unshift(sessionRecord);
       addLog(`Saved session to database (${sessionRecord.sessionId})`);
       
-      // Close active session after saving
       activeSessionLock = null;
       players = [];
 
-      await pushFullPayloadToGitHub(token);
+      await pushFullPayloadToGitHub(token, false, "BUILD_IN_PROGRESS");
       alert("✅ Session saved successfully and live board closed!");
     }
 
@@ -758,7 +824,6 @@
       const totalValIn = totalCoinsIn * rate;
       const totalValOut = totalCoinsOut * rate;
 
-      // Discrepancy Audit Banner
       let auditHTML = `
         <div style="background:#0f172a; padding:10px; border-radius:8px; margin-top:8px; border:1px solid var(--border); font-size:0.8rem;">
           <div><strong>Total Collected (In):</strong> ₹${totalValIn.toFixed(2)}</div>
@@ -810,27 +875,38 @@
       addLog("Calculated minimum transaction settlement");
     }
 
-    // 5-TAP DEVELOPER TESTING MODE FOR SESSION HISTORY
-    function handleHistoryHeaderTap() {
-      historyTapCount++;
-      clearTimeout(historyTapTimer);
+    function handleMonthTabTap(elem) {
+      switchFilter('MONTH', elem);
+      monthTapCount++;
+      clearTimeout(monthTapTimer);
       
-      if (historyTapCount >= 5) {
+      if (monthTapCount >= 5) {
         isTestModeActive = !isTestModeActive;
-        historyTapCount = 0;
-        document.getElementById("testModeBadge").innerText = isTestModeActive ? "🧪 TEST MODE ACTIVE" : "";
-        alert(isTestModeActive ? "🧪 Testing Mode Unlocked: You can now edit/delete local historical sessions!" : "Testing Mode Disabled.");
+        monthTapCount = 0;
+        document.getElementById("testModeBadge").innerText = isTestModeActive ? "🧪 DEV MODE ACTIVE" : "";
+        alert(isTestModeActive ? "🧪 Local Dev Mode Unlocked: You can now delete or edit local sessions & leaderboards!" : "Local Dev Mode Disabled.");
         renderLeaderboard();
         return;
       }
 
-      historyTapTimer = setTimeout(() => { historyTapCount = 0; }, 1500);
+      monthTapTimer = setTimeout(() => { monthTapCount = 0; }, 1500);
     }
 
     function deleteHistoricalSession(sessionId) {
       if (!isTestModeActive) return;
-      if (confirm(`🗑️ TEST MODE: Delete session ${sessionId} locally?`)) {
+      if (confirm(`🗑️ DEV MODE: Delete session ${sessionId} locally?`)) {
         savedSessions = savedSessions.filter(s => s.sessionId !== sessionId);
+        saveState();
+        renderLeaderboard();
+      }
+    }
+
+    function deleteLeaderboardUser(userName) {
+      if (!isTestModeActive) return;
+      if (confirm(`🗑️ DEV MODE: Delete participant "${userName}" from local sessions?`)) {
+        savedSessions.forEach(s => {
+          s.entries = s.entries.filter(e => e.name !== userName);
+        });
         saveState();
         renderLeaderboard();
       }
@@ -895,7 +971,13 @@
 
       sorted.forEach((p, idx) => {
         const row = document.createElement("tr");
-        row.innerHTML = `<td>#${idx + 1}</td><td><strong>${p.name}</strong></td><td>${p.sessions}</td><td style="color:${p.netVal >= 0 ? 'var(--accent)' : 'var(--danger)'}; font-weight:bold;">${p.netVal >= 0 ? '+' : ''}₹${p.netVal.toFixed(2)}</td>`;
+        row.innerHTML = `
+          <td>#${idx + 1}</td>
+          <td><strong>${p.name}</strong></td>
+          <td>${p.sessions}</td>
+          <td style="color:${p.netVal >= 0 ? 'var(--accent)' : 'var(--danger)'}; font-weight:bold;">${p.netVal >= 0 ? '+' : ''}₹${p.netVal.toFixed(2)}</td>
+          ${isTestModeActive ? `<td><button type="button" class="btn-danger" onclick="deleteLeaderboardUser('${p.name}')">🗑️</button></td>` : ''}
+        `;
         tbody.appendChild(row);
       });
     }
@@ -926,6 +1008,9 @@
         if (res.ok) {
           const data = await res.json();
           
+          if (data.syncStatusFlag) syncStatusFlag = data.syncStatusFlag;
+          else syncStatusFlag = "IDLE";
+
           if (data.deviceRegistry) {
             deviceRegistry = data.deviceRegistry;
             initUserIdentity(deviceRegistry);
@@ -961,7 +1046,7 @@
 
           saveState(); 
           renderAll();
-          if (statusText) statusText.innerText = "Synced";
+          if (statusText) statusText.innerText = syncStatusFlag === "BUILD_IN_PROGRESS" ? "Syncing..." : "Synced";
           if (isManual) alert("✅ Data synchronized with GitHub!");
         } else {
           if (statusText) statusText.innerText = "Error";
@@ -986,10 +1071,14 @@
     async function autoPushStateToGitHub() {
       if (!isCurrentHost()) return;
       let token = localStorage.getItem("gh_token");
-      if (token) await pushFullPayloadToGitHub(token, true);
+      if (token) await pushFullPayloadToGitHub(token, true, "IDLE");
     }
 
-    async function pushFullPayloadToGitHub(token, isSilent = false) {
+    // SHA-SAFE PUSH ENGINE WITH BUILD-STATUS LOCKING
+    async function pushFullPayloadToGitHub(token, isSilent = false, targetSyncStatus = "IDLE") {
+      syncStatusFlag = targetSyncStatus;
+      renderAll();
+
       const filePath = "data.json";
       const apiUrl = `https://api.github.com/repos/${GH_USER}/${GH_REPO}/contents/${filePath}`;
       
@@ -1004,12 +1093,14 @@
 
         if (getRes.ok) {
           const getData = await getRes.json();
-          remoteSha = getData.sha;
+          remoteSha = getData.sha; // ALWAYS FETCH LATEST REMOTE SHA TO PREVENT 409 CONFLICTS
           const decodedContent = JSON.parse(decodeURIComponent(escape(atob(getData.content))));
           if (decodedContent.savedSessions) remoteSessions = decodedContent.savedSessions;
           if (decodedContent.logs) remoteLogs = decodedContent.logs;
         } else if (getRes.status === 401 || getRes.status === 403) {
           localStorage.removeItem("gh_token");
+          syncStatusFlag = "IDLE";
+          renderAll();
           return alert("Authentication Failed! Invalid or expired token.");
         }
       } catch(e) { console.warn("Could not pre-fetch remote SHA", e); }
@@ -1028,6 +1119,7 @@
       deviceRegistry[myDeviceId] = myUserName;
 
       const payload = {
+        syncStatusFlag: targetSyncStatus,
         activeSessionLock: activeSessionLock,
         deviceRegistry: deviceRegistry,
         savedSessions: mergedSavedSessions,
@@ -1061,13 +1153,27 @@
         if (putRes.ok) {
           savedSessions = mergedSavedSessions;
           logs = mergedLogs;
-          saveState(); renderAll();
-          if (!isSilent) alert("✅ State pushed to GitHub!");
+          saveState(); 
+
+          // If we pushed BUILD_IN_PROGRESS, schedule re-fetch to clear flag
+          if (targetSyncStatus === "BUILD_IN_PROGRESS") {
+            setTimeout(async () => {
+              await pushFullPayloadToGitHub(token, true, "IDLE");
+            }, 8000); // 8-second build settling buffer
+          } else {
+            syncStatusFlag = "IDLE";
+            renderAll();
+            if (!isSilent) alert("✅ State pushed & synchronized with GitHub!");
+          }
         } else {
+          syncStatusFlag = "IDLE";
+          renderAll();
           const errData = await putRes.json();
           alert(`GitHub Push Failed (${putRes.status}): ${errData.message}`);
         }
       } catch (err) {
+        syncStatusFlag = "IDLE";
+        renderAll();
         console.error(err);
         alert("Error connecting to GitHub API.");
       }
@@ -1081,18 +1187,6 @@
       }
       alert("Device cache cleared!");
       window.location.reload();
-    }
-
-    // Experimental Tools
-    function pickRandomParticipant() {
-      const resultElem = document.getElementById("randomPickerResult");
-      if (players.length === 0) {
-        resultElem.innerText = "Add active participants first!";
-        return;
-      }
-      const randomIndex = Math.floor(Math.random() * players.length);
-      const chosen = players[randomIndex].name;
-      resultElem.innerText = `🎲 Chosen Participant: ${chosen}`;
     }
 
     function updateSuggestions() {
@@ -1172,14 +1266,14 @@
       });
     }
 
-    // Boot Application & Enable Auto-Polling
+    // Boot Application & Enable Spectator Auto-Polling
     initUserIdentity({});
     renderAll();
     validateAddButton();
 
     autoFetchFromGitHub(false);
 
-    // Auto-fetch every 15 seconds for real-time live spectator viewing
+    // Auto-fetch spectator updates every 15 seconds
     setInterval(() => {
       autoFetchFromGitHub(false);
     }, 15 * 1000);
