@@ -4,7 +4,7 @@
     "hostName": "SANDEEP MAC",
     "hostDeviceId": "DEV_msad5lur_EK0L",
     "startTime": "2026-08-01T13:14:11.594Z",
-    "lastPushTime": "2026-08-01T14:05:58.260Z"
+    "lastPushTime": "2026-08-01T14:06:02.525Z"
   },
   "deviceRegistry": {
     "DEV_msad5lur_EK0L": "SANDEEP MAC"
@@ -285,7 +285,7 @@
     {
       "id": 1785590373397,
       "name": "ALOK",
-      "buyIns": 4,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -310,6 +310,11 @@
     "buyInCoins": "1000"
   },
   "logs": [
+    {
+      "id": "L_1785593159833_7w7v",
+      "time": "2026-08-01 14:05:59",
+      "text": "Buy-in decreased for ALOK: count = 2 • by SANDEEP MAC"
+    },
     {
       "id": "L_1785593157633_wlzp",
       "time": "2026-08-01 14:05:57",
