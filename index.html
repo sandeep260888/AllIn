@@ -30,12 +30,11 @@
     
     body { background-color: var(--bg); color: var(--text); padding: 12px; max-width: 950px; margin: 0 auto; line-height: 1.4; }
     
-    /* Top Header with Embedded Refresh Button */
     header { 
       display: flex; 
       justify-content: space-between; 
       align-items: center; 
-      margin: 6px 0 16px; 
+      margin: 6px 0 12px; 
       padding: 0 4px;
     }
     h1 { font-size: 1.4rem; color: var(--text); }
@@ -55,6 +54,22 @@
       gap: 4px;
     }
     .btn-header-sync:active { opacity: 0.8; }
+
+    /* Session Lock Banner */
+    .lock-banner {
+      background: #1e293b;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--primary);
+      border-radius: 8px;
+      padding: 10px 14px;
+      margin-bottom: 12px;
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .lock-banner.active-host { border-left-color: var(--accent); background: #064e3b; }
+    .lock-banner.spectator { border-left-color: var(--warning); background: #451a03; }
 
     .card { background-color: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 14px; margin-bottom: 14px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.3); }
     
@@ -150,19 +165,18 @@
     
     details { background: #0f172a; border: 1px solid var(--border); border-radius: 8px; padding: 10px; margin-top: 10px; }
     summary { font-weight: bold; cursor: pointer; font-size: 0.9rem; outline: none; color: var(--text); }
-    .history-item { border-bottom: 1px solid var(--border); padding: 8px 0; font-size: 0.8rem; }
+    .history-item { border-bottom: 1px solid var(--border); padding: 8px 0; font-size: 0.8rem; display: flex; justify-content: space-between; align-items: center; }
 
     .settlement-list { list-style: none; }
     .settlement-list li { background: #0f172a; padding: 10px; border-radius: 8px; margin-bottom: 6px; border-left: 4px solid var(--accent); font-size: 0.9rem; }
 
-    .exp-box { background: #0f172a; border: 1px dashed #8b5cf6; padding: 10px; border-radius: 8px; margin-top: 8px; }
+    .disabled-overlay { opacity: 0.5; pointer-events: none; }
 
     @media (min-width: 768px) {
       body { padding: 24px; }
       h1 { font-size: 1.8rem; }
       h2 { font-size: 1.2rem; }
       .card { padding: 18px; margin-bottom: 18px; }
-      
       .player-grid { grid-template-columns: repeat(3, 1fr); gap: 14px; }
       .player-card { padding: 14px; }
       .player-name { font-size: 1.1rem; }
@@ -174,16 +188,28 @@
 
   <!-- Top Header with Quick Refresh -->
   <header>
-    <h1>Ledger Transactions</h1>
+    <div>
+      <h1>Ledger Transactions</h1>
+      <div id="deviceBadge" style="font-size:0.7rem; color:var(--subtext);">Device: Loading...</div>
+    </div>
     <div class="header-actions">
-      <button type="button" class="btn-header-sync" onclick="manualRefreshData()">
+      <button type="button" class="btn-header-sync" onclick="autoFetchFromGitHub(true)">
         <span>🔄</span> <span id="syncStatusText">Refresh</span>
       </button>
     </div>
   </header>
 
+  <!-- Session Control Banner -->
+  <div id="lockBanner" class="lock-banner spectator">
+    <div>
+      <strong id="lockTitle">Checking Session Lock...</strong>
+      <div id="lockSubtitle" style="font-size:0.75rem; color:var(--subtext);">Connecting to GitHub...</div>
+    </div>
+    <div id="lockActions"></div>
+  </div>
+
   <!-- Setup Section -->
-  <div class="card">
+  <div class="card" id="setupCard">
     <div class="compact-settings">
       <span>Rate Ratio:</span>
       <div class="compact-inputs">
@@ -215,7 +241,7 @@
   </div>
 
   <!-- Active Session Ledger -->
-  <div class="card">
+  <div class="card" id="dashboardCard">
     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
       <h2>Participants Dashboard</h2>
       <div class="mode-toggle" style="width:160px;">
@@ -228,11 +254,11 @@
   </div>
 
   <!-- Session Actions -->
-  <div class="card">
+  <div class="card" id="actionsCard">
     <h2>Session Actions</h2>
     <div class="btn-group">
-      <button type="button" class="btn-add btn-sm" style="flex:2;" onclick="confirmAndSaveSession()">💾 Save Session to Database</button>
-      <button type="button" class="btn-warning btn-sm" style="flex:1;" onclick="confirmAndClearSession()">🧹 Clear Board</button>
+      <button type="button" id="btnSaveSession" class="btn-add btn-sm" style="flex:2;" onclick="confirmAndSaveSession()">💾 Save Session to Database</button>
+      <button type="button" id="btnClearBoard" class="btn-warning btn-sm" style="flex:1;" onclick="confirmAndClearSession()">🧹 Clear Board</button>
     </div>
   </div>
 
@@ -240,6 +266,7 @@
   <div class="card">
     <h2>End of Session Settlement</h2>
     <button type="button" style="width:100%; padding: 10px; font-size: 0.9rem;" onclick="calculateSettlement()">Calculate Minimum Transactions</button>
+    <div id="auditContainer"></div>
     <ul id="settlementResults" class="settlement-list" style="margin-top: 10px;"></ul>
   </div>
 
@@ -247,7 +274,6 @@
   <div class="card">
     <div class="logs-header">
       <h2>Activity Logs</h2>
-      <button type="button" class="btn-danger" onclick="resetLogs()">Reset Logs</button>
     </div>
     <div class="logs-filter-grid">
       <div>
@@ -266,23 +292,9 @@
     <div class="logs-container"><ul id="logsList" class="logs-list"></ul></div>
   </div>
 
-  <!-- Sync Data Card -->
-  <div class="card">
-    <h2>Cloud Backup & Admin Sync</h2>
-    <p style="font-size:0.75rem; color:var(--subtext); margin-bottom:10px;">The app auto-syncs with GitHub every 15 minutes. Admin push is protected.</p>
-    
-    <div class="btn-group">
-      <button type="button" class="btn-sync btn-sm" style="width:100%; padding: 10px;" onclick="pushToGitHub()">🚀 Push Current Screen to GitHub</button>
-    </div>
-
-    <div style="margin-top: 10px;">
-      <button type="button" class="btn-danger" style="width:100%; padding: 8px; font-size:0.75rem;" onclick="clearLocalDeviceCache()">⚠️ Clear Local Cache / Reset Device</button>
-    </div>
-  </div>
-
   <!-- Collapsible Performance & Leaderboard -->
   <details class="card" id="performanceDetails">
-    <summary>Performance & Cumulative Leaderboard</summary>
+    <summary id="historySummaryHeader" onclick="handleHistoryHeaderTap()">Performance & Cumulative Leaderboard <span id="testModeBadge" style="color:var(--warning); font-size:0.75rem;"></span></summary>
     <div style="margin-top: 10px;">
       <div class="tabs">
         <div class="tab active" onclick="switchFilter('ALL', this)">All Time</div>
@@ -307,21 +319,10 @@
     </div>
   </details>
 
-  <!-- Experimental Playground Section -->
-  <details class="card" style="border-color:#8b5cf6;">
-    <summary style="color:#8b5cf6;">🧪 Experimental Tools & Fun Playground</summary>
-    
-    <div class="exp-box">
-      <h3 style="font-size:0.85rem; margin-bottom:6px;">🎲 Random Participant Picker (Dealer / Picker)</h3>
-      <button type="button" class="btn-sm" style="background:#8b5cf6; width:100%;" onclick="pickRandomParticipant()">Spin / Pick Random Active Player</button>
-      <div id="randomPickerResult" style="font-size:0.9rem; font-weight:bold; color:var(--accent); text-align:center; margin-top:6px;"></div>
-    </div>
-
-    <div class="exp-box">
-      <h3 style="font-size:0.85rem; margin-bottom:6px;">🏆 Active Session MVP</h3>
-      <div id="activeMvpDisplay" style="font-size:0.85rem; color:var(--subtext);">No active session data yet.</div>
-    </div>
-  </details>
+  <!-- Bottom Page Device Reset -->
+  <div style="margin-top:20px; padding: 10px 0;">
+    <button type="button" class="btn-danger" style="width:100%; padding: 10px; font-size:0.8rem;" onclick="clearLocalDeviceCache()">⚠️ Clear Local Device Cache / Reset Device Identity</button>
+  </div>
 
   <script>
     if ('serviceWorker' in navigator) {
@@ -339,19 +340,759 @@
     let entryMode = 'COINS'; 
     let currentFilter = 'ALL';
     
+    // Testing mode 5-tap state
+    let historyTapCount = 0;
+    let historyTapTimer = null;
+    let isTestModeActive = false;
+
+    // Device Identification State
+    let myDeviceId = localStorage.getItem("device_id") || "";
+    let myUserName = localStorage.getItem("device_user_name") || "";
+
+    if (!myDeviceId) {
+      myDeviceId = "DEV_" + Date.now().toString(36) + "_" + Math.random().toString(36).substr(2, 4).toUpperCase();
+      localStorage.setItem("device_id", myDeviceId);
+    }
+
+    let activeSessionLock = null; // Stores { hostName, hostDeviceId, startTime, lastPushTime }
     let savedSessions = JSON.parse(localStorage.getItem("ledger_db_sessions")) || [];
     let players = JSON.parse(localStorage.getItem("ledger_active_players")) || [];
     let logs = JSON.parse(localStorage.getItem("ledger_activity_logs")) || [];
+    let deviceRegistry = {};
 
-    if (localStorage.getItem("ledger_coin_count")) document.getElementById("coinCount").value = localStorage.getItem("ledger_coin_count");
-    if (localStorage.getItem("ledger_curr_val")) document.getElementById("currencyVal").value = localStorage.getItem("ledger_curr_val");
-    if (localStorage.getItem("ledger_buyin_coins")) document.getElementById("buyInCoins").value = localStorage.getItem("ledger_buyin_coins");
+    function initUserIdentity(existingRegistry = {}) {
+      if (!myUserName) {
+        let requestedName = prompt("👤 ENTER YOUR PARTICIPANT IDENTITY:\n\nEnter your official name (e.g. SANDEEP, RISHI):");
+        if (!requestedName) requestedName = "GUEST_" + Math.floor(Math.random() * 1000);
+        requestedName = requestedName.trim().toUpperCase();
+
+        // Check if name is taken by another device
+        let isTaken = Object.keys(existingRegistry).some(devId => devId !== myDeviceId && existingRegistry[devId] === requestedName);
+        if (isTaken) {
+          alert(`❌ IDENTITY BLOCKED: "${requestedName}" is already registered to another device!\n\nPlease enter your distinct name.`);
+          return initUserIdentity(existingRegistry);
+        }
+
+        myUserName = requestedName;
+        localStorage.setItem("device_user_name", myUserName);
+      }
+      document.getElementById("deviceBadge").innerText = `Identity: ${myUserName} (${myDeviceId.slice(-6)})`;
+    }
+
+    function isCurrentHost() {
+      return activeSessionLock && activeSessionLock.hostDeviceId === myDeviceId;
+    }
+
+    function addLog(text) {
+      const nowStr = new Date().toISOString().replace('T', ' ').substring(0, 19);
+      const logItem = { 
+        id: "L_" + Date.now() + "_" + Math.random().toString(36).substr(2, 4), 
+        time: nowStr, 
+        text: `${text} • by ${myUserName}` 
+      };
+      logs.unshift(logItem);
+      saveState();
+      renderLogs();
+    }
+
+    function saveState() {
+      localStorage.setItem("ledger_active_players", JSON.stringify(players));
+      localStorage.setItem("ledger_activity_logs", JSON.stringify(logs));
+      localStorage.setItem("ledger_db_sessions", JSON.stringify(savedSessions));
+      localStorage.setItem("ledger_coin_count", document.getElementById("coinCount").value);
+      localStorage.setItem("ledger_curr_val", document.getElementById("currencyVal").value);
+      localStorage.setItem("ledger_buyin_coins", document.getElementById("buyInCoins").value);
+    }
+
+    function getCoinRate() {
+      const cCount = parseFloat(document.getElementById("coinCount").value) || 2;
+      const cVal = parseFloat(document.getElementById("currencyVal").value) || 1;
+      return cVal / cCount;
+    }
+
+    function getDiffValue() {
+      const rate = getCoinRate();
+      let totalCoinsIn = 0, totalCoinsOut = 0;
+      players.forEach(p => {
+        totalCoinsIn += (p.buyIns * p.buyInCoins);
+        totalCoinsOut += (p.cashOutCoins || 0);
+      });
+      return (totalCoinsOut - totalCoinsIn) * rate;
+    }
 
     function validateAddButton() {
       const input = document.getElementById("playerName");
       const btn = document.getElementById("btnAddPlayer");
-      if (input.value.trim().length > 0) btn.classList.remove("disabled");
+      if (input.value.trim().length > 0 && isCurrentHost()) btn.classList.remove("disabled");
       else btn.classList.add("disabled");
+    }
+
+    function addPlayer() {
+      if (!isCurrentHost()) return alert("Read-Only Mode: Only the session host can add players.");
+
+      const input = document.getElementById("playerName");
+      let name = input.value.trim().toUpperCase();
+
+      if (!name) return alert("Please enter a valid participant name!");
+      if (players.some(p => p.name.toUpperCase() === name)) return alert(`DUPLICATE ERROR: "${name}" is already in active session!`);
+
+      let isKnown = strictMasterRoster.includes(name) || savedSessions.some(s => s.entries.some(e => e.name.toUpperCase() === name));
+
+      if (!isKnown) {
+        if (!confirm(`"${name}" is NOT in database. Add new participant?`)) return;
+        strictMasterRoster.push(name);
+      }
+      
+      const buyInCoins = parseFloat(document.getElementById("buyInCoins").value) || 1000;
+      players.push({ id: Date.now(), name: name, buyIns: 1, buyInCoins: buyInCoins, cashOutCoins: 0 });
+      input.value = "";
+      
+      addLog(`Added "${name}" with 1 buy-in (${buyInCoins}c)`);
+      validateAddButton();
+      renderAll();
+      autoPushStateToGitHub();
+    }
+
+    function removePlayer(id) {
+      if (!isCurrentHost()) return alert("Read-Only Mode: Only the session host can remove players.");
+      const p = players.find(p => p.id === id);
+      if (p) {
+        players = players.filter(p => p.id !== id);
+        addLog(`Removed "${p.name}"`);
+        renderAll();
+        autoPushStateToGitHub();
+      }
+    }
+
+    function updateBuyIns(id, delta) {
+      if (!isCurrentHost()) return alert("Read-Only Mode: Only the session host can adjust buy-ins.");
+      const p = players.find(p => p.id === id);
+      if (p) {
+        const prev = p.buyIns;
+        p.buyIns = Math.max(1, p.buyIns + delta);
+        if (p.buyIns !== prev) {
+          addLog(`Buy-in ${delta>0?'increased':'decreased'} for ${p.name}: count = ${p.buyIns}`);
+          renderAll();
+          autoPushStateToGitHub();
+        }
+      }
+    }
+
+    function handleCashOutInput(id, val) {
+      if (!isCurrentHost()) return;
+      const p = players.find(p => p.id === id);
+      if (!p) return;
+      const rate = getCoinRate();
+      const numVal = parseFloat(val) || 0;
+      p.cashOutCoins = entryMode === 'COINS' ? numVal : (rate > 0 ? (numVal / rate) : 0);
+      updateSummary();
+      saveState();
+    }
+
+    function renderPlayerCards() {
+      const rate = getCoinRate();
+      const container = document.getElementById("playerList");
+      container.innerHTML = "";
+
+      // AUTO-SORT PARTICIPANTS DESCENDING BY BUY-IN COUNT
+      let sortedPlayers = [...players].sort((a, b) => (b.buyIns * b.buyInCoins) - (a.buyIns * a.buyInCoins));
+
+      sortedPlayers.forEach((p, idx) => {
+        const investedCoins = p.buyIns * p.buyInCoins;
+        const investedVal = investedCoins * rate;
+        const netVal = (p.cashOutCoins - investedCoins) * rate;
+        
+        let inputLabel = entryMode === 'COINS' ? 'Final Coins' : 'Final Value (₹)';
+        let inputValue = p.cashOutCoins ? (entryMode === 'COINS' ? p.cashOutCoins : (p.cashOutCoins * rate).toFixed(2)) : '';
+        let colorClass = colorThemes[idx % colorThemes.length];
+        let disabledAttr = isCurrentHost() ? "" : "disabled";
+
+        const card = document.createElement("div");
+        card.className = `player-card ${colorClass}`;
+        card.innerHTML = `
+          <div class="player-header">
+            <span class="player-name" title="${p.name}">${p.name}</span>
+            ${isCurrentHost() ? `<button type="button" class="btn-danger" onclick="removePlayer(${p.id})">✕</button>` : ''}
+          </div>
+          <div class="player-body-row">
+            <div class="counter-wrapper">
+              <button type="button" class="counter-btn" ${disabledAttr} onclick="updateBuyIns(${p.id}, -1)">-</button>
+              <div style="text-align:center;">
+                <span class="buyin-cnt">${p.buyIns}</span>
+                <span style="font-size:0.7rem; color:var(--subtext); display:block;">${investedCoins}c (₹${investedVal.toFixed(0)})</span>
+              </div>
+              <button type="button" class="counter-btn" ${disabledAttr} onclick="updateBuyIns(${p.id}, 1)">+</button>
+            </div>
+            <div>
+              <label>${inputLabel}</label>
+              <input type="number" step="any" value="${inputValue}" placeholder="0" ${disabledAttr} oninput="handleCashOutInput(${p.id}, this.value)" onchange="autoPushStateToGitHub()">
+            </div>
+            <div style="display:flex; justify-content:space-between; align-items:center; background:var(--card-bg); padding:4px 8px; border-radius:4px;">
+              <span style="font-size:0.75rem; color:var(--subtext);">Net:</span>
+              <span id="net-${p.id}" style="font-weight:bold; font-size:0.95rem; color:${netVal >= 0 ? 'var(--accent)' : 'var(--danger)'}">
+                ${netVal >= 0 ? '+' : ''}₹${netVal.toFixed(1)}
+              </span>
+            </div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function updateSummary() {
+      const rate = getCoinRate();
+      let totalCoinsIn = 0, totalCoinsOut = 0;
+
+      players.forEach(p => {
+        totalCoinsIn += (p.buyIns * p.buyInCoins);
+        totalCoinsOut += (p.cashOutCoins || 0);
+      });
+
+      const totalVal = totalCoinsIn * rate;
+      const diffVal = (totalCoinsOut - totalCoinsIn) * rate;
+
+      document.getElementById("totalCoins").innerText = totalCoinsIn;
+      document.getElementById("totalVal").innerText = `₹${totalVal.toFixed(2)}`;
+      document.getElementById("diffVal").innerText = `₹${diffVal.toFixed(2)}`;
+      document.getElementById("diffVal").style.color = Math.abs(diffVal) < 0.01 ? "var(--accent)" : "var(--danger)";
+
+      players.forEach(p => {
+        const netVal = (p.cashOutCoins - (p.buyIns * p.buyInCoins)) * rate;
+        const elem = document.getElementById(`net-${p.id}`);
+        if (elem) {
+          elem.innerText = `${netVal >= 0 ? '+' : ''}₹${netVal.toFixed(1)}`;
+          elem.style.color = netVal >= 0 ? "var(--accent)" : "var(--danger)";
+        }
+      });
+    }
+
+    function renderAll() {
+      const rate = getCoinRate();
+      document.getElementById("rateNotice").innerText = `1c = ₹${rate.toFixed(2)}`;
+
+      updateLockUI();
+      updateSuggestions();
+      renderPlayerCards();
+      updateSummary();
+      renderLogs();
+      renderLeaderboard();
+      saveState();
+    }
+
+    function updateLockUI() {
+      const banner = document.getElementById("lockBanner");
+      const title = document.getElementById("lockTitle");
+      const subtitle = document.getElementById("lockSubtitle");
+      const actions = document.getElementById("lockActions");
+
+      const setupCard = document.getElementById("setupCard");
+      const actionsCard = document.getElementById("actionsCard");
+
+      actions.innerHTML = "";
+
+      if (!activeSessionLock) {
+        banner.className = "lock-banner";
+        title.innerText = "🟢 IDLE • No Active Session";
+        subtitle.innerText = "Start a new session to host the live game.";
+        actions.innerHTML = `<button type="button" class="btn-add btn-sm" onclick="startNewSession()">🚀 Start Session</button>`;
+
+        setupCard.classList.add("disabled-overlay");
+        actionsCard.classList.add("disabled-overlay");
+      } else if (isCurrentHost()) {
+        banner.className = "lock-banner active-host";
+        title.innerText = `👑 YOU ARE HOSTING (${myUserName})`;
+        subtitle.innerText = `Live session locked to your device. Auto-sync active.`;
+        actions.innerHTML = `
+          <button type="button" class="btn-warning btn-sm" onclick="passSessionHandoff()">🤝 Pass Session</button>
+          <button type="button" class="btn-danger btn-sm" onclick="forceCloseSession()">🛑 Stop</button>
+        `;
+
+        setupCard.classList.remove("disabled-overlay");
+        actionsCard.classList.remove("disabled-overlay");
+      } else {
+        banner.className = "lock-banner spectator";
+        title.innerText = `🔒 LIVE SESSION IN PROGRESS`;
+        subtitle.innerText = `Host: ${activeSessionLock.hostName} (${activeSessionLock.hostDeviceId.slice(-6)}) • Read-Only Mode`;
+
+        // Check if session lock is expired (>12 Hours)
+        const elapsedHours = (Date.now() - new Date(activeSessionLock.lastPushTime).getTime()) / (1000 * 3600);
+        if (elapsedHours >= 12) {
+          actions.innerHTML = `<button type="button" class="btn-warning btn-sm" onclick="takeOverExpiredSession()">⚡ Take Over (Expired)</button>`;
+        } else {
+          actions.innerHTML = `<span style="font-size:0.75rem; color:var(--subtext);">Auto-Refreshing</span>`;
+        }
+
+        setupCard.classList.add("disabled-overlay");
+        actionsCard.classList.add("disabled-overlay");
+      }
+    }
+
+    // --- SESSION LOCK CONTROL ACTIONS ---
+    async function startNewSession() {
+      let token = getAdminToken();
+      if (!token) return;
+
+      activeSessionLock = {
+        hostName: myUserName,
+        hostDeviceId: myDeviceId,
+        startTime: new Date().toISOString(),
+        lastPushTime: new Date().toISOString()
+      };
+
+      players = [];
+      addLog(`Started new active session`);
+      await pushFullPayloadToGitHub(token);
+    }
+
+    async function passSessionHandoff() {
+      if (!isCurrentHost()) return;
+      if (!confirm("🤝 Pass Session: Release hosting rights so another device can take over?")) return;
+
+      let token = getAdminToken();
+      if (!token) return;
+
+      activeSessionLock = null; // Unlocks host requirement
+      addLog(`Released active session lock for handoff`);
+      await pushFullPayloadToGitHub(token);
+    }
+
+    async function forceCloseSession() {
+      if (!isCurrentHost()) return;
+      if (!confirm("🛑 STOP SESSION: Are you sure you want to terminate this live session?")) return;
+      if (!confirm("Double Confirmation: Unsaved live player cards will be cleared.")) return;
+
+      let token = getAdminToken();
+      if (!token) return;
+
+      activeSessionLock = null;
+      players = [];
+      addLog(`Terminated active session`);
+      await pushFullPayloadToGitHub(token);
+    }
+
+    async function takeOverExpiredSession() {
+      if (!confirm(`⚡ Take Over Expired Session from ${activeSessionLock.hostName}?`)) return;
+
+      let token = getAdminToken();
+      if (!token) return;
+
+      activeSessionLock = {
+        hostName: myUserName,
+        hostDeviceId: myDeviceId,
+        startTime: activeSessionLock.startTime,
+        lastPushTime: new Date().toISOString()
+      };
+
+      addLog(`Took over host duties for active session`);
+      await pushFullPayloadToGitHub(token);
+    }
+
+    // Settlement & Save Session
+    async function confirmAndSaveSession() {
+      if (!isCurrentHost()) return alert("Read-Only Mode: Only the host can save the session.");
+      if (players.length === 0) return alert("Add participants first!");
+
+      const diffVal = getDiffValue();
+      if (Math.abs(diffVal) > 0.01) {
+        return alert(`SETTLEMENT ERROR: Diff Value is ₹${diffVal.toFixed(2)}.\n\nPlease adjust final coins/values so Diff Value is ₹0.00 before saving!`);
+      }
+
+      if (!confirm("CRUCIAL ACTION: Save current session to database and close live session?")) return;
+      const mathAnswer = prompt("SECURITY VERIFICATION:\n\nWhat is 2 + 4?");
+      if (mathAnswer === null || mathAnswer.trim() !== "6") return alert("Security check failed!");
+
+      let token = getAdminToken();
+      if (!token) return;
+
+      const rate = getCoinRate();
+      const sessionRecord = {
+        sessionId: "S_" + Date.now(),
+        date: new Date().toISOString(),
+        entries: players.map(p => {
+          const investedCoins = p.buyIns * p.buyInCoins;
+          return {
+            name: p.name.toUpperCase(),
+            investedCoins: investedCoins,
+            finalCoins: p.cashOutCoins,
+            netVal: (p.cashOutCoins - investedCoins) * rate
+          };
+        })
+      };
+
+      savedSessions.unshift(sessionRecord);
+      addLog(`Saved session to database (${sessionRecord.sessionId})`);
+      
+      // Close active session after saving
+      activeSessionLock = null;
+      players = [];
+
+      await pushFullPayloadToGitHub(token);
+      alert("✅ Session saved successfully and live board closed!");
+    }
+
+    function confirmAndClearSession() {
+      if (!isCurrentHost()) return alert("Read-Only Mode: Only host can clear board.");
+      if (players.length === 0) return alert("No active participants on board!");
+      if (!confirm("Clear active board?")) return;
+
+      players = [];
+      addLog("Cleared active session dashboard");
+      renderAll();
+      autoPushStateToGitHub();
+    }
+
+    function calculateSettlement() {
+      const list = document.getElementById("settlementResults");
+      const auditBox = document.getElementById("auditContainer");
+      list.innerHTML = ""; auditBox.innerHTML = "";
+
+      const rate = getCoinRate();
+      const diffVal = getDiffValue();
+
+      let totalCoinsIn = 0, totalCoinsOut = 0;
+      players.forEach(p => {
+        totalCoinsIn += (p.buyIns * p.buyInCoins);
+        totalCoinsOut += (p.cashOutCoins || 0);
+      });
+
+      const totalValIn = totalCoinsIn * rate;
+      const totalValOut = totalCoinsOut * rate;
+
+      // Discrepancy Audit Banner
+      let auditHTML = `
+        <div style="background:#0f172a; padding:10px; border-radius:8px; margin-top:8px; border:1px solid var(--border); font-size:0.8rem;">
+          <div><strong>Total Collected (In):</strong> ₹${totalValIn.toFixed(2)}</div>
+          <div><strong>Total Claimed (Out):</strong> ₹${totalValOut.toFixed(2)}</div>
+      `;
+
+      if (Math.abs(diffVal) < 0.01) {
+        auditHTML += `<div style="color:var(--accent); margin-top:4px;">✅ Pot Balanced (Diff: ₹0.00)</div>`;
+      } else if (diffVal > 0) {
+        auditHTML += `<div style="color:var(--danger); margin-top:4px;">⚠️ Surplus Discrepancy (+₹${diffVal.toFixed(2)}): Claimed cash-outs exceed total buy-ins collected.</div>`;
+      } else {
+        auditHTML += `<div style="color:var(--warning); margin-top:4px;">🚨 Deficit Discrepancy (₹${diffVal.toFixed(2)}): Buy-ins exceed claimed cash-outs. Money is unassigned.</div>`;
+      }
+      auditHTML += `</div>`;
+      auditBox.innerHTML = auditHTML;
+
+      let nets = players.map(p => ({ name: p.name.toUpperCase(), amt: (p.cashOutCoins - (p.buyIns * p.buyInCoins)) * rate }));
+      let debtors = nets.filter(p => p.amt < -0.01).map(p => ({ name: p.name, amount: Math.abs(p.amt) }));
+      let creditors = nets.filter(p => p.amt > 0.01).map(p => ({ name: p.name, amount: p.amt }));
+
+      let transactions = [];
+
+      for (let i = debtors.length - 1; i >= 0; i--) {
+        for (let j = creditors.length - 1; j >= 0; j--) {
+          if (Math.abs(debtors[i].amount - creditors[j].amount) < 0.01) {
+            transactions.push(`<strong>${debtors[i].name}</strong> pays <strong>${creditors[j].name}</strong>: <span style="color:var(--accent)">₹${debtors[i].amount.toFixed(2)}</span>`);
+            debtors.splice(i, 1); creditors.splice(j, 1);
+            break;
+          }
+        }
+      }
+
+      debtors.sort((a,b) => b.amount - a.amount);
+      creditors.sort((a,b) => b.amount - a.amount);
+
+      let i = 0, j = 0;
+      while (i < debtors.length && j < creditors.length) {
+        let payment = Math.min(debtors[i].amount, creditors[j].amount);
+        if (payment > 0.01) {
+          transactions.push(`<strong>${debtors[i].name}</strong> pays <strong>${creditors[j].name}</strong>: <span style="color:var(--accent)">₹${payment.toFixed(2)}</span>`);
+        }
+        debtors[i].amount -= payment; creditors[j].amount -= payment;
+        if (debtors[i].amount < 0.01) i++;
+        if (creditors[j].amount < 0.01) j++;
+      }
+
+      if (transactions.length === 0) list.innerHTML = "<li>All balances are settled!</li>";
+      else transactions.forEach(t => { let li = document.createElement("li"); li.innerHTML = t; list.appendChild(li); });
+      addLog("Calculated minimum transaction settlement");
+    }
+
+    // 5-TAP DEVELOPER TESTING MODE FOR SESSION HISTORY
+    function handleHistoryHeaderTap() {
+      historyTapCount++;
+      clearTimeout(historyTapTimer);
+      
+      if (historyTapCount >= 5) {
+        isTestModeActive = !isTestModeActive;
+        historyTapCount = 0;
+        document.getElementById("testModeBadge").innerText = isTestModeActive ? "🧪 TEST MODE ACTIVE" : "";
+        alert(isTestModeActive ? "🧪 Testing Mode Unlocked: You can now edit/delete local historical sessions!" : "Testing Mode Disabled.");
+        renderLeaderboard();
+        return;
+      }
+
+      historyTapTimer = setTimeout(() => { historyTapCount = 0; }, 1500);
+    }
+
+    function deleteHistoricalSession(sessionId) {
+      if (!isTestModeActive) return;
+      if (confirm(`🗑️ TEST MODE: Delete session ${sessionId} locally?`)) {
+        savedSessions = savedSessions.filter(s => s.sessionId !== sessionId);
+        saveState();
+        renderLeaderboard();
+      }
+    }
+
+    function renderLeaderboard() {
+      const tbody = document.getElementById("leaderboardBody");
+      const historyBox = document.getElementById("sessionHistoryBox");
+      tbody.innerHTML = ""; historyBox.innerHTML = "";
+
+      const nowD = new Date();
+      let filtered = savedSessions.filter(s => {
+        const sDate = new Date(s.date);
+        if (currentFilter === 'WEEK') return (nowD - sDate) / (1000 * 3600 * 24) <= 7;
+        if (currentFilter === 'MONTH') return (nowD - sDate) / (1000 * 3600 * 24) <= 30;
+        return true;
+      });
+
+      if (filtered.length === 0) {
+        historyBox.innerHTML = "<div class='history-item'>No sessions found in this period.</div>";
+      } else {
+        filtered.forEach(session => {
+          let dateStr = new Date(session.date).toLocaleDateString('en-US', { weekday:'short', month:'short', day:'numeric', year:'numeric' });
+          let item = document.createElement("div");
+          item.className = "history-item";
+          
+          let detailsHTML = session.entries.map(e => 
+            `<span style="color:${e.netVal>=0?'var(--accent)':'var(--danger)'}">
+              ${e.name.toUpperCase()}: ${e.netVal>=0?'+':''}₹${e.netVal.toFixed(1)}
+            </span>`
+          ).join(' | ');
+
+          item.innerHTML = `
+            <div><strong>${dateStr}</strong><br>${detailsHTML}</div>
+            ${isTestModeActive ? `<button type="button" class="btn-danger" onclick="deleteHistoricalSession('${session.sessionId}')">🗑️</button>` : ''}
+          `;
+          historyBox.appendChild(item);
+        });
+      }
+
+      let totals = {};
+      filtered.forEach(session => {
+        session.entries.forEach(e => {
+          let uName = e.name.toUpperCase();
+          if (!totals[uName]) totals[uName] = { sessions: 0, netVal: 0 };
+          totals[uName].sessions += 1;
+          totals[uName].netVal += e.netVal;
+        });
+      });
+
+      let sorted = Object.keys(totals).map(k => ({ name: k, sessions: totals[k].sessions, netVal: totals[k].netVal })).sort((a, b) => b.netVal - a.netVal);
+
+      if (sorted.length > 0) {
+        let best = sorted[0];
+        let worst = sorted[sorted.length - 1];
+        document.getElementById("statWinner").innerText = `${best.name} (+₹${best.netVal.toFixed(2)})`;
+        document.getElementById("statContributor").innerText = `${worst.name} (₹${worst.netVal.toFixed(2)})`;
+      } else {
+        document.getElementById("statWinner").innerText = "-";
+        document.getElementById("statContributor").innerText = "-";
+      }
+
+      sorted.forEach((p, idx) => {
+        const row = document.createElement("tr");
+        row.innerHTML = `<td>#${idx + 1}</td><td><strong>${p.name}</strong></td><td>${p.sessions}</td><td style="color:${p.netVal >= 0 ? 'var(--accent)' : 'var(--danger)'}; font-weight:bold;">${p.netVal >= 0 ? '+' : ''}₹${p.netVal.toFixed(2)}</td>`;
+        tbody.appendChild(row);
+      });
+    }
+
+    function switchFilter(filter, elem) {
+      currentFilter = filter;
+      document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+      elem.classList.add("active");
+      renderLeaderboard();
+    }
+
+    // --- AUTO-FETCH & SYNC ENGINE ---
+    function mergeLogs(localLogs, remoteLogs) {
+      let logMap = new Map();
+      remoteLogs.forEach(l => logMap.set(l.id || (l.time + "_" + l.text), l));
+      localLogs.forEach(l => logMap.set(l.id || (l.time + "_" + l.text), l));
+      return Array.from(logMap.values()).sort((a, b) => new Date(b.time) - new Date(a.time));
+    }
+
+    async function autoFetchFromGitHub(isManual = false) {
+      const statusText = document.getElementById("syncStatusText");
+      if (statusText) statusText.innerText = "Syncing...";
+
+      const rawUrl = `https://raw.githubusercontent.com/${GH_USER}/${GH_REPO}/main/data.json?t=${Date.now()}`;
+
+      try {
+        const res = await fetch(rawUrl);
+        if (res.ok) {
+          const data = await res.json();
+          
+          if (data.deviceRegistry) {
+            deviceRegistry = data.deviceRegistry;
+            initUserIdentity(deviceRegistry);
+          }
+
+          if (data.activeSessionLock) activeSessionLock = data.activeSessionLock;
+          else activeSessionLock = null;
+
+          if (data.savedSessions && Array.isArray(data.savedSessions)) {
+            let sessionMap = new Map();
+            savedSessions.forEach(s => sessionMap.set(s.sessionId, s));
+            data.savedSessions.forEach(s => sessionMap.set(s.sessionId, s));
+            savedSessions = Array.from(sessionMap.values()).sort((a,b) => new Date(b.date) - new Date(a.date));
+          }
+
+          if (data.logs && Array.isArray(data.logs)) logs = mergeLogs(logs, data.logs);
+
+          if (!isCurrentHost() && data.activePlayers && Array.isArray(data.activePlayers)) {
+            players = data.activePlayers;
+          }
+
+          if (data.settings) {
+            if (data.settings.coinCount) document.getElementById("coinCount").value = data.settings.coinCount;
+            if (data.settings.currencyVal) document.getElementById("currencyVal").value = data.settings.currencyVal;
+            if (data.settings.buyInCoins) document.getElementById("buyInCoins").value = data.settings.buyInCoins;
+          }
+
+          if (data.knownRoster && Array.isArray(data.knownRoster)) {
+            data.knownRoster.forEach(name => {
+              if (!strictMasterRoster.includes(name.toUpperCase())) strictMasterRoster.push(name.toUpperCase());
+            });
+          }
+
+          saveState(); 
+          renderAll();
+          if (statusText) statusText.innerText = "Synced";
+          if (isManual) alert("✅ Data synchronized with GitHub!");
+        } else {
+          if (statusText) statusText.innerText = "Error";
+        }
+      } catch (err) {
+        console.error("Auto fetch error:", err);
+        if (statusText) statusText.innerText = "Offline";
+      }
+    }
+
+    function getAdminToken() {
+      let token = localStorage.getItem("gh_token") || "";
+      if (!token) {
+        const tokenInput = prompt("🔒 ADMIN AUTHENTICATION REQUIRED:\n\nEnter your GitHub Personal Access Token:");
+        if (!tokenInput || tokenInput.trim().length === 0) return null;
+        token = tokenInput.trim();
+        localStorage.setItem("gh_token", token);
+      }
+      return token;
+    }
+
+    async function autoPushStateToGitHub() {
+      if (!isCurrentHost()) return;
+      let token = localStorage.getItem("gh_token");
+      if (token) await pushFullPayloadToGitHub(token, true);
+    }
+
+    async function pushFullPayloadToGitHub(token, isSilent = false) {
+      const filePath = "data.json";
+      const apiUrl = `https://api.github.com/repos/${GH_USER}/${GH_REPO}/contents/${filePath}`;
+      
+      let remoteSha = "";
+      let remoteSessions = [];
+      let remoteLogs = [];
+
+      try {
+        const getRes = await fetch(apiUrl, {
+          headers: { "Authorization": `Bearer ${token}`, "Accept": "application/vnd.github.v3+json" }
+        });
+
+        if (getRes.ok) {
+          const getData = await getRes.json();
+          remoteSha = getData.sha;
+          const decodedContent = JSON.parse(decodeURIComponent(escape(atob(getData.content))));
+          if (decodedContent.savedSessions) remoteSessions = decodedContent.savedSessions;
+          if (decodedContent.logs) remoteLogs = decodedContent.logs;
+        } else if (getRes.status === 401 || getRes.status === 403) {
+          localStorage.removeItem("gh_token");
+          return alert("Authentication Failed! Invalid or expired token.");
+        }
+      } catch(e) { console.warn("Could not pre-fetch remote SHA", e); }
+
+      let sessionMap = new Map();
+      remoteSessions.forEach(s => sessionMap.set(s.sessionId, s));
+      savedSessions.forEach(s => sessionMap.set(s.sessionId, s));
+      let mergedSavedSessions = Array.from(sessionMap.values()).sort((a,b) => new Date(b.date) - new Date(a.date));
+
+      let mergedLogs = mergeLogs(logs, remoteLogs);
+
+      if (activeSessionLock && activeSessionLock.hostDeviceId === myDeviceId) {
+        activeSessionLock.lastPushTime = new Date().toISOString();
+      }
+
+      deviceRegistry[myDeviceId] = myUserName;
+
+      const payload = {
+        activeSessionLock: activeSessionLock,
+        deviceRegistry: deviceRegistry,
+        savedSessions: mergedSavedSessions,
+        activePlayers: players,
+        settings: {
+          coinCount: document.getElementById("coinCount").value,
+          currencyVal: document.getElementById("currencyVal").value,
+          buyInCoins: document.getElementById("buyInCoins").value
+        },
+        logs: mergedLogs,
+        knownRoster: strictMasterRoster
+      };
+
+      const contentEncoded = btoa(unescape(encodeURIComponent(JSON.stringify(payload, null, 2))));
+
+      try {
+        const putRes = await fetch(apiUrl, {
+          method: "PUT",
+          headers: {
+            "Authorization": `Bearer ${token}`,
+            "Content-Type": "application/json",
+            "Accept": "application/vnd.github.v3+json"
+          },
+          body: JSON.stringify({
+            message: `Update live state [${new Date().toISOString().substring(0, 19).replace('T', ' ')}]`,
+            content: contentEncoded,
+            sha: remoteSha || undefined
+          })
+        });
+
+        if (putRes.ok) {
+          savedSessions = mergedSavedSessions;
+          logs = mergedLogs;
+          saveState(); renderAll();
+          if (!isSilent) alert("✅ State pushed to GitHub!");
+        } else {
+          const errData = await putRes.json();
+          alert(`GitHub Push Failed (${putRes.status}): ${errData.message}`);
+        }
+      } catch (err) {
+        console.error(err);
+        alert("Error connecting to GitHub API.");
+      }
+    }
+
+    function clearLocalDeviceCache() {
+      if (!confirm("⚠️ DANGER: Clear all local browser storage and identity on THIS device?")) return;
+      localStorage.clear();
+      if ('caches' in window) {
+        caches.keys().then(names => { for (let name of names) caches.delete(name); });
+      }
+      alert("Device cache cleared!");
+      window.location.reload();
+    }
+
+    // Experimental Tools
+    function pickRandomParticipant() {
+      const resultElem = document.getElementById("randomPickerResult");
+      if (players.length === 0) {
+        resultElem.innerText = "Add active participants first!";
+        return;
+      }
+      const randomIndex = Math.floor(Math.random() * players.length);
+      const chosen = players[randomIndex].name;
+      resultElem.innerText = `🎲 Chosen Participant: ${chosen}`;
     }
 
     function updateSuggestions() {
@@ -407,35 +1148,10 @@
       renderPlayerCards();
     }
 
-    function saveState() {
-      localStorage.setItem("ledger_active_players", JSON.stringify(players));
-      localStorage.setItem("ledger_activity_logs", JSON.stringify(logs));
-      localStorage.setItem("ledger_db_sessions", JSON.stringify(savedSessions));
-      localStorage.setItem("ledger_coin_count", document.getElementById("coinCount").value);
-      localStorage.setItem("ledger_curr_val", document.getElementById("currencyVal").value);
-      localStorage.setItem("ledger_buyin_coins", document.getElementById("buyInCoins").value);
-    }
-
-    function addLog(text) {
-      const nowStr = new Date().toISOString().replace('T', ' ').substring(0, 19);
-      logs.unshift({ time: nowStr, text: text });
-      saveState();
-      renderLogs();
-    }
-
-    function resetLogs() {
-      if (confirm("Clear all activity logs?")) {
-        const nowStr = new Date().toISOString().replace('T', ' ').substring(0, 19);
-        logs = [{ time: nowStr, text: "Logs reset." }];
-        saveState(); renderLogs();
-      }
-    }
-
     function renderLogs() {
       const list = document.getElementById("logsList");
       const selectedDate = document.getElementById("logDateSelect").value;
       const selectedName = document.getElementById("logFilterSelect").value;
-      
       list.innerHTML = "";
 
       let filtered = logs.filter(log => {
@@ -456,550 +1172,21 @@
       });
     }
 
-    function getCoinRate() {
-      const cCount = parseFloat(document.getElementById("coinCount").value) || 2;
-      const cVal = parseFloat(document.getElementById("currencyVal").value) || 1;
-      return cVal / cCount;
-    }
-
-    function getDiffValue() {
-      const rate = getCoinRate();
-      let totalCoinsIn = 0, totalCoinsOut = 0;
-      players.forEach(p => {
-        totalCoinsIn += (p.buyIns * p.buyInCoins);
-        totalCoinsOut += (p.cashOutCoins || 0);
-      });
-      return (totalCoinsOut - totalCoinsIn) * rate;
-    }
-
-    function addPlayer() {
-      const input = document.getElementById("playerName");
-      let name = input.value.trim().toUpperCase();
-
-      if (!name) return alert("Please enter a valid participant name!");
-      if (players.some(p => p.name.toUpperCase() === name)) return alert(`DUPLICATE ERROR: "${name}" is already in active session!`);
-
-      let isKnown = strictMasterRoster.includes(name) || savedSessions.some(s => s.entries.some(e => e.name.toUpperCase() === name));
-
-      if (!isKnown) {
-        if (!confirm(`"${name}" is NOT in database. Add new participant?`)) return;
-        if (!confirm(`Double Confirmation: Add "${name}" permanently?`)) return;
-        strictMasterRoster.push(name);
-      }
-      
-      const buyInCoins = parseFloat(document.getElementById("buyInCoins").value) || 1000;
-      players.push({ id: Date.now(), name: name, buyIns: 1, buyInCoins: buyInCoins, cashOutCoins: 0 });
-      input.value = "";
-      
-      addLog(`Added "${name}" with 1 buy-in (${buyInCoins}c).`);
-      validateAddButton();
-      renderAll();
-    }
-
-    function removePlayer(id) {
-      const p = players.find(p => p.id === id);
-      if (p) {
-        players = players.filter(p => p.id !== id);
-        addLog(`Removed "${p.name}".`);
-        renderAll();
-      }
-    }
-
-    function updateBuyIns(id, delta) {
-      const p = players.find(p => p.id === id);
-      if (p) {
-        const prev = p.buyIns;
-        p.buyIns = Math.max(1, p.buyIns + delta);
-        if (p.buyIns !== prev) {
-          addLog(`Buy-in ${delta>0?'increased':'decreased'} for ${p.name}: count = ${p.buyIns}.`);
-          renderAll();
-        }
-      }
-    }
-
-    function handleCashOutInput(id, val) {
-      const p = players.find(p => p.id === id);
-      if (!p) return;
-      const rate = getCoinRate();
-      const numVal = parseFloat(val) || 0;
-      p.cashOutCoins = entryMode === 'COINS' ? numVal : (rate > 0 ? (numVal / rate) : 0);
-      updateSummary();
-      saveState();
-    }
-
-    function updateSummary() {
-      const rate = getCoinRate();
-      let totalCoinsIn = 0, totalCoinsOut = 0;
-
-      players.forEach(p => {
-        totalCoinsIn += (p.buyIns * p.buyInCoins);
-        totalCoinsOut += (p.cashOutCoins || 0);
-      });
-
-      const totalVal = totalCoinsIn * rate;
-      const diffVal = (totalCoinsOut - totalCoinsIn) * rate;
-
-      document.getElementById("totalCoins").innerText = totalCoinsIn;
-      document.getElementById("totalVal").innerText = `₹${totalVal.toFixed(2)}`;
-      document.getElementById("diffVal").innerText = `₹${diffVal.toFixed(2)}`;
-      document.getElementById("diffVal").style.color = Math.abs(diffVal) < 0.01 ? "var(--accent)" : "var(--danger)";
-
-      players.forEach(p => {
-        const netVal = (p.cashOutCoins - (p.buyIns * p.buyInCoins)) * rate;
-        const elem = document.getElementById(`net-${p.id}`);
-        if (elem) {
-          elem.innerText = `${netVal >= 0 ? '+' : ''}₹${netVal.toFixed(1)}`;
-          elem.style.color = netVal >= 0 ? "var(--accent)" : "var(--danger)";
-        }
-      });
-
-      updateExperimentalMvp();
-    }
-
-    function renderPlayerCards() {
-      const rate = getCoinRate();
-      const container = document.getElementById("playerList");
-      container.innerHTML = "";
-
-      players.forEach((p, idx) => {
-        const investedCoins = p.buyIns * p.buyInCoins;
-        const investedVal = investedCoins * rate;
-        const netVal = (p.cashOutCoins - investedCoins) * rate;
-        
-        let inputLabel = entryMode === 'COINS' ? 'Final Coins' : 'Final Value (₹)';
-        let inputValue = p.cashOutCoins ? (entryMode === 'COINS' ? p.cashOutCoins : (p.cashOutCoins * rate).toFixed(2)) : '';
-        let colorClass = colorThemes[idx % colorThemes.length];
-
-        const card = document.createElement("div");
-        card.className = `player-card ${colorClass}`;
-        card.innerHTML = `
-          <div class="player-header">
-            <span class="player-name" title="${p.name}">${p.name}</span>
-            <button type="button" class="btn-danger" onclick="removePlayer(${p.id})">✕</button>
-          </div>
-          <div class="player-body-row">
-            <div class="counter-wrapper">
-              <button type="button" class="counter-btn" onclick="updateBuyIns(${p.id}, -1)">-</button>
-              <div style="text-align:center;">
-                <span class="buyin-cnt">${p.buyIns}</span>
-                <span style="font-size:0.7rem; color:var(--subtext); display:block;">${investedCoins}c (₹${investedVal.toFixed(0)})</span>
-              </div>
-              <button type="button" class="counter-btn" onclick="updateBuyIns(${p.id}, 1)">+</button>
-            </div>
-            <div>
-              <label>${inputLabel}</label>
-              <input type="number" step="any" value="${inputValue}" placeholder="0" oninput="handleCashOutInput(${p.id}, this.value)">
-            </div>
-            <div style="display:flex; justify-content:space-between; align-items:center; background:var(--card-bg); padding:4px 8px; border-radius:4px;">
-              <span style="font-size:0.75rem; color:var(--subtext);">Net:</span>
-              <span id="net-${p.id}" style="font-weight:bold; font-size:0.95rem; color:${netVal >= 0 ? 'var(--accent)' : 'var(--danger)'}">
-                ${netVal >= 0 ? '+' : ''}₹${netVal.toFixed(1)}
-              </span>
-            </div>
-          </div>
-        `;
-        container.appendChild(card);
-      });
-    }
-
-    function renderAll() {
-      const rate = getCoinRate();
-      document.getElementById("rateNotice").innerText = `1c = ₹${rate.toFixed(2)}`;
-
-      updateSuggestions();
-      renderPlayerCards();
-      updateSummary();
-      renderLogs();
-      renderLeaderboard();
-      saveState();
-    }
-
-    // Settlement & Save Session with Diff Check
-    function confirmAndSaveSession() {
-      if (players.length === 0) return alert("Add participants first!");
-
-      const diffVal = getDiffValue();
-      if (Math.abs(diffVal) > 0.01) {
-        return alert(`SETTLEMENT ERROR: Diff Value is ₹${diffVal.toFixed(2)}.\n\nPlease adjust participant final coins/values so Diff Value is ₹0.00 before saving!`);
-      }
-
-      const confirm1 = confirm("CRUCIAL ACTION: Save current session to database?");
-      if (!confirm1) return;
-
-      const mathAnswer = prompt("SECURITY VERIFICATION (Step 2 of 2):\n\nWhat is 2 + 4?");
-      if (mathAnswer === null || mathAnswer.trim() !== "6") {
-        return alert("Security check failed! Session was NOT saved.");
-      }
-
-      const rate = getCoinRate();
-      const sessionRecord = {
-        sessionId: "S_" + Date.now(),
-        date: new Date().toISOString(),
-        entries: players.map(p => {
-          const investedCoins = p.buyIns * p.buyInCoins;
-          return {
-            name: p.name.toUpperCase(),
-            investedCoins: investedCoins,
-            finalCoins: p.cashOutCoins,
-            netVal: (p.cashOutCoins - investedCoins) * rate
-          };
-        })
-      };
-
-      savedSessions.unshift(sessionRecord);
-      addLog("Saved session to database.");
-      saveState();
-      alert("Session saved successfully to database!");
-      renderLeaderboard();
-    }
-
-    function confirmAndClearSession() {
-      if (players.length === 0) return alert("No active participants on board!");
-
-      const confirm1 = confirm("CRUCIAL ACTION: Clear all active participants from dashboard?");
-      if (!confirm1) return;
-
-      const mathAnswer = prompt("SECURITY VERIFICATION (Step 2 of 2):\n\nWhat is 2 + 4?");
-      if (mathAnswer === null || mathAnswer.trim() !== "6") {
-        return alert("Security check failed! Board was NOT cleared.");
-      }
-
-      players = [];
-      addLog("Cleared active session dashboard.");
-      renderAll();
-    }
-
-    function calculateSettlement() {
-      const list = document.getElementById("settlementResults");
-      list.innerHTML = "";
-      const rate = getCoinRate();
-
-      let nets = players.map(p => ({ name: p.name.toUpperCase(), amt: (p.cashOutCoins - (p.buyIns * p.buyInCoins)) * rate }));
-      let debtors = nets.filter(p => p.amt < -0.01).map(p => ({ name: p.name, amount: Math.abs(p.amt) }));
-      let creditors = nets.filter(p => p.amt > 0.01).map(p => ({ name: p.name, amount: p.amt }));
-
-      let transactions = [];
-
-      for (let i = debtors.length - 1; i >= 0; i--) {
-        for (let j = creditors.length - 1; j >= 0; j--) {
-          if (Math.abs(debtors[i].amount - creditors[j].amount) < 0.01) {
-            transactions.push(`<strong>${debtors[i].name}</strong> pays <strong>${creditors[j].name}</strong>: <span style="color:var(--accent)">₹${debtors[i].amount.toFixed(2)}</span>`);
-            debtors.splice(i, 1);
-            creditors.splice(j, 1);
-            break;
-          }
-        }
-      }
-
-      debtors.sort((a,b) => b.amount - a.amount);
-      creditors.sort((a,b) => b.amount - a.amount);
-
-      let i = 0, j = 0;
-      while (i < debtors.length && j < creditors.length) {
-        let payment = Math.min(debtors[i].amount, creditors[j].amount);
-        if (payment > 0.01) {
-          transactions.push(`<strong>${debtors[i].name}</strong> pays <strong>${creditors[j].name}</strong>: <span style="color:var(--accent)">₹${payment.toFixed(2)}</span>`);
-        }
-        debtors[i].amount -= payment;
-        creditors[j].amount -= payment;
-        if (debtors[i].amount < 0.01) i++;
-        if (creditors[j].amount < 0.01) j++;
-      }
-
-      if (transactions.length === 0) list.innerHTML = "<li>All balances are settled!</li>";
-      else transactions.forEach(t => { let li = document.createElement("li"); li.innerHTML = t; list.appendChild(li); });
-      addLog("Calculated minimum transaction settlement.");
-    }
-
-    function renderLeaderboard() {
-      const tbody = document.getElementById("leaderboardBody");
-      const historyBox = document.getElementById("sessionHistoryBox");
-      tbody.innerHTML = ""; historyBox.innerHTML = "";
-
-      const nowD = new Date();
-      let filtered = savedSessions.filter(s => {
-        const sDate = new Date(s.date);
-        if (currentFilter === 'WEEK') return (nowD - sDate) / (1000 * 3600 * 24) <= 7;
-        if (currentFilter === 'MONTH') return (nowD - sDate) / (1000 * 3600 * 24) <= 30;
-        return true;
-      });
-
-      if (filtered.length === 0) {
-        historyBox.innerHTML = "<div class='history-item'>No sessions found in this period.</div>";
-      } else {
-        filtered.forEach(session => {
-          let dateStr = new Date(session.date).toLocaleDateString('en-US', { weekday:'short', month:'short', day:'numeric', year:'numeric' });
-          let item = document.createElement("div");
-          item.className = "history-item";
-          
-          let detailsHTML = session.entries.map(e => 
-            `<span style="color:${e.netVal>=0?'var(--accent)':'var(--danger)'}">
-              ${e.name.toUpperCase()}: ${e.netVal>=0?'+':''}₹${e.netVal.toFixed(1)}
-            </span>`
-          ).join(' | ');
-
-          item.innerHTML = `<strong>${dateStr}</strong><br>${detailsHTML}`;
-          historyBox.appendChild(item);
-        });
-      }
-
-      let totals = {};
-      filtered.forEach(session => {
-        session.entries.forEach(e => {
-          let uName = e.name.toUpperCase();
-          if (!totals[uName]) totals[uName] = { sessions: 0, netVal: 0 };
-          totals[uName].sessions += 1;
-          totals[uName].netVal += e.netVal;
-        });
-      });
-
-      let sorted = Object.keys(totals).map(k => ({ name: k, sessions: totals[k].sessions, netVal: totals[k].netVal })).sort((a, b) => b.netVal - a.netVal);
-
-      if (sorted.length > 0) {
-        let best = sorted[0];
-        let worst = sorted[sorted.length - 1];
-        document.getElementById("statWinner").innerText = `${best.name} (+₹${best.netVal.toFixed(2)})`;
-        document.getElementById("statContributor").innerText = `${worst.name} (₹${worst.netVal.toFixed(2)})`;
-      } else {
-        document.getElementById("statWinner").innerText = "-";
-        document.getElementById("statContributor").innerText = "-";
-      }
-
-      sorted.forEach((p, idx) => {
-        const row = document.createElement("tr");
-        row.innerHTML = `<td>#${idx + 1}</td><td><strong>${p.name}</strong></td><td>${p.sessions}</td><td style="color:${p.netVal >= 0 ? 'var(--accent)' : 'var(--danger)'}; font-weight:bold;">${p.netVal >= 0 ? '+' : ''}₹${p.netVal.toFixed(2)}</td>`;
-        tbody.appendChild(row);
-      });
-    }
-
-    function switchFilter(filter, elem) {
-      currentFilter = filter;
-      document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
-      elem.classList.add("active");
-      renderLeaderboard();
-    }
-
-    // --- SMART AUTO-SYNC & FETCH LOGIC ---
-    async function autoFetchFromGitHub(isManual = false) {
-      const statusText = document.getElementById("syncStatusText");
-      if (statusText) statusText.innerText = "Syncing...";
-
-      const rawUrl = `https://raw.githubusercontent.com/${GH_USER}/${GH_REPO}/main/data.json?t=${Date.now()}`;
-
-      try {
-        const res = await fetch(rawUrl);
-        if (res.ok) {
-          const data = await res.json();
-          
-          // 1. Always Merge Saved Sessions safely by unique sessionId
-          if (data.savedSessions && Array.isArray(data.savedSessions)) {
-            let sessionMap = new Map();
-            savedSessions.forEach(s => sessionMap.set(s.sessionId, s));
-            data.savedSessions.forEach(s => sessionMap.set(s.sessionId, s));
-            savedSessions = Array.from(sessionMap.values()).sort((a,b) => new Date(b.date) - new Date(a.date));
-          }
-
-          if (data.logs && Array.isArray(data.logs)) logs = data.logs;
-
-          // 2. Dashboard Update Logic
-          // If local board is empty OR user manually clicked refresh:
-          if (players.length === 0 || isManual) {
-            if (data.settings) {
-              if (data.settings.coinCount) document.getElementById("coinCount").value = data.settings.coinCount;
-              if (data.settings.currencyVal) document.getElementById("currencyVal").value = data.settings.currencyVal;
-              if (data.settings.buyInCoins) document.getElementById("buyInCoins").value = data.settings.buyInCoins;
-            }
-
-            if (data.activePlayers && Array.isArray(data.activePlayers)) {
-              players = data.activePlayers;
-            }
-          }
-
-          if (data.knownRoster && Array.isArray(data.knownRoster)) {
-            data.knownRoster.forEach(name => {
-              if (!strictMasterRoster.includes(name.toUpperCase())) strictMasterRoster.push(name.toUpperCase());
-            });
-          }
-
-          saveState(); 
-          renderAll();
-          if (statusText) statusText.innerText = "Synced";
-          if (isManual) alert("✅ Data synchronized with GitHub!");
-        } else {
-          if (statusText) statusText.innerText = "Error";
-        }
-      } catch (err) {
-        console.error("Auto fetch error:", err);
-        if (statusText) statusText.innerText = "Offline";
-      }
-    }
-
-    function manualRefreshData() {
-      if (players.length > 0) {
-        const warn1 = confirm("⚠️ OVERWRITE NOTICE: Refreshing from GitHub will sync your active board with the latest cloud state.\n\nDo you want to proceed?");
-        if (!warn1) return;
-      }
-      autoFetchFromGitHub(true);
-    }
-
-    // Token-Authenticated Push Function
-    async function pushToGitHub() {
-      let token = localStorage.getItem("gh_token") || "";
-
-      if (!token) {
-        const tokenInput = prompt("🔒 ADMIN AUTHENTICATION REQUIRED:\n\nEnter your GitHub Personal Access Token to push live data:");
-        if (!tokenInput || tokenInput.trim().length === 0) {
-          return alert("Push cancelled. Personal Access Token is required to update the live cloud database.");
-        }
-        token = tokenInput.trim();
-        localStorage.setItem("gh_token", token);
-      }
-
-      const filePath = "data.json";
-      const apiUrl = `https://api.github.com/repos/${GH_USER}/${GH_REPO}/contents/${filePath}`;
-      
-      let remoteSha = "";
-      let remoteSessions = [];
-      try {
-        const getRes = await fetch(apiUrl, {
-          headers: { 
-            "Authorization": `Bearer ${token}`,
-            "Accept": "application/vnd.github.v3+json"
-          }
-        });
-
-        if (getRes.ok) {
-          const getData = await getRes.json();
-          remoteSha = getData.sha;
-          const decodedContent = JSON.parse(decodeURIComponent(escape(atob(getData.content))));
-          if (decodedContent.savedSessions) remoteSessions = decodedContent.savedSessions;
-        } else if (getRes.status === 401 || getRes.status === 403) {
-          localStorage.removeItem("gh_token");
-          return alert("Authentication Failed! Invalid or expired token.");
-        }
-      } catch(e) { console.warn("Could not pre-fetch remote SHA", e); }
-
-      let sessionMap = new Map();
-      remoteSessions.forEach(s => sessionMap.set(s.sessionId, s));
-      savedSessions.forEach(s => sessionMap.set(s.sessionId, s));
-      let mergedSavedSessions = Array.from(sessionMap.values()).sort((a,b) => new Date(b.date) - new Date(a.date));
-
-      const payload = {
-        savedSessions: mergedSavedSessions,
-        activePlayers: players,
-        settings: {
-          coinCount: document.getElementById("coinCount").value,
-          currencyVal: document.getElementById("currencyVal").value,
-          buyInCoins: document.getElementById("buyInCoins").value
-        },
-        logs: logs,
-        knownRoster: strictMasterRoster
-      };
-
-      const contentEncoded = btoa(unescape(encodeURIComponent(JSON.stringify(payload, null, 2))));
-
-      try {
-        const putRes = await fetch(apiUrl, {
-          method: "PUT",
-          headers: {
-            "Authorization": `Bearer ${token}`,
-            "Content-Type": "application/json",
-            "Accept": "application/vnd.github.v3+json"
-          },
-          body: JSON.stringify({
-            message: `Update live state [${new Date().toISOString().substring(0, 19).replace('T', ' ')}]`,
-            content: contentEncoded,
-            sha: remoteSha || undefined
-          })
-        });
-
-        if (putRes.ok) {
-          savedSessions = mergedSavedSessions;
-          saveState(); renderAll();
-          alert("✅ LIVE STATE PUSHED TO GITHUB!\nActive dashboard and game history updated across all devices.");
-          addLog("Pushed live state to GitHub repo.");
-        } else {
-          const errData = await putRes.json();
-          alert(`GitHub Push Failed (${putRes.status}): ${errData.message}`);
-        }
-      } catch (err) {
-        console.error(err);
-        alert("Error connecting to GitHub API.");
-      }
-    }
-
-    function clearLocalDeviceCache() {
-      const confirm1 = confirm("⚠️ DANGER: Clear all local browser storage, cached sessions, and active memory on THIS device?");
-      if (!confirm1) return;
-
-      const confirm2 = confirm("DOUBLE CONFIRMATION:\n\nThis will reset your local app cache to zero and re-pull clean state from GitHub. Proceed?");
-      if (!confirm2) return;
-
-      localStorage.clear();
-      if ('caches' in window) {
-        caches.keys().then(names => {
-          for (let name of names) caches.delete(name);
-        });
-      }
-      alert("Device cache cleared! The page will now reload.");
-      window.location.reload();
-    }
-
-    // Experimental Tools
-    function pickRandomParticipant() {
-      const resultElem = document.getElementById("randomPickerResult");
-      if (players.length === 0) {
-        resultElem.innerText = "Add active participants first!";
-        return;
-      }
-      const randomIndex = Math.floor(Math.random() * players.length);
-      const chosen = players[randomIndex].name;
-      resultElem.innerText = `🎲 Chosen Participant: ${chosen}`;
-    }
-
-    function updateExperimentalMvp() {
-      const display = document.getElementById("activeMvpDisplay");
-      if (players.length === 0) {
-        display.innerText = "No active session data yet.";
-        return;
-      }
-
-      const rate = getCoinRate();
-      let bestNet = -Infinity;
-      let mvpName = "-";
-
-      players.forEach(p => {
-        const netVal = (p.cashOutCoins - (p.buyIns * p.buyInCoins)) * rate;
-        if (netVal > bestNet) {
-          bestNet = netVal;
-          mvpName = p.name;
-        }
-      });
-
-      if (bestNet > 0) {
-        display.innerHTML = `⭐ <strong>${mvpName}</strong> is leading with <span style="color:var(--accent)">+₹${bestNet.toFixed(2)}</span>`;
-      } else {
-        display.innerText = "Session in progress... No positive net leader yet.";
-      }
-    }
-
     // Boot Application & Enable Auto-Polling
+    initUserIdentity({});
     renderAll();
     validateAddButton();
 
-    // Auto-fetch on page boot
     autoFetchFromGitHub(false);
 
-    // Auto-fetch every 15 minutes in background
+    // Auto-fetch every 15 seconds for real-time live spectator viewing
     setInterval(() => {
       autoFetchFromGitHub(false);
-    }, 15 * 60 * 1000);
+    }, 15 * 1000);
 
-    // Auto-fetch when user switches back to app tab
+    // Auto-fetch on tab focus
     document.addEventListener("visibilitychange", () => {
-      if (document.visibilityState === "visible") {
-        autoFetchFromGitHub(false);
-      }
+      if (document.visibilityState === "visible") autoFetchFromGitHub(false);
     });
   </script>
 </body>
