@@ -382,6 +382,10 @@
     // 30-Second Sorting Debounce
     let sortDebounceTimer = null;
 
+    // 30-Second API Push Queue Debouncer
+    let pushQueueTimer = null;
+    let hasUnpushedChanges = false;
+
     // Device Identification State
     let myDeviceId = localStorage.getItem("device_id") || "";
     let myUserName = localStorage.getItem("device_user_name") || "";
@@ -671,7 +675,7 @@
       } else if (isCurrentHost()) {
         banner.className = "lock-banner active-host";
         title.innerText = `👑 YOU ARE HOSTING (${myUserName})`;
-        subtitle.innerText = `Live session locked to your device. Event sync active.`;
+        subtitle.innerText = hasUnpushedChanges ? `⚠️ Changes saved locally (Pushing in 30s queue...)` : `Live session locked to your device. Cloud synced.`;
         actions.innerHTML = `
           <button type="button" id="btnPassSession" class="btn-warning btn-sm" onclick="passSessionHandoff()">🤝 Pass Session</button>
           <button type="button" id="btnStopSession" class="btn-danger btn-sm" onclick="forceCloseSession()">🛑 Stop</button>
@@ -696,12 +700,11 @@
       }
     }
 
-    // --- OPTIMISTIC SESSION LOCK CONTROL ACTIONS ---
+    // --- SESSION LOCK ACTIONS (FLUSHES QUEUE IMMEDIATELY) ---
     async function startNewSession() {
       let token = getAdminToken();
       if (!token) return;
 
-      // 1. Optimistic Local Lock (Instantly disables UI buttons)
       activeSessionLock = {
         hostName: myUserName,
         hostDeviceId: myDeviceId,
@@ -711,11 +714,8 @@
       players = [];
       addLog(`Started new active session`);
 
-      // 2. Render immediately so host sees instant transition
       renderAll();
-
-      // 3. Push to GitHub
-      await pushFullPayloadToGitHub(token, false, "BUILD_IN_PROGRESS");
+      await autoPushStateToGitHub(true);
     }
 
     async function passSessionHandoff() {
@@ -729,7 +729,7 @@
       addLog(`Released active session lock for handoff`);
       renderAll();
 
-      await pushFullPayloadToGitHub(token, false, "BUILD_IN_PROGRESS");
+      await autoPushStateToGitHub(true);
     }
 
     async function forceCloseSession() {
@@ -744,7 +744,7 @@
       addLog(`Terminated active session`);
       renderAll();
 
-      await pushFullPayloadToGitHub(token, false, "BUILD_IN_PROGRESS");
+      await autoPushStateToGitHub(true);
     }
 
     async function takeOverExpiredSession() {
@@ -763,7 +763,7 @@
       addLog(`Took over host duties for active session`);
       renderAll();
 
-      await pushFullPayloadToGitHub(token, false, "BUILD_IN_PROGRESS");
+      await autoPushStateToGitHub(true);
     }
 
     async function confirmAndSaveSession() {
@@ -804,7 +804,7 @@
       players = [];
       renderAll();
 
-      await pushFullPayloadToGitHub(token, false, "BUILD_IN_PROGRESS");
+      await autoPushStateToGitHub(true);
       alert("✅ Session saved successfully and live board closed!");
     }
 
@@ -896,12 +896,43 @@
         isTestModeActive = !isTestModeActive;
         monthTapCount = 0;
         document.getElementById("testModeBadge").innerText = isTestModeActive ? "🧪 DEV MODE ACTIVE" : "";
-        alert(isTestModeActive ? "🧪 Local Dev Mode Unlocked: You can now delete or edit local sessions & leaderboards!" : "Local Dev Mode Disabled.");
+        alert(isTestModeActive ? "🧪 Local Dev Mode Unlocked: You can now edit/delete local sessions & leaderboards!" : "Local Dev Mode Disabled.");
         renderLeaderboard();
         return;
       }
 
       monthTapTimer = setTimeout(() => { monthTapCount = 0; }, 1500);
+    }
+
+    // EDIT FUNCTION FOR DEV MODE
+    function editHistoricalSession(sessionId) {
+      if (!isTestModeActive) return;
+
+      const session = savedSessions.find(s => s.sessionId === sessionId);
+      if (!session) return;
+
+      let playerNames = session.entries.map((e, i) => `${i + 1}. ${e.name} (Coins: ${e.finalCoins})`).join("\n");
+      let choice = prompt(`✏️ EDIT SESSION (${sessionId}):\nSelect participant number to edit:\n\n${playerNames}`);
+      
+      if (!choice) return;
+      let idx = parseInt(choice) - 1;
+      
+      if (isNaN(idx) || idx < 0 || idx >= session.entries.length) {
+        return alert("Invalid selection!");
+      }
+
+      let entry = session.entries[idx];
+      let newFinalCoins = prompt(`Edit final coins for ${entry.name}:`, entry.finalCoins);
+      
+      if (newFinalCoins !== null && !isNaN(parseFloat(newFinalCoins))) {
+        const rate = getCoinRate();
+        entry.finalCoins = parseFloat(newFinalCoins);
+        entry.netVal = (entry.finalCoins - entry.investedCoins) * rate;
+        
+        saveState();
+        renderLeaderboard();
+        alert(`Updated ${entry.name}'s final coins to ${entry.finalCoins}!`);
+      }
     }
 
     function deleteHistoricalSession(sessionId) {
@@ -953,7 +984,12 @@
 
           item.innerHTML = `
             <div><strong>${dateStr}</strong><br>${detailsHTML}</div>
-            ${isTestModeActive ? `<button type="button" class="btn-danger" onclick="deleteHistoricalSession('${session.sessionId}')">🗑️</button>` : ''}
+            ${isTestModeActive ? `
+              <div style="display:flex; gap:4px;">
+                <button type="button" class="btn-sm" style="background:#3b82f6; padding:2px 6px;" onclick="editHistoricalSession('${session.sessionId}')">✏️</button>
+                <button type="button" class="btn-danger" style="padding:2px 6px;" onclick="deleteHistoricalSession('${session.sessionId}')">🗑️</button>
+              </div>
+            ` : ''}
           `;
           historyBox.appendChild(item);
         });
@@ -1001,7 +1037,7 @@
       renderLeaderboard();
     }
 
-    // --- AUTO-FETCH & SYNC ENGINE ---
+    // --- AUTO-FETCH ENGINE (DIRECT REST API CALL BYPASSES CDN CACHE) ---
     function mergeLogs(localLogs, remoteLogs) {
       let logMap = new Map();
       remoteLogs.forEach(l => logMap.set(l.id || (l.time + "_" + l.text), l));
@@ -1013,12 +1049,16 @@
       const statusText = document.getElementById("syncStatusText");
       if (statusText) statusText.innerText = "Syncing...";
 
-      const rawUrl = `https://raw.githubusercontent.com/${GH_USER}/${GH_REPO}/main/data.json?t=${Date.now()}`;
+      const apiUrl = `https://api.github.com/repos/${GH_USER}/${GH_REPO}/contents/data.json?t=${Date.now()}`;
 
       try {
-        const res = await fetch(rawUrl);
+        const res = await fetch(apiUrl, {
+          headers: { "Accept": "application/vnd.github.v3+json" }
+        });
+
         if (res.ok) {
-          const data = await res.json();
+          const getData = await res.json();
+          const data = JSON.parse(decodeURIComponent(escape(atob(getData.content))));
           
           if (data.syncStatusFlag) syncStatusFlag = data.syncStatusFlag;
           else syncStatusFlag = "IDLE";
@@ -1058,8 +1098,8 @@
 
           saveState(); 
           renderAll();
-          if (statusText) statusText.innerText = syncStatusFlag === "BUILD_IN_PROGRESS" ? "Syncing..." : "Synced";
-          if (isManual) alert("✅ Data synchronized with GitHub!");
+          if (statusText) statusText.innerText = (syncStatusFlag === "BUILD_IN_PROGRESS" || hasUnpushedChanges) ? "Queued" : "Synced";
+          if (isManual) alert("✅ Real-time data synchronized with GitHub API!");
         } else {
           if (statusText) statusText.innerText = "Error";
         }
@@ -1080,13 +1120,27 @@
       return token;
     }
 
-    async function autoPushStateToGitHub() {
+    // --- 30-SECOND DEBOUNCED QUEUE PUSH ENGINE ---
+    async function autoPushStateToGitHub(flushQueueNow = false) {
       if (!isCurrentHost()) return;
-      let token = localStorage.getItem("gh_token");
-      if (token) await pushFullPayloadToGitHub(token, true, "IDLE");
+      
+      hasUnpushedChanges = true;
+      updateLockUI();
+
+      clearTimeout(pushQueueTimer);
+
+      if (flushQueueNow) {
+        let token = localStorage.getItem("gh_token") || getAdminToken();
+        if (token) await pushFullPayloadToGitHub(token, true, "BUILD_IN_PROGRESS");
+      } else {
+        pushQueueTimer = setTimeout(async () => {
+          let token = localStorage.getItem("gh_token");
+          if (token) await pushFullPayloadToGitHub(token, true, "IDLE");
+        }, 30000);
+      }
     }
 
-    // SHA-SAFE PUSH ENGINE WITH OPTIMISTIC LOCKING
+    // SHA-SAFE PUSH ENGINE
     async function pushFullPayloadToGitHub(token, isSilent = false, targetSyncStatus = "IDLE") {
       syncStatusFlag = targetSyncStatus;
       renderAll();
@@ -1098,7 +1152,6 @@
       let remoteSessions = [];
       let remoteLogs = [];
 
-      // Preserve local state before pre-fetch
       const currentLocalLock = activeSessionLock;
       const currentLocalPlayers = players;
 
@@ -1109,7 +1162,7 @@
 
         if (getRes.ok) {
           const getData = await getRes.json();
-          remoteSha = getData.sha; // ALWAYS FETCH LATEST REMOTE SHA TO PREVENT 409 CONFLICTS
+          remoteSha = getData.sha;
           const decodedContent = JSON.parse(decodeURIComponent(escape(atob(getData.content))));
           if (decodedContent.savedSessions) remoteSessions = decodedContent.savedSessions;
           if (decodedContent.logs) remoteLogs = decodedContent.logs;
@@ -1169,13 +1222,13 @@
         if (putRes.ok) {
           savedSessions = mergedSavedSessions;
           logs = mergedLogs;
+          hasUnpushedChanges = false;
           saveState(); 
 
-          // If we pushed BUILD_IN_PROGRESS, schedule re-fetch to clear flag
           if (targetSyncStatus === "BUILD_IN_PROGRESS") {
             setTimeout(async () => {
               await pushFullPayloadToGitHub(token, true, "IDLE");
-            }, 6000); // 6-second build settling buffer
+            }, 6000);
           } else {
             syncStatusFlag = "IDLE";
             renderAll();
