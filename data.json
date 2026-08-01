@@ -1,86 +1,282 @@
 {
-  "syncStatusFlag": "IDLE",
-  "activeSessionLock": null,
-  "deviceRegistry": {},
+  "activeSessionLock": {
+    "hostName": "SANDEEP PHONE",
+    "hostDeviceId": "DEV_msacyyya_EZ4X",
+    "startTime": "2026-08-01T13:10:20.444Z",
+    "lastPushTime": "2026-08-01T13:10:20.452Z"
+  },
+  "deviceRegistry": {
+    "DEV_msacyyya_EZ4X": "SANDEEP PHONE"
+  },
   "savedSessions": [
     {
       "sessionId": "S_1785556100335",
       "date": "2026-08-01T03:48:20.335Z",
       "entries": [
-        { "name": "AKSHAY", "investedCoins": 2000, "finalCoins": 6200, "netVal": 2100 },
-        { "name": "HARI", "investedCoins": 3000, "finalCoins": 3000, "netVal": 0 },
-        { "name": "RAVI", "investedCoins": 10000, "finalCoins": 0, "netVal": -5000 },
-        { "name": "SANDEEP", "investedCoins": 8000, "finalCoins": 0, "netVal": -4000 },
-        { "name": "RISHI", "investedCoins": 10000, "finalCoins": 17000, "netVal": 3500 },
-        { "name": "KUNAL", "investedCoins": 2000, "finalCoins": 12000, "netVal": 5000 },
-        { "name": "HARSHIT", "investedCoins": 4000, "finalCoins": 0, "netVal": -2000 },
-        { "name": "ABHISHEK", "investedCoins": 7000, "finalCoins": 8740, "netVal": 870 },
-        { "name": "GAGAN", "investedCoins": 9000, "finalCoins": 8060, "netVal": -470 }
+        {
+          "name": "AKSHAY",
+          "investedCoins": 2000,
+          "finalCoins": 6200,
+          "netVal": 2100
+        },
+        {
+          "name": "HARI",
+          "investedCoins": 3000,
+          "finalCoins": 3000,
+          "netVal": 0
+        },
+        {
+          "name": "RAVI",
+          "investedCoins": 10000,
+          "finalCoins": 0,
+          "netVal": -5000
+        },
+        {
+          "name": "SANDEEP",
+          "investedCoins": 8000,
+          "finalCoins": 0,
+          "netVal": -4000
+        },
+        {
+          "name": "RISHI",
+          "investedCoins": 10000,
+          "finalCoins": 17000,
+          "netVal": 3500
+        },
+        {
+          "name": "KUNAL",
+          "investedCoins": 2000,
+          "finalCoins": 12000,
+          "netVal": 5000
+        },
+        {
+          "name": "HARSHIT",
+          "investedCoins": 4000,
+          "finalCoins": 0,
+          "netVal": -2000
+        },
+        {
+          "name": "ABHISHEK",
+          "investedCoins": 7000,
+          "finalCoins": 8740,
+          "netVal": 870
+        },
+        {
+          "name": "GAGAN",
+          "investedCoins": 9000,
+          "finalCoins": 8060,
+          "netVal": -470
+        }
       ]
     },
     {
       "sessionId": "S_1785425489283",
       "date": "2026-07-30T15:31:29.283Z",
       "entries": [
-        { "name": "RAVI", "investedCoins": 1000, "finalCoins": 3150, "netVal": 1075 },
-        { "name": "KUNAL", "investedCoins": 3000, "finalCoins": 0, "netVal": -1500 },
-        { "name": "RISHI", "investedCoins": 1000, "finalCoins": 1850, "netVal": 425 }
+        {
+          "name": "RAVI",
+          "investedCoins": 1000,
+          "finalCoins": 3150,
+          "netVal": 1075
+        },
+        {
+          "name": "KUNAL",
+          "investedCoins": 3000,
+          "finalCoins": 0,
+          "netVal": -1500
+        },
+        {
+          "name": "RISHI",
+          "investedCoins": 1000,
+          "finalCoins": 1850,
+          "netVal": 425
+        }
       ]
     },
     {
       "sessionId": "S_1785359254471",
       "date": "2026-07-29T21:07:34.471Z",
       "entries": [
-        { "name": "SANDEEP", "investedCoins": 1000, "finalCoins": 1000, "netVal": 0 }
+        {
+          "name": "SANDEEP",
+          "investedCoins": 1000,
+          "finalCoins": 1000,
+          "netVal": 0
+        }
       ]
     },
     {
       "sessionId": "S_1785345383520",
       "date": "2026-07-29T17:16:23.520Z",
       "entries": [
-        { "name": "HARSHIT", "investedCoins": 5000, "finalCoins": 0, "netVal": -2500 },
-        { "name": "AKSHAY", "investedCoins": 2000, "finalCoins": 5560, "netVal": 1780 },
-        { "name": "HARI", "investedCoins": 3000, "finalCoins": 1210, "netVal": -895 },
-        { "name": "RAVI", "investedCoins": 5000, "finalCoins": 1610, "netVal": -1695 },
-        { "name": "RISHI", "investedCoins": 4000, "finalCoins": 14040, "netVal": 5020 },
-        { "name": "MOHINI", "investedCoins": 1000, "finalCoins": 0, "netVal": -500 },
-        { "name": "SANDEEP", "investedCoins": 4000, "finalCoins": 3690, "netVal": -155 },
-        { "name": "KUNAL", "investedCoins": 2000, "finalCoins": 0, "netVal": -1000 }
+        {
+          "name": "HARSHIT",
+          "investedCoins": 5000,
+          "finalCoins": 0,
+          "netVal": -2500
+        },
+        {
+          "name": "AKSHAY",
+          "investedCoins": 2000,
+          "finalCoins": 5560,
+          "netVal": 1780
+        },
+        {
+          "name": "HARI",
+          "investedCoins": 3000,
+          "finalCoins": 1210,
+          "netVal": -895
+        },
+        {
+          "name": "RAVI",
+          "investedCoins": 5000,
+          "finalCoins": 1610,
+          "netVal": -1695
+        },
+        {
+          "name": "RISHI",
+          "investedCoins": 4000,
+          "finalCoins": 14040,
+          "netVal": 5020
+        },
+        {
+          "name": "MOHINI",
+          "investedCoins": 1000,
+          "finalCoins": 0,
+          "netVal": -500
+        },
+        {
+          "name": "SANDEEP",
+          "investedCoins": 4000,
+          "finalCoins": 3690,
+          "netVal": -155
+        },
+        {
+          "name": "KUNAL",
+          "investedCoins": 2000,
+          "finalCoins": 0,
+          "netVal": -1000
+        }
       ]
     },
     {
       "sessionId": "S_1785262817454",
       "date": "2026-07-28T18:20:17.454Z",
       "entries": [
-        { "name": "AKSHAY", "investedCoins": 1000, "finalCoins": 1560, "netVal": 280 },
-        { "name": "KUNAL", "investedCoins": 2000, "finalCoins": 500, "netVal": -750 },
-        { "name": "MOHINI", "investedCoins": 7000, "finalCoins": 0, "netVal": -3500 },
-        { "name": "RAVI", "investedCoins": 3000, "finalCoins": 560, "netVal": -1220 },
-        { "name": "RISHI", "investedCoins": 1000, "finalCoins": 5500, "netVal": 2250 },
-        { "name": "SANDEEP", "investedCoins": 1000, "finalCoins": 5340, "netVal": 2170 },
-        { "name": "HARSHIT", "investedCoins": 1000, "finalCoins": 2400, "netVal": 700 }
+        {
+          "name": "AKSHAY",
+          "investedCoins": 1000,
+          "finalCoins": 1560,
+          "netVal": 280
+        },
+        {
+          "name": "KUNAL",
+          "investedCoins": 2000,
+          "finalCoins": 500,
+          "netVal": -750
+        },
+        {
+          "name": "MOHINI",
+          "investedCoins": 7000,
+          "finalCoins": 0,
+          "netVal": -3500
+        },
+        {
+          "name": "RAVI",
+          "investedCoins": 3000,
+          "finalCoins": 560,
+          "netVal": -1220
+        },
+        {
+          "name": "RISHI",
+          "investedCoins": 1000,
+          "finalCoins": 5500,
+          "netVal": 2250
+        },
+        {
+          "name": "SANDEEP",
+          "investedCoins": 1000,
+          "finalCoins": 5340,
+          "netVal": 2170
+        },
+        {
+          "name": "HARSHIT",
+          "investedCoins": 1000,
+          "finalCoins": 2400,
+          "netVal": 700
+        }
       ]
     },
     {
       "sessionId": "S_1785171133604",
       "date": "2026-07-27T16:52:13.604Z",
       "entries": [
-        { "name": "MOHINI", "investedCoins": 1000, "finalCoins": 700, "netVal": -150 },
-        { "name": "HARI", "investedCoins": 1000, "finalCoins": 5000, "netVal": 2000 },
-        { "name": "KUNAL", "investedCoins": 1000, "finalCoins": 2300, "netVal": 650 },
-        { "name": "RAVI", "investedCoins": 4000, "finalCoins": 0, "netVal": -2000 },
-        { "name": "RISHI", "investedCoins": 1000, "finalCoins": 0, "netVal": -500 }
+        {
+          "name": "MOHINI",
+          "investedCoins": 1000,
+          "finalCoins": 700,
+          "netVal": -150
+        },
+        {
+          "name": "HARI",
+          "investedCoins": 1000,
+          "finalCoins": 5000,
+          "netVal": 2000
+        },
+        {
+          "name": "KUNAL",
+          "investedCoins": 1000,
+          "finalCoins": 2300,
+          "netVal": 650
+        },
+        {
+          "name": "RAVI",
+          "investedCoins": 4000,
+          "finalCoins": 0,
+          "netVal": -2000
+        },
+        {
+          "name": "RISHI",
+          "investedCoins": 1000,
+          "finalCoins": 0,
+          "netVal": -500
+        }
       ]
     },
     {
       "sessionId": "S_1785008887866",
       "date": "2026-07-25T19:48:07.866Z",
       "entries": [
-        { "name": "RISHI", "investedCoins": 3000, "finalCoins": 3000, "netVal": 0 },
-        { "name": "HARI", "investedCoins": 4000, "finalCoins": 700, "netVal": -1650 },
-        { "name": "KUNAL", "investedCoins": 4000, "finalCoins": 1500, "netVal": -1250 },
-        { "name": "MOHINI", "investedCoins": 2000, "finalCoins": 3600, "netVal": 800 },
-        { "name": "SANDEEP", "investedCoins": 1000, "finalCoins": 5200, "netVal": 2100 }
+        {
+          "name": "RISHI",
+          "investedCoins": 3000,
+          "finalCoins": 3000,
+          "netVal": 0
+        },
+        {
+          "name": "HARI",
+          "investedCoins": 4000,
+          "finalCoins": 700,
+          "netVal": -1650
+        },
+        {
+          "name": "KUNAL",
+          "investedCoins": 4000,
+          "finalCoins": 1500,
+          "netVal": -1250
+        },
+        {
+          "name": "MOHINI",
+          "investedCoins": 2000,
+          "finalCoins": 3600,
+          "netVal": 800
+        },
+        {
+          "name": "SANDEEP",
+          "investedCoins": 1000,
+          "finalCoins": 5200,
+          "netVal": 2100
+        }
       ]
     }
   ],
@@ -91,16 +287,261 @@
     "buyInCoins": "1000"
   },
   "logs": [
-    { "id": "L_1785556100335", "time": "2026-08-01 11:25:57", "text": "Cleared active session dashboard." },
-    { "id": "L_1785556100334", "time": "2026-08-01 11:24:20", "text": "Buy-in increased for SANDEEP: count = 8." },
-    { "id": "L_1785556100333", "time": "2026-08-01 11:24:09", "text": "Buy-in decreased for SANDEEP: count = 7." },
-    { "id": "L_1785556100332", "time": "2026-07-31 08:39:58", "text": "Added \"KUNAL\" with 1 buy-in (1000c)." },
-    { "id": "L_1785556100331", "time": "2026-07-31 08:39:46", "text": "Added \"RISHI\" with 1 buy-in (1000c)." },
-    { "id": "L_1785556100330", "time": "2026-07-31 08:39:19", "text": "Added \"SANDEEP\" with 1 buy-in (1000c)." },
-    { "id": "L_1785556100329", "time": "2026-07-31 08:39:09", "text": "Added \"RAVI\" with 1 buy-in (1000c)." },
-    { "id": "L_1785556100328", "time": "2026-07-31 08:39:05", "text": "Added \"HARI\" with 1 buy-in (1000c)." },
-    { "id": "L_1785556100327", "time": "2026-07-31 08:39:01", "text": "Added \"AKSHAY\" with 1 buy-in (1000c)." },
-    { "id": "L_1785556100326", "time": "2026-07-31 08:38:55", "text": "Cleared active session dashboard." }
+    {
+      "id": "L_1785589820444_ehqy",
+      "time": "2026-08-01 13:10:20",
+      "text": "Started new active session • by SANDEEP PHONE"
+    },
+    {
+      "id": "L_1785589820228_xqcz",
+      "time": "2026-08-01 13:10:20",
+      "text": "Started new active session • by SANDEEP PHONE"
+    },
+    {
+      "id": "L_1785589819529_2c1u",
+      "time": "2026-08-01 13:10:19",
+      "text": "Started new active session • by SANDEEP PHONE"
+    },
+    {
+      "id": "L_1785588965876_0jso",
+      "time": "2026-08-01 12:56:05",
+      "text": "Started new active session • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785588824498_pnid",
+      "time": "2026-08-01 12:53:44",
+      "text": "Terminated active session • by SANDEEP PHONE"
+    },
+    {
+      "id": "L_1785588817507_yu5h",
+      "time": "2026-08-01 12:53:37",
+      "text": "Started new active session • by SANDEEP PHONE"
+    },
+    {
+      "id": "L_1785588793728_dimw",
+      "time": "2026-08-01 12:53:13",
+      "text": "Started new active session • by SANDEEP PHONE"
+    },
+    {
+      "id": "L_1785588769452_dckg",
+      "time": "2026-08-01 12:52:49",
+      "text": "Calculated minimum transaction settlement • by SANDEEP PHONE"
+    },
+    {
+      "id": "L_1785588767788_fpta",
+      "time": "2026-08-01 12:52:47",
+      "text": "Calculated minimum transaction settlement • by SANDEEP PHONE"
+    },
+    {
+      "id": "L_1785588697446_uvpd",
+      "time": "2026-08-01 12:51:37",
+      "text": "Started new active session • by SANDEEP PHONE"
+    },
+    {
+      "id": "L_1785588574994_j310",
+      "time": "2026-08-01 12:49:34",
+      "text": "Started new active session • by SANDEEP PHONE"
+    },
+    {
+      "id": "L_1785588456588_y3du",
+      "time": "2026-08-01 12:47:36",
+      "text": "Started new active session • by SANDEEP PHONE"
+    },
+    {
+      "id": "L_1785588195978_t4no",
+      "time": "2026-08-01 12:43:15",
+      "text": "Released active session lock for handoff • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785587290907_8p7g",
+      "time": "2026-08-01 12:28:10",
+      "text": "Released active session lock for handoff • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785587043108_3128",
+      "time": "2026-08-01 12:24:03",
+      "text": "Buy-in increased for ABHISHEK: count = 5 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785587040983_z47k",
+      "time": "2026-08-01 12:24:00",
+      "text": "Buy-in decreased for ABHISHEK: count = 4 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785586844879_v996",
+      "time": "2026-08-01 12:20:44",
+      "text": "Buy-in decreased for AKSHAY: count = 5 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785586693569_poj9",
+      "time": "2026-08-01 12:18:13",
+      "text": "Buy-in increased for HARSHIT: count = 3 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785586690045_9z2h",
+      "time": "2026-08-01 12:18:10",
+      "text": "Buy-in increased for SANDEEP: count = 3 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785586609015_htqd",
+      "time": "2026-08-01 12:16:49",
+      "text": "Buy-in increased for ABHISHEK: count = 4 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785586606963_10kz",
+      "time": "2026-08-01 12:16:46",
+      "text": "Buy-in increased for AKSHAY: count = 6 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785586583529_h6as",
+      "time": "2026-08-01 12:16:23",
+      "text": "Buy-in increased for AKSHAY: count = 5 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785586581693_5nyw",
+      "time": "2026-08-01 12:16:21",
+      "text": "Buy-in increased for AKSHAY: count = 4 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785586568619_4yy8",
+      "time": "2026-08-01 12:16:08",
+      "text": "Buy-in increased for HARSHIT: count = 2 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785586546622_hjwq",
+      "time": "2026-08-01 12:15:46",
+      "text": "Buy-in increased for ABHISHEK: count = 3 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785586542618_yi20",
+      "time": "2026-08-01 12:15:42",
+      "text": "Buy-in decreased for HARSHIT: count = 1 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785586534495_1y3j",
+      "time": "2026-08-01 12:15:34",
+      "text": "Buy-in increased for AKSHAY: count = 3 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785586519301_8cgn",
+      "time": "2026-08-01 12:15:19",
+      "text": "Buy-in decreased for SANDEEP: count = 2 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785586507396_ne5f",
+      "time": "2026-08-01 12:15:07",
+      "text": "Buy-in increased for SANDEEP: count = 3 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785586495802_54vt",
+      "time": "2026-08-01 12:14:55",
+      "text": "Buy-in increased for SANDEEP: count = 2 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785586493574_iga2",
+      "time": "2026-08-01 12:14:53",
+      "text": "Buy-in increased for ABHISHEK: count = 2 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785586491628_qx2l",
+      "time": "2026-08-01 12:14:51",
+      "text": "Buy-in increased for AKSHAY: count = 2 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785586478404_ehp0",
+      "time": "2026-08-01 12:14:38",
+      "text": "Added \"SANDEEP\" with 1 buy-in (1000c) • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785586470361_8i6d",
+      "time": "2026-08-01 12:14:30",
+      "text": "Added \"HARSHIT\" with 1 buy-in (1000c) • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785586463055_sy6t",
+      "time": "2026-08-01 12:14:23",
+      "text": "Added \"ABHISHEK\" with 1 buy-in (1000c) • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785586452257_zzg2",
+      "time": "2026-08-01 12:14:12",
+      "text": "Added \"AKSHAY\" with 1 buy-in (1000c) • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785586436058_cpaw",
+      "time": "2026-08-01 12:13:56",
+      "text": "Started new active session • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785586306785_mmy4",
+      "time": "2026-08-01 12:11:46",
+      "text": "Started new active session • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785586296568_1o54",
+      "time": "2026-08-01 12:11:36",
+      "text": "Started new active session • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785586261196_vtxt",
+      "time": "2026-08-01 12:11:01",
+      "text": "Started new active session • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785586241453_cyzh",
+      "time": "2026-08-01 12:10:41",
+      "text": "Started new active session • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785556100335",
+      "time": "2026-08-01 11:25:57",
+      "text": "Cleared active session dashboard."
+    },
+    {
+      "id": "L_1785556100334",
+      "time": "2026-08-01 11:24:20",
+      "text": "Buy-in increased for SANDEEP: count = 8."
+    },
+    {
+      "id": "L_1785556100333",
+      "time": "2026-08-01 11:24:09",
+      "text": "Buy-in decreased for SANDEEP: count = 7."
+    },
+    {
+      "id": "L_1785556100332",
+      "time": "2026-07-31 08:39:58",
+      "text": "Added \"KUNAL\" with 1 buy-in (1000c)."
+    },
+    {
+      "id": "L_1785556100331",
+      "time": "2026-07-31 08:39:46",
+      "text": "Added \"RISHI\" with 1 buy-in (1000c)."
+    },
+    {
+      "id": "L_1785556100330",
+      "time": "2026-07-31 08:39:19",
+      "text": "Added \"SANDEEP\" with 1 buy-in (1000c)."
+    },
+    {
+      "id": "L_1785556100329",
+      "time": "2026-07-31 08:39:09",
+      "text": "Added \"RAVI\" with 1 buy-in (1000c)."
+    },
+    {
+      "id": "L_1785556100328",
+      "time": "2026-07-31 08:39:05",
+      "text": "Added \"HARI\" with 1 buy-in (1000c)."
+    },
+    {
+      "id": "L_1785556100327",
+      "time": "2026-07-31 08:39:01",
+      "text": "Added \"AKSHAY\" with 1 buy-in (1000c)."
+    },
+    {
+      "id": "L_1785556100326",
+      "time": "2026-07-31 08:38:55",
+      "text": "Cleared active session dashboard."
+    }
   ],
   "knownRoster": [
     "SANDEEP",
