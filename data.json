@@ -1,12 +1,7 @@
 {
-  "activeSessionLock": {
-    "hostName": "SANDEEP PHONE",
-    "hostDeviceId": "DEV_msacyyya_EZ4X",
-    "startTime": "2026-08-01T13:10:20.444Z",
-    "lastPushTime": "2026-08-01T13:10:20.452Z"
-  },
+  "activeSessionLock": null,
   "deviceRegistry": {
-    "DEV_msacyyya_EZ4X": "SANDEEP PHONE"
+    "DEV_msad5lur_EK0L": "SANDEEP MAC"
   },
   "savedSessions": [
     {
@@ -288,6 +283,11 @@
   },
   "logs": [
     {
+      "id": "L_1785589890049_fgag",
+      "time": "2026-08-01 13:11:30",
+      "text": "Started new active session • by SANDEEP MAC"
+    },
+    {
       "id": "L_1785589820444_ehqy",
       "time": "2026-08-01 13:10:20",
       "text": "Started new active session • by SANDEEP PHONE"
@@ -301,6 +301,86 @@
       "id": "L_1785589819529_2c1u",
       "time": "2026-08-01 13:10:19",
       "text": "Started new active session • by SANDEEP PHONE"
+    },
+    {
+      "id": "L_1785589439598_tzjn",
+      "time": "2026-08-01 13:03:59",
+      "text": "Released active session lock for handoff • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785589423902_th3r",
+      "time": "2026-08-01 13:03:43",
+      "text": "Released active session lock for handoff • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785589401695_a6i3",
+      "time": "2026-08-01 13:03:21",
+      "text": "Buy-in increased for ALOK: count = 4 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785589400120_x5jr",
+      "time": "2026-08-01 13:03:20",
+      "text": "Buy-in decreased for HARSHIT: count = 2 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785589390548_j0yz",
+      "time": "2026-08-01 13:03:10",
+      "text": "Buy-in increased for GAGAN: count = 6 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785589388499_13sg",
+      "time": "2026-08-01 13:03:08",
+      "text": "Buy-in increased for GAGAN: count = 4 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785589381490_7rxz",
+      "time": "2026-08-01 13:03:01",
+      "text": "Buy-in increased for GAGAN: count = 3 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785589381240_v0hm",
+      "time": "2026-08-01 13:03:01",
+      "text": "Buy-in increased for HARSHIT: count = 3 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785589378986_g4oa",
+      "time": "2026-08-01 13:02:58",
+      "text": "Buy-in increased for GAGAN: count = 2 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785589377226_q0jw",
+      "time": "2026-08-01 13:02:57",
+      "text": "Buy-in decreased for HARSHIT: count = 2 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785589372686_3rsz",
+      "time": "2026-08-01 13:02:52",
+      "text": "Buy-in increased for HARSHIT: count = 2 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785589370046_sqk3",
+      "time": "2026-08-01 13:02:50",
+      "text": "Buy-in increased for ALOK: count = 3 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785589364853_0sjf",
+      "time": "2026-08-01 13:02:44",
+      "text": "Buy-in increased for ALOK: count = 2 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785589360077_t0s5",
+      "time": "2026-08-01 13:02:40",
+      "text": "Added \"HARSHIT\" with 1 buy-in (1000c) • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785589351527_bjz4",
+      "time": "2026-08-01 13:02:31",
+      "text": "Added \"ALOK\" with 1 buy-in (1000c) • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785589207931_kkba",
+      "time": "2026-08-01 13:00:07",
+      "text": "Started new active session • by SANDEEP MAC"
     },
     {
       "id": "L_1785588965876_0jso",
