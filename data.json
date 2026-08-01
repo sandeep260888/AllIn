@@ -3,7 +3,7 @@
     "hostName": "SANDEEP MAC",
     "hostDeviceId": "DEV_msad5lur_EK0L",
     "startTime": "2026-08-01T13:14:11.594Z",
-    "lastPushTime": "2026-08-01T13:14:12.544Z"
+    "lastPushTime": "2026-08-01T13:19:27.216Z"
   },
   "deviceRegistry": {
     "DEV_msad5lur_EK0L": "SANDEEP MAC"
@@ -280,13 +280,26 @@
       ]
     }
   ],
-  "activePlayers": [],
+  "activePlayers": [
+    {
+      "id": 1785590366568,
+      "name": "ABHISHEK",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    }
+  ],
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
     "buyInCoins": "1000"
   },
   "logs": [
+    {
+      "id": "L_1785590366568_i9y8",
+      "time": "2026-08-01 13:19:26",
+      "text": "Added \"ABHISHEK\" with 1 buy-in (1000c) • by SANDEEP MAC"
+    },
     {
       "id": "L_1785590051594_sdwc",
       "time": "2026-08-01 13:14:11",
