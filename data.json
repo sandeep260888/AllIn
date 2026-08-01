@@ -2,8 +2,8 @@
   "activeSessionLock": {
     "hostName": "SANDEEP PHONE",
     "hostDeviceId": "DEV_msacyyya_EZ4X",
-    "startTime": "2026-08-01T12:51:37.446Z",
-    "lastPushTime": "2026-08-01T12:51:38.541Z"
+    "startTime": "2026-08-01T12:53:13.728Z",
+    "lastPushTime": "2026-08-01T12:53:14.579Z"
   },
   "deviceRegistry": {
     "DEV_msabxpqv_Y2VU": "SANDEEP MAC",
@@ -288,6 +288,21 @@
     "buyInCoins": "1000"
   },
   "logs": [
+    {
+      "id": "L_1785588793728_dimw",
+      "time": "2026-08-01 12:53:13",
+      "text": "Started new active session • by SANDEEP PHONE"
+    },
+    {
+      "id": "L_1785588769452_dckg",
+      "time": "2026-08-01 12:52:49",
+      "text": "Calculated minimum transaction settlement • by SANDEEP PHONE"
+    },
+    {
+      "id": "L_1785588767788_fpta",
+      "time": "2026-08-01 12:52:47",
+      "text": "Calculated minimum transaction settlement • by SANDEEP PHONE"
+    },
     {
       "id": "L_1785588697446_uvpd",
       "time": "2026-08-01 12:51:37",
