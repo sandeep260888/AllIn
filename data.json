@@ -1,13 +1,14 @@
 {
-  "syncStatusFlag": "IDLE",
+  "syncStatusFlag": "BUILD_IN_PROGRESS",
   "activeSessionLock": {
-    "hostName": "SANDEEP MAC",
-    "hostDeviceId": "DEV_msad5lur_EK0L",
+    "hostName": "SS’S",
+    "hostDeviceId": "DEV_msaeptc5_945Z",
     "startTime": "2026-08-02T05:40:11.791Z",
-    "lastPushTime": "2026-08-02T05:40:20.013Z"
+    "lastPushTime": "2026-08-02T17:47:31.300Z"
   },
   "deviceRegistry": {
-    "DEV_msad5lur_EK0L": "SANDEEP MAC"
+    "DEV_msad5lur_EK0L": "SANDEEP MAC",
+    "DEV_msaeptc5_945Z": "SS’S"
   },
   "savedSessions": [
     {
@@ -289,6 +290,11 @@
   },
   "logs": [
     {
+      "id": "L_1785692850194_2gyi",
+      "time": "2026-08-02 17:47:30",
+      "text": "Took over host duties for active session • by SS’S"
+    },
+    {
       "id": "L_1785649211791_u4x5",
       "time": "2026-08-02 05:40:11",
       "text": "Started new active session • by SANDEEP MAC"
@@ -552,6 +558,11 @@
       "id": "L_1785591169103_j2dq",
       "time": "2026-08-01 13:32:49",
       "text": "Buy-in increased for ABHISHEK: count = 2 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785590989323_nhbz",
+      "time": "2026-08-01 13:29:49",
+      "text": "Calculated minimum transaction settlement • by SS’S"
     },
     {
       "id": "L_1785590773416_biit",
