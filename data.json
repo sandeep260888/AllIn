@@ -4,7 +4,7 @@
     "hostName": "SS’S",
     "hostDeviceId": "DEV_msaeptc5_945Z",
     "startTime": "2026-08-02T05:40:11.791Z",
-    "lastPushTime": "2026-08-02T17:49:18.331Z"
+    "lastPushTime": "2026-08-02T17:50:14.066Z"
   },
   "deviceRegistry": {
     "DEV_msad5lur_EK0L": "SANDEEP MAC",
@@ -286,14 +286,21 @@
     {
       "id": 1785692871053,
       "name": "ABHISHEK",
-      "buyIns": 1,
+      "buyIns": 5,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
     {
       "id": 1785692927682,
       "name": "ALOK",
-      "buyIns": 1,
+      "buyIns": 2,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1785692963607,
+      "name": "GAGAN",
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -304,6 +311,51 @@
     "buyInCoins": "1000"
   },
   "logs": [
+    {
+      "id": "L_1785692983510_pujp",
+      "time": "2026-08-02 17:49:43",
+      "text": "Buy-in increased for ABHISHEK: count = 5 • by SS’S"
+    },
+    {
+      "id": "L_1785692982395_v3aw",
+      "time": "2026-08-02 17:49:42",
+      "text": "Buy-in increased for ABHISHEK: count = 4 • by SS’S"
+    },
+    {
+      "id": "L_1785692980198_v56u",
+      "time": "2026-08-02 17:49:40",
+      "text": "Buy-in increased for GAGAN: count = 4 • by SS’S"
+    },
+    {
+      "id": "L_1785692978018_zh4e",
+      "time": "2026-08-02 17:49:38",
+      "text": "Buy-in increased for GAGAN: count = 3 • by SS’S"
+    },
+    {
+      "id": "L_1785692977602_dilv",
+      "time": "2026-08-02 17:49:37",
+      "text": "Buy-in increased for GAGAN: count = 2 • by SS’S"
+    },
+    {
+      "id": "L_1785692971777_4c8w",
+      "time": "2026-08-02 17:49:31",
+      "text": "Buy-in increased for ALOK: count = 2 • by SS’S"
+    },
+    {
+      "id": "L_1785692970229_wxln",
+      "time": "2026-08-02 17:49:30",
+      "text": "Buy-in increased for ABHISHEK: count = 3 • by SS’S"
+    },
+    {
+      "id": "L_1785692969332_7u3l",
+      "time": "2026-08-02 17:49:29",
+      "text": "Buy-in increased for ABHISHEK: count = 2 • by SS’S"
+    },
+    {
+      "id": "L_1785692963607_1c0h",
+      "time": "2026-08-02 17:49:23",
+      "text": "Added \"GAGAN\" with 1 buy-in (1000c) • by SS’S"
+    },
     {
       "id": "L_1785692927682_8uso",
       "time": "2026-08-02 17:48:47",
