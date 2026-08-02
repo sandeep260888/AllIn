@@ -4,7 +4,7 @@
     "hostName": "SS’S",
     "hostDeviceId": "DEV_msaeptc5_945Z",
     "startTime": "2026-08-02T05:40:11.791Z",
-    "lastPushTime": "2026-08-02T17:47:31.300Z"
+    "lastPushTime": "2026-08-02T17:47:37.115Z"
   },
   "deviceRegistry": {
     "DEV_msad5lur_EK0L": "SANDEEP MAC",
@@ -289,6 +289,11 @@
     "buyInCoins": "1000"
   },
   "logs": [
+    {
+      "id": "L_1785692856561_cd6w",
+      "time": "2026-08-02 17:47:36",
+      "text": "Took over host duties for active session • by SS’S"
+    },
     {
       "id": "L_1785692850194_2gyi",
       "time": "2026-08-02 17:47:30",
