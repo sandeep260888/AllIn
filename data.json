@@ -1,10 +1,10 @@
 {
-  "syncStatusFlag": "BUILD_IN_PROGRESS",
+  "syncStatusFlag": "IDLE",
   "activeSessionLock": {
     "hostName": "SANDEEP MAC",
     "hostDeviceId": "DEV_msad5lur_EK0L",
     "startTime": "2026-08-02T05:40:11.791Z",
-    "lastPushTime": "2026-08-02T05:40:12.279Z"
+    "lastPushTime": "2026-08-02T05:40:20.013Z"
   },
   "deviceRegistry": {
     "DEV_msad5lur_EK0L": "SANDEEP MAC"
