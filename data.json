@@ -1,10 +1,10 @@
 {
-  "syncStatusFlag": "IDLE",
+  "syncStatusFlag": "BUILD_IN_PROGRESS",
   "activeSessionLock": {
     "hostName": "SANDEEP MAC",
     "hostDeviceId": "DEV_msad5lur_EK0L",
-    "startTime": "2026-08-01T14:14:05.831Z",
-    "lastPushTime": "2026-08-02T05:37:09.263Z"
+    "startTime": "2026-08-02T05:40:11.791Z",
+    "lastPushTime": "2026-08-02T05:40:12.279Z"
   },
   "deviceRegistry": {
     "DEV_msad5lur_EK0L": "SANDEEP MAC"
@@ -281,35 +281,18 @@
       ]
     }
   ],
-  "activePlayers": [
-    {
-      "id": 1785593664813,
-      "name": "ABHISHEK",
-      "buyIns": 10,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1785593667114,
-      "name": "AKSHAY",
-      "buyIns": 6,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1785593669512,
-      "name": "ALOK",
-      "buyIns": 2,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    }
-  ],
+  "activePlayers": [],
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
     "buyInCoins": "1000"
   },
   "logs": [
+    {
+      "id": "L_1785649211791_u4x5",
+      "time": "2026-08-02 05:40:11",
+      "text": "Started new active session • by SANDEEP MAC"
+    },
     {
       "id": "L_1785648998703_7qcz",
       "time": "2026-08-02 05:36:38",
