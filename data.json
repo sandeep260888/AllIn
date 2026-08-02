@@ -4,7 +4,7 @@
     "hostName": "SANDEEP MAC",
     "hostDeviceId": "DEV_msad5lur_EK0L",
     "startTime": "2026-08-01T14:14:05.831Z",
-    "lastPushTime": "2026-08-01T14:15:17.623Z"
+    "lastPushTime": "2026-08-02T05:33:37.037Z"
   },
   "deviceRegistry": {
     "DEV_msad5lur_EK0L": "SANDEEP MAC"
@@ -285,7 +285,7 @@
     {
       "id": 1785593664813,
       "name": "ABHISHEK",
-      "buyIns": 6,
+      "buyIns": 9,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -310,6 +310,21 @@
     "buyInCoins": "1000"
   },
   "logs": [
+    {
+      "id": "L_1785648786239_lv6w",
+      "time": "2026-08-02 05:33:06",
+      "text": "Buy-in increased for ABHISHEK: count = 9 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785647811617_jh5r",
+      "time": "2026-08-02 05:16:51",
+      "text": "Buy-in increased for ABHISHEK: count = 8 • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785647811157_hsx5",
+      "time": "2026-08-02 05:16:51",
+      "text": "Buy-in increased for ABHISHEK: count = 7 • by SANDEEP MAC"
+    },
     {
       "id": "L_1785593686550_kydk",
       "time": "2026-08-01 14:14:46",
