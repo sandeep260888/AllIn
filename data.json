@@ -4,7 +4,7 @@
     "hostName": "SS’S",
     "hostDeviceId": "DEV_msaeptc5_945Z",
     "startTime": "2026-08-02T05:40:11.791Z",
-    "lastPushTime": "2026-08-03T05:20:24.944Z"
+    "lastPushTime": "2026-08-03T05:23:53.745Z"
   },
   "deviceRegistry": {
     "DEV_msad5lur_EK0L": "SANDEEP MAC",
@@ -286,7 +286,7 @@
     {
       "id": 1785692871053,
       "name": "ABHISHEK",
-      "buyIns": 10,
+      "buyIns": 9,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -311,6 +311,16 @@
     "buyInCoins": "1000"
   },
   "logs": [
+    {
+      "id": "L_1785734602762_ixjd",
+      "time": "2026-08-03 05:23:22",
+      "text": "Buy-in decreased for ABHISHEK: count = 9 • by SS’S"
+    },
+    {
+      "id": "L_1785734583873_vijg",
+      "time": "2026-08-03 05:23:03",
+      "text": "Released active session lock for handoff • by SS’S"
+    },
     {
       "id": "L_1785734392300_hsk5",
       "time": "2026-08-03 05:19:52",
