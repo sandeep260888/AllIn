@@ -4,7 +4,7 @@
     "hostName": "RISHI",
     "hostDeviceId": "DEV_msdb7wac_36NP",
     "startTime": "2026-08-03T14:35:40.726Z",
-    "lastPushTime": "2026-08-03T16:09:32.249Z"
+    "lastPushTime": "2026-08-03T16:12:58.467Z"
   },
   "deviceRegistry": {
     "DEV_msdb7wac_36NP": "RISHI"
@@ -285,13 +285,20 @@
     {
       "id": 1785767769324,
       "name": "AKSHAY",
-      "buyIns": 3,
+      "buyIns": 5,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
     {
       "id": 1785767760355,
       "name": "RISHI",
+      "buyIns": 3,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1785767785729,
+      "name": "HARI",
       "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
@@ -318,13 +325,6 @@
       "cashOutCoins": 0
     },
     {
-      "id": 1785767785729,
-      "name": "HARI",
-      "buyIns": 3,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
       "id": 1785767763486,
       "name": "RAVI",
       "buyIns": 2,
@@ -338,6 +338,16 @@
     "buyInCoins": "1000"
   },
   "logs": [
+    {
+      "id": "L_1785773547885_j735",
+      "time": "2026-08-03 16:12:27",
+      "text": "Buy-in increased for AKSHAY: count = 5 • by RISHI"
+    },
+    {
+      "id": "L_1785773547382_ogp0",
+      "time": "2026-08-03 16:12:27",
+      "text": "Buy-in increased for AKSHAY: count = 4 • by RISHI"
+    },
     {
       "id": "L_1785773341444_8x2z",
       "time": "2026-08-03 16:09:01",
