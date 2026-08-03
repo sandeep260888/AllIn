@@ -4,7 +4,7 @@
     "hostName": "RISHI",
     "hostDeviceId": "DEV_msdb7wac_36NP",
     "startTime": "2026-08-03T14:35:40.726Z",
-    "lastPushTime": "2026-08-03T14:35:54.857Z"
+    "lastPushTime": "2026-08-03T14:37:07.143Z"
   },
   "deviceRegistry": {
     "DEV_msdb7wac_36NP": "RISHI"
@@ -281,13 +281,96 @@
       ]
     }
   ],
-  "activePlayers": [],
+  "activePlayers": [
+    {
+      "id": 1785767760355,
+      "name": "RISHI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1785767763486,
+      "name": "RAVI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1785767769324,
+      "name": "AKSHAY",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1785767775018,
+      "name": "KUNAL",
+      "buyIns": 2,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1785767778139,
+      "name": "MOHINI",
+      "buyIns": 2,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1785767785729,
+      "name": "HARI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    }
+  ],
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
     "buyInCoins": "1000"
   },
   "logs": [
+    {
+      "id": "L_1785767796241_3am7",
+      "time": "2026-08-03 14:36:36",
+      "text": "Buy-in increased for MOHINI: count = 2 • by RISHI"
+    },
+    {
+      "id": "L_1785767795061_wffo",
+      "time": "2026-08-03 14:36:35",
+      "text": "Buy-in increased for KUNAL: count = 2 • by RISHI"
+    },
+    {
+      "id": "L_1785767785729_ytfm",
+      "time": "2026-08-03 14:36:25",
+      "text": "Added \"HARI\" with 1 buy-in (1000c) • by RISHI"
+    },
+    {
+      "id": "L_1785767778140_2hmd",
+      "time": "2026-08-03 14:36:18",
+      "text": "Added \"MOHINI\" with 1 buy-in (1000c) • by RISHI"
+    },
+    {
+      "id": "L_1785767775018_79b6",
+      "time": "2026-08-03 14:36:15",
+      "text": "Added \"KUNAL\" with 1 buy-in (1000c) • by RISHI"
+    },
+    {
+      "id": "L_1785767769324_0d4a",
+      "time": "2026-08-03 14:36:09",
+      "text": "Added \"AKSHAY\" with 1 buy-in (1000c) • by RISHI"
+    },
+    {
+      "id": "L_1785767763486_ilei",
+      "time": "2026-08-03 14:36:03",
+      "text": "Added \"RAVI\" with 1 buy-in (1000c) • by RISHI"
+    },
+    {
+      "id": "L_1785767760355_jfeg",
+      "time": "2026-08-03 14:36:00",
+      "text": "Added \"RISHI\" with 1 buy-in (1000c) • by RISHI"
+    },
     {
       "id": "L_1785767746289_9h5f",
       "time": "2026-08-03 14:35:46",
