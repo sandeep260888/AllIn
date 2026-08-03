@@ -4,7 +4,7 @@
     "hostName": "SS’S",
     "hostDeviceId": "DEV_msaeptc5_945Z",
     "startTime": "2026-08-02T05:40:11.791Z",
-    "lastPushTime": "2026-08-02T17:50:14.066Z"
+    "lastPushTime": "2026-08-03T05:20:24.944Z"
   },
   "deviceRegistry": {
     "DEV_msad5lur_EK0L": "SANDEEP MAC",
@@ -286,14 +286,7 @@
     {
       "id": 1785692871053,
       "name": "ABHISHEK",
-      "buyIns": 5,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1785692927682,
-      "name": "ALOK",
-      "buyIns": 2,
+      "buyIns": 10,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -301,6 +294,13 @@
       "id": 1785692963607,
       "name": "GAGAN",
       "buyIns": 4,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1785692927682,
+      "name": "ALOK",
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -311,6 +311,31 @@
     "buyInCoins": "1000"
   },
   "logs": [
+    {
+      "id": "L_1785734392300_hsk5",
+      "time": "2026-08-03 05:19:52",
+      "text": "Buy-in increased for ABHISHEK: count = 10 • by SS’S"
+    },
+    {
+      "id": "L_1785734391302_40d7",
+      "time": "2026-08-03 05:19:51",
+      "text": "Buy-in increased for ABHISHEK: count = 9 • by SS’S"
+    },
+    {
+      "id": "L_1785693474465_02i8",
+      "time": "2026-08-02 17:57:54",
+      "text": "Buy-in increased for ABHISHEK: count = 8 • by SS’S"
+    },
+    {
+      "id": "L_1785693474315_zh8x",
+      "time": "2026-08-02 17:57:54",
+      "text": "Buy-in increased for ABHISHEK: count = 7 • by SS’S"
+    },
+    {
+      "id": "L_1785693474083_u50l",
+      "time": "2026-08-02 17:57:54",
+      "text": "Buy-in increased for ABHISHEK: count = 6 • by SS’S"
+    },
     {
       "id": "L_1785692983510_pujp",
       "time": "2026-08-02 17:49:43",
