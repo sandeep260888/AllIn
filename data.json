@@ -4,11 +4,10 @@
     "hostName": "SANDEEP MAC",
     "hostDeviceId": "DEV_msad5lur_EK0L",
     "startTime": "2026-08-03T12:13:38.227Z",
-    "lastPushTime": "2026-08-03T12:13:39.244Z"
+    "lastPushTime": "2026-08-03T12:13:47.295Z"
   },
   "deviceRegistry": {
-    "DEV_msad5lur_EK0L": "SANDEEP MAC",
-    "DEV_msaeptc5_945Z": "SS’S"
+    "DEV_msad5lur_EK0L": "SANDEEP MAC"
   },
   "savedSessions": [
     {
@@ -1146,7 +1145,6 @@
     "GAGAN",
     "ALOK",
     "ABHISHEK",
-    "HARSHIT",
-    "SHUBHAM"
+    "HARSHIT"
   ]
 }
