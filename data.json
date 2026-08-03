@@ -1,10 +1,10 @@
 {
-  "syncStatusFlag": "BUILD_IN_PROGRESS",
+  "syncStatusFlag": "IDLE",
   "activeSessionLock": {
     "hostName": "RISHI",
     "hostDeviceId": "DEV_msdb7wac_36NP",
-    "startTime": "2026-08-03T14:35:46.289Z",
-    "lastPushTime": "2026-08-03T14:35:46.780Z"
+    "startTime": "2026-08-03T14:35:40.726Z",
+    "lastPushTime": "2026-08-03T14:35:49.577Z"
   },
   "deviceRegistry": {
     "DEV_msdb7wac_36NP": "RISHI"
