@@ -1,5 +1,5 @@
 {
-  "syncStatusFlag": "BUILD_IN_PROGRESS",
+  "syncStatusFlag": "IDLE",
   "activeSessionLock": {
     "hostName": "SANDEEP MAC",
     "hostDeviceId": "DEV_msad5lur_EK0L",
@@ -7,7 +7,8 @@
     "lastPushTime": "2026-08-03T12:13:39.244Z"
   },
   "deviceRegistry": {
-    "DEV_msad5lur_EK0L": "SANDEEP MAC"
+    "DEV_msad5lur_EK0L": "SANDEEP MAC",
+    "DEV_msaeptc5_945Z": "SS’S"
   },
   "savedSessions": [
     {
@@ -292,6 +293,41 @@
       "id": "L_1785759218228_wvrp",
       "time": "2026-08-03 12:13:38",
       "text": "Started new active session • by SANDEEP MAC"
+    },
+    {
+      "id": "L_1785759195314_iri2",
+      "time": "2026-08-03 12:13:15",
+      "text": "Added \"SHUBHAM\" with 1 buy-in (1000c) • by SS’S"
+    },
+    {
+      "id": "L_1785759119517_pd0k",
+      "time": "2026-08-03 12:11:59",
+      "text": "Released active session lock for handoff • by SS’S"
+    },
+    {
+      "id": "L_1785759081059_fcn7",
+      "time": "2026-08-03 12:11:21",
+      "text": "Released active session lock for handoff • by SS’S"
+    },
+    {
+      "id": "L_1785759070125_3j6y",
+      "time": "2026-08-03 12:11:10",
+      "text": "Terminated active session • by SS’S"
+    },
+    {
+      "id": "L_1785758946108_do34",
+      "time": "2026-08-03 12:09:06",
+      "text": "Terminated active session • by SS’S"
+    },
+    {
+      "id": "L_1785751100937_71lq",
+      "time": "2026-08-03 09:58:20",
+      "text": "Terminated active session • by SS’S"
+    },
+    {
+      "id": "L_1785750759738_7buu",
+      "time": "2026-08-03 09:52:39",
+      "text": "Terminated active session • by SS’S"
     },
     {
       "id": "L_1785734871372_9mce",
@@ -1110,6 +1146,7 @@
     "GAGAN",
     "ALOK",
     "ABHISHEK",
-    "HARSHIT"
+    "HARSHIT",
+    "SHUBHAM"
   ]
 }
