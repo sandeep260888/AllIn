@@ -1,14 +1,4 @@
 {
-  "syncStatusFlag": "IDLE",
-  "activeSessionLock": {
-    "hostName": "RISHI",
-    "hostDeviceId": "DEV_msdb7wac_36NP",
-    "startTime": "2026-08-03T14:35:40.726Z",
-    "lastPushTime": "2026-08-03T16:47:52.099Z"
-  },
-  "deviceRegistry": {
-    "DEV_msdb7wac_36NP": "RISHI"
-  },
   "savedSessions": [
     {
       "sessionId": "S_1785556100335",
