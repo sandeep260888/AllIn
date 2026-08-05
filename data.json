@@ -1,6 +1,54 @@
 {
   "savedSessions": [
     {
+      "sessionId": "S_1785913934116",
+      "date": "2026-08-05T07:12:14.116Z",
+      "entries": [
+        {
+          "name": "AKSHAY",
+          "investedCoins": 6000,
+          "finalCoins": 4660,
+          "netVal": -670
+        },
+        {
+          "name": "HARI",
+          "investedCoins": 4000,
+          "finalCoins": 800,
+          "netVal": -1600
+        },
+        {
+          "name": "RISHI",
+          "investedCoins": 3000,
+          "finalCoins": 3000,
+          "netVal": 0
+        },
+        {
+          "name": "RAVI",
+          "investedCoins": 3000,
+          "finalCoins": 240,
+          "netVal": -1380
+        },
+        {
+          "name": "KUNAL",
+          "investedCoins": 2000,
+          "finalCoins": 0,
+          "netVal": -1000
+        },
+        {
+          "name": "MOHINI",
+          "investedCoins": 2000,
+          "finalCoins": 10000,
+          "netVal": 4000
+        },
+        {
+          "name": "GAGAN",
+          "investedCoins": 2000,
+          "finalCoins": 3300,
+          "netVal": 650
+        }
+      ]
+    },
+    {
       "sessionId": "S_1785556100335",
       "date": "2026-08-01T03:48:20.335Z",
       "entries": [
@@ -319,7 +367,7 @@
       "name": "GAGAN",
       "buyIns": 2,
       "buyInCoins": 1000,
-      "cashOutCoins": 3330
+      "cashOutCoins": 3300
     }
   ],
   "settings": {
@@ -328,6 +376,10 @@
     "buyInCoins": "1000"
   },
   "logs": [
+    {
+      "time": "2026-08-05 07:12:14",
+      "text": "Saved session to database."
+    },
     {
       "id": "L_1785775658215_p41l",
       "time": "2026-08-03 16:47:38",
