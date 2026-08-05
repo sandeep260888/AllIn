@@ -325,49 +325,42 @@
       "name": "AKSHAY",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 5300
     },
     {
       "id": 1785933969343,
       "name": "RISHI",
-      "buyIns": 1,
+      "buyIns": 5,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
     {
       "id": 1785933973379,
       "name": "SANDEEP",
-      "buyIns": 1,
+      "buyIns": 3,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 3060
     },
     {
       "id": 1785933980113,
       "name": "GAGAN",
-      "buyIns": 1,
+      "buyIns": 6,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 8640
     },
     {
       "id": 1785933986126,
       "name": "KUNAL",
-      "buyIns": 1,
+      "buyIns": 3,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1785933990293,
-      "name": "ABHISHEK",
-      "buyIns": 1,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 1000
     },
     {
       "id": 1785934052328,
       "name": "RAVI",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 1000
     }
   ],
   "settings": {
