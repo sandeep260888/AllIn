@@ -1,6 +1,48 @@
 {
   "savedSessions": [
     {
+      "sessionId": "S_1785945201740",
+      "date": "2026-08-05T15:53:21.740Z",
+      "entries": [
+        {
+          "name": "AKSHAY",
+          "investedCoins": 1000,
+          "finalCoins": 5300,
+          "netVal": 2150
+        },
+        {
+          "name": "RISHI",
+          "investedCoins": 5000,
+          "finalCoins": 0,
+          "netVal": -2500
+        },
+        {
+          "name": "SANDEEP",
+          "investedCoins": 3000,
+          "finalCoins": 3060,
+          "netVal": 30
+        },
+        {
+          "name": "GAGAN",
+          "investedCoins": 6000,
+          "finalCoins": 8640,
+          "netVal": 1320
+        },
+        {
+          "name": "KUNAL",
+          "investedCoins": 3000,
+          "finalCoins": 1000,
+          "netVal": -1000
+        },
+        {
+          "name": "RAVI",
+          "investedCoins": 1000,
+          "finalCoins": 1000,
+          "netVal": 0
+        }
+      ]
+    },
+    {
       "sessionId": "S_1785913934116",
       "date": "2026-08-05T07:12:14.116Z",
       "entries": [
