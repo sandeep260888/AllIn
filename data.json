@@ -1,6 +1,42 @@
 {
   "savedSessions": [
     {
+      "sessionId": "S_1786473267532",
+      "date": "2026-08-11T18:34:27.532Z",
+      "entries": [
+        {
+          "name": "RISHI",
+          "investedCoins": 1000,
+          "finalCoins": 11170,
+          "netVal": 5085
+        },
+        {
+          "name": "HARI",
+          "investedCoins": 10000,
+          "finalCoins": 8600,
+          "netVal": -700
+        },
+        {
+          "name": "GAGAN",
+          "investedCoins": 15000,
+          "finalCoins": 0,
+          "netVal": -7500
+        },
+        {
+          "name": "AKSHAY",
+          "investedCoins": 4000,
+          "finalCoins": 13050,
+          "netVal": 4525
+        },
+        {
+          "name": "KUNAL",
+          "investedCoins": 4000,
+          "finalCoins": 1180,
+          "netVal": -1410
+        }
+      ]
+    },
+    {
       "sessionId": "S_1786394026289",
       "date": "2026-08-10T20:33:46.289Z",
       "entries": [
@@ -459,46 +495,39 @@
   ],
   "activePlayers": [
     {
-      "id": 1786370447836,
+      "id": 1786454991086,
       "name": "RISHI",
-      "buyIns": 8,
-      "buyInCoins": 1000,
-      "cashOutCoins": 2780
-    },
-    {
-      "id": 1786370452737,
-      "name": "AKSHAY",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 8000
+      "cashOutCoins": 11170
     },
     {
-      "id": 1786370456803,
-      "name": "KUNAL",
-      "buyIns": 3,
+      "id": 1786454996453,
+      "name": "HARI",
+      "buyIns": 10,
       "buyInCoins": 1000,
-      "cashOutCoins": 8450
+      "cashOutCoins": 8600
     },
     {
-      "id": 1786370462336,
+      "id": 1786455006306,
       "name": "GAGAN",
-      "buyIns": 5,
+      "buyIns": 15,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
     {
-      "id": 1786370469338,
-      "name": "HARI",
-      "buyIns": 6,
+      "id": 1786455290396,
+      "name": "AKSHAY",
+      "buyIns": 4,
       "buyInCoins": 1000,
-      "cashOutCoins": 7760
+      "cashOutCoins": 13050
     },
     {
-      "id": 1786370473019,
-      "name": "SANDEEP",
-      "buyIns": 10,
+      "id": 1786455353479,
+      "name": "KUNAL",
+      "buyIns": 4,
       "buyInCoins": 1000,
-      "cashOutCoins": 6010
+      "cashOutCoins": 1180
     }
   ],
   "settings": {
