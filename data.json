@@ -355,18 +355,6 @@
       ]
     },
     {
-      "sessionId": "S_1785359254471",
-      "date": "2026-07-29T21:07:34.471Z",
-      "entries": [
-        {
-          "name": "SANDEEP",
-          "investedCoins": 1000,
-          "finalCoins": 1000,
-          "netVal": 0
-        }
-      ]
-    },
-    {
       "sessionId": "S_1785345383520",
       "date": "2026-07-29T17:16:23.520Z",
       "entries": [
@@ -585,12 +573,26 @@
       "cashOutCoins": 6010
     }
   ],
+  "activeSessionId": null,
+  "activeHost": null,
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
-    "buyInCoins": "1000"
+    "buyInCoins": "1000",
+    "milestones": [
+      5,
+      10
+    ]
   },
   "logs": [
+    {
+      "time": "2026-08-13 13:15:00",
+      "text": "Deleted session S_1785359254471 via admin mode."
+    },
+    {
+      "time": "2026-08-13 13:14:45",
+      "text": "Admin edit mode ENABLED via secret gesture."
+    },
     {
       "time": "2026-08-10 20:33:46",
       "text": "Saved session to database."
