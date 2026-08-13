@@ -531,50 +531,33 @@
   ],
   "activePlayers": [
     {
-      "id": 1786370447836,
-      "name": "RISHI",
-      "buyIns": 8,
-      "buyInCoins": 1000,
-      "cashOutCoins": 2780
-    },
-    {
-      "id": 1786370452737,
-      "name": "AKSHAY",
-      "buyIns": 1,
-      "buyInCoins": 1000,
-      "cashOutCoins": 8000
-    },
-    {
-      "id": 1786370456803,
-      "name": "KUNAL",
-      "buyIns": 3,
-      "buyInCoins": 1000,
-      "cashOutCoins": 8450
-    },
-    {
-      "id": 1786370462336,
-      "name": "GAGAN",
+      "id": 1786627223577,
+      "name": "ABHISHEK",
       "buyIns": 5,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
     {
-      "id": 1786370469338,
-      "name": "HARI",
-      "buyIns": 6,
+      "id": 1786627225964,
+      "name": "ALOK",
+      "buyIns": 3,
       "buyInCoins": 1000,
-      "cashOutCoins": 7760
+      "cashOutCoins": 0
     },
     {
-      "id": 1786370473019,
-      "name": "SANDEEP",
-      "buyIns": 10,
+      "id": 1786627228767,
+      "name": "HARI",
+      "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 6010
+      "cashOutCoins": 0
     }
   ],
-  "activeSessionId": null,
-  "activeHost": null,
+  "activeSessionId": "S_msrjpwk9c56343",
+  "activeHost": {
+    "deviceId": "dev_ufpc465o",
+    "deviceName": "Sandeep Mac",
+    "heartbeatAt": "2026-08-13T13:20:52.499Z"
+  },
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -585,6 +568,50 @@
     ]
   },
   "logs": [
+    {
+      "time": "2026-08-13 13:20:36",
+      "text": "Buy-in increased for ALOK: count = 3."
+    },
+    {
+      "time": "2026-08-13 13:20:35",
+      "text": "Buy-in increased for ALOK: count = 2."
+    },
+    {
+      "time": "2026-08-13 13:20:33",
+      "text": "Milestone reached: ABHISHEK hit 5 buy-ins."
+    },
+    {
+      "time": "2026-08-13 13:20:33",
+      "text": "Buy-in increased for ABHISHEK: count = 5."
+    },
+    {
+      "time": "2026-08-13 13:20:32",
+      "text": "Buy-in increased for ABHISHEK: count = 4."
+    },
+    {
+      "time": "2026-08-13 13:20:31",
+      "text": "Buy-in increased for ABHISHEK: count = 3."
+    },
+    {
+      "time": "2026-08-13 13:20:31",
+      "text": "Buy-in increased for ABHISHEK: count = 2."
+    },
+    {
+      "time": "2026-08-13 13:20:28",
+      "text": "Added \"HARI\" with 1 buy-in (1000c)."
+    },
+    {
+      "time": "2026-08-13 13:20:25",
+      "text": "Added \"ALOK\" with 1 buy-in (1000c)."
+    },
+    {
+      "time": "2026-08-13 13:20:23",
+      "text": "Added \"ABHISHEK\" with 1 buy-in (1000c)."
+    },
+    {
+      "time": "2026-08-13 13:20:17",
+      "text": "Cleared active session dashboard."
+    },
     {
       "time": "2026-08-13 13:15:00",
       "text": "Deleted session S_1785359254471 via admin mode."
