@@ -1,90 +1,6 @@
 {
   "savedSessions": [
     {
-      "sessionId": "S_1786549147419",
-      "date": "2026-08-12T15:39:07.419Z",
-      "entries": [
-        {
-          "name": "SANDEEP",
-          "investedCoins": 3000,
-          "finalCoins": 7570,
-          "netVal": 2285
-        },
-        {
-          "name": "RAVI",
-          "investedCoins": 1000,
-          "finalCoins": 2420,
-          "netVal": 710
-        },
-        {
-          "name": "HARI",
-          "investedCoins": 1000,
-          "finalCoins": 5240,
-          "netVal": 2120
-        },
-        {
-          "name": "ABHISHEK",
-          "investedCoins": 3000,
-          "finalCoins": 0,
-          "netVal": -1500
-        },
-        {
-          "name": "KUNAL",
-          "investedCoins": 1000,
-          "finalCoins": 0,
-          "netVal": -500
-        },
-        {
-          "name": "RISHI",
-          "investedCoins": 4000,
-          "finalCoins": 0,
-          "netVal": -2000
-        },
-        {
-          "name": "GAGAN",
-          "investedCoins": 4000,
-          "finalCoins": 1770,
-          "netVal": -1115
-        }
-      ]
-    },
-    {
-      "sessionId": "S_1786473267532",
-      "date": "2026-08-11T18:34:27.532Z",
-      "entries": [
-        {
-          "name": "RISHI",
-          "investedCoins": 1000,
-          "finalCoins": 11170,
-          "netVal": 5085
-        },
-        {
-          "name": "HARI",
-          "investedCoins": 10000,
-          "finalCoins": 8600,
-          "netVal": -700
-        },
-        {
-          "name": "GAGAN",
-          "investedCoins": 15000,
-          "finalCoins": 0,
-          "netVal": -7500
-        },
-        {
-          "name": "AKSHAY",
-          "investedCoins": 4000,
-          "finalCoins": 13050,
-          "netVal": 4525
-        },
-        {
-          "name": "KUNAL",
-          "investedCoins": 4000,
-          "finalCoins": 1180,
-          "netVal": -1410
-        }
-      ]
-    },
-    {
       "sessionId": "S_1786394026289",
       "date": "2026-08-10T20:33:46.289Z",
       "entries": [
@@ -355,6 +271,18 @@
       ]
     },
     {
+      "sessionId": "S_1785359254471",
+      "date": "2026-07-29T21:07:34.471Z",
+      "entries": [
+        {
+          "name": "SANDEEP",
+          "investedCoins": 1000,
+          "finalCoins": 1000,
+          "netVal": 0
+        }
+      ]
+    },
+    {
       "sessionId": "S_1785345383520",
       "date": "2026-07-29T17:16:23.520Z",
       "entries": [
@@ -531,90 +459,54 @@
   ],
   "activePlayers": [
     {
-      "id": 1786542068695,
-      "name": "SANDEEP",
-      "buyIns": 3,
-      "buyInCoins": 1000,
-      "cashOutCoins": 7570
-    },
-    {
-      "id": 1786542075060,
-      "name": "RAVI",
-      "buyIns": 1,
-      "buyInCoins": 1000,
-      "cashOutCoins": 2420
-    },
-    {
-      "id": 1786542081295,
-      "name": "HARI",
-      "buyIns": 1,
-      "buyInCoins": 1000,
-      "cashOutCoins": 5240
-    },
-    {
-      "id": 1786542106227,
-      "name": "ABHISHEK",
-      "buyIns": 3,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1786542112060,
-      "name": "KUNAL",
-      "buyIns": 1,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1786542119895,
+      "id": 1786370447836,
       "name": "RISHI",
-      "buyIns": 4,
+      "buyIns": 8,
+      "buyInCoins": 1000,
+      "cashOutCoins": 2780
+    },
+    {
+      "id": 1786370452737,
+      "name": "AKSHAY",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 8000
+    },
+    {
+      "id": 1786370456803,
+      "name": "KUNAL",
+      "buyIns": 3,
+      "buyInCoins": 1000,
+      "cashOutCoins": 8450
+    },
+    {
+      "id": 1786370462336,
+      "name": "GAGAN",
+      "buyIns": 5,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
     {
-      "id": 1786543060693,
-      "name": "GAGAN",
-      "buyIns": 4,
+      "id": 1786370469338,
+      "name": "HARI",
+      "buyIns": 6,
       "buyInCoins": 1000,
-      "cashOutCoins": 1770
+      "cashOutCoins": 7760
+    },
+    {
+      "id": 1786370473019,
+      "name": "SANDEEP",
+      "buyIns": 10,
+      "buyInCoins": 1000,
+      "cashOutCoins": 6010
     }
   ],
-  "activeSessionId": null,
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
-    "buyInCoins": "1000",
-    "milestones": [
-      5,
-      10
-    ]
+    "buyInCoins": "1000"
   },
   "logs": [
-    {
-      "time": "2026-08-13 09:12:45",
-      "text": "Deleted session S_1786540434660 via admin mode."
-    },
-    {
-      "time": "2026-08-13 09:12:15",
-      "text": "Pushed live state to GitHub repo."
-    },
-    {
-      "time": "2026-08-13 09:12:10",
-      "text": "Pushed live state to GitHub repo."
-    },
-    {
-      "time": "2026-08-13 09:11:57",
-      "text": "Deleted session S_1785359254471 via admin mode."
-    },
-    {
-      "time": "2026-08-13 09:11:47",
-      "text": "Admin edit mode ENABLED via secret gesture."
-    },
-    {
-      "time": "2026-08-12 13:13:54",
-      "text": "Saved session to database."
-    },
     {
       "time": "2026-08-10 20:33:46",
       "text": "Saved session to database."

@@ -100,6 +100,8 @@
     .summary-item .value { font-size: 1.1rem; font-weight: bold; color: var(--accent); margin-top: 2px; }
 
     .player-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .player-grid.sorting-lock { pointer-events: none; }
+    .player-grid.sorting-lock .player-card { opacity: 0.85; }
     .player-card { 
       background: #0f172a; 
       border: 1px solid var(--border); 
@@ -156,6 +158,50 @@
     .settlement-list li { background: #0f172a; padding: 10px; border-radius: 8px; margin-bottom: 6px; border-left: 4px solid var(--accent); font-size: 0.9rem; }
 
     .exp-box { background: #0f172a; border: 1px dashed #8b5cf6; padding: 10px; border-radius: 8px; margin-top: 8px; }
+
+    /* Milestone celebration: non-blocking overlay. pointer-events:none on every layer
+       so the dashboard underneath stays fully tappable while it plays. */
+    .celebration-layer { position:fixed; inset:0; pointer-events:none; z-index:9998; overflow:hidden; }
+
+    /* Coin rain — thematically fits a ledger/poker app better than balloons.
+       The scaleX pulse (1 -> 0.25 -> 1) simulates a spinning coin flashing edge-on. */
+    .coin {
+      position:absolute; top:-40px; width:22px; height:22px; border-radius:50%;
+      background: radial-gradient(circle at 35% 30%, #fff7cc, #f5c542 60%, #b8860b 100%);
+      box-shadow: 0 0 6px rgba(245,197,66,0.6), inset 0 0 4px rgba(255,255,255,0.7);
+      animation: coinFall linear forwards;
+    }
+    @keyframes coinFall {
+      0%   { transform: translateY(0)     translateX(0)             rotate(0deg)   scaleX(1);    opacity: 1; }
+      25%  { transform: translateY(28vh)  translateX(var(--driftA)) rotate(90deg)  scaleX(0.25); }
+      50%  { transform: translateY(56vh)  translateX(0)             rotate(180deg) scaleX(1); }
+      75%  { transform: translateY(84vh)  translateX(var(--driftB)) rotate(270deg) scaleX(0.25); }
+      100% { transform: translateY(115vh) translateX(0)             rotate(360deg) scaleX(1);    opacity: 0.85; }
+    }
+
+    .firework { position:absolute; width:9px; height:9px; border-radius:50%; animation: fwPop 1100ms ease-out forwards; box-shadow: 0 0 10px 2px currentColor; }
+    @keyframes fwPop {
+      0%   { transform: translate(0,0) scale(1.2); opacity: 1; }
+      70%  { opacity: 1; }
+      100% { transform: translate(var(--dx), var(--dy)) scale(0.2); opacity: 0; }
+    }
+
+    .fw-trail { position:absolute; bottom:0; width:3px; height:3px; border-radius:50%; box-shadow: 0 0 8px 2px currentColor; animation: fwTrail 500ms ease-out forwards; }
+    @keyframes fwTrail {
+      0%   { transform: translateY(0); opacity: 1; }
+      100% { transform: translateY(var(--rise)); opacity: 0.9; }
+    }
+
+    .fw-flash { position:fixed; inset:0; pointer-events:none; z-index:9997; background: radial-gradient(circle at var(--fx) var(--fy), rgba(255,255,255,0.35), transparent 55%); opacity:0; animation: fwFlash 350ms ease-out forwards; }
+    @keyframes fwFlash { 0% { opacity:0; } 15% { opacity:1; } 100% { opacity:0; } }
+
+    .milestone-toast {
+      position:fixed; top:14px; left:50%; transform:translateX(-50%) translateY(-10px);
+      background:linear-gradient(135deg,#10b981,#3b82f6); color:#fff; padding:10px 18px;
+      border-radius:20px; font-weight:bold; font-size:0.9rem; box-shadow:0 8px 24px rgba(0,0,0,0.4);
+      pointer-events:none; z-index:9999; opacity:0; transition:opacity .3s, transform .3s; white-space:nowrap;
+    }
+    .milestone-toast.show { opacity:1; transform:translateX(-50%) translateY(0); }
 
     @media (min-width: 768px) {
       body { padding: 24px; }
@@ -223,6 +269,10 @@
         <button type="button" id="modeCurrBtn" class="mode-btn" onclick="setEntryMode('CURRENCY')">₹ Value</button>
       </div>
     </div>
+    <div style="display:flex; align-items:center; justify-content:flex-end; gap:6px; font-size:0.75rem; color:var(--subtext); margin-bottom:10px;">
+      <span>🎉 Milestones (buy-ins):</span>
+      <input type="text" id="milestoneInput" value="5,10" style="width:70px; padding:4px; font-size:0.75rem;" onchange="updateMilestones()">
+    </div>
 
     <div id="playerList" class="player-grid"></div>
   </div>
@@ -230,6 +280,11 @@
   <!-- Session Actions -->
   <div class="card">
     <h2>Session Actions</h2>
+    <p style="font-size:0.75rem; color:var(--subtext); margin-bottom:10px;">Saving only stores the session on THIS device. Push to GitHub (below) to sync it everywhere.</p>
+    <div id="syncBanner" style="display:none; align-items:center; justify-content:space-between; gap:8px; background:#3f2d0f; border:1px solid var(--warning); color:var(--warning); padding:8px 10px; border-radius:8px; font-size:0.78rem; margin-bottom:10px;">
+      <span></span>
+      <button type="button" class="btn-sm" style="background:var(--warning); color:#000; white-space:nowrap;" onclick="pushToGitHub()">🚀 Push Now</button>
+    </div>
     <div class="btn-group">
       <button type="button" class="btn-add btn-sm" style="flex:2;" onclick="confirmAndSaveSession()">💾 Save Session to Database</button>
       <button type="button" class="btn-warning btn-sm" style="flex:1;" onclick="confirmAndClearSession()">🧹 Clear Board</button>
@@ -239,6 +294,7 @@
   <!-- Settlement Section -->
   <div class="card">
     <h2>End of Session Settlement</h2>
+    <p style="font-size:0.75rem; color:var(--subtext); margin-bottom:8px;">Independent helper — calculates real-money transfers from the live board above. Works whether or not you've saved/pushed this session.</p>
     <button type="button" style="width:100%; padding: 10px; font-size: 0.9rem;" onclick="calculateSettlement()">Calculate Minimum Transactions</button>
     <ul id="settlementResults" class="settlement-list" style="margin-top: 10px;"></ul>
   </div>
@@ -247,7 +303,6 @@
   <div class="card">
     <div class="logs-header">
       <h2>Activity Logs</h2>
-      <button type="button" class="btn-danger" onclick="resetLogs()">Reset Logs</button>
     </div>
     <div class="logs-filter-grid">
       <div>
@@ -286,10 +341,11 @@
     <div style="margin-top: 10px;">
       <div class="tabs">
         <div class="tab active" onclick="switchFilter('ALL', this)">All Time</div>
-        <div class="tab" onclick="switchFilter('MONTH', this)">This Month</div>
+        <div class="tab" onclick="handleMonthTabTap(this)">This Month</div>
         <div class="tab" onclick="switchFilter('WEEK', this)">This Week</div>
       </div>
-      
+      <div id="adminModeIndicator" style="font-size:0.7rem; text-align:right; margin-bottom:6px; min-height:14px; color:var(--warning);"></div>
+
       <div id="statsBox" class="stats-box">
         <div><strong>Top Winner:</strong> <br><span id="statWinner" style="color:var(--accent)">-</span></div>
         <div><strong>Biggest Contributor:</strong> <br><span id="statContributor" style="color:var(--danger)">-</span></div>
@@ -323,6 +379,12 @@
     </div>
   </details>
 
+  <!-- Milestone Celebration: non-blocking fireworks/balloons layer + a small toast.
+       No backdrop, no click-to-dismiss — pointer-events:none throughout so the
+       dashboard underneath stays fully usable while it plays. -->
+  <div id="celebrationLayer" class="celebration-layer"></div>
+  <div id="milestoneToast" class="milestone-toast"></div>
+
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
@@ -336,12 +398,44 @@
     const strictMasterRoster = ["SANDEEP", "RISHI", "KUNAL", "MOHINI", "HARI", "AKSHAY", "RAVI", "GAGAN", "ALOK"];
     const colorThemes = ["color-0", "color-1", "color-2", "color-3", "color-4", "color-5", "color-6", "color-7"];
 
-    let entryMode = 'COINS'; 
+    let entryMode = 'COINS';
     let currentFilter = 'ALL';
-    
+
+    // Dashboard display order (player ids). Kept STABLE while you're actively tapping
+    // +/- so a card never slides out from under your finger mid-tap. Re-sorted by
+    // buy-in count only after 30s of no further buy-in changes (debounced), with a
+    // short slide animation, and taps are locked while it plays.
+    let displayOrder = [];
+    let resortTimer = null;
+    const RESORT_DELAY_MS = 30000;
+
+    // Secret admin gesture state (resets on page reload; not persisted for safety)
+    let adminUnlocked = false;
+    let monthTapTimestamps = [];
+    let editingSessionId = null;
+
     let savedSessions = JSON.parse(localStorage.getItem("ledger_db_sessions")) || [];
     let players = JSON.parse(localStorage.getItem("ledger_active_players")) || [];
     let logs = JSON.parse(localStorage.getItem("ledger_activity_logs")) || [];
+    let milestones = JSON.parse(localStorage.getItem("ledger_milestones")) || [5, 10];
+
+    // Sessions saved/edited locally but not yet pushed to GitHub.
+    // Protects against the auto-fetch (every 15 min / on tab focus) silently overwriting
+    // an unpushed local edit with the older remote copy.
+    let dirtySessionIds = new Set(JSON.parse(localStorage.getItem("ledger_dirty_sessions")) || []);
+    // Sessions deleted locally but not yet pushed — must not be resurrected by a pull,
+    // and must be actively stripped out of the payload on the next push.
+    let deletedSessionIds = new Set(JSON.parse(localStorage.getItem("ledger_deleted_sessions")) || []);
+
+    // Identity of the CURRENT live game on the dashboard. Assigned once (when the board
+    // starts) and synced across devices along with the active board, so that if two
+    // devices independently "Save Session to Database" for what is the same real game,
+    // both writes land on the SAME sessionId (upsert) instead of creating two leaderboard rows.
+    let activeSessionId = localStorage.getItem("ledger_active_session_id") || null;
+
+    function genSessionId() {
+      return "S_" + Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
+    }
 
     if (localStorage.getItem("ledger_coin_count")) document.getElementById("coinCount").value = localStorage.getItem("ledger_coin_count");
     if (localStorage.getItem("ledger_curr_val")) document.getElementById("currencyVal").value = localStorage.getItem("ledger_curr_val");
@@ -414,6 +508,27 @@
       localStorage.setItem("ledger_coin_count", document.getElementById("coinCount").value);
       localStorage.setItem("ledger_curr_val", document.getElementById("currencyVal").value);
       localStorage.setItem("ledger_buyin_coins", document.getElementById("buyInCoins").value);
+      localStorage.setItem("ledger_dirty_sessions", JSON.stringify(Array.from(dirtySessionIds)));
+      localStorage.setItem("ledger_deleted_sessions", JSON.stringify(Array.from(deletedSessionIds)));
+      localStorage.setItem("ledger_active_session_id", activeSessionId || "");
+      updateSyncBanner();
+    }
+
+    // Mark a session as locally changed and not yet pushed to GitHub.
+    function markSessionDirty(sessionId) {
+      dirtySessionIds.add(sessionId);
+    }
+
+    function updateSyncBanner() {
+      const banner = document.getElementById("syncBanner");
+      if (!banner) return;
+      const count = dirtySessionIds.size + deletedSessionIds.size;
+      if (count === 0) {
+        banner.style.display = "none";
+      } else {
+        banner.style.display = "flex";
+        banner.querySelector("span").textContent = `⚠️ ${count} unsynced change${count > 1 ? 's' : ''} (saves/edits/deletes) not yet pushed to GitHub.`;
+      }
     }
 
     function addLog(text) {
@@ -421,14 +536,6 @@
       logs.unshift({ time: nowStr, text: text });
       saveState();
       renderLogs();
-    }
-
-    function resetLogs() {
-      if (confirm("Clear all activity logs?")) {
-        const nowStr = new Date().toISOString().replace('T', ' ').substring(0, 19);
-        logs = [{ time: nowStr, text: "Logs reset." }];
-        saveState(); renderLogs();
-      }
     }
 
     function renderLogs() {
@@ -487,10 +594,17 @@
         strictMasterRoster.push(name);
       }
       
+      // First player of a fresh board: mint a stable identity for this game so that if
+      // another device syncs this same active board and also saves it, both writes
+      // land on the same session record instead of creating a duplicate.
+      if (players.length === 0 && !activeSessionId) {
+        activeSessionId = genSessionId();
+      }
+
       const buyInCoins = parseFloat(document.getElementById("buyInCoins").value) || 1000;
       players.push({ id: Date.now(), name: name, buyIns: 1, buyInCoins: buyInCoins, cashOutCoins: 0 });
       input.value = "";
-      
+
       addLog(`Added "${name}" with 1 buy-in (${buyInCoins}c).`);
       validateAddButton();
       renderAll();
@@ -500,6 +614,7 @@
       const p = players.find(p => p.id === id);
       if (p) {
         players = players.filter(p => p.id !== id);
+        if (players.length === 0) activeSessionId = null; // board emptied out organically -> next game gets a fresh identity
         addLog(`Removed "${p.name}".`);
         renderAll();
       }
@@ -512,8 +627,113 @@
         p.buyIns = Math.max(1, p.buyIns + delta);
         if (p.buyIns !== prev) {
           addLog(`Buy-in ${delta>0?'increased':'decreased'} for ${p.name}: count = ${p.buyIns}.`);
+          if (delta > 0 && milestones.includes(p.buyIns)) {
+            showMilestonePopup(p.name, p.buyIns);
+          }
+          scheduleResort(); // re-sort by buy-in count 30s after the LAST change, not immediately
           renderAll();
         }
+      }
+    }
+
+    function updateMilestones() {
+      const raw = document.getElementById("milestoneInput").value;
+      milestones = raw.split(',').map(n => parseInt(n.trim(), 10)).filter(n => !isNaN(n) && n > 0);
+      localStorage.setItem("ledger_milestones", JSON.stringify(milestones));
+      addLog(`Updated milestone thresholds to: ${milestones.join(', ') || 'none'}.`);
+    }
+
+    function showMilestonePopup(name, count) {
+      addLog(`Milestone reached: ${name} hit ${count} buy-ins.`);
+      // Celebration starts 5s AFTER the milestone is hit, not immediately.
+      setTimeout(() => launchCelebration(name, count), 5000);
+    }
+
+    function launchCelebration(name, count) {
+      showMilestoneToast(name, count);
+      spawnCoins(12);         // coin rain accent — fits a ledger app better than balloons
+      spawnFireworks(22);     // big barrage, spread over a longer show
+    }
+
+    function showMilestoneToast(name, count) {
+      const toast = document.getElementById("milestoneToast");
+      toast.textContent = `🎉 ${name} reached ${count} buy-ins!`;
+      toast.classList.add("show");
+      clearTimeout(window._toastTimer);
+      window._toastTimer = setTimeout(() => toast.classList.remove("show"), 4000);
+    }
+
+    function spawnCoins(n) {
+      const layer = document.getElementById("celebrationLayer");
+      for (let i = 0; i < n; i++) {
+        const c = document.createElement("div");
+        c.className = "coin";
+        const size = 16 + Math.random() * 14;
+        c.style.width = size + "px";
+        c.style.height = size + "px";
+        c.style.left = (Math.random() * 92) + "%";
+        c.style.animationDuration = (2.4 + Math.random() * 1.4) + "s";
+        c.style.animationDelay = (Math.random() * 2) + "s";
+        c.style.setProperty('--driftA', (Math.random() * 40 - 20) + 'px');
+        c.style.setProperty('--driftB', (Math.random() * 40 - 20) + 'px');
+        layer.appendChild(c);
+        setTimeout(() => c.remove(), 5800);
+      }
+    }
+
+    // Staggers a big barrage of bursts over ~9s rather than firing all at once — each one
+    // launches as a rocket trail from the bottom, then explodes at its target height.
+    function spawnFireworks(burstCount) {
+      const layer = document.getElementById("celebrationLayer");
+      const colors = ['#10b981', '#3b82f6', '#f59e0b', '#ef4444', '#8b5cf6', '#ec4899', '#facc15'];
+      for (let i = 0; i < burstCount; i++) {
+        setTimeout(() => launchRocket(layer, colors), Math.random() * 9000);
+      }
+    }
+
+    function launchRocket(layer, colors) {
+      const cx = 8 + Math.random() * 84;  // vw — target x
+      const cy = 8 + Math.random() * 42;  // vh — target height
+      const color = colors[Math.floor(Math.random() * colors.length)];
+
+      const trail = document.createElement("div");
+      trail.className = "fw-trail";
+      trail.style.left = cx + "vw";
+      trail.style.color = color;
+      trail.style.background = color;
+      trail.style.setProperty('--rise', `-${100 - cy}vh`);
+      layer.appendChild(trail);
+      setTimeout(() => trail.remove(), 550);
+
+      // burst lands once the trail reaches its target height
+      setTimeout(() => burstFirework(layer, cx, cy, color, colors), 480);
+    }
+
+    function burstFirework(layer, cx, cy, color, colors) {
+      // screen-flash "boom" synced to the burst point, for extra punch
+      const flash = document.createElement("div");
+      flash.className = "fw-flash";
+      flash.style.setProperty('--fx', cx + 'vw');
+      flash.style.setProperty('--fy', cy + 'vh');
+      layer.appendChild(flash);
+      setTimeout(() => flash.remove(), 400);
+
+      const particles = 34;
+      for (let i = 0; i < particles; i++) {
+        const p = document.createElement("div");
+        p.className = "firework";
+        const angle = (Math.PI * 2 * i) / particles + Math.random() * 0.2;
+        const dist = 70 + Math.random() * 100; // pushed further — bigger spread = more dramatic
+        p.style.setProperty('--dx', Math.cos(angle) * dist + 'px');
+        p.style.setProperty('--dy', Math.sin(angle) * dist + 'px');
+        p.style.left = cx + 'vw';
+        p.style.top = cy + 'vh';
+        // occasional secondary color for a two-tone burst
+        const c = Math.random() < 0.25 ? colors[Math.floor(Math.random() * colors.length)] : color;
+        p.style.color = c;
+        p.style.background = c;
+        layer.appendChild(p);
+        setTimeout(() => p.remove(), 1200);
       }
     }
 
@@ -525,6 +745,11 @@
       p.cashOutCoins = entryMode === 'COINS' ? numVal : (rate > 0 ? (numVal / rate) : 0);
       updateSummary();
       saveState();
+    }
+
+    function logCashOutChange(id) {
+      const p = players.find(p => p.id === id);
+      if (p) addLog(`Set final coins for ${p.name}: ${p.cashOutCoins} coins.`);
     }
 
     function updateSummary() {
@@ -556,22 +781,89 @@
       updateExperimentalMvp();
     }
 
+    // Keep displayOrder in sync with the current player list: drop ids that no longer
+    // exist, and append any new player at the end (new players don't need to wait for
+    // the resort delay to appear — they just aren't sorted-in until the next resort).
+    function ensureDisplayOrder() {
+      const existingIds = new Set(players.map(p => p.id));
+      displayOrder = displayOrder.filter(id => existingIds.has(id));
+
+      // Board just arrived empty->populated (page load, GitHub sync, or a whole new
+      // board swapped in): start sorted so it doesn't look broken on arrival — only
+      // LIVE +/- edits afterwards get the 30s debounce.
+      if (displayOrder.length === 0 && players.length > 0) {
+        displayOrder = [...players].sort((a, b) => b.buyIns - a.buyIns).map(p => p.id);
+        return;
+      }
+      players.forEach(p => { if (!displayOrder.includes(p.id)) displayOrder.push(p.id); });
+    }
+
+    // Debounced: restarts the 30s countdown on every buy-in change, so sorting only
+    // happens 30s after the LAST change, not 30s after the first.
+    function scheduleResort() {
+      clearTimeout(resortTimer);
+      resortTimer = setTimeout(performResort, RESORT_DELAY_MS);
+    }
+
+    function performResort() {
+      const sortedIds = [...players].sort((a, b) => b.buyIns - a.buyIns).map(p => p.id);
+      if (JSON.stringify(sortedIds) === JSON.stringify(displayOrder)) return; // already in order, nothing to animate
+      animateReorder(sortedIds);
+    }
+
+    // FLIP animation: capture each card's current position, apply the new order,
+    // then slide from the old position to the new one. Taps are locked for the
+    // duration so a reflowing card can't be mis-tapped.
+    function animateReorder(newOrderIds) {
+      const container = document.getElementById("playerList");
+      const firstRects = new Map();
+      Array.from(container.children).forEach(c => firstRects.set(c.dataset.pid, c.getBoundingClientRect()));
+
+      container.classList.add("sorting-lock");
+      displayOrder = newOrderIds;
+      renderPlayerCards();
+
+      const newCards = Array.from(container.children);
+      newCards.forEach(c => {
+        const first = firstRects.get(c.dataset.pid);
+        if (!first) return;
+        const last = c.getBoundingClientRect();
+        const dx = first.left - last.left, dy = first.top - last.top;
+        if (dx === 0 && dy === 0) return;
+        c.style.transition = 'none';
+        c.style.transform = `translate(${dx}px, ${dy}px)`;
+        requestAnimationFrame(() => {
+          c.style.transition = 'transform 400ms ease';
+          c.style.transform = '';
+        });
+      });
+
+      setTimeout(() => {
+        container.classList.remove("sorting-lock");
+        newCards.forEach(c => { c.style.transition = ''; });
+      }, 450);
+    }
+
     function renderPlayerCards() {
       const rate = getCoinRate();
       const container = document.getElementById("playerList");
       container.innerHTML = "";
 
-      players.forEach((p, idx) => {
+      ensureDisplayOrder();
+      const orderedPlayers = displayOrder.map(id => players.find(p => p.id === id)).filter(Boolean);
+
+      orderedPlayers.forEach((p, idx) => {
         const investedCoins = p.buyIns * p.buyInCoins;
         const investedVal = investedCoins * rate;
         const netVal = (p.cashOutCoins - investedCoins) * rate;
-        
+
         let inputLabel = entryMode === 'COINS' ? 'Final Coins' : 'Final Value (₹)';
         let inputValue = p.cashOutCoins ? (entryMode === 'COINS' ? p.cashOutCoins : (p.cashOutCoins * rate).toFixed(2)) : '';
         let colorClass = colorThemes[idx % colorThemes.length];
 
         const card = document.createElement("div");
         card.className = `player-card ${colorClass}`;
+        card.dataset.pid = p.id;
         card.innerHTML = `
           <div class="player-header">
             <span class="player-name" title="${p.name}">${p.name}</span>
@@ -588,7 +880,7 @@
             </div>
             <div>
               <label>${inputLabel}</label>
-              <input type="number" step="any" value="${inputValue}" placeholder="0" oninput="handleCashOutInput(${p.id}, this.value)">
+              <input type="number" step="any" value="${inputValue}" placeholder="0" oninput="handleCashOutInput(${p.id}, this.value)" onchange="logCashOutChange(${p.id})">
             </div>
             <div style="display:flex; justify-content:space-between; align-items:center; background:var(--card-bg); padding:4px 8px; border-radius:4px;">
               <span style="font-size:0.75rem; color:var(--subtext);">Net:</span>
@@ -631,9 +923,15 @@
         return alert("Security check failed! Session was NOT saved.");
       }
 
+      // Reuse this game's shared identity (set when the board was first started) so that
+      // saving the SAME live game from a second device — or re-saving after continued
+      // play on this device — updates one record instead of creating a duplicate.
+      if (!activeSessionId) activeSessionId = genSessionId();
+      const sid = activeSessionId;
+
       const rate = getCoinRate();
       const sessionRecord = {
-        sessionId: "S_" + Date.now(),
+        sessionId: sid,
         date: new Date().toISOString(),
         entries: players.map(p => {
           const investedCoins = p.buyIns * p.buyInCoins;
@@ -646,8 +944,12 @@
         })
       };
 
-      savedSessions.unshift(sessionRecord);
-      addLog("Saved session to database.");
+      const existingIdx = savedSessions.findIndex(s => s.sessionId === sid);
+      if (existingIdx >= 0) savedSessions[existingIdx] = sessionRecord;
+      else savedSessions.unshift(sessionRecord);
+
+      markSessionDirty(sid);
+      addLog(existingIdx >= 0 ? "Updated existing session in database." : "Saved session to database.");
       saveState();
       alert("Session saved successfully to database!");
       renderLeaderboard();
@@ -665,6 +967,7 @@
       }
 
       players = [];
+      activeSessionId = null; // this game is over; the next one to start gets a fresh identity
       addLog("Cleared active session dashboard.");
       renderAll();
     }
@@ -731,14 +1034,26 @@
           let dateStr = new Date(session.date).toLocaleDateString('en-US', { weekday:'short', month:'short', day:'numeric', year:'numeric' });
           let item = document.createElement("div");
           item.className = "history-item";
-          
-          let detailsHTML = session.entries.map(e => 
-            `<span style="color:${e.netVal>=0?'var(--accent)':'var(--danger)'}">
-              ${e.name.toUpperCase()}: ${e.netVal>=0?'+':''}₹${e.netVal.toFixed(1)}
-            </span>`
-          ).join(' | ');
 
-          item.innerHTML = `<strong>${dateStr}</strong><br>${detailsHTML}`;
+          if (editingSessionId === session.sessionId) {
+            item.innerHTML = renderSessionEditForm(session, dateStr);
+          } else {
+            let detailsHTML = session.entries.map(e =>
+              `<span style="color:${e.netVal>=0?'var(--accent)':'var(--danger)'}">
+                ${e.name.toUpperCase()}: ${e.netVal>=0?'+':''}₹${e.netVal.toFixed(1)}
+              </span>`
+            ).join(' | ');
+
+            let adminBtns = adminUnlocked ? `
+              <div class="btn-group" style="float:right; margin-left:8px;">
+                <button type="button" class="btn-sm" style="background:var(--warning); color:#000;" onclick="startEditSession('${session.sessionId}')">✏️ Edit</button>
+                <button type="button" class="btn-sm" style="background:#8b5cf6;" onclick="loadSessionToDashboard('${session.sessionId}')">📤 Load</button>
+                <button type="button" class="btn-danger" onclick="deleteSession('${session.sessionId}')">🗑️ Delete</button>
+              </div>` : '';
+
+            // Date intentionally not shown in the list (kept as a hover tooltip only).
+            item.innerHTML = `${adminBtns}<span title="${dateStr}">${detailsHTML}</span>`;
+          }
           historyBox.appendChild(item);
         });
       }
@@ -779,6 +1094,134 @@
       renderLeaderboard();
     }
 
+    // Secret gesture: tap "This Month" 5x within 3s to toggle admin edit mode on Session History
+    function handleMonthTabTap(elem) {
+      switchFilter('MONTH', elem);
+      const now = Date.now();
+      monthTapTimestamps.push(now);
+      monthTapTimestamps = monthTapTimestamps.filter(t => now - t < 3000);
+      if (monthTapTimestamps.length >= 5) {
+        monthTapTimestamps = [];
+        adminUnlocked = !adminUnlocked;
+        editingSessionId = null;
+        addLog(`Admin edit mode ${adminUnlocked ? 'ENABLED' : 'DISABLED'} via secret gesture.`);
+        updateAdminIndicator();
+        renderLeaderboard();
+      }
+    }
+
+    function updateAdminIndicator() {
+      const el = document.getElementById("adminModeIndicator");
+      if (el) el.textContent = adminUnlocked ? "🔓 Admin Edit Mode ON — tap This Month 5x again to lock" : "";
+    }
+
+    function startEditSession(sessionId) {
+      if (!adminUnlocked) return;
+      editingSessionId = sessionId;
+      renderLeaderboard();
+    }
+
+    function cancelEditSession() {
+      editingSessionId = null;
+      renderLeaderboard();
+    }
+
+    function removeEditEntry(sessionId, idx) {
+      const session = savedSessions.find(s => s.sessionId === sessionId);
+      if (!session) return;
+      const removedName = session.entries[idx] ? session.entries[idx].name : "?";
+      session.entries.splice(idx, 1);
+      markSessionDirty(sessionId);
+      addLog(`Removed entry "${removedName}" from session ${sessionId} via admin edit.`);
+      saveState();
+      renderLeaderboard();
+    }
+
+    function saveEditedSession(sessionId) {
+      const session = savedSessions.find(s => s.sessionId === sessionId);
+      if (!session) return;
+      if (!confirm("Save changes to this session? This will update the leaderboard.")) return;
+
+      const rate = getCoinRate();
+      session.entries.forEach((e, idx) => {
+        const invEl = document.getElementById(`editInv-${idx}`);
+        const finEl = document.getElementById(`editFin-${idx}`);
+        if (invEl && finEl) {
+          e.investedCoins = parseFloat(invEl.value) || 0;
+          e.finalCoins = parseFloat(finEl.value) || 0;
+          e.netVal = (e.finalCoins - e.investedCoins) * rate;
+        }
+      });
+
+      markSessionDirty(sessionId);
+      addLog(`Edited session ${sessionId} via admin mode.`);
+      editingSessionId = null;
+      saveState();
+      renderLeaderboard();
+    }
+
+    function deleteSession(sessionId) {
+      if (!adminUnlocked) return;
+      const session = savedSessions.find(s => s.sessionId === sessionId);
+      if (!session) return;
+      if (!confirm("Delete this session permanently? This cannot be undone.")) return;
+
+      savedSessions = savedSessions.filter(s => s.sessionId !== sessionId);
+      dirtySessionIds.delete(sessionId); // no longer relevant to protect an edit — it's gone
+      deletedSessionIds.add(sessionId); // but DO remember to strip it out of GitHub on next push/pull
+      if (editingSessionId === sessionId) editingSessionId = null;
+
+      addLog(`Deleted session ${sessionId} via admin mode.`);
+      saveState();
+      renderLeaderboard();
+    }
+
+    // Load a saved session's numbers back onto the live Participants Dashboard for editing
+    // via the normal counters/inputs, instead of the compact inline edit form. Re-saving
+    // afterwards updates this SAME session record (shared activeSessionId), no duplicate.
+    function loadSessionToDashboard(sessionId) {
+      if (!adminUnlocked) return;
+      const session = savedSessions.find(s => s.sessionId === sessionId);
+      if (!session) return;
+
+      const warning = players.length > 0
+        ? "⚠️ This will REPLACE the current live board with this session's data. Continue?"
+        : "Load this session onto the Participants Dashboard for editing?";
+      if (!confirm(warning)) return;
+
+      players = session.entries.map((e, idx) => ({
+        id: Date.now() + idx,
+        name: e.name,
+        buyIns: 1,
+        buyInCoins: e.investedCoins,
+        cashOutCoins: e.finalCoins
+      }));
+      activeSessionId = sessionId;
+      editingSessionId = null;
+
+      addLog(`Loaded session ${sessionId} onto dashboard for editing.`);
+      saveState();
+      renderAll();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      alert("✅ Loaded onto the dashboard. Edit buy-ins/final coins there, then 'Save Session to Database' (updates this same session) and push to GitHub.");
+    }
+
+    function renderSessionEditForm(session, dateStr) {
+      const rows = session.entries.map((e, idx) => `
+        <div style="display:flex; gap:6px; align-items:center; margin:4px 0;">
+          <span style="width:70px; font-size:0.8rem; overflow:hidden; text-overflow:ellipsis;">${e.name}</span>
+          <input type="number" id="editInv-${idx}" value="${e.investedCoins}" placeholder="Invested" style="width:80px;">
+          <input type="number" id="editFin-${idx}" value="${e.finalCoins}" placeholder="Final" style="width:80px;">
+          <button type="button" class="btn-danger" onclick="removeEditEntry('${session.sessionId}', ${idx})">✕</button>
+        </div>`).join('');
+
+      return `<strong>✏️ Editing: ${dateStr}</strong>${rows}
+        <div class="btn-group" style="margin-top:6px;">
+          <button type="button" class="btn-add btn-sm" onclick="saveEditedSession('${session.sessionId}')">💾 Save</button>
+          <button type="button" class="btn-warning btn-sm" onclick="cancelEditSession()">Cancel</button>
+        </div>`;
+    }
+
     // --- SMART AUTO-SYNC & FETCH LOGIC ---
     async function autoFetchFromGitHub(isManual = false) {
       const statusText = document.getElementById("syncStatusText");
@@ -791,11 +1234,26 @@
         if (res.ok) {
           const data = await res.json();
           
-          // 1. Always Merge Saved Sessions safely by unique sessionId
+          // 1. Merge Saved Sessions safely by unique sessionId.
+          // Remote normally wins on a matching id (it has whatever every device has already
+          // pushed), EXCEPT for sessions this device saved/edited locally and hasn't pushed
+          // yet ("dirty") — those must not be silently overwritten by an older remote copy.
+          //
+          // Remote is also treated as authoritative for DELETIONS: if a session exists in
+          // our local cache but remote no longer has it, that means some OTHER device
+          // already deleted + pushed it — drop our stale local copy too, unless it's one
+          // of OUR own pending (dirty) changes. Without this, a stale local copy would not
+          // just linger; it would get resurrected onto GitHub the next time THIS device pushes.
           if (data.savedSessions && Array.isArray(data.savedSessions)) {
+            const remoteIds = new Set(data.savedSessions.map(s => s.sessionId));
             let sessionMap = new Map();
-            savedSessions.forEach(s => sessionMap.set(s.sessionId, s));
-            data.savedSessions.forEach(s => sessionMap.set(s.sessionId, s));
+            savedSessions.forEach(s => {
+              if (remoteIds.has(s.sessionId) || dirtySessionIds.has(s.sessionId)) sessionMap.set(s.sessionId, s);
+            });
+            data.savedSessions.forEach(s => {
+              if (!dirtySessionIds.has(s.sessionId)) sessionMap.set(s.sessionId, s);
+            });
+            deletedSessionIds.forEach(id => sessionMap.delete(id));
             savedSessions = Array.from(sessionMap.values()).sort((a,b) => new Date(b.date) - new Date(a.date));
           }
 
@@ -808,11 +1266,17 @@
               if (data.settings.coinCount) document.getElementById("coinCount").value = data.settings.coinCount;
               if (data.settings.currencyVal) document.getElementById("currencyVal").value = data.settings.currencyVal;
               if (data.settings.buyInCoins) document.getElementById("buyInCoins").value = data.settings.buyInCoins;
+              if (data.settings.milestones && Array.isArray(data.settings.milestones)) {
+                milestones = data.settings.milestones;
+                document.getElementById("milestoneInput").value = milestones.join(',');
+                localStorage.setItem("ledger_milestones", JSON.stringify(milestones));
+              }
             }
 
             if (data.activePlayers && Array.isArray(data.activePlayers)) {
               players = data.activePlayers;
             }
+            if (data.activeSessionId) activeSessionId = data.activeSessionId;
           }
 
           if (data.knownRoster && Array.isArray(data.knownRoster)) {
@@ -879,18 +1343,28 @@
         }
       } catch(e) { console.warn("Could not pre-fetch remote SHA", e); }
 
+      // Same rule as the pull side: a stale local copy of a session that ANOTHER device
+      // already deleted + pushed must not be resurrected onto GitHub by this push. Local
+      // only overrides remote for sessions remote still has, or ones WE'RE actively
+      // changing right now (dirty).
+      const remoteIdsAtPush = new Set(remoteSessions.map(s => s.sessionId));
       let sessionMap = new Map();
       remoteSessions.forEach(s => sessionMap.set(s.sessionId, s));
-      savedSessions.forEach(s => sessionMap.set(s.sessionId, s));
+      savedSessions.forEach(s => {
+        if (remoteIdsAtPush.has(s.sessionId) || dirtySessionIds.has(s.sessionId)) sessionMap.set(s.sessionId, s);
+      });
+      deletedSessionIds.forEach(id => sessionMap.delete(id)); // actually remove locally-deleted sessions from GitHub, not just leave them
       let mergedSavedSessions = Array.from(sessionMap.values()).sort((a,b) => new Date(b.date) - new Date(a.date));
 
       const payload = {
         savedSessions: mergedSavedSessions,
         activePlayers: players,
+        activeSessionId: activeSessionId,
         settings: {
           coinCount: document.getElementById("coinCount").value,
           currencyVal: document.getElementById("currencyVal").value,
-          buyInCoins: document.getElementById("buyInCoins").value
+          buyInCoins: document.getElementById("buyInCoins").value,
+          milestones: milestones
         },
         logs: logs,
         knownRoster: strictMasterRoster
@@ -915,6 +1389,8 @@
 
         if (putRes.ok) {
           savedSessions = mergedSavedSessions;
+          dirtySessionIds.clear(); // now matches GitHub — safe for auto-fetch to overwrite again
+          deletedSessionIds.clear(); // deletion has been synced — nothing left to strip out
           saveState(); renderAll();
           alert("✅ LIVE STATE PUSHED TO GITHUB!\nActive dashboard and game history updated across all devices.");
           addLog("Pushed live state to GitHub repo.");
@@ -984,6 +1460,9 @@
     }
 
     // Boot Application & Enable Auto-Polling
+    document.getElementById("milestoneInput").value = milestones.join(',');
+    updateAdminIndicator();
+    updateSyncBanner();
     renderAll();
     validateAddButton();
 
