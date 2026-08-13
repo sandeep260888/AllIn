@@ -269,6 +269,15 @@
         <button type="button" id="modeCurrBtn" class="mode-btn" onclick="setEntryMode('CURRENCY')">₹ Value</button>
       </div>
     </div>
+    <!-- Host lock: only one device edits the live board at a time. -->
+    <div id="hostBanner" style="display:none; align-items:center; justify-content:space-between; gap:8px; padding:8px 10px; border-radius:8px; font-size:0.78rem; margin-bottom:10px; border:1px solid;">
+      <span></span>
+      <div class="btn-group">
+        <button type="button" id="hostStopBtn" class="btn-sm" style="display:none; background:var(--accent); color:#000;" onclick="releaseHost()">🚪 Stop Hosting</button>
+        <button type="button" id="hostTakeoverBtn" class="btn-sm" style="display:none; background:var(--warning); color:#000;" onclick="takeOverHosting()">🎙️ Take Over Hosting</button>
+      </div>
+    </div>
+
     <div style="display:flex; align-items:center; justify-content:flex-end; gap:6px; font-size:0.75rem; color:var(--subtext); margin-bottom:10px;">
       <span>🎉 Milestones (buy-ins):</span>
       <input type="text" id="milestoneInput" value="5,10" style="width:70px; padding:4px; font-size:0.75rem;" onchange="updateMilestones()">
@@ -286,8 +295,8 @@
       <button type="button" class="btn-sm" style="background:var(--warning); color:#000; white-space:nowrap;" onclick="pushToGitHub()">🚀 Push Now</button>
     </div>
     <div class="btn-group">
-      <button type="button" class="btn-add btn-sm" style="flex:2;" onclick="confirmAndSaveSession()">💾 Save Session to Database</button>
-      <button type="button" class="btn-warning btn-sm" style="flex:1;" onclick="confirmAndClearSession()">🧹 Clear Board</button>
+      <button type="button" id="btnSaveSession" class="btn-add btn-sm" style="flex:2;" onclick="confirmAndSaveSession()">💾 Save Session to Database</button>
+      <button type="button" id="btnClearBoard" class="btn-warning btn-sm" style="flex:1;" onclick="confirmAndClearSession()">🧹 Clear Board</button>
     </div>
   </div>
 
@@ -327,7 +336,7 @@
     <p style="font-size:0.75rem; color:var(--subtext); margin-bottom:10px;">The app auto-syncs with GitHub every 15 minutes. Admin push is protected.</p>
     
     <div class="btn-group">
-      <button type="button" class="btn-sync btn-sm" style="width:100%; padding: 10px;" onclick="pushToGitHub()">🚀 Push Current Screen to GitHub</button>
+      <button type="button" id="btnPushGitHub" class="btn-sync btn-sm" style="width:100%; padding: 10px;" onclick="pushToGitHub()">🚀 Push Current Screen to GitHub</button>
     </div>
 
     <div style="margin-top: 10px;">
@@ -437,6 +446,103 @@
       return "S_" + Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
     }
 
+    // --- HOST LOCK: only one device edits the live board at a time ---
+    // deviceId/deviceName are just a local identity label for coordination, NOT a
+    // security credential — the GitHub PAT (shared) is still the real write boundary.
+    // This is a social/UX safeguard against two people stomping on the same live game,
+    // not cryptographic enforcement.
+    let deviceId = localStorage.getItem("ledger_device_id");
+    if (!deviceId) {
+      deviceId = "dev_" + Math.random().toString(36).slice(2, 10);
+      localStorage.setItem("ledger_device_id", deviceId);
+    }
+    // Asked lazily (only when this device actually claims host) so people who just
+    // check the leaderboard aren't hit with a prompt() on every page load.
+    let deviceName = localStorage.getItem("ledger_device_name");
+    function ensureDeviceName() {
+      if (deviceName) return deviceName;
+      const typed = (prompt('Name this device (e.g. "Sandeep\'s iPhone") so others can see who\'s hosting a session:') || "").trim();
+      deviceName = typed || ("Device-" + deviceId.slice(-4).toUpperCase());
+      localStorage.setItem("ledger_device_name", deviceName);
+      return deviceName;
+    }
+
+    // { deviceId, deviceName, heartbeatAt } of whoever is currently hosting, or null.
+    let activeHost = JSON.parse(localStorage.getItem("ledger_active_host") || "null");
+    const HOST_STALE_MS = 8 * 60 * 60 * 1000; // 8 hours of inactivity before free takeover
+
+    function isHostStale(host) {
+      if (!host || !host.heartbeatAt) return true;
+      return (Date.now() - new Date(host.heartbeatAt).getTime()) > HOST_STALE_MS;
+    }
+
+    function isCurrentHost() {
+      return !!activeHost && activeHost.deviceId === deviceId;
+    }
+
+    // Locked for ME if someone ELSE holds a still-fresh lease.
+    function isBoardLocked() {
+      return !!activeHost && activeHost.deviceId !== deviceId && !isHostStale(activeHost);
+    }
+
+    function claimHost() {
+      activeHost = { deviceId, deviceName: ensureDeviceName(), heartbeatAt: new Date().toISOString() };
+    }
+
+    function releaseHost() {
+      if (!isCurrentHost()) return;
+      if (!confirm("Stop hosting? Other devices will be able to take over immediately.")) return;
+      activeHost = null;
+      addLog(`${deviceName} stopped hosting.`);
+      saveState();
+      renderAll();
+    }
+
+    function takeOverHosting() {
+      if (!isHostStale(activeHost)) return; // shouldn't be reachable via UI, but guard anyway
+      const prevName = activeHost ? activeHost.deviceName : "no one";
+      claimHost();
+      addLog(`${deviceName} took over hosting from ${prevName} (inactive 8h+).`);
+      saveState();
+      renderAll();
+      alert("✅ You're now hosting. Push to GitHub so other devices see the handoff.");
+    }
+
+    function updateHostBanner() {
+      const el = document.getElementById("hostBanner");
+      const stopBtn = document.getElementById("hostStopBtn");
+      const takeoverBtn = document.getElementById("hostTakeoverBtn");
+      if (!el) return;
+
+      const lockActions = () => {
+        [document.getElementById("btnSaveSession"), document.getElementById("btnClearBoard"), document.getElementById("btnPushGitHub")]
+          .forEach(b => { if (b) b.disabled = isBoardLocked(); });
+      };
+
+      if (isBoardLocked()) {
+        el.style.display = "flex";
+        el.style.background = "#3a1616"; el.style.borderColor = "var(--danger)"; el.style.color = "var(--danger)";
+        el.querySelector("span").textContent = `🔒 Hosted by ${activeHost.deviceName} — dashboard is read-only.`;
+        stopBtn.style.display = "none";
+        takeoverBtn.style.display = "none";
+      } else if (isCurrentHost()) {
+        el.style.display = "flex";
+        el.style.background = "#0f2e22"; el.style.borderColor = "var(--accent)"; el.style.color = "var(--accent)";
+        el.querySelector("span").textContent = `🎙️ You're hosting this session (${deviceName}).`;
+        stopBtn.style.display = "inline-flex";
+        takeoverBtn.style.display = "none";
+      } else if (activeHost && isHostStale(activeHost)) {
+        el.style.display = "flex";
+        el.style.background = "#332a0f"; el.style.borderColor = "var(--warning)"; el.style.color = "var(--warning)";
+        el.querySelector("span").textContent = `⏱️ ${activeHost.deviceName}'s session went inactive (8h+) — free to take over.`;
+        stopBtn.style.display = "none";
+        takeoverBtn.style.display = "inline-flex";
+      } else {
+        el.style.display = "none";
+      }
+      lockActions();
+    }
+
     if (localStorage.getItem("ledger_coin_count")) document.getElementById("coinCount").value = localStorage.getItem("ledger_coin_count");
     if (localStorage.getItem("ledger_curr_val")) document.getElementById("currencyVal").value = localStorage.getItem("ledger_curr_val");
     if (localStorage.getItem("ledger_buyin_coins")) document.getElementById("buyInCoins").value = localStorage.getItem("ledger_buyin_coins");
@@ -444,6 +550,7 @@
     function validateAddButton() {
       const input = document.getElementById("playerName");
       const btn = document.getElementById("btnAddPlayer");
+      if (isBoardLocked()) { btn.classList.add("disabled"); return; }
       if (input.value.trim().length > 0) btn.classList.remove("disabled");
       else btn.classList.add("disabled");
     }
@@ -511,7 +618,9 @@
       localStorage.setItem("ledger_dirty_sessions", JSON.stringify(Array.from(dirtySessionIds)));
       localStorage.setItem("ledger_deleted_sessions", JSON.stringify(Array.from(deletedSessionIds)));
       localStorage.setItem("ledger_active_session_id", activeSessionId || "");
+      localStorage.setItem("ledger_active_host", JSON.stringify(activeHost));
       updateSyncBanner();
+      updateHostBanner();
     }
 
     // Mark a session as locally changed and not yet pushed to GitHub.
@@ -580,6 +689,8 @@
     }
 
     function addPlayer() {
+      if (isBoardLocked()) return alert(`🔒 ${activeHost.deviceName} is hosting this session. Dashboard is read-only until they release it or go inactive 8h+.`);
+
       const input = document.getElementById("playerName");
       let name = input.value.trim().toUpperCase();
 
@@ -599,6 +710,7 @@
       // land on the same session record instead of creating a duplicate.
       if (players.length === 0 && !activeSessionId) {
         activeSessionId = genSessionId();
+        claimHost();
       }
 
       const buyInCoins = parseFloat(document.getElementById("buyInCoins").value) || 1000;
@@ -611,6 +723,7 @@
     }
 
     function removePlayer(id) {
+      if (isBoardLocked()) return alert(`🔒 ${activeHost.deviceName} is hosting this session. Dashboard is read-only.`);
       const p = players.find(p => p.id === id);
       if (p) {
         players = players.filter(p => p.id !== id);
@@ -621,6 +734,7 @@
     }
 
     function updateBuyIns(id, delta) {
+      if (isBoardLocked()) return alert(`🔒 ${activeHost.deviceName} is hosting this session. Dashboard is read-only.`);
       const p = players.find(p => p.id === id);
       if (p) {
         const prev = p.buyIns;
@@ -738,6 +852,7 @@
     }
 
     function handleCashOutInput(id, val) {
+      if (isBoardLocked()) return; // silent — the input is also rendered disabled, this is defense-in-depth
       const p = players.find(p => p.id === id);
       if (!p) return;
       const rate = getCoinRate();
@@ -851,6 +966,8 @@
 
       ensureDisplayOrder();
       const orderedPlayers = displayOrder.map(id => players.find(p => p.id === id)).filter(Boolean);
+      const locked = isBoardLocked();
+      const dis = locked ? 'disabled' : '';
 
       orderedPlayers.forEach((p, idx) => {
         const investedCoins = p.buyIns * p.buyInCoins;
@@ -867,20 +984,20 @@
         card.innerHTML = `
           <div class="player-header">
             <span class="player-name" title="${p.name}">${p.name}</span>
-            <button type="button" class="btn-danger" onclick="removePlayer(${p.id})">✕</button>
+            <button type="button" class="btn-danger" onclick="removePlayer(${p.id})" ${dis}>✕</button>
           </div>
           <div class="player-body-row">
             <div class="counter-wrapper">
-              <button type="button" class="counter-btn" onclick="updateBuyIns(${p.id}, -1)">-</button>
+              <button type="button" class="counter-btn" onclick="updateBuyIns(${p.id}, -1)" ${dis}>-</button>
               <div style="text-align:center;">
                 <span class="buyin-cnt">${p.buyIns}</span>
                 <span style="font-size:0.7rem; color:var(--subtext); display:block;">${investedCoins}c (₹${investedVal.toFixed(0)})</span>
               </div>
-              <button type="button" class="counter-btn" onclick="updateBuyIns(${p.id}, 1)">+</button>
+              <button type="button" class="counter-btn" onclick="updateBuyIns(${p.id}, 1)" ${dis}>+</button>
             </div>
             <div>
               <label>${inputLabel}</label>
-              <input type="number" step="any" value="${inputValue}" placeholder="0" oninput="handleCashOutInput(${p.id}, this.value)" onchange="logCashOutChange(${p.id})">
+              <input type="number" step="any" value="${inputValue}" placeholder="0" oninput="handleCashOutInput(${p.id}, this.value)" onchange="logCashOutChange(${p.id})" ${dis}>
             </div>
             <div style="display:flex; justify-content:space-between; align-items:center; background:var(--card-bg); padding:4px 8px; border-radius:4px;">
               <span style="font-size:0.75rem; color:var(--subtext);">Net:</span>
@@ -908,6 +1025,7 @@
 
     // Settlement & Save Session with Diff Check
     function confirmAndSaveSession() {
+      if (isBoardLocked()) return alert(`🔒 ${activeHost.deviceName} is hosting this session. Only they can save/push it.`);
       if (players.length === 0) return alert("Add participants first!");
 
       const diffVal = getDiffValue();
@@ -956,6 +1074,7 @@
     }
 
     function confirmAndClearSession() {
+      if (isBoardLocked()) return alert(`🔒 ${activeHost.deviceName} is hosting this session. Only they can clear it.`);
       if (players.length === 0) return alert("No active participants on board!");
 
       const confirm1 = confirm("CRUCIAL ACTION: Clear all active participants from dashboard?");
@@ -968,6 +1087,7 @@
 
       players = [];
       activeSessionId = null; // this game is over; the next one to start gets a fresh identity
+      if (isCurrentHost()) activeHost = null; // release the lock too — free for the next game/host
       addLog("Cleared active session dashboard.");
       renderAll();
     }
@@ -1031,7 +1151,7 @@
         historyBox.innerHTML = "<div class='history-item'>No sessions found in this period.</div>";
       } else {
         filtered.forEach(session => {
-          let dateStr = new Date(session.date).toLocaleDateString('en-US', { weekday:'short', month:'short', day:'numeric', year:'numeric' });
+          let dateStr = new Date(session.date).toLocaleString('en-US', { weekday:'short', month:'short', day:'numeric', year:'numeric', hour:'numeric', minute:'2-digit' });
           let item = document.createElement("div");
           item.className = "history-item";
 
@@ -1051,8 +1171,7 @@
                 <button type="button" class="btn-danger" onclick="deleteSession('${session.sessionId}')">🗑️ Delete</button>
               </div>` : '';
 
-            // Date intentionally not shown in the list (kept as a hover tooltip only).
-            item.innerHTML = `${adminBtns}<span title="${dateStr}">${detailsHTML}</span>`;
+            item.innerHTML = `${adminBtns}<strong>${dateStr}</strong><br>${detailsHTML}`;
           }
           historyBox.appendChild(item);
         });
@@ -1279,6 +1398,18 @@
             if (data.activeSessionId) activeSessionId = data.activeSessionId;
           }
 
+          // Host lease: synced on EVERY pull (not gated behind the players-empty check
+          // above) since "who's hosting" needs to be visible even if I already have my
+          // own board loaded. Newest heartbeat wins on a conflicting claim.
+          if ('activeHost' in data) {
+            const remoteHost = data.activeHost;
+            if (!activeHost || !remoteHost) {
+              activeHost = remoteHost || null;
+            } else if (new Date(remoteHost.heartbeatAt) > new Date(activeHost.heartbeatAt)) {
+              activeHost = remoteHost;
+            }
+          }
+
           if (data.knownRoster && Array.isArray(data.knownRoster)) {
             data.knownRoster.forEach(name => {
               if (!strictMasterRoster.includes(name.toUpperCase())) strictMasterRoster.push(name.toUpperCase());
@@ -1308,6 +1439,8 @@
 
     // Token-Authenticated Push Function
     async function pushToGitHub() {
+      if (isBoardLocked()) return alert(`🔒 ${activeHost.deviceName} is hosting this session. Only they can push it.`);
+
       let token = localStorage.getItem("gh_token") || "";
 
       if (!token) {
@@ -1356,10 +1489,14 @@
       deletedSessionIds.forEach(id => sessionMap.delete(id)); // actually remove locally-deleted sessions from GitHub, not just leave them
       let mergedSavedSessions = Array.from(sessionMap.values()).sort((a,b) => new Date(b.date) - new Date(a.date));
 
+      // Refresh the lease heartbeat so other devices see this session as still active.
+      if (isCurrentHost()) activeHost.heartbeatAt = new Date().toISOString();
+
       const payload = {
         savedSessions: mergedSavedSessions,
         activePlayers: players,
         activeSessionId: activeSessionId,
+        activeHost: activeHost,
         settings: {
           coinCount: document.getElementById("coinCount").value,
           currencyVal: document.getElementById("currencyVal").value,

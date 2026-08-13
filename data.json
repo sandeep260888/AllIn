@@ -1,6 +1,90 @@
 {
   "savedSessions": [
     {
+      "sessionId": "S_1786549147419",
+      "date": "2026-08-12T15:39:07.419Z",
+      "entries": [
+        {
+          "name": "SANDEEP",
+          "investedCoins": 3000,
+          "finalCoins": 7570,
+          "netVal": 2285
+        },
+        {
+          "name": "RAVI",
+          "investedCoins": 1000,
+          "finalCoins": 2420,
+          "netVal": 710
+        },
+        {
+          "name": "HARI",
+          "investedCoins": 1000,
+          "finalCoins": 5240,
+          "netVal": 2120
+        },
+        {
+          "name": "ABHISHEK",
+          "investedCoins": 3000,
+          "finalCoins": 0,
+          "netVal": -1500
+        },
+        {
+          "name": "KUNAL",
+          "investedCoins": 1000,
+          "finalCoins": 0,
+          "netVal": -500
+        },
+        {
+          "name": "RISHI",
+          "investedCoins": 4000,
+          "finalCoins": 0,
+          "netVal": -2000
+        },
+        {
+          "name": "GAGAN",
+          "investedCoins": 4000,
+          "finalCoins": 1770,
+          "netVal": -1115
+        }
+      ]
+    },
+    {
+      "sessionId": "S_1786473267532",
+      "date": "2026-08-11T18:34:27.532Z",
+      "entries": [
+        {
+          "name": "RISHI",
+          "investedCoins": 1000,
+          "finalCoins": 11170,
+          "netVal": 5085
+        },
+        {
+          "name": "HARI",
+          "investedCoins": 10000,
+          "finalCoins": 8600,
+          "netVal": -700
+        },
+        {
+          "name": "GAGAN",
+          "investedCoins": 15000,
+          "finalCoins": 0,
+          "netVal": -7500
+        },
+        {
+          "name": "AKSHAY",
+          "investedCoins": 4000,
+          "finalCoins": 13050,
+          "netVal": 4525
+        },
+        {
+          "name": "KUNAL",
+          "investedCoins": 4000,
+          "finalCoins": 1180,
+          "netVal": -1410
+        }
+      ]
+    },
+    {
       "sessionId": "S_1786394026289",
       "date": "2026-08-10T20:33:46.289Z",
       "entries": [
