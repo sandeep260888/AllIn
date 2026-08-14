@@ -529,30 +529,8 @@
       ]
     }
   ],
-  "activePlayers": [
-    {
-      "id": 1786627387172,
-      "name": "ABHISHEK",
-      "buyIns": 5,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1786627389617,
-      "name": "ALOK",
-      "buyIns": 3,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1786627392193,
-      "name": "AKSHAY",
-      "buyIns": 10,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    }
-  ],
-  "activeSessionId": "S_msrjteskox3rrs",
+  "activePlayers": [],
+  "activeSessionId": null,
   "activeHost": null,
   "settings": {
     "coinCount": "2",
@@ -564,6 +542,10 @@
     ]
   },
   "logs": [
+    {
+      "time": "2026-08-14 09:18:16",
+      "text": "Cleared active session dashboard."
+    },
     {
       "time": "2026-08-14 09:11:15",
       "text": "Sandeep Mac stopped hosting."
