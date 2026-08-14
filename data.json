@@ -547,12 +547,17 @@
     {
       "id": 1786627392193,
       "name": "AKSHAY",
-      "buyIns": 4,
+      "buyIns": 10,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
   ],
   "activeSessionId": "S_msrjteskox3rrs",
+  "activeHost": {
+    "deviceId": "dev_ufpc465o",
+    "deviceName": "Sandeep Mac",
+    "heartbeatAt": "2026-08-14T08:58:06.408Z"
+  },
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -563,6 +568,38 @@
     ]
   },
   "logs": [
+    {
+      "time": "2026-08-14 08:57:46",
+      "text": "Milestone reached: AKSHAY hit 10 buy-ins."
+    },
+    {
+      "time": "2026-08-14 08:57:46",
+      "text": "Buy-in increased for AKSHAY: count = 10."
+    },
+    {
+      "time": "2026-08-14 08:57:45",
+      "text": "Buy-in increased for AKSHAY: count = 9."
+    },
+    {
+      "time": "2026-08-14 08:57:44",
+      "text": "Buy-in increased for AKSHAY: count = 8."
+    },
+    {
+      "time": "2026-08-14 08:57:43",
+      "text": "Buy-in increased for AKSHAY: count = 7."
+    },
+    {
+      "time": "2026-08-14 08:57:43",
+      "text": "Buy-in increased for AKSHAY: count = 6."
+    },
+    {
+      "time": "2026-08-14 08:57:43",
+      "text": "Milestone reached: AKSHAY hit 5 buy-ins."
+    },
+    {
+      "time": "2026-08-14 08:57:43",
+      "text": "Buy-in increased for AKSHAY: count = 5."
+    },
     {
       "time": "2026-08-13 13:23:20",
       "text": "Buy-in increased for AKSHAY: count = 4."
