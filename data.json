@@ -1,6 +1,42 @@
 {
   "savedSessions": [
     {
+      "sessionId": "S_msyr80urvbfp8i",
+      "date": "2026-08-18T17:43:52.189Z",
+      "entries": [
+        {
+          "name": "AKSHAY",
+          "investedCoins": 2000,
+          "finalCoins": 5870,
+          "netVal": 1935
+        },
+        {
+          "name": "ABHISHEK",
+          "investedCoins": 6000,
+          "finalCoins": 1460,
+          "netVal": -2270
+        },
+        {
+          "name": "GAGAN",
+          "investedCoins": 6000,
+          "finalCoins": 0,
+          "netVal": -3000
+        },
+        {
+          "name": "RISHI",
+          "investedCoins": 3000,
+          "finalCoins": 1530,
+          "netVal": -735
+        },
+        {
+          "name": "RAVI",
+          "investedCoins": 1000,
+          "finalCoins": 9140,
+          "netVal": 4070
+        }
+      ]
+    },
+    {
       "sessionId": "S_msxcdyeh75z2p0",
       "date": "2026-08-17T17:40:00.768Z",
       "entries": [
@@ -615,42 +651,42 @@
   ],
   "activePlayers": [
     {
-      "id": 1786977705833,
+      "id": 1787063094215,
       "name": "AKSHAY",
-      "buyIns": 4,
-      "buyInCoins": 1000,
-      "cashOutCoins": 8580
-    },
-    {
-      "id": 1786977709499,
-      "name": "GAGAN",
       "buyIns": 2,
       "buyInCoins": 1000,
-      "cashOutCoins": 2630
+      "cashOutCoins": 5870
     },
     {
-      "id": 1786977715549,
-      "name": "RAVI",
+      "id": 1787063098122,
+      "name": "ABHISHEK",
+      "buyIns": 6,
+      "buyInCoins": 1000,
+      "cashOutCoins": 1460
+    },
+    {
+      "id": 1787063100457,
+      "name": "GAGAN",
+      "buyIns": 6,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1787063102941,
+      "name": "RISHI",
       "buyIns": 3,
       "buyInCoins": 1000,
-      "cashOutCoins": 2530
+      "cashOutCoins": 1530
     },
     {
-      "id": 1786977718782,
-      "name": "RISHI",
-      "buyIns": 2,
+      "id": 1787063105048,
+      "name": "RAVI",
+      "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 700
-    },
-    {
-      "id": 1786977721749,
-      "name": "SANDEEP",
-      "buyIns": 5,
-      "buyInCoins": 1000,
-      "cashOutCoins": 1560
+      "cashOutCoins": 9140
     }
   ],
-  "activeSessionId": "S_msxcdyeh75z2p0",
+  "activeSessionId": "S_msyr80urvbfp8i",
   "activeHost": null,
   "settings": {
     "coinCount": "2",
@@ -668,6 +704,38 @@
     ]
   },
   "logs": [
+    {
+      "time": "2026-08-18 17:43:52",
+      "text": "Saved session to database."
+    },
+    {
+      "time": "2026-08-18 17:43:47",
+      "text": "Set final coins for RAVI: 9140 coins."
+    },
+    {
+      "time": "2026-08-18 17:43:17",
+      "text": "Set final coins for AKSHAY: 5870 coins."
+    },
+    {
+      "time": "2026-08-18 17:43:10",
+      "text": "Set final coins for ABHISHEK: 1460 coins."
+    },
+    {
+      "time": "2026-08-18 17:41:48",
+      "text": "Set final coins for RAVI: 9640 coins."
+    },
+    {
+      "time": "2026-08-18 17:41:41",
+      "text": "Set final coins for AKSHAY: 6370 coins."
+    },
+    {
+      "time": "2026-08-18 17:41:16",
+      "text": "Set final coins for AKSHAY: 8370 coins."
+    },
+    {
+      "time": "2026-08-18 17:40:54",
+      "text": "Set final coins for RISHI: 1530 coins."
+    },
     {
       "time": "2026-08-17 17:40:00",
       "text": "Saved session to database."
