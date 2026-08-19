@@ -1,6 +1,90 @@
 {
   "savedSessions": [
     {
+      "sessionId": "S_1787166224181",
+      "date": "2026-08-19T19:03:44.181Z",
+      "entries": [
+        {
+          "name": "AKSHAY",
+          "investedCoins": 4000,
+          "finalCoins": 13760,
+          "netVal": 4880
+        },
+        {
+          "name": "HARI",
+          "investedCoins": 5000,
+          "finalCoins": 22500,
+          "netVal": 8750
+        },
+        {
+          "name": "GAGAN",
+          "investedCoins": 16000,
+          "finalCoins": 4540,
+          "netVal": -5730
+        },
+        {
+          "name": "ALOK",
+          "investedCoins": 1000,
+          "finalCoins": 0,
+          "netVal": -500
+        },
+        {
+          "name": "HARSHIT",
+          "investedCoins": 6000,
+          "finalCoins": 4140,
+          "netVal": -930
+        },
+        {
+          "name": "RISHI",
+          "investedCoins": 11000,
+          "finalCoins": 0,
+          "netVal": -5500
+        },
+        {
+          "name": "RAVI",
+          "investedCoins": 5000,
+          "finalCoins": 3060,
+          "netVal": -970
+        }
+      ]
+    },
+    {
+      "sessionId": "S_1787146179440",
+      "date": "2026-08-19T13:29:39.440Z",
+      "entries": [
+        {
+          "name": "AKSHAY",
+          "investedCoins": 2000,
+          "finalCoins": 5870,
+          "netVal": 1935
+        },
+        {
+          "name": "ABHISHEK",
+          "investedCoins": 6000,
+          "finalCoins": 1460,
+          "netVal": -2270
+        },
+        {
+          "name": "GAGAN",
+          "investedCoins": 6000,
+          "finalCoins": 0,
+          "netVal": -3000
+        },
+        {
+          "name": "RISHI",
+          "investedCoins": 3000,
+          "finalCoins": 1530,
+          "netVal": -735
+        },
+        {
+          "name": "RAVI",
+          "investedCoins": 1000,
+          "finalCoins": 9140,
+          "netVal": 4070
+        }
+      ]
+    },
+    {
       "sessionId": "S_msyr80urvbfp8i",
       "date": "2026-08-18T17:43:52.189Z",
       "entries": [
@@ -165,6 +249,48 @@
           "investedCoins": 4000,
           "finalCoins": 1770,
           "netVal": -1115
+        }
+      ]
+    },
+    {
+      "sessionId": "S_1786540434660",
+      "date": "2026-08-12T13:13:54.660Z",
+      "entries": [
+        {
+          "name": "RISHI",
+          "investedCoins": 8000,
+          "finalCoins": 2780,
+          "netVal": -2610
+        },
+        {
+          "name": "AKSHAY",
+          "investedCoins": 1000,
+          "finalCoins": 8000,
+          "netVal": 3500
+        },
+        {
+          "name": "KUNAL",
+          "investedCoins": 3000,
+          "finalCoins": 8450,
+          "netVal": 2725
+        },
+        {
+          "name": "GAGAN",
+          "investedCoins": 5000,
+          "finalCoins": 0,
+          "netVal": -2500
+        },
+        {
+          "name": "HARI",
+          "investedCoins": 6000,
+          "finalCoins": 7760,
+          "netVal": 880
+        },
+        {
+          "name": "SANDEEP",
+          "investedCoins": 10000,
+          "finalCoins": 6010,
+          "netVal": -1995
         }
       ]
     },
@@ -475,6 +601,18 @@
       ]
     },
     {
+      "sessionId": "S_1785359254471",
+      "date": "2026-07-29T21:07:34.471Z",
+      "entries": [
+        {
+          "name": "SANDEEP",
+          "investedCoins": 1000,
+          "finalCoins": 1000,
+          "netVal": 0
+        }
+      ]
+    },
+    {
       "sessionId": "S_1785345383520",
       "date": "2026-07-29T17:16:23.520Z",
       "entries": [
@@ -651,59 +789,69 @@
   ],
   "activePlayers": [
     {
-      "id": 1787063094215,
+      "id": 1787146205704,
       "name": "AKSHAY",
-      "buyIns": 2,
+      "buyIns": 4,
       "buyInCoins": 1000,
-      "cashOutCoins": 5870
+      "cashOutCoins": 13760
     },
     {
-      "id": 1787063098122,
-      "name": "ABHISHEK",
-      "buyIns": 6,
+      "id": 1787146226611,
+      "name": "HARI",
+      "buyIns": 5,
       "buyInCoins": 1000,
-      "cashOutCoins": 1460
+      "cashOutCoins": 22500
     },
     {
-      "id": 1787063100457,
+      "id": 1787146230298,
       "name": "GAGAN",
-      "buyIns": 6,
+      "buyIns": 16,
+      "buyInCoins": 1000,
+      "cashOutCoins": 4540
+    },
+    {
+      "id": 1787146239673,
+      "name": "ALOK",
+      "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
     {
-      "id": 1787063102941,
-      "name": "RISHI",
-      "buyIns": 3,
+      "id": 1787146246594,
+      "name": "HARSHIT",
+      "buyIns": 6,
       "buyInCoins": 1000,
-      "cashOutCoins": 1530
+      "cashOutCoins": 4140
     },
     {
-      "id": 1787063105048,
-      "name": "RAVI",
-      "buyIns": 1,
+      "id": 1787147995501,
+      "name": "RISHI",
+      "buyIns": 11,
       "buyInCoins": 1000,
-      "cashOutCoins": 9140
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1787149574040,
+      "name": "RAVI",
+      "buyIns": 5,
+      "buyInCoins": 1000,
+      "cashOutCoins": 3060
     }
   ],
-  "activeSessionId": "S_msyr80urvbfp8i",
-  "activeHost": null,
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
-    "buyInCoins": "1000",
-    "milestones": [
-      5,
-      7,
-      9,
-      10,
-      11,
-      12,
-      13,
-      15
-    ]
+    "buyInCoins": "1000"
   },
   "logs": [
+    {
+      "time": "2026-08-19 19:03:44",
+      "text": "Saved session to database."
+    },
+    {
+      "time": "2026-08-19 19:00:08",
+      "text": "Calculated minimum transaction settlement."
+    },
     {
       "time": "2026-08-18 17:43:52",
       "text": "Saved session to database."
