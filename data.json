@@ -49,42 +49,6 @@
       ]
     },
     {
-      "sessionId": "S_1787146179440",
-      "date": "2026-08-19T13:29:39.440Z",
-      "entries": [
-        {
-          "name": "AKSHAY",
-          "investedCoins": 2000,
-          "finalCoins": 5870,
-          "netVal": 1935
-        },
-        {
-          "name": "ABHISHEK",
-          "investedCoins": 6000,
-          "finalCoins": 1460,
-          "netVal": -2270
-        },
-        {
-          "name": "GAGAN",
-          "investedCoins": 6000,
-          "finalCoins": 0,
-          "netVal": -3000
-        },
-        {
-          "name": "RISHI",
-          "investedCoins": 3000,
-          "finalCoins": 1530,
-          "netVal": -735
-        },
-        {
-          "name": "RAVI",
-          "investedCoins": 1000,
-          "finalCoins": 9140,
-          "netVal": 4070
-        }
-      ]
-    },
-    {
       "sessionId": "S_msyr80urvbfp8i",
       "date": "2026-08-18T17:43:52.189Z",
       "entries": [
@@ -789,61 +753,64 @@
   ],
   "activePlayers": [
     {
-      "id": 1787146205704,
+      "id": 1787234652341,
       "name": "AKSHAY",
-      "buyIns": 4,
+      "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 13760
+      "cashOutCoins": 0
     },
     {
-      "id": 1787146226611,
-      "name": "HARI",
-      "buyIns": 5,
-      "buyInCoins": 1000,
-      "cashOutCoins": 22500
-    },
-    {
-      "id": 1787146230298,
-      "name": "GAGAN",
-      "buyIns": 16,
-      "buyInCoins": 1000,
-      "cashOutCoins": 4540
-    },
-    {
-      "id": 1787146239673,
+      "id": 1787234655157,
       "name": "ALOK",
       "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
     {
-      "id": 1787146246594,
-      "name": "HARSHIT",
-      "buyIns": 6,
-      "buyInCoins": 1000,
-      "cashOutCoins": 4140
-    },
-    {
-      "id": 1787147995501,
-      "name": "RISHI",
-      "buyIns": 11,
+      "id": 1787234721625,
+      "name": "HARI",
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
     {
-      "id": 1787149574040,
-      "name": "RAVI",
-      "buyIns": 5,
+      "id": 1787234726775,
+      "name": "SANDEEP",
+      "buyIns": 2,
       "buyInCoins": 1000,
-      "cashOutCoins": 3060
+      "cashOutCoins": 0
     }
   ],
+  "activeSessionId": "S_mt1ld7lhu3uxuf",
+  "activeHost": {
+    "deviceId": "dev_ufpc465o",
+    "deviceName": "Sandeep Mac",
+    "heartbeatAt": "2026-08-20T14:32:46.899Z"
+  },
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
-    "buyInCoins": "1000"
+    "buyInCoins": "1000",
+    "milestones": [
+      5,
+      7,
+      9,
+      10,
+      11,
+      12,
+      13,
+      15
+    ]
   },
   "logs": [
+    {
+      "time": "2026-08-20 14:32:36",
+      "text": "Deleted session S_1787146179440 via admin mode."
+    },
+    {
+      "time": "2026-08-20 14:32:16",
+      "text": "Admin edit mode ENABLED via secret gesture."
+    },
     {
       "time": "2026-08-19 19:03:44",
       "text": "Saved session to database."
