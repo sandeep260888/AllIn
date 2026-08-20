@@ -217,48 +217,6 @@
       ]
     },
     {
-      "sessionId": "S_1786540434660",
-      "date": "2026-08-12T13:13:54.660Z",
-      "entries": [
-        {
-          "name": "RISHI",
-          "investedCoins": 8000,
-          "finalCoins": 2780,
-          "netVal": -2610
-        },
-        {
-          "name": "AKSHAY",
-          "investedCoins": 1000,
-          "finalCoins": 8000,
-          "netVal": 3500
-        },
-        {
-          "name": "KUNAL",
-          "investedCoins": 3000,
-          "finalCoins": 8450,
-          "netVal": 2725
-        },
-        {
-          "name": "GAGAN",
-          "investedCoins": 5000,
-          "finalCoins": 0,
-          "netVal": -2500
-        },
-        {
-          "name": "HARI",
-          "investedCoins": 6000,
-          "finalCoins": 7760,
-          "netVal": 880
-        },
-        {
-          "name": "SANDEEP",
-          "investedCoins": 10000,
-          "finalCoins": 6010,
-          "netVal": -1995
-        }
-      ]
-    },
-    {
       "sessionId": "S_1786473267532",
       "date": "2026-08-11T18:34:27.532Z",
       "entries": [
@@ -785,7 +743,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-08-20T14:32:46.899Z"
+    "heartbeatAt": "2026-08-20T14:34:33.538Z"
   },
   "settings": {
     "coinCount": "2",
@@ -803,6 +761,14 @@
     ]
   },
   "logs": [
+    {
+      "time": "2026-08-20 14:34:26",
+      "text": "Deleted session S_1786540434660 via admin mode."
+    },
+    {
+      "time": "2026-08-20 14:32:49",
+      "text": "Pushed live state to GitHub repo."
+    },
     {
       "time": "2026-08-20 14:32:36",
       "text": "Deleted session S_1787146179440 via admin mode."
