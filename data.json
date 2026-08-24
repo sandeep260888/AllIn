@@ -2,7 +2,7 @@
   "savedSessions": [
     {
       "sessionId": "S_mt31nb1trpegbo",
-      "date": "2026-08-21T23:18:55.135Z",
+      "date": "2026-08-24T13:43:57.505Z",
       "entries": [
         {
           "name": "AKSHAY",
@@ -903,9 +903,9 @@
   ],
   "activeSessionId": "S_mt31nb1trpegbo",
   "activeHost": {
-    "deviceId": "dev_ufpc465o",
-    "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-08-22T12:04:55.756Z"
+    "deviceId": "dev_9clkdoyz",
+    "deviceName": "rishi",
+    "heartbeatAt": "2026-08-24T13:44:05.149Z"
   },
   "settings": {
     "coinCount": "2",
@@ -923,6 +923,14 @@
     ]
   },
   "logs": [
+    {
+      "time": "2026-08-24 13:43:57",
+      "text": "Updated existing session in database."
+    },
+    {
+      "time": "2026-08-24 13:43:43",
+      "text": "rishi took over hosting from Sandeep Mac (inactive 8h+)."
+    },
     {
       "time": "2026-08-22 12:04:16",
       "text": "Calculated minimum transaction settlement."
