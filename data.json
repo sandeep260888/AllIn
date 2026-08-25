@@ -1,6 +1,36 @@
 {
   "savedSessions": [
     {
+      "sessionId": "S_mt8oo9t3zaupfw",
+      "date": "2026-08-25T17:10:56.487Z",
+      "entries": [
+        {
+          "name": "AKSHAY",
+          "investedCoins": 1000,
+          "finalCoins": 6000,
+          "netVal": 2500
+        },
+        {
+          "name": "GAGAN",
+          "investedCoins": 6000,
+          "finalCoins": 0,
+          "netVal": -3000
+        },
+        {
+          "name": "SANDEEP",
+          "investedCoins": 4000,
+          "finalCoins": 4250,
+          "netVal": 125
+        },
+        {
+          "name": "HARI",
+          "investedCoins": 6000,
+          "finalCoins": 6750,
+          "netVal": 375
+        }
+      ]
+    },
+    {
       "sessionId": "S_mt7agh56jfy87h",
       "date": "2026-08-24T16:47:37.818Z",
       "entries": [
@@ -873,49 +903,35 @@
   ],
   "activePlayers": [
     {
-      "id": 1787579129518,
-      "name": "HARI",
-      "buyIns": 3,
-      "buyInCoins": 1000,
-      "cashOutCoins": 3000
-    },
-    {
-      "id": 1787579136388,
-      "name": "GAGAN",
+      "id": 1787663470503,
+      "name": "AKSHAY",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 9840
+      "cashOutCoins": 6000
     },
     {
-      "id": 1787579138599,
-      "name": "HARSHIT",
-      "buyIns": 5,
-      "buyInCoins": 1000,
-      "cashOutCoins": 1810
-    },
-    {
-      "id": 1787579145178,
-      "name": "RISHI",
-      "buyIns": 3,
+      "id": 1787663533770,
+      "name": "GAGAN",
+      "buyIns": 6,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
     {
-      "id": 1787580634142,
-      "name": "AKSHAY",
-      "buyIns": 3,
+      "id": 1787663538520,
+      "name": "SANDEEP",
+      "buyIns": 4,
       "buyInCoins": 1000,
-      "cashOutCoins": 5350
+      "cashOutCoins": 4250
     },
     {
-      "id": 1787582682640,
-      "name": "SONAK",
-      "buyIns": 5,
+      "id": 1787663545586,
+      "name": "HARI",
+      "buyIns": 6,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 6750
     }
   ],
-  "activeSessionId": "S_mt7agh56jfy87h",
+  "activeSessionId": "S_mt8oo9t3zaupfw",
   "activeHost": null,
   "settings": {
     "coinCount": "2",
@@ -933,6 +949,22 @@
     ]
   },
   "logs": [
+    {
+      "time": "2026-08-25 17:10:56",
+      "text": "Saved session to database."
+    },
+    {
+      "time": "2026-08-25 17:10:02",
+      "text": "Set final coins for HARI: 6750 coins."
+    },
+    {
+      "time": "2026-08-25 17:09:56",
+      "text": "Set final coins for SANDEEP: 4250 coins."
+    },
+    {
+      "time": "2026-08-25 17:09:48",
+      "text": "Set final coins for AKSHAY: 6000 coins."
+    },
     {
       "time": "2026-08-25 08:31:21",
       "text": "Sandeep stopped hosting."
