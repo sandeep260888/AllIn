@@ -916,11 +916,7 @@
     }
   ],
   "activeSessionId": "S_mt7agh56jfy87h",
-  "activeHost": {
-    "deviceId": "dev_9clkdoyz",
-    "deviceName": "rishi",
-    "heartbeatAt": "2026-08-24T18:35:52.535Z"
-  },
+  "activeHost": null,
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -937,6 +933,14 @@
     ]
   },
   "logs": [
+    {
+      "time": "2026-08-25 08:31:21",
+      "text": "Sandeep stopped hosting."
+    },
+    {
+      "time": "2026-08-25 08:31:17",
+      "text": "Sandeep took over hosting from rishi (inactive 8h+)."
+    },
     {
       "time": "2026-08-24 13:43:57",
       "text": "Updated existing session in database."
