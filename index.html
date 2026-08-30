@@ -41,6 +41,19 @@
     h1 { font-size: 1.4rem; color: var(--text); }
     h2 { font-size: 1.05rem; margin-bottom: 10px; }
 
+    .push-status-bar {
+      position: relative; height: 26px; border-radius: 8px; background: #0f172a;
+      border: 1px solid var(--border); overflow: hidden; margin-bottom: 12px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .push-status-fill {
+      position: absolute; inset: 0 auto 0 0; width: 0%; background: var(--warning);
+      transition: width 0.3s linear, background-color 0.3s ease; opacity: 0.35;
+    }
+    .push-status-text {
+      position: relative; z-index: 1; font-size: 0.75rem; font-weight: bold; color: var(--text);
+    }
+
     .header-actions { display: flex; align-items: center; gap: 8px; }
     .btn-header-sync {
       background: #334155;
@@ -203,6 +216,12 @@
     }
     .milestone-toast.show { opacity:1; transform:translateX(-50%) translateY(0); }
 
+    .local-dev-banner {
+      display: none; background: #3f2d0f; border: 1px solid var(--warning); color: var(--warning);
+      padding: 10px 12px; border-radius: 8px; font-size: 0.8rem; margin-bottom: 12px; line-height: 1.45;
+    }
+    .local-dev-banner code { background: #0f172a; padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; }
+
     @media (min-width: 768px) {
       body { padding: 24px; }
       h1 { font-size: 1.8rem; }
@@ -228,14 +247,24 @@
     </div>
   </header>
 
+  <div id="localDevBanner" class="local-dev-banner"></div>
+
+  <!-- Publish status bar: shows the 0->15s countdown to the next auto-push, then
+       flips green once published. Hidden whenever there's nothing to report
+       (e.g. no GitHub token saved on this device). -->
+  <div id="pushStatusBar" class="push-status-bar" style="display:none;">
+    <div id="pushStatusFill" class="push-status-fill"></div>
+    <span id="pushStatusText" class="push-status-text"></span>
+  </div>
+
   <!-- Setup Section -->
   <div class="card">
     <div class="compact-settings">
       <span>Rate Ratio:</span>
       <div class="compact-inputs">
-        <input type="number" id="coinCount" value="2" min="1" onchange="saveState(); renderAll();">
+        <input type="number" id="coinCount" value="2" min="1" onchange="onSettingsChange('rate')">
         <span>Coins = ₹</span>
-        <input type="number" id="currencyVal" value="1" min="0.1" step="0.1" onchange="saveState(); renderAll();">
+        <input type="number" id="currencyVal" value="1" min="0.1" step="0.1" onchange="onSettingsChange('rate')">
       </div>
       <span id="rateNotice" style="color:var(--accent); font-weight:bold;">1c = ₹0.50</span>
     </div>
@@ -243,7 +272,7 @@
     <div class="add-player-grid">
       <div>
         <label>Buy-in Coins</label>
-        <input type="number" id="buyInCoins" value="1000" min="1" onchange="saveState(); renderAll();">
+        <input type="number" id="buyInCoins" value="1000" min="1" onchange="onSettingsChange('buyin')">
       </div>
       <div>
         <label>Participant Name</label>
@@ -286,33 +315,31 @@
     <div id="playerList" class="player-grid"></div>
   </div>
 
-  <!-- Session Actions -->
+  <!-- Settlement & Session Actions (merged: save/publish and clear sit right next to
+       the settlement calculator, as the natural end-of-session wrap-up sequence) -->
   <div class="card">
-    <h2>Session Actions</h2>
-    <p style="font-size:0.75rem; color:var(--subtext); margin-bottom:10px;">Saving only stores the session on THIS device. Push to GitHub (below) to sync it everywhere.</p>
-    <div id="syncBanner" style="display:none; align-items:center; justify-content:space-between; gap:8px; background:#3f2d0f; border:1px solid var(--warning); color:var(--warning); padding:8px 10px; border-radius:8px; font-size:0.78rem; margin-bottom:10px;">
+    <h2>End of Session Settlement</h2>
+    <p style="font-size:0.75rem; color:var(--subtext); margin-bottom:8px;">Independent helper — calculates real-money transfers from the live board above. Works whether or not you've saved/published this session.</p>
+    <button type="button" style="width:100%; padding: 10px; font-size: 0.9rem;" onclick="calculateSettlement()">Calculate Minimum Transactions</button>
+    <ul id="settlementResults" class="settlement-list" style="margin-top: 10px;"></ul>
+
+    <div id="syncBanner" style="display:none; align-items:center; justify-content:space-between; gap:8px; background:#3f2d0f; border:1px solid var(--warning); color:var(--warning); padding:8px 10px; border-radius:8px; font-size:0.78rem; margin-top:14px; margin-bottom:10px;">
       <span></span>
       <button type="button" class="btn-sm" style="background:var(--warning); color:#000; white-space:nowrap;" onclick="pushToGitHub()">🚀 Push Now</button>
     </div>
-    <div class="btn-group">
-      <button type="button" id="btnSaveSession" class="btn-add btn-sm" style="flex:2;" onclick="confirmAndSaveSession()">💾 Save Session to Database</button>
+    <div class="btn-group" style="margin-top:14px;">
+      <button type="button" id="btnSaveSession" class="btn-add btn-sm" style="flex:2;" onclick="confirmAndSaveSession()">💾 Save &amp; Publish to Leaderboard</button>
       <button type="button" id="btnClearBoard" class="btn-warning btn-sm" style="flex:1;" onclick="confirmAndClearSession()">🧹 Clear Board</button>
     </div>
-  </div>
-
-  <!-- Settlement Section -->
-  <div class="card">
-    <h2>End of Session Settlement</h2>
-    <p style="font-size:0.75rem; color:var(--subtext); margin-bottom:8px;">Independent helper — calculates real-money transfers from the live board above. Works whether or not you've saved/pushed this session.</p>
-    <button type="button" style="width:100%; padding: 10px; font-size: 0.9rem;" onclick="calculateSettlement()">Calculate Minimum Transactions</button>
-    <ul id="settlementResults" class="settlement-list" style="margin-top: 10px;"></ul>
   </div>
 
   <!-- Activity Logs -->
   <div class="card">
     <div class="logs-header">
       <h2>Activity Logs</h2>
+      <button type="button" id="btnPruneOldLogs" class="btn-sm btn-warning" style="display:none;" onclick="manualPruneActivityLogs()" title="Remove logs older than 3 months">🧹 Prune Old</button>
     </div>
+    <p style="font-size:0.7rem; color:var(--subtext); margin-bottom:8px;">Entries older than 3 months are removed automatically. Sessions, dashboard &amp; leaderboard are not affected.</p>
     <div class="logs-filter-grid">
       <div>
         <label>Filter Date</label>
@@ -344,8 +371,14 @@
     </div>
   </div>
 
-  <!-- Collapsible Performance & Leaderboard -->
-  <details class="card" id="performanceDetails">
+  <!-- Session History — always visible: last 3 sessions only -->
+  <details class="card" id="sessionHistoryDetails" open>
+    <summary>View Session History <span style="font-size:0.7rem;color:var(--subtext);">(Last 3)</span></summary>
+    <div id="sessionHistoryBox" style="margin-top: 6px;"></div>
+  </details>
+
+  <!-- Performance & Leaderboard — hidden until 5× tap on Spin / Pick Random -->
+  <details class="card" id="performanceDetails" style="display:none;">
     <summary>Performance & Cumulative Leaderboard</summary>
     <div style="margin-top: 10px;">
       <div class="tabs">
@@ -365,10 +398,8 @@
         <tbody id="leaderboardBody"></tbody>
       </table>
 
-      <details style="margin-top: 8px;">
-        <summary style="font-size: 0.8rem; color: var(--subtext);">View Session History</summary>
-        <div id="sessionHistoryBox" style="margin-top: 6px;"></div>
-      </details>
+      <h3 style="font-size:0.85rem; margin:14px 0 8px; color:var(--subtext);">All Session History</h3>
+      <div id="fullSessionHistoryBox"></div>
     </div>
   </details>
 
@@ -378,7 +409,7 @@
     
     <div class="exp-box">
       <h3 style="font-size:0.85rem; margin-bottom:6px;">🎲 Random Participant Picker (Dealer / Picker)</h3>
-      <button type="button" class="btn-sm" style="background:#8b5cf6; width:100%;" onclick="pickRandomParticipant()">Spin / Pick Random Active Player</button>
+      <button type="button" id="spinPickerBtn" class="btn-sm" style="background:#8b5cf6; width:100%;" onclick="handleSpinPickerTap()">Spin / Pick Random Active Player</button>
       <div id="randomPickerResult" style="font-size:0.9rem; font-weight:bold; color:var(--accent); text-align:center; margin-top:6px;"></div>
     </div>
 
@@ -395,11 +426,83 @@
   <div id="milestoneToast" class="milestone-toast"></div>
 
   <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js').catch(err => console.error(err));
-      });
+    // --- APP VERSION / AUTO-UPDATE (GitHub Pages) ---
+    // Each deploy: bump version.json AND CACHE_NAME in sw.js (same version string).
+    let appUpdateReloading = false;
+
+    async function fetchDeployedVersion() {
+      const res = await fetch(`./version.json?t=${Date.now()}`, { cache: 'no-store' });
+      if (!res.ok) return null;
+      return (await res.json()).version || null;
     }
+
+    async function hardRefreshApp(reason) {
+      if (appUpdateReloading) return;
+      appUpdateReloading = true;
+      console.info('[Ledger] Updating app:', reason);
+      try {
+        if ('caches' in window) {
+          await Promise.all((await caches.keys()).map((n) => caches.delete(n)));
+        }
+        const reg = await navigator.serviceWorker?.getRegistration();
+        if (reg) await reg.unregister();
+      } catch (e) { console.warn(e); }
+      window.location.reload();
+    }
+
+    async function checkForAppUpdate() {
+      try {
+        const remoteVersion = await fetchDeployedVersion();
+        if (!remoteVersion) return;
+        const localVersion = localStorage.getItem('ledger_app_version');
+        if (!localVersion) {
+          localStorage.setItem('ledger_app_version', remoteVersion);
+          return;
+        }
+        if (localVersion !== remoteVersion) {
+          localStorage.setItem('ledger_app_version', remoteVersion);
+          await hardRefreshApp(`${localVersion} → ${remoteVersion}`);
+        }
+      } catch (e) { /* offline — try again later */ }
+    }
+
+    function initAppUpdate() {
+      checkForAppUpdate();
+
+      // Local dev: skip SW — it caches old index.html and blocks fresh data.json loads.
+      if (location.protocol === 'file:' || location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.getRegistration().then((r) => r?.unregister());
+        }
+        return;
+      }
+
+      if (!('serviceWorker' in navigator)) return;
+
+      let swReloading = false;
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (swReloading || appUpdateReloading) return;
+        swReloading = true;
+        window.location.reload();
+      });
+
+      navigator.serviceWorker.register('./sw.js').then((reg) => {
+        const pingSwUpdate = () => reg.update().catch(() => {});
+        pingSwUpdate();
+        setInterval(pingSwUpdate, 5 * 60 * 1000);
+        reg.addEventListener('updatefound', () => {
+          const worker = reg.installing;
+          if (!worker) return;
+          worker.addEventListener('statechange', () => {
+            if (worker.state === 'installed' && navigator.serviceWorker.controller) pingSwUpdate();
+          });
+        });
+      }).catch((err) => console.error(err));
+
+      setInterval(checkForAppUpdate, 5 * 60 * 1000);
+    }
+
+    window.addEventListener('load', initAppUpdate);
 
     const GH_USER = "sandeep260888";
     const GH_REPO = "AllIn";
@@ -418,14 +521,136 @@
     let resortTimer = null;
     const RESORT_DELAY_MS = 30000;
 
+    // Debounced auto-push: batch dashboard actions into ONE data.json commit, fired
+    // 15s after the LAST action — balances GitHub Pages commit rate vs live sync.
+    // Only runs if a token is already saved (never prompts in the background).
+    let autoPushTimer = null;
+    const AUTO_PUSH_DELAY_MS = 15000;
+    const SPECTATOR_POLL_MS = 15000; // locked viewers poll raw data.json this often
+    const BACKGROUND_FETCH_MS = 15 * 60 * 1000;
+
+    let autoPushDeadline = null;
+    let autoPushCountdownInterval = null;
+
+    function scheduleAutoPush() {
+      if (isBoardLocked()) return; // not host — guarded functions shouldn't reach here anyway
+      if (!localStorage.getItem("gh_token")) return; // no saved token — rely on manual "Push Now" instead
+      clearTimeout(autoPushTimer);
+      autoPushDeadline = Date.now() + AUTO_PUSH_DELAY_MS;
+      autoPushTimer = setTimeout(() => {
+        updatePushStatusBar('pushing');
+        pushToGitHub(true);
+      }, AUTO_PUSH_DELAY_MS);
+      startPushCountdownTicker();
+    }
+
+    function startPushCountdownTicker() {
+      clearInterval(autoPushCountdownInterval);
+      updatePushStatusBar('pending', autoPushDeadline - Date.now());
+      autoPushCountdownInterval = setInterval(() => {
+        const remainingMs = autoPushDeadline - Date.now();
+        if (remainingMs <= 0) { clearInterval(autoPushCountdownInterval); return; }
+        updatePushStatusBar('pending', remainingMs);
+      }, 300);
+    }
+
+    // Visible, ambient status of the auto-publish cycle. Deliberately shows nothing when
+    // there's nothing meaningful to report (no token saved -> this device can never
+    // publish anyway, so don't imply otherwise).
+    function updatePushStatusBar(state, remainingMs) {
+      const wrap = document.getElementById("pushStatusBar");
+      const fill = document.getElementById("pushStatusFill");
+      const text = document.getElementById("pushStatusText");
+      if (!wrap || !fill || !text) return;
+
+      if (state === 'pending') {
+        const pct = Math.max(0, Math.min(100, 100 - (remainingMs / AUTO_PUSH_DELAY_MS) * 100));
+        fill.style.width = pct + '%';
+        fill.style.background = 'var(--warning)';
+        text.textContent = `⏳ Publishing to GitHub in ${Math.ceil(remainingMs / 1000)}s...`;
+        wrap.style.display = 'flex';
+      } else if (state === 'pushing') {
+        fill.style.width = '100%';
+        fill.style.background = 'var(--warning)';
+        text.textContent = '📡 Publishing...';
+        wrap.style.display = 'flex';
+      } else if (state === 'success') {
+        clearInterval(autoPushCountdownInterval);
+        fill.style.width = '100%';
+        fill.style.background = 'var(--accent)';
+        text.textContent = '✅ Published to GitHub';
+        wrap.style.display = 'flex';
+        setTimeout(() => { wrap.style.display = 'none'; fill.style.width = '0%'; }, 4000);
+      } else if (state === 'failed') {
+        clearInterval(autoPushCountdownInterval);
+        fill.style.width = '100%';
+        fill.style.background = 'var(--danger)';
+        text.textContent = '⚠️ Publish failed — will retry automatically';
+        wrap.style.display = 'flex';
+      } else {
+        wrap.style.display = 'none';
+      }
+    }
+
     // Secret admin gesture state (resets on page reload; not persisted for safety)
     let adminUnlocked = false;
     let monthTapTimestamps = [];
+    let leaderboardUnlocked = false;
+    let spinTapTimestamps = [];
     let editingSessionId = null;
+
+    // Log helpers MUST be above first cleanLogs() call (const LOG_TIME_RE is not hoisted).
+    const LOG_TIME_RE = /^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}$/;
+    const MAX_LOG_ENTRIES = 400;
+    const LOG_RETENTION_MS = 90 * 24 * 60 * 60 * 1000; // ~3 months; activity logs only
+
+    function formatLogTime(d = new Date()) {
+      const p = n => String(n).padStart(2, '0');
+      return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())} ${p(d.getHours())}:${p(d.getMinutes())}:${p(d.getSeconds())}`;
+    }
+
+    function isValidLogTime(time) {
+      return typeof time === 'string' && LOG_TIME_RE.test(time);
+    }
+
+    function logSortMs(log) {
+      if (!isValidLogTime(log.time)) return 0;
+      const [date, clock] = log.time.split(' ');
+      const [y, m, d] = date.split('-').map(Number);
+      const [hh, mm, ss] = clock.split(':').map(Number);
+      return new Date(y, m - 1, d, hh, mm, ss).getTime();
+    }
+
+    function cleanLogs(arr) {
+      return (arr || []).filter(log => log && log.text && isValidLogTime(log.time));
+    }
+
+    function getLogRetentionCutoffMs() {
+      return Date.now() - LOG_RETENTION_MS;
+    }
+
+    /** Drop invalid, expired (>3mo), and excess logs. Does not touch sessions or dashboard. */
+    function pruneOldLogs(arr) {
+      const cutoff = getLogRetentionCutoffMs();
+      const pruned = cleanLogs(arr).filter(log => logSortMs(log) >= cutoff);
+      if (pruned.length > MAX_LOG_ENTRIES) pruned.length = MAX_LOG_ENTRIES;
+      return pruned;
+    }
+
+    function logEntryKey(log) {
+      return log.id || `${log.time}|${log.text}`;
+    }
+
+    function mergeLogs(localLogs, remoteLogs) {
+      const map = new Map();
+      cleanLogs(remoteLogs).forEach(log => map.set(logEntryKey(log), log));
+      cleanLogs(localLogs).forEach(log => map.set(logEntryKey(log), log));
+      return Array.from(map.values()).sort((a, b) => logSortMs(b) - logSortMs(a));
+    }
 
     let savedSessions = JSON.parse(localStorage.getItem("ledger_db_sessions")) || [];
     let players = JSON.parse(localStorage.getItem("ledger_active_players")) || [];
-    let logs = JSON.parse(localStorage.getItem("ledger_activity_logs")) || [];
+    let logs = pruneOldLogs(JSON.parse(localStorage.getItem("ledger_activity_logs")) || []);
     let milestones = JSON.parse(localStorage.getItem("ledger_milestones")) || [5, 10];
 
     // Sessions saved/edited locally but not yet pushed to GitHub.
@@ -489,23 +714,42 @@
       activeHost = { deviceId, deviceName: ensureDeviceName(), heartbeatAt: new Date().toISOString() };
     }
 
-    function releaseHost() {
+    async function releaseHost() {
       if (!isCurrentHost()) return;
-      if (!confirm("Stop hosting? Other devices will be able to take over immediately.")) return;
+      if (!confirm("🛑 You are stopping hosting.\n\nSomeone else will be able to take over and continue this session once this syncs to GitHub. Continue?")) return;
       activeHost = null;
-      addLog(`${deviceName} stopped hosting.`);
+      addLog("Stopped hosting.");
       saveState();
       renderAll();
+
+      const pushed = await pushToGitHub(true); // handoff should propagate right away, not wait out the debounce; silent so we control the message
+      if (pushed) {
+        alert("✅ Hosting stopped and published. Another device can now take over this session.");
+      } else if (!localStorage.getItem("gh_token")) {
+        alert("Hosting stopped on this device. No GitHub token is saved here, so this can't be shared with other devices yet.");
+      } else {
+        alert("Hosting stopped locally, but publishing failed. It will retry automatically, or use 'Push Now'.");
+        scheduleAutoPush();
+      }
     }
 
-    function takeOverHosting() {
+    async function takeOverHosting() {
       if (!isHostStale(activeHost)) return; // shouldn't be reachable via UI, but guard anyway
       const prevName = activeHost ? activeHost.deviceName : "no one";
       claimHost();
-      addLog(`${deviceName} took over hosting from ${prevName} (inactive 8h+).`);
+      addLog(`Took over hosting from ${prevName} (inactive 8h+).`);
       saveState();
       renderAll();
-      alert("✅ You're now hosting. Push to GitHub so other devices see the handoff.");
+
+      const pushed = await pushToGitHub(true); // ditto — announce the takeover immediately, not debounced
+      if (pushed) {
+        alert("✅ You're now hosting — published, other devices will see the handoff.");
+      } else if (!localStorage.getItem("gh_token")) {
+        alert("You're now hosting on this device. Add a GitHub token (via Push) to share this with others.");
+      } else {
+        alert("You're now hosting locally, but publishing failed. It will retry automatically, or use 'Push Now'.");
+        scheduleAutoPush();
+      }
     }
 
     function updateHostBanner() {
@@ -525,10 +769,16 @@
         el.querySelector("span").textContent = `🔒 Hosted by ${activeHost.deviceName} — dashboard is read-only.`;
         stopBtn.style.display = "none";
         takeoverBtn.style.display = "none";
+      } else if (isCurrentHost() && !localStorage.getItem("gh_token")) {
+        el.style.display = "flex";
+        el.style.background = "#3f2d0f"; el.style.borderColor = "var(--warning)"; el.style.color = "var(--warning)";
+        el.querySelector("span").textContent = `⚠️ Hosting locally — NO GitHub token saved. Other devices won't see changes until you Push.`;
+        stopBtn.style.display = "inline-flex";
+        takeoverBtn.style.display = "none";
       } else if (isCurrentHost()) {
         el.style.display = "flex";
         el.style.background = "#0f2e22"; el.style.borderColor = "var(--accent)"; el.style.color = "var(--accent)";
-        el.querySelector("span").textContent = `🎙️ You're hosting this session (${deviceName}).`;
+        el.querySelector("span").textContent = `🎙️ You're hosting this session (${deviceName}). Changes publish to GitHub automatically.`;
         stopBtn.style.display = "inline-flex";
         takeoverBtn.style.display = "none";
       } else if (activeHost && isHostStale(activeHost)) {
@@ -587,7 +837,7 @@
 
       let uniqueDates = new Set();
       logs.forEach(l => {
-        if (l.time && l.time.length >= 10) uniqueDates.add(l.time.substring(0, 10));
+        if (isValidLogTime(l.time)) uniqueDates.add(l.time.substring(0, 10));
       });
 
       Array.from(uniqueDates).sort().reverse().forEach(d => {
@@ -602,10 +852,53 @@
     }
 
     function setEntryMode(mode) {
+      if (entryMode === mode) return;
       entryMode = mode;
       document.getElementById("modeCoinsBtn").classList.toggle("active", mode === 'COINS');
       document.getElementById("modeCurrBtn").classList.toggle("active", mode === 'CURRENCY');
+      addLog(`Switched entry mode to ${mode === 'COINS' ? 'Coins' : '₹ Value'}.`);
       renderPlayerCards();
+    }
+
+    function onSettingsChange(kind) {
+      saveState();
+      renderAll();
+      if (kind === 'rate') {
+        addLog(`Updated rate ratio: ${document.getElementById("coinCount").value} coins = ₹${document.getElementById("currencyVal").value}.`);
+      } else if (kind === 'buyin') {
+        addLog(`Updated default buy-in to ${document.getElementById("buyInCoins").value} coins.`);
+      }
+      scheduleAutoPush();
+    }
+
+    function shouldAdoptRemoteDashboard(isManual) {
+      if (isLocalDev()) return true; // localhost/file: always show data.json board
+      if (players.length === 0 || isBoardLocked()) return true;
+      if (isManual && !isCurrentHost()) return true;
+      if (isManual && isCurrentHost()) return true;
+      return false;
+    }
+
+    function applyRemoteDashboard(data) {
+      if (data.settings) {
+        if (data.settings.coinCount) document.getElementById("coinCount").value = data.settings.coinCount;
+        if (data.settings.currencyVal) document.getElementById("currencyVal").value = data.settings.currencyVal;
+        if (data.settings.buyInCoins) document.getElementById("buyInCoins").value = data.settings.buyInCoins;
+        if (data.settings.milestones && Array.isArray(data.settings.milestones)) {
+          milestones = data.settings.milestones;
+          document.getElementById("milestoneInput").value = milestones.join(',');
+          localStorage.setItem("ledger_milestones", JSON.stringify(milestones));
+        }
+      }
+      if (data.activePlayers && Array.isArray(data.activePlayers)) {
+        players = data.activePlayers;
+        displayOrder = []; // re-sync card order from remote board
+      }
+      if ('activeSessionId' in data) activeSessionId = data.activeSessionId || null;
+    }
+
+    function getLogDeviceLabel() {
+      return deviceName || localStorage.getItem("ledger_device_name") || ("Device-" + deviceId.slice(-4).toUpperCase());
     }
 
     function saveState() {
@@ -641,10 +934,35 @@
     }
 
     function addLog(text) {
-      const nowStr = new Date().toISOString().replace('T', ' ').substring(0, 19);
-      logs.unshift({ time: nowStr, text: text });
+      const label = getLogDeviceLabel();
+      const body = text.includes(' • by ') ? text : `${text} • by ${label}`;
+      logs.unshift({
+        id: "L_" + Date.now() + "_" + Math.random().toString(36).slice(2, 6),
+        time: formatLogTime(),
+        text: body
+      });
+      logs = pruneOldLogs(logs);
       saveState();
       renderLogs();
+    }
+
+    function manualPruneActivityLogs() {
+      if (!leaderboardUnlocked) return;
+      const before = logs.length;
+      const pruned = pruneOldLogs(logs);
+      const removed = before - pruned.length;
+      if (removed === 0) {
+        alert("No activity logs older than 3 months to remove.");
+        return;
+      }
+      if (!confirm(`Remove ${removed} activity log(s) older than 3 months?\n\nSaved sessions, dashboard & leaderboard will not be changed.`)) {
+        return;
+      }
+      logs = pruned;
+      saveState();
+      renderLogs();
+      addLog(`Manually pruned ${removed} activity log(s) older than 3 months.`);
+      scheduleAutoPush();
     }
 
     function renderLogs() {
@@ -711,6 +1029,7 @@
       if (players.length === 0 && !activeSessionId) {
         activeSessionId = genSessionId();
         claimHost();
+        addLog("Started new session and claimed host.");
       }
 
       const buyInCoins = parseFloat(document.getElementById("buyInCoins").value) || 1000;
@@ -719,6 +1038,7 @@
 
       addLog(`Added "${name}" with 1 buy-in (${buyInCoins}c).`);
       validateAddButton();
+      scheduleAutoPush();
       renderAll();
     }
 
@@ -729,6 +1049,7 @@
         players = players.filter(p => p.id !== id);
         if (players.length === 0) activeSessionId = null; // board emptied out organically -> next game gets a fresh identity
         addLog(`Removed "${p.name}".`);
+        scheduleAutoPush();
         renderAll();
       }
     }
@@ -745,6 +1066,7 @@
             showMilestonePopup(p.name, p.buyIns);
           }
           scheduleResort(); // re-sort by buy-in count 30s after the LAST change, not immediately
+          scheduleAutoPush();
           renderAll();
         }
       }
@@ -755,11 +1077,11 @@
       milestones = raw.split(',').map(n => parseInt(n.trim(), 10)).filter(n => !isNaN(n) && n > 0);
       localStorage.setItem("ledger_milestones", JSON.stringify(milestones));
       addLog(`Updated milestone thresholds to: ${milestones.join(', ') || 'none'}.`);
+      scheduleAutoPush();
     }
 
     function showMilestonePopup(name, count) {
-      addLog(`Milestone reached: ${name} hit ${count} buy-ins.`);
-      // Celebration starts 5s AFTER the milestone is hit, not immediately.
+      // Buy-in line already logged; celebration is visual only (no duplicate log row).
       setTimeout(() => launchCelebration(name, count), 5000);
     }
 
@@ -865,6 +1187,7 @@
     function logCashOutChange(id) {
       const p = players.find(p => p.id === id);
       if (p) addLog(`Set final coins for ${p.name}: ${p.cashOutCoins} coins.`);
+      scheduleAutoPush();
     }
 
     function updateSummary() {
@@ -1024,8 +1347,10 @@
     }
 
     // Settlement & Save Session with Diff Check
-    function confirmAndSaveSession() {
-      if (isBoardLocked()) return alert(`🔒 ${activeHost.deviceName} is hosting this session. Only they can save/push it.`);
+    // Single combined action: save this session onto the leaderboard AND publish it to
+    // GitHub immediately — no separate "save, then remember to push" two-step anymore.
+    async function confirmAndSaveSession() {
+      if (isBoardLocked()) return alert(`🔒 ${activeHost.deviceName} is hosting this session. Only they can save/publish it.`);
       if (players.length === 0) return alert("Add participants first!");
 
       const diffVal = getDiffValue();
@@ -1033,7 +1358,7 @@
         return alert(`SETTLEMENT ERROR: Diff Value is ₹${diffVal.toFixed(2)}.\n\nPlease adjust participant final coins/values so Diff Value is ₹0.00 before saving!`);
       }
 
-      const confirm1 = confirm("CRUCIAL ACTION: Save current session to database?");
+      const confirm1 = confirm("CRUCIAL ACTION: Save this session to the leaderboard and publish it now?");
       if (!confirm1) return;
 
       const mathAnswer = prompt("SECURITY VERIFICATION (Step 2 of 2):\n\nWhat is 2 + 4?");
@@ -1069,8 +1394,25 @@
       markSessionDirty(sid);
       addLog(existingIdx >= 0 ? "Updated existing session in database." : "Saved session to database.");
       saveState();
-      alert("Session saved successfully to database!");
       renderLeaderboard();
+
+      const wasHost = isCurrentHost();
+      const pushed = await pushToGitHub(false); // immediate, not debounced — its own alert covers "published" feedback
+
+      if (pushed) {
+        // Publishing a finished session ends this device's hosting turn automatically,
+        // freeing the lock for whoever plays the next game.
+        if (wasHost) {
+          activeHost = null;
+          addLog("Published session — hosting released automatically.");
+          saveState();
+          renderAll();
+        }
+      } else {
+        // Saved locally either way — just make sure it still gets published eventually.
+        scheduleAutoPush();
+        alert("Session saved to the leaderboard locally. Publishing will retry automatically, or use 'Push Now'.");
+      }
     }
 
     function confirmAndClearSession() {
@@ -1089,6 +1431,7 @@
       activeSessionId = null; // this game is over; the next one to start gets a fresh identity
       if (isCurrentHost()) activeHost = null; // release the lock too — free for the next game/host
       addLog("Cleared active session dashboard.");
+      scheduleAutoPush();
       renderAll();
     }
 
@@ -1101,12 +1444,12 @@
       let debtors = nets.filter(p => p.amt < -0.01).map(p => ({ name: p.name, amount: Math.abs(p.amt) }));
       let creditors = nets.filter(p => p.amt > 0.01).map(p => ({ name: p.name, amount: p.amt }));
 
-      let transactions = [];
+      let transfers = [];
 
       for (let i = debtors.length - 1; i >= 0; i--) {
         for (let j = creditors.length - 1; j >= 0; j--) {
           if (Math.abs(debtors[i].amount - creditors[j].amount) < 0.01) {
-            transactions.push(`<strong>${debtors[i].name}</strong> pays <strong>${creditors[j].name}</strong>: <span style="color:var(--accent)">₹${debtors[i].amount.toFixed(2)}</span>`);
+            transfers.push({ from: debtors[i].name, to: creditors[j].name, amount: debtors[i].amount });
             debtors.splice(i, 1);
             creditors.splice(j, 1);
             break;
@@ -1121,7 +1464,7 @@
       while (i < debtors.length && j < creditors.length) {
         let payment = Math.min(debtors[i].amount, creditors[j].amount);
         if (payment > 0.01) {
-          transactions.push(`<strong>${debtors[i].name}</strong> pays <strong>${creditors[j].name}</strong>: <span style="color:var(--accent)">₹${payment.toFixed(2)}</span>`);
+          transfers.push({ from: debtors[i].name, to: creditors[j].name, amount: payment });
         }
         debtors[i].amount -= payment;
         creditors[j].amount -= payment;
@@ -1129,52 +1472,87 @@
         if (creditors[j].amount < 0.01) j++;
       }
 
-      if (transactions.length === 0) list.innerHTML = "<li>All balances are settled!</li>";
-      else transactions.forEach(t => { let li = document.createElement("li"); li.innerHTML = t; list.appendChild(li); });
-      addLog("Calculated minimum transaction settlement.");
+      if (transfers.length === 0) {
+        list.innerHTML = "<li>All balances are settled!</li>";
+        addLog("Settlement: all balances are zero — no transfers needed.");
+      } else {
+        transfers.forEach(t => {
+          let li = document.createElement("li");
+          li.innerHTML = `<strong>${t.from}</strong> pays <strong>${t.to}</strong>: <span style="color:var(--accent)">₹${t.amount.toFixed(2)}</span>`;
+          list.appendChild(li);
+        });
+        addLog(`Settlement calculated (${transfers.length} transfer${transfers.length > 1 ? 's' : ''}).`);
+        transfers.forEach(t => addLog(`Settlement: ${t.from} pays ${t.to} ₹${t.amount.toFixed(2)}`));
+      }
     }
 
-    function renderLeaderboard() {
-      const tbody = document.getElementById("leaderboardBody");
-      const historyBox = document.getElementById("sessionHistoryBox");
-      tbody.innerHTML = ""; historyBox.innerHTML = "";
-
+    function getFilteredSessions() {
       const nowD = new Date();
-      let filtered = savedSessions.filter(s => {
+      return savedSessions.filter(s => {
         const sDate = new Date(s.date);
         if (currentFilter === 'WEEK') return (nowD - sDate) / (1000 * 3600 * 24) <= 7;
         if (currentFilter === 'MONTH') return (nowD - sDate) / (1000 * 3600 * 24) <= 30;
         return true;
       });
+    }
 
-      if (filtered.length === 0) {
-        historyBox.innerHTML = "<div class='history-item'>No sessions found in this period.</div>";
-      } else {
-        filtered.forEach(session => {
-          let dateStr = new Date(session.date).toLocaleString('en-US', { weekday:'short', month:'short', day:'numeric', year:'numeric', hour:'numeric', minute:'2-digit' });
-          let item = document.createElement("div");
-          item.className = "history-item";
+    function buildSessionHistoryItem(session, includeAdmin) {
+      const dateStr = new Date(session.date).toLocaleString('en-US', { weekday:'short', month:'short', day:'numeric', year:'numeric', hour:'numeric', minute:'2-digit' });
+      const item = document.createElement("div");
+      item.className = "history-item";
 
-          if (editingSessionId === session.sessionId) {
-            item.innerHTML = renderSessionEditForm(session, dateStr);
-          } else {
-            let detailsHTML = session.entries.map(e =>
-              `<span style="color:${e.netVal>=0?'var(--accent)':'var(--danger)'}">
-                ${e.name.toUpperCase()}: ${e.netVal>=0?'+':''}₹${e.netVal.toFixed(1)}
-              </span>`
-            ).join(' | ');
+      if (includeAdmin && editingSessionId === session.sessionId) {
+        item.innerHTML = renderSessionEditForm(session, dateStr);
+        return item;
+      }
 
-            let adminBtns = adminUnlocked ? `
-              <div class="btn-group" style="float:right; margin-left:8px;">
-                <button type="button" class="btn-sm" style="background:var(--warning); color:#000;" onclick="startEditSession('${session.sessionId}')">✏️ Edit</button>
-                <button type="button" class="btn-sm" style="background:#8b5cf6;" onclick="loadSessionToDashboard('${session.sessionId}')">📤 Load</button>
-                <button type="button" class="btn-danger" onclick="deleteSession('${session.sessionId}')">🗑️ Delete</button>
-              </div>` : '';
+      const detailsHTML = session.entries.map(e =>
+        `<span style="color:${e.netVal>=0?'var(--accent)':'var(--danger)'}">
+          ${e.name.toUpperCase()}: ${e.netVal>=0?'+':''}₹${e.netVal.toFixed(1)}
+        </span>`
+      ).join(' | ');
 
-            item.innerHTML = `${adminBtns}<strong>${dateStr}</strong><br>${detailsHTML}`;
-          }
-          historyBox.appendChild(item);
-        });
+      const adminBtns = includeAdmin && adminUnlocked ? `
+        <div class="btn-group" style="float:right; margin-left:8px;">
+          <button type="button" class="btn-sm" style="background:var(--warning); color:#000;" onclick="startEditSession('${session.sessionId}')">✏️ Edit</button>
+          <button type="button" class="btn-sm" style="background:#8b5cf6;" onclick="loadSessionToDashboard('${session.sessionId}')">📤 Load</button>
+          <button type="button" class="btn-danger" onclick="deleteSession('${session.sessionId}')">🗑️ Delete</button>
+        </div>` : '';
+
+      item.innerHTML = `${adminBtns}<strong>${dateStr}</strong><br>${detailsHTML}`;
+      return item;
+    }
+
+    function renderRecentSessionPreview() {
+      const box = document.getElementById("sessionHistoryBox");
+      if (!box) return;
+      box.innerHTML = "";
+      const recent = [...savedSessions].sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 3);
+      if (recent.length === 0) {
+        box.innerHTML = "<div class='history-item'>No sessions yet.</div>";
+        return;
+      }
+      recent.forEach(session => box.appendChild(buildSessionHistoryItem(session, false)));
+    }
+
+    function renderLeaderboard() {
+      renderRecentSessionPreview();
+
+      const tbody = document.getElementById("leaderboardBody");
+      const fullBox = document.getElementById("fullSessionHistoryBox");
+      if (!leaderboardUnlocked) return;
+
+      if (tbody) tbody.innerHTML = "";
+      if (fullBox) fullBox.innerHTML = "";
+
+      const filtered = getFilteredSessions();
+
+      if (fullBox) {
+        if (filtered.length === 0) {
+          fullBox.innerHTML = "<div class='history-item'>No sessions found in this period.</div>";
+        } else {
+          filtered.forEach(session => fullBox.appendChild(buildSessionHistoryItem(session, true)));
+        }
       }
 
       let totals = {};
@@ -1192,18 +1570,47 @@
       if (sorted.length > 0) {
         let best = sorted[0];
         let worst = sorted[sorted.length - 1];
-        document.getElementById("statWinner").innerText = `${best.name} (+₹${best.netVal.toFixed(2)})`;
-        document.getElementById("statContributor").innerText = `${worst.name} (₹${worst.netVal.toFixed(2)})`;
+        const statWinner = document.getElementById("statWinner");
+        const statContributor = document.getElementById("statContributor");
+        if (statWinner) statWinner.innerText = `${best.name} (+₹${best.netVal.toFixed(2)})`;
+        if (statContributor) statContributor.innerText = `${worst.name} (₹${worst.netVal.toFixed(2)})`;
       } else {
-        document.getElementById("statWinner").innerText = "-";
-        document.getElementById("statContributor").innerText = "-";
+        const statWinner = document.getElementById("statWinner");
+        const statContributor = document.getElementById("statContributor");
+        if (statWinner) statWinner.innerText = "-";
+        if (statContributor) statContributor.innerText = "-";
       }
 
-      sorted.forEach((p, idx) => {
+      if (tbody) sorted.forEach((p, idx) => {
         const row = document.createElement("tr");
         row.innerHTML = `<td>#${idx + 1}</td><td><strong>${p.name}</strong></td><td>${p.sessions}</td><td style="color:${p.netVal >= 0 ? 'var(--accent)' : 'var(--danger)'}; font-weight:bold;">${p.netVal >= 0 ? '+' : ''}₹${p.netVal.toFixed(2)}</td>`;
         tbody.appendChild(row);
       });
+    }
+
+    function setLeaderboardVisible(show) {
+      leaderboardUnlocked = show;
+      const el = document.getElementById("performanceDetails");
+      if (el) {
+        el.style.display = show ? "block" : "none";
+        if (show) el.open = true;
+      }
+      const pruneBtn = document.getElementById("btnPruneOldLogs");
+      if (pruneBtn) pruneBtn.style.display = show ? "inline-block" : "none";
+      if (show) renderLeaderboard();
+    }
+
+    // Secret gesture: tap Spin / Pick 5× within 3s to show/hide Performance & Leaderboard
+    function handleSpinPickerTap() {
+      const now = Date.now();
+      spinTapTimestamps.push(now);
+      spinTapTimestamps = spinTapTimestamps.filter(t => now - t < 3000);
+      if (spinTapTimestamps.length >= 5) {
+        spinTapTimestamps = [];
+        setLeaderboardVisible(!leaderboardUnlocked);
+        return;
+      }
+      pickRandomParticipant();
     }
 
     function switchFilter(filter, elem) {
@@ -1342,115 +1749,134 @@
     }
 
     // --- SMART AUTO-SYNC & FETCH LOGIC ---
+    function isLocalDev() {
+      return location.protocol === 'file:'
+        || location.hostname === 'localhost'
+        || location.hostname === '127.0.0.1';
+    }
+
+    function showLocalDevBanner() {
+      const el = document.getElementById('localDevBanner');
+      if (!el) return;
+      if (location.protocol === 'file:') {
+        el.style.display = 'block';
+        el.innerHTML = '⚠️ Opened as <code>file://</code> — browsers block loading <code>data.json</code> here. Run '
+          + '<code>python3 -m http.server 8080</code> in this folder, then open '
+          + '<code>http://localhost:8080/index.html</code> — or use your GitHub Pages URL.';
+      } else if (isLocalDev()) {
+        el.style.display = 'block';
+        el.innerHTML = '🛠 Local dev mode — loading <code>./data.json</code> from this folder (GitHub sync still available via Refresh).';
+      }
+    }
+
+    async function fetchDataPayload() {
+      if (isLocalDev()) {
+        try {
+          const localRes = await fetch(`./data.json?t=${Date.now()}`, { cache: 'no-store' });
+          if (localRes.ok) return { data: await localRes.json(), source: 'local' };
+        } catch (e) { console.warn('Local data.json unavailable', e); }
+      }
+      const rawUrl = `https://raw.githubusercontent.com/${GH_USER}/${GH_REPO}/main/data.json?t=${Date.now()}`;
+      const res = await fetch(rawUrl);
+      if (!res.ok) throw new Error(`GitHub fetch failed (${res.status})`);
+      return { data: await res.json(), source: 'github' };
+    }
+
+    function ingestRemoteData(data, isManual) {
+      if (data.savedSessions && Array.isArray(data.savedSessions)) {
+        const remoteIds = new Set(data.savedSessions.map(s => s.sessionId));
+        let sessionMap = new Map();
+        savedSessions.forEach(s => {
+          if (remoteIds.has(s.sessionId) || dirtySessionIds.has(s.sessionId)) sessionMap.set(s.sessionId, s);
+        });
+        data.savedSessions.forEach(s => {
+          if (!dirtySessionIds.has(s.sessionId)) sessionMap.set(s.sessionId, s);
+        });
+        deletedSessionIds.forEach(id => sessionMap.delete(id));
+        savedSessions = Array.from(sessionMap.values()).sort((a,b) => new Date(b.date) - new Date(a.date));
+      }
+
+      if (data.logs && Array.isArray(data.logs)) {
+        logs = pruneOldLogs(mergeLogs(logs, data.logs));
+      }
+
+      if ('activeHost' in data) {
+        const remoteHost = data.activeHost;
+        if (!activeHost || !remoteHost) {
+          activeHost = remoteHost || null;
+        } else if (new Date(remoteHost.heartbeatAt) > new Date(activeHost.heartbeatAt)) {
+          activeHost = remoteHost;
+        }
+      }
+
+      if (shouldAdoptRemoteDashboard(isManual)) {
+        applyRemoteDashboard(data);
+      }
+
+      if (data.knownRoster && Array.isArray(data.knownRoster)) {
+        data.knownRoster.forEach(name => {
+          if (!strictMasterRoster.includes(name.toUpperCase())) strictMasterRoster.push(name.toUpperCase());
+        });
+      }
+    }
+
     async function autoFetchFromGitHub(isManual = false) {
       const statusText = document.getElementById("syncStatusText");
       if (statusText) statusText.innerText = "Syncing...";
 
-      const rawUrl = `https://raw.githubusercontent.com/${GH_USER}/${GH_REPO}/main/data.json?t=${Date.now()}`;
-
       try {
-        const res = await fetch(rawUrl);
-        if (res.ok) {
-          const data = await res.json();
-          
-          // 1. Merge Saved Sessions safely by unique sessionId.
-          // Remote normally wins on a matching id (it has whatever every device has already
-          // pushed), EXCEPT for sessions this device saved/edited locally and hasn't pushed
-          // yet ("dirty") — those must not be silently overwritten by an older remote copy.
-          //
-          // Remote is also treated as authoritative for DELETIONS: if a session exists in
-          // our local cache but remote no longer has it, that means some OTHER device
-          // already deleted + pushed it — drop our stale local copy too, unless it's one
-          // of OUR own pending (dirty) changes. Without this, a stale local copy would not
-          // just linger; it would get resurrected onto GitHub the next time THIS device pushes.
-          if (data.savedSessions && Array.isArray(data.savedSessions)) {
-            const remoteIds = new Set(data.savedSessions.map(s => s.sessionId));
-            let sessionMap = new Map();
-            savedSessions.forEach(s => {
-              if (remoteIds.has(s.sessionId) || dirtySessionIds.has(s.sessionId)) sessionMap.set(s.sessionId, s);
-            });
-            data.savedSessions.forEach(s => {
-              if (!dirtySessionIds.has(s.sessionId)) sessionMap.set(s.sessionId, s);
-            });
-            deletedSessionIds.forEach(id => sessionMap.delete(id));
-            savedSessions = Array.from(sessionMap.values()).sort((a,b) => new Date(b.date) - new Date(a.date));
-          }
-
-          if (data.logs && Array.isArray(data.logs)) logs = data.logs;
-
-          // 2. Dashboard Update Logic
-          // If local board is empty OR user manually clicked refresh:
-          if (players.length === 0 || isManual) {
-            if (data.settings) {
-              if (data.settings.coinCount) document.getElementById("coinCount").value = data.settings.coinCount;
-              if (data.settings.currencyVal) document.getElementById("currencyVal").value = data.settings.currencyVal;
-              if (data.settings.buyInCoins) document.getElementById("buyInCoins").value = data.settings.buyInCoins;
-              if (data.settings.milestones && Array.isArray(data.settings.milestones)) {
-                milestones = data.settings.milestones;
-                document.getElementById("milestoneInput").value = milestones.join(',');
-                localStorage.setItem("ledger_milestones", JSON.stringify(milestones));
-              }
-            }
-
-            if (data.activePlayers && Array.isArray(data.activePlayers)) {
-              players = data.activePlayers;
-            }
-            if (data.activeSessionId) activeSessionId = data.activeSessionId;
-          }
-
-          // Host lease: synced on EVERY pull (not gated behind the players-empty check
-          // above) since "who's hosting" needs to be visible even if I already have my
-          // own board loaded. Newest heartbeat wins on a conflicting claim.
-          if ('activeHost' in data) {
-            const remoteHost = data.activeHost;
-            if (!activeHost || !remoteHost) {
-              activeHost = remoteHost || null;
-            } else if (new Date(remoteHost.heartbeatAt) > new Date(activeHost.heartbeatAt)) {
-              activeHost = remoteHost;
-            }
-          }
-
-          if (data.knownRoster && Array.isArray(data.knownRoster)) {
-            data.knownRoster.forEach(name => {
-              if (!strictMasterRoster.includes(name.toUpperCase())) strictMasterRoster.push(name.toUpperCase());
-            });
-          }
-
-          saveState(); 
-          renderAll();
-          if (statusText) statusText.innerText = "Synced";
-          if (isManual) alert("✅ Data synchronized with GitHub!");
-        } else {
-          if (statusText) statusText.innerText = "Error";
+        const { data, source } = await fetchDataPayload();
+        ingestRemoteData(data, isManual);
+        saveState();
+        renderAll();
+        if (statusText) statusText.innerText = source === 'local' ? "Local" : "Synced";
+        if (isManual) {
+          addLog(source === 'local' ? "Manual refresh loaded local data.json." : "Manual refresh synchronized with GitHub.");
+          alert(source === 'local' ? "✅ Loaded data from local data.json!" : "✅ Data synchronized with GitHub!");
         }
       } catch (err) {
         console.error("Auto fetch error:", err);
         if (statusText) statusText.innerText = "Offline";
+        if (isManual) alert(isLocalDev()
+          ? "Could not load data. Use http://localhost:8080/index.html (not file://)."
+          : "Could not sync with GitHub. Check your connection.");
       }
     }
 
     function manualRefreshData() {
-      if (players.length > 0) {
-        const warn1 = confirm("⚠️ OVERWRITE NOTICE: Refreshing from GitHub will sync your active board with the latest cloud state.\n\nDo you want to proceed?");
-        if (!warn1) return;
+      // Locked (spectating, not hosting): nothing local worth protecting — this IS the
+      // "get current live status" action, so just pull immediately, no scary warning.
+      if (players.length > 0 && !isBoardLocked()) {
+        let msg = "⚠️ OVERWRITE NOTICE: Refreshing from GitHub will replace your active board with the latest data.json on GitHub.\n\nDo you want to proceed?";
+        if (isCurrentHost() && autoPushTimer) {
+          msg = "⚠️ You have UNPUBLISHED changes waiting to auto-push to GitHub.\n\nRefreshing will discard your local board and replace it with data.json.\n\nProceed anyway?";
+        }
+        if (!confirm(msg)) return;
       }
       autoFetchFromGitHub(true);
     }
 
     // Token-Authenticated Push Function
-    async function pushToGitHub() {
-      if (isBoardLocked()) return alert(`🔒 ${activeHost.deviceName} is hosting this session. Only they can push it.`);
+    // auto=true means this push was triggered by the debounced auto-push timer, not a
+    // manual button click: never prompt for a token, never block with alert()s — just
+    // do it quietly and flash a brief status instead.
+    async function pushToGitHub(auto = false) {
+      if (isBoardLocked()) { if (!auto) alert(`🔒 ${activeHost.deviceName} is hosting this session. Only they can push it.`); return false; }
 
       let token = localStorage.getItem("gh_token") || "";
 
       if (!token) {
+        if (auto) return false; // don't ever prompt for a token from a background timer
         const tokenInput = prompt("🔒 ADMIN AUTHENTICATION REQUIRED:\n\nEnter your GitHub Personal Access Token to push live data:");
         if (!tokenInput || tokenInput.trim().length === 0) {
-          return alert("Push cancelled. Personal Access Token is required to update the live cloud database.");
+          alert("Push cancelled. Personal Access Token is required to update the live cloud database.");
+          return false;
         }
         token = tokenInput.trim();
         localStorage.setItem("gh_token", token);
       }
+
+      updatePushStatusBar('pushing');
 
       const filePath = "data.json";
       const apiUrl = `https://api.github.com/repos/${GH_USER}/${GH_REPO}/contents/${filePath}`;
@@ -1472,7 +1898,9 @@
           if (decodedContent.savedSessions) remoteSessions = decodedContent.savedSessions;
         } else if (getRes.status === 401 || getRes.status === 403) {
           localStorage.removeItem("gh_token");
-          return alert("Authentication Failed! Invalid or expired token.");
+          if (!auto) alert("Authentication Failed! Invalid or expired token.");
+          updatePushStatusBar('failed');
+          return false;
         }
       } catch(e) { console.warn("Could not pre-fetch remote SHA", e); }
 
@@ -1503,42 +1931,82 @@
           buyInCoins: document.getElementById("buyInCoins").value,
           milestones: milestones
         },
-        logs: logs,
+        logs: pruneOldLogs(logs),
         knownRoster: strictMasterRoster
       };
 
-      const contentEncoded = btoa(unescape(encodeURIComponent(JSON.stringify(payload, null, 2))));
-
       try {
-        const putRes = await fetch(apiUrl, {
-          method: "PUT",
-          headers: {
-            "Authorization": `Bearer ${token}`,
-            "Content-Type": "application/json",
-            "Accept": "application/vnd.github.v3+json"
-          },
-          body: JSON.stringify({
-            message: `Update live state [${new Date().toISOString().substring(0, 19).replace('T', ' ')}]`,
-            content: contentEncoded,
-            sha: remoteSha || undefined
-          })
-        });
+        let putRes = await commitDataJson(token, apiUrl, payload, remoteSha);
+
+        // SHA conflict: another device committed data.json first — grab fresh SHA, retry once.
+        if (putRes.status === 409) {
+          const retryGet = await fetch(apiUrl, {
+            headers: { "Authorization": `Bearer ${token}`, "Accept": "application/vnd.github.v3+json" }
+          });
+          if (retryGet.ok) {
+            const retryData = await retryGet.json();
+            const remote = JSON.parse(decodeURIComponent(escape(atob(retryData.content))));
+            if (remote.savedSessions) {
+              const remoteIds = new Set(remote.savedSessions.map(s => s.sessionId));
+              remote.savedSessions.forEach(s => {
+                if (!dirtySessionIds.has(s.sessionId)) sessionMap.set(s.sessionId, s);
+              });
+              savedSessions.forEach(s => {
+                if (remoteIds.has(s.sessionId) || dirtySessionIds.has(s.sessionId)) sessionMap.set(s.sessionId, s);
+              });
+              deletedSessionIds.forEach(id => sessionMap.delete(id));
+              mergedSavedSessions = Array.from(sessionMap.values()).sort((a,b) => new Date(b.date) - new Date(a.date));
+              payload.savedSessions = mergedSavedSessions;
+            }
+            putRes = await commitDataJson(token, apiUrl, payload, retryData.sha);
+          }
+        }
 
         if (putRes.ok) {
           savedSessions = mergedSavedSessions;
           dirtySessionIds.clear(); // now matches GitHub — safe for auto-fetch to overwrite again
           deletedSessionIds.clear(); // deletion has been synced — nothing left to strip out
+          autoPushTimer = null;
           saveState(); renderAll();
-          alert("✅ LIVE STATE PUSHED TO GITHUB!\nActive dashboard and game history updated across all devices.");
-          addLog("Pushed live state to GitHub repo.");
+          if (!auto) addLog("Pushed live state to GitHub repo.");
+          updatePushStatusBar('success');
+          if (!auto) alert("✅ LIVE STATE PUSHED TO GITHUB!\nActive dashboard and game history updated across all devices.");
+          return true;
         } else {
-          const errData = await putRes.json();
-          alert(`GitHub Push Failed (${putRes.status}): ${errData.message}`);
+          const errData = await putRes.json().catch(() => ({}));
+          updatePushStatusBar('failed');
+          if (auto) {
+            addLog(`Auto-push failed: ${errData.message || putRes.status}`);
+            setTimeout(() => pushToGitHub(true), 10000);
+          } else {
+            alert(`GitHub Push Failed (${putRes.status}): ${errData.message || 'Unknown error'}`);
+          }
+          return false;
         }
       } catch (err) {
         console.error(err);
-        alert("Error connecting to GitHub API.");
+        updatePushStatusBar('failed');
+        if (auto) setTimeout(() => pushToGitHub(true), 10000);
+        else alert("Error connecting to GitHub API.");
+        return false;
       }
+    }
+
+    async function commitDataJson(token, apiUrl, payload, sha) {
+      const contentEncoded = btoa(unescape(encodeURIComponent(JSON.stringify(payload, null, 2))));
+      return fetch(apiUrl, {
+        method: "PUT",
+        headers: {
+          "Authorization": `Bearer ${token}`,
+          "Content-Type": "application/json",
+          "Accept": "application/vnd.github.v3+json"
+        },
+        body: JSON.stringify({
+          message: `Update live state [${formatLogTime()}]`,
+          content: contentEncoded,
+          sha: sha || undefined
+        })
+      });
     }
 
     function clearLocalDeviceCache() {
@@ -1568,6 +2036,7 @@
       const randomIndex = Math.floor(Math.random() * players.length);
       const chosen = players[randomIndex].name;
       resultElem.innerText = `🎲 Chosen Participant: ${chosen}`;
+      addLog(`Random picker chose ${chosen}.`);
     }
 
     function updateExperimentalMvp() {
@@ -1597,6 +2066,7 @@
     }
 
     // Boot Application & Enable Auto-Polling
+    showLocalDevBanner();
     document.getElementById("milestoneInput").value = milestones.join(',');
     updateAdminIndicator();
     updateSyncBanner();
@@ -1606,14 +2076,21 @@
     // Auto-fetch on page boot
     autoFetchFromGitHub(false);
 
-    // Auto-fetch every 15 minutes in background
+    // Spectators (locked/read-only): poll data.json every 15s for near-live board sync.
+    setInterval(() => {
+      if (isBoardLocked()) autoFetchFromGitHub(false);
+    }, SPECTATOR_POLL_MS);
+
+    // Everyone: background pull every 15 min (leaderboard, logs, host lock).
     setInterval(() => {
       autoFetchFromGitHub(false);
-    }, 15 * 60 * 1000);
+    }, BACKGROUND_FETCH_MS);
 
-    // Auto-fetch when user switches back to app tab
+    // Auto-fetch when user switches back to app tab (+ check for new app version)
     document.addEventListener("visibilitychange", () => {
       if (document.visibilityState === "visible") {
+        checkForAppUpdate();
+        navigator.serviceWorker?.getRegistration().then((r) => r?.update());
         autoFetchFromGitHub(false);
       }
     });
