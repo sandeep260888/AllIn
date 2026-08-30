@@ -1008,7 +1008,7 @@
     {
       "id": 1788001970009,
       "name": "GAGAN",
-      "buyIns": 16,
+      "buyIns": 17,
       "buyInCoins": 1000,
       "cashOutCoins": 9330
     },
@@ -1073,6 +1073,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788072846250_tmiu",
+      "time": "2026-08-30 12:24:06",
+      "text": "Buy-in increased for GAGAN: count = 17. • by Sandeep Mac"
+    },
     {
       "id": "L_1788068917268_fkrn",
       "time": "2026-08-30 11:18:37",
@@ -2869,10 +2874,6 @@
     {
       "time": "2026-07-25 20:51:44",
       "text": "Buy-in decreased for AKSHAY: count = 4."
-    },
-    {
-      "time": "2026-07-25 20:51:42",
-      "text": "Buy-in increased for AKSHAY: count = 5."
     }
   ],
   "knownRoster": [
