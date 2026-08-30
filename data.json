@@ -1074,34 +1074,24 @@
   },
   "logs": [
     {
-      "id": "L_1788074299963_mumt",
-      "time": "2026-08-30 12:48:19",
-      "text": "Auto-push failed: data.json does not match e6575ea3a1f7dc08d99b664f18f83f54a5f84f87 • by Sandeep"
+      "id": "L_1788074326280_dyb7",
+      "time": "2026-08-30 12:48:46",
+      "text": "Buy-in decreased for HARI: count = 12. • by Sandeep Mac"
     },
     {
-      "id": "L_1788074287675_s52p",
-      "time": "2026-08-30 12:48:07",
-      "text": "Auto-push failed: data.json does not match e6575ea3a1f7dc08d99b664f18f83f54a5f84f87 • by Sandeep"
+      "id": "L_1788074325314_gmrp",
+      "time": "2026-08-30 12:48:45",
+      "text": "Buy-in decreased for HARI: count = 13. • by Sandeep Mac"
     },
     {
-      "id": "L_1788074275692_gs08",
-      "time": "2026-08-30 12:47:55",
-      "text": "Auto-push failed: data.json does not match e6575ea3a1f7dc08d99b664f18f83f54a5f84f87 • by Sandeep"
+      "id": "L_1788074322131_pygo",
+      "time": "2026-08-30 12:48:42",
+      "text": "Buy-in decreased for HARI: count = 14. • by Sandeep Mac"
     },
     {
-      "id": "L_1788074262667_uxnw",
-      "time": "2026-08-30 12:47:42",
-      "text": "Auto-push failed: data.json does not match e6575ea3a1f7dc08d99b664f18f83f54a5f84f87 • by Sandeep"
-    },
-    {
-      "id": "L_1788074250513_vlct",
-      "time": "2026-08-30 12:47:30",
-      "text": "Auto-push failed: data.json does not match e6575ea3a1f7dc08d99b664f18f83f54a5f84f87 • by Sandeep"
-    },
-    {
-      "id": "L_1788074245710_8t18",
-      "time": "2026-08-30 12:47:25",
-      "text": "Pushed live state to GitHub repo. • by Sandeep"
+      "id": "L_1788074321764_14ml",
+      "time": "2026-08-30 12:48:41",
+      "text": "Buy-in decreased for HARI: count = 15. • by Sandeep Mac"
     },
     {
       "id": "L_1788074231995_v4sv",
@@ -1112,6 +1102,66 @@
       "id": "L_1788074231852_ntt7",
       "time": "2026-08-30 12:47:11",
       "text": "Buy-in decreased for ABHISHEK: count = 4. • by Sandeep"
+    },
+    {
+      "id": "L_1788073692432_p21c",
+      "time": "2026-08-30 12:38:12",
+      "text": "Manual refresh synchronized with GitHub. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788073389589_iphr",
+      "time": "2026-08-30 12:33:09",
+      "text": "Buy-in increased for HARI: count = 16. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788073387139_c0fo",
+      "time": "2026-08-30 12:33:07",
+      "text": "Buy-in decreased for HARI: count = 15. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788073378139_0x2u",
+      "time": "2026-08-30 12:32:58",
+      "text": "Buy-in increased for HARI: count = 16. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788073373573_1wtc",
+      "time": "2026-08-30 12:32:53",
+      "text": "Buy-in increased for HARI: count = 15. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788073373306_c3m2",
+      "time": "2026-08-30 12:32:53",
+      "text": "Buy-in increased for HARI: count = 14. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788073373074_me3q",
+      "time": "2026-08-30 12:32:53",
+      "text": "Buy-in increased for HARI: count = 13. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788072935528_2obl",
+      "time": "2026-08-30 12:25:35",
+      "text": "Buy-in decreased for GAGAN: count = 13. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788072934862_5pfw",
+      "time": "2026-08-30 12:25:34",
+      "text": "Buy-in decreased for GAGAN: count = 14. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788072933395_xzf1",
+      "time": "2026-08-30 12:25:33",
+      "text": "Buy-in decreased for GAGAN: count = 15. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788072933077_87g6",
+      "time": "2026-08-30 12:25:33",
+      "text": "Buy-in decreased for GAGAN: count = 16. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788072846250_tmiu",
+      "time": "2026-08-30 12:24:06",
+      "text": "Buy-in increased for GAGAN: count = 17. • by Sandeep Mac"
     },
     {
       "id": "L_1788068917268_fkrn",
@@ -2841,46 +2891,6 @@
     {
       "time": "2026-07-25 22:05:00",
       "text": "Buy-in increased for HARI: count = 3."
-    },
-    {
-      "time": "2026-07-25 22:05:00",
-      "text": "Buy-in increased for MOHINI: count = 2."
-    },
-    {
-      "time": "2026-07-25 21:51:00",
-      "text": "Buy-in increased for HARI: count = 2."
-    },
-    {
-      "time": "2026-07-25 21:27:00",
-      "text": "Buy-in increased for RISHI: count = 3."
-    },
-    {
-      "time": "2026-07-25 21:22:00",
-      "text": "Buy-in increased for RISHI: count = 2."
-    },
-    {
-      "time": "2026-07-25 20:59:22",
-      "text": "Calculated minimum transaction settlement."
-    },
-    {
-      "time": "2026-07-25 20:59:00",
-      "text": "Logs reset."
-    },
-    {
-      "time": "2026-07-25 20:54:53",
-      "text": "Calculated minimum transaction settlement."
-    },
-    {
-      "time": "2026-07-25 20:54:52",
-      "text": "Calculated minimum transaction settlement."
-    },
-    {
-      "time": "2026-07-25 20:54:50",
-      "text": "Calculated minimum transaction settlement."
-    },
-    {
-      "time": "2026-07-25 20:53:32",
-      "text": "Calculated minimum transaction settlement."
     }
   ],
   "knownRoster": [
