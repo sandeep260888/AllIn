@@ -38,7 +38,15 @@
       margin: 6px 0 16px; 
       padding: 0 4px;
     }
-    h1 { font-size: 1.4rem; color: var(--text); }
+    h1 { font-size: 1.4rem; color: var(--text); margin: 0; }
+    .app-version {
+      font-size: 0.65rem;
+      color: var(--subtext);
+      margin-top: 3px;
+      font-family: ui-monospace, monospace;
+      letter-spacing: 0.02em;
+    }
+    .app-version.update-available { color: var(--warning); }
     h2 { font-size: 1.05rem; margin-bottom: 10px; }
 
     .push-status-bar {
@@ -49,6 +57,13 @@
     .push-status-fill {
       position: absolute; inset: 0 auto 0 0; width: 0%; background: var(--warning);
       transition: width 0.3s linear, background-color 0.3s ease; opacity: 0.35;
+    }
+    .push-status-fill.sync-indeterminate {
+      animation: sync-pull-pulse 1.1s ease-in-out infinite;
+    }
+    @keyframes sync-pull-pulse {
+      0%, 100% { width: 25%; opacity: 0.25; }
+      50% { width: 100%; opacity: 0.45; }
     }
     .push-status-text {
       position: relative; z-index: 1; font-size: 0.75rem; font-weight: bold; color: var(--text);
@@ -239,7 +254,10 @@
 
   <!-- Top Header with Quick Refresh -->
   <header>
-    <h1>Ledger Transactions</h1>
+    <div>
+      <h1>Ledger Transactions</h1>
+      <div id="appVersionLabel" class="app-version">App v—</div>
+    </div>
     <div class="header-actions">
       <button type="button" class="btn-header-sync" onclick="manualRefreshData()">
         <span>🔄</span> <span id="syncStatusText">Refresh</span>
@@ -249,9 +267,7 @@
 
   <div id="localDevBanner" class="local-dev-banner"></div>
 
-  <!-- Publish status bar: shows the 0->15s countdown to the next auto-push, then
-       flips green once published. Hidden whenever there's nothing to report
-       (e.g. no GitHub token saved on this device). -->
+  <!-- Cloud sync status: GitHub pull progress, push countdown, last GitHub update -->
   <div id="pushStatusBar" class="push-status-bar" style="display:none;">
     <div id="pushStatusFill" class="push-status-fill"></div>
     <span id="pushStatusText" class="push-status-text"></span>
@@ -427,8 +443,23 @@
 
   <script>
     // --- APP VERSION / AUTO-UPDATE (GitHub Pages) ---
-    // Each deploy: bump version.json AND CACHE_NAME in sw.js (same version string).
+    // Each deploy: bump APP_VERSION, version.json AND CACHE_NAME in sw.js (same string).
+    const APP_VERSION = '2026.08.30-10';
     let appUpdateReloading = false;
+
+    function updateAppVersionDisplay(deployedVersion) {
+      const el = document.getElementById('appVersionLabel');
+      if (!el) return;
+      if (deployedVersion && deployedVersion !== APP_VERSION) {
+        el.textContent = `App v${APP_VERSION} · v${deployedVersion} on GitHub`;
+        el.classList.add('update-available');
+        el.title = 'This device is on an older build — hard refresh or wait for auto-update';
+      } else {
+        el.textContent = `App v${APP_VERSION}`;
+        el.classList.remove('update-available');
+        el.title = 'Version of the app loaded on this device';
+      }
+    }
 
     async function fetchDeployedVersion() {
       const res = await fetch(`./version.json?t=${Date.now()}`, { cache: 'no-store' });
@@ -453,6 +484,7 @@
     async function checkForAppUpdate() {
       try {
         const remoteVersion = await fetchDeployedVersion();
+        updateAppVersionDisplay(remoteVersion);
         if (!remoteVersion) return;
         const localVersion = localStorage.getItem('ledger_app_version');
         if (!localVersion) {
@@ -467,6 +499,7 @@
     }
 
     function initAppUpdate() {
+      updateAppVersionDisplay(null);
       checkForAppUpdate();
 
       // Local dev: skip SW — it caches old index.html and blocks fresh data.json loads.
@@ -531,6 +564,112 @@
 
     let autoPushDeadline = null;
     let autoPushCountdownInterval = null;
+    let fetchInProgress = false;
+    let cloudStatusHideTimer = null;
+    let lastGitHubUpdateMs = parseInt(localStorage.getItem('ledger_last_github_sync') || '', 10) || null;
+
+    function formatGitHubSyncTime(ms) {
+      if (!ms) return '—';
+      return new Date(ms).toLocaleString(undefined, {
+        month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit'
+      });
+    }
+
+    function setLastGitHubUpdate(ms) {
+      if (!ms) return;
+      lastGitHubUpdateMs = ms;
+      localStorage.setItem('ledger_last_github_sync', String(ms));
+    }
+
+    function showIdleCloudStatus() {
+      updateCloudStatusBar('idle');
+    }
+
+    // Pull from GitHub, push to GitHub, and idle "last update" line share one bar.
+    function updateCloudStatusBar(state, meta) {
+      const wrap = document.getElementById("pushStatusBar");
+      const fill = document.getElementById("pushStatusFill");
+      const text = document.getElementById("pushStatusText");
+      if (!wrap || !fill || !text) return;
+
+      if (state !== 'pending') clearTimeout(cloudStatusHideTimer);
+      fill.classList.remove('sync-indeterminate');
+      fill.style.opacity = '0.35';
+
+      if (state === 'idle') {
+        if (!lastGitHubUpdateMs) {
+          wrap.style.display = 'none';
+          return;
+        }
+        fill.style.width = '100%';
+        fill.style.background = '#334155';
+        fill.style.opacity = '0.15';
+        text.textContent = `☁️ Last GitHub update: ${formatGitHubSyncTime(lastGitHubUpdateMs)} · other devices pull automatically`;
+        wrap.style.display = 'flex';
+        return;
+      }
+
+      if (state === 'pulling') {
+        fill.style.width = '100%';
+        fill.style.background = '#3b82f6';
+        fill.classList.add('sync-indeterminate');
+        text.textContent = '⬇️ Pulling latest from GitHub...';
+        wrap.style.display = 'flex';
+        return;
+      }
+
+      if (state === 'pull-success') {
+        const at = (meta && meta.at) || lastGitHubUpdateMs;
+        fill.style.width = '100%';
+        fill.style.background = 'var(--accent)';
+        text.textContent = `✅ Synced from GitHub · ${formatGitHubSyncTime(at)}`;
+        wrap.style.display = 'flex';
+        cloudStatusHideTimer = setTimeout(showIdleCloudStatus, 3000);
+        return;
+      }
+
+      if (state === 'pull-failed') {
+        fill.style.width = '100%';
+        fill.style.background = 'var(--danger)';
+        text.textContent = '⚠️ Could not pull from GitHub — check connection';
+        wrap.style.display = 'flex';
+        cloudStatusHideTimer = setTimeout(showIdleCloudStatus, 4000);
+        return;
+      }
+
+      const remainingMs = typeof meta === 'number' ? meta : 0;
+      if (state === 'pending') {
+        const pct = Math.max(0, Math.min(100, 100 - (remainingMs / AUTO_PUSH_DELAY_MS) * 100));
+        fill.style.width = pct + '%';
+        fill.style.background = 'var(--warning)';
+        text.textContent = `⏳ Publishing to GitHub in ${Math.ceil(remainingMs / 1000)}s...`;
+        wrap.style.display = 'flex';
+      } else if (state === 'pushing') {
+        fill.style.width = '100%';
+        fill.style.background = 'var(--warning)';
+        text.textContent = '📡 Publishing to GitHub...';
+        wrap.style.display = 'flex';
+      } else if (state === 'success') {
+        clearInterval(autoPushCountdownInterval);
+        fill.style.width = '100%';
+        fill.style.background = 'var(--accent)';
+        text.textContent = '✅ Published to GitHub · other devices will pull on refresh';
+        wrap.style.display = 'flex';
+        cloudStatusHideTimer = setTimeout(showIdleCloudStatus, 4000);
+      } else if (state === 'failed') {
+        clearInterval(autoPushCountdownInterval);
+        fill.style.width = '100%';
+        fill.style.background = 'var(--danger)';
+        text.textContent = '⚠️ Publish failed — will retry automatically';
+        wrap.style.display = 'flex';
+      } else {
+        wrap.style.display = 'none';
+      }
+    }
+
+    function updatePushStatusBar(state, remainingMs) {
+      updateCloudStatusBar(state, remainingMs);
+    }
 
     function scheduleAutoPush() {
       if (isBoardLocked()) return; // not host — guarded functions shouldn't reach here anyway
@@ -552,44 +691,6 @@
         if (remainingMs <= 0) { clearInterval(autoPushCountdownInterval); return; }
         updatePushStatusBar('pending', remainingMs);
       }, 300);
-    }
-
-    // Visible, ambient status of the auto-publish cycle. Deliberately shows nothing when
-    // there's nothing meaningful to report (no token saved -> this device can never
-    // publish anyway, so don't imply otherwise).
-    function updatePushStatusBar(state, remainingMs) {
-      const wrap = document.getElementById("pushStatusBar");
-      const fill = document.getElementById("pushStatusFill");
-      const text = document.getElementById("pushStatusText");
-      if (!wrap || !fill || !text) return;
-
-      if (state === 'pending') {
-        const pct = Math.max(0, Math.min(100, 100 - (remainingMs / AUTO_PUSH_DELAY_MS) * 100));
-        fill.style.width = pct + '%';
-        fill.style.background = 'var(--warning)';
-        text.textContent = `⏳ Publishing to GitHub in ${Math.ceil(remainingMs / 1000)}s...`;
-        wrap.style.display = 'flex';
-      } else if (state === 'pushing') {
-        fill.style.width = '100%';
-        fill.style.background = 'var(--warning)';
-        text.textContent = '📡 Publishing...';
-        wrap.style.display = 'flex';
-      } else if (state === 'success') {
-        clearInterval(autoPushCountdownInterval);
-        fill.style.width = '100%';
-        fill.style.background = 'var(--accent)';
-        text.textContent = '✅ Published to GitHub';
-        wrap.style.display = 'flex';
-        setTimeout(() => { wrap.style.display = 'none'; fill.style.width = '0%'; }, 4000);
-      } else if (state === 'failed') {
-        clearInterval(autoPushCountdownInterval);
-        fill.style.width = '100%';
-        fill.style.background = 'var(--danger)';
-        text.textContent = '⚠️ Publish failed — will retry automatically';
-        wrap.style.display = 'flex';
-      } else {
-        wrap.style.display = 'none';
-      }
     }
 
     // Secret admin gesture state (resets on page reload; not persisted for safety)
@@ -1773,13 +1874,25 @@
       if (isLocalDev()) {
         try {
           const localRes = await fetch(`./data.json?t=${Date.now()}`, { cache: 'no-store' });
-          if (localRes.ok) return { data: await localRes.json(), source: 'local' };
+          if (localRes.ok) {
+            const lm = localRes.headers.get('Last-Modified');
+            return {
+              data: await localRes.json(),
+              source: 'local',
+              remoteUpdatedAt: lm ? new Date(lm).getTime() : Date.now()
+            };
+          }
         } catch (e) { console.warn('Local data.json unavailable', e); }
       }
       const rawUrl = `https://raw.githubusercontent.com/${GH_USER}/${GH_REPO}/main/data.json?t=${Date.now()}`;
       const res = await fetch(rawUrl);
       if (!res.ok) throw new Error(`GitHub fetch failed (${res.status})`);
-      return { data: await res.json(), source: 'github' };
+      const lm = res.headers.get('Last-Modified');
+      return {
+        data: await res.json(),
+        source: 'github',
+        remoteUpdatedAt: lm ? new Date(lm).getTime() : Date.now()
+      };
     }
 
     function ingestRemoteData(data, isManual) {
@@ -1821,15 +1934,26 @@
     }
 
     async function autoFetchFromGitHub(isManual = false) {
+      if (fetchInProgress) return;
+      fetchInProgress = true;
+
       const statusText = document.getElementById("syncStatusText");
+      const showPullBar = isManual || !lastGitHubUpdateMs;
+      if (showPullBar) updateCloudStatusBar('pulling');
       if (statusText) statusText.innerText = "Syncing...";
 
       try {
-        const { data, source } = await fetchDataPayload();
+        const { data, source, remoteUpdatedAt } = await fetchDataPayload();
         ingestRemoteData(data, isManual);
         saveState();
         renderAll();
+        setLastGitHubUpdate(remoteUpdatedAt || Date.now());
         if (statusText) statusText.innerText = source === 'local' ? "Local" : "Synced";
+        if (showPullBar) {
+          updateCloudStatusBar('pull-success', { at: lastGitHubUpdateMs });
+        } else {
+          showIdleCloudStatus();
+        }
         if (isManual) {
           addLog(source === 'local' ? "Manual refresh loaded local data.json." : "Manual refresh synchronized with GitHub.");
           alert(source === 'local' ? "✅ Loaded data from local data.json!" : "✅ Data synchronized with GitHub!");
@@ -1837,9 +1961,13 @@
       } catch (err) {
         console.error("Auto fetch error:", err);
         if (statusText) statusText.innerText = "Offline";
+        if (showPullBar) updateCloudStatusBar('pull-failed');
+        else showIdleCloudStatus();
         if (isManual) alert(isLocalDev()
           ? "Could not load data. Use http://localhost:8080/index.html (not file://)."
           : "Could not sync with GitHub. Check your connection.");
+      } finally {
+        fetchInProgress = false;
       }
     }
 
@@ -1968,6 +2096,7 @@
           deletedSessionIds.clear(); // deletion has been synced — nothing left to strip out
           autoPushTimer = null;
           saveState(); renderAll();
+          setLastGitHubUpdate(Date.now());
           if (!auto) addLog("Pushed live state to GitHub repo.");
           updatePushStatusBar('success');
           if (!auto) alert("✅ LIVE STATE PUSHED TO GITHUB!\nActive dashboard and game history updated across all devices.");
@@ -2072,6 +2201,7 @@
     updateSyncBanner();
     renderAll();
     validateAddButton();
+    showIdleCloudStatus();
 
     // Auto-fetch on page boot
     autoFetchFromGitHub(false);

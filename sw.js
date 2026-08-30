@@ -1,5 +1,5 @@
 // Bump CACHE_NAME whenever you deploy (keep in sync with version.json).
-const CACHE_NAME = 'ledger-pwa-2026.08.30-8';
+const CACHE_NAME = 'ledger-pwa-2026.08.30-10';
 const SHELL = ['./manifest.json'];
 
 self.addEventListener('install', (event) => {
