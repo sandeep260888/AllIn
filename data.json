@@ -997,30 +997,8 @@
       ]
     }
   ],
-  "activePlayers": [
-    {
-      "id": 1788074600848,
-      "name": "AKSHAY",
-      "buyIns": 2,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1788074605711,
-      "name": "ABHISHEK",
-      "buyIns": 3,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1788074608479,
-      "name": "AJAY",
-      "buyIns": 1,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    }
-  ],
-  "activeSessionId": "S_mtfhg80cebvb9r",
+  "activePlayers": [],
+  "activeSessionId": null,
   "activeHost": null,
   "settings": {
     "coinCount": "2",
@@ -1038,6 +1016,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788074944107_t3eq",
+      "time": "2026-08-30 12:59:04",
+      "text": "Removed \"AJAY\". • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788074942958_cyhl",
+      "time": "2026-08-30 12:59:02",
+      "text": "Removed \"ABHISHEK\". • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788074941926_u5ry",
+      "time": "2026-08-30 12:59:01",
+      "text": "Removed \"AKSHAY\". • by Sandeep Mac"
+    },
     {
       "id": "L_1788074931376_vihn",
       "time": "2026-08-30 12:58:51",
@@ -2855,18 +2848,6 @@
     {
       "time": "2026-07-27 16:49:22",
       "text": "Buy-in decreased for MOHINI: count = 2."
-    },
-    {
-      "time": "2026-07-27 16:49:18",
-      "text": "Removed \"SANDEEP\"."
-    },
-    {
-      "time": "2026-07-27 16:49:17",
-      "text": "Removed \"AKSHAY\"."
-    },
-    {
-      "time": "2026-07-27 16:49:14",
-      "text": "Removed \"GAGAN\"."
     }
   ],
   "knownRoster": [
