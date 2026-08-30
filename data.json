@@ -1043,7 +1043,7 @@
     {
       "id": 1788002010930,
       "name": "ABHISHEK",
-      "buyIns": 3,
+      "buyIns": 5,
       "buyInCoins": 1000,
       "cashOutCoins": 600
     },
@@ -1073,6 +1073,26 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788068917268_fkrn",
+      "time": "2026-08-30 11:18:37",
+      "text": "Milestone reached: ABHISHEK hit 5 buy-ins. • by sandeep Mac"
+    },
+    {
+      "id": "L_1788068917263_qtrz",
+      "time": "2026-08-30 11:18:37",
+      "text": "Buy-in increased for ABHISHEK: count = 5. • by sandeep Mac"
+    },
+    {
+      "id": "L_1788068917064_o8ko",
+      "time": "2026-08-30 11:18:37",
+      "text": "Buy-in increased for ABHISHEK: count = 4. • by sandeep Mac"
+    },
+    {
+      "id": "L_1788068903827_7uf6",
+      "time": "2026-08-30 11:18:23",
+      "text": "Auto-pushed live state to GitHub (debounced batch). • by sandeep Mac"
+    },
     {
       "id": "L_1788068884798_o8pb",
       "time": "2026-08-30 11:18:04",
