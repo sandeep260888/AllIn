@@ -999,64 +999,33 @@
   ],
   "activePlayers": [
     {
-      "id": 1788001956321,
-      "name": "RAVI",
-      "buyIns": 5,
-      "buyInCoins": 1000,
-      "cashOutCoins": 25450
-    },
-    {
-      "id": 1788001970009,
-      "name": "GAGAN",
-      "buyIns": 13,
-      "buyInCoins": 1000,
-      "cashOutCoins": 9330
-    },
-    {
-      "id": 1788001972960,
-      "name": "ALOK",
-      "buyIns": 15,
-      "buyInCoins": 1000,
-      "cashOutCoins": 9550
-    },
-    {
-      "id": 1788001988999,
-      "name": "SONAK",
-      "buyIns": 1,
+      "id": 1788074600848,
+      "name": "AKSHAY",
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
     {
-      "id": 1788001994903,
-      "name": "RISHI",
-      "buyIns": 4,
-      "buyInCoins": 1000,
-      "cashOutCoins": 6860
-    },
-    {
-      "id": 1788002008209,
-      "name": "AKSHAY",
-      "buyIns": 10,
-      "buyInCoins": 1000,
-      "cashOutCoins": 6660
-    },
-    {
-      "id": 1788002010930,
+      "id": 1788074605711,
       "name": "ABHISHEK",
       "buyIns": 3,
       "buyInCoins": 1000,
-      "cashOutCoins": 600
+      "cashOutCoins": 0
     },
     {
-      "id": 1788002013640,
-      "name": "HARI",
-      "buyIns": 12,
+      "id": 1788074608479,
+      "name": "AJAY",
+      "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 4550
+      "cashOutCoins": 0
     }
   ],
-  "activeSessionId": "S_mtea6ujnk5t2xa",
-  "activeHost": null,
+  "activeSessionId": "S_mtfhg80cebvb9r",
+  "activeHost": {
+    "deviceId": "dev_ufpc465o",
+    "deviceName": "Sandeep Mac",
+    "heartbeatAt": "2026-08-30T07:23:52.025Z"
+  },
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -1073,6 +1042,56 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788074615412_fx10",
+      "time": "2026-08-30 12:53:35",
+      "text": "Buy-in decreased for ABHISHEK: count = 3. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788074613944_lo59",
+      "time": "2026-08-30 12:53:33",
+      "text": "Buy-in increased for ABHISHEK: count = 4. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788074613794_fm8w",
+      "time": "2026-08-30 12:53:33",
+      "text": "Buy-in increased for ABHISHEK: count = 3. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788074613578_qtoa",
+      "time": "2026-08-30 12:53:33",
+      "text": "Buy-in increased for ABHISHEK: count = 2. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788074611811_dr1b",
+      "time": "2026-08-30 12:53:31",
+      "text": "Buy-in increased for AKSHAY: count = 2. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788074608479_0umv",
+      "time": "2026-08-30 12:53:28",
+      "text": "Added \"AJAY\" with 1 buy-in (1000c). • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788074605711_9al7",
+      "time": "2026-08-30 12:53:25",
+      "text": "Added \"ABHISHEK\" with 1 buy-in (1000c). • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788074600848_rvyv",
+      "time": "2026-08-30 12:53:20",
+      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788074600845_91y2",
+      "time": "2026-08-30 12:53:20",
+      "text": "Started new session and claimed host. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788074591712_zw7u",
+      "time": "2026-08-30 12:53:11",
+      "text": "Cleared active session dashboard. • by Sandeep Mac"
+    },
     {
       "id": "L_1788074326280_dyb7",
       "time": "2026-08-30 12:48:46",
@@ -2851,46 +2870,6 @@
     {
       "time": "2026-07-26 01:18:00",
       "text": "Saved session to database."
-    },
-    {
-      "time": "2026-07-26 01:17:00",
-      "text": "Calculated minimum transaction settlement."
-    },
-    {
-      "time": "2026-07-26 01:12:00",
-      "text": "Calculated minimum transaction settlement."
-    },
-    {
-      "time": "2026-07-26 01:08:00",
-      "text": "Calculated minimum transaction settlement."
-    },
-    {
-      "time": "2026-07-26 01:07:00",
-      "text": "Calculated minimum transaction settlement."
-    },
-    {
-      "time": "2026-07-25 23:44:00",
-      "text": "Calculated minimum transaction settlement."
-    },
-    {
-      "time": "2026-07-25 23:33:00",
-      "text": "Buy-in increased for KUNAL: count = 4."
-    },
-    {
-      "time": "2026-07-25 23:31:00",
-      "text": "Buy-in increased for HARI: count = 4."
-    },
-    {
-      "time": "2026-07-25 23:17:00",
-      "text": "Buy-in increased for KUNAL: count = 3."
-    },
-    {
-      "time": "2026-07-25 22:12:00",
-      "text": "Buy-in increased for KUNAL: count = 2."
-    },
-    {
-      "time": "2026-07-25 22:05:00",
-      "text": "Buy-in increased for HARI: count = 3."
     }
   ],
   "knownRoster": [
