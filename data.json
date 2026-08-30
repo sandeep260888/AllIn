@@ -1008,7 +1008,7 @@
     {
       "id": 1788001970009,
       "name": "GAGAN",
-      "buyIns": 17,
+      "buyIns": 13,
       "buyInCoins": 1000,
       "cashOutCoins": 9330
     },
@@ -1073,6 +1073,26 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788072935528_2obl",
+      "time": "2026-08-30 12:25:35",
+      "text": "Buy-in decreased for GAGAN: count = 13. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788072934862_5pfw",
+      "time": "2026-08-30 12:25:34",
+      "text": "Buy-in decreased for GAGAN: count = 14. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788072933395_xzf1",
+      "time": "2026-08-30 12:25:33",
+      "text": "Buy-in decreased for GAGAN: count = 15. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788072933077_87g6",
+      "time": "2026-08-30 12:25:33",
+      "text": "Buy-in decreased for GAGAN: count = 16. • by Sandeep Mac"
+    },
     {
       "id": "L_1788072846250_tmiu",
       "time": "2026-08-30 12:24:06",
@@ -2858,22 +2878,6 @@
     {
       "time": "2026-07-25 20:52:11",
       "text": "Buy-in increased for MOHINI: count = 3."
-    },
-    {
-      "time": "2026-07-25 20:52:11",
-      "text": "Buy-in increased for MOHINI: count = 2."
-    },
-    {
-      "time": "2026-07-25 20:52:08",
-      "text": "Buy-in increased for SANDEEP: count = 4."
-    },
-    {
-      "time": "2026-07-25 20:51:44",
-      "text": "Buy-in decreased for AKSHAY: count = 3."
-    },
-    {
-      "time": "2026-07-25 20:51:44",
-      "text": "Buy-in decreased for AKSHAY: count = 4."
     }
   ],
   "knownRoster": [
