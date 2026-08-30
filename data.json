@@ -1050,7 +1050,7 @@
     {
       "id": 1788002013640,
       "name": "HARI",
-      "buyIns": 12,
+      "buyIns": 16,
       "buyInCoins": 1000,
       "cashOutCoins": 4550
     }
@@ -1073,6 +1073,36 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788073389589_iphr",
+      "time": "2026-08-30 12:33:09",
+      "text": "Buy-in increased for HARI: count = 16. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788073387139_c0fo",
+      "time": "2026-08-30 12:33:07",
+      "text": "Buy-in decreased for HARI: count = 15. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788073378139_0x2u",
+      "time": "2026-08-30 12:32:58",
+      "text": "Buy-in increased for HARI: count = 16. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788073373573_1wtc",
+      "time": "2026-08-30 12:32:53",
+      "text": "Buy-in increased for HARI: count = 15. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788073373306_c3m2",
+      "time": "2026-08-30 12:32:53",
+      "text": "Buy-in increased for HARI: count = 14. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788073373074_me3q",
+      "time": "2026-08-30 12:32:53",
+      "text": "Buy-in increased for HARI: count = 13. • by Sandeep Mac"
+    },
     {
       "id": "L_1788072935528_2obl",
       "time": "2026-08-30 12:25:35",
@@ -2854,30 +2884,6 @@
     {
       "time": "2026-07-25 20:54:53",
       "text": "Calculated minimum transaction settlement."
-    },
-    {
-      "time": "2026-07-25 20:54:52",
-      "text": "Calculated minimum transaction settlement."
-    },
-    {
-      "time": "2026-07-25 20:54:50",
-      "text": "Calculated minimum transaction settlement."
-    },
-    {
-      "time": "2026-07-25 20:53:32",
-      "text": "Calculated minimum transaction settlement."
-    },
-    {
-      "time": "2026-07-25 20:53:21",
-      "text": "Calculated minimum transaction settlement."
-    },
-    {
-      "time": "2026-07-25 20:53:06",
-      "text": "Buy-in increased for AKSHAY: count = 4."
-    },
-    {
-      "time": "2026-07-25 20:52:11",
-      "text": "Buy-in increased for MOHINI: count = 3."
     }
   ],
   "knownRoster": [
