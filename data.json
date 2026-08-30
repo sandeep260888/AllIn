@@ -1,6 +1,60 @@
 {
   "savedSessions": [
     {
+      "sessionId": "S_mtea6ujnk5t2xa",
+      "date": "2026-08-30T02:11:44.124Z",
+      "entries": [
+        {
+          "name": "RAVI",
+          "investedCoins": 5000,
+          "finalCoins": 25450,
+          "netVal": 10225
+        },
+        {
+          "name": "GAGAN",
+          "investedCoins": 13000,
+          "finalCoins": 9330,
+          "netVal": -1835
+        },
+        {
+          "name": "ALOK",
+          "investedCoins": 15000,
+          "finalCoins": 9550,
+          "netVal": -2725
+        },
+        {
+          "name": "SONAK",
+          "investedCoins": 1000,
+          "finalCoins": 0,
+          "netVal": -500
+        },
+        {
+          "name": "RISHI",
+          "investedCoins": 4000,
+          "finalCoins": 6860,
+          "netVal": 1430
+        },
+        {
+          "name": "AKSHAY",
+          "investedCoins": 10000,
+          "finalCoins": 6660,
+          "netVal": -1670
+        },
+        {
+          "name": "ABHISHEK",
+          "investedCoins": 3000,
+          "finalCoins": 600,
+          "netVal": -1200
+        },
+        {
+          "name": "HARI",
+          "investedCoins": 12000,
+          "finalCoins": 4550,
+          "netVal": -3725
+        }
+      ]
+    },
+    {
       "sessionId": "S_mta53ylp0m07zp",
       "date": "2026-08-26T18:27:20.443Z",
       "entries": [
@@ -945,49 +999,63 @@
   ],
   "activePlayers": [
     {
-      "id": 1787751554285,
-      "name": "AKSHAY",
-      "buyIns": 4,
+      "id": 1788001956321,
+      "name": "RAVI",
+      "buyIns": 5,
       "buyInCoins": 1000,
-      "cashOutCoins": 12000
+      "cashOutCoins": 25450
     },
     {
-      "id": 1787751559513,
+      "id": 1788001970009,
       "name": "GAGAN",
-      "buyIns": 7,
+      "buyIns": 13,
+      "buyInCoins": 1000,
+      "cashOutCoins": 9330
+    },
+    {
+      "id": 1788001972960,
+      "name": "ALOK",
+      "buyIns": 15,
+      "buyInCoins": 1000,
+      "cashOutCoins": 9550
+    },
+    {
+      "id": 1788001988999,
+      "name": "SONAK",
+      "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
     {
-      "id": 1787751563425,
+      "id": 1788001994903,
       "name": "RISHI",
-      "buyIns": 2,
-      "buyInCoins": 1000,
-      "cashOutCoins": 9510
-    },
-    {
-      "id": 1787751567313,
-      "name": "ABHISHEK",
       "buyIns": 4,
       "buyInCoins": 1000,
-      "cashOutCoins": 4740
+      "cashOutCoins": 6860
     },
     {
-      "id": 1787751571663,
-      "name": "RAVI",
-      "buyIns": 7,
+      "id": 1788002008209,
+      "name": "AKSHAY",
+      "buyIns": 10,
       "buyInCoins": 1000,
-      "cashOutCoins": 2500
+      "cashOutCoins": 6660
     },
     {
-      "id": 1787751573813,
+      "id": 1788002010930,
+      "name": "ABHISHEK",
+      "buyIns": 3,
+      "buyInCoins": 1000,
+      "cashOutCoins": 600
+    },
+    {
+      "id": 1788002013640,
       "name": "HARI",
-      "buyIns": 7,
+      "buyIns": 12,
       "buyInCoins": 1000,
-      "cashOutCoins": 2250
+      "cashOutCoins": 4550
     }
   ],
-  "activeSessionId": "S_mta53ylp0m07zp",
+  "activeSessionId": "S_mtea6ujnk5t2xa",
   "activeHost": null,
   "settings": {
     "coinCount": "2",
@@ -1005,6 +1073,10 @@
     ]
   },
   "logs": [
+    {
+      "time": "2026-08-30 02:11:44",
+      "text": "Updated existing session in database."
+    },
     {
       "time": "2026-08-26 18:27:20",
       "text": "Saved session to database."
