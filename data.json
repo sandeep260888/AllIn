@@ -1021,11 +1021,7 @@
     }
   ],
   "activeSessionId": "S_mtfhg80cebvb9r",
-  "activeHost": {
-    "deviceId": "dev_ufpc465o",
-    "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-08-30T07:23:52.025Z"
-  },
+  "activeHost": null,
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -1042,6 +1038,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788074931376_vihn",
+      "time": "2026-08-30 12:58:51",
+      "text": "Stopped hosting. • by Sandeep Mac"
+    },
     {
       "id": "L_1788074615412_fx10",
       "time": "2026-08-30 12:53:35",
@@ -2866,10 +2867,6 @@
     {
       "time": "2026-07-27 16:49:14",
       "text": "Removed \"GAGAN\"."
-    },
-    {
-      "time": "2026-07-26 01:18:00",
-      "text": "Saved session to database."
     }
   ],
   "knownRoster": [
