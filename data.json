@@ -1,6 +1,48 @@
 {
   "savedSessions": [
     {
+      "sessionId": "S_mtiq20z1ehno8c",
+      "date": "2026-09-01T18:15:46.558Z",
+      "entries": [
+        {
+          "name": "AKSHAY",
+          "investedCoins": 6000,
+          "finalCoins": 9270,
+          "netVal": 1635
+        },
+        {
+          "name": "GAGAN",
+          "investedCoins": 1000,
+          "finalCoins": 5610,
+          "netVal": 2305
+        },
+        {
+          "name": "HARI",
+          "investedCoins": 7000,
+          "finalCoins": 0,
+          "netVal": -3500
+        },
+        {
+          "name": "RAVI",
+          "investedCoins": 2000,
+          "finalCoins": 5600,
+          "netVal": 1800
+        },
+        {
+          "name": "SANDEEP",
+          "investedCoins": 5000,
+          "finalCoins": 2520,
+          "netVal": -1240
+        },
+        {
+          "name": "VIKAS",
+          "investedCoins": 2000,
+          "finalCoins": 0,
+          "netVal": -1000
+        }
+      ]
+    },
+    {
       "sessionId": "S_mthb04gaaaihf3",
       "date": "2026-09-01T07:12:18.232Z",
       "entries": [
@@ -1081,7 +1123,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-01T18:14:25.981Z"
+    "heartbeatAt": "2026-09-01T18:15:47.131Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1099,6 +1141,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788286546558_r4sq",
+      "time": "2026-09-01 23:45:46",
+      "text": "Saved session to database. • by Sandeep Mac"
+    },
     {
       "id": "L_1788286453783_gr59",
       "time": "2026-09-01 23:44:13",
@@ -2998,10 +3045,6 @@
     {
       "time": "2026-07-31 08:38:42",
       "text": "Buy-in decreased for KUNAL: count = 2."
-    },
-    {
-      "time": "2026-07-31 08:38:39",
-      "text": "Pushed live state to GitHub repo."
     }
   ],
   "knownRoster": [
