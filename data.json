@@ -1,6 +1,42 @@
 {
   "savedSessions": [
     {
+      "sessionId": "S_mthb04gaaaihf3",
+      "date": "2026-08-31T16:36:40.824Z",
+      "entries": [
+        {
+          "name": "GAGAN",
+          "investedCoins": 6000,
+          "finalCoins": 0,
+          "netVal": -3000
+        },
+        {
+          "name": "RISHI",
+          "investedCoins": 2000,
+          "finalCoins": 5140,
+          "netVal": 1570
+        },
+        {
+          "name": "HARI",
+          "investedCoins": 1000,
+          "finalCoins": 7250,
+          "netVal": 3125
+        },
+        {
+          "name": "AKSHAY",
+          "investedCoins": 5000,
+          "finalCoins": 4610,
+          "netVal": -195
+        },
+        {
+          "name": "ABHISHEK",
+          "investedCoins": 3000,
+          "finalCoins": 0,
+          "netVal": -1500
+        }
+      ]
+    },
+    {
       "sessionId": "S_mtea6ujnk5t2xa",
       "date": "2026-08-30T02:11:44.124Z",
       "entries": [
@@ -997,8 +1033,44 @@
       ]
     }
   ],
-  "activePlayers": [],
-  "activeSessionId": null,
+  "activePlayers": [
+    {
+      "id": 1788184707462,
+      "name": "GAGAN",
+      "buyIns": 6,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1788184722120,
+      "name": "RISHI",
+      "buyIns": 2,
+      "buyInCoins": 1000,
+      "cashOutCoins": 5140
+    },
+    {
+      "id": 1788184725141,
+      "name": "HARI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 7250
+    },
+    {
+      "id": 1788184728835,
+      "name": "AKSHAY",
+      "buyIns": 5,
+      "buyInCoins": 1000,
+      "cashOutCoins": 4610
+    },
+    {
+      "id": 1788184735338,
+      "name": "ABHISHEK",
+      "buyIns": 3,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    }
+  ],
+  "activeSessionId": "S_mthb04gaaaihf3",
   "activeHost": null,
   "settings": {
     "coinCount": "2",
@@ -1016,6 +1088,151 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788194200824_8rcu",
+      "time": "2026-08-31 22:06:40",
+      "text": "Saved session to database. • by Akshay"
+    },
+    {
+      "id": "L_1788194067437_prxn",
+      "time": "2026-08-31 22:04:27",
+      "text": "Settlement: AKSHAY pays RISHI ₹195.00 • by Akshay"
+    },
+    {
+      "id": "L_1788194067436_pzfc",
+      "time": "2026-08-31 22:04:27",
+      "text": "Settlement: ABHISHEK pays RISHI ₹1375.00 • by Akshay"
+    },
+    {
+      "id": "L_1788194067435_bgvy",
+      "time": "2026-08-31 22:04:27",
+      "text": "Settlement: ABHISHEK pays HARI ₹125.00 • by Akshay"
+    },
+    {
+      "id": "L_1788194067434_utbu",
+      "time": "2026-08-31 22:04:27",
+      "text": "Settlement: GAGAN pays HARI ₹3000.00 • by Akshay"
+    },
+    {
+      "id": "L_1788194067433_o5jk",
+      "time": "2026-08-31 22:04:27",
+      "text": "Settlement calculated (4 transfers). • by Akshay"
+    },
+    {
+      "id": "L_1788194067329_o80d",
+      "time": "2026-08-31 22:04:27",
+      "text": "Set final coins for RISHI: 5140 coins. • by Akshay"
+    },
+    {
+      "id": "L_1788194055972_jr8p",
+      "time": "2026-08-31 22:04:15",
+      "text": "Set final coins for HARI: 7250 coins. • by Akshay"
+    },
+    {
+      "id": "L_1788193975436_xebp",
+      "time": "2026-08-31 22:02:55",
+      "text": "Set final coins for AKSHAY: 4610 coins. • by Akshay"
+    },
+    {
+      "id": "L_1788193926956_uc6v",
+      "time": "2026-08-31 22:02:06",
+      "text": "Set final coins for HARI: 8000 coins. • by Akshay"
+    },
+    {
+      "id": "L_1788193915054_r775",
+      "time": "2026-08-31 22:01:55",
+      "text": "Set final coins for RISHI: 5390 coins. • by Akshay"
+    },
+    {
+      "id": "L_1788192498235_v31t",
+      "time": "2026-08-31 21:38:18",
+      "text": "Buy-in increased for AKSHAY: count = 5. • by Akshay"
+    },
+    {
+      "id": "L_1788192497850_ve83",
+      "time": "2026-08-31 21:38:17",
+      "text": "Buy-in increased for AKSHAY: count = 4. • by Akshay"
+    },
+    {
+      "id": "L_1788192027473_xbky",
+      "time": "2026-08-31 21:30:27",
+      "text": "Buy-in increased for GAGAN: count = 6. • by Akshay"
+    },
+    {
+      "id": "L_1788191946582_sn0p",
+      "time": "2026-08-31 21:29:06",
+      "text": "Buy-in increased for ABHISHEK: count = 3. • by Akshay"
+    },
+    {
+      "id": "L_1788191941142_cxcy",
+      "time": "2026-08-31 21:29:01",
+      "text": "Buy-in increased for AKSHAY: count = 3. • by Akshay"
+    },
+    {
+      "id": "L_1788189611593_4sxb",
+      "time": "2026-08-31 20:50:11",
+      "text": "Buy-in increased for ABHISHEK: count = 2. • by Akshay"
+    },
+    {
+      "id": "L_1788188695627_xsos",
+      "time": "2026-08-31 20:34:55",
+      "text": "Buy-in increased for RISHI: count = 2. • by Akshay"
+    },
+    {
+      "id": "L_1788188694061_hf01",
+      "time": "2026-08-31 20:34:54",
+      "text": "Buy-in increased for GAGAN: count = 5. • by Akshay"
+    },
+    {
+      "id": "L_1788187260448_k7l9",
+      "time": "2026-08-31 20:11:00",
+      "text": "Buy-in increased for GAGAN: count = 4. • by Akshay"
+    },
+    {
+      "id": "L_1788186936205_k9jo",
+      "time": "2026-08-31 20:05:36",
+      "text": "Buy-in increased for AKSHAY: count = 2. • by Akshay"
+    },
+    {
+      "id": "L_1788185097179_e4a6",
+      "time": "2026-08-31 19:34:57",
+      "text": "Buy-in increased for GAGAN: count = 3. • by Akshay"
+    },
+    {
+      "id": "L_1788184737806_olp3",
+      "time": "2026-08-31 19:28:57",
+      "text": "Buy-in increased for GAGAN: count = 2. • by Akshay"
+    },
+    {
+      "id": "L_1788184735339_edo5",
+      "time": "2026-08-31 19:28:55",
+      "text": "Added \"ABHISHEK\" with 1 buy-in (1000c). • by Akshay"
+    },
+    {
+      "id": "L_1788184728835_7pwo",
+      "time": "2026-08-31 19:28:48",
+      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by Akshay"
+    },
+    {
+      "id": "L_1788184725141_54zy",
+      "time": "2026-08-31 19:28:45",
+      "text": "Added \"HARI\" with 1 buy-in (1000c). • by Akshay"
+    },
+    {
+      "id": "L_1788184722120_r60e",
+      "time": "2026-08-31 19:28:42",
+      "text": "Added \"RISHI\" with 1 buy-in (1000c). • by Akshay"
+    },
+    {
+      "id": "L_1788184707462_4z8x",
+      "time": "2026-08-31 19:28:27",
+      "text": "Added \"GAGAN\" with 1 buy-in (1000c). • by Akshay"
+    },
+    {
+      "id": "L_1788184707460_rj3h",
+      "time": "2026-08-31 19:28:27",
+      "text": "Started new session and claimed host. • by Akshay"
+    },
     {
       "id": "L_1788074944107_t3eq",
       "time": "2026-08-30 12:59:04",
@@ -2732,122 +2949,6 @@
     {
       "time": "2026-07-28 18:16:57",
       "text": "Buy-in decreased for RAVI: count = 3."
-    },
-    {
-      "time": "2026-07-28 18:16:55",
-      "text": "Buy-in increased for RAVI: count = 4."
-    },
-    {
-      "time": "2026-07-28 18:16:55",
-      "text": "Buy-in increased for RAVI: count = 3."
-    },
-    {
-      "time": "2026-07-28 18:16:55",
-      "text": "Buy-in increased for RAVI: count = 2."
-    },
-    {
-      "time": "2026-07-28 18:16:44",
-      "text": "Buy-in increased for MOHINI: count = 7."
-    },
-    {
-      "time": "2026-07-28 18:16:43",
-      "text": "Buy-in increased for MOHINI: count = 6."
-    },
-    {
-      "time": "2026-07-28 18:16:42",
-      "text": "Buy-in increased for MOHINI: count = 5."
-    },
-    {
-      "time": "2026-07-28 18:16:42",
-      "text": "Buy-in increased for MOHINI: count = 4."
-    },
-    {
-      "time": "2026-07-28 18:16:42",
-      "text": "Buy-in increased for MOHINI: count = 3."
-    },
-    {
-      "time": "2026-07-28 18:16:41",
-      "text": "Buy-in increased for MOHINI: count = 2."
-    },
-    {
-      "time": "2026-07-28 18:16:12",
-      "text": "Buy-in increased for KUNAL: count = 2."
-    },
-    {
-      "time": "2026-07-28 18:14:26",
-      "text": "Added \"HARSHIT\" with 1 buy-in (1000c)."
-    },
-    {
-      "time": "2026-07-28 18:13:58",
-      "text": "Added \"SANDEEP\" with 1 buy-in (1000c)."
-    },
-    {
-      "time": "2026-07-28 18:13:54",
-      "text": "Added \"RISHI\" with 1 buy-in (1000c)."
-    },
-    {
-      "time": "2026-07-28 18:13:50",
-      "text": "Added \"RAVI\" with 1 buy-in (1000c)."
-    },
-    {
-      "time": "2026-07-28 18:13:42",
-      "text": "Added \"MOHINI\" with 1 buy-in (1000c)."
-    },
-    {
-      "time": "2026-07-28 18:13:35",
-      "text": "Added \"KUNAL\" with 1 buy-in (1000c)."
-    },
-    {
-      "time": "2026-07-28 18:13:30",
-      "text": "Added \"AKSHAY\" with 1 buy-in (1000c)."
-    },
-    {
-      "time": "2026-07-27 16:58:01",
-      "text": "Exported data file."
-    },
-    {
-      "time": "2026-07-27 16:52:13",
-      "text": "Saved session to database."
-    },
-    {
-      "time": "2026-07-27 16:51:49",
-      "text": "Calculated minimum transaction settlement."
-    },
-    {
-      "time": "2026-07-27 16:50:22",
-      "text": "Buy-in increased for RAVI: count = 4."
-    },
-    {
-      "time": "2026-07-27 16:50:22",
-      "text": "Buy-in increased for RAVI: count = 3."
-    },
-    {
-      "time": "2026-07-27 16:50:22",
-      "text": "Buy-in increased for RAVI: count = 2."
-    },
-    {
-      "time": "2026-07-27 16:50:09",
-      "text": "Buy-in decreased for MOHINI: count = 1."
-    },
-    {
-      "time": "2026-07-27 16:49:56",
-      "text": "Added \"RISHI\" with 1 buy-in (1000c)."
-    },
-    {
-      "time": "2026-07-27 16:49:45",
-      "text": "Added \"RAVI\" with 1 buy-in (1000c)."
-    },
-    {
-      "time": "2026-07-27 16:49:37",
-      "text": "Added \"KUNAL\" with 1 buy-in (1000c)."
-    },
-    {
-      "time": "2026-07-27 16:49:31",
-      "text": "Added \"HARI\" with 1 buy-in (1000c)."
-    },
-    {
-      "time": "2026-07-27 16:49:22",
-      "text": "Buy-in decreased for MOHINI: count = 2."
     }
   ],
   "knownRoster": [
