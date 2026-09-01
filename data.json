@@ -1081,7 +1081,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-01T18:14:09.096Z"
+    "heartbeatAt": "2026-09-01T18:14:25.981Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1099,6 +1099,41 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788286453783_gr59",
+      "time": "2026-09-01 23:44:13",
+      "text": "Settlement: VIKAS pays AKSHAY ₹1000.00 • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788286453782_z0gk",
+      "time": "2026-09-01 23:44:13",
+      "text": "Settlement: SANDEEP pays AKSHAY ₹635.00 • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788286453781_koi6",
+      "time": "2026-09-01 23:44:13",
+      "text": "Settlement: SANDEEP pays RAVI ₹605.00 • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788286453780_cd42",
+      "time": "2026-09-01 23:44:13",
+      "text": "Settlement: HARI pays RAVI ₹1195.00 • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788286453778_9rx9",
+      "time": "2026-09-01 23:44:13",
+      "text": "Settlement: HARI pays GAGAN ₹2305.00 • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788286453776_mqd6",
+      "time": "2026-09-01 23:44:13",
+      "text": "Settlement calculated (5 transfers). • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788286450619_y2tt",
+      "time": "2026-09-01 23:44:10",
+      "text": "Set final coins for RAVI: 5600 coins. • by Sandeep Mac"
+    },
     {
       "id": "L_1788286433691_bvy4",
       "time": "2026-09-01 23:43:53",
@@ -2966,34 +3001,6 @@
     },
     {
       "time": "2026-07-31 08:38:39",
-      "text": "Pushed live state to GitHub repo."
-    },
-    {
-      "time": "2026-07-30 03:57:15",
-      "text": "Removed \"GAGAN\"."
-    },
-    {
-      "time": "2026-07-29 21:36:54",
-      "text": "Pushed live state to GitHub repo."
-    },
-    {
-      "time": "2026-07-29 21:36:46",
-      "text": "Added \"GAGAN\" with 1 buy-in (1000c)."
-    },
-    {
-      "time": "2026-07-29 21:35:30",
-      "text": "Removed \"SANDEEP\"."
-    },
-    {
-      "time": "2026-07-29 21:19:34",
-      "text": "Calculated minimum transaction settlement."
-    },
-    {
-      "time": "2026-07-29 21:08:33",
-      "text": "Pushed live state to GitHub repo."
-    },
-    {
-      "time": "2026-07-29 21:08:04",
       "text": "Pushed live state to GitHub repo."
     }
   ],
