@@ -1051,7 +1051,7 @@
     {
       "id": 1788270461730,
       "name": "HARI",
-      "buyIns": 3,
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1081,7 +1081,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-01T15:51:58.928Z"
+    "heartbeatAt": "2026-09-01T16:07:25.029Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1099,6 +1099,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788278829314_1s0w",
+      "time": "2026-09-01 21:37:09",
+      "text": "Buy-in increased for HARI: count = 4. • by Sandeep Mac"
+    },
     {
       "id": "L_1788277903014_tvrj",
       "time": "2026-09-01 21:21:43",
@@ -2984,10 +2989,6 @@
     {
       "time": "2026-07-29 17:16:30",
       "text": "Calculated minimum transaction settlement."
-    },
-    {
-      "time": "2026-07-29 17:16:23",
-      "text": "Saved session to database."
     }
   ],
   "knownRoster": [
