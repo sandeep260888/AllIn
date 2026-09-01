@@ -1037,7 +1037,7 @@
     {
       "id": 1788270453618,
       "name": "AKSHAY",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1081,7 +1081,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-01T14:45:22.815Z"
+    "heartbeatAt": "2026-09-01T14:53:09.531Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1099,6 +1099,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788274373663_91ca",
+      "time": "2026-09-01 20:22:53",
+      "text": "Buy-in increased for AKSHAY: count = 3. • by Sandeep Mac"
+    },
     {
       "id": "L_1788273907463_tstj",
       "time": "2026-09-01 20:15:07",
@@ -2977,10 +2982,6 @@
     {
       "time": "2026-07-29 15:33:47",
       "text": "Buy-in increased for HARI: count = 3."
-    },
-    {
-      "time": "2026-07-29 15:22:37",
-      "text": "Buy-in increased for HARSHIT: count = 3."
     }
   ],
   "knownRoster": [
