@@ -1051,7 +1051,7 @@
     {
       "id": 1788270461730,
       "name": "HARI",
-      "buyIns": 6,
+      "buyIns": 7,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1081,7 +1081,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-01T16:33:00.590Z"
+    "heartbeatAt": "2026-09-01T16:50:25.073Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1099,6 +1099,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788281409295_tbjg",
+      "time": "2026-09-01 22:20:09",
+      "text": "Buy-in increased for HARI: count = 7. • by Sandeep Mac"
+    },
     {
       "id": "L_1788280364998_c2wy",
       "time": "2026-09-01 22:02:44",
@@ -2987,10 +2992,6 @@
     {
       "time": "2026-07-29 21:02:28",
       "text": "Added \"SANDEEP\" with 1 buy-in (1000c)."
-    },
-    {
-      "time": "2026-07-29 21:01:57",
-      "text": "Pulled latest live state from GitHub."
     }
   ],
   "knownRoster": [
