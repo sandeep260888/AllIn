@@ -1065,7 +1065,7 @@
     {
       "id": 1788270467379,
       "name": "SANDEEP",
-      "buyIns": 3,
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1081,7 +1081,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-01T14:41:19.599Z"
+    "heartbeatAt": "2026-09-01T14:44:23.341Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1099,6 +1099,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788273847664_yar4",
+      "time": "2026-09-01 20:14:07",
+      "text": "Buy-in increased for SANDEEP: count = 4. • by Sandeep Mac"
+    },
     {
       "id": "L_1788273663863_w9wy",
       "time": "2026-09-01 20:11:03",
@@ -2972,10 +2977,6 @@
     {
       "time": "2026-07-29 14:35:12",
       "text": "Buy-in increased for AKSHAY: count = 2."
-    },
-    {
-      "time": "2026-07-29 14:15:54",
-      "text": "Buy-in increased for KUNAL: count = 2."
     }
   ],
   "knownRoster": [
