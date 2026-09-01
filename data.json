@@ -1039,7 +1039,7 @@
       "name": "AKSHAY",
       "buyIns": 6,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 9270
     },
     {
       "id": 1788270458131,
@@ -1081,7 +1081,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-01T18:13:35.448Z"
+    "heartbeatAt": "2026-09-01T18:13:52.332Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1099,6 +1099,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788286416761_8cxu",
+      "time": "2026-09-01 23:43:36",
+      "text": "Set final coins for GAGAN: 5610 coins. • by Sandeep Mac"
+    },
     {
       "id": "L_1788286398658_mtuo",
       "time": "2026-09-01 23:43:18",
@@ -2989,10 +2994,6 @@
     {
       "time": "2026-07-29 21:07:34",
       "text": "Saved session to database."
-    },
-    {
-      "time": "2026-07-29 21:02:47",
-      "text": "Pushed live state to GitHub repo."
     }
   ],
   "knownRoster": [
