@@ -1068,13 +1068,20 @@
       "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1788272965331,
+      "name": "VIKAS",
+      "buyIns": 2,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "activeSessionId": "S_mtiq20z1ehno8c",
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-01T14:27:53.814Z"
+    "heartbeatAt": "2026-09-01T14:29:46.901Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1092,6 +1099,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788272971380_dldi",
+      "time": "2026-09-01 19:59:31",
+      "text": "Buy-in increased for VIKAS: count = 2. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788272965331_20ak",
+      "time": "2026-09-01 19:59:25",
+      "text": "Added \"VIKAS\" with 1 buy-in (1000c). • by Sandeep Mac"
+    },
     {
       "id": "L_1788272858247_q6cj",
       "time": "2026-09-01 19:57:38",
@@ -2958,14 +2975,6 @@
     {
       "time": "2026-07-29 14:09:54",
       "text": "Buy-in increased for RAVI: count = 3."
-    },
-    {
-      "time": "2026-07-29 14:04:18",
-      "text": "Buy-in increased for RISHI: count = 4."
-    },
-    {
-      "time": "2026-07-29 14:02:33",
-      "text": "Buy-in increased for RAVI: count = 2."
     }
   ],
   "knownRoster": [
@@ -2980,6 +2989,7 @@
     "ALOK",
     "ABHISHEK",
     "HARSHIT",
-    "SONAK"
+    "SONAK",
+    "VIKAS"
   ]
 }
