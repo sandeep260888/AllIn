@@ -1035,43 +1035,47 @@
   ],
   "activePlayers": [
     {
-      "id": 1788184707462,
-      "name": "GAGAN",
-      "buyIns": 6,
+      "id": 1788270453618,
+      "name": "AKSHAY",
+      "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
     {
-      "id": 1788184722120,
-      "name": "RISHI",
-      "buyIns": 2,
+      "id": 1788270458131,
+      "name": "GAGAN",
+      "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 5140
+      "cashOutCoins": 0
     },
     {
-      "id": 1788184725141,
+      "id": 1788270461730,
       "name": "HARI",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 7250
+      "cashOutCoins": 0
     },
     {
-      "id": 1788184728835,
-      "name": "AKSHAY",
-      "buyIns": 5,
+      "id": 1788270464763,
+      "name": "RAVI",
+      "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 4610
+      "cashOutCoins": 0
     },
     {
-      "id": 1788184735338,
-      "name": "ABHISHEK",
-      "buyIns": 3,
+      "id": 1788270467379,
+      "name": "SANDEEP",
+      "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
   ],
-  "activeSessionId": "S_mthb04gaaaihf3",
-  "activeHost": null,
+  "activeSessionId": "S_mtiq20z1ehno8c",
+  "activeHost": {
+    "deviceId": "dev_ufpc465o",
+    "deviceName": "Sandeep Mac",
+    "heartbeatAt": "2026-09-01T13:48:03.814Z"
+  },
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -1089,6 +1093,41 @@
   },
   "logs": [
     {
+      "id": "L_1788270467379_7wjj",
+      "time": "2026-09-01 19:17:47",
+      "text": "Added \"SANDEEP\" with 1 buy-in (1000c). • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788270464763_kpei",
+      "time": "2026-09-01 19:17:44",
+      "text": "Added \"RAVI\" with 1 buy-in (1000c). • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788270461730_chzs",
+      "time": "2026-09-01 19:17:41",
+      "text": "Added \"HARI\" with 1 buy-in (1000c). • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788270458131_qdci",
+      "time": "2026-09-01 19:17:38",
+      "text": "Added \"GAGAN\" with 1 buy-in (1000c). • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788270453618_ck95",
+      "time": "2026-09-01 19:17:33",
+      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788270453614_7gjf",
+      "time": "2026-09-01 19:17:33",
+      "text": "Started new session and claimed host. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788270449085_lmxb",
+      "time": "2026-09-01 19:17:29",
+      "text": "Cleared active session dashboard. • by Sandeep Mac"
+    },
+    {
       "id": "L_1788246738232_mmpf",
       "time": "2026-09-01 12:42:18",
       "text": "Updated existing session in database. • by Akshay"
@@ -1097,6 +1136,11 @@
       "id": "L_1788246729611_24qm",
       "time": "2026-09-01 12:42:09",
       "text": "Pushed live state to GitHub repo. • by Akshay"
+    },
+    {
+      "id": "L_1788198042087_8hf3",
+      "time": "2026-08-31 23:10:42",
+      "text": "Manual refresh synchronized with GitHub. • by Sandeep Mac"
     },
     {
       "id": "L_1788194200824_8rcu",
@@ -2919,38 +2963,6 @@
     {
       "time": "2026-07-29 13:27:11",
       "text": "Buy-in increased for RISHI: count = 2."
-    },
-    {
-      "time": "2026-07-29 13:07:03",
-      "text": "Added \"KUNAL\" with 1 buy-in (1000c)."
-    },
-    {
-      "time": "2026-07-29 13:06:59",
-      "text": "Added \"SANDEEP\" with 1 buy-in (1000c)."
-    },
-    {
-      "time": "2026-07-29 13:06:56",
-      "text": "Added \"MOHINI\" with 1 buy-in (1000c)."
-    },
-    {
-      "time": "2026-07-29 13:06:53",
-      "text": "Added \"RISHI\" with 1 buy-in (1000c)."
-    },
-    {
-      "time": "2026-07-29 13:06:49",
-      "text": "Added \"RAVI\" with 1 buy-in (1000c)."
-    },
-    {
-      "time": "2026-07-29 13:06:45",
-      "text": "Added \"HARI\" with 1 buy-in (1000c)."
-    },
-    {
-      "time": "2026-07-29 13:06:42",
-      "text": "Added \"AKSHAY\" with 1 buy-in (1000c)."
-    },
-    {
-      "time": "2026-07-29 13:06:38",
-      "text": "Added \"HARSHIT\" with 1 buy-in (1000c)."
     }
   ],
   "knownRoster": [
