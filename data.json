@@ -1065,7 +1065,7 @@
     {
       "id": 1788270467379,
       "name": "SANDEEP",
-      "buyIns": 4,
+      "buyIns": 5,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1081,7 +1081,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-01T15:20:14.513Z"
+    "heartbeatAt": "2026-09-01T15:32:25.486Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1099,6 +1099,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788276729930_c688",
+      "time": "2026-09-01 21:02:09",
+      "text": "Buy-in increased for SANDEEP: count = 5. • by Sandeep Mac"
+    },
     {
       "id": "L_1788275985946_atzi",
       "time": "2026-09-01 20:49:45",
@@ -2982,10 +2987,6 @@
     {
       "time": "2026-07-29 16:19:45",
       "text": "Buy-in increased for RAVI: count = 5."
-    },
-    {
-      "time": "2026-07-29 16:09:14",
-      "text": "Buy-in increased for RAVI: count = 4."
     }
   ],
   "knownRoster": [
