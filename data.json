@@ -1051,7 +1051,7 @@
     {
       "id": 1788270461730,
       "name": "HARI",
-      "buyIns": 4,
+      "buyIns": 6,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1081,7 +1081,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-01T16:07:25.029Z"
+    "heartbeatAt": "2026-09-01T16:33:00.590Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1099,6 +1099,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788280364998_c2wy",
+      "time": "2026-09-01 22:02:44",
+      "text": "Buy-in increased for HARI: count = 6. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788280363414_9gee",
+      "time": "2026-09-01 22:02:43",
+      "text": "Buy-in increased for HARI: count = 5. • by Sandeep Mac"
+    },
     {
       "id": "L_1788278829314_1s0w",
       "time": "2026-09-01 21:37:09",
@@ -2981,14 +2991,6 @@
     {
       "time": "2026-07-29 21:01:57",
       "text": "Pulled latest live state from GitHub."
-    },
-    {
-      "time": "2026-07-29 20:49:44",
-      "text": "Exported data file."
-    },
-    {
-      "time": "2026-07-29 17:16:30",
-      "text": "Calculated minimum transaction settlement."
     }
   ],
   "knownRoster": [
