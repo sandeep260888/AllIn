@@ -1123,7 +1123,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-01T18:15:47.131Z"
+    "heartbeatAt": "2026-09-01T19:26:42.140Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1141,6 +1141,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788290798758_ednz",
+      "time": "2026-09-02 00:56:38",
+      "text": "Stopped hosting. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788286551776_ftaz",
+      "time": "2026-09-01 23:45:51",
+      "text": "Published session — hosting released automatically. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788286549189_degj",
+      "time": "2026-09-01 23:45:49",
+      "text": "Pushed live state to GitHub repo. • by Sandeep Mac"
+    },
     {
       "id": "L_1788286546558_r4sq",
       "time": "2026-09-01 23:45:46",
@@ -3032,19 +3047,6 @@
     {
       "time": "2026-07-31 08:38:55",
       "text": "Cleared active session dashboard."
-    },
-    {
-      "id": "L_1785556100326",
-      "time": "2026-07-31 08:38:55",
-      "text": "Cleared active session dashboard."
-    },
-    {
-      "time": "2026-07-31 08:38:42",
-      "text": "Buy-in decreased for KUNAL: count = 1."
-    },
-    {
-      "time": "2026-07-31 08:38:42",
-      "text": "Buy-in decreased for KUNAL: count = 2."
     }
   ],
   "knownRoster": [
