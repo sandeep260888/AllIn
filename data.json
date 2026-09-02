@@ -1100,7 +1100,7 @@
     {
       "id": 1788356839434,
       "name": "HARSHIT",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1130,7 +1130,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-02T14:18:28.094Z"
+    "heartbeatAt": "2026-09-02T14:25:03.786Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1148,6 +1148,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788359088211_jqir",
+      "time": "2026-09-02 19:54:48",
+      "text": "Buy-in increased for HARSHIT: count = 2. • by Sandeep Mac"
+    },
     {
       "id": "L_1788358692195_18kp",
       "time": "2026-09-02 19:48:12",
@@ -3054,11 +3059,6 @@
       "text": "Buy-in increased for SANDEEP: count = 8."
     },
     {
-      "time": "2026-08-01 11:24:09",
-      "text": "Buy-in decreased for SANDEEP: count = 7."
-    },
-    {
-      "id": "L_1785556100333",
       "time": "2026-08-01 11:24:09",
       "text": "Buy-in decreased for SANDEEP: count = 7."
     }
