@@ -1116,7 +1116,7 @@
       "name": "RISHI",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 800
     },
     {
       "id": 1788356855316,
@@ -1130,7 +1130,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-02T16:06:46.857Z"
+    "heartbeatAt": "2026-09-02T16:30:53.959Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1148,6 +1148,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788366638308_efhc",
+      "time": "2026-09-02 22:00:38",
+      "text": "Set final coins for RISHI: 800 coins. • by Sandeep Mac"
+    },
     {
       "id": "L_1788365190760_8f7k",
       "time": "2026-09-02 21:36:30",
@@ -3058,11 +3063,6 @@
     {
       "id": "L_1785586436058_cpaw",
       "time": "2026-08-01 12:13:56",
-      "text": "Started new active session • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785586306785_mmy4",
-      "time": "2026-08-01 12:11:46",
       "text": "Started new active session • by SANDEEP MAC"
     }
   ],
