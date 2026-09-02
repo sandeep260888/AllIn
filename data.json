@@ -1081,7 +1081,7 @@
       "name": "AKSHAY",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 6420
+      "cashOutCoins": 6280
     },
     {
       "id": 1788356830133,
@@ -1130,7 +1130,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-02T16:55:52.763Z"
+    "heartbeatAt": "2026-09-02T16:56:36.544Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1148,6 +1148,56 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788368184701_3slr",
+      "time": "2026-09-02 22:26:24",
+      "text": "Settlement: HARSHIT pays GAGAN ₹35.00 • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788368184700_c9qs",
+      "time": "2026-09-02 22:26:24",
+      "text": "Settlement: RISHI pays GAGAN ₹100.00 • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788368184697_xbtu",
+      "time": "2026-09-02 22:26:24",
+      "text": "Settlement: SANDEEP pays GAGAN ₹365.00 • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788368184696_58mv",
+      "time": "2026-09-02 22:26:24",
+      "text": "Settlement: SANDEEP pays MOHINI ₹325.00 • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788368184694_zpxk",
+      "time": "2026-09-02 22:26:24",
+      "text": "Settlement: ALOK pays MOHINI ₹260.00 • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788368184692_vkju",
+      "time": "2026-09-02 22:26:24",
+      "text": "Settlement: ALOK pays AKSHAY ₹2640.00 • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788368184689_vdrn",
+      "time": "2026-09-02 22:26:24",
+      "text": "Settlement calculated (6 transfers). • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788368180491_xm4r",
+      "time": "2026-09-02 22:26:20",
+      "text": "Set final coins for AKSHAY: 6280 coins. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788368167442_tm1k",
+      "time": "2026-09-02 22:26:07",
+      "text": "Set final coins for HARSHIT: 1930 coins. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788368158970_hfhy",
+      "time": "2026-09-02 22:25:58",
+      "text": "Set final coins for HARSHIT: 1900 coins. • by Sandeep Mac"
+    },
     {
       "id": "L_1788368137254_agf8",
       "time": "2026-09-02 22:25:37",
@@ -3014,56 +3064,6 @@
       "id": "L_1785586583529_h6as",
       "time": "2026-08-01 12:16:23",
       "text": "Buy-in increased for AKSHAY: count = 5 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785586581693_5nyw",
-      "time": "2026-08-01 12:16:21",
-      "text": "Buy-in increased for AKSHAY: count = 4 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785586568619_4yy8",
-      "time": "2026-08-01 12:16:08",
-      "text": "Buy-in increased for HARSHIT: count = 2 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785586546622_hjwq",
-      "time": "2026-08-01 12:15:46",
-      "text": "Buy-in increased for ABHISHEK: count = 3 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785586542618_yi20",
-      "time": "2026-08-01 12:15:42",
-      "text": "Buy-in decreased for HARSHIT: count = 1 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785586534495_1y3j",
-      "time": "2026-08-01 12:15:34",
-      "text": "Buy-in increased for AKSHAY: count = 3 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785586519301_8cgn",
-      "time": "2026-08-01 12:15:19",
-      "text": "Buy-in decreased for SANDEEP: count = 2 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785586507396_ne5f",
-      "time": "2026-08-01 12:15:07",
-      "text": "Buy-in increased for SANDEEP: count = 3 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785586495802_54vt",
-      "time": "2026-08-01 12:14:55",
-      "text": "Buy-in increased for SANDEEP: count = 2 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785586493574_iga2",
-      "time": "2026-08-01 12:14:53",
-      "text": "Buy-in increased for ABHISHEK: count = 2 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785586491628_qx2l",
-      "time": "2026-08-01 12:14:51",
-      "text": "Buy-in increased for AKSHAY: count = 2 • by SANDEEP MAC"
     }
   ],
   "knownRoster": [
