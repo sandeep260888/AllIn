@@ -1088,14 +1088,14 @@
       "name": "ALOK",
       "buyIns": 7,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 1200
     },
     {
       "id": 1788356836566,
       "name": "GAGAN",
       "buyIns": 4,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 5000
     },
     {
       "id": 1788356839434,
@@ -1123,14 +1123,14 @@
       "name": "SANDEEP",
       "buyIns": 2,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 620
     }
   ],
   "activeSessionId": "S_mtk5h9s3k5k064",
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-02T16:54:53.998Z"
+    "heartbeatAt": "2026-09-02T16:55:52.763Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1148,6 +1148,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788368137254_agf8",
+      "time": "2026-09-02 22:25:37",
+      "text": "Set final coins for GAGAN: 5000 coins. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788368126953_04dj",
+      "time": "2026-09-02 22:25:26",
+      "text": "Set final coins for SANDEEP: 620 coins. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788368122772_q3m0",
+      "time": "2026-09-02 22:25:22",
+      "text": "Set final coins for ALOK: 1200 coins. • by Sandeep Mac"
+    },
     {
       "id": "L_1788368077955_a79r",
       "time": "2026-09-02 22:24:37",
@@ -3049,21 +3064,6 @@
       "id": "L_1785586491628_qx2l",
       "time": "2026-08-01 12:14:51",
       "text": "Buy-in increased for AKSHAY: count = 2 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785586478404_ehp0",
-      "time": "2026-08-01 12:14:38",
-      "text": "Added \"SANDEEP\" with 1 buy-in (1000c) • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785586470361_8i6d",
-      "time": "2026-08-01 12:14:30",
-      "text": "Added \"HARSHIT\" with 1 buy-in (1000c) • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785586463055_sy6t",
-      "time": "2026-08-01 12:14:23",
-      "text": "Added \"ABHISHEK\" with 1 buy-in (1000c) • by SANDEEP MAC"
     }
   ],
   "knownRoster": [
