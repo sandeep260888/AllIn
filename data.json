@@ -1109,7 +1109,7 @@
       "name": "MOHINI",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 2170
     },
     {
       "id": 1788356848983,
@@ -1130,7 +1130,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-02T14:53:10.178Z"
+    "heartbeatAt": "2026-09-02T15:00:01.682Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1148,6 +1148,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788361186090_7e41",
+      "time": "2026-09-02 20:29:46",
+      "text": "Set final coins for MOHINI: 2170 coins. • by Sandeep Mac"
+    },
     {
       "id": "L_1788360774624_3pal",
       "time": "2026-09-02 20:22:54",
@@ -3058,10 +3063,6 @@
       "id": "L_1785556100335",
       "time": "2026-08-01 11:25:57",
       "text": "Cleared active session dashboard."
-    },
-    {
-      "time": "2026-08-01 11:24:20",
-      "text": "Buy-in increased for SANDEEP: count = 8."
     }
   ],
   "knownRoster": [
