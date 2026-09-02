@@ -1102,7 +1102,7 @@
       "name": "HARSHIT",
       "buyIns": 2,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 1930
     },
     {
       "id": 1788356845817,
@@ -1130,7 +1130,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-02T16:30:53.959Z"
+    "heartbeatAt": "2026-09-02T16:31:34.301Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1148,6 +1148,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788366678452_xd0y",
+      "time": "2026-09-02 22:01:18",
+      "text": "Set final coins for HARSHIT: 1930 coins. • by Sandeep Mac"
+    },
     {
       "id": "L_1788366638308_efhc",
       "time": "2026-09-02 22:00:38",
@@ -3059,11 +3064,6 @@
       "id": "L_1785586452257_zzg2",
       "time": "2026-08-01 12:14:12",
       "text": "Added \"AKSHAY\" with 1 buy-in (1000c) • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785586436058_cpaw",
-      "time": "2026-08-01 12:13:56",
-      "text": "Started new active session • by SANDEEP MAC"
     }
   ],
   "knownRoster": [
