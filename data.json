@@ -1,6 +1,54 @@
 {
   "savedSessions": [
     {
+      "sessionId": "S_mtk5h9s3k5k064",
+      "date": "2026-09-02T16:58:02.354Z",
+      "entries": [
+        {
+          "name": "AKSHAY",
+          "investedCoins": 1000,
+          "finalCoins": 6280,
+          "netVal": 2640
+        },
+        {
+          "name": "ALOK",
+          "investedCoins": 7000,
+          "finalCoins": 1200,
+          "netVal": -2900
+        },
+        {
+          "name": "GAGAN",
+          "investedCoins": 4000,
+          "finalCoins": 5000,
+          "netVal": 500
+        },
+        {
+          "name": "HARSHIT",
+          "investedCoins": 2000,
+          "finalCoins": 1930,
+          "netVal": -35
+        },
+        {
+          "name": "MOHINI",
+          "investedCoins": 1000,
+          "finalCoins": 2170,
+          "netVal": 585
+        },
+        {
+          "name": "RISHI",
+          "investedCoins": 1000,
+          "finalCoins": 800,
+          "netVal": -100
+        },
+        {
+          "name": "SANDEEP",
+          "investedCoins": 2000,
+          "finalCoins": 620,
+          "netVal": -690
+        }
+      ]
+    },
+    {
       "sessionId": "S_mtiq20z1ehno8c",
       "date": "2026-09-01T18:15:46.558Z",
       "entries": [
@@ -1130,7 +1178,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-02T16:57:51.189Z"
+    "heartbeatAt": "2026-09-02T16:58:03.395Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1148,6 +1196,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788368282355_22lt",
+      "time": "2026-09-02 22:28:02",
+      "text": "Saved session to database. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788368272976_phry",
+      "time": "2026-09-02 22:27:52",
+      "text": "Pushed live state to GitHub repo. • by Sandeep Mac"
+    },
     {
       "id": "L_1788368184701_3slr",
       "time": "2026-09-02 22:26:24",
@@ -3054,16 +3112,6 @@
       "id": "L_1785586609015_htqd",
       "time": "2026-08-01 12:16:49",
       "text": "Buy-in increased for ABHISHEK: count = 4 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785586606963_10kz",
-      "time": "2026-08-01 12:16:46",
-      "text": "Buy-in increased for AKSHAY: count = 6 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785586583529_h6as",
-      "time": "2026-08-01 12:16:23",
-      "text": "Buy-in increased for AKSHAY: count = 5 • by SANDEEP MAC"
     }
   ],
   "knownRoster": [
