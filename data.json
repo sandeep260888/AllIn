@@ -1086,7 +1086,7 @@
     {
       "id": 1788356830133,
       "name": "ALOK",
-      "buyIns": 5,
+      "buyIns": 7,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1130,7 +1130,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-02T15:23:06.314Z"
+    "heartbeatAt": "2026-09-02T16:06:46.857Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1148,6 +1148,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788365190760_8f7k",
+      "time": "2026-09-02 21:36:30",
+      "text": "Buy-in increased for ALOK: count = 7. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788365189877_32fn",
+      "time": "2026-09-02 21:36:29",
+      "text": "Buy-in increased for ALOK: count = 6. • by Sandeep Mac"
+    },
     {
       "id": "L_1788362570769_xt9f",
       "time": "2026-09-02 20:52:50",
@@ -3053,16 +3063,6 @@
     {
       "id": "L_1785586306785_mmy4",
       "time": "2026-08-01 12:11:46",
-      "text": "Started new active session • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785586296568_1o54",
-      "time": "2026-08-01 12:11:36",
-      "text": "Started new active session • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785586261196_vtxt",
-      "time": "2026-08-01 12:11:01",
       "text": "Started new active session • by SANDEEP MAC"
     }
   ],
