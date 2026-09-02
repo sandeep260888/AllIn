@@ -1175,11 +1175,7 @@
     }
   ],
   "activeSessionId": "S_mtk5h9s3k5k064",
-  "activeHost": {
-    "deviceId": "dev_ufpc465o",
-    "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-02T16:58:03.395Z"
-  },
+  "activeHost": null,
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -1196,6 +1192,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788368286557_snmv",
+      "time": "2026-09-02 22:28:06",
+      "text": "Published session — hosting released automatically. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788368284994_15fo",
+      "time": "2026-09-02 22:28:04",
+      "text": "Pushed live state to GitHub repo. • by Sandeep Mac"
+    },
     {
       "id": "L_1788368282355_22lt",
       "time": "2026-09-02 22:28:02",
@@ -3102,16 +3108,6 @@
       "id": "L_1785586693569_poj9",
       "time": "2026-08-01 12:18:13",
       "text": "Buy-in increased for HARSHIT: count = 3 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785586690045_9z2h",
-      "time": "2026-08-01 12:18:10",
-      "text": "Buy-in increased for SANDEEP: count = 3 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785586609015_htqd",
-      "time": "2026-08-01 12:16:49",
-      "text": "Buy-in increased for ABHISHEK: count = 4 • by SANDEEP MAC"
     }
   ],
   "knownRoster": [
