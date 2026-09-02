@@ -1077,50 +1077,61 @@
   ],
   "activePlayers": [
     {
-      "id": 1788270453618,
+      "id": 1788356825288,
       "name": "AKSHAY",
-      "buyIns": 6,
-      "buyInCoins": 1000,
-      "cashOutCoins": 9270
-    },
-    {
-      "id": 1788270458131,
-      "name": "GAGAN",
       "buyIns": 1,
-      "buyInCoins": 1000,
-      "cashOutCoins": 5610
-    },
-    {
-      "id": 1788270461730,
-      "name": "HARI",
-      "buyIns": 7,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
     {
-      "id": 1788270464763,
-      "name": "RAVI",
-      "buyIns": 2,
+      "id": 1788356830133,
+      "name": "ALOK",
+      "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 5600
+      "cashOutCoins": 0
     },
     {
-      "id": 1788270467379,
+      "id": 1788356836566,
+      "name": "GAGAN",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1788356839434,
+      "name": "HARSHIT",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1788356845817,
+      "name": "MOHINI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1788356848983,
+      "name": "RISHI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1788356855316,
       "name": "SANDEEP",
-      "buyIns": 5,
-      "buyInCoins": 1000,
-      "cashOutCoins": 2520
-    },
-    {
-      "id": 1788272965331,
-      "name": "VIKAS",
-      "buyIns": 2,
+      "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
   ],
-  "activeSessionId": "S_mtiq20z1ehno8c",
-  "activeHost": null,
+  "activeSessionId": "S_mtk5h9s3k5k064",
+  "activeHost": {
+    "deviceId": "dev_ufpc465o",
+    "deviceName": "Sandeep Mac",
+    "heartbeatAt": "2026-09-02T13:47:50.931Z"
+  },
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -1137,6 +1148,51 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788356855316_ykps",
+      "time": "2026-09-02 19:17:35",
+      "text": "Added \"SANDEEP\" with 1 buy-in (1000c). • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788356848983_dogn",
+      "time": "2026-09-02 19:17:28",
+      "text": "Added \"RISHI\" with 1 buy-in (1000c). • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788356845817_9e3j",
+      "time": "2026-09-02 19:17:25",
+      "text": "Added \"MOHINI\" with 1 buy-in (1000c). • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788356839434_kb3s",
+      "time": "2026-09-02 19:17:19",
+      "text": "Added \"HARSHIT\" with 1 buy-in (1000c). • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788356836566_o4l8",
+      "time": "2026-09-02 19:17:16",
+      "text": "Added \"GAGAN\" with 1 buy-in (1000c). • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788356830134_rsb7",
+      "time": "2026-09-02 19:17:10",
+      "text": "Added \"ALOK\" with 1 buy-in (1000c). • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788356825288_ew2w",
+      "time": "2026-09-02 19:17:05",
+      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788356825284_x2ab",
+      "time": "2026-09-02 19:17:05",
+      "text": "Started new session and claimed host. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788356815933_hap8",
+      "time": "2026-09-02 19:16:55",
+      "text": "Cleared active session dashboard. • by Sandeep Mac"
+    },
     {
       "id": "L_1788356803867_8xvm",
       "time": "2026-09-02 19:16:43",
@@ -3003,47 +3059,6 @@
     {
       "time": "2026-07-31 08:39:46",
       "text": "Added \"RISHI\" with 1 buy-in (1000c)."
-    },
-    {
-      "id": "L_1785556100331",
-      "time": "2026-07-31 08:39:46",
-      "text": "Added \"RISHI\" with 1 buy-in (1000c)."
-    },
-    {
-      "time": "2026-07-31 08:39:19",
-      "text": "Added \"SANDEEP\" with 1 buy-in (1000c)."
-    },
-    {
-      "id": "L_1785556100330",
-      "time": "2026-07-31 08:39:19",
-      "text": "Added \"SANDEEP\" with 1 buy-in (1000c)."
-    },
-    {
-      "time": "2026-07-31 08:39:09",
-      "text": "Added \"RAVI\" with 1 buy-in (1000c)."
-    },
-    {
-      "id": "L_1785556100329",
-      "time": "2026-07-31 08:39:09",
-      "text": "Added \"RAVI\" with 1 buy-in (1000c)."
-    },
-    {
-      "time": "2026-07-31 08:39:05",
-      "text": "Added \"HARI\" with 1 buy-in (1000c)."
-    },
-    {
-      "id": "L_1785556100328",
-      "time": "2026-07-31 08:39:05",
-      "text": "Added \"HARI\" with 1 buy-in (1000c)."
-    },
-    {
-      "time": "2026-07-31 08:39:01",
-      "text": "Added \"AKSHAY\" with 1 buy-in (1000c)."
-    },
-    {
-      "id": "L_1785556100327",
-      "time": "2026-07-31 08:39:01",
-      "text": "Added \"AKSHAY\" with 1 buy-in (1000c)."
     }
   ],
   "knownRoster": [
