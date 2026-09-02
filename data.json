@@ -1081,7 +1081,7 @@
       "name": "AKSHAY",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 6420
     },
     {
       "id": 1788356830133,
@@ -1130,7 +1130,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-02T16:31:34.301Z"
+    "heartbeatAt": "2026-09-02T16:54:53.998Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1148,6 +1148,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788368077955_a79r",
+      "time": "2026-09-02 22:24:37",
+      "text": "Set final coins for AKSHAY: 6420 coins. • by Sandeep Mac"
+    },
     {
       "id": "L_1788366678452_xd0y",
       "time": "2026-09-02 22:01:18",
@@ -3059,11 +3064,6 @@
       "id": "L_1785586463055_sy6t",
       "time": "2026-08-01 12:14:23",
       "text": "Added \"ABHISHEK\" with 1 buy-in (1000c) • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785586452257_zzg2",
-      "time": "2026-08-01 12:14:12",
-      "text": "Added \"AKSHAY\" with 1 buy-in (1000c) • by SANDEEP MAC"
     }
   ],
   "knownRoster": [
