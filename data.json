@@ -1093,7 +1093,7 @@
     {
       "id": 1788356836566,
       "name": "GAGAN",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1130,7 +1130,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-02T14:08:27.584Z"
+    "heartbeatAt": "2026-09-02T14:13:59.112Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1148,6 +1148,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788358423295_690v",
+      "time": "2026-09-02 19:43:43",
+      "text": "Buy-in increased for GAGAN: count = 2. • by Sandeep Mac"
+    },
     {
       "id": "L_1788358092046_382e",
       "time": "2026-09-02 19:38:12",
@@ -3053,11 +3058,6 @@
       "text": "Buy-in decreased for SANDEEP: count = 7."
     },
     {
-      "time": "2026-07-31 08:39:58",
-      "text": "Added \"KUNAL\" with 1 buy-in (1000c)."
-    },
-    {
-      "id": "L_1785556100332",
       "time": "2026-07-31 08:39:58",
       "text": "Added \"KUNAL\" with 1 buy-in (1000c)."
     }
