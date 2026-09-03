@@ -1136,7 +1136,7 @@
       "name": "AKSHAY",
       "buyIns": 6,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 2900
     },
     {
       "id": 1788443103776,
@@ -1157,7 +1157,7 @@
       "name": "RAVI",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 1000
     }
   ],
   "activeSessionId": "S_mtlku90qlgyon0",
@@ -1172,6 +1172,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788450642511_lmvr",
+      "time": "2026-09-03 21:20:42",
+      "text": "Set final coins for RAVI: 1000 coins. • by Device-5V07"
+    },
     {
       "id": "L_1788450542935_r2nt",
       "time": "2026-09-03 21:19:02",
@@ -3083,11 +3088,6 @@
       "id": "L_1785589390548_j0yz",
       "time": "2026-08-01 13:03:10",
       "text": "Buy-in increased for GAGAN: count = 6 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785589388499_13sg",
-      "time": "2026-08-01 13:03:08",
-      "text": "Buy-in increased for GAGAN: count = 4 • by SANDEEP MAC"
     }
   ],
   "knownRoster": [
