@@ -1134,7 +1134,7 @@
     {
       "id": 1788443097034,
       "name": "AKSHAY",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1172,6 +1172,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788446505268_y2ys",
+      "time": "2026-09-03 20:11:45",
+      "text": "Buy-in increased for AKSHAY: count = 3. • by Device-5V07"
+    },
     {
       "id": "L_1788445790944_78u2",
       "time": "2026-09-03 19:59:50",
@@ -3083,11 +3088,6 @@
       "id": "L_1785589360077_t0s5",
       "time": "2026-08-01 13:02:40",
       "text": "Added \"HARSHIT\" with 1 buy-in (1000c) • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785589351527_bjz4",
-      "time": "2026-08-01 13:02:31",
-      "text": "Added \"ALOK\" with 1 buy-in (1000c) • by SANDEEP MAC"
     }
   ],
   "knownRoster": [
