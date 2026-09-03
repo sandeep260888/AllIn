@@ -1127,7 +1127,7 @@
     {
       "id": 1788443092276,
       "name": "RISHI",
-      "buyIns": 1,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1172,6 +1172,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788444963908_71e6",
+      "time": "2026-09-03 19:46:03",
+      "text": "Buy-in increased for RISHI: count = 3. • by Device-5V07"
+    },
+    {
+      "id": "L_1788444963478_ai10",
+      "time": "2026-09-03 19:46:03",
+      "text": "Buy-in increased for RISHI: count = 2. • by Device-5V07"
+    },
+    {
+      "id": "L_1788444722790_n0ox",
+      "time": "2026-09-03 19:42:02",
+      "text": "Pushed live state to GitHub repo. • by Device-5V07"
+    },
     {
       "id": "L_1788443139201_ym6p",
       "time": "2026-09-03 19:15:39",
@@ -3072,21 +3087,6 @@
     {
       "id": "L_1785588793728_dimw",
       "time": "2026-08-01 12:53:13",
-      "text": "Started new active session • by SANDEEP PHONE"
-    },
-    {
-      "id": "L_1785588769452_dckg",
-      "time": "2026-08-01 12:52:49",
-      "text": "Calculated minimum transaction settlement • by SANDEEP PHONE"
-    },
-    {
-      "id": "L_1785588767788_fpta",
-      "time": "2026-08-01 12:52:47",
-      "text": "Calculated minimum transaction settlement • by SANDEEP PHONE"
-    },
-    {
-      "id": "L_1785588697446_uvpd",
-      "time": "2026-08-01 12:51:37",
       "text": "Started new active session • by SANDEEP PHONE"
     }
   ],
