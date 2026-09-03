@@ -1148,7 +1148,7 @@
     {
       "id": 1788443107717,
       "name": "MOHINI",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1172,6 +1172,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788445054012_jzow",
+      "time": "2026-09-03 19:47:34",
+      "text": "Buy-in increased for MOHINI: count = 2. • by Device-5V07"
+    },
     {
       "id": "L_1788444963908_71e6",
       "time": "2026-09-03 19:46:03",
@@ -3082,11 +3087,6 @@
     {
       "id": "L_1785588817507_yu5h",
       "time": "2026-08-01 12:53:37",
-      "text": "Started new active session • by SANDEEP PHONE"
-    },
-    {
-      "id": "L_1785588793728_dimw",
-      "time": "2026-08-01 12:53:13",
       "text": "Started new active session • by SANDEEP PHONE"
     }
   ],
