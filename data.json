@@ -1129,7 +1129,7 @@
       "name": "RISHI",
       "buyIns": 4,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 5560
     },
     {
       "id": 1788443097034,
@@ -1172,6 +1172,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788450472277_seqs",
+      "time": "2026-09-03 21:17:52",
+      "text": "Set final coins for RISHI: 5560 coins. • by Device-5V07"
+    },
     {
       "id": "L_1788449495705_oo51",
       "time": "2026-09-03 21:01:35",
@@ -3083,11 +3088,6 @@
       "id": "L_1785589381240_v0hm",
       "time": "2026-08-01 13:03:01",
       "text": "Buy-in increased for HARSHIT: count = 3 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785589378986_g4oa",
-      "time": "2026-08-01 13:02:58",
-      "text": "Buy-in increased for GAGAN: count = 2 • by SANDEEP MAC"
     }
   ],
   "knownRoster": [
