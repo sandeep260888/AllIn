@@ -1127,7 +1127,7 @@
     {
       "id": 1788443092276,
       "name": "RISHI",
-      "buyIns": 3,
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1148,7 +1148,7 @@
     {
       "id": 1788443107717,
       "name": "MOHINI",
-      "buyIns": 3,
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1172,6 +1172,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788447997849_wg41",
+      "time": "2026-09-03 20:36:37",
+      "text": "Buy-in increased for RISHI: count = 4. • by Device-5V07"
+    },
+    {
+      "id": "L_1788447994216_znjv",
+      "time": "2026-09-03 20:36:34",
+      "text": "Buy-in increased for MOHINI: count = 4. • by Device-5V07"
+    },
     {
       "id": "L_1788446814706_am51",
       "time": "2026-09-03 20:16:54",
@@ -3078,16 +3088,6 @@
       "id": "L_1785589372686_3rsz",
       "time": "2026-08-01 13:02:52",
       "text": "Buy-in increased for HARSHIT: count = 2 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785589370046_sqk3",
-      "time": "2026-08-01 13:02:50",
-      "text": "Buy-in increased for ALOK: count = 3 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785589364853_0sjf",
-      "time": "2026-08-01 13:02:44",
-      "text": "Buy-in increased for ALOK: count = 2 • by SANDEEP MAC"
     }
   ],
   "knownRoster": [
