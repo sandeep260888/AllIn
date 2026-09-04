@@ -1173,6 +1173,11 @@
   },
   "logs": [
     {
+      "id": "L_1788484653863_v0ze",
+      "time": "2026-09-04 06:47:33",
+      "text": "Manual refresh synchronized with GitHub. • by Sandeep"
+    },
+    {
       "id": "L_1788450659942_qrq4",
       "time": "2026-09-03 21:20:59",
       "text": "Set final coins for AKSHAY: 2900 coins. • by Device-5V07"
@@ -1301,6 +1306,76 @@
       "id": "L_1788443067051_erwz",
       "time": "2026-09-03 19:14:27",
       "text": "Cleared active session dashboard. • by Device-5V07"
+    },
+    {
+      "id": "L_1788369714594_9l57",
+      "time": "2026-09-02 22:51:54",
+      "text": "Settlement: HARSHIT pays GAGAN ₹35.00 • by Sandeep"
+    },
+    {
+      "id": "L_1788369714592_8ava",
+      "time": "2026-09-02 22:51:54",
+      "text": "Settlement: RISHI pays GAGAN ₹100.00 • by Sandeep"
+    },
+    {
+      "id": "L_1788369714590_9o7t",
+      "time": "2026-09-02 22:51:54",
+      "text": "Settlement: SANDEEP pays GAGAN ₹365.00 • by Sandeep"
+    },
+    {
+      "id": "L_1788369714588_ffho",
+      "time": "2026-09-02 22:51:54",
+      "text": "Settlement: SANDEEP pays MOHINI ₹325.00 • by Sandeep"
+    },
+    {
+      "id": "L_1788369714585_ex3a",
+      "time": "2026-09-02 22:51:54",
+      "text": "Settlement: ALOK pays MOHINI ₹260.00 • by Sandeep"
+    },
+    {
+      "id": "L_1788369714582_1yu8",
+      "time": "2026-09-02 22:51:54",
+      "text": "Settlement: ALOK pays AKSHAY ₹2640.00 • by Sandeep"
+    },
+    {
+      "id": "L_1788369714576_y6x5",
+      "time": "2026-09-02 22:51:54",
+      "text": "Settlement calculated (6 transfers). • by Sandeep"
+    },
+    {
+      "id": "L_1788369703147_532y",
+      "time": "2026-09-02 22:51:43",
+      "text": "Manual refresh synchronized with GitHub. • by Sandeep"
+    },
+    {
+      "id": "L_1788369690333_ye9w",
+      "time": "2026-09-02 22:51:30",
+      "text": "Settlement: VIKAS pays AKSHAY ₹1000.00 • by Sandeep"
+    },
+    {
+      "id": "L_1788369690332_utaq",
+      "time": "2026-09-02 22:51:30",
+      "text": "Settlement: SANDEEP pays AKSHAY ₹635.00 • by Sandeep"
+    },
+    {
+      "id": "L_1788369690330_84s6",
+      "time": "2026-09-02 22:51:30",
+      "text": "Settlement: SANDEEP pays RAVI ₹605.00 • by Sandeep"
+    },
+    {
+      "id": "L_1788369690329_t4zq",
+      "time": "2026-09-02 22:51:30",
+      "text": "Settlement: HARI pays RAVI ₹1195.00 • by Sandeep"
+    },
+    {
+      "id": "L_1788369690327_locc",
+      "time": "2026-09-02 22:51:30",
+      "text": "Settlement: HARI pays GAGAN ₹2305.00 • by Sandeep"
+    },
+    {
+      "id": "L_1788369690322_pwii",
+      "time": "2026-09-02 22:51:30",
+      "text": "Settlement calculated (5 transfers). • by Sandeep"
     },
     {
       "id": "L_1788368289886_jliu",
@@ -1521,6 +1596,46 @@
       "id": "L_1788290798758_ednz",
       "time": "2026-09-02 00:56:38",
       "text": "Stopped hosting. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788287285040_ndr4",
+      "time": "2026-09-01 23:58:05",
+      "text": "Random picker chose HARI. • by Sandeep"
+    },
+    {
+      "id": "L_1788287284575_vbg2",
+      "time": "2026-09-01 23:58:04",
+      "text": "Random picker chose VIKAS. • by Sandeep"
+    },
+    {
+      "id": "L_1788287284141_a7u4",
+      "time": "2026-09-01 23:58:04",
+      "text": "Random picker chose AKSHAY. • by Sandeep"
+    },
+    {
+      "id": "L_1788287283712_tizc",
+      "time": "2026-09-01 23:58:03",
+      "text": "Random picker chose VIKAS. • by Sandeep"
+    },
+    {
+      "id": "L_1788287277884_ejb8",
+      "time": "2026-09-01 23:57:57",
+      "text": "Random picker chose AKSHAY. • by Sandeep"
+    },
+    {
+      "id": "L_1788287277704_14up",
+      "time": "2026-09-01 23:57:57",
+      "text": "Random picker chose SANDEEP. • by Sandeep"
+    },
+    {
+      "id": "L_1788287277534_l03a",
+      "time": "2026-09-01 23:57:57",
+      "text": "Random picker chose HARI. • by Sandeep"
+    },
+    {
+      "id": "L_1788287277337_v375",
+      "time": "2026-09-01 23:57:57",
+      "text": "Random picker chose HARI. • by Sandeep"
     },
     {
       "id": "L_1788286551776_ftaz",
@@ -1828,6 +1943,11 @@
       "text": "Buy-in increased for AKSHAY: count = 3. • by Akshay"
     },
     {
+      "id": "L_1788190733880_m0yv",
+      "time": "2026-08-31 21:08:53",
+      "text": "Manual refresh synchronized with GitHub. • by Sandeep"
+    },
+    {
       "id": "L_1788189611593_4sxb",
       "time": "2026-08-31 20:50:11",
       "text": "Buy-in increased for ABHISHEK: count = 2. • by Akshay"
@@ -1893,6 +2013,11 @@
       "text": "Started new session and claimed host. • by Akshay"
     },
     {
+      "id": "L_1788075116489_gj0z",
+      "time": "2026-08-30 13:01:56",
+      "text": "Manual refresh synchronized with GitHub. • by Sandeep"
+    },
+    {
       "id": "L_1788074944107_t3eq",
       "time": "2026-08-30 12:59:04",
       "text": "Removed \"AJAY\". • by Sandeep Mac"
@@ -1911,6 +2036,16 @@
       "id": "L_1788074931376_vihn",
       "time": "2026-08-30 12:58:51",
       "text": "Stopped hosting. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788074760680_0pgt",
+      "time": "2026-08-30 12:56:00",
+      "text": "Manual refresh synchronized with GitHub. • by Sandeep"
+    },
+    {
+      "id": "L_1788074744094_ni3p",
+      "time": "2026-08-30 12:55:44",
+      "text": "Manual refresh synchronized with GitHub. • by Sandeep"
     },
     {
       "id": "L_1788074615412_fx10",
@@ -1963,6 +2098,16 @@
       "text": "Cleared active session dashboard. • by Sandeep Mac"
     },
     {
+      "id": "L_1788074480821_jved",
+      "time": "2026-08-30 12:51:20",
+      "text": "Manual refresh synchronized with GitHub. • by Sandeep"
+    },
+    {
+      "id": "L_1788074374736_tauq",
+      "time": "2026-08-30 12:49:34",
+      "text": "Manual refresh synchronized with GitHub. • by Sandeep"
+    },
+    {
       "id": "L_1788074326280_dyb7",
       "time": "2026-08-30 12:48:46",
       "text": "Buy-in decreased for HARI: count = 12. • by Sandeep Mac"
@@ -1981,6 +2126,36 @@
       "id": "L_1788074321764_14ml",
       "time": "2026-08-30 12:48:41",
       "text": "Buy-in decreased for HARI: count = 15. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788074299963_mumt",
+      "time": "2026-08-30 12:48:19",
+      "text": "Auto-push failed: data.json does not match e6575ea3a1f7dc08d99b664f18f83f54a5f84f87 • by Sandeep"
+    },
+    {
+      "id": "L_1788074287675_s52p",
+      "time": "2026-08-30 12:48:07",
+      "text": "Auto-push failed: data.json does not match e6575ea3a1f7dc08d99b664f18f83f54a5f84f87 • by Sandeep"
+    },
+    {
+      "id": "L_1788074275692_gs08",
+      "time": "2026-08-30 12:47:55",
+      "text": "Auto-push failed: data.json does not match e6575ea3a1f7dc08d99b664f18f83f54a5f84f87 • by Sandeep"
+    },
+    {
+      "id": "L_1788074262667_uxnw",
+      "time": "2026-08-30 12:47:42",
+      "text": "Auto-push failed: data.json does not match e6575ea3a1f7dc08d99b664f18f83f54a5f84f87 • by Sandeep"
+    },
+    {
+      "id": "L_1788074250513_vlct",
+      "time": "2026-08-30 12:47:30",
+      "text": "Auto-push failed: data.json does not match e6575ea3a1f7dc08d99b664f18f83f54a5f84f87 • by Sandeep"
+    },
+    {
+      "id": "L_1788074245710_8t18",
+      "time": "2026-08-30 12:47:25",
+      "text": "Pushed live state to GitHub repo. • by Sandeep"
     },
     {
       "id": "L_1788074231995_v4sv",
@@ -2913,181 +3088,6 @@
       "id": "L_1785593388721_hvwi",
       "time": "2026-08-01 14:09:48",
       "text": "Buy-in increased for ALOK: count = 5 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593388031_s88y",
-      "time": "2026-08-01 14:09:48",
-      "text": "Buy-in increased for ALOK: count = 4 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593387396_qym4",
-      "time": "2026-08-01 14:09:47",
-      "text": "Buy-in increased for ALOK: count = 3 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593159833_7w7v",
-      "time": "2026-08-01 14:05:59",
-      "text": "Buy-in decreased for ALOK: count = 2 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593157633_wlzp",
-      "time": "2026-08-01 14:05:57",
-      "text": "Buy-in decreased for ALOK: count = 4 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593089383_icnb",
-      "time": "2026-08-01 14:04:49",
-      "text": "Buy-in decreased for ALOK: count = 1 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593089203_6s4p",
-      "time": "2026-08-01 14:04:49",
-      "text": "Buy-in decreased for ALOK: count = 2 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593089021_8wdi",
-      "time": "2026-08-01 14:04:49",
-      "text": "Buy-in decreased for ALOK: count = 3 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593088837_ulog",
-      "time": "2026-08-01 14:04:48",
-      "text": "Buy-in decreased for ALOK: count = 4 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593062320_fpso",
-      "time": "2026-08-01 14:04:22",
-      "text": "Calculated minimum transaction settlement • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785592234228_32j5",
-      "time": "2026-08-01 13:50:34",
-      "text": "Buy-in increased for AKSHAY: count = 3 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785591983142_xjce",
-      "time": "2026-08-01 13:46:23",
-      "text": "Buy-in increased for ALOK: count = 5 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785591390098_hlet",
-      "time": "2026-08-01 13:36:30",
-      "text": "Buy-in increased for ALOK: count = 4 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785591387746_fbst",
-      "time": "2026-08-01 13:36:27",
-      "text": "Buy-in decreased for ABHISHEK: count = 2 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785591385487_ikkr",
-      "time": "2026-08-01 13:36:25",
-      "text": "Buy-in decreased for ABHISHEK: count = 3 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785591187144_67yt",
-      "time": "2026-08-01 13:33:07",
-      "text": "Buy-in increased for ALOK: count = 3 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785591184996_uwro",
-      "time": "2026-08-01 13:33:04",
-      "text": "Buy-in increased for ALOK: count = 2 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785591183175_gzmm",
-      "time": "2026-08-01 13:33:03",
-      "text": "Buy-in increased for AKSHAY: count = 2 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785591171866_w41m",
-      "time": "2026-08-01 13:32:51",
-      "text": "Buy-in increased for ABHISHEK: count = 3 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785591169103_j2dq",
-      "time": "2026-08-01 13:32:49",
-      "text": "Buy-in increased for ABHISHEK: count = 2 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785590989323_nhbz",
-      "time": "2026-08-01 13:29:49",
-      "text": "Calculated minimum transaction settlement • by SS’S"
-    },
-    {
-      "id": "L_1785590773416_biit",
-      "time": "2026-08-01 13:26:13",
-      "text": "Released active session lock for handoff • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785590558451_rn0o",
-      "time": "2026-08-01 13:22:38",
-      "text": "Released active session lock for handoff • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785590373397_t18w",
-      "time": "2026-08-01 13:19:33",
-      "text": "Added \"ALOK\" with 1 buy-in (1000c) • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785590368906_sf1c",
-      "time": "2026-08-01 13:19:28",
-      "text": "Added \"AKSHAY\" with 1 buy-in (1000c) • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785590366568_i9y8",
-      "time": "2026-08-01 13:19:26",
-      "text": "Added \"ABHISHEK\" with 1 buy-in (1000c) • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785590051594_sdwc",
-      "time": "2026-08-01 13:14:11",
-      "text": "Started new active session • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785589916645_shto",
-      "time": "2026-08-01 13:11:56",
-      "text": "Started new active session • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785589890049_fgag",
-      "time": "2026-08-01 13:11:30",
-      "text": "Started new active session • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785589820444_ehqy",
-      "time": "2026-08-01 13:10:20",
-      "text": "Started new active session • by SANDEEP PHONE"
-    },
-    {
-      "id": "L_1785589820228_xqcz",
-      "time": "2026-08-01 13:10:20",
-      "text": "Started new active session • by SANDEEP PHONE"
-    },
-    {
-      "id": "L_1785589819529_2c1u",
-      "time": "2026-08-01 13:10:19",
-      "text": "Started new active session • by SANDEEP PHONE"
-    },
-    {
-      "id": "L_1785589439598_tzjn",
-      "time": "2026-08-01 13:03:59",
-      "text": "Released active session lock for handoff • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785589423902_th3r",
-      "time": "2026-08-01 13:03:43",
-      "text": "Released active session lock for handoff • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785589401695_a6i3",
-      "time": "2026-08-01 13:03:21",
-      "text": "Buy-in increased for ALOK: count = 4 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785589400120_x5jr",
-      "time": "2026-08-01 13:03:20",
-      "text": "Buy-in decreased for HARSHIT: count = 2 • by SANDEEP MAC"
     }
   ],
   "knownRoster": [
