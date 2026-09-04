@@ -1,6 +1,72 @@
 {
   "savedSessions": [
     {
+      "sessionId": "S_mtmzfh7zd1xupd",
+      "date": "2026-09-04T21:52:40.843Z",
+      "entries": [
+        {
+          "name": "RAVI",
+          "investedCoins": 12000,
+          "finalCoins": 0,
+          "netVal": -6000
+        },
+        {
+          "name": "AKSHAY",
+          "investedCoins": 3000,
+          "finalCoins": 10900,
+          "netVal": 3950
+        },
+        {
+          "name": "HARSHIT",
+          "investedCoins": 4000,
+          "finalCoins": 2640,
+          "netVal": -680
+        },
+        {
+          "name": "GAGAN",
+          "investedCoins": 3000,
+          "finalCoins": 8130,
+          "netVal": 2565
+        },
+        {
+          "name": "ALOK",
+          "investedCoins": 15000,
+          "finalCoins": 6000,
+          "netVal": -4500
+        },
+        {
+          "name": "HARI",
+          "investedCoins": 1000,
+          "finalCoins": 6500,
+          "netVal": 2750
+        },
+        {
+          "name": "MOHINI",
+          "investedCoins": 3000,
+          "finalCoins": 0,
+          "netVal": -1500
+        },
+        {
+          "name": "ABHISHEK",
+          "investedCoins": 12000,
+          "finalCoins": 110,
+          "netVal": -5945
+        },
+        {
+          "name": "SANDEEP",
+          "investedCoins": 1000,
+          "finalCoins": 13140,
+          "netVal": 6070
+        },
+        {
+          "name": "RISHI",
+          "investedCoins": 2000,
+          "finalCoins": 8580,
+          "netVal": 3290
+        }
+      ]
+    },
+    {
       "sessionId": "S_mtk5h9s3k5k064",
       "date": "2026-09-02T16:58:02.354Z",
       "entries": [
@@ -1125,42 +1191,77 @@
   ],
   "activePlayers": [
     {
-      "id": 1788443092276,
-      "name": "RISHI",
-      "buyIns": 4,
+      "id": 1788528065210,
+      "name": "RAVI",
+      "buyIns": 12,
       "buyInCoins": 1000,
-      "cashOutCoins": 5360
+      "cashOutCoins": 0
     },
     {
-      "id": 1788443097034,
+      "id": 1788528078558,
       "name": "AKSHAY",
-      "buyIns": 6,
-      "buyInCoins": 1000,
-      "cashOutCoins": 2900
-    },
-    {
-      "id": 1788443103776,
-      "name": "HARI",
       "buyIns": 3,
       "buyInCoins": 1000,
-      "cashOutCoins": 6200
+      "cashOutCoins": 10900
     },
     {
-      "id": 1788443107717,
-      "name": "MOHINI",
+      "id": 1788528082114,
+      "name": "HARSHIT",
       "buyIns": 4,
       "buyInCoins": 1000,
-      "cashOutCoins": 2540
+      "cashOutCoins": 2640
     },
     {
-      "id": 1788443139201,
-      "name": "RAVI",
+      "id": 1788528085365,
+      "name": "GAGAN",
+      "buyIns": 3,
+      "buyInCoins": 1000,
+      "cashOutCoins": 8130
+    },
+    {
+      "id": 1788528103726,
+      "name": "ALOK",
+      "buyIns": 15,
+      "buyInCoins": 1000,
+      "cashOutCoins": 6000
+    },
+    {
+      "id": 1788528108233,
+      "name": "HARI",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 1000
+      "cashOutCoins": 6500
+    },
+    {
+      "id": 1788528111721,
+      "name": "MOHINI",
+      "buyIns": 3,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1788531124963,
+      "name": "ABHISHEK",
+      "buyIns": 12,
+      "buyInCoins": 1000,
+      "cashOutCoins": 110
+    },
+    {
+      "id": 1788531939605,
+      "name": "SANDEEP",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 13140
+    },
+    {
+      "id": 1788535929471,
+      "name": "RISHI",
+      "buyIns": 2,
+      "buyInCoins": 1000,
+      "cashOutCoins": 8580
     }
   ],
-  "activeSessionId": "S_mtlku90qlgyon0",
+  "activeSessionId": "S_mtmzfh7zd1xupd",
   "activeHost": null,
   "settings": {
     "coinCount": "2",
@@ -1168,10 +1269,579 @@
     "buyInCoins": "1000",
     "milestones": [
       5,
-      10
+      7,
+      9,
+      10,
+      11,
+      15
     ]
   },
   "logs": [
+    {
+      "id": "L_1788558760844_zxp4",
+      "time": "2026-09-05 03:22:40",
+      "text": "Saved session to database. • by Akshay"
+    },
+    {
+      "id": "L_1788558721123_sncs",
+      "time": "2026-09-05 03:22:01",
+      "text": "Random picker chose HARI. • by Akshay"
+    },
+    {
+      "id": "L_1788558720689_90dt",
+      "time": "2026-09-05 03:22:00",
+      "text": "Random picker chose RISHI. • by Akshay"
+    },
+    {
+      "id": "L_1788558720250_v0ig",
+      "time": "2026-09-05 03:22:00",
+      "text": "Random picker chose SANDEEP. • by Akshay"
+    },
+    {
+      "id": "L_1788558719792_soso",
+      "time": "2026-09-05 03:21:59",
+      "text": "Random picker chose HARI. • by Akshay"
+    },
+    {
+      "id": "L_1788558627888_30ho",
+      "time": "2026-09-05 03:20:27",
+      "text": "Settlement: HARSHIT pays GAGAN ₹680.00 • by Akshay"
+    },
+    {
+      "id": "L_1788558627887_ddf9",
+      "time": "2026-09-05 03:20:27",
+      "text": "Settlement: MOHINI pays GAGAN ₹1500.00 • by Akshay"
+    },
+    {
+      "id": "L_1788558627886_lbbh",
+      "time": "2026-09-05 03:20:27",
+      "text": "Settlement: ALOK pays GAGAN ₹385.00 • by Akshay"
+    },
+    {
+      "id": "L_1788558627885_f016",
+      "time": "2026-09-05 03:20:27",
+      "text": "Settlement: ALOK pays HARI ₹2750.00 • by Akshay"
+    },
+    {
+      "id": "L_1788558627885_8dqa",
+      "time": "2026-09-05 03:20:27",
+      "text": "Settlement: ALOK pays RISHI ₹1365.00 • by Akshay"
+    },
+    {
+      "id": "L_1788558627884_1ghp",
+      "time": "2026-09-05 03:20:27",
+      "text": "Settlement: ABHISHEK pays RISHI ₹1925.00 • by Akshay"
+    },
+    {
+      "id": "L_1788558627883_ti6f",
+      "time": "2026-09-05 03:20:27",
+      "text": "Settlement: ABHISHEK pays AKSHAY ₹3950.00 • by Akshay"
+    },
+    {
+      "id": "L_1788558627882_yb9o",
+      "time": "2026-09-05 03:20:27",
+      "text": "Settlement: ABHISHEK pays SANDEEP ₹70.00 • by Akshay"
+    },
+    {
+      "id": "L_1788558627880_4fgq",
+      "time": "2026-09-05 03:20:27",
+      "text": "Settlement: RAVI pays SANDEEP ₹6000.00 • by Akshay"
+    },
+    {
+      "id": "L_1788558627877_1fd5",
+      "time": "2026-09-05 03:20:27",
+      "text": "Settlement calculated (9 transfers). • by Akshay"
+    },
+    {
+      "id": "L_1788558626568_edc0",
+      "time": "2026-09-05 03:20:26",
+      "text": "Set final coins for ABHISHEK: 110 coins. • by Akshay"
+    },
+    {
+      "id": "L_1788558624805_fhri",
+      "time": "2026-09-05 03:20:24",
+      "text": "Set final coins for RAVI: 0 coins. • by Akshay"
+    },
+    {
+      "id": "L_1788558617521_j5sa",
+      "time": "2026-09-05 03:20:17",
+      "text": "Settlement: HARSHIT pays GAGAN ₹680.00 • by Akshay"
+    },
+    {
+      "id": "L_1788558617520_15om",
+      "time": "2026-09-05 03:20:17",
+      "text": "Settlement: MOHINI pays GAGAN ₹1500.00 • by Akshay"
+    },
+    {
+      "id": "L_1788558617519_baj5",
+      "time": "2026-09-05 03:20:17",
+      "text": "Settlement: ALOK pays GAGAN ₹385.00 • by Akshay"
+    },
+    {
+      "id": "L_1788558617519_nsuo",
+      "time": "2026-09-05 03:20:17",
+      "text": "Settlement: ALOK pays HARI ₹2750.00 • by Akshay"
+    },
+    {
+      "id": "L_1788558617518_2cab",
+      "time": "2026-09-05 03:20:17",
+      "text": "Settlement: ALOK pays RISHI ₹1365.00 • by Akshay"
+    },
+    {
+      "id": "L_1788558617517_szts",
+      "time": "2026-09-05 03:20:17",
+      "text": "Settlement: RAVI pays RISHI ₹1925.00 • by Akshay"
+    },
+    {
+      "id": "L_1788558617517_0hve",
+      "time": "2026-09-05 03:20:17",
+      "text": "Settlement: RAVI pays AKSHAY ₹3950.00 • by Akshay"
+    },
+    {
+      "id": "L_1788558617516_q2yr",
+      "time": "2026-09-05 03:20:17",
+      "text": "Settlement: RAVI pays SANDEEP ₹70.00 • by Akshay"
+    },
+    {
+      "id": "L_1788558617515_skuo",
+      "time": "2026-09-05 03:20:17",
+      "text": "Settlement: ABHISHEK pays SANDEEP ₹6000.00 • by Akshay"
+    },
+    {
+      "id": "L_1788558617514_d9g4",
+      "time": "2026-09-05 03:20:17",
+      "text": "Settlement calculated (9 transfers). • by Akshay"
+    },
+    {
+      "id": "L_1788558617445_didn",
+      "time": "2026-09-05 03:20:17",
+      "text": "Set final coins for RAVI: 110 coins. • by Akshay"
+    },
+    {
+      "id": "L_1788558575808_lq4k",
+      "time": "2026-09-05 03:19:35",
+      "text": "Settlement: HARSHIT pays GAGAN ₹625.00 • by Akshay"
+    },
+    {
+      "id": "L_1788558575808_1j2f",
+      "time": "2026-09-05 03:19:35",
+      "text": "Settlement: MOHINI pays GAGAN ₹1500.00 • by Akshay"
+    },
+    {
+      "id": "L_1788558575807_hgzg",
+      "time": "2026-09-05 03:19:35",
+      "text": "Settlement: ALOK pays GAGAN ₹440.00 • by Akshay"
+    },
+    {
+      "id": "L_1788558575806_2atn",
+      "time": "2026-09-05 03:19:35",
+      "text": "Settlement: ALOK pays HARI ₹2750.00 • by Akshay"
+    },
+    {
+      "id": "L_1788558575805_63k8",
+      "time": "2026-09-05 03:19:35",
+      "text": "Settlement: ALOK pays RISHI ₹1310.00 • by Akshay"
+    },
+    {
+      "id": "L_1788558575805_htnx",
+      "time": "2026-09-05 03:19:35",
+      "text": "Settlement: ABHISHEK pays RISHI ₹1980.00 • by Akshay"
+    },
+    {
+      "id": "L_1788558575804_5v3q",
+      "time": "2026-09-05 03:19:35",
+      "text": "Settlement: ABHISHEK pays AKSHAY ₹3950.00 • by Akshay"
+    },
+    {
+      "id": "L_1788558575803_2vjs",
+      "time": "2026-09-05 03:19:35",
+      "text": "Settlement: ABHISHEK pays SANDEEP ₹70.00 • by Akshay"
+    },
+    {
+      "id": "L_1788558575802_fqoz",
+      "time": "2026-09-05 03:19:35",
+      "text": "Settlement: RAVI pays SANDEEP ₹6000.00 • by Akshay"
+    },
+    {
+      "id": "L_1788558575799_n1um",
+      "time": "2026-09-05 03:19:35",
+      "text": "Settlement calculated (9 transfers). • by Akshay"
+    },
+    {
+      "id": "L_1788558572752_xfv3",
+      "time": "2026-09-05 03:19:32",
+      "text": "Set final coins for SANDEEP: 13140 coins. • by Akshay"
+    },
+    {
+      "id": "L_1788558517783_53s0",
+      "time": "2026-09-05 03:18:37",
+      "text": "Set final coins for AKSHAY: 10900 coins. • by Akshay"
+    },
+    {
+      "id": "L_1788558497285_c3jz",
+      "time": "2026-09-05 03:18:17",
+      "text": "Set final coins for RISHI: 8580 coins. • by Akshay"
+    },
+    {
+      "id": "L_1788558474370_pt0o",
+      "time": "2026-09-05 03:17:54",
+      "text": "Set final coins for GAGAN: 8130 coins. • by Akshay"
+    },
+    {
+      "id": "L_1788558452111_ea8z",
+      "time": "2026-09-05 03:17:32",
+      "text": "Set final coins for HARSHIT: 2640 coins. • by Akshay"
+    },
+    {
+      "id": "L_1788558369899_y603",
+      "time": "2026-09-05 03:16:09",
+      "text": "Set final coins for ALOK: 6000 coins. • by Akshay"
+    },
+    {
+      "id": "L_1788558366009_o16y",
+      "time": "2026-09-05 03:16:06",
+      "text": "Set final coins for ABHISHEK: 0 coins. • by Akshay"
+    },
+    {
+      "id": "L_1788558364593_j54d",
+      "time": "2026-09-05 03:16:04",
+      "text": "Set final coins for RAVI: 0 coins. • by Akshay"
+    },
+    {
+      "id": "L_1788557035371_1vss",
+      "time": "2026-09-05 02:53:55",
+      "text": "Buy-in increased for ABHISHEK: count = 12. • by Akshay"
+    },
+    {
+      "id": "L_1788554231968_nlk2",
+      "time": "2026-09-05 02:07:11",
+      "text": "Buy-in increased for ABHISHEK: count = 11. • by Akshay"
+    },
+    {
+      "id": "L_1788553543051_st24",
+      "time": "2026-09-05 01:55:43",
+      "text": "Buy-in increased for ABHISHEK: count = 10. • by Akshay"
+    },
+    {
+      "id": "L_1788552093726_6htq",
+      "time": "2026-09-05 01:31:33",
+      "text": "Buy-in increased for RAVI: count = 12. • by Akshay"
+    },
+    {
+      "id": "L_1788551270373_zx68",
+      "time": "2026-09-05 01:17:50",
+      "text": "Buy-in increased for ALOK: count = 15. • by Akshay"
+    },
+    {
+      "id": "L_1788551269963_bgl4",
+      "time": "2026-09-05 01:17:49",
+      "text": "Buy-in increased for ALOK: count = 14. • by Akshay"
+    },
+    {
+      "id": "L_1788551269437_lhaz",
+      "time": "2026-09-05 01:17:49",
+      "text": "Buy-in increased for ALOK: count = 13. • by Akshay"
+    },
+    {
+      "id": "L_1788551039450_ytec",
+      "time": "2026-09-05 01:13:59",
+      "text": "Buy-in increased for RAVI: count = 11. • by Akshay"
+    },
+    {
+      "id": "L_1788550511904_z2v9",
+      "time": "2026-09-05 01:05:11",
+      "text": "Buy-in increased for RAVI: count = 10. • by Akshay"
+    },
+    {
+      "id": "L_1788550086688_momn",
+      "time": "2026-09-05 00:58:06",
+      "text": "Buy-in increased for ALOK: count = 12. • by Akshay"
+    },
+    {
+      "id": "L_1788550086262_oxxl",
+      "time": "2026-09-05 00:58:06",
+      "text": "Buy-in increased for ALOK: count = 11. • by Akshay"
+    },
+    {
+      "id": "L_1788550085793_5orh",
+      "time": "2026-09-05 00:58:05",
+      "text": "Buy-in increased for ALOK: count = 10. • by Akshay"
+    },
+    {
+      "id": "L_1788550085288_zr1g",
+      "time": "2026-09-05 00:58:05",
+      "text": "Buy-in increased for ALOK: count = 9. • by Akshay"
+    },
+    {
+      "id": "L_1788549932755_w6bz",
+      "time": "2026-09-05 00:55:32",
+      "text": "Buy-in increased for RAVI: count = 9. • by Akshay"
+    },
+    {
+      "id": "L_1788549533766_80sp",
+      "time": "2026-09-05 00:48:53",
+      "text": "Buy-in increased for ABHISHEK: count = 9. • by Akshay"
+    },
+    {
+      "id": "L_1788549344063_0q0o",
+      "time": "2026-09-05 00:45:44",
+      "text": "Buy-in increased for RAVI: count = 8. • by Akshay"
+    },
+    {
+      "id": "L_1788548925820_1hqf",
+      "time": "2026-09-05 00:38:45",
+      "text": "Buy-in increased for ABHISHEK: count = 8. • by Akshay"
+    },
+    {
+      "id": "L_1788547488329_0yrn",
+      "time": "2026-09-05 00:14:48",
+      "text": "Buy-in increased for ABHISHEK: count = 7. • by Akshay"
+    },
+    {
+      "id": "L_1788546507109_nrdh",
+      "time": "2026-09-04 23:58:27",
+      "text": "Buy-in increased for HARSHIT: count = 4. • by Akshay"
+    },
+    {
+      "id": "L_1788546449281_gbpo",
+      "time": "2026-09-04 23:57:29",
+      "text": "Buy-in increased for ALOK: count = 8. • by Akshay"
+    },
+    {
+      "id": "L_1788546448331_3d6m",
+      "time": "2026-09-04 23:57:28",
+      "text": "Buy-in increased for ALOK: count = 7. • by Akshay"
+    },
+    {
+      "id": "L_1788546287706_u49n",
+      "time": "2026-09-04 23:54:47",
+      "text": "Buy-in increased for RAVI: count = 7. • by Akshay"
+    },
+    {
+      "id": "L_1788545002051_zzzy",
+      "time": "2026-09-04 23:33:22",
+      "text": "Buy-in increased for ALOK: count = 6. • by Akshay"
+    },
+    {
+      "id": "L_1788545001545_7lyk",
+      "time": "2026-09-04 23:33:21",
+      "text": "Buy-in increased for ALOK: count = 5. • by Akshay"
+    },
+    {
+      "id": "L_1788544318965_9xq4",
+      "time": "2026-09-04 23:21:58",
+      "text": "Set final coins for HARI: 6500 coins. • by Akshay"
+    },
+    {
+      "id": "L_1788544277406_3bs7",
+      "time": "2026-09-04 23:21:17",
+      "text": "Buy-in decreased for MOHINI: count = 3. • by Akshay"
+    },
+    {
+      "id": "L_1788544188104_caoz",
+      "time": "2026-09-04 23:19:48",
+      "text": "Buy-in increased for MOHINI: count = 4. • by Akshay"
+    },
+    {
+      "id": "L_1788543866994_ht72",
+      "time": "2026-09-04 23:14:26",
+      "text": "Buy-in increased for ABHISHEK: count = 6. • by Akshay"
+    },
+    {
+      "id": "L_1788543612609_q06g",
+      "time": "2026-09-04 23:10:12",
+      "text": "Buy-in increased for HARSHIT: count = 3. • by Akshay"
+    },
+    {
+      "id": "L_1788542259166_9mti",
+      "time": "2026-09-04 22:47:39",
+      "text": "Buy-in increased for HARSHIT: count = 2. • by Akshay"
+    },
+    {
+      "id": "L_1788539896155_25ve",
+      "time": "2026-09-04 22:08:16",
+      "text": "Buy-in increased for RISHI: count = 2. • by Akshay"
+    },
+    {
+      "id": "L_1788539705756_wn9r",
+      "time": "2026-09-04 22:05:05",
+      "text": "Buy-in increased for MOHINI: count = 3. • by Akshay"
+    },
+    {
+      "id": "L_1788539697168_6y0x",
+      "time": "2026-09-04 22:04:57",
+      "text": "Buy-in increased for RAVI: count = 6. • by Akshay"
+    },
+    {
+      "id": "L_1788539341300_5vgr",
+      "time": "2026-09-04 21:59:01",
+      "text": "Buy-in increased for ABHISHEK: count = 5. • by Akshay"
+    },
+    {
+      "id": "L_1788538568520_dkkl",
+      "time": "2026-09-04 21:46:08",
+      "text": "Buy-in increased for ABHISHEK: count = 4. • by Akshay"
+    },
+    {
+      "id": "L_1788537621942_4qnc",
+      "time": "2026-09-04 21:30:21",
+      "text": "Buy-in increased for RAVI: count = 5. • by Akshay"
+    },
+    {
+      "id": "L_1788537267950_h0qy",
+      "time": "2026-09-04 21:24:27",
+      "text": "Buy-in increased for GAGAN: count = 3. • by Akshay"
+    },
+    {
+      "id": "L_1788536643849_d5ib",
+      "time": "2026-09-04 21:14:03",
+      "text": "Buy-in increased for RAVI: count = 4. • by Akshay"
+    },
+    {
+      "id": "L_1788536492577_58e6",
+      "time": "2026-09-04 21:11:32",
+      "text": "Buy-in increased for RAVI: count = 3. • by Akshay"
+    },
+    {
+      "id": "L_1788535929471_jclz",
+      "time": "2026-09-04 21:02:09",
+      "text": "Added \"RISHI\" with 1 buy-in (1000c). • by Akshay"
+    },
+    {
+      "id": "L_1788535479145_1nw5",
+      "time": "2026-09-04 20:54:39",
+      "text": "Buy-in increased for ALOK: count = 4. • by Akshay"
+    },
+    {
+      "id": "L_1788534775321_g1zf",
+      "time": "2026-09-04 20:42:55",
+      "text": "Random picker chose ABHISHEK. • by Akshay"
+    },
+    {
+      "id": "L_1788534767933_1w8g",
+      "time": "2026-09-04 20:42:47",
+      "text": "Random picker chose SANDEEP. • by Akshay"
+    },
+    {
+      "id": "L_1788534765324_unk2",
+      "time": "2026-09-04 20:42:45",
+      "text": "Random picker chose AKSHAY. • by Akshay"
+    },
+    {
+      "id": "L_1788534762733_10ws",
+      "time": "2026-09-04 20:42:42",
+      "text": "Random picker chose HARI. • by Akshay"
+    },
+    {
+      "id": "L_1788534757664_nk6q",
+      "time": "2026-09-04 20:42:37",
+      "text": "Random picker chose RAVI. • by Akshay"
+    },
+    {
+      "id": "L_1788533959393_d662",
+      "time": "2026-09-04 20:29:19",
+      "text": "Updated milestone thresholds to: 5, 7, 9, 10, 11, 15. • by Akshay"
+    },
+    {
+      "id": "L_1788533931893_rljy",
+      "time": "2026-09-04 20:28:51",
+      "text": "Buy-in increased for ABHISHEK: count = 3. • by Akshay"
+    },
+    {
+      "id": "L_1788533251370_22ri",
+      "time": "2026-09-04 20:17:31",
+      "text": "Buy-in increased for AKSHAY: count = 3. • by Akshay"
+    },
+    {
+      "id": "L_1788532077608_ligu",
+      "time": "2026-09-04 19:57:57",
+      "text": "Buy-in increased for AKSHAY: count = 2. • by Akshay"
+    },
+    {
+      "id": "L_1788532076129_cpfu",
+      "time": "2026-09-04 19:57:56",
+      "text": "Buy-in increased for MOHINI: count = 2. • by Akshay"
+    },
+    {
+      "id": "L_1788531939605_0ilo",
+      "time": "2026-09-04 19:55:39",
+      "text": "Added \"SANDEEP\" with 1 buy-in (1000c). • by Akshay"
+    },
+    {
+      "id": "L_1788531482381_obq0",
+      "time": "2026-09-04 19:48:02",
+      "text": "Buy-in increased for ABHISHEK: count = 2. • by Akshay"
+    },
+    {
+      "id": "L_1788531124964_gl2i",
+      "time": "2026-09-04 19:42:04",
+      "text": "Added \"ABHISHEK\" with 1 buy-in (1000c). • by Akshay"
+    },
+    {
+      "id": "L_1788530625913_869y",
+      "time": "2026-09-04 19:33:45",
+      "text": "Buy-in increased for ALOK: count = 3. • by Akshay"
+    },
+    {
+      "id": "L_1788530172054_8a3x",
+      "time": "2026-09-04 19:26:12",
+      "text": "Buy-in increased for GAGAN: count = 2. • by Akshay"
+    },
+    {
+      "id": "L_1788528920782_3ng3",
+      "time": "2026-09-04 19:05:20",
+      "text": "Buy-in increased for ALOK: count = 2. • by Akshay"
+    },
+    {
+      "id": "L_1788528529321_okez",
+      "time": "2026-09-04 18:58:49",
+      "text": "Buy-in increased for RAVI: count = 2. • by Akshay"
+    },
+    {
+      "id": "L_1788528111721_zvd1",
+      "time": "2026-09-04 18:51:51",
+      "text": "Added \"MOHINI\" with 1 buy-in (1000c). • by Akshay"
+    },
+    {
+      "id": "L_1788528108233_opzn",
+      "time": "2026-09-04 18:51:48",
+      "text": "Added \"HARI\" with 1 buy-in (1000c). • by Akshay"
+    },
+    {
+      "id": "L_1788528103726_4y1f",
+      "time": "2026-09-04 18:51:43",
+      "text": "Added \"ALOK\" with 1 buy-in (1000c). • by Akshay"
+    },
+    {
+      "id": "L_1788528085366_svph",
+      "time": "2026-09-04 18:51:25",
+      "text": "Added \"GAGAN\" with 1 buy-in (1000c). • by Akshay"
+    },
+    {
+      "id": "L_1788528082114_9uuf",
+      "time": "2026-09-04 18:51:22",
+      "text": "Added \"HARSHIT\" with 1 buy-in (1000c). • by Akshay"
+    },
+    {
+      "id": "L_1788528078558_7cra",
+      "time": "2026-09-04 18:51:18",
+      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by Akshay"
+    },
+    {
+      "id": "L_1788528065210_3ufz",
+      "time": "2026-09-04 18:51:05",
+      "text": "Added \"RAVI\" with 1 buy-in (1000c). • by Akshay"
+    },
+    {
+      "id": "L_1788528065208_m97d",
+      "time": "2026-09-04 18:51:05",
+      "text": "Started new session and claimed host. • by Akshay"
+    },
+    {
+      "id": "L_1788528055830_xl1u",
+      "time": "2026-09-04 18:50:55",
+      "text": "Cleared active session dashboard. • by Device-WX1Q"
+    },
     {
       "id": "L_1788450738276_z5jm",
       "time": "2026-09-03 21:22:18",
@@ -2523,571 +3193,6 @@
       "id": "L_1785767913348_huit",
       "time": "2026-08-03 14:38:33",
       "text": "Added \"GAGAN\" with 1 buy-in (1000c) • by RISHI"
-    },
-    {
-      "id": "L_1785767796241_3am7",
-      "time": "2026-08-03 14:36:36",
-      "text": "Buy-in increased for MOHINI: count = 2 • by RISHI"
-    },
-    {
-      "id": "L_1785767795061_wffo",
-      "time": "2026-08-03 14:36:35",
-      "text": "Buy-in increased for KUNAL: count = 2 • by RISHI"
-    },
-    {
-      "id": "L_1785767785729_ytfm",
-      "time": "2026-08-03 14:36:25",
-      "text": "Added \"HARI\" with 1 buy-in (1000c) • by RISHI"
-    },
-    {
-      "id": "L_1785767778140_2hmd",
-      "time": "2026-08-03 14:36:18",
-      "text": "Added \"MOHINI\" with 1 buy-in (1000c) • by RISHI"
-    },
-    {
-      "id": "L_1785767775018_79b6",
-      "time": "2026-08-03 14:36:15",
-      "text": "Added \"KUNAL\" with 1 buy-in (1000c) • by RISHI"
-    },
-    {
-      "id": "L_1785767769324_0d4a",
-      "time": "2026-08-03 14:36:09",
-      "text": "Added \"AKSHAY\" with 1 buy-in (1000c) • by RISHI"
-    },
-    {
-      "id": "L_1785767763486_ilei",
-      "time": "2026-08-03 14:36:03",
-      "text": "Added \"RAVI\" with 1 buy-in (1000c) • by RISHI"
-    },
-    {
-      "id": "L_1785767760355_jfeg",
-      "time": "2026-08-03 14:36:00",
-      "text": "Added \"RISHI\" with 1 buy-in (1000c) • by RISHI"
-    },
-    {
-      "id": "L_1785767746289_9h5f",
-      "time": "2026-08-03 14:35:46",
-      "text": "Started new active session • by RISHI"
-    },
-    {
-      "id": "L_1785767740727_7erf",
-      "time": "2026-08-03 14:35:40",
-      "text": "Started new active session • by RISHI"
-    },
-    {
-      "id": "L_1785759218228_wvrp",
-      "time": "2026-08-03 12:13:38",
-      "text": "Started new active session • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785759195314_iri2",
-      "time": "2026-08-03 12:13:15",
-      "text": "Added \"SHUBHAM\" with 1 buy-in (1000c) • by SS’S"
-    },
-    {
-      "id": "L_1785759119517_pd0k",
-      "time": "2026-08-03 12:11:59",
-      "text": "Released active session lock for handoff • by SS’S"
-    },
-    {
-      "id": "L_1785759081059_fcn7",
-      "time": "2026-08-03 12:11:21",
-      "text": "Released active session lock for handoff • by SS’S"
-    },
-    {
-      "id": "L_1785759070125_3j6y",
-      "time": "2026-08-03 12:11:10",
-      "text": "Terminated active session • by SS’S"
-    },
-    {
-      "id": "L_1785758946108_do34",
-      "time": "2026-08-03 12:09:06",
-      "text": "Terminated active session • by SS’S"
-    },
-    {
-      "id": "L_1785751100937_71lq",
-      "time": "2026-08-03 09:58:20",
-      "text": "Terminated active session • by SS’S"
-    },
-    {
-      "id": "L_1785750759738_7buu",
-      "time": "2026-08-03 09:52:39",
-      "text": "Terminated active session • by SS’S"
-    },
-    {
-      "id": "L_1785734871372_9mce",
-      "time": "2026-08-03 05:27:51",
-      "text": "Buy-in decreased for ABHISHEK: count = 8 • by SS’S"
-    },
-    {
-      "id": "L_1785734870026_fpbn",
-      "time": "2026-08-03 05:27:50",
-      "text": "Buy-in increased for GAGAN: count = 5 • by SS’S"
-    },
-    {
-      "id": "L_1785734869512_sw8c",
-      "time": "2026-08-03 05:27:49",
-      "text": "Buy-in increased for GAGAN: count = 4 • by SS’S"
-    },
-    {
-      "id": "L_1785734861639_8g6v",
-      "time": "2026-08-03 05:27:41",
-      "text": "Removed \"ALOK\" • by SS’S"
-    },
-    {
-      "id": "L_1785734861392_fvmv",
-      "time": "2026-08-03 05:27:41",
-      "text": "Buy-in increased for ALOK: count = 9 • by SS’S"
-    },
-    {
-      "id": "L_1785734861061_6n93",
-      "time": "2026-08-03 05:27:41",
-      "text": "Buy-in increased for ALOK: count = 8 • by SS’S"
-    },
-    {
-      "id": "L_1785734858295_5j26",
-      "time": "2026-08-03 05:27:38",
-      "text": "Buy-in increased for ALOK: count = 7 • by SS’S"
-    },
-    {
-      "id": "L_1785734858077_vqqh",
-      "time": "2026-08-03 05:27:38",
-      "text": "Buy-in increased for ALOK: count = 6 • by SS’S"
-    },
-    {
-      "id": "L_1785734738929_ha98",
-      "time": "2026-08-03 05:25:38",
-      "text": "Buy-in increased for ALOK: count = 5 • by SS’S"
-    },
-    {
-      "id": "L_1785734737931_w2gq",
-      "time": "2026-08-03 05:25:37",
-      "text": "Buy-in increased for ALOK: count = 4 • by SS’S"
-    },
-    {
-      "id": "L_1785734737601_s9dk",
-      "time": "2026-08-03 05:25:37",
-      "text": "Buy-in increased for ALOK: count = 3 • by SS’S"
-    },
-    {
-      "id": "L_1785734648908_1lw0",
-      "time": "2026-08-03 05:24:08",
-      "text": "Buy-in decreased for GAGAN: count = 3 • by SS’S"
-    },
-    {
-      "id": "L_1785734602762_ixjd",
-      "time": "2026-08-03 05:23:22",
-      "text": "Buy-in decreased for ABHISHEK: count = 9 • by SS’S"
-    },
-    {
-      "id": "L_1785734583873_vijg",
-      "time": "2026-08-03 05:23:03",
-      "text": "Released active session lock for handoff • by SS’S"
-    },
-    {
-      "id": "L_1785734392300_hsk5",
-      "time": "2026-08-03 05:19:52",
-      "text": "Buy-in increased for ABHISHEK: count = 10 • by SS’S"
-    },
-    {
-      "id": "L_1785734391302_40d7",
-      "time": "2026-08-03 05:19:51",
-      "text": "Buy-in increased for ABHISHEK: count = 9 • by SS’S"
-    },
-    {
-      "id": "L_1785693474465_02i8",
-      "time": "2026-08-02 17:57:54",
-      "text": "Buy-in increased for ABHISHEK: count = 8 • by SS’S"
-    },
-    {
-      "id": "L_1785693474315_zh8x",
-      "time": "2026-08-02 17:57:54",
-      "text": "Buy-in increased for ABHISHEK: count = 7 • by SS’S"
-    },
-    {
-      "id": "L_1785693474083_u50l",
-      "time": "2026-08-02 17:57:54",
-      "text": "Buy-in increased for ABHISHEK: count = 6 • by SS’S"
-    },
-    {
-      "id": "L_1785692983510_pujp",
-      "time": "2026-08-02 17:49:43",
-      "text": "Buy-in increased for ABHISHEK: count = 5 • by SS’S"
-    },
-    {
-      "id": "L_1785692982395_v3aw",
-      "time": "2026-08-02 17:49:42",
-      "text": "Buy-in increased for ABHISHEK: count = 4 • by SS’S"
-    },
-    {
-      "id": "L_1785692980198_v56u",
-      "time": "2026-08-02 17:49:40",
-      "text": "Buy-in increased for GAGAN: count = 4 • by SS’S"
-    },
-    {
-      "id": "L_1785692978018_zh4e",
-      "time": "2026-08-02 17:49:38",
-      "text": "Buy-in increased for GAGAN: count = 3 • by SS’S"
-    },
-    {
-      "id": "L_1785692977602_dilv",
-      "time": "2026-08-02 17:49:37",
-      "text": "Buy-in increased for GAGAN: count = 2 • by SS’S"
-    },
-    {
-      "id": "L_1785692971777_4c8w",
-      "time": "2026-08-02 17:49:31",
-      "text": "Buy-in increased for ALOK: count = 2 • by SS’S"
-    },
-    {
-      "id": "L_1785692970229_wxln",
-      "time": "2026-08-02 17:49:30",
-      "text": "Buy-in increased for ABHISHEK: count = 3 • by SS’S"
-    },
-    {
-      "id": "L_1785692969332_7u3l",
-      "time": "2026-08-02 17:49:29",
-      "text": "Buy-in increased for ABHISHEK: count = 2 • by SS’S"
-    },
-    {
-      "id": "L_1785692963607_1c0h",
-      "time": "2026-08-02 17:49:23",
-      "text": "Added \"GAGAN\" with 1 buy-in (1000c) • by SS’S"
-    },
-    {
-      "id": "L_1785692927682_8uso",
-      "time": "2026-08-02 17:48:47",
-      "text": "Added \"ALOK\" with 1 buy-in (1000c) • by SS’S"
-    },
-    {
-      "id": "L_1785692871053_hh0u",
-      "time": "2026-08-02 17:47:51",
-      "text": "Added \"ABHISHEK\" with 1 buy-in (1000c) • by SS’S"
-    },
-    {
-      "id": "L_1785692856561_cd6w",
-      "time": "2026-08-02 17:47:36",
-      "text": "Took over host duties for active session • by SS’S"
-    },
-    {
-      "id": "L_1785692850194_2gyi",
-      "time": "2026-08-02 17:47:30",
-      "text": "Took over host duties for active session • by SS’S"
-    },
-    {
-      "id": "L_1785649211791_u4x5",
-      "time": "2026-08-02 05:40:11",
-      "text": "Started new active session • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785648998703_7qcz",
-      "time": "2026-08-02 05:36:38",
-      "text": "Buy-in increased for ABHISHEK: count = 10 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785648983491_x945",
-      "time": "2026-08-02 05:36:23",
-      "text": "Buy-in increased for AKSHAY: count = 6 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785648907853_2n9l",
-      "time": "2026-08-02 05:35:07",
-      "text": "Buy-in increased for AKSHAY: count = 5 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785648786239_lv6w",
-      "time": "2026-08-02 05:33:06",
-      "text": "Buy-in increased for ABHISHEK: count = 9 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785647811617_jh5r",
-      "time": "2026-08-02 05:16:51",
-      "text": "Buy-in increased for ABHISHEK: count = 8 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785647811157_hsx5",
-      "time": "2026-08-02 05:16:51",
-      "text": "Buy-in increased for ABHISHEK: count = 7 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593686550_kydk",
-      "time": "2026-08-01 14:14:46",
-      "text": "Buy-in decreased for ALOK: count = 2 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593685016_w7ky",
-      "time": "2026-08-01 14:14:45",
-      "text": "Buy-in increased for ALOK: count = 3 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593684825_qpf8",
-      "time": "2026-08-01 14:14:44",
-      "text": "Buy-in increased for ALOK: count = 2 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593683240_qf9v",
-      "time": "2026-08-01 14:14:43",
-      "text": "Buy-in increased for AKSHAY: count = 4 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593681281_yf71",
-      "time": "2026-08-01 14:14:41",
-      "text": "Buy-in increased for ABHISHEK: count = 6 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593680921_8y9h",
-      "time": "2026-08-01 14:14:40",
-      "text": "Buy-in increased for ABHISHEK: count = 5 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593673448_kora",
-      "time": "2026-08-01 14:14:33",
-      "text": "Buy-in increased for AKSHAY: count = 3 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593673283_n7qc",
-      "time": "2026-08-01 14:14:33",
-      "text": "Buy-in increased for AKSHAY: count = 2 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593671830_rw5e",
-      "time": "2026-08-01 14:14:31",
-      "text": "Buy-in increased for ABHISHEK: count = 4 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593671680_curh",
-      "time": "2026-08-01 14:14:31",
-      "text": "Buy-in increased for ABHISHEK: count = 3 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593671481_1h4y",
-      "time": "2026-08-01 14:14:31",
-      "text": "Buy-in increased for ABHISHEK: count = 2 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593669512_23eb",
-      "time": "2026-08-01 14:14:29",
-      "text": "Added \"ALOK\" with 1 buy-in (1000c) • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593667114_o57j",
-      "time": "2026-08-01 14:14:27",
-      "text": "Added \"AKSHAY\" with 1 buy-in (1000c) • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593664813_gm17",
-      "time": "2026-08-01 14:14:24",
-      "text": "Added \"ABHISHEK\" with 1 buy-in (1000c) • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593645831_j6ja",
-      "time": "2026-08-01 14:14:05",
-      "text": "Started new active session • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593399581_0xbb",
-      "time": "2026-08-01 14:09:59",
-      "text": "Buy-in increased for ABHISHEK: count = 7 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593399416_viep",
-      "time": "2026-08-01 14:09:59",
-      "text": "Buy-in increased for ABHISHEK: count = 6 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593399235_83d3",
-      "time": "2026-08-01 14:09:59",
-      "text": "Buy-in increased for ABHISHEK: count = 5 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593398871_sqeq",
-      "time": "2026-08-01 14:09:58",
-      "text": "Buy-in increased for ABHISHEK: count = 4 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593398661_6242",
-      "time": "2026-08-01 14:09:58",
-      "text": "Buy-in increased for ABHISHEK: count = 3 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593392423_0mw9",
-      "time": "2026-08-01 14:09:52",
-      "text": "Buy-in decreased for ALOK: count = 5 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593392233_46w8",
-      "time": "2026-08-01 14:09:52",
-      "text": "Buy-in decreased for ALOK: count = 6 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593391865_25wu",
-      "time": "2026-08-01 14:09:51",
-      "text": "Buy-in decreased for ALOK: count = 7 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593390772_i455",
-      "time": "2026-08-01 14:09:50",
-      "text": "Buy-in increased for ALOK: count = 8 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593390126_6sm5",
-      "time": "2026-08-01 14:09:50",
-      "text": "Buy-in increased for ALOK: count = 7 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593389361_199r",
-      "time": "2026-08-01 14:09:49",
-      "text": "Buy-in increased for ALOK: count = 6 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593388721_hvwi",
-      "time": "2026-08-01 14:09:48",
-      "text": "Buy-in increased for ALOK: count = 5 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593388031_s88y",
-      "time": "2026-08-01 14:09:48",
-      "text": "Buy-in increased for ALOK: count = 4 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593387396_qym4",
-      "time": "2026-08-01 14:09:47",
-      "text": "Buy-in increased for ALOK: count = 3 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593159833_7w7v",
-      "time": "2026-08-01 14:05:59",
-      "text": "Buy-in decreased for ALOK: count = 2 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593157633_wlzp",
-      "time": "2026-08-01 14:05:57",
-      "text": "Buy-in decreased for ALOK: count = 4 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593089383_icnb",
-      "time": "2026-08-01 14:04:49",
-      "text": "Buy-in decreased for ALOK: count = 1 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593089203_6s4p",
-      "time": "2026-08-01 14:04:49",
-      "text": "Buy-in decreased for ALOK: count = 2 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593089021_8wdi",
-      "time": "2026-08-01 14:04:49",
-      "text": "Buy-in decreased for ALOK: count = 3 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593088837_ulog",
-      "time": "2026-08-01 14:04:48",
-      "text": "Buy-in decreased for ALOK: count = 4 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785593062320_fpso",
-      "time": "2026-08-01 14:04:22",
-      "text": "Calculated minimum transaction settlement • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785592234228_32j5",
-      "time": "2026-08-01 13:50:34",
-      "text": "Buy-in increased for AKSHAY: count = 3 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785591983142_xjce",
-      "time": "2026-08-01 13:46:23",
-      "text": "Buy-in increased for ALOK: count = 5 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785591390098_hlet",
-      "time": "2026-08-01 13:36:30",
-      "text": "Buy-in increased for ALOK: count = 4 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785591387746_fbst",
-      "time": "2026-08-01 13:36:27",
-      "text": "Buy-in decreased for ABHISHEK: count = 2 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785591385487_ikkr",
-      "time": "2026-08-01 13:36:25",
-      "text": "Buy-in decreased for ABHISHEK: count = 3 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785591187144_67yt",
-      "time": "2026-08-01 13:33:07",
-      "text": "Buy-in increased for ALOK: count = 3 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785591184996_uwro",
-      "time": "2026-08-01 13:33:04",
-      "text": "Buy-in increased for ALOK: count = 2 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785591183175_gzmm",
-      "time": "2026-08-01 13:33:03",
-      "text": "Buy-in increased for AKSHAY: count = 2 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785591171866_w41m",
-      "time": "2026-08-01 13:32:51",
-      "text": "Buy-in increased for ABHISHEK: count = 3 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785591169103_j2dq",
-      "time": "2026-08-01 13:32:49",
-      "text": "Buy-in increased for ABHISHEK: count = 2 • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785590989323_nhbz",
-      "time": "2026-08-01 13:29:49",
-      "text": "Calculated minimum transaction settlement • by SS’S"
-    },
-    {
-      "id": "L_1785590773416_biit",
-      "time": "2026-08-01 13:26:13",
-      "text": "Released active session lock for handoff • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785590558451_rn0o",
-      "time": "2026-08-01 13:22:38",
-      "text": "Released active session lock for handoff • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785590373397_t18w",
-      "time": "2026-08-01 13:19:33",
-      "text": "Added \"ALOK\" with 1 buy-in (1000c) • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785590368906_sf1c",
-      "time": "2026-08-01 13:19:28",
-      "text": "Added \"AKSHAY\" with 1 buy-in (1000c) • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785590366568_i9y8",
-      "time": "2026-08-01 13:19:26",
-      "text": "Added \"ABHISHEK\" with 1 buy-in (1000c) • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785590051594_sdwc",
-      "time": "2026-08-01 13:14:11",
-      "text": "Started new active session • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785589916645_shto",
-      "time": "2026-08-01 13:11:56",
-      "text": "Started new active session • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785589890049_fgag",
-      "time": "2026-08-01 13:11:30",
-      "text": "Started new active session • by SANDEEP MAC"
-    },
-    {
-      "id": "L_1785589820444_ehqy",
-      "time": "2026-08-01 13:10:20",
-      "text": "Started new active session • by SANDEEP PHONE"
     }
   ],
   "knownRoster": [
