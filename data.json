@@ -1214,14 +1214,14 @@
     {
       "id": 1788604753554,
       "name": "RAVI",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
     {
       "id": 1788604797956,
       "name": "SANDEEP",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1244,7 +1244,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-05T10:41:30.882Z"
+    "heartbeatAt": "2026-09-05T10:44:34.617Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1262,6 +1262,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788605059053_2shg",
+      "time": "2026-09-05 16:14:19",
+      "text": "Buy-in increased for RAVI: count = 2. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788605056737_1tpr",
+      "time": "2026-09-05 16:14:16",
+      "text": "Buy-in increased for SANDEEP: count = 2. • by Sandeep Mac"
+    },
     {
       "id": "L_1788604874856_65e7",
       "time": "2026-09-05 16:11:14",
@@ -3168,16 +3178,6 @@
       "id": "L_1785775578916_17fw",
       "time": "2026-08-03 16:46:18",
       "text": "Calculated minimum transaction settlement • by RISHI"
-    },
-    {
-      "id": "L_1785775226344_dduu",
-      "time": "2026-08-03 16:40:26",
-      "text": "Buy-in increased for AKSHAY: count = 6 • by RISHI"
-    },
-    {
-      "id": "L_1785774227732_6xif",
-      "time": "2026-08-03 16:23:47",
-      "text": "Buy-in increased for RAVI: count = 3 • by RISHI"
     }
   ],
   "knownRoster": [
