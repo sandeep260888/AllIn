@@ -1195,7 +1195,7 @@
       "name": "AKSHAY",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 8250
+      "cashOutCoins": 850
     },
     {
       "id": 1788604744555,
@@ -1251,7 +1251,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-05T17:12:00.240Z"
+    "heartbeatAt": "2026-09-05T17:12:16.087Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1269,6 +1269,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788628320747_rz9g",
+      "time": "2026-09-05 22:42:00",
+      "text": "Set final coins for HARSHIT: 7760 coins. • by Sandeep Mac"
+    },
     {
       "id": "L_1788628304337_8ufu",
       "time": "2026-09-05 22:41:44",
@@ -3218,10 +3223,6 @@
     {
       "time": "2026-08-14 09:11:15",
       "text": "Sandeep Mac stopped hosting."
-    },
-    {
-      "time": "2026-08-14 08:57:46",
-      "text": "Milestone reached: AKSHAY hit 10 buy-ins."
     }
   ],
   "knownRoster": [
