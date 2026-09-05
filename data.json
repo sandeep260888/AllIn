@@ -1217,13 +1217,27 @@
       "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1788604797956,
+      "name": "SANDEEP",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1788604803121,
+      "name": "SONAK",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "activeSessionId": "S_mto92xxtr6bbz5",
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-05T10:39:29.891Z"
+    "heartbeatAt": "2026-09-05T10:40:19.110Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1241,6 +1255,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788604803121_2xr1",
+      "time": "2026-09-05 16:10:03",
+      "text": "Added \"SONAK\" with 1 buy-in (1000c). • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788604797956_k2ud",
+      "time": "2026-09-05 16:09:57",
+      "text": "Added \"SANDEEP\" with 1 buy-in (1000c). • by Sandeep Mac"
+    },
     {
       "id": "L_1788604753554_g8o4",
       "time": "2026-09-05 16:09:13",
@@ -3147,16 +3171,6 @@
       "id": "L_1785773547885_j735",
       "time": "2026-08-03 16:12:27",
       "text": "Buy-in increased for AKSHAY: count = 5 • by RISHI"
-    },
-    {
-      "id": "L_1785773547382_ogp0",
-      "time": "2026-08-03 16:12:27",
-      "text": "Buy-in increased for AKSHAY: count = 4 • by RISHI"
-    },
-    {
-      "id": "L_1785773341444_8x2z",
-      "time": "2026-08-03 16:09:01",
-      "text": "Buy-in increased for HARI: count = 3 • by RISHI"
     }
   ],
   "knownRoster": [
