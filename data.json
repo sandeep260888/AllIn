@@ -1223,7 +1223,7 @@
       "name": "SANDEEP",
       "buyIns": 5,
       "buyInCoins": 1000,
-      "cashOutCoins": 4000
+      "cashOutCoins": 0
     },
     {
       "id": 1788604803121,
@@ -1251,7 +1251,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-05T16:32:55.423Z"
+    "heartbeatAt": "2026-09-05T16:54:01.371Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1269,6 +1269,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788627225238_ouqh",
+      "time": "2026-09-05 22:23:45",
+      "text": "Set final coins for SANDEEP: 0 coins. • by Sandeep Mac"
+    },
     {
       "id": "L_1788625959313_0jre",
       "time": "2026-09-05 22:02:39",
@@ -3213,10 +3218,6 @@
     {
       "time": "2026-08-14 08:57:43",
       "text": "Buy-in increased for AKSHAY: count = 7."
-    },
-    {
-      "time": "2026-08-14 08:57:43",
-      "text": "Buy-in increased for AKSHAY: count = 6."
     }
   ],
   "knownRoster": [
