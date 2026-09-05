@@ -1202,7 +1202,7 @@
       "name": "GAGAN",
       "buyIns": 6,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 9320
     },
     {
       "id": 1788604748840,
@@ -1251,7 +1251,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-05T15:12:34.222Z"
+    "heartbeatAt": "2026-09-05T15:34:30.982Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1269,6 +1269,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788622455411_537x",
+      "time": "2026-09-05 21:04:15",
+      "text": "Set final coins for GAGAN: 9320 coins. • by Sandeep Mac"
+    },
     {
       "id": "L_1788621137560_k7rs",
       "time": "2026-09-05 20:42:17",
@@ -3209,10 +3214,6 @@
     {
       "time": "2026-08-13 13:23:20",
       "text": "Buy-in increased for AKSHAY: count = 4."
-    },
-    {
-      "time": "2026-08-13 13:23:20",
-      "text": "Buy-in increased for AKSHAY: count = 3."
     }
   ],
   "knownRoster": [
