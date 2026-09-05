@@ -1251,7 +1251,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-05T15:34:30.982Z"
+    "heartbeatAt": "2026-09-05T15:34:47.913Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1269,6 +1269,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788622472526_mklq",
+      "time": "2026-09-05 21:04:32",
+      "text": "Set final coins for SONAK: 0 coins. • by Sandeep Mac"
+    },
     {
       "id": "L_1788622455411_537x",
       "time": "2026-09-05 21:04:15",
@@ -3210,10 +3215,6 @@
     {
       "time": "2026-08-14 08:57:43",
       "text": "Buy-in increased for AKSHAY: count = 5."
-    },
-    {
-      "time": "2026-08-13 13:23:20",
-      "text": "Buy-in increased for AKSHAY: count = 4."
     }
   ],
   "knownRoster": [
