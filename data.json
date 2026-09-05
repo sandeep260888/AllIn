@@ -1223,7 +1223,7 @@
       "name": "SANDEEP",
       "buyIns": 5,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 4000
     },
     {
       "id": 1788604803121,
@@ -1244,14 +1244,14 @@
       "name": "RISHI",
       "buyIns": 2,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 2000
     }
   ],
   "activeSessionId": "S_mto92xxtr6bbz5",
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-05T15:34:47.913Z"
+    "heartbeatAt": "2026-09-05T16:32:55.423Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1269,6 +1269,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788625959313_0jre",
+      "time": "2026-09-05 22:02:39",
+      "text": "Set final coins for SANDEEP: 4000 coins. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788625954814_h6bg",
+      "time": "2026-09-05 22:02:34",
+      "text": "Set final coins for RISHI: 2000 coins. • by Sandeep Mac"
+    },
     {
       "id": "L_1788622472526_mklq",
       "time": "2026-09-05 21:04:32",
@@ -3207,14 +3217,6 @@
     {
       "time": "2026-08-14 08:57:43",
       "text": "Buy-in increased for AKSHAY: count = 6."
-    },
-    {
-      "time": "2026-08-14 08:57:43",
-      "text": "Milestone reached: AKSHAY hit 5 buy-ins."
-    },
-    {
-      "time": "2026-08-14 08:57:43",
-      "text": "Buy-in increased for AKSHAY: count = 5."
     }
   ],
   "knownRoster": [
