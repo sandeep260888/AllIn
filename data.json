@@ -1214,7 +1214,7 @@
     {
       "id": 1788604753554,
       "name": "RAVI",
-      "buyIns": 3,
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1244,7 +1244,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-05T12:24:40.095Z"
+    "heartbeatAt": "2026-09-05T12:28:53.399Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1262,6 +1262,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788611317889_osmm",
+      "time": "2026-09-05 17:58:37",
+      "text": "Buy-in increased for RAVI: count = 4. • by Sandeep Mac"
+    },
     {
       "id": "L_1788611064390_1ani",
       "time": "2026-09-05 17:54:24",
@@ -3186,10 +3191,6 @@
     {
       "time": "2026-08-10 20:33:46",
       "text": "Saved session to database."
-    },
-    {
-      "time": "2026-08-10 20:33:17",
-      "text": "Calculated minimum transaction settlement."
     }
   ],
   "knownRoster": [
