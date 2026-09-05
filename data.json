@@ -1200,7 +1200,7 @@
     {
       "id": 1788604744555,
       "name": "GAGAN",
-      "buyIns": 5,
+      "buyIns": 6,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1251,7 +1251,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-05T13:50:19.923Z"
+    "heartbeatAt": "2026-09-05T13:59:34.831Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1269,6 +1269,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788616759276_c8zg",
+      "time": "2026-09-05 19:29:19",
+      "text": "Buy-in increased for GAGAN: count = 6. • by Sandeep Mac"
+    },
     {
       "id": "L_1788616204275_c9n8",
       "time": "2026-09-05 19:20:04",
@@ -3203,10 +3208,6 @@
     {
       "time": "2026-08-13 13:23:15",
       "text": "Buy-in increased for ABHISHEK: count = 5."
-    },
-    {
-      "time": "2026-08-13 13:23:14",
-      "text": "Buy-in increased for ABHISHEK: count = 4."
     }
   ],
   "knownRoster": [
