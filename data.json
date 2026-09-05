@@ -1244,7 +1244,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-05T12:04:19.799Z"
+    "heartbeatAt": "2026-09-05T12:06:25.200Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1262,6 +1262,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788609969539_m5n3",
+      "time": "2026-09-05 17:36:09",
+      "text": "Buy-in increased for GAGAN: count = 5. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788609968156_elzc",
+      "time": "2026-09-05 17:36:08",
+      "text": "Buy-in decreased for GAGAN: count = 4. • by Sandeep Mac"
+    },
     {
       "id": "L_1788609843322_y5ee",
       "time": "2026-09-05 17:34:03",
@@ -3177,14 +3187,6 @@
     {
       "time": "2026-08-05 12:47:32",
       "text": "Added \"RAVI\" with 1 buy-in (1000c)."
-    },
-    {
-      "time": "2026-08-05 12:46:41",
-      "text": "Pushed live state to GitHub repo."
-    },
-    {
-      "time": "2026-08-05 12:46:30",
-      "text": "Added \"ABHISHEK\" with 1 buy-in (1000c)."
     }
   ],
   "knownRoster": [
