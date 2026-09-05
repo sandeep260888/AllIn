@@ -1242,7 +1242,7 @@
     {
       "id": 1788614094724,
       "name": "RISHI",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -1251,7 +1251,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-05T13:44:34.079Z"
+    "heartbeatAt": "2026-09-05T13:50:19.923Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1269,6 +1269,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788616204275_c9n8",
+      "time": "2026-09-05 19:20:04",
+      "text": "Buy-in increased for RISHI: count = 2. • by Sandeep Mac"
+    },
     {
       "id": "L_1788615858475_0950",
       "time": "2026-09-05 19:14:18",
@@ -3202,10 +3207,6 @@
     {
       "time": "2026-08-13 13:23:14",
       "text": "Buy-in increased for ABHISHEK: count = 4."
-    },
-    {
-      "time": "2026-08-13 13:23:14",
-      "text": "Buy-in increased for ABHISHEK: count = 3."
     }
   ],
   "knownRoster": [
