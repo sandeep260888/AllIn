@@ -1238,13 +1238,20 @@
       "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1788614094724,
+      "name": "RISHI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "activeSessionId": "S_mto92xxtr6bbz5",
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-05T13:14:50.030Z"
+    "heartbeatAt": "2026-09-05T13:15:10.757Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1262,6 +1269,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788614094724_0pk7",
+      "time": "2026-09-05 18:44:54",
+      "text": "Added \"RISHI\" with 1 buy-in (1000c). • by Sandeep Mac"
+    },
     {
       "id": "L_1788614073974_lqhy",
       "time": "2026-09-05 18:44:33",
@@ -3191,10 +3203,6 @@
     {
       "time": "2026-08-13 13:23:09",
       "text": "Added \"ALOK\" with 1 buy-in (1000c)."
-    },
-    {
-      "time": "2026-08-13 13:23:07",
-      "text": "Added \"ABHISHEK\" with 1 buy-in (1000c)."
     }
   ],
   "knownRoster": [
