@@ -1214,7 +1214,7 @@
     {
       "id": 1788604753554,
       "name": "RAVI",
-      "buyIns": 4,
+      "buyIns": 5,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1235,7 +1235,7 @@
     {
       "id": 1788604833955,
       "name": "KUNAL",
-      "buyIns": 3,
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -1244,7 +1244,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-05T12:28:53.399Z"
+    "heartbeatAt": "2026-09-05T12:50:16.437Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1262,6 +1262,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788612600140_xlv1",
+      "time": "2026-09-05 18:20:00",
+      "text": "Buy-in increased for KUNAL: count = 4. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788612598491_amfn",
+      "time": "2026-09-05 18:19:58",
+      "text": "Buy-in increased for RAVI: count = 5. • by Sandeep Mac"
+    },
     {
       "id": "L_1788611317889_osmm",
       "time": "2026-09-05 17:58:37",
@@ -3183,14 +3193,6 @@
     {
       "time": "2026-08-13 13:15:00",
       "text": "Deleted session S_1785359254471 via admin mode."
-    },
-    {
-      "time": "2026-08-13 13:14:45",
-      "text": "Admin edit mode ENABLED via secret gesture."
-    },
-    {
-      "time": "2026-08-10 20:33:46",
-      "text": "Saved session to database."
     }
   ],
   "knownRoster": [
