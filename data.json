@@ -1214,7 +1214,7 @@
     {
       "id": 1788604753554,
       "name": "RAVI",
-      "buyIns": 6,
+      "buyIns": 7,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1251,7 +1251,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-05T13:22:08.269Z"
+    "heartbeatAt": "2026-09-05T13:32:14.357Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1269,6 +1269,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788615118291_9tsq",
+      "time": "2026-09-05 19:01:58",
+      "text": "Buy-in increased for RAVI: count = 7. • by Sandeep Mac"
+    },
     {
       "id": "L_1788614512757_a04e",
       "time": "2026-09-05 18:51:52",
@@ -3200,10 +3205,6 @@
     {
       "time": "2026-08-13 13:23:13",
       "text": "Buy-in increased for ABHISHEK: count = 2."
-    },
-    {
-      "time": "2026-08-13 13:23:12",
-      "text": "Added \"AKSHAY\" with 1 buy-in (1000c)."
     }
   ],
   "knownRoster": [
