@@ -1228,7 +1228,7 @@
     {
       "id": 1788604803121,
       "name": "SONAK",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1244,7 +1244,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-05T10:50:54.298Z"
+    "heartbeatAt": "2026-09-05T11:08:50.583Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1262,6 +1262,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788606514687_mdce",
+      "time": "2026-09-05 16:38:34",
+      "text": "Buy-in increased for SONAK: count = 3. • by Sandeep Mac"
+    },
     {
       "id": "L_1788605438771_v6xw",
       "time": "2026-09-05 16:20:38",
@@ -3173,11 +3178,6 @@
     {
       "time": "2026-08-05 07:12:14",
       "text": "Saved session to database."
-    },
-    {
-      "id": "L_1785775658215_p41l",
-      "time": "2026-08-03 16:47:38",
-      "text": "Calculated minimum transaction settlement • by RISHI"
     }
   ],
   "knownRoster": [
