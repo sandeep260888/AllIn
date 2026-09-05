@@ -1228,7 +1228,7 @@
     {
       "id": 1788604803121,
       "name": "SONAK",
-      "buyIns": 6,
+      "buyIns": 7,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1251,7 +1251,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-05T14:23:10.555Z"
+    "heartbeatAt": "2026-09-05T14:26:30.231Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1269,6 +1269,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788618374526_dsos",
+      "time": "2026-09-05 19:56:14",
+      "text": "Buy-in increased for SONAK: count = 7. • by Sandeep Mac"
+    },
     {
       "id": "L_1788618175009_tuf1",
       "time": "2026-09-05 19:52:55",
@@ -3205,10 +3210,6 @@
     {
       "time": "2026-08-13 13:23:17",
       "text": "Buy-in increased for ALOK: count = 2."
-    },
-    {
-      "time": "2026-08-13 13:23:15",
-      "text": "Milestone reached: ABHISHEK hit 5 buy-ins."
     }
   ],
   "knownRoster": [
