@@ -1195,7 +1195,7 @@
       "name": "AKSHAY",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 8750
+      "cashOutCoins": 8950
     },
     {
       "id": 1788604744555,
@@ -1209,21 +1209,21 @@
       "name": "HARSHIT",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 7760
+      "cashOutCoins": 7960
     },
     {
       "id": 1788604753554,
       "name": "RAVI",
       "buyIns": 8,
       "buyInCoins": 1000,
-      "cashOutCoins": 4170
+      "cashOutCoins": 4570
     },
     {
       "id": 1788604797956,
       "name": "SANDEEP",
       "buyIns": 5,
       "buyInCoins": 1000,
-      "cashOutCoins": 5000
+      "cashOutCoins": 5200
     },
     {
       "id": 1788604803121,
@@ -1251,7 +1251,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-05T17:12:32.748Z"
+    "heartbeatAt": "2026-09-05T17:13:52.458Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1269,6 +1269,26 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788628416897_5qpm",
+      "time": "2026-09-05 22:43:36",
+      "text": "Set final coins for SANDEEP: 5200 coins. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788628413198_8o8l",
+      "time": "2026-09-05 22:43:33",
+      "text": "Set final coins for AKSHAY: 8950 coins. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788628407681_3n22",
+      "time": "2026-09-05 22:43:27",
+      "text": "Set final coins for HARSHIT: 7960 coins. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788628397432_qffx",
+      "time": "2026-09-05 22:43:17",
+      "text": "Set final coins for RAVI: 4570 coins. • by Sandeep Mac"
+    },
     {
       "id": "L_1788628337397_c7e8",
       "time": "2026-09-05 22:42:17",
@@ -3208,22 +3228,6 @@
     {
       "time": "2026-08-15 01:19:07",
       "text": "Set final coins for ALOK: 10200 coins."
-    },
-    {
-      "time": "2026-08-15 01:17:53",
-      "text": "Set final coins for GAGAN: 23000 coins."
-    },
-    {
-      "time": "2026-08-15 01:16:53",
-      "text": "Set final coins for RAVI: 1420 coins."
-    },
-    {
-      "time": "2026-08-15 01:16:15",
-      "text": "Set final coins for SANDEEP: 3000 coins."
-    },
-    {
-      "time": "2026-08-14 09:18:16",
-      "text": "Cleared active session dashboard."
     }
   ],
   "knownRoster": [
