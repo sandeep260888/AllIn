@@ -1221,7 +1221,7 @@
     {
       "id": 1788604797956,
       "name": "SANDEEP",
-      "buyIns": 3,
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1244,7 +1244,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-05T12:06:25.200Z"
+    "heartbeatAt": "2026-09-05T12:14:09.213Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1262,6 +1262,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788610433556_jzm2",
+      "time": "2026-09-05 17:43:53",
+      "text": "Buy-in increased for SANDEEP: count = 4. • by Sandeep Mac"
+    },
     {
       "id": "L_1788609969539_m5n3",
       "time": "2026-09-05 17:36:09",
@@ -3183,10 +3188,6 @@
     {
       "time": "2026-08-07 21:07:57",
       "text": "Pushed live state to GitHub repo."
-    },
-    {
-      "time": "2026-08-05 12:47:32",
-      "text": "Added \"RAVI\" with 1 buy-in (1000c)."
     }
   ],
   "knownRoster": [
