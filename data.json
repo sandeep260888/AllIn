@@ -1231,13 +1231,20 @@
       "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1788604833955,
+      "name": "KUNAL",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "activeSessionId": "S_mto92xxtr6bbz5",
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-05T10:40:19.110Z"
+    "heartbeatAt": "2026-09-05T10:40:49.507Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1255,6 +1262,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788604833955_jcoq",
+      "time": "2026-09-05 16:10:33",
+      "text": "Added \"KUNAL\" with 1 buy-in (1000c). • by Sandeep Mac"
+    },
     {
       "id": "L_1788604803121_2xr1",
       "time": "2026-09-05 16:10:03",
@@ -3166,11 +3178,6 @@
       "id": "L_1785773736731_vzak",
       "time": "2026-08-03 16:15:36",
       "text": "Buy-in increased for HARI: count = 4 • by RISHI"
-    },
-    {
-      "id": "L_1785773547885_j735",
-      "time": "2026-08-03 16:12:27",
-      "text": "Buy-in increased for AKSHAY: count = 5 • by RISHI"
     }
   ],
   "knownRoster": [
