@@ -1235,7 +1235,7 @@
     {
       "id": 1788604833955,
       "name": "KUNAL",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -1244,7 +1244,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-05T12:14:09.213Z"
+    "heartbeatAt": "2026-09-05T12:22:55.357Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1262,6 +1262,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788610959473_177z",
+      "time": "2026-09-05 17:52:39",
+      "text": "Buy-in increased for KUNAL: count = 3. • by Sandeep Mac"
+    },
     {
       "id": "L_1788610433556_jzm2",
       "time": "2026-09-05 17:43:53",
@@ -3184,10 +3189,6 @@
     {
       "time": "2026-08-07 21:12:35",
       "text": "Saved session to database."
-    },
-    {
-      "time": "2026-08-07 21:07:57",
-      "text": "Pushed live state to GitHub repo."
     }
   ],
   "knownRoster": [
