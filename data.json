@@ -1235,7 +1235,7 @@
     {
       "id": 1788604833955,
       "name": "KUNAL",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -1244,7 +1244,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-05T12:01:42.231Z"
+    "heartbeatAt": "2026-09-05T12:04:19.799Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1262,6 +1262,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788609843322_y5ee",
+      "time": "2026-09-05 17:34:03",
+      "text": "Buy-in increased for KUNAL: count = 2. • by Sandeep Mac"
+    },
     {
       "id": "L_1788609686572_19v2",
       "time": "2026-09-05 17:31:26",
@@ -3180,10 +3185,6 @@
     {
       "time": "2026-08-05 12:46:30",
       "text": "Added \"ABHISHEK\" with 1 buy-in (1000c)."
-    },
-    {
-      "time": "2026-08-05 12:46:26",
-      "text": "Added \"KUNAL\" with 1 buy-in (1000c)."
     }
   ],
   "knownRoster": [
