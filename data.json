@@ -1216,7 +1216,7 @@
       "name": "RAVI",
       "buyIns": 8,
       "buyInCoins": 1000,
-      "cashOutCoins": 41
+      "cashOutCoins": 4170
     },
     {
       "id": 1788604797956,
@@ -1251,7 +1251,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-05T17:10:49.470Z"
+    "heartbeatAt": "2026-09-05T17:11:07.036Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1269,6 +1269,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788628251050_a1su",
+      "time": "2026-09-05 22:40:51",
+      "text": "Set final coins for RAVI: 4170 coins. • by Sandeep Mac"
+    },
     {
       "id": "L_1788628232714_ndts",
       "time": "2026-09-05 22:40:32",
@@ -3215,10 +3220,6 @@
     {
       "time": "2026-08-14 08:57:45",
       "text": "Buy-in increased for AKSHAY: count = 9."
-    },
-    {
-      "time": "2026-08-14 08:57:44",
-      "text": "Buy-in increased for AKSHAY: count = 8."
     }
   ],
   "knownRoster": [
