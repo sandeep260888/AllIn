@@ -1195,7 +1195,7 @@
       "name": "AKSHAY",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 850
+      "cashOutCoins": 8750
     },
     {
       "id": 1788604744555,
@@ -1251,7 +1251,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-05T17:12:16.087Z"
+    "heartbeatAt": "2026-09-05T17:12:32.748Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1269,6 +1269,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788628337397_c7e8",
+      "time": "2026-09-05 22:42:17",
+      "text": "Set final coins for AKSHAY: 8750 coins. • by Sandeep Mac"
+    },
     {
       "id": "L_1788628320747_rz9g",
       "time": "2026-09-05 22:42:00",
@@ -3219,10 +3224,6 @@
     {
       "time": "2026-08-14 09:18:16",
       "text": "Cleared active session dashboard."
-    },
-    {
-      "time": "2026-08-14 09:11:15",
-      "text": "Sandeep Mac stopped hosting."
     }
   ],
   "knownRoster": [
