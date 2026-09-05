@@ -1228,7 +1228,7 @@
     {
       "id": 1788604803121,
       "name": "SONAK",
-      "buyIns": 4,
+      "buyIns": 5,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1244,7 +1244,7 @@
   "activeHost": {
     "deviceId": "dev_ufpc465o",
     "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-05T13:05:23.191Z"
+    "heartbeatAt": "2026-09-05T13:14:50.030Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1262,6 +1262,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788614073974_lqhy",
+      "time": "2026-09-05 18:44:33",
+      "text": "Buy-in increased for SONAK: count = 5. • by Sandeep Mac"
+    },
     {
       "id": "L_1788613507673_42f8",
       "time": "2026-09-05 18:35:07",
@@ -3190,10 +3195,6 @@
     {
       "time": "2026-08-13 13:23:07",
       "text": "Added \"ABHISHEK\" with 1 buy-in (1000c)."
-    },
-    {
-      "time": "2026-08-13 13:22:56",
-      "text": "Cleared active session dashboard."
     }
   ],
   "knownRoster": [
