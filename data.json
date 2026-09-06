@@ -1248,11 +1248,7 @@
     }
   ],
   "activeSessionId": "S_mto92xxtr6bbz5",
-  "activeHost": {
-    "deviceId": "dev_ufpc465o",
-    "deviceName": "Sandeep Mac",
-    "heartbeatAt": "2026-09-05T17:13:52.458Z"
-  },
+  "activeHost": null,
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -1269,6 +1265,46 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788675012237_d5hm",
+      "time": "2026-09-06 11:40:12",
+      "text": "Stopped hosting. • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788628433836_zv7j",
+      "time": "2026-09-05 22:43:53",
+      "text": "Settlement: RAVI pays SANDEEP ₹100.00 • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788628433836_5eqw",
+      "time": "2026-09-05 22:43:53",
+      "text": "Settlement: RAVI pays GAGAN ₹1615.00 • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788628433835_ghzi",
+      "time": "2026-09-05 22:43:53",
+      "text": "Settlement: KUNAL pays GAGAN ₹45.00 • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788628433834_x3yt",
+      "time": "2026-09-05 22:43:53",
+      "text": "Settlement: KUNAL pays HARSHIT ₹2455.00 • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788628433833_1w3s",
+      "time": "2026-09-05 22:43:53",
+      "text": "Settlement: SONAK pays HARSHIT ₹1025.00 • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788628433832_t5q1",
+      "time": "2026-09-05 22:43:53",
+      "text": "Settlement: SONAK pays AKSHAY ₹3975.00 • by Sandeep Mac"
+    },
+    {
+      "id": "L_1788628433831_zt9y",
+      "time": "2026-09-05 22:43:53",
+      "text": "Settlement calculated (6 transfers). • by Sandeep Mac"
+    },
     {
       "id": "L_1788628416897_5qpm",
       "time": "2026-09-05 22:43:36",
@@ -3196,38 +3232,6 @@
     {
       "time": "2026-08-17 17:38:52",
       "text": "Set final coins for RAVI: 2530 coins."
-    },
-    {
-      "time": "2026-08-17 17:38:37",
-      "text": "Set final coins for AKSHAY: 8580 coins."
-    },
-    {
-      "time": "2026-08-17 17:38:30",
-      "text": "Set final coins for GAGAN: 2630 coins."
-    },
-    {
-      "time": "2026-08-17 17:38:21",
-      "text": "Set final coins for SANDEEP: 1520 coins."
-    },
-    {
-      "time": "2026-08-15 01:21:06",
-      "text": "Saved session to database."
-    },
-    {
-      "time": "2026-08-15 01:20:55",
-      "text": "Set final coins for RAVI: 1500 coins."
-    },
-    {
-      "time": "2026-08-15 01:19:36",
-      "text": "Set final coins for AKSHAY: 15500 coins."
-    },
-    {
-      "time": "2026-08-15 01:19:16",
-      "text": "Set final coins for ALOK: 10000 coins."
-    },
-    {
-      "time": "2026-08-15 01:19:07",
-      "text": "Set final coins for ALOK: 10200 coins."
     }
   ],
   "knownRoster": [
