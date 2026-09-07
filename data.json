@@ -1,6 +1,54 @@
 {
   "savedSessions": [
     {
+      "sessionId": "S_mtrb8w3xhbf0z2",
+      "date": "2026-09-07T18:06:14.865Z",
+      "entries": [
+        {
+          "name": "HARSHIT",
+          "investedCoins": 4000,
+          "finalCoins": 5830,
+          "netVal": 915
+        },
+        {
+          "name": "MOHINI",
+          "investedCoins": 9000,
+          "finalCoins": 1580,
+          "netVal": -3710
+        },
+        {
+          "name": "GAGAN",
+          "investedCoins": 6000,
+          "finalCoins": 3700,
+          "netVal": -1150
+        },
+        {
+          "name": "AKSHAY",
+          "investedCoins": 6000,
+          "finalCoins": 9250,
+          "netVal": 1625
+        },
+        {
+          "name": "KUNAL",
+          "investedCoins": 7000,
+          "finalCoins": 1570,
+          "netVal": -2715
+        },
+        {
+          "name": "SHUBHAM",
+          "investedCoins": 1000,
+          "finalCoins": 5470,
+          "netVal": 2235
+        },
+        {
+          "name": "ABHISHEK",
+          "investedCoins": 1000,
+          "finalCoins": 6600,
+          "netVal": 2800
+        }
+      ]
+    },
+    {
       "sessionId": "S_mto92xxtr6bbz5",
       "date": "2026-09-06T06:10:27.137Z",
       "entries": [
@@ -1231,8 +1279,58 @@
       ]
     }
   ],
-  "activePlayers": [],
-  "activeSessionId": null,
+  "activePlayers": [
+    {
+      "id": 1788789777972,
+      "name": "HARSHIT",
+      "buyIns": 4,
+      "buyInCoins": 1000,
+      "cashOutCoins": 5830
+    },
+    {
+      "id": 1788789784730,
+      "name": "MOHINI",
+      "buyIns": 9,
+      "buyInCoins": 1000,
+      "cashOutCoins": 1580
+    },
+    {
+      "id": 1788789791847,
+      "name": "GAGAN",
+      "buyIns": 6,
+      "buyInCoins": 1000,
+      "cashOutCoins": 3700
+    },
+    {
+      "id": 1788789794501,
+      "name": "AKSHAY",
+      "buyIns": 6,
+      "buyInCoins": 1000,
+      "cashOutCoins": 9250
+    },
+    {
+      "id": 1788789797362,
+      "name": "KUNAL",
+      "buyIns": 7,
+      "buyInCoins": 1000,
+      "cashOutCoins": 1570
+    },
+    {
+      "id": 1788791312322,
+      "name": "SHUBHAM",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 5470
+    },
+    {
+      "id": 1788791318666,
+      "name": "ABHISHEK",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 6600
+    }
+  ],
+  "activeSessionId": "S_mtrb8w3xhbf0z2",
   "activeHost": null,
   "settings": {
     "coinCount": "2",
@@ -1250,6 +1348,281 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788804374865_6vi8",
+      "time": "2026-09-07 23:36:14",
+      "text": "Saved session to database. • by Akshay"
+    },
+    {
+      "id": "L_1788804367795_erh6",
+      "time": "2026-09-07 23:36:07",
+      "text": "Settlement: GAGAN pays HARSHIT ₹915.00 • by Akshay"
+    },
+    {
+      "id": "L_1788804367794_d6w1",
+      "time": "2026-09-07 23:36:07",
+      "text": "Settlement: GAGAN pays AKSHAY ₹235.00 • by Akshay"
+    },
+    {
+      "id": "L_1788804367793_6qcl",
+      "time": "2026-09-07 23:36:07",
+      "text": "Settlement: KUNAL pays AKSHAY ₹1390.00 • by Akshay"
+    },
+    {
+      "id": "L_1788804367792_ss5g",
+      "time": "2026-09-07 23:36:07",
+      "text": "Settlement: KUNAL pays SHUBHAM ₹1325.00 • by Akshay"
+    },
+    {
+      "id": "L_1788804367791_71ak",
+      "time": "2026-09-07 23:36:07",
+      "text": "Settlement: MOHINI pays SHUBHAM ₹910.00 • by Akshay"
+    },
+    {
+      "id": "L_1788804367790_s7hr",
+      "time": "2026-09-07 23:36:07",
+      "text": "Settlement: MOHINI pays ABHISHEK ₹2800.00 • by Akshay"
+    },
+    {
+      "id": "L_1788804367788_tc18",
+      "time": "2026-09-07 23:36:07",
+      "text": "Settlement calculated (6 transfers). • by Akshay"
+    },
+    {
+      "id": "L_1788804361588_4ugl",
+      "time": "2026-09-07 23:36:01",
+      "text": "Set final coins for KUNAL: 1570 coins. • by Akshay"
+    },
+    {
+      "id": "L_1788804357127_grls",
+      "time": "2026-09-07 23:35:57",
+      "text": "Set final coins for KUNAL: 1500 coins. • by Akshay"
+    },
+    {
+      "id": "L_1788804353889_av4z",
+      "time": "2026-09-07 23:35:53",
+      "text": "Set final coins for MOHINI: 1580 coins. • by Akshay"
+    },
+    {
+      "id": "L_1788804311741_su24",
+      "time": "2026-09-07 23:35:11",
+      "text": "Set final coins for SHUBHAM: 5470 coins. • by Akshay"
+    },
+    {
+      "id": "L_1788804286501_epuv",
+      "time": "2026-09-07 23:34:46",
+      "text": "Set final coins for ABHISHEK: 6600 coins. • by Akshay"
+    },
+    {
+      "id": "L_1788804276731_kkyq",
+      "time": "2026-09-07 23:34:36",
+      "text": "Set final coins for KUNAL: 1400 coins. • by Akshay"
+    },
+    {
+      "id": "L_1788804273827_pfnb",
+      "time": "2026-09-07 23:34:33",
+      "text": "Set final coins for GAGAN: 3700 coins. • by Akshay"
+    },
+    {
+      "id": "L_1788804270136_jgxs",
+      "time": "2026-09-07 23:34:30",
+      "text": "Set final coins for AKSHAY: 9250 coins. • by Akshay"
+    },
+    {
+      "id": "L_1788804262944_tp4y",
+      "time": "2026-09-07 23:34:22",
+      "text": "Set final coins for HARSHIT: 5830 coins. • by Akshay"
+    },
+    {
+      "id": "L_1788804254343_5fgv",
+      "time": "2026-09-07 23:34:14",
+      "text": "Set final coins for MOHINI: 1280 coins. • by Akshay"
+    },
+    {
+      "id": "L_1788801805695_k3zq",
+      "time": "2026-09-07 22:53:25",
+      "text": "Buy-in increased for KUNAL: count = 7. • by Akshay"
+    },
+    {
+      "id": "L_1788801308446_ykqi",
+      "time": "2026-09-07 22:45:08",
+      "text": "Buy-in increased for KUNAL: count = 6. • by Akshay"
+    },
+    {
+      "id": "L_1788800782331_z7j4",
+      "time": "2026-09-07 22:36:22",
+      "text": "Buy-in increased for KUNAL: count = 5. • by Akshay"
+    },
+    {
+      "id": "L_1788800782021_eosm",
+      "time": "2026-09-07 22:36:22",
+      "text": "Buy-in increased for KUNAL: count = 4. • by Akshay"
+    },
+    {
+      "id": "L_1788800235331_kx6r",
+      "time": "2026-09-07 22:27:15",
+      "text": "Buy-in increased for MOHINI: count = 9. • by Akshay"
+    },
+    {
+      "id": "L_1788799913594_r1c3",
+      "time": "2026-09-07 22:21:53",
+      "text": "Buy-in increased for MOHINI: count = 8. • by Akshay"
+    },
+    {
+      "id": "L_1788799810554_4o4k",
+      "time": "2026-09-07 22:20:10",
+      "text": "Buy-in increased for MOHINI: count = 7. • by Akshay"
+    },
+    {
+      "id": "L_1788798630156_ui5y",
+      "time": "2026-09-07 22:00:30",
+      "text": "Buy-in increased for MOHINI: count = 6. • by Akshay"
+    },
+    {
+      "id": "L_1788797938099_a00j",
+      "time": "2026-09-07 21:48:58",
+      "text": "Buy-in increased for MOHINI: count = 5. • by Akshay"
+    },
+    {
+      "id": "L_1788797074630_xhix",
+      "time": "2026-09-07 21:34:34",
+      "text": "Buy-in increased for AKSHAY: count = 6. • by Akshay"
+    },
+    {
+      "id": "L_1788796164450_e0vi",
+      "time": "2026-09-07 21:19:24",
+      "text": "Buy-in increased for KUNAL: count = 3. • by Akshay"
+    },
+    {
+      "id": "L_1788795345978_nic7",
+      "time": "2026-09-07 21:05:45",
+      "text": "Buy-in increased for HARSHIT: count = 4. • by Akshay"
+    },
+    {
+      "id": "L_1788795253145_pl4d",
+      "time": "2026-09-07 21:04:13",
+      "text": "Buy-in increased for KUNAL: count = 2. • by Akshay"
+    },
+    {
+      "id": "L_1788795133834_jo11",
+      "time": "2026-09-07 21:02:13",
+      "text": "Buy-in increased for HARSHIT: count = 3. • by Akshay"
+    },
+    {
+      "id": "L_1788794235659_ezv9",
+      "time": "2026-09-07 20:47:15",
+      "text": "Buy-in increased for GAGAN: count = 6. • by Akshay"
+    },
+    {
+      "id": "L_1788793966790_g32x",
+      "time": "2026-09-07 20:42:46",
+      "text": "Buy-in increased for MOHINI: count = 4. • by Akshay"
+    },
+    {
+      "id": "L_1788793674805_5mt1",
+      "time": "2026-09-07 20:37:54",
+      "text": "Buy-in increased for MOHINI: count = 3. • by Akshay"
+    },
+    {
+      "id": "L_1788793398179_hgux",
+      "time": "2026-09-07 20:33:18",
+      "text": "Buy-in increased for AKSHAY: count = 5. • by Akshay"
+    },
+    {
+      "id": "L_1788793181141_7lh4",
+      "time": "2026-09-07 20:29:41",
+      "text": "Buy-in increased for GAGAN: count = 5. • by Akshay"
+    },
+    {
+      "id": "L_1788792920092_wfkd",
+      "time": "2026-09-07 20:25:20",
+      "text": "Buy-in increased for AKSHAY: count = 4. • by Akshay"
+    },
+    {
+      "id": "L_1788792670512_kfrx",
+      "time": "2026-09-07 20:21:10",
+      "text": "Buy-in increased for GAGAN: count = 4. • by Akshay"
+    },
+    {
+      "id": "L_1788792464110_13zq",
+      "time": "2026-09-07 20:17:44",
+      "text": "Buy-in increased for AKSHAY: count = 3. • by Akshay"
+    },
+    {
+      "id": "L_1788792091574_jdpm",
+      "time": "2026-09-07 20:11:31",
+      "text": "Buy-in increased for AKSHAY: count = 2. • by Akshay"
+    },
+    {
+      "id": "L_1788792089916_wcwl",
+      "time": "2026-09-07 20:11:29",
+      "text": "Buy-in increased for GAGAN: count = 3. • by Akshay"
+    },
+    {
+      "id": "L_1788791318666_azxy",
+      "time": "2026-09-07 19:58:38",
+      "text": "Added \"ABHISHEK\" with 1 buy-in (1000c). • by Akshay"
+    },
+    {
+      "id": "L_1788791312323_vy5b",
+      "time": "2026-09-07 19:58:32",
+      "text": "Added \"SHUBHAM\" with 1 buy-in (1000c). • by Akshay"
+    },
+    {
+      "id": "L_1788791268855_2s0k",
+      "time": "2026-09-07 19:57:48",
+      "text": "Buy-in increased for MOHINI: count = 2. • by Akshay"
+    },
+    {
+      "id": "L_1788790012986_bowa",
+      "time": "2026-09-07 19:36:52",
+      "text": "Buy-in increased for GAGAN: count = 2. • by Akshay"
+    },
+    {
+      "id": "L_1788790010611_1l3v",
+      "time": "2026-09-07 19:36:50",
+      "text": "Buy-in decreased for AKSHAY: count = 1. • by Akshay"
+    },
+    {
+      "id": "L_1788790007964_8ijx",
+      "time": "2026-09-07 19:36:47",
+      "text": "Buy-in increased for AKSHAY: count = 2. • by Akshay"
+    },
+    {
+      "id": "L_1788789797362_la0o",
+      "time": "2026-09-07 19:33:17",
+      "text": "Added \"KUNAL\" with 1 buy-in (1000c). • by Akshay"
+    },
+    {
+      "id": "L_1788789794501_qin4",
+      "time": "2026-09-07 19:33:14",
+      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by Akshay"
+    },
+    {
+      "id": "L_1788789791847_4vdm",
+      "time": "2026-09-07 19:33:11",
+      "text": "Added \"GAGAN\" with 1 buy-in (1000c). • by Akshay"
+    },
+    {
+      "id": "L_1788789784730_m7tv",
+      "time": "2026-09-07 19:33:04",
+      "text": "Added \"MOHINI\" with 1 buy-in (1000c). • by Akshay"
+    },
+    {
+      "id": "L_1788789779850_3j8l",
+      "time": "2026-09-07 19:32:59",
+      "text": "Buy-in increased for HARSHIT: count = 2. • by Akshay"
+    },
+    {
+      "id": "L_1788789777973_qu8q",
+      "time": "2026-09-07 19:32:57",
+      "text": "Added \"HARSHIT\" with 1 buy-in (1000c). • by Akshay"
+    },
+    {
+      "id": "L_1788789777969_rmuq",
+      "time": "2026-09-07 19:32:57",
+      "text": "Started new session and claimed host. • by Akshay"
+    },
     {
       "id": "L_1788773292297_zxvj",
       "time": "2026-09-07 14:58:12",
@@ -2974,261 +3347,6 @@
       "id": "L_1788074941926_u5ry",
       "time": "2026-08-30 12:59:01",
       "text": "Removed \"AKSHAY\". • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788074931376_vihn",
-      "time": "2026-08-30 12:58:51",
-      "text": "Stopped hosting. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788074615412_fx10",
-      "time": "2026-08-30 12:53:35",
-      "text": "Buy-in decreased for ABHISHEK: count = 3. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788074613944_lo59",
-      "time": "2026-08-30 12:53:33",
-      "text": "Buy-in increased for ABHISHEK: count = 4. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788074613794_fm8w",
-      "time": "2026-08-30 12:53:33",
-      "text": "Buy-in increased for ABHISHEK: count = 3. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788074613578_qtoa",
-      "time": "2026-08-30 12:53:33",
-      "text": "Buy-in increased for ABHISHEK: count = 2. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788074611811_dr1b",
-      "time": "2026-08-30 12:53:31",
-      "text": "Buy-in increased for AKSHAY: count = 2. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788074608479_0umv",
-      "time": "2026-08-30 12:53:28",
-      "text": "Added \"AJAY\" with 1 buy-in (1000c). • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788074605711_9al7",
-      "time": "2026-08-30 12:53:25",
-      "text": "Added \"ABHISHEK\" with 1 buy-in (1000c). • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788074600848_rvyv",
-      "time": "2026-08-30 12:53:20",
-      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788074600845_91y2",
-      "time": "2026-08-30 12:53:20",
-      "text": "Started new session and claimed host. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788074591712_zw7u",
-      "time": "2026-08-30 12:53:11",
-      "text": "Cleared active session dashboard. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788074326280_dyb7",
-      "time": "2026-08-30 12:48:46",
-      "text": "Buy-in decreased for HARI: count = 12. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788074325314_gmrp",
-      "time": "2026-08-30 12:48:45",
-      "text": "Buy-in decreased for HARI: count = 13. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788074322131_pygo",
-      "time": "2026-08-30 12:48:42",
-      "text": "Buy-in decreased for HARI: count = 14. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788074321764_14ml",
-      "time": "2026-08-30 12:48:41",
-      "text": "Buy-in decreased for HARI: count = 15. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788074231995_v4sv",
-      "time": "2026-08-30 12:47:11",
-      "text": "Buy-in decreased for ABHISHEK: count = 3. • by Sandeep"
-    },
-    {
-      "id": "L_1788074231852_ntt7",
-      "time": "2026-08-30 12:47:11",
-      "text": "Buy-in decreased for ABHISHEK: count = 4. • by Sandeep"
-    },
-    {
-      "id": "L_1788073692432_p21c",
-      "time": "2026-08-30 12:38:12",
-      "text": "Manual refresh synchronized with GitHub. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788073389589_iphr",
-      "time": "2026-08-30 12:33:09",
-      "text": "Buy-in increased for HARI: count = 16. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788073387139_c0fo",
-      "time": "2026-08-30 12:33:07",
-      "text": "Buy-in decreased for HARI: count = 15. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788073378139_0x2u",
-      "time": "2026-08-30 12:32:58",
-      "text": "Buy-in increased for HARI: count = 16. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788073373573_1wtc",
-      "time": "2026-08-30 12:32:53",
-      "text": "Buy-in increased for HARI: count = 15. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788073373306_c3m2",
-      "time": "2026-08-30 12:32:53",
-      "text": "Buy-in increased for HARI: count = 14. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788073373074_me3q",
-      "time": "2026-08-30 12:32:53",
-      "text": "Buy-in increased for HARI: count = 13. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788072935528_2obl",
-      "time": "2026-08-30 12:25:35",
-      "text": "Buy-in decreased for GAGAN: count = 13. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788072934862_5pfw",
-      "time": "2026-08-30 12:25:34",
-      "text": "Buy-in decreased for GAGAN: count = 14. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788072933395_xzf1",
-      "time": "2026-08-30 12:25:33",
-      "text": "Buy-in decreased for GAGAN: count = 15. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788072933077_87g6",
-      "time": "2026-08-30 12:25:33",
-      "text": "Buy-in decreased for GAGAN: count = 16. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788072846250_tmiu",
-      "time": "2026-08-30 12:24:06",
-      "text": "Buy-in increased for GAGAN: count = 17. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788068917268_fkrn",
-      "time": "2026-08-30 11:18:37",
-      "text": "Milestone reached: ABHISHEK hit 5 buy-ins. • by sandeep Mac"
-    },
-    {
-      "id": "L_1788068917263_qtrz",
-      "time": "2026-08-30 11:18:37",
-      "text": "Buy-in increased for ABHISHEK: count = 5. • by sandeep Mac"
-    },
-    {
-      "id": "L_1788068917064_o8ko",
-      "time": "2026-08-30 11:18:37",
-      "text": "Buy-in increased for ABHISHEK: count = 4. • by sandeep Mac"
-    },
-    {
-      "id": "L_1788068903827_7uf6",
-      "time": "2026-08-30 11:18:23",
-      "text": "Auto-pushed live state to GitHub (debounced batch). • by sandeep Mac"
-    },
-    {
-      "id": "L_1788068884798_o8pb",
-      "time": "2026-08-30 11:18:04",
-      "text": "Buy-in decreased for ABHISHEK: count = 3. • by sandeep Mac"
-    },
-    {
-      "id": "L_1788068872449_woil",
-      "time": "2026-08-30 11:17:52",
-      "text": "Buy-in increased for ABHISHEK: count = 4. • by sandeep Mac"
-    },
-    {
-      "time": "2026-08-30 02:11:44",
-      "text": "Updated existing session in database."
-    },
-    {
-      "time": "2026-08-26 18:27:20",
-      "text": "Saved session to database."
-    },
-    {
-      "time": "2026-08-26 18:25:59",
-      "text": "Calculated minimum transaction settlement."
-    },
-    {
-      "time": "2026-08-26 18:25:55",
-      "text": "Set final coins for ABHISHEK: 4740 coins."
-    },
-    {
-      "time": "2026-08-25 17:10:56",
-      "text": "Saved session to database."
-    },
-    {
-      "time": "2026-08-25 17:10:02",
-      "text": "Set final coins for HARI: 6750 coins."
-    },
-    {
-      "time": "2026-08-25 17:09:56",
-      "text": "Set final coins for SANDEEP: 4250 coins."
-    },
-    {
-      "time": "2026-08-25 17:09:48",
-      "text": "Set final coins for AKSHAY: 6000 coins."
-    },
-    {
-      "time": "2026-08-25 08:31:21",
-      "text": "Sandeep stopped hosting."
-    },
-    {
-      "time": "2026-08-25 08:31:17",
-      "text": "Sandeep took over hosting from rishi (inactive 8h+)."
-    },
-    {
-      "time": "2026-08-24 13:43:57",
-      "text": "Updated existing session in database."
-    },
-    {
-      "time": "2026-08-24 13:43:43",
-      "text": "rishi took over hosting from Sandeep Mac (inactive 8h+)."
-    },
-    {
-      "time": "2026-08-22 12:04:16",
-      "text": "Calculated minimum transaction settlement."
-    },
-    {
-      "time": "2026-08-20 14:34:26",
-      "text": "Deleted session S_1786540434660 via admin mode."
-    },
-    {
-      "time": "2026-08-20 14:32:49",
-      "text": "Pushed live state to GitHub repo."
-    },
-    {
-      "time": "2026-08-20 14:32:36",
-      "text": "Deleted session S_1787146179440 via admin mode."
-    },
-    {
-      "time": "2026-08-20 14:32:16",
-      "text": "Admin edit mode ENABLED via secret gesture."
-    },
-    {
-      "time": "2026-08-19 19:03:44",
-      "text": "Saved session to database."
-    },
-    {
-      "time": "2026-08-19 19:00:08",
-      "text": "Calculated minimum transaction settlement."
-    },
-    {
-      "time": "2026-08-18 17:43:52",
-      "text": "Saved session to database."
     }
   ],
   "knownRoster": [
@@ -3244,6 +3362,7 @@
     "ABHISHEK",
     "HARSHIT",
     "SONAK",
-    "VIKAS"
+    "VIKAS",
+    "SHUBHAM"
   ]
 }
