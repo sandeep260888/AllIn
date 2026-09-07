@@ -1057,18 +1057,6 @@
       ]
     },
     {
-      "sessionId": "S_1785359254471",
-      "date": "2026-07-29T21:07:34.471Z",
-      "entries": [
-        {
-          "name": "SANDEEP",
-          "investedCoins": 1000,
-          "finalCoins": 1000,
-          "netVal": 0
-        }
-      ]
-    },
-    {
       "sessionId": "S_1785345383520",
       "date": "2026-07-29T17:16:23.520Z",
       "entries": [
@@ -1319,6 +1307,41 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788773102301_6krb",
+      "time": "2026-09-07 14:55:02",
+      "text": "Deleted session S_1785359254471 via admin mode. • by Device-IPA6"
+    },
+    {
+      "id": "L_1788773055038_vw80",
+      "time": "2026-09-07 14:54:15",
+      "text": "Admin edit mode ENABLED via secret gesture. • by Device-IPA6"
+    },
+    {
+      "id": "L_1788773012969_m6tb",
+      "time": "2026-09-07 14:53:32",
+      "text": "Cleared active session dashboard. • by Device-IPA6"
+    },
+    {
+      "id": "L_1788772915204_yz55",
+      "time": "2026-09-07 14:51:55",
+      "text": "Random picker chose GAGAN. • by Device-IPA6"
+    },
+    {
+      "id": "L_1788772915040_4mwg",
+      "time": "2026-09-07 14:51:55",
+      "text": "Random picker chose GAGAN. • by Device-IPA6"
+    },
+    {
+      "id": "L_1788772914877_72e0",
+      "time": "2026-09-07 14:51:54",
+      "text": "Random picker chose HARSHIT. • by Device-IPA6"
+    },
+    {
+      "id": "L_1788772914614_x1ib",
+      "time": "2026-09-07 14:51:54",
+      "text": "Random picker chose RISHI. • by Device-IPA6"
+    },
     {
       "id": "L_1788675027139_5w8j",
       "time": "2026-09-06 11:40:27",
@@ -3259,34 +3282,6 @@
     {
       "time": "2026-08-18 17:41:48",
       "text": "Set final coins for RAVI: 9640 coins."
-    },
-    {
-      "time": "2026-08-18 17:41:41",
-      "text": "Set final coins for AKSHAY: 6370 coins."
-    },
-    {
-      "time": "2026-08-18 17:41:16",
-      "text": "Set final coins for AKSHAY: 8370 coins."
-    },
-    {
-      "time": "2026-08-18 17:40:54",
-      "text": "Set final coins for RISHI: 1530 coins."
-    },
-    {
-      "time": "2026-08-17 17:40:00",
-      "text": "Saved session to database."
-    },
-    {
-      "time": "2026-08-17 17:39:21",
-      "text": "Calculated minimum transaction settlement."
-    },
-    {
-      "time": "2026-08-17 17:39:11",
-      "text": "Set final coins for SANDEEP: 1560 coins."
-    },
-    {
-      "time": "2026-08-17 17:38:59",
-      "text": "Set final coins for RISHI: 700 coins."
     }
   ],
   "knownRoster": [
