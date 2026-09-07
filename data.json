@@ -1231,65 +1231,8 @@
       ]
     }
   ],
-  "activePlayers": [
-    {
-      "id": 1788604739925,
-      "name": "AKSHAY",
-      "buyIns": 1,
-      "buyInCoins": 1000,
-      "cashOutCoins": 8950
-    },
-    {
-      "id": 1788604744555,
-      "name": "GAGAN",
-      "buyIns": 6,
-      "buyInCoins": 1000,
-      "cashOutCoins": 9320
-    },
-    {
-      "id": 1788604748840,
-      "name": "HARSHIT",
-      "buyIns": 1,
-      "buyInCoins": 1000,
-      "cashOutCoins": 7960
-    },
-    {
-      "id": 1788604753554,
-      "name": "RAVI",
-      "buyIns": 8,
-      "buyInCoins": 1000,
-      "cashOutCoins": 4570
-    },
-    {
-      "id": 1788604797956,
-      "name": "SANDEEP",
-      "buyIns": 5,
-      "buyInCoins": 1000,
-      "cashOutCoins": 5200
-    },
-    {
-      "id": 1788604803121,
-      "name": "SONAK",
-      "buyIns": 10,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1788604833955,
-      "name": "KUNAL",
-      "buyIns": 5,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1788614094724,
-      "name": "RISHI",
-      "buyIns": 2,
-      "buyInCoins": 1000,
-      "cashOutCoins": 2000
-    }
-  ],
-  "activeSessionId": "S_mto92xxtr6bbz5",
+  "activePlayers": [],
+  "activeSessionId": null,
   "activeHost": null,
   "settings": {
     "coinCount": "2",
@@ -1307,6 +1250,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788773286600_oojj",
+      "time": "2026-09-07 14:58:06",
+      "text": "Cleared active session dashboard. • by Device-IPA6"
+    },
+    {
+      "id": "L_1788773251601_rs11",
+      "time": "2026-09-07 14:57:31",
+      "text": "Manual refresh synchronized with GitHub. • by Device-IPA6"
+    },
+    {
+      "id": "L_1788773191747_g9s3",
+      "time": "2026-09-07 14:56:31",
+      "text": "Pushed live state to GitHub repo. • by Device-IPA6"
+    },
     {
       "id": "L_1788773102301_6krb",
       "time": "2026-09-07 14:55:02",
@@ -3270,18 +3228,6 @@
     {
       "time": "2026-08-18 17:43:47",
       "text": "Set final coins for RAVI: 9140 coins."
-    },
-    {
-      "time": "2026-08-18 17:43:17",
-      "text": "Set final coins for AKSHAY: 5870 coins."
-    },
-    {
-      "time": "2026-08-18 17:43:10",
-      "text": "Set final coins for ABHISHEK: 1460 coins."
-    },
-    {
-      "time": "2026-08-18 17:41:48",
-      "text": "Set final coins for RAVI: 9640 coins."
     }
   ],
   "knownRoster": [
