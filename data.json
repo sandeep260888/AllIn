@@ -1317,11 +1317,7 @@
     }
   ],
   "activeSessionId": "S_mtsqxojgs8ggoa",
-  "activeHost": {
-    "deviceId": "dev_w3f5ipa6",
-    "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-08T17:23:36.918Z"
-  },
+  "activeHost": null,
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -1338,6 +1334,31 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788888550775_qftv",
+      "time": "2026-09-08 22:59:10",
+      "text": "Stopped hosting. • by sandeep mac"
+    },
+    {
+      "id": "L_1788888238359_nupn",
+      "time": "2026-09-08 22:53:58",
+      "text": "Random picker chose SANDEEP. • by sandeep mac"
+    },
+    {
+      "id": "L_1788888238226_f9lx",
+      "time": "2026-09-08 22:53:58",
+      "text": "Random picker chose GAGAN. • by sandeep mac"
+    },
+    {
+      "id": "L_1788888238076_gtw6",
+      "time": "2026-09-08 22:53:58",
+      "text": "Random picker chose AKSHAY. • by sandeep mac"
+    },
+    {
+      "id": "L_1788888237930_fbtf",
+      "time": "2026-09-08 22:53:57",
+      "text": "Random picker chose GAGAN. • by sandeep mac"
+    },
     {
       "id": "L_1788888200548_7zl8",
       "time": "2026-09-08 22:53:20",
@@ -3312,31 +3333,6 @@
       "id": "L_1788198042087_8hf3",
       "time": "2026-08-31 23:10:42",
       "text": "Manual refresh synchronized with GitHub. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788194200824_8rcu",
-      "time": "2026-08-31 22:06:40",
-      "text": "Saved session to database. • by Akshay"
-    },
-    {
-      "id": "L_1788194067437_prxn",
-      "time": "2026-08-31 22:04:27",
-      "text": "Settlement: AKSHAY pays RISHI ₹195.00 • by Akshay"
-    },
-    {
-      "id": "L_1788194067436_pzfc",
-      "time": "2026-08-31 22:04:27",
-      "text": "Settlement: ABHISHEK pays RISHI ₹1375.00 • by Akshay"
-    },
-    {
-      "id": "L_1788194067435_bgvy",
-      "time": "2026-08-31 22:04:27",
-      "text": "Settlement: ABHISHEK pays HARI ₹125.00 • by Akshay"
-    },
-    {
-      "id": "L_1788194067434_utbu",
-      "time": "2026-08-31 22:04:27",
-      "text": "Settlement: GAGAN pays HARI ₹3000.00 • by Akshay"
     }
   ],
   "knownRoster": [
