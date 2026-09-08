@@ -1297,7 +1297,7 @@
     {
       "id": 1788876608652,
       "name": "MOHINI",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1320,7 +1320,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-08T16:01:14.952Z"
+    "heartbeatAt": "2026-09-08T16:28:59.343Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1338,6 +1338,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788884923235_40tk",
+      "time": "2026-09-08 21:58:43",
+      "text": "Buy-in increased for MOHINI: count = 3. • by sandeep mac"
+    },
     {
       "id": "L_1788883259188_2a2f",
       "time": "2026-09-08 21:30:59",
@@ -3332,11 +3337,6 @@
       "id": "L_1788193975436_xebp",
       "time": "2026-08-31 22:02:55",
       "text": "Set final coins for AKSHAY: 4610 coins. • by Akshay"
-    },
-    {
-      "id": "L_1788193926956_uc6v",
-      "time": "2026-08-31 22:02:06",
-      "text": "Set final coins for HARI: 8000 coins. • by Akshay"
     }
   ],
   "knownRoster": [
