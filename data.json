@@ -1281,57 +1281,47 @@
   ],
   "activePlayers": [
     {
-      "id": 1788789777972,
-      "name": "HARSHIT",
-      "buyIns": 4,
-      "buyInCoins": 1000,
-      "cashOutCoins": 5830
-    },
-    {
-      "id": 1788789784730,
-      "name": "MOHINI",
-      "buyIns": 9,
-      "buyInCoins": 1000,
-      "cashOutCoins": 1580
-    },
-    {
-      "id": 1788789791847,
-      "name": "GAGAN",
-      "buyIns": 6,
-      "buyInCoins": 1000,
-      "cashOutCoins": 3700
-    },
-    {
-      "id": 1788789794501,
+      "id": 1788876599724,
       "name": "AKSHAY",
-      "buyIns": 6,
+      "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 9250
+      "cashOutCoins": 0
     },
     {
-      "id": 1788789797362,
+      "id": 1788876605030,
+      "name": "GAGAN",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1788876608652,
+      "name": "MOHINI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1788876613230,
       "name": "KUNAL",
-      "buyIns": 7,
-      "buyInCoins": 1000,
-      "cashOutCoins": 1570
-    },
-    {
-      "id": 1788791312322,
-      "name": "SHUBHAM",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 5470
+      "cashOutCoins": 0
     },
     {
-      "id": 1788791318666,
-      "name": "ABHISHEK",
+      "id": 1788876617389,
+      "name": "SANDEEP",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 6600
+      "cashOutCoins": 0
     }
   ],
-  "activeSessionId": "S_mtrb8w3xhbf0z2",
-  "activeHost": null,
+  "activeSessionId": "S_mtsqxojgs8ggoa",
+  "activeHost": {
+    "deviceId": "dev_w3f5ipa6",
+    "deviceName": "sandeep mac",
+    "heartbeatAt": "2026-09-08T14:10:35.464Z"
+  },
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -1348,6 +1338,41 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788876617389_1szi",
+      "time": "2026-09-08 19:40:17",
+      "text": "Added \"SANDEEP\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1788876613230_g8wi",
+      "time": "2026-09-08 19:40:13",
+      "text": "Added \"KUNAL\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1788876608653_bhd6",
+      "time": "2026-09-08 19:40:08",
+      "text": "Added \"MOHINI\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1788876605030_n9pu",
+      "time": "2026-09-08 19:40:05",
+      "text": "Added \"GAGAN\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1788876599724_w89g",
+      "time": "2026-09-08 19:39:59",
+      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1788876599714_coa0",
+      "time": "2026-09-08 19:39:59",
+      "text": "Started new session and claimed host. • by sandeep mac"
+    },
+    {
+      "id": "L_1788876586300_exzc",
+      "time": "2026-09-08 19:39:46",
+      "text": "Cleared active session dashboard. • by Device-IPA6"
+    },
     {
       "id": "L_1788804410795_53kc",
       "time": "2026-09-07 23:36:50",
@@ -1637,6 +1662,21 @@
       "id": "L_1788789777969_rmuq",
       "time": "2026-09-07 19:32:57",
       "text": "Started new session and claimed host. • by Akshay"
+    },
+    {
+      "id": "L_1788780518554_ezb1",
+      "time": "2026-09-07 16:58:38",
+      "text": "Manual refresh synchronized with GitHub. • by Device-IPA6"
+    },
+    {
+      "id": "L_1788780490114_qjdu",
+      "time": "2026-09-07 16:58:10",
+      "text": "Admin edit mode ENABLED via secret gesture. • by Device-IPA6"
+    },
+    {
+      "id": "L_1788780480481_griz",
+      "time": "2026-09-07 16:58:00",
+      "text": "Manual refresh synchronized with GitHub. • by Device-IPA6"
     },
     {
       "id": "L_1788773292297_zxvj",
@@ -3297,56 +3337,6 @@
       "id": "L_1788188694061_hf01",
       "time": "2026-08-31 20:34:54",
       "text": "Buy-in increased for GAGAN: count = 5. • by Akshay"
-    },
-    {
-      "id": "L_1788187260448_k7l9",
-      "time": "2026-08-31 20:11:00",
-      "text": "Buy-in increased for GAGAN: count = 4. • by Akshay"
-    },
-    {
-      "id": "L_1788186936205_k9jo",
-      "time": "2026-08-31 20:05:36",
-      "text": "Buy-in increased for AKSHAY: count = 2. • by Akshay"
-    },
-    {
-      "id": "L_1788185097179_e4a6",
-      "time": "2026-08-31 19:34:57",
-      "text": "Buy-in increased for GAGAN: count = 3. • by Akshay"
-    },
-    {
-      "id": "L_1788184737806_olp3",
-      "time": "2026-08-31 19:28:57",
-      "text": "Buy-in increased for GAGAN: count = 2. • by Akshay"
-    },
-    {
-      "id": "L_1788184735339_edo5",
-      "time": "2026-08-31 19:28:55",
-      "text": "Added \"ABHISHEK\" with 1 buy-in (1000c). • by Akshay"
-    },
-    {
-      "id": "L_1788184728835_7pwo",
-      "time": "2026-08-31 19:28:48",
-      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by Akshay"
-    },
-    {
-      "id": "L_1788184725141_54zy",
-      "time": "2026-08-31 19:28:45",
-      "text": "Added \"HARI\" with 1 buy-in (1000c). • by Akshay"
-    },
-    {
-      "id": "L_1788184722120_r60e",
-      "time": "2026-08-31 19:28:42",
-      "text": "Added \"RISHI\" with 1 buy-in (1000c). • by Akshay"
-    },
-    {
-      "id": "L_1788184707462_4z8x",
-      "time": "2026-08-31 19:28:27",
-      "text": "Added \"GAGAN\" with 1 buy-in (1000c). • by Akshay"
-    },
-    {
-      "id": "L_1788184707460_rj3h",
-      "time": "2026-08-31 19:28:27",
-      "text": "Started new session and claimed host. • by Akshay"
     }
   ],
   "knownRoster": [
