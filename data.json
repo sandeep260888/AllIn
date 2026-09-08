@@ -1283,7 +1283,7 @@
     {
       "id": 1788876599724,
       "name": "AKSHAY",
-      "buyIns": 3,
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1320,7 +1320,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-08T15:45:13.621Z"
+    "heartbeatAt": "2026-09-08T16:01:14.952Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1338,6 +1338,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788883259188_2a2f",
+      "time": "2026-09-08 21:30:59",
+      "text": "Buy-in increased for AKSHAY: count = 4. • by sandeep mac"
+    },
     {
       "id": "L_1788882297741_uvan",
       "time": "2026-09-08 21:14:57",
@@ -3332,11 +3337,6 @@
       "id": "L_1788193926956_uc6v",
       "time": "2026-08-31 22:02:06",
       "text": "Set final coins for HARI: 8000 coins. • by Akshay"
-    },
-    {
-      "id": "L_1788193915054_r775",
-      "time": "2026-08-31 22:01:55",
-      "text": "Set final coins for RISHI: 5390 coins. • by Akshay"
     }
   ],
   "knownRoster": [
