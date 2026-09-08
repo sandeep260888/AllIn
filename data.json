@@ -1311,7 +1311,7 @@
     {
       "id": 1788876617389,
       "name": "SANDEEP",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -1320,7 +1320,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-08T14:10:35.464Z"
+    "heartbeatAt": "2026-09-08T14:30:00.044Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1338,6 +1338,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788877783971_vkjp",
+      "time": "2026-09-08 19:59:43",
+      "text": "Buy-in increased for SANDEEP: count = 2. • by sandeep mac"
+    },
     {
       "id": "L_1788876617389_1szi",
       "time": "2026-09-08 19:40:17",
@@ -3332,11 +3337,6 @@
       "id": "L_1788188695627_xsos",
       "time": "2026-08-31 20:34:55",
       "text": "Buy-in increased for RISHI: count = 2. • by Akshay"
-    },
-    {
-      "id": "L_1788188694061_hf01",
-      "time": "2026-08-31 20:34:54",
-      "text": "Buy-in increased for GAGAN: count = 5. • by Akshay"
     }
   ],
   "knownRoster": [
