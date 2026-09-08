@@ -1290,7 +1290,7 @@
     {
       "id": 1788876605030,
       "name": "GAGAN",
-      "buyIns": 5,
+      "buyIns": 6,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1320,7 +1320,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-08T16:32:35.198Z"
+    "heartbeatAt": "2026-09-08T16:33:03.521Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1338,6 +1338,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788885167918_ta3q",
+      "time": "2026-09-08 22:02:47",
+      "text": "Buy-in increased for GAGAN: count = 6. • by sandeep mac"
+    },
     {
       "id": "L_1788885139401_02yb",
       "time": "2026-09-08 22:02:19",
@@ -3332,11 +3337,6 @@
       "id": "L_1788194067329_o80d",
       "time": "2026-08-31 22:04:27",
       "text": "Set final coins for RISHI: 5140 coins. • by Akshay"
-    },
-    {
-      "id": "L_1788194055972_jr8p",
-      "time": "2026-08-31 22:04:15",
-      "text": "Set final coins for HARI: 7250 coins. • by Akshay"
     }
   ],
   "knownRoster": [
