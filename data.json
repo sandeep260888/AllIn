@@ -1283,7 +1283,7 @@
     {
       "id": 1788876599724,
       "name": "AKSHAY",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1320,7 +1320,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-08T15:09:54.631Z"
+    "heartbeatAt": "2026-09-08T15:18:02.189Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1338,6 +1338,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788880665945_lcu7",
+      "time": "2026-09-08 20:47:45",
+      "text": "Buy-in increased for AKSHAY: count = 2. • by sandeep mac"
+    },
     {
       "id": "L_1788880178897_12hb",
       "time": "2026-09-08 20:39:38",
@@ -3332,11 +3337,6 @@
       "id": "L_1788192497850_ve83",
       "time": "2026-08-31 21:38:17",
       "text": "Buy-in increased for AKSHAY: count = 4. • by Akshay"
-    },
-    {
-      "id": "L_1788192027473_xbky",
-      "time": "2026-08-31 21:30:27",
-      "text": "Buy-in increased for GAGAN: count = 6. • by Akshay"
     }
   ],
   "knownRoster": [
