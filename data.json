@@ -1313,14 +1313,14 @@
       "name": "SANDEEP",
       "buyIns": 2,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 1500
     }
   ],
   "activeSessionId": "S_mtsqxojgs8ggoa",
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-08T16:55:21.891Z"
+    "heartbeatAt": "2026-09-08T17:23:36.918Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1338,6 +1338,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788888200548_7zl8",
+      "time": "2026-09-08 22:53:20",
+      "text": "Set final coins for SANDEEP: 1500 coins. • by sandeep mac"
+    },
     {
       "id": "L_1788886505432_w03w",
       "time": "2026-09-08 22:25:05",
@@ -3332,11 +3337,6 @@
       "id": "L_1788194067434_utbu",
       "time": "2026-08-31 22:04:27",
       "text": "Settlement: GAGAN pays HARI ₹3000.00 • by Akshay"
-    },
-    {
-      "id": "L_1788194067433_o5jk",
-      "time": "2026-08-31 22:04:27",
-      "text": "Settlement calculated (4 transfers). • by Akshay"
     }
   ],
   "knownRoster": [
