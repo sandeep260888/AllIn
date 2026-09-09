@@ -1286,13 +1286,34 @@
       "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1788962554508,
+      "name": "RISHI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1788962559542,
+      "name": "ALOK",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1788962564550,
+      "name": "AKSHAY",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "activeSessionId": "S_mtu63qfmrp31b5",
   "activeHost": {
     "deviceId": "dev_kevx5v07",
     "deviceName": "Device-5V07",
-    "heartbeatAt": "2026-09-09T14:02:33.539Z"
+    "heartbeatAt": "2026-09-09T14:02:50.338Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1304,6 +1325,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788962564550_4hmb",
+      "time": "2026-09-09 19:32:44",
+      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by Device-5V07"
+    },
+    {
+      "id": "L_1788962559542_8mxq",
+      "time": "2026-09-09 19:32:39",
+      "text": "Added \"ALOK\" with 1 buy-in (1000c). • by Device-5V07"
+    },
+    {
+      "id": "L_1788962554509_7tke",
+      "time": "2026-09-09 19:32:34",
+      "text": "Added \"RISHI\" with 1 buy-in (1000c). • by Device-5V07"
+    },
     {
       "id": "L_1788962537025_51i4",
       "time": "2026-09-09 19:32:17",
@@ -3288,21 +3324,6 @@
       "id": "L_1788270461730_chzs",
       "time": "2026-09-01 19:17:41",
       "text": "Added \"HARI\" with 1 buy-in (1000c). • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788270458131_qdci",
-      "time": "2026-09-01 19:17:38",
-      "text": "Added \"GAGAN\" with 1 buy-in (1000c). • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788270453618_ck95",
-      "time": "2026-09-01 19:17:33",
-      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788270453614_7gjf",
-      "time": "2026-09-01 19:17:33",
-      "text": "Started new session and claimed host. • by Sandeep Mac"
     }
   ],
   "knownRoster": [
