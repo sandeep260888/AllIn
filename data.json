@@ -1327,6 +1327,13 @@
       "name": "KUNAL",
       "buyIns": 1,
       "buyInCoins": 1000,
+      "cashOutCoins": 68
+    },
+    {
+      "id": 1788971749345,
+      "name": "GAGAN",
+      "buyIns": 1,
+      "buyInCoins": 1000,
       "cashOutCoins": 0
     }
   ],
@@ -1334,7 +1341,7 @@
   "activeHost": {
     "deviceId": "dev_kevx5v07",
     "deviceName": "Device-5V07",
-    "heartbeatAt": "2026-09-09T16:11:09.166Z"
+    "heartbeatAt": "2026-09-09T16:36:15.905Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1346,6 +1353,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788971759126_n0hy",
+      "time": "2026-09-09 22:05:59",
+      "text": "Set final coins for KUNAL: 68 coins. • by Device-5V07"
+    },
+    {
+      "id": "L_1788971749345_ex72",
+      "time": "2026-09-09 22:05:49",
+      "text": "Added \"GAGAN\" with 1 buy-in (1000c). • by Device-5V07"
+    },
     {
       "id": "L_1788970253031_owg5",
       "time": "2026-09-09 21:40:53",
@@ -3335,16 +3352,6 @@
       "id": "L_1788274373663_91ca",
       "time": "2026-09-01 20:22:53",
       "text": "Buy-in increased for AKSHAY: count = 3. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788273907463_tstj",
-      "time": "2026-09-01 20:15:07",
-      "text": "Buy-in decreased for SANDEEP: count = 4. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788273884763_nsly",
-      "time": "2026-09-01 20:14:44",
-      "text": "Buy-in decreased for SANDEEP: count = 5. • by Sandeep Mac"
     }
   ],
   "knownRoster": [
