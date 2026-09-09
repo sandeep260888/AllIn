@@ -2,7 +2,7 @@
   "savedSessions": [
     {
       "sessionId": "S_mtu63qfmrp31b5",
-      "date": "2026-09-09T18:05:57.603Z",
+      "date": "2026-09-09T18:06:10.605Z",
       "entries": [
         {
           "name": "MOHINI",
@@ -1392,11 +1392,7 @@
     }
   ],
   "activeSessionId": "S_mtu63qfmrp31b5",
-  "activeHost": {
-    "deviceId": "dev_kevx5v07",
-    "deviceName": "Device-5V07",
-    "heartbeatAt": "2026-09-09T18:05:58.807Z"
-  },
+  "activeHost": null,
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -1407,6 +1403,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788977170605_ej9j",
+      "time": "2026-09-09 23:36:10",
+      "text": "Updated existing session in database. • by Device-5V07"
+    },
+    {
+      "id": "L_1788977163901_11th",
+      "time": "2026-09-09 23:36:03",
+      "text": "Published session — hosting released automatically. • by Device-5V07"
+    },
+    {
+      "id": "L_1788977160538_m30h",
+      "time": "2026-09-09 23:36:00",
+      "text": "Pushed live state to GitHub repo. • by Device-5V07"
+    },
     {
       "id": "L_1788977157603_07l6",
       "time": "2026-09-09 23:35:57",
@@ -3391,21 +3402,6 @@
       "id": "L_1788356815933_hap8",
       "time": "2026-09-02 19:16:55",
       "text": "Cleared active session dashboard. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788356803867_8xvm",
-      "time": "2026-09-02 19:16:43",
-      "text": "Stopped hosting. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788290798758_ednz",
-      "time": "2026-09-02 00:56:38",
-      "text": "Stopped hosting. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788286551776_ftaz",
-      "time": "2026-09-01 23:45:51",
-      "text": "Published session — hosting released automatically. • by Sandeep Mac"
     }
   ],
   "knownRoster": [
