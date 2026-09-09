@@ -1311,7 +1311,7 @@
     {
       "id": 1788962571709,
       "name": "HARI",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1341,7 +1341,7 @@
   "activeHost": {
     "deviceId": "dev_kevx5v07",
     "deviceName": "Device-5V07",
-    "heartbeatAt": "2026-09-09T17:18:54.849Z"
+    "heartbeatAt": "2026-09-09T17:29:34.706Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1353,6 +1353,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788974958278_8mv4",
+      "time": "2026-09-09 22:59:18",
+      "text": "Buy-in increased for HARI: count = 3. • by Device-5V07"
+    },
     {
       "id": "L_1788974318345_gz3p",
       "time": "2026-09-09 22:48:38",
@@ -3347,11 +3352,6 @@
       "id": "L_1788275985946_atzi",
       "time": "2026-09-01 20:49:45",
       "text": "Buy-in increased for AKSHAY: count = 6. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788275361796_ch8y",
-      "time": "2026-09-01 20:39:21",
-      "text": "Buy-in increased for AKSHAY: count = 5. • by Sandeep Mac"
     }
   ],
   "knownRoster": [
