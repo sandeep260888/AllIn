@@ -1285,14 +1285,14 @@
       "name": "MOHINI",
       "buyIns": 4,
       "buyInCoins": 1000,
-      "cashOutCoins": 1380
+      "cashOutCoins": 1400
     },
     {
       "id": 1788962554508,
       "name": "RISHI",
       "buyIns": 2,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 1110
     },
     {
       "id": 1788962559542,
@@ -1304,9 +1304,9 @@
     {
       "id": 1788962564550,
       "name": "AKSHAY",
-      "buyIns": 3,
+      "buyIns": 2,
       "buyInCoins": 1000,
-      "cashOutCoins": 4700
+      "cashOutCoins": 4850
     },
     {
       "id": 1788962571709,
@@ -1341,7 +1341,7 @@
   "activeHost": {
     "deviceId": "dev_kevx5v07",
     "deviceName": "Device-5V07",
-    "heartbeatAt": "2026-09-09T18:04:01.053Z"
+    "heartbeatAt": "2026-09-09T18:05:22.161Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1353,6 +1353,26 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788977106533_eb68",
+      "time": "2026-09-09 23:35:06",
+      "text": "Buy-in decreased for AKSHAY: count = 2. • by Device-5V07"
+    },
+    {
+      "id": "L_1788977096408_gey8",
+      "time": "2026-09-09 23:34:56",
+      "text": "Set final coins for MOHINI: 1400 coins. • by Device-5V07"
+    },
+    {
+      "id": "L_1788977093746_f7us",
+      "time": "2026-09-09 23:34:53",
+      "text": "Set final coins for AKSHAY: 4850 coins. • by Device-5V07"
+    },
+    {
+      "id": "L_1788977088319_7nqn",
+      "time": "2026-09-09 23:34:48",
+      "text": "Set final coins for RISHI: 1110 coins. • by Device-5V07"
+    },
     {
       "id": "L_1788977024854_5zvy",
       "time": "2026-09-09 23:33:44",
@@ -3332,26 +3352,6 @@
       "id": "L_1788286453776_mqd6",
       "time": "2026-09-01 23:44:13",
       "text": "Settlement calculated (5 transfers). • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788286450619_y2tt",
-      "time": "2026-09-01 23:44:10",
-      "text": "Set final coins for RAVI: 5600 coins. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788286433691_bvy4",
-      "time": "2026-09-01 23:43:53",
-      "text": "Set final coins for AKSHAY: 9270 coins. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788286416761_8cxu",
-      "time": "2026-09-01 23:43:36",
-      "text": "Set final coins for GAGAN: 5610 coins. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788286398658_mtuo",
-      "time": "2026-09-01 23:43:18",
-      "text": "Set final coins for SANDEEP: 2520 coins. • by Sandeep Mac"
     }
   ],
   "knownRoster": [
