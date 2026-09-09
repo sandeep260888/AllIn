@@ -1290,7 +1290,7 @@
     {
       "id": 1788962554508,
       "name": "RISHI",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1334,7 +1334,7 @@
   "activeHost": {
     "deviceId": "dev_kevx5v07",
     "deviceName": "Device-5V07",
-    "heartbeatAt": "2026-09-09T15:25:52.978Z"
+    "heartbeatAt": "2026-09-09T15:58:05.088Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1346,6 +1346,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788969469459_5uch",
+      "time": "2026-09-09 21:27:49",
+      "text": "Buy-in increased for RISHI: count = 2. • by Device-5V07"
+    },
     {
       "id": "L_1788967536776_4m9d",
       "time": "2026-09-09 20:55:36",
@@ -3340,11 +3345,6 @@
       "id": "L_1788273871580_nvxu",
       "time": "2026-09-01 20:14:31",
       "text": "Buy-in increased for SANDEEP: count = 5. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788273847664_yar4",
-      "time": "2026-09-01 20:14:07",
-      "text": "Buy-in increased for SANDEEP: count = 4. • by Sandeep Mac"
     }
   ],
   "knownRoster": [
