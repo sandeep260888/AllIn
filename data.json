@@ -1285,7 +1285,7 @@
       "name": "MOHINI",
       "buyIns": 4,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 1380
     },
     {
       "id": 1788962554508,
@@ -1299,49 +1299,49 @@
       "name": "ALOK",
       "buyIns": 4,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 3080
     },
     {
       "id": 1788962564550,
       "name": "AKSHAY",
       "buyIns": 3,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 4700
     },
     {
       "id": 1788962571709,
       "name": "HARI",
       "buyIns": 3,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 2060
     },
     {
       "id": 1788962575300,
       "name": "HARSHIT",
       "buyIns": 2,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 4640
     },
     {
       "id": 1788962585511,
       "name": "KUNAL",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 68
+      "cashOutCoins": 3500
     },
     {
       "id": 1788971749345,
       "name": "GAGAN",
       "buyIns": 3,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 360
     }
   ],
   "activeSessionId": "S_mtu63qfmrp31b5",
   "activeHost": {
     "deviceId": "dev_kevx5v07",
     "deviceName": "Device-5V07",
-    "heartbeatAt": "2026-09-09T17:29:34.706Z"
+    "heartbeatAt": "2026-09-09T18:04:01.053Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1353,6 +1353,41 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788977024854_5zvy",
+      "time": "2026-09-09 23:33:44",
+      "text": "Set final coins for KUNAL: 3500 coins. • by Device-5V07"
+    },
+    {
+      "id": "L_1788977019878_up89",
+      "time": "2026-09-09 23:33:39",
+      "text": "Set final coins for GAGAN: 360 coins. • by Device-5V07"
+    },
+    {
+      "id": "L_1788977017262_r0y8",
+      "time": "2026-09-09 23:33:37",
+      "text": "Set final coins for HARI: 2060 coins. • by Device-5V07"
+    },
+    {
+      "id": "L_1788977010845_doq7",
+      "time": "2026-09-09 23:33:30",
+      "text": "Set final coins for HARSHIT: 4640 coins. • by Device-5V07"
+    },
+    {
+      "id": "L_1788977001170_x0zg",
+      "time": "2026-09-09 23:33:21",
+      "text": "Set final coins for AKSHAY: 4700 coins. • by Device-5V07"
+    },
+    {
+      "id": "L_1788976996353_29bw",
+      "time": "2026-09-09 23:33:16",
+      "text": "Set final coins for ALOK: 3080 coins. • by Device-5V07"
+    },
+    {
+      "id": "L_1788976991961_2z9y",
+      "time": "2026-09-09 23:33:11",
+      "text": "Set final coins for MOHINI: 1380 coins. • by Device-5V07"
+    },
     {
       "id": "L_1788974958278_8mv4",
       "time": "2026-09-09 22:59:18",
@@ -3317,41 +3352,6 @@
       "id": "L_1788286398658_mtuo",
       "time": "2026-09-01 23:43:18",
       "text": "Set final coins for SANDEEP: 2520 coins. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788281409295_tbjg",
-      "time": "2026-09-01 22:20:09",
-      "text": "Buy-in increased for HARI: count = 7. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788280364998_c2wy",
-      "time": "2026-09-01 22:02:44",
-      "text": "Buy-in increased for HARI: count = 6. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788280363414_9gee",
-      "time": "2026-09-01 22:02:43",
-      "text": "Buy-in increased for HARI: count = 5. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788278829314_1s0w",
-      "time": "2026-09-01 21:37:09",
-      "text": "Buy-in increased for HARI: count = 4. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788277903014_tvrj",
-      "time": "2026-09-01 21:21:43",
-      "text": "Buy-in increased for HARI: count = 3. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788276729930_c688",
-      "time": "2026-09-01 21:02:09",
-      "text": "Buy-in increased for SANDEEP: count = 5. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788275985946_atzi",
-      "time": "2026-09-01 20:49:45",
-      "text": "Buy-in increased for AKSHAY: count = 6. • by Sandeep Mac"
     }
   ],
   "knownRoster": [
