@@ -1281,59 +1281,49 @@
   ],
   "activePlayers": [
     {
-      "id": 1788876599724,
-      "name": "AKSHAY",
-      "buyIns": 5,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1788876605030,
-      "name": "GAGAN",
-      "buyIns": 6,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1788876608652,
+      "id": 1788962535060,
       "name": "MOHINI",
-      "buyIns": 4,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1788876613230,
-      "name": "KUNAL",
-      "buyIns": 1,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1788876617389,
-      "name": "SANDEEP",
       "buyIns": 2,
       "buyInCoins": 1000,
-      "cashOutCoins": 1500
+      "cashOutCoins": 0
     }
   ],
-  "activeSessionId": "S_mtsqxojgs8ggoa",
-  "activeHost": null,
+  "activeSessionId": "S_mtu63qfmrp31b5",
+  "activeHost": {
+    "deviceId": "dev_kevx5v07",
+    "deviceName": "Device-5V07",
+    "heartbeatAt": "2026-09-09T14:02:33.539Z"
+  },
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
     "buyInCoins": "1000",
     "milestones": [
       5,
-      7,
-      9,
-      10,
-      11,
-      12,
-      13,
-      15
+      10
     ]
   },
   "logs": [
+    {
+      "id": "L_1788962537025_51i4",
+      "time": "2026-09-09 19:32:17",
+      "text": "Buy-in increased for MOHINI: count = 2. • by Device-5V07"
+    },
+    {
+      "id": "L_1788962535060_wyda",
+      "time": "2026-09-09 19:32:15",
+      "text": "Added \"MOHINI\" with 1 buy-in (1000c). • by Device-5V07"
+    },
+    {
+      "id": "L_1788962535058_yrf8",
+      "time": "2026-09-09 19:32:15",
+      "text": "Started new session and claimed host. • by Device-5V07"
+    },
+    {
+      "id": "L_1788962524192_d0a7",
+      "time": "2026-09-09 19:32:04",
+      "text": "Cleared active session dashboard. • by Device-5V07"
+    },
     {
       "id": "L_1788888550775_qftv",
       "time": "2026-09-08 22:59:10",
@@ -3313,26 +3303,6 @@
       "id": "L_1788270453614_7gjf",
       "time": "2026-09-01 19:17:33",
       "text": "Started new session and claimed host. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788270449085_lmxb",
-      "time": "2026-09-01 19:17:29",
-      "text": "Cleared active session dashboard. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788246738232_mmpf",
-      "time": "2026-09-01 12:42:18",
-      "text": "Updated existing session in database. • by Akshay"
-    },
-    {
-      "id": "L_1788246729611_24qm",
-      "time": "2026-09-01 12:42:09",
-      "text": "Pushed live state to GitHub repo. • by Akshay"
-    },
-    {
-      "id": "L_1788198042087_8hf3",
-      "time": "2026-08-31 23:10:42",
-      "text": "Manual refresh synchronized with GitHub. • by Sandeep Mac"
     }
   ],
   "knownRoster": [
