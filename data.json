@@ -1297,7 +1297,7 @@
     {
       "id": 1788962559542,
       "name": "ALOK",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1334,7 +1334,7 @@
   "activeHost": {
     "deviceId": "dev_kevx5v07",
     "deviceName": "Device-5V07",
-    "heartbeatAt": "2026-09-09T14:15:41.005Z"
+    "heartbeatAt": "2026-09-09T14:30:58.618Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1346,6 +1346,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788964242077_n1jz",
+      "time": "2026-09-09 20:00:42",
+      "text": "Buy-in increased for ALOK: count = 2. • by Device-5V07"
+    },
     {
       "id": "L_1788963324560_fff9",
       "time": "2026-09-09 19:45:24",
@@ -3340,11 +3345,6 @@
       "id": "L_1788272858247_q6cj",
       "time": "2026-09-01 19:57:38",
       "text": "Buy-in increased for RAVI: count = 2. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788271917497_fegt",
-      "time": "2026-09-01 19:41:57",
-      "text": "Buy-in increased for SANDEEP: count = 2. • by Sandeep Mac"
     }
   ],
   "knownRoster": [
