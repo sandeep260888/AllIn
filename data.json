@@ -1307,13 +1307,34 @@
       "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1788962571709,
+      "name": "HARI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1788962575300,
+      "name": "HARSHIT",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1788962585511,
+      "name": "KUNAL",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "activeSessionId": "S_mtu63qfmrp31b5",
   "activeHost": {
     "deviceId": "dev_kevx5v07",
     "deviceName": "Device-5V07",
-    "heartbeatAt": "2026-09-09T14:02:50.338Z"
+    "heartbeatAt": "2026-09-09T14:03:08.042Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1325,6 +1346,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1788962585511_sb29",
+      "time": "2026-09-09 19:33:05",
+      "text": "Added \"KUNAL\" with 1 buy-in (1000c). • by Device-5V07"
+    },
+    {
+      "id": "L_1788962575300_pt7n",
+      "time": "2026-09-09 19:32:55",
+      "text": "Added \"HARSHIT\" with 1 buy-in (1000c). • by Device-5V07"
+    },
+    {
+      "id": "L_1788962571709_u4x8",
+      "time": "2026-09-09 19:32:51",
+      "text": "Added \"HARI\" with 1 buy-in (1000c). • by Device-5V07"
+    },
     {
       "id": "L_1788962564550_4hmb",
       "time": "2026-09-09 19:32:44",
@@ -3309,21 +3345,6 @@
       "id": "L_1788271487629_l97l",
       "time": "2026-09-01 19:34:47",
       "text": "Buy-in increased for AKSHAY: count = 2. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788270467379_7wjj",
-      "time": "2026-09-01 19:17:47",
-      "text": "Added \"SANDEEP\" with 1 buy-in (1000c). • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788270464763_kpei",
-      "time": "2026-09-01 19:17:44",
-      "text": "Added \"RAVI\" with 1 buy-in (1000c). • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788270461730_chzs",
-      "time": "2026-09-01 19:17:41",
-      "text": "Added \"HARI\" with 1 buy-in (1000c). • by Sandeep Mac"
     }
   ],
   "knownRoster": [
