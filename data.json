@@ -1,6 +1,48 @@
 {
   "savedSessions": [
     {
+      "sessionId": "S_mtvlxms8zusxd9",
+      "date": "2026-09-10T15:05:38.176Z",
+      "entries": [
+        {
+          "name": "RISHI",
+          "investedCoins": 1000,
+          "finalCoins": 1790,
+          "netVal": 395
+        },
+        {
+          "name": "AKSHAY",
+          "investedCoins": 1000,
+          "finalCoins": 5260,
+          "netVal": 2130
+        },
+        {
+          "name": "HARI",
+          "investedCoins": 6000,
+          "finalCoins": 0,
+          "netVal": -3000
+        },
+        {
+          "name": "ABHISHEK",
+          "investedCoins": 1000,
+          "finalCoins": 3180,
+          "netVal": 1090
+        },
+        {
+          "name": "KUNAL",
+          "investedCoins": 2000,
+          "finalCoins": 1710,
+          "netVal": -145
+        },
+        {
+          "name": "GAGAN",
+          "investedCoins": 3000,
+          "finalCoins": 2060,
+          "netVal": -470
+        }
+      ]
+    },
+    {
       "sessionId": "S_mtu63qfmrp31b5",
       "date": "2026-09-09T18:06:10.605Z",
       "entries": [
@@ -1389,6 +1431,31 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1789052738176_2yy0",
+      "time": "2026-09-10 20:35:38",
+      "text": "Saved session to database. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1789052666667_3gy9",
+      "time": "2026-09-10 20:34:26",
+      "text": "Random picker chose KUNAL. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1789052666514_o4av",
+      "time": "2026-09-10 20:34:26",
+      "text": "Random picker chose RISHI. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1789052666347_vlsj",
+      "time": "2026-09-10 20:34:26",
+      "text": "Random picker chose ABHISHEK. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1789052666180_iz22",
+      "time": "2026-09-10 20:34:26",
+      "text": "Random picker chose AKSHAY. • by Hari's Macbook"
+    },
     {
       "id": "L_1789052637402_5146",
       "time": "2026-09-10 20:33:57",
@@ -3363,31 +3430,6 @@
       "id": "L_1788443092276_ssb9",
       "time": "2026-09-03 19:14:52",
       "text": "Added \"RISHI\" with 1 buy-in (1000c). • by Device-5V07"
-    },
-    {
-      "id": "L_1788443092273_9e4m",
-      "time": "2026-09-03 19:14:52",
-      "text": "Started new session and claimed host. • by Device-5V07"
-    },
-    {
-      "id": "L_1788443067051_erwz",
-      "time": "2026-09-03 19:14:27",
-      "text": "Cleared active session dashboard. • by Device-5V07"
-    },
-    {
-      "id": "L_1788405462920_qk2x",
-      "time": "2026-09-03 08:47:42",
-      "text": "Random picker chose HARI. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1788405462703_u579",
-      "time": "2026-09-03 08:47:42",
-      "text": "Random picker chose AKSHAY. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1788405462475_ojxv",
-      "time": "2026-09-03 08:47:42",
-      "text": "Random picker chose ABHISHEK. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
