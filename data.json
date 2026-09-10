@@ -1339,7 +1339,7 @@
       "name": "RISHI",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 1790
     },
     {
       "id": 1789049595007,
@@ -1367,7 +1367,7 @@
       "name": "KUNAL",
       "buyIns": 2,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 1710
     },
     {
       "id": 1789051337804,
@@ -1389,6 +1389,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1789052570184_jdjd",
+      "time": "2026-09-10 20:32:50",
+      "text": "Set final coins for HARI: 0 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1789052562218_gu48",
+      "time": "2026-09-10 20:32:42",
+      "text": "Set final coins for KUNAL: 1710 coins. • by Hari's Macbook"
+    },
     {
       "id": "L_1789052099102_ndue",
       "time": "2026-09-10 20:24:59",
@@ -3378,16 +3388,6 @@
       "id": "L_1788368184694_zpxk",
       "time": "2026-09-02 22:26:24",
       "text": "Settlement: ALOK pays MOHINI ₹260.00 • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788368184692_vkju",
-      "time": "2026-09-02 22:26:24",
-      "text": "Settlement: ALOK pays AKSHAY ₹2640.00 • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788368184689_vdrn",
-      "time": "2026-09-02 22:26:24",
-      "text": "Settlement calculated (6 transfers). • by Sandeep Mac"
     }
   ],
   "knownRoster": [
