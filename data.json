@@ -1346,7 +1346,7 @@
       "name": "AKSHAY",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 5260
     },
     {
       "id": 1789049599482,
@@ -1360,7 +1360,7 @@
       "name": "ABHISHEK",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 3180
     },
     {
       "id": 1789051016233,
@@ -1374,7 +1374,7 @@
       "name": "GAGAN",
       "buyIns": 3,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 2060
     }
   ],
   "activeSessionId": "S_mtvlxms8zusxd9",
@@ -1389,6 +1389,66 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1789052637402_5146",
+      "time": "2026-09-10 20:33:57",
+      "text": "Settlement: KUNAL pays RISHI ₹145.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1789052637401_64qr",
+      "time": "2026-09-10 20:33:57",
+      "text": "Settlement: GAGAN pays RISHI ₹250.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1789052637400_91c0",
+      "time": "2026-09-10 20:33:57",
+      "text": "Settlement: GAGAN pays ABHISHEK ₹220.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1789052637399_usrp",
+      "time": "2026-09-10 20:33:57",
+      "text": "Settlement: HARI pays ABHISHEK ₹870.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1789052637398_nvk4",
+      "time": "2026-09-10 20:33:57",
+      "text": "Settlement: HARI pays AKSHAY ₹2130.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1789052637397_1vh8",
+      "time": "2026-09-10 20:33:57",
+      "text": "Settlement calculated (5 transfers). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1789052635214_tscw",
+      "time": "2026-09-10 20:33:55",
+      "text": "Set final coins for GAGAN: 2060 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1789052628668_dm6r",
+      "time": "2026-09-10 20:33:48",
+      "text": "Set final coins for GAGAN: 2050 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1789052626285_8f6f",
+      "time": "2026-09-10 20:33:46",
+      "text": "Set final coins for ABHISHEK: 3180 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1789052613443_o8wp",
+      "time": "2026-09-10 20:33:33",
+      "text": "Set final coins for AKSHAY: 5260 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1789052599422_75p4",
+      "time": "2026-09-10 20:33:19",
+      "text": "Set final coins for GAGAN: 2000 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1789052587298_irnb",
+      "time": "2026-09-10 20:33:07",
+      "text": "Set final coins for RISHI: 1790 coins. • by Hari's Macbook"
+    },
     {
       "id": "L_1789052570184_jdjd",
       "time": "2026-09-10 20:32:50",
@@ -3328,66 +3388,6 @@
       "id": "L_1788405462475_ojxv",
       "time": "2026-09-03 08:47:42",
       "text": "Random picker chose ABHISHEK. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1788405462267_lerw",
-      "time": "2026-09-03 08:47:42",
-      "text": "Random picker chose RAVI. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1788368297659_crfy",
-      "time": "2026-09-02 22:28:17",
-      "text": "Pushed live state to GitHub repo. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788368289886_jliu",
-      "time": "2026-09-02 22:28:09",
-      "text": "Pushed live state to GitHub repo. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788368286557_snmv",
-      "time": "2026-09-02 22:28:06",
-      "text": "Published session — hosting released automatically. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788368284994_15fo",
-      "time": "2026-09-02 22:28:04",
-      "text": "Pushed live state to GitHub repo. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788368282355_22lt",
-      "time": "2026-09-02 22:28:02",
-      "text": "Saved session to database. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788368272976_phry",
-      "time": "2026-09-02 22:27:52",
-      "text": "Pushed live state to GitHub repo. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788368184701_3slr",
-      "time": "2026-09-02 22:26:24",
-      "text": "Settlement: HARSHIT pays GAGAN ₹35.00 • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788368184700_c9qs",
-      "time": "2026-09-02 22:26:24",
-      "text": "Settlement: RISHI pays GAGAN ₹100.00 • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788368184697_xbtu",
-      "time": "2026-09-02 22:26:24",
-      "text": "Settlement: SANDEEP pays GAGAN ₹365.00 • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788368184696_58mv",
-      "time": "2026-09-02 22:26:24",
-      "text": "Settlement: SANDEEP pays MOHINI ₹325.00 • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788368184694_zpxk",
-      "time": "2026-09-02 22:26:24",
-      "text": "Settlement: ALOK pays MOHINI ₹260.00 • by Sandeep Mac"
     }
   ],
   "knownRoster": [
