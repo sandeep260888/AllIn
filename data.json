@@ -1351,7 +1351,7 @@
     {
       "id": 1789049599482,
       "name": "HARI",
-      "buyIns": 5,
+      "buyIns": 6,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1389,6 +1389,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1789052099102_ndue",
+      "time": "2026-09-10 20:24:59",
+      "text": "Buy-in increased for HARI: count = 6. • by Hari's Macbook"
+    },
     {
       "id": "L_1789051937048_cx0u",
       "time": "2026-09-10 20:22:17",
@@ -3383,11 +3388,6 @@
       "id": "L_1788368184689_vdrn",
       "time": "2026-09-02 22:26:24",
       "text": "Settlement calculated (6 transfers). • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788368180491_xm4r",
-      "time": "2026-09-02 22:26:20",
-      "text": "Set final coins for AKSHAY: 6280 coins. • by Sandeep Mac"
     }
   ],
   "knownRoster": [
