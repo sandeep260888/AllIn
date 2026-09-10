@@ -1351,7 +1351,7 @@
     {
       "id": 1789049599482,
       "name": "HARI",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1375,6 +1375,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1789050275235_0e72",
+      "time": "2026-09-10 19:54:35",
+      "text": "Buy-in increased for HARI: count = 3. • by Hari's Macbook"
+    },
     {
       "id": "L_1789049634141_hlx5",
       "time": "2026-09-10 19:43:54",
@@ -3369,11 +3374,6 @@
       "id": "L_1788366678452_xd0y",
       "time": "2026-09-02 22:01:18",
       "text": "Set final coins for HARSHIT: 1930 coins. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788366638308_efhc",
-      "time": "2026-09-02 22:00:38",
-      "text": "Set final coins for RISHI: 800 coins. • by Sandeep Mac"
     }
   ],
   "knownRoster": [
