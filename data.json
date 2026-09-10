@@ -1351,7 +1351,7 @@
     {
       "id": 1789049599482,
       "name": "HARI",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1375,6 +1375,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1789049634141_hlx5",
+      "time": "2026-09-10 19:43:54",
+      "text": "Buy-in increased for HARI: count = 2. • by Hari's Macbook"
+    },
     {
       "id": "L_1789049602666_7120",
       "time": "2026-09-10 19:43:22",
@@ -3369,11 +3374,6 @@
       "id": "L_1788366638308_efhc",
       "time": "2026-09-02 22:00:38",
       "text": "Set final coins for RISHI: 800 coins. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788365190760_8f7k",
-      "time": "2026-09-02 21:36:30",
-      "text": "Buy-in increased for ALOK: count = 7. • by Sandeep Mac"
     }
   ],
   "knownRoster": [
