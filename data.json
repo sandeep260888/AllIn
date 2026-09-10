@@ -1368,6 +1368,13 @@
       "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1789051337804,
+      "name": "GAGAN",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "activeSessionId": "S_mtvlxms8zusxd9",
@@ -1382,6 +1389,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1789051337804_m18f",
+      "time": "2026-09-10 20:12:17",
+      "text": "Added \"GAGAN\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
     {
       "id": "L_1789051049700_oiy5",
       "time": "2026-09-10 20:07:29",
@@ -3376,11 +3388,6 @@
       "id": "L_1788368158970_hfhy",
       "time": "2026-09-02 22:25:58",
       "text": "Set final coins for HARSHIT: 1900 coins. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788368137254_agf8",
-      "time": "2026-09-02 22:25:37",
-      "text": "Set final coins for GAGAN: 5000 coins. • by Sandeep Mac"
     }
   ],
   "knownRoster": [
