@@ -1432,6 +1432,21 @@
   },
   "logs": [
     {
+      "id": "L_1789137276815_ey1n",
+      "time": "2026-09-11 20:04:36",
+      "text": "Buy-in decreased for HARI: count = 6. • by Sandeep"
+    },
+    {
+      "id": "L_1789137274390_nqml",
+      "time": "2026-09-11 20:04:34",
+      "text": "Buy-in increased for HARI: count = 7. • by Sandeep"
+    },
+    {
+      "id": "L_1789137260216_180h",
+      "time": "2026-09-11 20:04:20",
+      "text": "Manual refresh synchronized with GitHub. • by Sandeep"
+    },
+    {
       "id": "L_1789052738176_2yy0",
       "time": "2026-09-10 20:35:38",
       "text": "Saved session to database. • by Hari's Macbook"
@@ -1612,6 +1627,31 @@
       "text": "Manual refresh synchronized with GitHub. • by Hari's Macbook"
     },
     {
+      "id": "L_1788979450089_wnai",
+      "time": "2026-09-10 00:14:10",
+      "text": "Random picker chose AKSHAY. • by Sandeep"
+    },
+    {
+      "id": "L_1788979449872_ljy9",
+      "time": "2026-09-10 00:14:09",
+      "text": "Random picker chose RISHI. • by Sandeep"
+    },
+    {
+      "id": "L_1788979449673_die1",
+      "time": "2026-09-10 00:14:09",
+      "text": "Random picker chose HARI. • by Sandeep"
+    },
+    {
+      "id": "L_1788979449459_1y0v",
+      "time": "2026-09-10 00:14:09",
+      "text": "Random picker chose ALOK. • by Sandeep"
+    },
+    {
+      "id": "L_1788979356478_uqh5",
+      "time": "2026-09-10 00:12:36",
+      "text": "Manual refresh synchronized with GitHub. • by Sandeep"
+    },
+    {
       "id": "L_1788977173094_phuw",
       "time": "2026-09-09 23:36:13",
       "text": "Pushed live state to GitHub repo. • by Device-5V07"
@@ -1757,6 +1797,11 @@
       "text": "Added \"GAGAN\" with 1 buy-in (1000c). • by Device-5V07"
     },
     {
+      "id": "L_1788970621947_g2ls",
+      "time": "2026-09-09 21:47:01",
+      "text": "Manual refresh synchronized with GitHub. • by Sandeep"
+    },
+    {
       "id": "L_1788970253031_owg5",
       "time": "2026-09-09 21:40:53",
       "text": "Buy-in increased for ALOK: count = 4. • by Device-5V07"
@@ -1850,6 +1895,11 @@
       "id": "L_1788962524192_d0a7",
       "time": "2026-09-09 19:32:04",
       "text": "Cleared active session dashboard. • by Device-5V07"
+    },
+    {
+      "id": "L_1788938624870_euig",
+      "time": "2026-09-09 12:53:44",
+      "text": "Manual refresh synchronized with GitHub. • by Sandeep"
     },
     {
       "id": "L_1788888550775_qftv",
@@ -1980,6 +2030,31 @@
       "id": "L_1788876586300_exzc",
       "time": "2026-09-08 19:39:46",
       "text": "Cleared active session dashboard. • by Device-IPA6"
+    },
+    {
+      "id": "L_1788805429235_qjs7",
+      "time": "2026-09-07 23:53:49",
+      "text": "Random picker chose SHUBHAM. • by Sandeep"
+    },
+    {
+      "id": "L_1788805429036_8wdf",
+      "time": "2026-09-07 23:53:49",
+      "text": "Random picker chose KUNAL. • by Sandeep"
+    },
+    {
+      "id": "L_1788805428836_o2ij",
+      "time": "2026-09-07 23:53:48",
+      "text": "Random picker chose ABHISHEK. • by Sandeep"
+    },
+    {
+      "id": "L_1788805428622_fb1f",
+      "time": "2026-09-07 23:53:48",
+      "text": "Random picker chose HARSHIT. • by Sandeep"
+    },
+    {
+      "id": "L_1788805371387_1o21",
+      "time": "2026-09-07 23:52:51",
+      "text": "Manual refresh synchronized with GitHub. • by Sandeep"
     },
     {
       "id": "L_1788804410795_53kc",
@@ -3072,6 +3147,26 @@
       "text": "Set final coins for HARI: 6500 coins. • by Akshay"
     },
     {
+      "id": "L_1788544308593_rw2v",
+      "time": "2026-09-04 23:21:48",
+      "text": "Settlement: MOHINI pays RISHI ₹280.00 • by Sandeep"
+    },
+    {
+      "id": "L_1788544308591_rjoh",
+      "time": "2026-09-04 23:21:48",
+      "text": "Settlement: MOHINI pays HARI ₹450.00 • by Sandeep"
+    },
+    {
+      "id": "L_1788544308588_ihdv",
+      "time": "2026-09-04 23:21:48",
+      "text": "Settlement: AKSHAY pays HARI ₹1550.00 • by Sandeep"
+    },
+    {
+      "id": "L_1788544308582_kf9v",
+      "time": "2026-09-04 23:21:48",
+      "text": "Settlement calculated (3 transfers). • by Sandeep"
+    },
+    {
       "id": "L_1788544277406_3bs7",
       "time": "2026-09-04 23:21:17",
       "text": "Buy-in decreased for MOHINI: count = 3. • by Akshay"
@@ -3282,6 +3377,41 @@
       "text": "Cleared active session dashboard. • by Device-WX1Q"
     },
     {
+      "id": "L_1788484827431_lh2b",
+      "time": "2026-09-04 06:50:27",
+      "text": "Manual refresh synchronized with GitHub. • by Sandeep"
+    },
+    {
+      "id": "L_1788484709068_javv",
+      "time": "2026-09-04 06:48:29",
+      "text": "Settlement: MOHINI pays RISHI ₹280.00 • by Sandeep"
+    },
+    {
+      "id": "L_1788484709066_mgh3",
+      "time": "2026-09-04 06:48:29",
+      "text": "Settlement: MOHINI pays HARI ₹450.00 • by Sandeep"
+    },
+    {
+      "id": "L_1788484709063_qm89",
+      "time": "2026-09-04 06:48:29",
+      "text": "Settlement: AKSHAY pays HARI ₹1550.00 • by Sandeep"
+    },
+    {
+      "id": "L_1788484709058_3exl",
+      "time": "2026-09-04 06:48:29",
+      "text": "Settlement calculated (3 transfers). • by Sandeep"
+    },
+    {
+      "id": "L_1788484692665_40rv",
+      "time": "2026-09-04 06:48:12",
+      "text": "Pushed live state to GitHub repo. • by Sandeep"
+    },
+    {
+      "id": "L_1788484653863_v0ze",
+      "time": "2026-09-04 06:47:33",
+      "text": "Manual refresh synchronized with GitHub. • by Sandeep"
+    },
+    {
       "id": "L_1788450738276_z5jm",
       "time": "2026-09-03 21:22:18",
       "text": "Settlement: MOHINI pays RISHI ₹680.00 • by Device-5V07"
@@ -3300,136 +3430,6 @@
       "id": "L_1788450738273_bxmn",
       "time": "2026-09-03 21:22:18",
       "text": "Settlement calculated (3 transfers). • by Device-5V07"
-    },
-    {
-      "id": "L_1788450738157_9ljf",
-      "time": "2026-09-03 21:22:18",
-      "text": "Set final coins for HARI: 6200 coins. • by Device-5V07"
-    },
-    {
-      "id": "L_1788450724044_140r",
-      "time": "2026-09-03 21:22:04",
-      "text": "Set final coins for RISHI: 5360 coins. • by Device-5V07"
-    },
-    {
-      "id": "L_1788450659942_qrq4",
-      "time": "2026-09-03 21:20:59",
-      "text": "Set final coins for AKSHAY: 2900 coins. • by Device-5V07"
-    },
-    {
-      "id": "L_1788450642511_lmvr",
-      "time": "2026-09-03 21:20:42",
-      "text": "Set final coins for RAVI: 1000 coins. • by Device-5V07"
-    },
-    {
-      "id": "L_1788450542935_r2nt",
-      "time": "2026-09-03 21:19:02",
-      "text": "Set final coins for MOHINI: 2540 coins. • by Device-5V07"
-    },
-    {
-      "id": "L_1788450540036_lg6b",
-      "time": "2026-09-03 21:19:00",
-      "text": "Set final coins for HARI: 7000 coins. • by Device-5V07"
-    },
-    {
-      "id": "L_1788450472277_seqs",
-      "time": "2026-09-03 21:17:52",
-      "text": "Set final coins for RISHI: 5560 coins. • by Device-5V07"
-    },
-    {
-      "id": "L_1788449495705_oo51",
-      "time": "2026-09-03 21:01:35",
-      "text": "Buy-in increased for AKSHAY: count = 6. • by Device-5V07"
-    },
-    {
-      "id": "L_1788449495218_c83r",
-      "time": "2026-09-03 21:01:35",
-      "text": "Buy-in increased for AKSHAY: count = 5. • by Device-5V07"
-    },
-    {
-      "id": "L_1788447997849_wg41",
-      "time": "2026-09-03 20:36:37",
-      "text": "Buy-in increased for RISHI: count = 4. • by Device-5V07"
-    },
-    {
-      "id": "L_1788447994216_znjv",
-      "time": "2026-09-03 20:36:34",
-      "text": "Buy-in increased for MOHINI: count = 4. • by Device-5V07"
-    },
-    {
-      "id": "L_1788446814706_am51",
-      "time": "2026-09-03 20:16:54",
-      "text": "Buy-in increased for AKSHAY: count = 4. • by Device-5V07"
-    },
-    {
-      "id": "L_1788446505268_y2ys",
-      "time": "2026-09-03 20:11:45",
-      "text": "Buy-in increased for AKSHAY: count = 3. • by Device-5V07"
-    },
-    {
-      "id": "L_1788445790944_78u2",
-      "time": "2026-09-03 19:59:50",
-      "text": "Buy-in increased for AKSHAY: count = 2. • by Device-5V07"
-    },
-    {
-      "id": "L_1788445788900_94wu",
-      "time": "2026-09-03 19:59:48",
-      "text": "Buy-in increased for MOHINI: count = 3. • by Device-5V07"
-    },
-    {
-      "id": "L_1788445376925_rozd",
-      "time": "2026-09-03 19:52:56",
-      "text": "Buy-in increased for HARI: count = 3. • by Device-5V07"
-    },
-    {
-      "id": "L_1788445150049_y8bh",
-      "time": "2026-09-03 19:49:10",
-      "text": "Buy-in increased for HARI: count = 2. • by Device-5V07"
-    },
-    {
-      "id": "L_1788445054012_jzow",
-      "time": "2026-09-03 19:47:34",
-      "text": "Buy-in increased for MOHINI: count = 2. • by Device-5V07"
-    },
-    {
-      "id": "L_1788444963908_71e6",
-      "time": "2026-09-03 19:46:03",
-      "text": "Buy-in increased for RISHI: count = 3. • by Device-5V07"
-    },
-    {
-      "id": "L_1788444963478_ai10",
-      "time": "2026-09-03 19:46:03",
-      "text": "Buy-in increased for RISHI: count = 2. • by Device-5V07"
-    },
-    {
-      "id": "L_1788444722790_n0ox",
-      "time": "2026-09-03 19:42:02",
-      "text": "Pushed live state to GitHub repo. • by Device-5V07"
-    },
-    {
-      "id": "L_1788443139201_ym6p",
-      "time": "2026-09-03 19:15:39",
-      "text": "Added \"RAVI\" with 1 buy-in (1000c). • by Device-5V07"
-    },
-    {
-      "id": "L_1788443107717_5gcp",
-      "time": "2026-09-03 19:15:07",
-      "text": "Added \"MOHINI\" with 1 buy-in (1000c). • by Device-5V07"
-    },
-    {
-      "id": "L_1788443103776_h3za",
-      "time": "2026-09-03 19:15:03",
-      "text": "Added \"HARI\" with 1 buy-in (1000c). • by Device-5V07"
-    },
-    {
-      "id": "L_1788443097034_xglu",
-      "time": "2026-09-03 19:14:57",
-      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by Device-5V07"
-    },
-    {
-      "id": "L_1788443092276_ssb9",
-      "time": "2026-09-03 19:14:52",
-      "text": "Added \"RISHI\" with 1 buy-in (1000c). • by Device-5V07"
     }
   ],
   "knownRoster": [
