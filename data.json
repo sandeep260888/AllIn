@@ -1375,51 +1375,8 @@
       ]
     }
   ],
-  "activePlayers": [
-    {
-      "id": 1789049590429,
-      "name": "RISHI",
-      "buyIns": 1,
-      "buyInCoins": 1000,
-      "cashOutCoins": 1790
-    },
-    {
-      "id": 1789049595007,
-      "name": "AKSHAY",
-      "buyIns": 1,
-      "buyInCoins": 1000,
-      "cashOutCoins": 5260
-    },
-    {
-      "id": 1789049599482,
-      "name": "HARI",
-      "buyIns": 6,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1789049602666,
-      "name": "ABHISHEK",
-      "buyIns": 1,
-      "buyInCoins": 1000,
-      "cashOutCoins": 3180
-    },
-    {
-      "id": 1789051016233,
-      "name": "KUNAL",
-      "buyIns": 2,
-      "buyInCoins": 1000,
-      "cashOutCoins": 1710
-    },
-    {
-      "id": 1789051337804,
-      "name": "GAGAN",
-      "buyIns": 3,
-      "buyInCoins": 1000,
-      "cashOutCoins": 2060
-    }
-  ],
-  "activeSessionId": "S_mtvlxms8zusxd9",
+  "activePlayers": [],
+  "activeSessionId": null,
   "activeHost": null,
   "settings": {
     "coinCount": "2",
@@ -1431,6 +1388,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1789137323570_wd15",
+      "time": "2026-09-11 20:05:23",
+      "text": "Cleared active session dashboard. • by Sandeep"
+    },
+    {
+      "id": "L_1789137313139_ihxt",
+      "time": "2026-09-11 20:05:13",
+      "text": "Manual refresh synchronized with GitHub. • by Sandeep"
+    },
     {
       "id": "L_1789137276815_ey1n",
       "time": "2026-09-11 20:04:36",
@@ -3420,16 +3387,6 @@
       "id": "L_1788450738275_knry",
       "time": "2026-09-03 21:22:18",
       "text": "Settlement: MOHINI pays HARI ₹50.00 • by Device-5V07"
-    },
-    {
-      "id": "L_1788450738275_gksh",
-      "time": "2026-09-03 21:22:18",
-      "text": "Settlement: AKSHAY pays HARI ₹1550.00 • by Device-5V07"
-    },
-    {
-      "id": "L_1788450738273_bxmn",
-      "time": "2026-09-03 21:22:18",
-      "text": "Settlement calculated (3 transfers). • by Device-5V07"
     }
   ],
   "knownRoster": [
