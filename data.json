@@ -1,6 +1,42 @@
 {
   "savedSessions": [
     {
+      "sessionId": "S_mu14q76yscxwmg",
+      "date": "2026-09-14T14:57:27.291Z",
+      "entries": [
+        {
+          "name": "ABHISHEK",
+          "investedCoins": 5000,
+          "finalCoins": 1600,
+          "netVal": -1700
+        },
+        {
+          "name": "RAVI",
+          "investedCoins": 4000,
+          "finalCoins": 5360,
+          "netVal": 680
+        },
+        {
+          "name": "RISHI",
+          "investedCoins": 1000,
+          "finalCoins": 7040,
+          "netVal": 3020
+        },
+        {
+          "name": "SANDEEP",
+          "investedCoins": 1000,
+          "finalCoins": 1000,
+          "netVal": 0
+        },
+        {
+          "name": "RAJAT",
+          "investedCoins": 4000,
+          "finalCoins": 0,
+          "netVal": -2000
+        }
+      ]
+    },
+    {
       "sessionId": "S_mtx17ifwe753ui",
       "date": "2026-09-11T21:29:12.746Z",
       "entries": [
@@ -1448,14 +1484,14 @@
       "name": "RAVI",
       "buyIns": 4,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 5360
     },
     {
       "id": 1789383503818,
       "name": "RISHI",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 7040
     },
     {
       "id": 1789383513333,
@@ -1476,7 +1512,7 @@
   "activeHost": {
     "deviceId": "dev_hb66ca2k",
     "deviceName": "Sandeep",
-    "heartbeatAt": "2026-09-14T14:56:34.115Z"
+    "heartbeatAt": "2026-09-14T14:57:38.442Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1493,6 +1529,51 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1789397847292_0t9v",
+      "time": "2026-09-14 20:27:27",
+      "text": "Saved session to database. • by Sandeep"
+    },
+    {
+      "id": "L_1789397840897_j9zf",
+      "time": "2026-09-14 20:27:20",
+      "text": "Auto-push failed: data.json does not match 884dde56c0d4de14450d8f4a1c45b6e896a6ad26 • by Sandeep"
+    },
+    {
+      "id": "L_1789397829325_ms6b",
+      "time": "2026-09-14 20:27:09",
+      "text": "Auto-push failed: data.json does not match 884dde56c0d4de14450d8f4a1c45b6e896a6ad26 • by Sandeep"
+    },
+    {
+      "id": "L_1789397824082_jbwb",
+      "time": "2026-09-14 20:27:04",
+      "text": "Settlement: ABHISHEK pays RAVI ₹680.00 • by Sandeep"
+    },
+    {
+      "id": "L_1789397824079_mx6d",
+      "time": "2026-09-14 20:27:04",
+      "text": "Settlement: ABHISHEK pays RISHI ₹1020.00 • by Sandeep"
+    },
+    {
+      "id": "L_1789397824077_zhy0",
+      "time": "2026-09-14 20:27:04",
+      "text": "Settlement: RAJAT pays RISHI ₹2000.00 • by Sandeep"
+    },
+    {
+      "id": "L_1789397824070_eebw",
+      "time": "2026-09-14 20:27:04",
+      "text": "Settlement calculated (3 transfers). • by Sandeep"
+    },
+    {
+      "id": "L_1789397811873_676n",
+      "time": "2026-09-14 20:26:51",
+      "text": "Set final coins for RAVI: 5360 coins. • by Sandeep"
+    },
+    {
+      "id": "L_1789397800369_e6l4",
+      "time": "2026-09-14 20:26:40",
+      "text": "Set final coins for RISHI: 7040 coins. • by Sandeep"
+    },
     {
       "id": "L_1789397777995_q16x",
       "time": "2026-09-14 20:26:17",
@@ -3447,51 +3528,6 @@
       "id": "L_1788558617516_q2yr",
       "time": "2026-09-05 03:20:17",
       "text": "Settlement: RAVI pays SANDEEP ₹70.00 • by Akshay"
-    },
-    {
-      "id": "L_1788558617515_skuo",
-      "time": "2026-09-05 03:20:17",
-      "text": "Settlement: ABHISHEK pays SANDEEP ₹6000.00 • by Akshay"
-    },
-    {
-      "id": "L_1788558617514_d9g4",
-      "time": "2026-09-05 03:20:17",
-      "text": "Settlement calculated (9 transfers). • by Akshay"
-    },
-    {
-      "id": "L_1788558617445_didn",
-      "time": "2026-09-05 03:20:17",
-      "text": "Set final coins for RAVI: 110 coins. • by Akshay"
-    },
-    {
-      "id": "L_1788558575808_lq4k",
-      "time": "2026-09-05 03:19:35",
-      "text": "Settlement: HARSHIT pays GAGAN ₹625.00 • by Akshay"
-    },
-    {
-      "id": "L_1788558575808_1j2f",
-      "time": "2026-09-05 03:19:35",
-      "text": "Settlement: MOHINI pays GAGAN ₹1500.00 • by Akshay"
-    },
-    {
-      "id": "L_1788558575807_hgzg",
-      "time": "2026-09-05 03:19:35",
-      "text": "Settlement: ALOK pays GAGAN ₹440.00 • by Akshay"
-    },
-    {
-      "id": "L_1788558575806_2atn",
-      "time": "2026-09-05 03:19:35",
-      "text": "Settlement: ALOK pays HARI ₹2750.00 • by Akshay"
-    },
-    {
-      "id": "L_1788558575805_63k8",
-      "time": "2026-09-05 03:19:35",
-      "text": "Settlement: ALOK pays RISHI ₹1310.00 • by Akshay"
-    },
-    {
-      "id": "L_1788558575805_htnx",
-      "time": "2026-09-05 03:19:35",
-      "text": "Settlement: ABHISHEK pays RISHI ₹1980.00 • by Akshay"
     }
   ],
   "knownRoster": [
