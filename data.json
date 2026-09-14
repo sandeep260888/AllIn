@@ -1441,7 +1441,7 @@
       "name": "ABHISHEK",
       "buyIns": 5,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 1600
     },
     {
       "id": 1789383498373,
@@ -1462,7 +1462,7 @@
       "name": "SANDEEP",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 1000
     },
     {
       "id": 1789385362014,
@@ -1476,7 +1476,7 @@
   "activeHost": {
     "deviceId": "dev_hb66ca2k",
     "deviceName": "Sandeep",
-    "heartbeatAt": "2026-09-14T14:39:39.616Z"
+    "heartbeatAt": "2026-09-14T14:56:34.115Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1493,6 +1493,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1789397777995_q16x",
+      "time": "2026-09-14 20:26:17",
+      "text": "Set final coins for ABHISHEK: 1600 coins. • by Sandeep"
+    },
     {
       "id": "L_1789396764048_1um5",
       "time": "2026-09-14 20:09:24",
@@ -3487,11 +3492,6 @@
       "id": "L_1788558575805_htnx",
       "time": "2026-09-05 03:19:35",
       "text": "Settlement: ABHISHEK pays RISHI ₹1980.00 • by Akshay"
-    },
-    {
-      "id": "L_1788558575804_5v3q",
-      "time": "2026-09-05 03:19:35",
-      "text": "Settlement: ABHISHEK pays AKSHAY ₹3950.00 • by Akshay"
     }
   ],
   "knownRoster": [
