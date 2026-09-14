@@ -1463,13 +1463,20 @@
       "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1789385362014,
+      "name": "RAJAT",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "activeSessionId": "S_mu14q76yscxwmg",
   "activeHost": {
     "deviceId": "dev_hb66ca2k",
     "deviceName": "Sandeep",
-    "heartbeatAt": "2026-09-14T11:09:40.732Z"
+    "heartbeatAt": "2026-09-14T11:29:37.906Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1486,6 +1493,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1789385362014_iy2a",
+      "time": "2026-09-14 16:59:22",
+      "text": "Added \"RAJAT\" with 1 buy-in (1000c). • by Sandeep"
+    },
     {
       "id": "L_1789384165085_58yh",
       "time": "2026-09-14 16:39:25",
@@ -3480,11 +3492,6 @@
       "id": "L_1788558369899_y603",
       "time": "2026-09-05 03:16:09",
       "text": "Set final coins for ALOK: 6000 coins. • by Akshay"
-    },
-    {
-      "id": "L_1788558366009_o16y",
-      "time": "2026-09-05 03:16:06",
-      "text": "Set final coins for ABHISHEK: 0 coins. • by Akshay"
     }
   ],
   "knownRoster": [
@@ -3502,6 +3509,7 @@
     "SONAK",
     "VIKAS",
     "SHUBHAM",
-    "SIDDHARTH"
+    "SIDDHARTH",
+    "RAJAT"
   ]
 }
