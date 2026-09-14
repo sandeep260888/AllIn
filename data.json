@@ -1439,7 +1439,7 @@
     {
       "id": 1789383487216,
       "name": "ABHISHEK",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1469,7 +1469,7 @@
   "activeHost": {
     "deviceId": "dev_hb66ca2k",
     "deviceName": "Sandeep",
-    "heartbeatAt": "2026-09-14T10:58:49.409Z"
+    "heartbeatAt": "2026-09-14T11:09:40.732Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1486,6 +1486,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1789384165085_58yh",
+      "time": "2026-09-14 16:39:25",
+      "text": "Buy-in increased for ABHISHEK: count = 2. • by Sandeep"
+    },
+    {
+      "id": "L_1789383583827_6v05",
+      "time": "2026-09-14 16:29:43",
+      "text": "Random picker chose SANDEEP. • by Sandeep"
+    },
     {
       "id": "L_1789383513333_dvtx",
       "time": "2026-09-14 16:28:33",
@@ -3475,16 +3485,6 @@
       "id": "L_1788558366009_o16y",
       "time": "2026-09-05 03:16:06",
       "text": "Set final coins for ABHISHEK: 0 coins. • by Akshay"
-    },
-    {
-      "id": "L_1788558364593_j54d",
-      "time": "2026-09-05 03:16:04",
-      "text": "Set final coins for RAVI: 0 coins. • by Akshay"
-    },
-    {
-      "id": "L_1788557035371_1vss",
-      "time": "2026-09-05 02:53:55",
-      "text": "Buy-in increased for ABHISHEK: count = 12. • by Akshay"
     }
   ],
   "knownRoster": [
