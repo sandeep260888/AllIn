@@ -1439,14 +1439,14 @@
     {
       "id": 1789383487216,
       "name": "ABHISHEK",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
     {
       "id": 1789383498373,
       "name": "RAVI",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1476,7 +1476,7 @@
   "activeHost": {
     "deviceId": "dev_hb66ca2k",
     "deviceName": "Sandeep",
-    "heartbeatAt": "2026-09-14T11:29:37.906Z"
+    "heartbeatAt": "2026-09-14T11:33:06.847Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1493,6 +1493,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1789385571174_z0sf",
+      "time": "2026-09-14 17:02:51",
+      "text": "Buy-in increased for ABHISHEK: count = 3. • by Sandeep"
+    },
+    {
+      "id": "L_1789385569500_m0rt",
+      "time": "2026-09-14 17:02:49",
+      "text": "Buy-in increased for RAVI: count = 2. • by Sandeep"
+    },
     {
       "id": "L_1789385362014_iy2a",
       "time": "2026-09-14 16:59:22",
@@ -3482,16 +3492,6 @@
       "id": "L_1788558474370_pt0o",
       "time": "2026-09-05 03:17:54",
       "text": "Set final coins for GAGAN: 8130 coins. • by Akshay"
-    },
-    {
-      "id": "L_1788558452111_ea8z",
-      "time": "2026-09-05 03:17:32",
-      "text": "Set final coins for HARSHIT: 2640 coins. • by Akshay"
-    },
-    {
-      "id": "L_1788558369899_y603",
-      "time": "2026-09-05 03:16:09",
-      "text": "Set final coins for ALOK: 6000 coins. • by Akshay"
     }
   ],
   "knownRoster": [
