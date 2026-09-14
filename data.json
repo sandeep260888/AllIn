@@ -1439,7 +1439,7 @@
     {
       "id": 1789383487216,
       "name": "ABHISHEK",
-      "buyIns": 3,
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1476,7 +1476,7 @@
   "activeHost": {
     "deviceId": "dev_hb66ca2k",
     "deviceName": "Sandeep",
-    "heartbeatAt": "2026-09-14T12:59:19.082Z"
+    "heartbeatAt": "2026-09-14T14:22:13.320Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1493,6 +1493,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1789395717158_kd47",
+      "time": "2026-09-14 19:51:57",
+      "text": "Buy-in increased for ABHISHEK: count = 4. • by Sandeep"
+    },
     {
       "id": "L_1789390743432_889l",
       "time": "2026-09-14 18:29:03",
@@ -3487,11 +3492,6 @@
       "id": "L_1788558575802_fqoz",
       "time": "2026-09-05 03:19:35",
       "text": "Settlement: RAVI pays SANDEEP ₹6000.00 • by Akshay"
-    },
-    {
-      "id": "L_1788558575799_n1um",
-      "time": "2026-09-05 03:19:35",
-      "text": "Settlement calculated (9 transfers). • by Akshay"
     }
   ],
   "knownRoster": [
