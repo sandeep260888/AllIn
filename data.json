@@ -1485,13 +1485,27 @@
       "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1789820006540,
+      "name": "ALOK",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1789820017785,
+      "name": "MOHINI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "activeSessionId": "S_mu8clrmy2d9tmb",
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-19T12:13:26.147Z"
+    "heartbeatAt": "2026-09-19T12:13:42.193Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1509,6 +1523,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1789820017785_e9m2",
+      "time": "2026-09-19 17:43:37",
+      "text": "Added \"MOHINI\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1789820006540_2yw8",
+      "time": "2026-09-19 17:43:26",
+      "text": "Added \"ALOK\" with 1 buy-in (1000c). • by sandeep mac"
+    },
     {
       "id": "L_1789819990784_wchl",
       "time": "2026-09-19 17:43:10",
@@ -3498,16 +3522,6 @@
       "id": "L_1788558627877_1fd5",
       "time": "2026-09-05 03:20:27",
       "text": "Settlement calculated (9 transfers). • by Akshay"
-    },
-    {
-      "id": "L_1788558626568_edc0",
-      "time": "2026-09-05 03:20:26",
-      "text": "Set final coins for ABHISHEK: 110 coins. • by Akshay"
-    },
-    {
-      "id": "L_1788558624805_fhri",
-      "time": "2026-09-05 03:20:24",
-      "text": "Set final coins for RAVI: 0 coins. • by Akshay"
     }
   ],
   "knownRoster": [
