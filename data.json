@@ -1510,7 +1510,7 @@
     {
       "id": 1789820028019,
       "name": "RISHI",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1526,7 +1526,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-19T13:23:16.938Z"
+    "heartbeatAt": "2026-09-19T13:31:32.029Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1544,6 +1544,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1789824676144_tmb8",
+      "time": "2026-09-19 19:01:16",
+      "text": "Buy-in increased for RISHI: count = 2. • by sandeep mac"
+    },
     {
       "id": "L_1789824181260_ead1",
       "time": "2026-09-19 18:53:01",
@@ -3538,11 +3543,6 @@
       "id": "L_1788558719792_soso",
       "time": "2026-09-05 03:21:59",
       "text": "Random picker chose HARI. • by Akshay"
-    },
-    {
-      "id": "L_1788558627888_30ho",
-      "time": "2026-09-05 03:20:27",
-      "text": "Settlement: HARSHIT pays GAGAN ₹680.00 • by Akshay"
     }
   ],
   "knownRoster": [
