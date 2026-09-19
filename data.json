@@ -1477,7 +1477,7 @@
       "name": "ABHISHEK",
       "buyIns": 8,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 2050
     },
     {
       "id": 1789819990784,
@@ -1526,7 +1526,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-19T23:18:08.707Z"
+    "heartbeatAt": "2026-09-19T23:18:25.632Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1544,6 +1544,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1789859889793_kv5x",
+      "time": "2026-09-20 04:48:09",
+      "text": "Set final coins for ABHISHEK: 2050 coins. • by sandeep mac"
+    },
     {
       "id": "L_1789859872297_suq2",
       "time": "2026-09-20 04:47:52",
@@ -3538,11 +3543,6 @@
       "id": "L_1788613507673_42f8",
       "time": "2026-09-05 18:35:07",
       "text": "Buy-in increased for RAVI: count = 6. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788612600140_xlv1",
-      "time": "2026-09-05 18:20:00",
-      "text": "Buy-in increased for KUNAL: count = 4. • by Sandeep Mac"
     }
   ],
   "knownRoster": [
