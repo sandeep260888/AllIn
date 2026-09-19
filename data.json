@@ -1482,7 +1482,7 @@
     {
       "id": 1789819990784,
       "name": "GAGAN",
-      "buyIns": 5,
+      "buyIns": 6,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1526,7 +1526,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-19T18:27:50.557Z"
+    "heartbeatAt": "2026-09-19T20:31:41.603Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1544,6 +1544,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1789849884189_of9t",
+      "time": "2026-09-20 02:01:24",
+      "text": "Buy-in increased for GAGAN: count = 6. • by sandeep mac"
+    },
     {
       "id": "L_1789842454870_pen8",
       "time": "2026-09-19 23:57:34",
@@ -3538,11 +3543,6 @@
       "id": "L_1788607409804_mtl9",
       "time": "2026-09-05 16:53:29",
       "text": "Buy-in increased for GAGAN: count = 4. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788607397905_m26a",
-      "time": "2026-09-05 16:53:17",
-      "text": "Buy-in increased for SONAK: count = 4. • by Sandeep Mac"
     }
   ],
   "knownRoster": [
