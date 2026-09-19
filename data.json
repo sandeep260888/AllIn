@@ -1473,46 +1473,46 @@
   ],
   "activePlayers": [
     {
-      "id": 1789383487216,
-      "name": "ABHISHEK",
+      "id": 1788876599724,
+      "name": "AKSHAY",
       "buyIns": 5,
       "buyInCoins": 1000,
-      "cashOutCoins": 1600
+      "cashOutCoins": 0
     },
     {
-      "id": 1789383498373,
-      "name": "RAVI",
-      "buyIns": 4,
+      "id": 1788876605030,
+      "name": "GAGAN",
+      "buyIns": 6,
       "buyInCoins": 1000,
-      "cashOutCoins": 5360
+      "cashOutCoins": 0
     },
     {
-      "id": 1789383503818,
-      "name": "RISHI",
-      "buyIns": 1,
-      "buyInCoins": 1000,
-      "cashOutCoins": 7040
-    },
-    {
-      "id": 1789383513333,
-      "name": "SANDEEP",
-      "buyIns": 1,
-      "buyInCoins": 1000,
-      "cashOutCoins": 1000
-    },
-    {
-      "id": 1789385362014,
-      "name": "RAJAT",
+      "id": 1788876608652,
+      "name": "MOHINI",
       "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1788876613230,
+      "name": "KUNAL",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1788876617389,
+      "name": "SANDEEP",
+      "buyIns": 2,
+      "buyInCoins": 1000,
+      "cashOutCoins": 1500
     }
   ],
-  "activeSessionId": "S_mu14q76yscxwmg",
+  "activeSessionId": "S_mtsqxojgs8ggoa",
   "activeHost": {
-    "deviceId": "dev_hb66ca2k",
-    "deviceName": "Sandeep",
-    "heartbeatAt": "2026-09-14T14:57:38.442Z"
+    "deviceId": "dev_w3f5ipa6",
+    "deviceName": "sandeep mac",
+    "heartbeatAt": "2026-09-19T12:12:46.121Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1523,12 +1523,18 @@
       7,
       9,
       10,
+      11,
       12,
       13,
       15
     ]
   },
   "logs": [
+    {
+      "id": "L_1789819964086_072q",
+      "time": "2026-09-19 17:42:44",
+      "text": "Took over hosting from Sandeep (inactive 8h+). • by sandeep mac"
+    },
     {
       "id": "L_1789397847292_0t9v",
       "time": "2026-09-14 20:27:27",
@@ -2513,6 +2519,21 @@
       "id": "L_1788938624870_euig",
       "time": "2026-09-09 12:53:44",
       "text": "Manual refresh synchronized with GitHub. • by Sandeep"
+    },
+    {
+      "id": "L_1788893203745_jx12",
+      "time": "2026-09-09 00:16:43",
+      "text": "Manual refresh synchronized with GitHub. • by sandeep mac"
+    },
+    {
+      "id": "L_1788893168473_80np",
+      "time": "2026-09-09 00:16:08",
+      "text": "Manual refresh synchronized with GitHub. • by sandeep mac"
+    },
+    {
+      "id": "L_1788893073064_1059",
+      "time": "2026-09-09 00:14:33",
+      "text": "Manual refresh synchronized with GitHub. • by sandeep mac"
     },
     {
       "id": "L_1788888550775_qftv",
@@ -3508,26 +3529,6 @@
       "id": "L_1788558617519_nsuo",
       "time": "2026-09-05 03:20:17",
       "text": "Settlement: ALOK pays HARI ₹2750.00 • by Akshay"
-    },
-    {
-      "id": "L_1788558617518_2cab",
-      "time": "2026-09-05 03:20:17",
-      "text": "Settlement: ALOK pays RISHI ₹1365.00 • by Akshay"
-    },
-    {
-      "id": "L_1788558617517_szts",
-      "time": "2026-09-05 03:20:17",
-      "text": "Settlement: RAVI pays RISHI ₹1925.00 • by Akshay"
-    },
-    {
-      "id": "L_1788558617517_0hve",
-      "time": "2026-09-05 03:20:17",
-      "text": "Settlement: RAVI pays AKSHAY ₹3950.00 • by Akshay"
-    },
-    {
-      "id": "L_1788558617516_q2yr",
-      "time": "2026-09-05 03:20:17",
-      "text": "Settlement: RAVI pays SANDEEP ₹70.00 • by Akshay"
     }
   ],
   "knownRoster": [
