@@ -1484,49 +1484,49 @@
       "name": "GAGAN",
       "buyIns": 6,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 5000
     },
     {
       "id": 1789820006540,
       "name": "ALOK",
       "buyIns": 3,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 10500
     },
     {
       "id": 1789820017785,
       "name": "MOHINI",
       "buyIns": 7,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 4980
     },
     {
       "id": 1789820023985,
       "name": "RAVI",
       "buyIns": 4,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 610
     },
     {
       "id": 1789820028019,
       "name": "RISHI",
       "buyIns": 6,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 1800
     },
     {
       "id": 1789820031752,
       "name": "SANDEEP",
       "buyIns": 2,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 10250
     }
   ],
   "activeSessionId": "S_mu8clrmy2d9tmb",
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-19T22:30:53.761Z"
+    "heartbeatAt": "2026-09-19T23:18:08.707Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1544,6 +1544,46 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1789859872297_suq2",
+      "time": "2026-09-20 04:47:52",
+      "text": "Set final coins for GAGAN: 5000 coins. • by sandeep mac"
+    },
+    {
+      "id": "L_1789859867964_y2hh",
+      "time": "2026-09-20 04:47:47",
+      "text": "Set final coins for SANDEEP: 10250 coins. • by sandeep mac"
+    },
+    {
+      "id": "L_1789859857430_isn2",
+      "time": "2026-09-20 04:47:37",
+      "text": "Set final coins for MOHINI: 4980 coins. • by sandeep mac"
+    },
+    {
+      "id": "L_1789859851230_18sy",
+      "time": "2026-09-20 04:47:31",
+      "text": "Set final coins for ALOK: 10500 coins. • by sandeep mac"
+    },
+    {
+      "id": "L_1789859841628_xab2",
+      "time": "2026-09-20 04:47:21",
+      "text": "Set final coins for RISHI: 1800 coins. • by sandeep mac"
+    },
+    {
+      "id": "L_1789859837980_0tva",
+      "time": "2026-09-20 04:47:17",
+      "text": "Set final coins for ALOK: 11500 coins. • by sandeep mac"
+    },
+    {
+      "id": "L_1789859824995_jaan",
+      "time": "2026-09-20 04:47:04",
+      "text": "Set final coins for RAVI: 610 coins. • by sandeep mac"
+    },
+    {
+      "id": "L_1789859816680_l9tr",
+      "time": "2026-09-20 04:46:56",
+      "text": "Set final coins for RISHI: 800 coins. • by sandeep mac"
+    },
     {
       "id": "L_1789857038135_gt6l",
       "time": "2026-09-20 04:00:38",
@@ -3503,46 +3543,6 @@
       "id": "L_1788612600140_xlv1",
       "time": "2026-09-05 18:20:00",
       "text": "Buy-in increased for KUNAL: count = 4. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788612598491_amfn",
-      "time": "2026-09-05 18:19:58",
-      "text": "Buy-in increased for RAVI: count = 5. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788611317889_osmm",
-      "time": "2026-09-05 17:58:37",
-      "text": "Buy-in increased for RAVI: count = 4. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788611064390_1ani",
-      "time": "2026-09-05 17:54:24",
-      "text": "Buy-in increased for SANDEEP: count = 5. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788610959473_177z",
-      "time": "2026-09-05 17:52:39",
-      "text": "Buy-in increased for KUNAL: count = 3. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788610433556_jzm2",
-      "time": "2026-09-05 17:43:53",
-      "text": "Buy-in increased for SANDEEP: count = 4. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788609969539_m5n3",
-      "time": "2026-09-05 17:36:09",
-      "text": "Buy-in increased for GAGAN: count = 5. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788609968156_elzc",
-      "time": "2026-09-05 17:36:08",
-      "text": "Buy-in decreased for GAGAN: count = 4. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788609843322_y5ee",
-      "time": "2026-09-05 17:34:03",
-      "text": "Buy-in increased for KUNAL: count = 2. • by Sandeep Mac"
     }
   ],
   "knownRoster": [
