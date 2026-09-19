@@ -1475,7 +1475,7 @@
     {
       "id": 1789819980589,
       "name": "ABHISHEK",
-      "buyIns": 3,
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1526,7 +1526,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-19T15:48:56.278Z"
+    "heartbeatAt": "2026-09-19T16:08:56.555Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1544,6 +1544,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1789834120903_v6ch",
+      "time": "2026-09-19 21:38:40",
+      "text": "Buy-in increased for ABHISHEK: count = 4. • by sandeep mac"
+    },
     {
       "id": "L_1789832920164_adg1",
       "time": "2026-09-19 21:18:40",
@@ -3538,11 +3543,6 @@
       "id": "L_1788604803121_2xr1",
       "time": "2026-09-05 16:10:03",
       "text": "Added \"SONAK\" with 1 buy-in (1000c). • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788604797956_k2ud",
-      "time": "2026-09-05 16:09:57",
-      "text": "Added \"SANDEEP\" with 1 buy-in (1000c). • by Sandeep Mac"
     }
   ],
   "knownRoster": [
