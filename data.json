@@ -1510,7 +1510,7 @@
     {
       "id": 1789820028019,
       "name": "RISHI",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1526,7 +1526,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-19T17:06:46.160Z"
+    "heartbeatAt": "2026-09-19T17:07:55.714Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1544,6 +1544,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1789837660099_po1p",
+      "time": "2026-09-19 22:37:40",
+      "text": "Buy-in increased for RISHI: count = 3. • by sandeep mac"
+    },
     {
       "id": "L_1789837590249_6oll",
       "time": "2026-09-19 22:36:30",
@@ -3538,11 +3543,6 @@
       "id": "L_1788606514687_mdce",
       "time": "2026-09-05 16:38:34",
       "text": "Buy-in increased for SONAK: count = 3. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788605438771_v6xw",
-      "time": "2026-09-05 16:20:38",
-      "text": "Buy-in increased for SONAK: count = 2. • by Sandeep Mac"
     }
   ],
   "knownRoster": [
