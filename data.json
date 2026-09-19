@@ -1498,14 +1498,14 @@
       "name": "MOHINI",
       "buyIns": 7,
       "buyInCoins": 1000,
-      "cashOutCoins": 4980
+      "cashOutCoins": 5030
     },
     {
       "id": 1789820023985,
       "name": "RAVI",
       "buyIns": 4,
       "buyInCoins": 1000,
-      "cashOutCoins": 610
+      "cashOutCoins": 1000
     },
     {
       "id": 1789820028019,
@@ -1526,7 +1526,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-19T23:18:25.632Z"
+    "heartbeatAt": "2026-09-19T23:19:07.791Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1544,6 +1544,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1789859932231_ckzx",
+      "time": "2026-09-20 04:48:52",
+      "text": "Set final coins for MOHINI: 5030 coins. • by sandeep mac"
+    },
+    {
+      "id": "L_1789859921149_94v4",
+      "time": "2026-09-20 04:48:41",
+      "text": "Set final coins for ALOK: 10500 coins. • by sandeep mac"
+    },
+    {
+      "id": "L_1789859906998_xae3",
+      "time": "2026-09-20 04:48:26",
+      "text": "Set final coins for ALOK: 10 coins. • by sandeep mac"
+    },
     {
       "id": "L_1789859889793_kv5x",
       "time": "2026-09-20 04:48:09",
@@ -3528,21 +3543,6 @@
       "id": "L_1788614512757_a04e",
       "time": "2026-09-05 18:51:52",
       "text": "Buy-in increased for SONAK: count = 6. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788614094724_0pk7",
-      "time": "2026-09-05 18:44:54",
-      "text": "Added \"RISHI\" with 1 buy-in (1000c). • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788614073974_lqhy",
-      "time": "2026-09-05 18:44:33",
-      "text": "Buy-in increased for SONAK: count = 5. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788613507673_42f8",
-      "time": "2026-09-05 18:35:07",
-      "text": "Buy-in increased for RAVI: count = 6. • by Sandeep Mac"
     }
   ],
   "knownRoster": [
