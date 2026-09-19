@@ -1496,7 +1496,7 @@
     {
       "id": 1789820017785,
       "name": "MOHINI",
-      "buyIns": 3,
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1526,7 +1526,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-19T16:13:45.990Z"
+    "heartbeatAt": "2026-09-19T16:31:39.580Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1544,6 +1544,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1789835483225_ogtl",
+      "time": "2026-09-19 22:01:23",
+      "text": "Buy-in increased for MOHINI: count = 4. • by sandeep mac"
+    },
     {
       "id": "L_1789834410388_03zs",
       "time": "2026-09-19 21:43:30",
@@ -3538,11 +3543,6 @@
       "id": "L_1788604874856_65e7",
       "time": "2026-09-05 16:11:14",
       "text": "Buy-in increased for GAGAN: count = 2. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788604833955_jcoq",
-      "time": "2026-09-05 16:10:33",
-      "text": "Added \"KUNAL\" with 1 buy-in (1000c). • by Sandeep Mac"
     }
   ],
   "knownRoster": [
