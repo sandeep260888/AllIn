@@ -1496,7 +1496,7 @@
     {
       "id": 1789820017785,
       "name": "MOHINI",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1526,7 +1526,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-19T13:19:54.276Z"
+    "heartbeatAt": "2026-09-19T13:23:16.938Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1544,6 +1544,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1789824181260_ead1",
+      "time": "2026-09-19 18:53:01",
+      "text": "Buy-in increased for MOHINI: count = 3. • by sandeep mac"
+    },
     {
       "id": "L_1789823977561_avfe",
       "time": "2026-09-19 18:49:37",
@@ -3538,11 +3543,6 @@
       "id": "L_1788558627888_30ho",
       "time": "2026-09-05 03:20:27",
       "text": "Settlement: HARSHIT pays GAGAN ₹680.00 • by Akshay"
-    },
-    {
-      "id": "L_1788558627887_ddf9",
-      "time": "2026-09-05 03:20:27",
-      "text": "Settlement: MOHINI pays GAGAN ₹1500.00 • by Akshay"
     }
   ],
   "knownRoster": [
