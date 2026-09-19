@@ -1482,14 +1482,14 @@
     {
       "id": 1789819990784,
       "name": "GAGAN",
-      "buyIns": 4,
+      "buyIns": 5,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
     {
       "id": 1789820006540,
       "name": "ALOK",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1526,7 +1526,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-19T14:05:44.268Z"
+    "heartbeatAt": "2026-09-19T14:18:38.011Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1544,6 +1544,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1789827502140_tc4s",
+      "time": "2026-09-19 19:48:22",
+      "text": "Buy-in increased for GAGAN: count = 5. • by sandeep mac"
+    },
+    {
+      "id": "L_1789827498959_hiou",
+      "time": "2026-09-19 19:48:18",
+      "text": "Buy-in increased for ALOK: count = 2. • by sandeep mac"
+    },
     {
       "id": "L_1789826728388_away",
       "time": "2026-09-19 19:35:28",
@@ -3533,16 +3543,6 @@
       "id": "L_1788558721123_sncs",
       "time": "2026-09-05 03:22:01",
       "text": "Random picker chose HARI. • by Akshay"
-    },
-    {
-      "id": "L_1788558720689_90dt",
-      "time": "2026-09-05 03:22:00",
-      "text": "Random picker chose RISHI. • by Akshay"
-    },
-    {
-      "id": "L_1788558720250_v0ig",
-      "time": "2026-09-05 03:22:00",
-      "text": "Random picker chose SANDEEP. • by Akshay"
     }
   ],
   "knownRoster": [
