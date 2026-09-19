@@ -1482,7 +1482,7 @@
     {
       "id": 1789819990784,
       "name": "GAGAN",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1496,7 +1496,7 @@
     {
       "id": 1789820017785,
       "name": "MOHINI",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1526,7 +1526,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-19T12:16:56.322Z"
+    "heartbeatAt": "2026-09-19T12:39:39.719Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1544,6 +1544,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1789821564031_4med",
+      "time": "2026-09-19 18:09:24",
+      "text": "Buy-in increased for MOHINI: count = 2. • by sandeep mac"
+    },
+    {
+      "id": "L_1789821562065_66ua",
+      "time": "2026-09-19 18:09:22",
+      "text": "Buy-in increased for GAGAN: count = 2. • by sandeep mac"
+    },
     {
       "id": "L_1789820199870_y18p",
       "time": "2026-09-19 17:46:39",
@@ -3533,16 +3543,6 @@
       "id": "L_1788558627885_f016",
       "time": "2026-09-05 03:20:27",
       "text": "Settlement: ALOK pays HARI ₹2750.00 • by Akshay"
-    },
-    {
-      "id": "L_1788558627885_8dqa",
-      "time": "2026-09-05 03:20:27",
-      "text": "Settlement: ALOK pays RISHI ₹1365.00 • by Akshay"
-    },
-    {
-      "id": "L_1788558627884_1ghp",
-      "time": "2026-09-05 03:20:27",
-      "text": "Settlement: ABHISHEK pays RISHI ₹1925.00 • by Akshay"
     }
   ],
   "knownRoster": [
