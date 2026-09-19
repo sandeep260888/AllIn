@@ -1499,13 +1499,34 @@
       "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1789820023985,
+      "name": "RAVI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1789820028019,
+      "name": "RISHI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1789820031752,
+      "name": "SANDEEP",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "activeSessionId": "S_mu8clrmy2d9tmb",
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-19T12:13:42.193Z"
+    "heartbeatAt": "2026-09-19T12:13:53.135Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1523,6 +1544,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1789820031752_tv8j",
+      "time": "2026-09-19 17:43:51",
+      "text": "Added \"SANDEEP\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1789820028019_w22z",
+      "time": "2026-09-19 17:43:48",
+      "text": "Added \"RISHI\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1789820023985_7nf7",
+      "time": "2026-09-19 17:43:43",
+      "text": "Added \"RAVI\" with 1 buy-in (1000c). • by sandeep mac"
+    },
     {
       "id": "L_1789820017785_e9m2",
       "time": "2026-09-19 17:43:37",
@@ -3507,21 +3543,6 @@
       "id": "L_1788558627883_ti6f",
       "time": "2026-09-05 03:20:27",
       "text": "Settlement: ABHISHEK pays AKSHAY ₹3950.00 • by Akshay"
-    },
-    {
-      "id": "L_1788558627882_yb9o",
-      "time": "2026-09-05 03:20:27",
-      "text": "Settlement: ABHISHEK pays SANDEEP ₹70.00 • by Akshay"
-    },
-    {
-      "id": "L_1788558627880_4fgq",
-      "time": "2026-09-05 03:20:27",
-      "text": "Settlement: RAVI pays SANDEEP ₹6000.00 • by Akshay"
-    },
-    {
-      "id": "L_1788558627877_1fd5",
-      "time": "2026-09-05 03:20:27",
-      "text": "Settlement calculated (9 transfers). • by Akshay"
     }
   ],
   "knownRoster": [
