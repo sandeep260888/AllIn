@@ -1,6 +1,54 @@
 {
   "savedSessions": [
     {
+      "sessionId": "S_mu8clrmy2d9tmb",
+      "date": "2026-09-19T23:21:40.681Z",
+      "entries": [
+        {
+          "name": "ABHISHEK",
+          "investedCoins": 8000,
+          "finalCoins": 2050,
+          "netVal": -2975
+        },
+        {
+          "name": "GAGAN",
+          "investedCoins": 6000,
+          "finalCoins": 5000,
+          "netVal": -500
+        },
+        {
+          "name": "ALOK",
+          "investedCoins": 3000,
+          "finalCoins": 10500,
+          "netVal": 3750
+        },
+        {
+          "name": "MOHINI",
+          "investedCoins": 7000,
+          "finalCoins": 5030,
+          "netVal": -985
+        },
+        {
+          "name": "RAVI",
+          "investedCoins": 4000,
+          "finalCoins": 1070,
+          "netVal": -1465
+        },
+        {
+          "name": "RISHI",
+          "investedCoins": 6000,
+          "finalCoins": 2100,
+          "netVal": -1950
+        },
+        {
+          "name": "SANDEEP",
+          "investedCoins": 2000,
+          "finalCoins": 10250,
+          "netVal": 4125
+        }
+      ]
+    },
+    {
       "sessionId": "S_mu14q76yscxwmg",
       "date": "2026-09-14T14:57:27.291Z",
       "entries": [
@@ -1526,7 +1574,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-19T23:19:54.899Z"
+    "heartbeatAt": "2026-09-19T23:21:42.193Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1544,6 +1592,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1789860100681_4fi3",
+      "time": "2026-09-20 04:51:40",
+      "text": "Saved session to database. • by sandeep mac"
+    },
     {
       "id": "L_1789859979124_daq4",
       "time": "2026-09-20 04:49:39",
@@ -3538,11 +3591,6 @@
       "id": "L_1788622472526_mklq",
       "time": "2026-09-05 21:04:32",
       "text": "Set final coins for SONAK: 0 coins. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788622455411_537x",
-      "time": "2026-09-05 21:04:15",
-      "text": "Set final coins for GAGAN: 9320 coins. • by Sandeep Mac"
     }
   ],
   "knownRoster": [
