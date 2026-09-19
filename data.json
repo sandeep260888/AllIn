@@ -1475,7 +1475,7 @@
     {
       "id": 1789819980589,
       "name": "ABHISHEK",
-      "buyIns": 5,
+      "buyIns": 6,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1496,7 +1496,7 @@
     {
       "id": 1789820017785,
       "name": "MOHINI",
-      "buyIns": 5,
+      "buyIns": 6,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1526,7 +1526,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-19T16:58:03.219Z"
+    "heartbeatAt": "2026-09-19T17:06:46.160Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1544,6 +1544,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1789837590249_6oll",
+      "time": "2026-09-19 22:36:30",
+      "text": "Buy-in increased for ABHISHEK: count = 6. • by sandeep mac"
+    },
+    {
+      "id": "L_1789837587866_89rb",
+      "time": "2026-09-19 22:36:27",
+      "text": "Buy-in increased for MOHINI: count = 6. • by sandeep mac"
+    },
     {
       "id": "L_1789837066730_eiyp",
       "time": "2026-09-19 22:27:46",
@@ -3533,16 +3543,6 @@
       "id": "L_1788605438771_v6xw",
       "time": "2026-09-05 16:20:38",
       "text": "Buy-in increased for SONAK: count = 2. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788605059053_2shg",
-      "time": "2026-09-05 16:14:19",
-      "text": "Buy-in increased for RAVI: count = 2. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788605056737_1tpr",
-      "time": "2026-09-05 16:14:16",
-      "text": "Buy-in increased for SANDEEP: count = 2. • by Sandeep Mac"
     }
   ],
   "knownRoster": [
