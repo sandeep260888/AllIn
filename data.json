@@ -1512,7 +1512,7 @@
       "name": "RISHI",
       "buyIns": 6,
       "buyInCoins": 1000,
-      "cashOutCoins": 1800
+      "cashOutCoins": 2100
     },
     {
       "id": 1789820031752,
@@ -1526,7 +1526,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-19T23:19:07.791Z"
+    "heartbeatAt": "2026-09-19T23:19:25.056Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1544,6 +1544,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1789859949108_ncaz",
+      "time": "2026-09-20 04:49:09",
+      "text": "Set final coins for RAVI: 1000 coins. • by sandeep mac"
+    },
     {
       "id": "L_1789859932231_ckzx",
       "time": "2026-09-20 04:48:52",
@@ -3538,11 +3543,6 @@
       "id": "L_1788615118291_9tsq",
       "time": "2026-09-05 19:01:58",
       "text": "Buy-in increased for RAVI: count = 7. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788614512757_a04e",
-      "time": "2026-09-05 18:51:52",
-      "text": "Buy-in increased for SONAK: count = 6. • by Sandeep Mac"
     }
   ],
   "knownRoster": [
