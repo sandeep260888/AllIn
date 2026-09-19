@@ -1473,46 +1473,18 @@
   ],
   "activePlayers": [
     {
-      "id": 1788876599724,
-      "name": "AKSHAY",
-      "buyIns": 5,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1788876605030,
-      "name": "GAGAN",
-      "buyIns": 6,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1788876608652,
-      "name": "MOHINI",
-      "buyIns": 4,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1788876613230,
-      "name": "KUNAL",
+      "id": 1789819980589,
+      "name": "ABHISHEK",
       "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
-    },
-    {
-      "id": 1788876617389,
-      "name": "SANDEEP",
-      "buyIns": 2,
-      "buyInCoins": 1000,
-      "cashOutCoins": 1500
     }
   ],
-  "activeSessionId": "S_mtsqxojgs8ggoa",
+  "activeSessionId": "S_mu8clrmy2d9tmb",
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-19T12:12:46.121Z"
+    "heartbeatAt": "2026-09-19T12:13:09.305Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1530,6 +1502,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1789819980589_e3z8",
+      "time": "2026-09-19 17:43:00",
+      "text": "Added \"ABHISHEK\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1789819980586_l15v",
+      "time": "2026-09-19 17:43:00",
+      "text": "Started new session and claimed host. • by sandeep mac"
+    },
+    {
+      "id": "L_1789819973744_r9q0",
+      "time": "2026-09-19 17:42:53",
+      "text": "Cleared active session dashboard. • by sandeep mac"
+    },
     {
       "id": "L_1789819964086_072q",
       "time": "2026-09-19 17:42:44",
@@ -3514,21 +3501,6 @@
       "id": "L_1788558617521_j5sa",
       "time": "2026-09-05 03:20:17",
       "text": "Settlement: HARSHIT pays GAGAN ₹680.00 • by Akshay"
-    },
-    {
-      "id": "L_1788558617520_15om",
-      "time": "2026-09-05 03:20:17",
-      "text": "Settlement: MOHINI pays GAGAN ₹1500.00 • by Akshay"
-    },
-    {
-      "id": "L_1788558617519_baj5",
-      "time": "2026-09-05 03:20:17",
-      "text": "Settlement: ALOK pays GAGAN ₹385.00 • by Akshay"
-    },
-    {
-      "id": "L_1788558617519_nsuo",
-      "time": "2026-09-05 03:20:17",
-      "text": "Settlement: ALOK pays HARI ₹2750.00 • by Akshay"
     }
   ],
   "knownRoster": [
