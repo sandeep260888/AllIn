@@ -1505,7 +1505,7 @@
       "name": "RAVI",
       "buyIns": 4,
       "buyInCoins": 1000,
-      "cashOutCoins": 1000
+      "cashOutCoins": 1070
     },
     {
       "id": 1789820028019,
@@ -1526,7 +1526,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-19T23:19:25.056Z"
+    "heartbeatAt": "2026-09-19T23:19:54.899Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1544,6 +1544,51 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1789859979124_daq4",
+      "time": "2026-09-20 04:49:39",
+      "text": "Settlement: GAGAN pays ALOK ₹500.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1789859979123_wkov",
+      "time": "2026-09-20 04:49:39",
+      "text": "Settlement: MOHINI pays ALOK ₹985.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1789859979121_5u9w",
+      "time": "2026-09-20 04:49:39",
+      "text": "Settlement: RAVI pays ALOK ₹1465.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1789859979120_puwd",
+      "time": "2026-09-20 04:49:39",
+      "text": "Settlement: RISHI pays ALOK ₹800.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1789859979119_0sl8",
+      "time": "2026-09-20 04:49:39",
+      "text": "Settlement: RISHI pays SANDEEP ₹1150.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1789859979118_lhn7",
+      "time": "2026-09-20 04:49:39",
+      "text": "Settlement: ABHISHEK pays SANDEEP ₹2975.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1789859979114_fq6j",
+      "time": "2026-09-20 04:49:39",
+      "text": "Settlement calculated (6 transfers). • by sandeep mac"
+    },
+    {
+      "id": "L_1789859978998_hxi4",
+      "time": "2026-09-20 04:49:38",
+      "text": "Set final coins for RAVI: 1070 coins. • by sandeep mac"
+    },
+    {
+      "id": "L_1789859966522_hf8g",
+      "time": "2026-09-20 04:49:26",
+      "text": "Set final coins for RISHI: 2100 coins. • by sandeep mac"
+    },
     {
       "id": "L_1789859949108_ncaz",
       "time": "2026-09-20 04:49:09",
@@ -3498,51 +3543,6 @@
       "id": "L_1788622455411_537x",
       "time": "2026-09-05 21:04:15",
       "text": "Set final coins for GAGAN: 9320 coins. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788621137560_k7rs",
-      "time": "2026-09-05 20:42:17",
-      "text": "Buy-in increased for SONAK: count = 10. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788620472110_f0jc",
-      "time": "2026-09-05 20:31:12",
-      "text": "Buy-in increased for SONAK: count = 9. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788619091826_a4fu",
-      "time": "2026-09-05 20:08:11",
-      "text": "Buy-in increased for SONAK: count = 8. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788618374526_dsos",
-      "time": "2026-09-05 19:56:14",
-      "text": "Buy-in increased for SONAK: count = 7. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788618175009_tuf1",
-      "time": "2026-09-05 19:52:55",
-      "text": "Buy-in increased for KUNAL: count = 5. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788616759276_c8zg",
-      "time": "2026-09-05 19:29:19",
-      "text": "Buy-in increased for GAGAN: count = 6. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788616204275_c9n8",
-      "time": "2026-09-05 19:20:04",
-      "text": "Buy-in increased for RISHI: count = 2. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788615858475_0950",
-      "time": "2026-09-05 19:14:18",
-      "text": "Buy-in increased for RAVI: count = 8. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788615118291_9tsq",
-      "time": "2026-09-05 19:01:58",
-      "text": "Buy-in increased for RAVI: count = 7. • by Sandeep Mac"
     }
   ],
   "knownRoster": [
