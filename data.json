@@ -1478,13 +1478,20 @@
       "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1789819990784,
+      "name": "GAGAN",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "activeSessionId": "S_mu8clrmy2d9tmb",
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-19T12:13:09.305Z"
+    "heartbeatAt": "2026-09-19T12:13:15.945Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1502,6 +1509,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1789819990784_wchl",
+      "time": "2026-09-19 17:43:10",
+      "text": "Added \"GAGAN\" with 1 buy-in (1000c). • by sandeep mac"
+    },
     {
       "id": "L_1789819980589_e3z8",
       "time": "2026-09-19 17:43:00",
@@ -3496,11 +3508,6 @@
       "id": "L_1788558624805_fhri",
       "time": "2026-09-05 03:20:24",
       "text": "Set final coins for RAVI: 0 coins. • by Akshay"
-    },
-    {
-      "id": "L_1788558617521_j5sa",
-      "time": "2026-09-05 03:20:17",
-      "text": "Settlement: HARSHIT pays GAGAN ₹680.00 • by Akshay"
     }
   ],
   "knownRoster": [
