@@ -1572,7 +1572,7 @@
     {
       "id": 1790187139245,
       "name": "HARI",
-      "buyIns": 3,
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -1581,7 +1581,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-23T22:14:33.390Z"
+    "heartbeatAt": "2026-09-23T22:34:03.657Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1599,6 +1599,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790202827699_iu7s",
+      "time": "2026-09-24 04:03:47",
+      "text": "Buy-in increased for HARI: count = 4. • by sandeep mac"
+    },
     {
       "id": "L_1790201657563_tqkh",
       "time": "2026-09-24 03:44:17",
@@ -3593,11 +3598,6 @@
       "id": "L_1788780490114_qjdu",
       "time": "2026-09-07 16:58:10",
       "text": "Admin edit mode ENABLED via secret gesture. • by Device-IPA6"
-    },
-    {
-      "id": "L_1788780480481_griz",
-      "time": "2026-09-07 16:58:00",
-      "text": "Manual refresh synchronized with GitHub. • by Device-IPA6"
     }
   ],
   "knownRoster": [
