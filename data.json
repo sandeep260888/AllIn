@@ -1551,7 +1551,7 @@
     {
       "id": 1790186456455,
       "name": "KUNAL",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1581,7 +1581,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-23T21:07:13.126Z"
+    "heartbeatAt": "2026-09-23T21:09:18.275Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1599,6 +1599,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790197742058_hekr",
+      "time": "2026-09-24 02:39:02",
+      "text": "Buy-in increased for KUNAL: count = 3. • by sandeep mac"
+    },
     {
       "id": "L_1790197617206_ywz7",
       "time": "2026-09-24 02:36:57",
@@ -3593,11 +3598,6 @@
       "id": "L_1788773102301_6krb",
       "time": "2026-09-07 14:55:02",
       "text": "Deleted session S_1785359254471 via admin mode. • by Device-IPA6"
-    },
-    {
-      "id": "L_1788773055038_vw80",
-      "time": "2026-09-07 14:54:15",
-      "text": "Admin edit mode ENABLED via secret gesture. • by Device-IPA6"
     }
   ],
   "knownRoster": [
