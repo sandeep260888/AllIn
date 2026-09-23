@@ -1544,7 +1544,7 @@
     {
       "id": 1790186441754,
       "name": "HARSHIT",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1581,7 +1581,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-23T20:06:30.776Z"
+    "heartbeatAt": "2026-09-23T20:20:16.107Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1599,6 +1599,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790194800493_ufk5",
+      "time": "2026-09-24 01:50:00",
+      "text": "Buy-in increased for HARSHIT: count = 3. • by sandeep mac"
+    },
     {
       "id": "L_1790193974900_1o7h",
       "time": "2026-09-24 01:36:14",
@@ -3593,11 +3598,6 @@
       "id": "L_1788770209077_hn2y",
       "time": "2026-09-07 14:06:49",
       "text": "Random picker chose AKSHAY. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1788770208844_kig6",
-      "time": "2026-09-07 14:06:48",
-      "text": "Random picker chose RISHI. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
