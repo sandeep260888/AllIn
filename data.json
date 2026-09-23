@@ -1574,7 +1574,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-19T23:21:42.193Z"
+    "heartbeatAt": "2026-09-23T17:59:48.575Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1592,6 +1592,41 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790186371509_6izr",
+      "time": "2026-09-23 23:29:31",
+      "text": "Cleared active session dashboard. • by sandeep mac"
+    },
+    {
+      "id": "L_1789860112397_s2tb",
+      "time": "2026-09-20 04:51:52",
+      "text": "Random picker chose SANDEEP. • by sandeep mac"
+    },
+    {
+      "id": "L_1789860112231_7qb7",
+      "time": "2026-09-20 04:51:52",
+      "text": "Random picker chose SANDEEP. • by sandeep mac"
+    },
+    {
+      "id": "L_1789860111897_q6lv",
+      "time": "2026-09-20 04:51:51",
+      "text": "Random picker chose RAVI. • by sandeep mac"
+    },
+    {
+      "id": "L_1789860111730_mq9u",
+      "time": "2026-09-20 04:51:51",
+      "text": "Random picker chose SANDEEP. • by sandeep mac"
+    },
+    {
+      "id": "L_1789860105531_ki1g",
+      "time": "2026-09-20 04:51:45",
+      "text": "Published session — hosting released automatically. • by sandeep mac"
+    },
+    {
+      "id": "L_1789860103338_spy5",
+      "time": "2026-09-20 04:51:43",
+      "text": "Pushed live state to GitHub repo. • by sandeep mac"
+    },
     {
       "id": "L_1789860100681_4fi3",
       "time": "2026-09-20 04:51:40",
@@ -3556,41 +3591,6 @@
       "id": "L_1788628304337_8ufu",
       "time": "2026-09-05 22:41:44",
       "text": "Set final coins for HARSHIT: 77 coins. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788628286998_kt9z",
-      "time": "2026-09-05 22:41:26",
-      "text": "Set final coins for AKSHAY: 8250 coins. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788628251050_a1su",
-      "time": "2026-09-05 22:40:51",
-      "text": "Set final coins for RAVI: 4170 coins. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788628232714_ndts",
-      "time": "2026-09-05 22:40:32",
-      "text": "Set final coins for SANDEEP: 5000 coins. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788627225238_ouqh",
-      "time": "2026-09-05 22:23:45",
-      "text": "Set final coins for SANDEEP: 0 coins. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788625959313_0jre",
-      "time": "2026-09-05 22:02:39",
-      "text": "Set final coins for SANDEEP: 4000 coins. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788625954814_h6bg",
-      "time": "2026-09-05 22:02:34",
-      "text": "Set final coins for RISHI: 2000 coins. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788622472526_mklq",
-      "time": "2026-09-05 21:04:32",
-      "text": "Set final coins for SONAK: 0 coins. • by Sandeep Mac"
     }
   ],
   "knownRoster": [
