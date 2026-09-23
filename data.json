@@ -1537,7 +1537,7 @@
     {
       "id": 1790186437256,
       "name": "GAGAN",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1581,7 +1581,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-23T20:20:16.107Z"
+    "heartbeatAt": "2026-09-23T20:25:59.073Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1599,6 +1599,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790195143149_9x36",
+      "time": "2026-09-24 01:55:43",
+      "text": "Buy-in increased for GAGAN: count = 3. • by sandeep mac"
+    },
     {
       "id": "L_1790194800493_ufk5",
       "time": "2026-09-24 01:50:00",
@@ -3593,11 +3598,6 @@
       "id": "L_1788772914614_x1ib",
       "time": "2026-09-07 14:51:54",
       "text": "Random picker chose RISHI. • by Device-IPA6"
-    },
-    {
-      "id": "L_1788770209077_hn2y",
-      "time": "2026-09-07 14:06:49",
-      "text": "Random picker chose AKSHAY. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
