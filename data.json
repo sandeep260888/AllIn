@@ -1568,13 +1568,20 @@
       "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1790187139245,
+      "name": "HARI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "activeSessionId": "S_mueerues61uih6",
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-23T18:04:21.924Z"
+    "heartbeatAt": "2026-09-23T18:12:35.412Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1592,6 +1599,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790187139245_igy6",
+      "time": "2026-09-23 23:42:19",
+      "text": "Added \"HARI\" with 1 buy-in (1000c). • by sandeep mac"
+    },
     {
       "id": "L_1790186645139_xo50",
       "time": "2026-09-23 23:34:05",
@@ -3586,11 +3598,6 @@
       "id": "L_1788628433835_ghzi",
       "time": "2026-09-05 22:43:53",
       "text": "Settlement: KUNAL pays GAGAN ₹45.00 • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788628433834_x3yt",
-      "time": "2026-09-05 22:43:53",
-      "text": "Settlement: KUNAL pays HARSHIT ₹2455.00 • by Sandeep Mac"
     }
   ],
   "knownRoster": [
