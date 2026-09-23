@@ -1558,7 +1558,7 @@
     {
       "id": 1790186461504,
       "name": "RISHI",
-      "buyIns": 3,
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1581,7 +1581,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-23T20:25:59.073Z"
+    "heartbeatAt": "2026-09-23T20:32:01.751Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1599,6 +1599,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790195505818_q081",
+      "time": "2026-09-24 02:01:45",
+      "text": "Buy-in increased for RISHI: count = 4. • by sandeep mac"
+    },
     {
       "id": "L_1790195143149_9x36",
       "time": "2026-09-24 01:55:43",
@@ -3593,11 +3598,6 @@
       "id": "L_1788772914877_72e0",
       "time": "2026-09-07 14:51:54",
       "text": "Random picker chose HARSHIT. • by Device-IPA6"
-    },
-    {
-      "id": "L_1788772914614_x1ib",
-      "time": "2026-09-07 14:51:54",
-      "text": "Random picker chose RISHI. • by Device-IPA6"
     }
   ],
   "knownRoster": [
