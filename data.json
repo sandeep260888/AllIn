@@ -1572,7 +1572,7 @@
     {
       "id": 1790187139245,
       "name": "HARI",
-      "buyIns": 5,
+      "buyIns": 7,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -1581,7 +1581,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-23T23:02:13.835Z"
+    "heartbeatAt": "2026-09-23T23:09:32.543Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1599,6 +1599,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790204956924_p6uf",
+      "time": "2026-09-24 04:39:16",
+      "text": "Buy-in increased for HARI: count = 7. • by sandeep mac"
+    },
+    {
+      "id": "L_1790204956524_lf9a",
+      "time": "2026-09-24 04:39:16",
+      "text": "Buy-in increased for HARI: count = 6. • by sandeep mac"
+    },
     {
       "id": "L_1790204517272_4xoe",
       "time": "2026-09-24 04:31:57",
@@ -3588,16 +3598,6 @@
       "id": "L_1788789777973_qu8q",
       "time": "2026-09-07 19:32:57",
       "text": "Added \"HARSHIT\" with 1 buy-in (1000c). • by Akshay"
-    },
-    {
-      "id": "L_1788789777969_rmuq",
-      "time": "2026-09-07 19:32:57",
-      "text": "Started new session and claimed host. • by Akshay"
-    },
-    {
-      "id": "L_1788780518554_ezb1",
-      "time": "2026-09-07 16:58:38",
-      "text": "Manual refresh synchronized with GitHub. • by Device-IPA6"
     }
   ],
   "knownRoster": [
