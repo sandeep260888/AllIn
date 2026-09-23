@@ -1523,7 +1523,7 @@
     {
       "id": 1790186420406,
       "name": "AKSHAY",
-      "buyIns": 5,
+      "buyIns": 6,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1581,7 +1581,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-23T21:28:05.325Z"
+    "heartbeatAt": "2026-09-23T21:51:37.695Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1599,6 +1599,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790200281994_b8fs",
+      "time": "2026-09-24 03:21:21",
+      "text": "Buy-in increased for AKSHAY: count = 6. • by sandeep mac"
+    },
     {
       "id": "L_1790198869387_em11",
       "time": "2026-09-24 02:57:49",
@@ -3593,11 +3598,6 @@
       "id": "L_1788773286600_oojj",
       "time": "2026-09-07 14:58:06",
       "text": "Cleared active session dashboard. • by Device-IPA6"
-    },
-    {
-      "id": "L_1788773251601_rs11",
-      "time": "2026-09-07 14:57:31",
-      "text": "Manual refresh synchronized with GitHub. • by Device-IPA6"
     }
   ],
   "knownRoster": [
