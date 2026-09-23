@@ -1523,7 +1523,7 @@
     {
       "id": 1790186420406,
       "name": "AKSHAY",
-      "buyIns": 3,
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1581,7 +1581,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-23T19:39:32.866Z"
+    "heartbeatAt": "2026-09-23T19:42:24.432Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1599,6 +1599,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790192528419_3y8h",
+      "time": "2026-09-24 01:12:08",
+      "text": "Buy-in increased for AKSHAY: count = 4. • by sandeep mac"
+    },
     {
       "id": "L_1790192357033_ll48",
       "time": "2026-09-24 01:09:17",
@@ -3593,11 +3598,6 @@
       "id": "L_1788770208388_p0m9",
       "time": "2026-09-07 14:06:48",
       "text": "Random picker chose HARI. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1788760603831_88oc",
-      "time": "2026-09-07 11:26:43",
-      "text": "Random picker chose ABHISHEK. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
