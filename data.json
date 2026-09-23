@@ -1521,60 +1521,60 @@
   ],
   "activePlayers": [
     {
-      "id": 1789819980589,
-      "name": "ABHISHEK",
-      "buyIns": 8,
+      "id": 1790186420406,
+      "name": "AKSHAY",
+      "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 2050
+      "cashOutCoins": 0
     },
     {
-      "id": 1789819990784,
-      "name": "GAGAN",
-      "buyIns": 6,
-      "buyInCoins": 1000,
-      "cashOutCoins": 5000
-    },
-    {
-      "id": 1789820006540,
+      "id": 1790186424388,
       "name": "ALOK",
-      "buyIns": 3,
+      "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 10500
+      "cashOutCoins": 0
     },
     {
-      "id": 1789820017785,
-      "name": "MOHINI",
-      "buyIns": 7,
+      "id": 1790186437256,
+      "name": "GAGAN",
+      "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 5030
+      "cashOutCoins": 0
     },
     {
-      "id": 1789820023985,
-      "name": "RAVI",
-      "buyIns": 4,
+      "id": 1790186441754,
+      "name": "HARSHIT",
+      "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 1070
+      "cashOutCoins": 0
     },
     {
-      "id": 1789820028019,
+      "id": 1790186456455,
+      "name": "KUNAL",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1790186461504,
       "name": "RISHI",
-      "buyIns": 6,
+      "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 2100
+      "cashOutCoins": 0
     },
     {
-      "id": 1789820031752,
+      "id": 1790186470755,
       "name": "SANDEEP",
-      "buyIns": 2,
+      "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 10250
+      "cashOutCoins": 0
     }
   ],
-  "activeSessionId": "S_mu8clrmy2d9tmb",
+  "activeSessionId": "S_mueerues61uih6",
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-23T17:59:48.575Z"
+    "heartbeatAt": "2026-09-23T18:01:26.519Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1592,6 +1592,51 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790186470755_f239",
+      "time": "2026-09-23 23:31:10",
+      "text": "Added \"SANDEEP\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1790186461504_g7td",
+      "time": "2026-09-23 23:31:01",
+      "text": "Added \"RISHI\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1790186456455_7qf0",
+      "time": "2026-09-23 23:30:56",
+      "text": "Added \"KUNAL\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1790186441754_uyr0",
+      "time": "2026-09-23 23:30:41",
+      "text": "Added \"HARSHIT\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1790186437256_hjhl",
+      "time": "2026-09-23 23:30:37",
+      "text": "Added \"GAGAN\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1790186424388_3bey",
+      "time": "2026-09-23 23:30:24",
+      "text": "Added \"ALOK\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1790186420406_euc8",
+      "time": "2026-09-23 23:30:20",
+      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1790186420404_uyos",
+      "time": "2026-09-23 23:30:20",
+      "text": "Started new session and claimed host. • by sandeep mac"
+    },
+    {
+      "id": "L_1790186412312_7e9w",
+      "time": "2026-09-23 23:30:12",
+      "text": "Cleared active session dashboard. • by sandeep mac"
+    },
     {
       "id": "L_1790186371509_6izr",
       "time": "2026-09-23 23:29:31",
@@ -3546,51 +3591,6 @@
       "id": "L_1788628433833_1w3s",
       "time": "2026-09-05 22:43:53",
       "text": "Settlement: SONAK pays HARSHIT ₹1025.00 • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788628433832_t5q1",
-      "time": "2026-09-05 22:43:53",
-      "text": "Settlement: SONAK pays AKSHAY ₹3975.00 • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788628433831_zt9y",
-      "time": "2026-09-05 22:43:53",
-      "text": "Settlement calculated (6 transfers). • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788628416897_5qpm",
-      "time": "2026-09-05 22:43:36",
-      "text": "Set final coins for SANDEEP: 5200 coins. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788628413198_8o8l",
-      "time": "2026-09-05 22:43:33",
-      "text": "Set final coins for AKSHAY: 8950 coins. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788628407681_3n22",
-      "time": "2026-09-05 22:43:27",
-      "text": "Set final coins for HARSHIT: 7960 coins. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788628397432_qffx",
-      "time": "2026-09-05 22:43:17",
-      "text": "Set final coins for RAVI: 4570 coins. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788628337397_c7e8",
-      "time": "2026-09-05 22:42:17",
-      "text": "Set final coins for AKSHAY: 8750 coins. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788628320747_rz9g",
-      "time": "2026-09-05 22:42:00",
-      "text": "Set final coins for HARSHIT: 7760 coins. • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788628304337_8ufu",
-      "time": "2026-09-05 22:41:44",
-      "text": "Set final coins for HARSHIT: 77 coins. • by Sandeep Mac"
     }
   ],
   "knownRoster": [
