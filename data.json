@@ -1523,7 +1523,7 @@
     {
       "id": 1790186420406,
       "name": "AKSHAY",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1558,7 +1558,7 @@
     {
       "id": 1790186461504,
       "name": "RISHI",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1581,7 +1581,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-23T18:12:35.412Z"
+    "heartbeatAt": "2026-09-23T18:16:39.416Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1599,6 +1599,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790187383645_yklv",
+      "time": "2026-09-23 23:46:23",
+      "text": "Buy-in increased for AKSHAY: count = 2. • by sandeep mac"
+    },
+    {
+      "id": "L_1790187377630_joog",
+      "time": "2026-09-23 23:46:17",
+      "text": "Buy-in increased for RISHI: count = 2. • by sandeep mac"
+    },
     {
       "id": "L_1790187139245_igy6",
       "time": "2026-09-23 23:42:19",
@@ -3588,16 +3598,6 @@
       "id": "L_1788628433836_zv7j",
       "time": "2026-09-05 22:43:53",
       "text": "Settlement: RAVI pays SANDEEP ₹100.00 • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788628433836_5eqw",
-      "time": "2026-09-05 22:43:53",
-      "text": "Settlement: RAVI pays GAGAN ₹1615.00 • by Sandeep Mac"
-    },
-    {
-      "id": "L_1788628433835_ghzi",
-      "time": "2026-09-05 22:43:53",
-      "text": "Settlement: KUNAL pays GAGAN ₹45.00 • by Sandeep Mac"
     }
   ],
   "knownRoster": [
