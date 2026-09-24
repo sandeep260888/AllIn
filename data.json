@@ -1581,7 +1581,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-24T02:26:09.942Z"
+    "heartbeatAt": "2026-09-24T02:26:26.780Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1599,6 +1599,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790216771213_mvb2",
+      "time": "2026-09-24 07:56:11",
+      "text": "Set final coins for KUNAL: 0 coins. • by sandeep mac"
+    },
     {
       "id": "L_1790216754569_nqdq",
       "time": "2026-09-24 07:55:54",
@@ -3593,11 +3598,6 @@
       "id": "L_1788795133834_jo11",
       "time": "2026-09-07 21:02:13",
       "text": "Buy-in increased for HARSHIT: count = 3. • by Akshay"
-    },
-    {
-      "id": "L_1788794235659_ezv9",
-      "time": "2026-09-07 20:47:15",
-      "text": "Buy-in increased for GAGAN: count = 6. • by Akshay"
     }
   ],
   "knownRoster": [
