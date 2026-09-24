@@ -1523,7 +1523,7 @@
     {
       "id": 1790186420406,
       "name": "AKSHAY",
-      "buyIns": 8,
+      "buyIns": 10,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1572,7 +1572,7 @@
     {
       "id": 1790187139245,
       "name": "HARI",
-      "buyIns": 8,
+      "buyIns": 10,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -1581,7 +1581,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-23T23:59:18.393Z"
+    "heartbeatAt": "2026-09-24T00:16:05.991Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1599,6 +1599,46 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790208950046_a6d9",
+      "time": "2026-09-24 05:45:50",
+      "text": "Buy-in increased for HARI: count = 10. • by sandeep mac"
+    },
+    {
+      "id": "L_1790208949579_hvtu",
+      "time": "2026-09-24 05:45:49",
+      "text": "Buy-in increased for HARI: count = 9. • by sandeep mac"
+    },
+    {
+      "id": "L_1790208948480_wbnq",
+      "time": "2026-09-24 05:45:48",
+      "text": "Buy-in increased for AKSHAY: count = 10. • by sandeep mac"
+    },
+    {
+      "id": "L_1790208947864_stge",
+      "time": "2026-09-24 05:45:47",
+      "text": "Buy-in increased for AKSHAY: count = 9. • by sandeep mac"
+    },
+    {
+      "id": "L_1790208556775_9y90",
+      "time": "2026-09-24 05:39:16",
+      "text": "Random picker chose AKSHAY. • by sandeep mac"
+    },
+    {
+      "id": "L_1790208556558_3268",
+      "time": "2026-09-24 05:39:16",
+      "text": "Random picker chose HARI. • by sandeep mac"
+    },
+    {
+      "id": "L_1790208556236_xet8",
+      "time": "2026-09-24 05:39:16",
+      "text": "Random picker chose HARI. • by sandeep mac"
+    },
+    {
+      "id": "L_1790208556060_of52",
+      "time": "2026-09-24 05:39:16",
+      "text": "Random picker chose ALOK. • by sandeep mac"
+    },
     {
       "id": "L_1790207942638_itkb",
       "time": "2026-09-24 05:29:02",
@@ -3558,46 +3598,6 @@
       "id": "L_1788792091574_jdpm",
       "time": "2026-09-07 20:11:31",
       "text": "Buy-in increased for AKSHAY: count = 2. • by Akshay"
-    },
-    {
-      "id": "L_1788792089916_wcwl",
-      "time": "2026-09-07 20:11:29",
-      "text": "Buy-in increased for GAGAN: count = 3. • by Akshay"
-    },
-    {
-      "id": "L_1788791318666_azxy",
-      "time": "2026-09-07 19:58:38",
-      "text": "Added \"ABHISHEK\" with 1 buy-in (1000c). • by Akshay"
-    },
-    {
-      "id": "L_1788791312323_vy5b",
-      "time": "2026-09-07 19:58:32",
-      "text": "Added \"SHUBHAM\" with 1 buy-in (1000c). • by Akshay"
-    },
-    {
-      "id": "L_1788791268855_2s0k",
-      "time": "2026-09-07 19:57:48",
-      "text": "Buy-in increased for MOHINI: count = 2. • by Akshay"
-    },
-    {
-      "id": "L_1788790012986_bowa",
-      "time": "2026-09-07 19:36:52",
-      "text": "Buy-in increased for GAGAN: count = 2. • by Akshay"
-    },
-    {
-      "id": "L_1788790010611_1l3v",
-      "time": "2026-09-07 19:36:50",
-      "text": "Buy-in decreased for AKSHAY: count = 1. • by Akshay"
-    },
-    {
-      "id": "L_1788790007964_8ijx",
-      "time": "2026-09-07 19:36:47",
-      "text": "Buy-in increased for AKSHAY: count = 2. • by Akshay"
-    },
-    {
-      "id": "L_1788789797362_la0o",
-      "time": "2026-09-07 19:33:17",
-      "text": "Added \"KUNAL\" with 1 buy-in (1000c). • by Akshay"
     }
   ],
   "knownRoster": [
