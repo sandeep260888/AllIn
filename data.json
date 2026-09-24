@@ -1572,7 +1572,7 @@
     {
       "id": 1790187139245,
       "name": "HARI",
-      "buyIns": 10,
+      "buyIns": 12,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -1581,7 +1581,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-24T00:16:05.991Z"
+    "heartbeatAt": "2026-09-24T00:34:42.155Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1599,6 +1599,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790210065991_t7e8",
+      "time": "2026-09-24 06:04:25",
+      "text": "Buy-in increased for HARI: count = 12. • by sandeep mac"
+    },
+    {
+      "id": "L_1790210065689_fy39",
+      "time": "2026-09-24 06:04:25",
+      "text": "Buy-in increased for HARI: count = 11. • by sandeep mac"
+    },
     {
       "id": "L_1790208950046_a6d9",
       "time": "2026-09-24 05:45:50",
@@ -3588,16 +3598,6 @@
       "id": "L_1788792670512_kfrx",
       "time": "2026-09-07 20:21:10",
       "text": "Buy-in increased for GAGAN: count = 4. • by Akshay"
-    },
-    {
-      "id": "L_1788792464110_13zq",
-      "time": "2026-09-07 20:17:44",
-      "text": "Buy-in increased for AKSHAY: count = 3. • by Akshay"
-    },
-    {
-      "id": "L_1788792091574_jdpm",
-      "time": "2026-09-07 20:11:31",
-      "text": "Buy-in increased for AKSHAY: count = 2. • by Akshay"
     }
   ],
   "knownRoster": [
