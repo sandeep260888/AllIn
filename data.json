@@ -1532,28 +1532,28 @@
       "name": "ALOK",
       "buyIns": 3,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 8630
     },
     {
       "id": 1790186437256,
       "name": "GAGAN",
       "buyIns": 5,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 5000
     },
     {
       "id": 1790186441754,
       "name": "HARSHIT",
       "buyIns": 5,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 2370
     },
     {
       "id": 1790186456455,
       "name": "KUNAL",
       "buyIns": 6,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 9400
     },
     {
       "id": 1790186461504,
@@ -1567,7 +1567,7 @@
       "name": "SANDEEP",
       "buyIns": 2,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 8940
     },
     {
       "id": 1790187139245,
@@ -1581,7 +1581,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-24T01:17:32.433Z"
+    "heartbeatAt": "2026-09-24T02:25:52.741Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1599,6 +1599,26 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790216736828_v4ny",
+      "time": "2026-09-24 07:55:36",
+      "text": "Set final coins for HARSHIT: 2370 coins. • by sandeep mac"
+    },
+    {
+      "id": "L_1790216733232_dzt1",
+      "time": "2026-09-24 07:55:33",
+      "text": "Set final coins for SANDEEP: 8940 coins. • by sandeep mac"
+    },
+    {
+      "id": "L_1790216729663_cghc",
+      "time": "2026-09-24 07:55:29",
+      "text": "Set final coins for ALOK: 8630 coins. • by sandeep mac"
+    },
+    {
+      "id": "L_1790216721099_mmno",
+      "time": "2026-09-24 07:55:21",
+      "text": "Set final coins for KUNAL: 9400 coins. • by sandeep mac"
+    },
     {
       "id": "L_1790212635669_svs2",
       "time": "2026-09-24 06:47:15",
@@ -3578,26 +3598,6 @@
       "id": "L_1788793966790_g32x",
       "time": "2026-09-07 20:42:46",
       "text": "Buy-in increased for MOHINI: count = 4. • by Akshay"
-    },
-    {
-      "id": "L_1788793674805_5mt1",
-      "time": "2026-09-07 20:37:54",
-      "text": "Buy-in increased for MOHINI: count = 3. • by Akshay"
-    },
-    {
-      "id": "L_1788793398179_hgux",
-      "time": "2026-09-07 20:33:18",
-      "text": "Buy-in increased for AKSHAY: count = 5. • by Akshay"
-    },
-    {
-      "id": "L_1788793181141_7lh4",
-      "time": "2026-09-07 20:29:41",
-      "text": "Buy-in increased for GAGAN: count = 5. • by Akshay"
-    },
-    {
-      "id": "L_1788792920092_wfkd",
-      "time": "2026-09-07 20:25:20",
-      "text": "Buy-in increased for AKSHAY: count = 4. • by Akshay"
     }
   ],
   "knownRoster": [
