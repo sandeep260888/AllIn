@@ -1553,7 +1553,7 @@
       "name": "KUNAL",
       "buyIns": 6,
       "buyInCoins": 1000,
-      "cashOutCoins": 9400
+      "cashOutCoins": 0
     },
     {
       "id": 1790186461504,
@@ -1581,7 +1581,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-24T02:25:52.741Z"
+    "heartbeatAt": "2026-09-24T02:26:09.942Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1599,6 +1599,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790216754569_nqdq",
+      "time": "2026-09-24 07:55:54",
+      "text": "Set final coins for GAGAN: 5000 coins. • by sandeep mac"
+    },
     {
       "id": "L_1790216736828_v4ny",
       "time": "2026-09-24 07:55:36",
@@ -3593,11 +3598,6 @@
       "id": "L_1788794235659_ezv9",
       "time": "2026-09-07 20:47:15",
       "text": "Buy-in increased for GAGAN: count = 6. • by Akshay"
-    },
-    {
-      "id": "L_1788793966790_g32x",
-      "time": "2026-09-07 20:42:46",
-      "text": "Buy-in increased for MOHINI: count = 4. • by Akshay"
     }
   ],
   "knownRoster": [
