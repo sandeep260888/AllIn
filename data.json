@@ -1581,7 +1581,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-24T02:27:10.620Z"
+    "heartbeatAt": "2026-09-24T02:27:27.753Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1599,6 +1599,46 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790216832280_v9ji",
+      "time": "2026-09-24 07:57:12",
+      "text": "Settlement: HARSHIT pays KUNAL ₹1315.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1790216832279_f474",
+      "time": "2026-09-24 07:57:12",
+      "text": "Settlement: AKSHAY pays KUNAL ₹1140.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1790216832277_kl7l",
+      "time": "2026-09-24 07:57:12",
+      "text": "Settlement: AKSHAY pays ALOK ₹2815.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1790216832274_tggh",
+      "time": "2026-09-24 07:57:12",
+      "text": "Settlement: AKSHAY pays SANDEEP ₹1045.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1790216832271_xa7e",
+      "time": "2026-09-24 07:57:12",
+      "text": "Settlement: HARI pays SANDEEP ₹2425.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1790216832269_gczv",
+      "time": "2026-09-24 07:57:12",
+      "text": "Settlement: HARI pays RISHI ₹3575.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1790216832265_ndkr",
+      "time": "2026-09-24 07:57:12",
+      "text": "Settlement calculated (6 transfers). • by sandeep mac"
+    },
+    {
+      "id": "L_1790216831715_4xq5",
+      "time": "2026-09-24 07:57:11",
+      "text": "Set final coins for KUNAL: 10910 coins. • by sandeep mac"
+    },
     {
       "id": "L_1790216814465_dcn9",
       "time": "2026-09-24 07:56:54",
@@ -3558,46 +3598,6 @@
       "id": "L_1788800782021_eosm",
       "time": "2026-09-07 22:36:22",
       "text": "Buy-in increased for KUNAL: count = 4. • by Akshay"
-    },
-    {
-      "id": "L_1788800235331_kx6r",
-      "time": "2026-09-07 22:27:15",
-      "text": "Buy-in increased for MOHINI: count = 9. • by Akshay"
-    },
-    {
-      "id": "L_1788799913594_r1c3",
-      "time": "2026-09-07 22:21:53",
-      "text": "Buy-in increased for MOHINI: count = 8. • by Akshay"
-    },
-    {
-      "id": "L_1788799810554_4o4k",
-      "time": "2026-09-07 22:20:10",
-      "text": "Buy-in increased for MOHINI: count = 7. • by Akshay"
-    },
-    {
-      "id": "L_1788798630156_ui5y",
-      "time": "2026-09-07 22:00:30",
-      "text": "Buy-in increased for MOHINI: count = 6. • by Akshay"
-    },
-    {
-      "id": "L_1788797938099_a00j",
-      "time": "2026-09-07 21:48:58",
-      "text": "Buy-in increased for MOHINI: count = 5. • by Akshay"
-    },
-    {
-      "id": "L_1788797074630_xhix",
-      "time": "2026-09-07 21:34:34",
-      "text": "Buy-in increased for AKSHAY: count = 6. • by Akshay"
-    },
-    {
-      "id": "L_1788796164450_e0vi",
-      "time": "2026-09-07 21:19:24",
-      "text": "Buy-in increased for KUNAL: count = 3. • by Akshay"
-    },
-    {
-      "id": "L_1788795345978_nic7",
-      "time": "2026-09-07 21:05:45",
-      "text": "Buy-in increased for HARSHIT: count = 4. • by Akshay"
     }
   ],
   "knownRoster": [
