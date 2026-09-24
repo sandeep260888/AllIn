@@ -1544,7 +1544,7 @@
     {
       "id": 1790186441754,
       "name": "HARSHIT",
-      "buyIns": 4,
+      "buyIns": 5,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1581,7 +1581,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-24T00:34:42.155Z"
+    "heartbeatAt": "2026-09-24T01:17:32.433Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1599,6 +1599,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790212635669_svs2",
+      "time": "2026-09-24 06:47:15",
+      "text": "Buy-in increased for HARSHIT: count = 5. • by sandeep mac"
+    },
     {
       "id": "L_1790210065991_t7e8",
       "time": "2026-09-24 06:04:25",
@@ -3593,11 +3598,6 @@
       "id": "L_1788792920092_wfkd",
       "time": "2026-09-07 20:25:20",
       "text": "Buy-in increased for AKSHAY: count = 4. • by Akshay"
-    },
-    {
-      "id": "L_1788792670512_kfrx",
-      "time": "2026-09-07 20:21:10",
-      "text": "Buy-in increased for GAGAN: count = 4. • by Akshay"
     }
   ],
   "knownRoster": [
