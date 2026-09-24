@@ -1,6 +1,60 @@
 {
   "savedSessions": [
     {
+      "sessionId": "S_mueerues61uih6",
+      "date": "2026-09-24T02:28:27.898Z",
+      "entries": [
+        {
+          "name": "AKSHAY",
+          "investedCoins": 10000,
+          "finalCoins": 0,
+          "netVal": -5000
+        },
+        {
+          "name": "ALOK",
+          "investedCoins": 3000,
+          "finalCoins": 8630,
+          "netVal": 2815
+        },
+        {
+          "name": "GAGAN",
+          "investedCoins": 5000,
+          "finalCoins": 5000,
+          "netVal": 0
+        },
+        {
+          "name": "HARSHIT",
+          "investedCoins": 5000,
+          "finalCoins": 2370,
+          "netVal": -1315
+        },
+        {
+          "name": "KUNAL",
+          "investedCoins": 6000,
+          "finalCoins": 10910,
+          "netVal": 2455
+        },
+        {
+          "name": "RISHI",
+          "investedCoins": 4000,
+          "finalCoins": 11150,
+          "netVal": 3575
+        },
+        {
+          "name": "SANDEEP",
+          "investedCoins": 2000,
+          "finalCoins": 8940,
+          "netVal": 3470
+        },
+        {
+          "name": "HARI",
+          "investedCoins": 12000,
+          "finalCoins": 0,
+          "netVal": -6000
+        }
+      ]
+    },
+    {
       "sessionId": "S_mu8clrmy2d9tmb",
       "date": "2026-09-19T23:21:40.681Z",
       "entries": [
@@ -1581,7 +1635,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-24T02:27:27.753Z"
+    "heartbeatAt": "2026-09-24T02:28:28.579Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1599,6 +1653,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790216907899_pxka",
+      "time": "2026-09-24 07:58:27",
+      "text": "Saved session to database. • by sandeep mac"
+    },
     {
       "id": "L_1790216832280_v9ji",
       "time": "2026-09-24 07:57:12",
@@ -3593,11 +3652,6 @@
       "id": "L_1788800782331_z7j4",
       "time": "2026-09-07 22:36:22",
       "text": "Buy-in increased for KUNAL: count = 5. • by Akshay"
-    },
-    {
-      "id": "L_1788800782021_eosm",
-      "time": "2026-09-07 22:36:22",
-      "text": "Buy-in increased for KUNAL: count = 4. • by Akshay"
     }
   ],
   "knownRoster": [
