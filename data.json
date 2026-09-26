@@ -1637,7 +1637,7 @@
   "activeHost": {
     "deviceId": "dev_hb66ca2k",
     "deviceName": "Sandeep",
-    "heartbeatAt": "2026-09-26T02:48:49.042Z"
+    "heartbeatAt": "2026-09-26T02:49:49.650Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1655,6 +1655,131 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790390987465_jtfl",
+      "time": "2026-09-26 08:19:47",
+      "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
+    },
+    {
+      "id": "L_1790390985817_6st8",
+      "time": "2026-09-26 08:19:45",
+      "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
+    },
+    {
+      "id": "L_1790390985751_iupj",
+      "time": "2026-09-26 08:19:45",
+      "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
+    },
+    {
+      "id": "L_1790390982010_me6a",
+      "time": "2026-09-26 08:19:42",
+      "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
+    },
+    {
+      "id": "L_1790390979166_ehrd",
+      "time": "2026-09-26 08:19:39",
+      "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
+    },
+    {
+      "id": "L_1790390975618_3l38",
+      "time": "2026-09-26 08:19:35",
+      "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
+    },
+    {
+      "id": "L_1790390974220_g22h",
+      "time": "2026-09-26 08:19:34",
+      "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
+    },
+    {
+      "id": "L_1790390973893_wcmf",
+      "time": "2026-09-26 08:19:33",
+      "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
+    },
+    {
+      "id": "L_1790390970826_zbdu",
+      "time": "2026-09-26 08:19:30",
+      "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
+    },
+    {
+      "id": "L_1790390967306_4uar",
+      "time": "2026-09-26 08:19:27",
+      "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
+    },
+    {
+      "id": "L_1790390963784_4a7t",
+      "time": "2026-09-26 08:19:23",
+      "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
+    },
+    {
+      "id": "L_1790390962641_yco8",
+      "time": "2026-09-26 08:19:22",
+      "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
+    },
+    {
+      "id": "L_1790390962496_h178",
+      "time": "2026-09-26 08:19:22",
+      "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
+    },
+    {
+      "id": "L_1790390958914_higk",
+      "time": "2026-09-26 08:19:18",
+      "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
+    },
+    {
+      "id": "L_1790390955393_x2fc",
+      "time": "2026-09-26 08:19:15",
+      "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
+    },
+    {
+      "id": "L_1790390951316_nxli",
+      "time": "2026-09-26 08:19:11",
+      "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
+    },
+    {
+      "id": "L_1790390951079_bqor",
+      "time": "2026-09-26 08:19:11",
+      "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
+    },
+    {
+      "id": "L_1790390950946_yq55",
+      "time": "2026-09-26 08:19:10",
+      "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
+    },
+    {
+      "id": "L_1790390946428_70db",
+      "time": "2026-09-26 08:19:06",
+      "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
+    },
+    {
+      "id": "L_1790390943020_td5a",
+      "time": "2026-09-26 08:19:03",
+      "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
+    },
+    {
+      "id": "L_1790390939862_wksi",
+      "time": "2026-09-26 08:18:59",
+      "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
+    },
+    {
+      "id": "L_1790390939814_mjp3",
+      "time": "2026-09-26 08:18:59",
+      "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
+    },
+    {
+      "id": "L_1790390939035_fkie",
+      "time": "2026-09-26 08:18:59",
+      "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
+    },
+    {
+      "id": "L_1790390935020_bgmx",
+      "time": "2026-09-26 08:18:55",
+      "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
+    },
+    {
+      "id": "L_1790390930286_cfju",
+      "time": "2026-09-26 08:18:50",
+      "text": "Auto-push failed: is at f14c239ce714f7fa80f1f3bf3857486a9bb16a03 but expected d7d375327a63c740882b2af38ec124890ad77791 • by Sandeep"
+    },
     {
       "id": "L_1790390927942_jqw6",
       "time": "2026-09-26 08:18:47",
@@ -3529,131 +3654,6 @@
       "id": "L_1789147864872_flld",
       "time": "2026-09-11 23:01:04",
       "text": "Buy-in increased for ALOK: count = 11. • by Akshay"
-    },
-    {
-      "id": "L_1789147864136_dse3",
-      "time": "2026-09-11 23:01:04",
-      "text": "Buy-in increased for ALOK: count = 10. • by Akshay"
-    },
-    {
-      "id": "L_1789147860906_014e",
-      "time": "2026-09-11 23:01:00",
-      "text": "Updated milestone thresholds to: 5, 7, 9, 10, 12, 13, 15. • by Akshay"
-    },
-    {
-      "id": "L_1789146834829_ofsx",
-      "time": "2026-09-11 22:43:54",
-      "text": "Buy-in increased for ALOK: count = 9. • by Akshay"
-    },
-    {
-      "id": "L_1789146834534_bn4s",
-      "time": "2026-09-11 22:43:54",
-      "text": "Buy-in increased for ALOK: count = 8. • by Akshay"
-    },
-    {
-      "id": "L_1789146833398_jlq9",
-      "time": "2026-09-11 22:43:53",
-      "text": "Buy-in increased for KUNAL: count = 3. • by Akshay"
-    },
-    {
-      "id": "L_1789145253055_4nk7",
-      "time": "2026-09-11 22:17:33",
-      "text": "Buy-in increased for HARI: count = 2. • by Akshay"
-    },
-    {
-      "id": "L_1789145250456_nrr7",
-      "time": "2026-09-11 22:17:30",
-      "text": "Added \"HARI\" with 1 buy-in (1000c). • by Akshay"
-    },
-    {
-      "id": "L_1789143877549_4jci",
-      "time": "2026-09-11 21:54:37",
-      "text": "Added \"SIDDHARTH\" with 1 buy-in (1000c). • by Akshay"
-    },
-    {
-      "id": "L_1789142305735_b935",
-      "time": "2026-09-11 21:28:25",
-      "text": "Buy-in increased for HARSHIT: count = 4. • by Akshay"
-    },
-    {
-      "id": "L_1789141346756_han9",
-      "time": "2026-09-11 21:12:26",
-      "text": "Buy-in increased for HARSHIT: count = 3. • by Akshay"
-    },
-    {
-      "id": "L_1789141170649_3d74",
-      "time": "2026-09-11 21:09:30",
-      "text": "Buy-in increased for ALOK: count = 7. • by Akshay"
-    },
-    {
-      "id": "L_1789141169557_fgrw",
-      "time": "2026-09-11 21:09:29",
-      "text": "Buy-in decreased for ALOK: count = 6. • by Akshay"
-    },
-    {
-      "id": "L_1789141169475_i10g",
-      "time": "2026-09-11 21:09:29",
-      "text": "Updated milestone thresholds to: 5, 7, 9, 10. • by Akshay"
-    },
-    {
-      "id": "L_1789141147134_7epj",
-      "time": "2026-09-11 21:09:07",
-      "text": "Buy-in increased for ALOK: count = 7. • by Akshay"
-    },
-    {
-      "id": "L_1789141146406_2dki",
-      "time": "2026-09-11 21:09:06",
-      "text": "Buy-in increased for ALOK: count = 6. • by Akshay"
-    },
-    {
-      "id": "L_1789141144228_qsxu",
-      "time": "2026-09-11 21:09:04",
-      "text": "Buy-in increased for HARSHIT: count = 2. • by Akshay"
-    },
-    {
-      "id": "L_1789138904458_1rfr",
-      "time": "2026-09-11 20:31:44",
-      "text": "Manual refresh synchronized with GitHub. • by Sandeep"
-    },
-    {
-      "id": "L_1789137323570_wd15",
-      "time": "2026-09-11 20:05:23",
-      "text": "Cleared active session dashboard. • by Sandeep"
-    },
-    {
-      "id": "L_1789137313139_ihxt",
-      "time": "2026-09-11 20:05:13",
-      "text": "Manual refresh synchronized with GitHub. • by Sandeep"
-    },
-    {
-      "id": "L_1789137276815_ey1n",
-      "time": "2026-09-11 20:04:36",
-      "text": "Buy-in decreased for HARI: count = 6. • by Sandeep"
-    },
-    {
-      "id": "L_1789137274390_nqml",
-      "time": "2026-09-11 20:04:34",
-      "text": "Buy-in increased for HARI: count = 7. • by Sandeep"
-    },
-    {
-      "id": "L_1789137260216_180h",
-      "time": "2026-09-11 20:04:20",
-      "text": "Manual refresh synchronized with GitHub. • by Sandeep"
-    },
-    {
-      "id": "L_1789137158566_6daa",
-      "time": "2026-09-11 20:02:38",
-      "text": "Buy-in increased for ALOK: count = 5. • by Akshay"
-    },
-    {
-      "id": "L_1789137154263_wux5",
-      "time": "2026-09-11 20:02:34",
-      "text": "Buy-in increased for ALOK: count = 4. • by Akshay"
-    },
-    {
-      "id": "L_1789136831798_gz7i",
-      "time": "2026-09-11 19:57:11",
-      "text": "Buy-in increased for ALOK: count = 3. • by Akshay"
     }
   ],
   "knownRoster": [
