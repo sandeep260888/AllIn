@@ -1,6 +1,36 @@
 {
   "savedSessions": [
     {
+      "sessionId": "S_muhmgu55zmhoy7",
+      "date": "2026-09-26T02:46:24.508Z",
+      "entries": [
+        {
+          "name": "RISHI",
+          "investedCoins": 3000,
+          "finalCoins": 7000,
+          "netVal": 2000
+        },
+        {
+          "name": "HARI",
+          "investedCoins": 7000,
+          "finalCoins": 2000,
+          "netVal": -2500
+        },
+        {
+          "name": "ABHISHEK",
+          "investedCoins": 2000,
+          "finalCoins": 2550,
+          "netVal": 275
+        },
+        {
+          "name": "SANDEEP",
+          "investedCoins": 1000,
+          "finalCoins": 1450,
+          "netVal": 225
+        }
+      ]
+    },
+    {
       "sessionId": "S_mueerues61uih6",
       "date": "2026-09-24T02:28:27.898Z",
       "entries": [
@@ -1607,7 +1637,7 @@
   "activeHost": {
     "deviceId": "dev_hb66ca2k",
     "deviceName": "Sandeep",
-    "heartbeatAt": "2026-09-26T02:45:46.386Z"
+    "heartbeatAt": "2026-09-26T02:46:48.755Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1625,6 +1655,181 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790390805739_zqvg",
+      "time": "2026-09-26 08:16:45",
+      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
+    },
+    {
+      "id": "L_1790390799148_olim",
+      "time": "2026-09-26 08:16:39",
+      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
+    },
+    {
+      "id": "L_1790390798985_u40y",
+      "time": "2026-09-26 08:16:38",
+      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
+    },
+    {
+      "id": "L_1790390798695_ixtt",
+      "time": "2026-09-26 08:16:38",
+      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
+    },
+    {
+      "id": "L_1790390798613_k08j",
+      "time": "2026-09-26 08:16:38",
+      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
+    },
+    {
+      "id": "L_1790390798324_l1po",
+      "time": "2026-09-26 08:16:38",
+      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
+    },
+    {
+      "id": "L_1790390797998_tsr8",
+      "time": "2026-09-26 08:16:37",
+      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
+    },
+    {
+      "id": "L_1790390797733_qs5l",
+      "time": "2026-09-26 08:16:37",
+      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
+    },
+    {
+      "id": "L_1790390796415_d4xj",
+      "time": "2026-09-26 08:16:36",
+      "text": "Random picker chose HARI. • by Sandeep"
+    },
+    {
+      "id": "L_1790390795933_go78",
+      "time": "2026-09-26 08:16:35",
+      "text": "Random picker chose SANDEEP. • by Sandeep"
+    },
+    {
+      "id": "L_1790390795467_7mnq",
+      "time": "2026-09-26 08:16:35",
+      "text": "Random picker chose ABHISHEK. • by Sandeep"
+    },
+    {
+      "id": "L_1790390795001_q96b",
+      "time": "2026-09-26 08:16:35",
+      "text": "Random picker chose HARI. • by Sandeep"
+    },
+    {
+      "id": "L_1790390785616_kwkh",
+      "time": "2026-09-26 08:16:25",
+      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
+    },
+    {
+      "id": "L_1790390785602_wuzu",
+      "time": "2026-09-26 08:16:25",
+      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
+    },
+    {
+      "id": "L_1790390785450_0nn8",
+      "time": "2026-09-26 08:16:25",
+      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
+    },
+    {
+      "id": "L_1790390784546_ql7t",
+      "time": "2026-09-26 08:16:24",
+      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
+    },
+    {
+      "id": "L_1790390784538_oi0b",
+      "time": "2026-09-26 08:16:24",
+      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
+    },
+    {
+      "id": "L_1790390784531_xzc2",
+      "time": "2026-09-26 08:16:24",
+      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
+    },
+    {
+      "id": "L_1790390784508_j3d0",
+      "time": "2026-09-26 08:16:24",
+      "text": "Updated existing session in database. • by Sandeep"
+    },
+    {
+      "id": "L_1790390780039_3vqa",
+      "time": "2026-09-26 08:16:20",
+      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
+    },
+    {
+      "id": "L_1790390771845_vcr4",
+      "time": "2026-09-26 08:16:11",
+      "text": "Saved session to database. • by Sandeep"
+    },
+    {
+      "id": "L_1790390761526_zjhn",
+      "time": "2026-09-26 08:16:01",
+      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
+    },
+    {
+      "id": "L_1790390760940_fhjl",
+      "time": "2026-09-26 08:16:00",
+      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
+    },
+    {
+      "id": "L_1790390760685_td5t",
+      "time": "2026-09-26 08:16:00",
+      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
+    },
+    {
+      "id": "L_1790390760551_wwh8",
+      "time": "2026-09-26 08:16:00",
+      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
+    },
+    {
+      "id": "L_1790390760514_grkt",
+      "time": "2026-09-26 08:16:00",
+      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
+    },
+    {
+      "id": "L_1790390760255_ht0t",
+      "time": "2026-09-26 08:16:00",
+      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
+    },
+    {
+      "id": "L_1790390760248_bsmw",
+      "time": "2026-09-26 08:16:00",
+      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
+    },
+    {
+      "id": "L_1790390749847_wpec",
+      "time": "2026-09-26 08:15:49",
+      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
+    },
+    {
+      "id": "L_1790390749122_nbpg",
+      "time": "2026-09-26 08:15:49",
+      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
+    },
+    {
+      "id": "L_1790390748932_zk2r",
+      "time": "2026-09-26 08:15:48",
+      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
+    },
+    {
+      "id": "L_1790390748868_e68b",
+      "time": "2026-09-26 08:15:48",
+      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
+    },
+    {
+      "id": "L_1790390748781_mu6h",
+      "time": "2026-09-26 08:15:48",
+      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
+    },
+    {
+      "id": "L_1790390748690_r57n",
+      "time": "2026-09-26 08:15:48",
+      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
+    },
+    {
+      "id": "L_1790390748585_8v78",
+      "time": "2026-09-26 08:15:48",
+      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
+    },
     {
       "id": "L_1790390420705_7o5r",
       "time": "2026-09-26 08:10:20",
@@ -3449,181 +3654,6 @@
       "id": "L_1788977093746_f7us",
       "time": "2026-09-09 23:34:53",
       "text": "Set final coins for AKSHAY: 4850 coins. • by Device-5V07"
-    },
-    {
-      "id": "L_1788977088319_7nqn",
-      "time": "2026-09-09 23:34:48",
-      "text": "Set final coins for RISHI: 1110 coins. • by Device-5V07"
-    },
-    {
-      "id": "L_1788977024854_5zvy",
-      "time": "2026-09-09 23:33:44",
-      "text": "Set final coins for KUNAL: 3500 coins. • by Device-5V07"
-    },
-    {
-      "id": "L_1788977019878_up89",
-      "time": "2026-09-09 23:33:39",
-      "text": "Set final coins for GAGAN: 360 coins. • by Device-5V07"
-    },
-    {
-      "id": "L_1788977017262_r0y8",
-      "time": "2026-09-09 23:33:37",
-      "text": "Set final coins for HARI: 2060 coins. • by Device-5V07"
-    },
-    {
-      "id": "L_1788977010845_doq7",
-      "time": "2026-09-09 23:33:30",
-      "text": "Set final coins for HARSHIT: 4640 coins. • by Device-5V07"
-    },
-    {
-      "id": "L_1788977001170_x0zg",
-      "time": "2026-09-09 23:33:21",
-      "text": "Set final coins for AKSHAY: 4700 coins. • by Device-5V07"
-    },
-    {
-      "id": "L_1788976996353_29bw",
-      "time": "2026-09-09 23:33:16",
-      "text": "Set final coins for ALOK: 3080 coins. • by Device-5V07"
-    },
-    {
-      "id": "L_1788976991961_2z9y",
-      "time": "2026-09-09 23:33:11",
-      "text": "Set final coins for MOHINI: 1380 coins. • by Device-5V07"
-    },
-    {
-      "id": "L_1788974958278_8mv4",
-      "time": "2026-09-09 22:59:18",
-      "text": "Buy-in increased for HARI: count = 3. • by Device-5V07"
-    },
-    {
-      "id": "L_1788974318345_gz3p",
-      "time": "2026-09-09 22:48:38",
-      "text": "Buy-in increased for GAGAN: count = 3. • by Device-5V07"
-    },
-    {
-      "id": "L_1788973063003_jemc",
-      "time": "2026-09-09 22:27:43",
-      "text": "Buy-in increased for AKSHAY: count = 3. • by Device-5V07"
-    },
-    {
-      "id": "L_1788972052559_0qeu",
-      "time": "2026-09-09 22:10:52",
-      "text": "Buy-in increased for GAGAN: count = 2. • by Device-5V07"
-    },
-    {
-      "id": "L_1788971759126_n0hy",
-      "time": "2026-09-09 22:05:59",
-      "text": "Set final coins for KUNAL: 68 coins. • by Device-5V07"
-    },
-    {
-      "id": "L_1788971749345_ex72",
-      "time": "2026-09-09 22:05:49",
-      "text": "Added \"GAGAN\" with 1 buy-in (1000c). • by Device-5V07"
-    },
-    {
-      "id": "L_1788970621947_g2ls",
-      "time": "2026-09-09 21:47:01",
-      "text": "Manual refresh synchronized with GitHub. • by Sandeep"
-    },
-    {
-      "id": "L_1788970253031_owg5",
-      "time": "2026-09-09 21:40:53",
-      "text": "Buy-in increased for ALOK: count = 4. • by Device-5V07"
-    },
-    {
-      "id": "L_1788969621685_gdpu",
-      "time": "2026-09-09 21:30:21",
-      "text": "Buy-in increased for MOHINI: count = 4. • by Device-5V07"
-    },
-    {
-      "id": "L_1788969469459_5uch",
-      "time": "2026-09-09 21:27:49",
-      "text": "Buy-in increased for RISHI: count = 2. • by Device-5V07"
-    },
-    {
-      "id": "L_1788967536776_4m9d",
-      "time": "2026-09-09 20:55:36",
-      "text": "Buy-in increased for HARSHIT: count = 2. • by Device-5V07"
-    },
-    {
-      "id": "L_1788967141457_qjcu",
-      "time": "2026-09-09 20:49:01",
-      "text": "Buy-in increased for AKSHAY: count = 2. • by Device-5V07"
-    },
-    {
-      "id": "L_1788966528516_xwp2",
-      "time": "2026-09-09 20:38:48",
-      "text": "Buy-in increased for ALOK: count = 3. • by Device-5V07"
-    },
-    {
-      "id": "L_1788965277508_t1xr",
-      "time": "2026-09-09 20:17:57",
-      "text": "Buy-in increased for HARI: count = 2. • by Device-5V07"
-    },
-    {
-      "id": "L_1788964242077_n1jz",
-      "time": "2026-09-09 20:00:42",
-      "text": "Buy-in increased for ALOK: count = 2. • by Device-5V07"
-    },
-    {
-      "id": "L_1788963324560_fff9",
-      "time": "2026-09-09 19:45:24",
-      "text": "Buy-in increased for MOHINI: count = 3. • by Device-5V07"
-    },
-    {
-      "id": "L_1788962585511_sb29",
-      "time": "2026-09-09 19:33:05",
-      "text": "Added \"KUNAL\" with 1 buy-in (1000c). • by Device-5V07"
-    },
-    {
-      "id": "L_1788962575300_pt7n",
-      "time": "2026-09-09 19:32:55",
-      "text": "Added \"HARSHIT\" with 1 buy-in (1000c). • by Device-5V07"
-    },
-    {
-      "id": "L_1788962571709_u4x8",
-      "time": "2026-09-09 19:32:51",
-      "text": "Added \"HARI\" with 1 buy-in (1000c). • by Device-5V07"
-    },
-    {
-      "id": "L_1788962564550_4hmb",
-      "time": "2026-09-09 19:32:44",
-      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by Device-5V07"
-    },
-    {
-      "id": "L_1788962559542_8mxq",
-      "time": "2026-09-09 19:32:39",
-      "text": "Added \"ALOK\" with 1 buy-in (1000c). • by Device-5V07"
-    },
-    {
-      "id": "L_1788962554509_7tke",
-      "time": "2026-09-09 19:32:34",
-      "text": "Added \"RISHI\" with 1 buy-in (1000c). • by Device-5V07"
-    },
-    {
-      "id": "L_1788962537025_51i4",
-      "time": "2026-09-09 19:32:17",
-      "text": "Buy-in increased for MOHINI: count = 2. • by Device-5V07"
-    },
-    {
-      "id": "L_1788962535060_wyda",
-      "time": "2026-09-09 19:32:15",
-      "text": "Added \"MOHINI\" with 1 buy-in (1000c). • by Device-5V07"
-    },
-    {
-      "id": "L_1788962535058_yrf8",
-      "time": "2026-09-09 19:32:15",
-      "text": "Started new session and claimed host. • by Device-5V07"
-    },
-    {
-      "id": "L_1788962524192_d0a7",
-      "time": "2026-09-09 19:32:04",
-      "text": "Cleared active session dashboard. • by Device-5V07"
-    },
-    {
-      "id": "L_1788938624870_euig",
-      "time": "2026-09-09 12:53:44",
-      "text": "Manual refresh synchronized with GitHub. • by Sandeep"
     }
   ],
   "knownRoster": [
