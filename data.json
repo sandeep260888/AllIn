@@ -1637,7 +1637,7 @@
   "activeHost": {
     "deviceId": "dev_hb66ca2k",
     "deviceName": "Sandeep",
-    "heartbeatAt": "2026-09-26T02:47:48.444Z"
+    "heartbeatAt": "2026-09-26T02:48:49.042Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1655,6 +1655,171 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790390927942_jqw6",
+      "time": "2026-09-26 08:18:47",
+      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
+    },
+    {
+      "id": "L_1790390927457_9onf",
+      "time": "2026-09-26 08:18:47",
+      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
+    },
+    {
+      "id": "L_1790390927407_wzws",
+      "time": "2026-09-26 08:18:47",
+      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
+    },
+    {
+      "id": "L_1790390923820_8qvg",
+      "time": "2026-09-26 08:18:43",
+      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
+    },
+    {
+      "id": "L_1790390919020_wyho",
+      "time": "2026-09-26 08:18:39",
+      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
+    },
+    {
+      "id": "L_1790390917741_bene",
+      "time": "2026-09-26 08:18:37",
+      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
+    },
+    {
+      "id": "L_1790390916511_uqul",
+      "time": "2026-09-26 08:18:36",
+      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
+    },
+    {
+      "id": "L_1790390916492_8ad3",
+      "time": "2026-09-26 08:18:36",
+      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
+    },
+    {
+      "id": "L_1790390914841_l55z",
+      "time": "2026-09-26 08:18:34",
+      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
+    },
+    {
+      "id": "L_1790390911339_yk0p",
+      "time": "2026-09-26 08:18:31",
+      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
+    },
+    {
+      "id": "L_1790390906854_bpu2",
+      "time": "2026-09-26 08:18:26",
+      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
+    },
+    {
+      "id": "L_1790390905938_3n2g",
+      "time": "2026-09-26 08:18:25",
+      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
+    },
+    {
+      "id": "L_1790390905581_00yx",
+      "time": "2026-09-26 08:18:25",
+      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
+    },
+    {
+      "id": "L_1790390904756_u2so",
+      "time": "2026-09-26 08:18:24",
+      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
+    },
+    {
+      "id": "L_1790390903014_yrbf",
+      "time": "2026-09-26 08:18:23",
+      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
+    },
+    {
+      "id": "L_1790390900142_xieq",
+      "time": "2026-09-26 08:18:20",
+      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
+    },
+    {
+      "id": "L_1790390894423_rmqh",
+      "time": "2026-09-26 08:18:14",
+      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
+    },
+    {
+      "id": "L_1790390894374_4t5y",
+      "time": "2026-09-26 08:18:14",
+      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
+    },
+    {
+      "id": "L_1790390893539_on4s",
+      "time": "2026-09-26 08:18:13",
+      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
+    },
+    {
+      "id": "L_1790390893237_s0yg",
+      "time": "2026-09-26 08:18:13",
+      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
+    },
+    {
+      "id": "L_1790390891274_95il",
+      "time": "2026-09-26 08:18:11",
+      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
+    },
+    {
+      "id": "L_1790390888367_q1qy",
+      "time": "2026-09-26 08:18:08",
+      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
+    },
+    {
+      "id": "L_1790390882721_fbwy",
+      "time": "2026-09-26 08:18:02",
+      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
+    },
+    {
+      "id": "L_1790390882637_vehw",
+      "time": "2026-09-26 08:18:02",
+      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
+    },
+    {
+      "id": "L_1790390882496_jhbl",
+      "time": "2026-09-26 08:18:02",
+      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
+    },
+    {
+      "id": "L_1790390880948_3h6s",
+      "time": "2026-09-26 08:18:00",
+      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
+    },
+    {
+      "id": "L_1790390880299_0lfa",
+      "time": "2026-09-26 08:18:00",
+      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
+    },
+    {
+      "id": "L_1790390876139_j30b",
+      "time": "2026-09-26 08:17:56",
+      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
+    },
+    {
+      "id": "L_1790390871661_8mc4",
+      "time": "2026-09-26 08:17:51",
+      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
+    },
+    {
+      "id": "L_1790390871654_arpj",
+      "time": "2026-09-26 08:17:51",
+      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
+    },
+    {
+      "id": "L_1790390871014_cpqo",
+      "time": "2026-09-26 08:17:51",
+      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
+    },
+    {
+      "id": "L_1790390868679_vjc2",
+      "time": "2026-09-26 08:17:48",
+      "text": "Auto-push failed: data.json does not match e995dbd48687ba3211a8f2b8a7486ab122a09e58 • by Sandeep"
+    },
+    {
+      "id": "L_1790390868613_mlfb",
+      "time": "2026-09-26 08:17:48",
+      "text": "Auto-push failed: data.json does not match e995dbd48687ba3211a8f2b8a7486ab122a09e58 • by Sandeep"
+    },
     {
       "id": "L_1790390863820_h0xx",
       "time": "2026-09-26 08:17:43",
@@ -3489,171 +3654,6 @@
       "id": "L_1789136831798_gz7i",
       "time": "2026-09-11 19:57:11",
       "text": "Buy-in increased for ALOK: count = 3. • by Akshay"
-    },
-    {
-      "id": "L_1789136542413_vwf7",
-      "time": "2026-09-11 19:52:22",
-      "text": "Buy-in increased for ALOK: count = 2. • by Akshay"
-    },
-    {
-      "id": "L_1789136541355_6w70",
-      "time": "2026-09-11 19:52:21",
-      "text": "Buy-in decreased for SANDEEP: count = 1. • by Akshay"
-    },
-    {
-      "id": "L_1789136540604_w6t9",
-      "time": "2026-09-11 19:52:20",
-      "text": "Buy-in increased for SANDEEP: count = 2. • by Akshay"
-    },
-    {
-      "id": "L_1789136539039_s0wo",
-      "time": "2026-09-11 19:52:19",
-      "text": "Buy-in increased for KUNAL: count = 2. • by Akshay"
-    },
-    {
-      "id": "L_1789135754565_gst3",
-      "time": "2026-09-11 19:39:14",
-      "text": "Added \"SANDEEP\" with 1 buy-in (1000c). • by Akshay"
-    },
-    {
-      "id": "L_1789135746850_dw0e",
-      "time": "2026-09-11 19:39:06",
-      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by Akshay"
-    },
-    {
-      "id": "L_1789135739606_7m9b",
-      "time": "2026-09-11 19:38:59",
-      "text": "Added \"HARSHIT\" with 1 buy-in (1000c). • by Akshay"
-    },
-    {
-      "id": "L_1789135734402_mpfg",
-      "time": "2026-09-11 19:38:54",
-      "text": "Added \"ALOK\" with 1 buy-in (1000c). • by Akshay"
-    },
-    {
-      "id": "L_1789135719109_hsb4",
-      "time": "2026-09-11 19:38:39",
-      "text": "Added \"KUNAL\" with 1 buy-in (1000c). • by Akshay"
-    },
-    {
-      "id": "L_1789135719107_dg1i",
-      "time": "2026-09-11 19:38:39",
-      "text": "Started new session and claimed host. • by Akshay"
-    },
-    {
-      "id": "L_1789135703587_cal2",
-      "time": "2026-09-11 19:38:23",
-      "text": "Cleared active session dashboard. • by Device-WRZR"
-    },
-    {
-      "id": "L_1789135695383_zr3m",
-      "time": "2026-09-11 19:38:15",
-      "text": "Cleared active session dashboard. • by Device-WRZR"
-    },
-    {
-      "id": "L_1789052738176_2yy0",
-      "time": "2026-09-10 20:35:38",
-      "text": "Saved session to database. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1789052666667_3gy9",
-      "time": "2026-09-10 20:34:26",
-      "text": "Random picker chose KUNAL. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1789052666514_o4av",
-      "time": "2026-09-10 20:34:26",
-      "text": "Random picker chose RISHI. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1789052666347_vlsj",
-      "time": "2026-09-10 20:34:26",
-      "text": "Random picker chose ABHISHEK. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1789052666180_iz22",
-      "time": "2026-09-10 20:34:26",
-      "text": "Random picker chose AKSHAY. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1789052637402_5146",
-      "time": "2026-09-10 20:33:57",
-      "text": "Settlement: KUNAL pays RISHI ₹145.00 • by Hari's Macbook"
-    },
-    {
-      "id": "L_1789052637401_64qr",
-      "time": "2026-09-10 20:33:57",
-      "text": "Settlement: GAGAN pays RISHI ₹250.00 • by Hari's Macbook"
-    },
-    {
-      "id": "L_1789052637400_91c0",
-      "time": "2026-09-10 20:33:57",
-      "text": "Settlement: GAGAN pays ABHISHEK ₹220.00 • by Hari's Macbook"
-    },
-    {
-      "id": "L_1789052637399_usrp",
-      "time": "2026-09-10 20:33:57",
-      "text": "Settlement: HARI pays ABHISHEK ₹870.00 • by Hari's Macbook"
-    },
-    {
-      "id": "L_1789052637398_nvk4",
-      "time": "2026-09-10 20:33:57",
-      "text": "Settlement: HARI pays AKSHAY ₹2130.00 • by Hari's Macbook"
-    },
-    {
-      "id": "L_1789052637397_1vh8",
-      "time": "2026-09-10 20:33:57",
-      "text": "Settlement calculated (5 transfers). • by Hari's Macbook"
-    },
-    {
-      "id": "L_1789052635214_tscw",
-      "time": "2026-09-10 20:33:55",
-      "text": "Set final coins for GAGAN: 2060 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1789052628668_dm6r",
-      "time": "2026-09-10 20:33:48",
-      "text": "Set final coins for GAGAN: 2050 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1789052626285_8f6f",
-      "time": "2026-09-10 20:33:46",
-      "text": "Set final coins for ABHISHEK: 3180 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1789052613443_o8wp",
-      "time": "2026-09-10 20:33:33",
-      "text": "Set final coins for AKSHAY: 5260 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1789052599422_75p4",
-      "time": "2026-09-10 20:33:19",
-      "text": "Set final coins for GAGAN: 2000 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1789052587298_irnb",
-      "time": "2026-09-10 20:33:07",
-      "text": "Set final coins for RISHI: 1790 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1789052570184_jdjd",
-      "time": "2026-09-10 20:32:50",
-      "text": "Set final coins for HARI: 0 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1789052562218_gu48",
-      "time": "2026-09-10 20:32:42",
-      "text": "Set final coins for KUNAL: 1710 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1789052099102_ndue",
-      "time": "2026-09-10 20:24:59",
-      "text": "Buy-in increased for HARI: count = 6. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1789051937048_cx0u",
-      "time": "2026-09-10 20:22:17",
-      "text": "Buy-in increased for GAGAN: count = 3. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
