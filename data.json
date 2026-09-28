@@ -1603,9 +1603,42 @@
       ]
     }
   ],
-  "activePlayers": [],
-  "activeSessionId": null,
-  "activeHost": null,
+  "activePlayers": [
+    {
+      "id": 1790637528681,
+      "name": "SANDEEP",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1790637532845,
+      "name": "AKSHAY",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1790637539495,
+      "name": "RISHI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1790637543513,
+      "name": "HARI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    }
+  ],
+  "activeSessionId": "S_mulvcns7khxu6z",
+  "activeHost": {
+    "deviceId": "dev_w3f5ipa6",
+    "deviceName": "sandeep mac",
+    "heartbeatAt": "2026-09-28T23:19:20.114Z"
+  },
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -1622,6 +1655,31 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790637543513_wope",
+      "time": "2026-09-29 04:49:03",
+      "text": "Added \"HARI\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1790637539495_ytqv",
+      "time": "2026-09-29 04:48:59",
+      "text": "Added \"RISHI\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1790637532845_xvy8",
+      "time": "2026-09-29 04:48:52",
+      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1790637528681_ogqc",
+      "time": "2026-09-29 04:48:48",
+      "text": "Added \"SANDEEP\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1790637528679_kzqu",
+      "time": "2026-09-29 04:48:48",
+      "text": "Started new session and claimed host. • by sandeep mac"
+    },
     {
       "id": "L_1790637293323_a3lj",
       "time": "2026-09-29 04:44:53",
@@ -3596,31 +3654,6 @@
       "id": "L_1789155207387_vtw6",
       "time": "2026-09-12 01:03:27",
       "text": "Buy-in increased for SIDDHARTH: count = 2. • by Akshay"
-    },
-    {
-      "id": "L_1789155119635_mft2",
-      "time": "2026-09-12 01:01:59",
-      "text": "Buy-in increased for ALOK: count = 15. • by Akshay"
-    },
-    {
-      "id": "L_1789155119219_zowz",
-      "time": "2026-09-12 01:01:59",
-      "text": "Buy-in increased for ALOK: count = 14. • by Akshay"
-    },
-    {
-      "id": "L_1789155118657_u0du",
-      "time": "2026-09-12 01:01:58",
-      "text": "Buy-in increased for ALOK: count = 13. • by Akshay"
-    },
-    {
-      "id": "L_1789151990855_qnpb",
-      "time": "2026-09-12 00:09:50",
-      "text": "Added \"RISHI\" with 1 buy-in (1000c). • by Akshay"
-    },
-    {
-      "id": "L_1789151985423_wcyd",
-      "time": "2026-09-12 00:09:45",
-      "text": "Added \"MOHINI\" with 1 buy-in (1000c). • by Akshay"
     }
   ],
   "knownRoster": [
