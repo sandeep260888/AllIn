@@ -1621,7 +1621,7 @@
     {
       "id": 1790637539495,
       "name": "RISHI",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1637,7 +1637,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-28T23:46:16.546Z"
+    "heartbeatAt": "2026-09-28T23:55:12.284Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1655,6 +1655,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790639694648_6ens",
+      "time": "2026-09-29 05:24:54",
+      "text": "Buy-in increased for RISHI: count = 3. • by sandeep mac"
+    },
     {
       "id": "L_1790639159664_j0g3",
       "time": "2026-09-29 05:15:59",
@@ -3649,11 +3654,6 @@
       "id": "L_1789157722097_keg4",
       "time": "2026-09-12 01:45:22",
       "text": "Buy-in increased for ALOK: count = 16. • by Akshay"
-    },
-    {
-      "id": "L_1789155218519_qd6d",
-      "time": "2026-09-12 01:03:38",
-      "text": "Buy-in decreased for SIDDHARTH: count = 1. • by Akshay"
     }
   ],
   "knownRoster": [
