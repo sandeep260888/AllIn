@@ -1603,42 +1603,9 @@
       ]
     }
   ],
-  "activePlayers": [
-    {
-      "id": 1790380742303,
-      "name": "RISHI",
-      "buyIns": 3,
-      "buyInCoins": 1000,
-      "cashOutCoins": 7000
-    },
-    {
-      "id": 1790380747120,
-      "name": "HARI",
-      "buyIns": 7,
-      "buyInCoins": 1000,
-      "cashOutCoins": 2000
-    },
-    {
-      "id": 1790380752877,
-      "name": "ABHISHEK",
-      "buyIns": 2,
-      "buyInCoins": 1000,
-      "cashOutCoins": 2550
-    },
-    {
-      "id": 1790380759163,
-      "name": "SANDEEP",
-      "buyIns": 1,
-      "buyInCoins": 1000,
-      "cashOutCoins": 1450
-    }
-  ],
-  "activeSessionId": "S_muhmgu55zmhoy7",
-  "activeHost": {
-    "deviceId": "dev_hb66ca2k",
-    "deviceName": "Sandeep",
-    "heartbeatAt": "2026-09-26T02:49:49.650Z"
-  },
+  "activePlayers": [],
+  "activeSessionId": null,
+  "activeHost": null,
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -1655,6 +1622,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790637293323_a3lj",
+      "time": "2026-09-29 04:44:53",
+      "text": "Cleared active session dashboard. • by sandeep mac"
+    },
+    {
+      "id": "L_1790637285814_zk15",
+      "time": "2026-09-29 04:44:45",
+      "text": "Took over hosting from Sandeep (inactive 8h+). • by sandeep mac"
+    },
     {
       "id": "L_1790390987465_jtfl",
       "time": "2026-09-26 08:19:47",
@@ -2439,6 +2416,16 @@
       "id": "L_1790217769931_x0yx",
       "time": "2026-09-24 08:12:49",
       "text": "Random picker chose HARI. • by Sandeep"
+    },
+    {
+      "id": "L_1790216911748_ouyj",
+      "time": "2026-09-24 07:58:31",
+      "text": "Published session — hosting released automatically. • by sandeep mac"
+    },
+    {
+      "id": "L_1790216909910_swe6",
+      "time": "2026-09-24 07:58:29",
+      "text": "Pushed live state to GitHub repo. • by sandeep mac"
     },
     {
       "id": "L_1790216907899_pxka",
@@ -3634,26 +3621,6 @@
       "id": "L_1789151985423_wcyd",
       "time": "2026-09-12 00:09:45",
       "text": "Added \"MOHINI\" with 1 buy-in (1000c). • by Akshay"
-    },
-    {
-      "id": "L_1789149134432_2ps8",
-      "time": "2026-09-11 23:22:14",
-      "text": "Buy-in increased for HARI: count = 4. • by Akshay"
-    },
-    {
-      "id": "L_1789149134105_pfk9",
-      "time": "2026-09-11 23:22:14",
-      "text": "Buy-in increased for HARI: count = 3. • by Akshay"
-    },
-    {
-      "id": "L_1789147865514_o3p4",
-      "time": "2026-09-11 23:01:05",
-      "text": "Buy-in increased for ALOK: count = 12. • by Akshay"
-    },
-    {
-      "id": "L_1789147864872_flld",
-      "time": "2026-09-11 23:01:04",
-      "text": "Buy-in increased for ALOK: count = 11. • by Akshay"
     }
   ],
   "knownRoster": [
