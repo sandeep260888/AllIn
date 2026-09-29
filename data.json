@@ -1621,7 +1621,7 @@
     {
       "id": 1790637539495,
       "name": "RISHI",
-      "buyIns": 5,
+      "buyIns": 6,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1637,7 +1637,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-29T00:07:48.367Z"
+    "heartbeatAt": "2026-09-29T00:18:58.974Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1655,6 +1655,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790641122532_kdjz",
+      "time": "2026-09-29 05:48:42",
+      "text": "Buy-in increased for RISHI: count = 6. • by sandeep mac"
+    },
     {
       "id": "L_1790640451081_li69",
       "time": "2026-09-29 05:37:31",
@@ -3649,11 +3654,6 @@
       "id": "L_1789162038180_tg3r",
       "time": "2026-09-12 02:57:18",
       "text": "Set final coins for HARSHIT: 6410 coins. • by Akshay"
-    },
-    {
-      "id": "L_1789162027944_l6r7",
-      "time": "2026-09-12 02:57:07",
-      "text": "Set final coins for SIDDHARTH: 360 coins. • by Akshay"
     }
   ],
   "knownRoster": [
