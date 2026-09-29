@@ -1,6 +1,42 @@
 {
   "savedSessions": [
     {
+      "sessionId": "S_mulvcns7khxu6z",
+      "date": "2026-09-29T02:03:03.584Z",
+      "entries": [
+        {
+          "name": "SANDEEP",
+          "investedCoins": 1000,
+          "finalCoins": 4000,
+          "netVal": 1500
+        },
+        {
+          "name": "AKSHAY",
+          "investedCoins": 1000,
+          "finalCoins": 2910,
+          "netVal": 955
+        },
+        {
+          "name": "RISHI",
+          "investedCoins": 6000,
+          "finalCoins": 2520,
+          "netVal": -1740
+        },
+        {
+          "name": "HARI",
+          "investedCoins": 3000,
+          "finalCoins": 350,
+          "netVal": -1325
+        },
+        {
+          "name": "KUNAL",
+          "investedCoins": 1000,
+          "finalCoins": 2220,
+          "netVal": 610
+        }
+      ]
+    },
+    {
       "sessionId": "S_muhmgu55zmhoy7",
       "date": "2026-09-26T02:46:24.508Z",
       "entries": [
@@ -1644,7 +1680,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-29T02:02:04.496Z"
+    "heartbeatAt": "2026-09-29T02:03:05.165Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1662,6 +1698,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790647383584_qwn5",
+      "time": "2026-09-29 07:33:03",
+      "text": "Saved session to database. • by sandeep mac"
+    },
     {
       "id": "L_1790647313677_w8vc",
       "time": "2026-09-29 07:31:53",
@@ -3656,11 +3697,6 @@
       "id": "L_1789397811873_676n",
       "time": "2026-09-14 20:26:51",
       "text": "Set final coins for RAVI: 5360 coins. • by Sandeep"
-    },
-    {
-      "id": "L_1789397800369_e6l4",
-      "time": "2026-09-14 20:26:40",
-      "text": "Set final coins for RISHI: 7040 coins. • by Sandeep"
     }
   ],
   "knownRoster": [
