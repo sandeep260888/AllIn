@@ -1621,7 +1621,7 @@
     {
       "id": 1790637539495,
       "name": "RISHI",
-      "buyIns": 3,
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1637,7 +1637,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-28T23:55:12.284Z"
+    "heartbeatAt": "2026-09-29T00:03:01.752Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1655,6 +1655,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790640164312_9352",
+      "time": "2026-09-29 05:32:44",
+      "text": "Buy-in decreased for RISHI: count = 4. • by sandeep mac"
+    },
+    {
+      "id": "L_1790640153184_hr2v",
+      "time": "2026-09-29 05:32:33",
+      "text": "Buy-in increased for RISHI: count = 5. • by sandeep mac"
+    },
+    {
+      "id": "L_1790640152850_dyg7",
+      "time": "2026-09-29 05:32:32",
+      "text": "Buy-in increased for RISHI: count = 4. • by sandeep mac"
+    },
     {
       "id": "L_1790639694648_6ens",
       "time": "2026-09-29 05:24:54",
@@ -3639,21 +3654,6 @@
       "id": "L_1789162025035_oicn",
       "time": "2026-09-12 02:57:05",
       "text": "Set final coins for HARSHIT: -38 coins. • by Akshay"
-    },
-    {
-      "id": "L_1789162011879_iafy",
-      "time": "2026-09-12 02:56:51",
-      "text": "Set final coins for AKSHAY: 12350 coins. • by Akshay"
-    },
-    {
-      "id": "L_1789157725703_rweb",
-      "time": "2026-09-12 01:45:25",
-      "text": "Buy-in increased for SIDDHARTH: count = 2. • by Akshay"
-    },
-    {
-      "id": "L_1789157722097_keg4",
-      "time": "2026-09-12 01:45:22",
-      "text": "Buy-in increased for ALOK: count = 16. • by Akshay"
     }
   ],
   "knownRoster": [
