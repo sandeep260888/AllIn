@@ -1609,7 +1609,7 @@
       "name": "SANDEEP",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 4360
+      "cashOutCoins": 4350
     },
     {
       "id": 1790637532845,
@@ -1644,7 +1644,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-29T02:00:33.743Z"
+    "heartbeatAt": "2026-09-29T02:00:42.295Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1662,6 +1662,36 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790647238126_2u2e",
+      "time": "2026-09-29 07:30:38",
+      "text": "Settlement: HARI pays KUNAL ₹610.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1790647238124_30u9",
+      "time": "2026-09-29 07:30:38",
+      "text": "Settlement: HARI pays AKSHAY ₹890.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1790647238121_0gki",
+      "time": "2026-09-29 07:30:38",
+      "text": "Settlement: RISHI pays AKSHAY ₹65.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1790647238119_yevy",
+      "time": "2026-09-29 07:30:38",
+      "text": "Settlement: RISHI pays SANDEEP ₹1675.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1790647238115_1a6m",
+      "time": "2026-09-29 07:30:38",
+      "text": "Settlement calculated (4 transfers). • by sandeep mac"
+    },
+    {
+      "id": "L_1790647235479_b24k",
+      "time": "2026-09-29 07:30:35",
+      "text": "Set final coins for SANDEEP: 4350 coins. • by sandeep mac"
+    },
     {
       "id": "L_1790647226193_09we",
       "time": "2026-09-29 07:30:26",
@@ -3631,36 +3661,6 @@
       "id": "L_1789272135141_gh34",
       "time": "2026-09-13 09:32:15",
       "text": "Random picker chose HARI. • by Sandeep"
-    },
-    {
-      "id": "L_1789272132909_umqe",
-      "time": "2026-09-13 09:32:12",
-      "text": "Random picker chose RISHI. • by Sandeep"
-    },
-    {
-      "id": "L_1789272132576_10zr",
-      "time": "2026-09-13 09:32:12",
-      "text": "Random picker chose KUNAL. • by Sandeep"
-    },
-    {
-      "id": "L_1789272131694_macr",
-      "time": "2026-09-13 09:32:11",
-      "text": "Random picker chose AKSHAY. • by Sandeep"
-    },
-    {
-      "id": "L_1789272131497_a73v",
-      "time": "2026-09-13 09:32:11",
-      "text": "Random picker chose HARSHIT. • by Sandeep"
-    },
-    {
-      "id": "L_1789165020444_3em8",
-      "time": "2026-09-12 03:47:00",
-      "text": "Random picker chose HARI. • by Sandeep"
-    },
-    {
-      "id": "L_1789165019540_p7l5",
-      "time": "2026-09-12 03:46:59",
-      "text": "Random picker chose SANDEEP. • by Sandeep"
     }
   ],
   "knownRoster": [
