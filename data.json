@@ -1677,11 +1677,7 @@
     }
   ],
   "activeSessionId": "S_mulvcns7khxu6z",
-  "activeHost": {
-    "deviceId": "dev_w3f5ipa6",
-    "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-29T02:03:05.165Z"
-  },
+  "activeHost": null,
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -1698,6 +1694,41 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790722442774_i2pk",
+      "time": "2026-09-30 04:24:02",
+      "text": "Stopped hosting. • by sandeep mac"
+    },
+    {
+      "id": "L_1790647397116_0ax8",
+      "time": "2026-09-29 07:33:17",
+      "text": "Random picker chose AKSHAY. • by sandeep mac"
+    },
+    {
+      "id": "L_1790647396982_jylw",
+      "time": "2026-09-29 07:33:16",
+      "text": "Random picker chose KUNAL. • by sandeep mac"
+    },
+    {
+      "id": "L_1790647396815_5rt3",
+      "time": "2026-09-29 07:33:16",
+      "text": "Random picker chose HARI. • by sandeep mac"
+    },
+    {
+      "id": "L_1790647396666_h7cp",
+      "time": "2026-09-29 07:33:16",
+      "text": "Random picker chose SANDEEP. • by sandeep mac"
+    },
+    {
+      "id": "L_1790647388982_p59n",
+      "time": "2026-09-29 07:33:08",
+      "text": "Published session — hosting released automatically. • by sandeep mac"
+    },
+    {
+      "id": "L_1790647387388_7nir",
+      "time": "2026-09-29 07:33:07",
+      "text": "Pushed live state to GitHub repo. • by sandeep mac"
+    },
     {
       "id": "L_1790647383584_qwn5",
       "time": "2026-09-29 07:33:03",
@@ -3662,41 +3693,6 @@
       "id": "L_1789397847292_0t9v",
       "time": "2026-09-14 20:27:27",
       "text": "Saved session to database. • by Sandeep"
-    },
-    {
-      "id": "L_1789397840897_j9zf",
-      "time": "2026-09-14 20:27:20",
-      "text": "Auto-push failed: data.json does not match 884dde56c0d4de14450d8f4a1c45b6e896a6ad26 • by Sandeep"
-    },
-    {
-      "id": "L_1789397829325_ms6b",
-      "time": "2026-09-14 20:27:09",
-      "text": "Auto-push failed: data.json does not match 884dde56c0d4de14450d8f4a1c45b6e896a6ad26 • by Sandeep"
-    },
-    {
-      "id": "L_1789397824082_jbwb",
-      "time": "2026-09-14 20:27:04",
-      "text": "Settlement: ABHISHEK pays RAVI ₹680.00 • by Sandeep"
-    },
-    {
-      "id": "L_1789397824079_mx6d",
-      "time": "2026-09-14 20:27:04",
-      "text": "Settlement: ABHISHEK pays RISHI ₹1020.00 • by Sandeep"
-    },
-    {
-      "id": "L_1789397824077_zhy0",
-      "time": "2026-09-14 20:27:04",
-      "text": "Settlement: RAJAT pays RISHI ₹2000.00 • by Sandeep"
-    },
-    {
-      "id": "L_1789397824070_eebw",
-      "time": "2026-09-14 20:27:04",
-      "text": "Settlement calculated (3 transfers). • by Sandeep"
-    },
-    {
-      "id": "L_1789397811873_676n",
-      "time": "2026-09-14 20:26:51",
-      "text": "Set final coins for RAVI: 5360 coins. • by Sandeep"
     }
   ],
   "knownRoster": [
