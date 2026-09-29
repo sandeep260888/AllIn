@@ -1657,7 +1657,7 @@
     {
       "id": 1790722501107,
       "name": "AKSHAY",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1667,13 +1667,20 @@
       "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1790722523407,
+      "name": "RISHI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "activeSessionId": "S_mun9xhs2mp8cki",
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-29T22:55:21.636Z"
+    "heartbeatAt": "2026-09-29T22:55:50.885Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1691,6 +1698,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790722535324_1x9o",
+      "time": "2026-09-30 04:25:35",
+      "text": "Buy-in increased for AKSHAY: count = 2. • by sandeep mac"
+    },
+    {
+      "id": "L_1790722523407_uz1n",
+      "time": "2026-09-30 04:25:23",
+      "text": "Added \"RISHI\" with 1 buy-in (1000c). • by sandeep mac"
+    },
     {
       "id": "L_1790722506241_gqkl",
       "time": "2026-09-30 04:25:06",
@@ -3680,16 +3697,6 @@
       "id": "L_1789397881048_0owf",
       "time": "2026-09-14 20:28:01",
       "text": "Auto-push failed: data.json does not match 124a0838bed49ef9600d2421da0edf267a1aadf9 • by Sandeep"
-    },
-    {
-      "id": "L_1789397869467_z46y",
-      "time": "2026-09-14 20:27:49",
-      "text": "Auto-push failed: data.json does not match 124a0838bed49ef9600d2421da0edf267a1aadf9 • by Sandeep"
-    },
-    {
-      "id": "L_1789397868086_tvx9",
-      "time": "2026-09-14 20:27:48",
-      "text": "Random picker chose ABHISHEK. • by Sandeep"
     }
   ],
   "knownRoster": [
