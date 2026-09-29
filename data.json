@@ -1653,13 +1653,27 @@
       "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1790722501107,
+      "name": "AKSHAY",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1790722506241,
+      "name": "KUNAL",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "activeSessionId": "S_mun9xhs2mp8cki",
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-29T22:54:57.245Z"
+    "heartbeatAt": "2026-09-29T22:55:12.373Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1677,6 +1691,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790722506241_gqkl",
+      "time": "2026-09-30 04:25:06",
+      "text": "Added \"KUNAL\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1790722501107_kcyh",
+      "time": "2026-09-30 04:25:01",
+      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by sandeep mac"
+    },
     {
       "id": "L_1790722496858_bomb",
       "time": "2026-09-30 04:24:56",
@@ -3666,16 +3690,6 @@
       "id": "L_1789397868086_tvx9",
       "time": "2026-09-14 20:27:48",
       "text": "Random picker chose ABHISHEK. • by Sandeep"
-    },
-    {
-      "id": "L_1789397867520_0rhg",
-      "time": "2026-09-14 20:27:47",
-      "text": "Random picker chose RAJAT. • by Sandeep"
-    },
-    {
-      "id": "L_1789397865873_3815",
-      "time": "2026-09-14 20:27:45",
-      "text": "Random picker chose RISHI. • by Sandeep"
     }
   ],
   "knownRoster": [
