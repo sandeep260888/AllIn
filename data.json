@@ -1609,7 +1609,7 @@
       "name": "SANDEEP",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 4410
+      "cashOutCoins": 438
     },
     {
       "id": 1790637532845,
@@ -1628,7 +1628,7 @@
     {
       "id": 1790637543513,
       "name": "HARI",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1644,7 +1644,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-29T02:00:09.899Z"
+    "heartbeatAt": "2026-09-29T02:00:24.293Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1662,6 +1662,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790647217899_z332",
+      "time": "2026-09-29 07:30:17",
+      "text": "Buy-in increased for HARI: count = 3. • by sandeep mac"
+    },
     {
       "id": "L_1790647208456_6o4v",
       "time": "2026-09-29 07:30:08",
@@ -3656,11 +3661,6 @@
       "id": "L_1789165019327_aqxu",
       "time": "2026-09-12 03:46:59",
       "text": "Random picker chose ALOK. • by Sandeep"
-    },
-    {
-      "id": "L_1789165017745_dtts",
-      "time": "2026-09-12 03:46:57",
-      "text": "Random picker chose RISHI. • by Sandeep"
     }
   ],
   "knownRoster": [
