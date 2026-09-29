@@ -1664,7 +1664,7 @@
     {
       "id": 1790722506241,
       "name": "KUNAL",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1680,7 +1680,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-29T22:55:50.885Z"
+    "heartbeatAt": "2026-09-29T23:10:52.589Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1698,6 +1698,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790723435513_2f4f",
+      "time": "2026-09-30 04:40:35",
+      "text": "Buy-in increased for KUNAL: count = 2. • by sandeep mac"
+    },
     {
       "id": "L_1790722535324_1x9o",
       "time": "2026-09-30 04:25:35",
@@ -3692,11 +3697,6 @@
       "id": "L_1789410508777_8x47",
       "time": "2026-09-14 23:58:28",
       "text": "Random picker chose RISHI. • by Sandeep"
-    },
-    {
-      "id": "L_1789397881048_0owf",
-      "time": "2026-09-14 20:28:01",
-      "text": "Auto-push failed: data.json does not match 124a0838bed49ef9600d2421da0edf267a1aadf9 • by Sandeep"
     }
   ],
   "knownRoster": [
