@@ -1630,7 +1630,7 @@
       "name": "HARI",
       "buyIns": 3,
       "buyInCoins": 1000,
-      "cashOutCoins": 400
+      "cashOutCoins": 350
     },
     {
       "id": 1790646433065,
@@ -1644,7 +1644,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-29T02:01:36.142Z"
+    "heartbeatAt": "2026-09-29T02:02:04.496Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1662,6 +1662,71 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790647313677_w8vc",
+      "time": "2026-09-29 07:31:53",
+      "text": "Settlement: HARI pays KUNAL ₹610.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1790647313674_55cg",
+      "time": "2026-09-29 07:31:53",
+      "text": "Settlement: HARI pays AKSHAY ₹715.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1790647313671_tpof",
+      "time": "2026-09-29 07:31:53",
+      "text": "Settlement: RISHI pays AKSHAY ₹240.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1790647313669_chmh",
+      "time": "2026-09-29 07:31:53",
+      "text": "Settlement: RISHI pays SANDEEP ₹1500.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1790647313665_f8ap",
+      "time": "2026-09-29 07:31:53",
+      "text": "Settlement calculated (4 transfers). • by sandeep mac"
+    },
+    {
+      "id": "L_1790647311222_xqvl",
+      "time": "2026-09-29 07:31:51",
+      "text": "Settlement: HARI pays KUNAL ₹610.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1790647311220_mgk9",
+      "time": "2026-09-29 07:31:51",
+      "text": "Settlement: HARI pays AKSHAY ₹715.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1790647311219_h9at",
+      "time": "2026-09-29 07:31:51",
+      "text": "Settlement: RISHI pays AKSHAY ₹240.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1790647311217_4sa9",
+      "time": "2026-09-29 07:31:51",
+      "text": "Settlement: RISHI pays SANDEEP ₹1500.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1790647311214_0q8n",
+      "time": "2026-09-29 07:31:51",
+      "text": "Settlement calculated (4 transfers). • by sandeep mac"
+    },
+    {
+      "id": "L_1790647308398_mbwd",
+      "time": "2026-09-29 07:31:48",
+      "text": "Set final coins for HARI: 350 coins. • by sandeep mac"
+    },
+    {
+      "id": "L_1790647301666_5bkx",
+      "time": "2026-09-29 07:31:41",
+      "text": "Set final coins for HARI: 380 coins. • by sandeep mac"
+    },
+    {
+      "id": "L_1790647299101_5dg4",
+      "time": "2026-09-29 07:31:39",
+      "text": "Set final coins for HARI: 38 coins. • by sandeep mac"
+    },
     {
       "id": "L_1790647286442_nsap",
       "time": "2026-09-29 07:31:26",
@@ -3596,71 +3661,6 @@
       "id": "L_1789397800369_e6l4",
       "time": "2026-09-14 20:26:40",
       "text": "Set final coins for RISHI: 7040 coins. • by Sandeep"
-    },
-    {
-      "id": "L_1789397777995_q16x",
-      "time": "2026-09-14 20:26:17",
-      "text": "Set final coins for ABHISHEK: 1600 coins. • by Sandeep"
-    },
-    {
-      "id": "L_1789396764048_1um5",
-      "time": "2026-09-14 20:09:24",
-      "text": "Buy-in increased for RAVI: count = 4. • by Sandeep"
-    },
-    {
-      "id": "L_1789396303275_gegi",
-      "time": "2026-09-14 20:01:43",
-      "text": "Buy-in increased for ABHISHEK: count = 5. • by Sandeep"
-    },
-    {
-      "id": "L_1789395717158_kd47",
-      "time": "2026-09-14 19:51:57",
-      "text": "Buy-in increased for ABHISHEK: count = 4. • by Sandeep"
-    },
-    {
-      "id": "L_1789390743432_889l",
-      "time": "2026-09-14 18:29:03",
-      "text": "Buy-in increased for RAJAT: count = 4. • by Sandeep"
-    },
-    {
-      "id": "L_1789390573379_wpe6",
-      "time": "2026-09-14 18:26:13",
-      "text": "Buy-in increased for RAVI: count = 3. • by Sandeep"
-    },
-    {
-      "id": "L_1789388957267_zuk5",
-      "time": "2026-09-14 17:59:17",
-      "text": "Buy-in increased for RAJAT: count = 3. • by Sandeep"
-    },
-    {
-      "id": "L_1789388015225_xe5d",
-      "time": "2026-09-14 17:43:35",
-      "text": "Buy-in increased for RAJAT: count = 2. • by Sandeep"
-    },
-    {
-      "id": "L_1789385571174_z0sf",
-      "time": "2026-09-14 17:02:51",
-      "text": "Buy-in increased for ABHISHEK: count = 3. • by Sandeep"
-    },
-    {
-      "id": "L_1789385569500_m0rt",
-      "time": "2026-09-14 17:02:49",
-      "text": "Buy-in increased for RAVI: count = 2. • by Sandeep"
-    },
-    {
-      "id": "L_1789385362014_iy2a",
-      "time": "2026-09-14 16:59:22",
-      "text": "Added \"RAJAT\" with 1 buy-in (1000c). • by Sandeep"
-    },
-    {
-      "id": "L_1789384165085_58yh",
-      "time": "2026-09-14 16:39:25",
-      "text": "Buy-in increased for ABHISHEK: count = 2. • by Sandeep"
-    },
-    {
-      "id": "L_1789383583827_6v05",
-      "time": "2026-09-14 16:29:43",
-      "text": "Random picker chose SANDEEP. • by Sandeep"
     }
   ],
   "knownRoster": [
