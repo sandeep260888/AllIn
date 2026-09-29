@@ -1639,9 +1639,28 @@
       ]
     }
   ],
-  "activePlayers": [],
-  "activeSessionId": null,
-  "activeHost": null,
+  "activePlayers": [
+    {
+      "id": 1790722481479,
+      "name": "SANDEEP",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1790722496857,
+      "name": "HARI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    }
+  ],
+  "activeSessionId": "S_mun9xhs2mp8cki",
+  "activeHost": {
+    "deviceId": "dev_w3f5ipa6",
+    "deviceName": "sandeep mac",
+    "heartbeatAt": "2026-09-29T22:54:57.245Z"
+  },
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -1658,6 +1677,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790722496858_bomb",
+      "time": "2026-09-30 04:24:56",
+      "text": "Added \"HARI\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1790722481479_dch2",
+      "time": "2026-09-30 04:24:41",
+      "text": "Added \"SANDEEP\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1790722481476_ztrd",
+      "time": "2026-09-30 04:24:41",
+      "text": "Started new session and claimed host. • by sandeep mac"
+    },
     {
       "id": "L_1790722448202_2745",
       "time": "2026-09-30 04:24:08",
@@ -3642,21 +3676,6 @@
       "id": "L_1789397865873_3815",
       "time": "2026-09-14 20:27:45",
       "text": "Random picker chose RISHI. • by Sandeep"
-    },
-    {
-      "id": "L_1789397865590_m2gp",
-      "time": "2026-09-14 20:27:45",
-      "text": "Random picker chose RISHI. • by Sandeep"
-    },
-    {
-      "id": "L_1789397863473_g004",
-      "time": "2026-09-14 20:27:43",
-      "text": "Random picker chose RISHI. • by Sandeep"
-    },
-    {
-      "id": "L_1789397863346_kylz",
-      "time": "2026-09-14 20:27:43",
-      "text": "Random picker chose RAJAT. • by Sandeep"
     }
   ],
   "knownRoster": [
