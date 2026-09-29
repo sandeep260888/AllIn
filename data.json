@@ -1631,13 +1631,20 @@
       "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1790646433065,
+      "name": "KUNAL",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "activeSessionId": "S_mulvcns7khxu6z",
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-29T01:18:15.267Z"
+    "heartbeatAt": "2026-09-29T01:47:29.695Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1655,6 +1662,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790646433065_cpuj",
+      "time": "2026-09-29 07:17:13",
+      "text": "Added \"KUNAL\" with 1 buy-in (1000c). • by sandeep mac"
+    },
     {
       "id": "L_1790644676950_v42z",
       "time": "2026-09-29 06:47:56",
@@ -3649,11 +3661,6 @@
       "id": "L_1789162068998_mti2",
       "time": "2026-09-12 02:57:48",
       "text": "Set final coins for MOHINI: 1000 coins. • by Akshay"
-    },
-    {
-      "id": "L_1789162064239_1roe",
-      "time": "2026-09-12 02:57:44",
-      "text": "Set final coins for RISHI: 3600 coins. • by Akshay"
     }
   ],
   "knownRoster": [
