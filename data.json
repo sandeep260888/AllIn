@@ -1639,44 +1639,8 @@
       ]
     }
   ],
-  "activePlayers": [
-    {
-      "id": 1790637528681,
-      "name": "SANDEEP",
-      "buyIns": 1,
-      "buyInCoins": 1000,
-      "cashOutCoins": 4000
-    },
-    {
-      "id": 1790637532845,
-      "name": "AKSHAY",
-      "buyIns": 1,
-      "buyInCoins": 1000,
-      "cashOutCoins": 2910
-    },
-    {
-      "id": 1790637539495,
-      "name": "RISHI",
-      "buyIns": 6,
-      "buyInCoins": 1000,
-      "cashOutCoins": 2520
-    },
-    {
-      "id": 1790637543513,
-      "name": "HARI",
-      "buyIns": 3,
-      "buyInCoins": 1000,
-      "cashOutCoins": 350
-    },
-    {
-      "id": 1790646433065,
-      "name": "KUNAL",
-      "buyIns": 1,
-      "buyInCoins": 1000,
-      "cashOutCoins": 2220
-    }
-  ],
-  "activeSessionId": "S_mulvcns7khxu6z",
+  "activePlayers": [],
+  "activeSessionId": null,
   "activeHost": null,
   "settings": {
     "coinCount": "2",
@@ -1694,6 +1658,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790722448202_2745",
+      "time": "2026-09-30 04:24:08",
+      "text": "Cleared active session dashboard. • by sandeep mac"
+    },
     {
       "id": "L_1790722442774_i2pk",
       "time": "2026-09-30 04:24:02",
@@ -3688,11 +3657,6 @@
       "id": "L_1789397863346_kylz",
       "time": "2026-09-14 20:27:43",
       "text": "Random picker chose RAJAT. • by Sandeep"
-    },
-    {
-      "id": "L_1789397847292_0t9v",
-      "time": "2026-09-14 20:27:27",
-      "text": "Saved session to database. • by Sandeep"
     }
   ],
   "knownRoster": [
