@@ -1643,7 +1643,7 @@
     {
       "id": 1790722481479,
       "name": "SANDEEP",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1680,7 +1680,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-29T23:17:59.214Z"
+    "heartbeatAt": "2026-09-29T23:56:46.710Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1698,6 +1698,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790726190743_84x3",
+      "time": "2026-09-30 05:26:30",
+      "text": "Buy-in increased for SANDEEP: count = 2. • by sandeep mac"
+    },
     {
       "id": "L_1790723863515_7k4c",
       "time": "2026-09-30 04:47:43",
@@ -3692,11 +3697,6 @@
       "id": "L_1789410509463_moxf",
       "time": "2026-09-14 23:58:29",
       "text": "Random picker chose RAJAT. • by Sandeep"
-    },
-    {
-      "id": "L_1789410509228_47cz",
-      "time": "2026-09-14 23:58:29",
-      "text": "Random picker chose RAVI. • by Sandeep"
     }
   ],
   "knownRoster": [
