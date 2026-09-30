@@ -1645,21 +1645,21 @@
       "name": "SANDEEP",
       "buyIns": 6,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 3200
     },
     {
       "id": 1790722496857,
       "name": "HARI",
       "buyIns": 4,
       "buyInCoins": 1000,
-      "cashOutCoins": 3080
+      "cashOutCoins": 3100
     },
     {
       "id": 1790722501107,
       "name": "AKSHAY",
       "buyIns": 8,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 5
     },
     {
       "id": 1790722506241,
@@ -1680,7 +1680,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-30T02:53:15.650Z"
+    "heartbeatAt": "2026-09-30T02:53:44.770Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1698,6 +1698,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790736808996_hlc5",
+      "time": "2026-09-30 08:23:28",
+      "text": "Set final coins for HARI: 3100 coins. • by sandeep mac"
+    },
+    {
+      "id": "L_1790736803164_4vs5",
+      "time": "2026-09-30 08:23:23",
+      "text": "Set final coins for SANDEEP: 3200 coins. • by sandeep mac"
+    },
+    {
+      "id": "L_1790736797391_sbsl",
+      "time": "2026-09-30 08:23:17",
+      "text": "Set final coins for SANDEEP: 3 coins. • by sandeep mac"
+    },
     {
       "id": "L_1790736778646_dsl5",
       "time": "2026-09-30 08:22:58",
@@ -3682,21 +3697,6 @@
       "id": "L_1789826728388_away",
       "time": "2026-09-19 19:35:28",
       "text": "Buy-in increased for GAGAN: count = 4. • by sandeep mac"
-    },
-    {
-      "id": "L_1789824676144_tmb8",
-      "time": "2026-09-19 19:01:16",
-      "text": "Buy-in increased for RISHI: count = 2. • by sandeep mac"
-    },
-    {
-      "id": "L_1789824181260_ead1",
-      "time": "2026-09-19 18:53:01",
-      "text": "Buy-in increased for MOHINI: count = 3. • by sandeep mac"
-    },
-    {
-      "id": "L_1789823977561_avfe",
-      "time": "2026-09-19 18:49:37",
-      "text": "Buy-in increased for GAGAN: count = 3. • by sandeep mac"
     }
   ],
   "knownRoster": [
