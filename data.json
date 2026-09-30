@@ -1650,7 +1650,7 @@
     {
       "id": 1790722496857,
       "name": "HARI",
-      "buyIns": 3,
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1680,7 +1680,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-30T02:26:55.903Z"
+    "heartbeatAt": "2026-09-30T02:30:14.819Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1698,6 +1698,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790735398290_xcd5",
+      "time": "2026-09-30 07:59:58",
+      "text": "Buy-in increased for HARI: count = 4. • by sandeep mac"
+    },
     {
       "id": "L_1790735199271_canf",
       "time": "2026-09-30 07:56:39",
@@ -3692,11 +3697,6 @@
       "id": "L_1789820199870_y18p",
       "time": "2026-09-19 17:46:39",
       "text": "Buy-in increased for RAVI: count = 2. • by sandeep mac"
-    },
-    {
-      "id": "L_1789820031752_tv8j",
-      "time": "2026-09-19 17:43:51",
-      "text": "Added \"SANDEEP\" with 1 buy-in (1000c). • by sandeep mac"
     }
   ],
   "knownRoster": [
