@@ -1675,9 +1675,49 @@
       ]
     }
   ],
-  "activePlayers": [],
-  "activeSessionId": null,
-  "activeHost": null,
+  "activePlayers": [
+    {
+      "id": 1790810166088,
+      "name": "AKSHAY",
+      "buyIns": 2,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1790810169692,
+      "name": "ABHISHEK",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1790810173675,
+      "name": "HARI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1790810176942,
+      "name": "RISHI",
+      "buyIns": 2,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1790810180567,
+      "name": "SANDEEP",
+      "buyIns": 2,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    }
+  ],
+  "activeSessionId": "S_muoq4vnolylhgl",
+  "activeHost": {
+    "deviceId": "dev_pt3v9f2c",
+    "deviceName": "Hari's Macbook",
+    "heartbeatAt": "2026-09-30T23:16:41.895Z"
+  },
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -1688,6 +1728,51 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790810185083_x6fd",
+      "time": "2026-10-01 04:46:25",
+      "text": "Buy-in increased for SANDEEP: count = 2. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790810184192_74jy",
+      "time": "2026-10-01 04:46:24",
+      "text": "Buy-in increased for RISHI: count = 2. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790810182259_gs7g",
+      "time": "2026-10-01 04:46:22",
+      "text": "Buy-in increased for AKSHAY: count = 2. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790810180567_cqm3",
+      "time": "2026-10-01 04:46:20",
+      "text": "Added \"SANDEEP\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790810176942_n9nm",
+      "time": "2026-10-01 04:46:16",
+      "text": "Added \"RISHI\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790810173675_r04x",
+      "time": "2026-10-01 04:46:13",
+      "text": "Added \"HARI\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790810169692_9o9l",
+      "time": "2026-10-01 04:46:09",
+      "text": "Added \"ABHISHEK\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790810166088_a9mm",
+      "time": "2026-10-01 04:46:06",
+      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790810166086_s8wb",
+      "time": "2026-10-01 04:46:06",
+      "text": "Started new session and claimed host. • by Hari's Macbook"
+    },
     {
       "id": "L_1790810137410_lv13",
       "time": "2026-10-01 04:45:37",
@@ -3642,51 +3727,6 @@
       "id": "L_1789849884189_of9t",
       "time": "2026-09-20 02:01:24",
       "text": "Buy-in increased for GAGAN: count = 6. • by sandeep mac"
-    },
-    {
-      "id": "L_1789842454870_pen8",
-      "time": "2026-09-19 23:57:34",
-      "text": "Buy-in increased for RISHI: count = 4. • by sandeep mac"
-    },
-    {
-      "id": "L_1789841691101_9gzg",
-      "time": "2026-09-19 23:44:51",
-      "text": "Buy-in increased for ABHISHEK: count = 7. • by sandeep mac"
-    },
-    {
-      "id": "L_1789841313032_pxkt",
-      "time": "2026-09-19 23:38:33",
-      "text": "Buy-in increased for MOHINI: count = 7. • by sandeep mac"
-    },
-    {
-      "id": "L_1789837660099_po1p",
-      "time": "2026-09-19 22:37:40",
-      "text": "Buy-in increased for RISHI: count = 3. • by sandeep mac"
-    },
-    {
-      "id": "L_1789837590249_6oll",
-      "time": "2026-09-19 22:36:30",
-      "text": "Buy-in increased for ABHISHEK: count = 6. • by sandeep mac"
-    },
-    {
-      "id": "L_1789837587866_89rb",
-      "time": "2026-09-19 22:36:27",
-      "text": "Buy-in increased for MOHINI: count = 6. • by sandeep mac"
-    },
-    {
-      "id": "L_1789837066730_eiyp",
-      "time": "2026-09-19 22:27:46",
-      "text": "Buy-in increased for MOHINI: count = 5. • by sandeep mac"
-    },
-    {
-      "id": "L_1789835483225_ogtl",
-      "time": "2026-09-19 22:01:23",
-      "text": "Buy-in increased for MOHINI: count = 4. • by sandeep mac"
-    },
-    {
-      "id": "L_1789834410388_03zs",
-      "time": "2026-09-19 21:43:30",
-      "text": "Buy-in increased for ABHISHEK: count = 5. • by sandeep mac"
     }
   ],
   "knownRoster": [
