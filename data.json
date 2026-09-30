@@ -1643,7 +1643,7 @@
     {
       "id": 1790722481479,
       "name": "SANDEEP",
-      "buyIns": 4,
+      "buyIns": 5,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1680,7 +1680,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-30T02:20:22.968Z"
+    "heartbeatAt": "2026-09-30T02:26:55.903Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1698,6 +1698,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790735199271_canf",
+      "time": "2026-09-30 07:56:39",
+      "text": "Buy-in increased for SANDEEP: count = 5. • by sandeep mac"
+    },
     {
       "id": "L_1790734804472_7zis",
       "time": "2026-09-30 07:50:04",
@@ -3692,11 +3697,6 @@
       "id": "L_1789820031752_tv8j",
       "time": "2026-09-19 17:43:51",
       "text": "Added \"SANDEEP\" with 1 buy-in (1000c). • by sandeep mac"
-    },
-    {
-      "id": "L_1789820028019_w22z",
-      "time": "2026-09-19 17:43:48",
-      "text": "Added \"RISHI\" with 1 buy-in (1000c). • by sandeep mac"
     }
   ],
   "knownRoster": [
