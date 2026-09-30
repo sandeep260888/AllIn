@@ -1652,7 +1652,7 @@
       "name": "HARI",
       "buyIns": 4,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 3080
     },
     {
       "id": 1790722501107,
@@ -1666,21 +1666,21 @@
       "name": "KUNAL",
       "buyIns": 3,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 5050
     },
     {
       "id": 1790722523407,
       "name": "RISHI",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 3110
     }
   ],
   "activeSessionId": "S_mun9xhs2mp8cki",
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-30T02:44:40.709Z"
+    "heartbeatAt": "2026-09-30T02:53:15.650Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1698,6 +1698,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790736778646_dsl5",
+      "time": "2026-09-30 08:22:58",
+      "text": "Set final coins for HARI: 3080 coins. • by sandeep mac"
+    },
+    {
+      "id": "L_1790736773081_h1q0",
+      "time": "2026-09-30 08:22:53",
+      "text": "Set final coins for KUNAL: 5050 coins. • by sandeep mac"
+    },
+    {
+      "id": "L_1790736768562_jxuv",
+      "time": "2026-09-30 08:22:48",
+      "text": "Set final coins for RISHI: 3110 coins. • by sandeep mac"
+    },
     {
       "id": "L_1790736263510_djm3",
       "time": "2026-09-30 08:14:23",
@@ -3682,21 +3697,6 @@
       "id": "L_1789823977561_avfe",
       "time": "2026-09-19 18:49:37",
       "text": "Buy-in increased for GAGAN: count = 3. • by sandeep mac"
-    },
-    {
-      "id": "L_1789821811516_u37s",
-      "time": "2026-09-19 18:13:31",
-      "text": "Buy-in increased for SANDEEP: count = 2. • by sandeep mac"
-    },
-    {
-      "id": "L_1789821564031_4med",
-      "time": "2026-09-19 18:09:24",
-      "text": "Buy-in increased for MOHINI: count = 2. • by sandeep mac"
-    },
-    {
-      "id": "L_1789821562065_66ua",
-      "time": "2026-09-19 18:09:22",
-      "text": "Buy-in increased for GAGAN: count = 2. • by sandeep mac"
     }
   ],
   "knownRoster": [
