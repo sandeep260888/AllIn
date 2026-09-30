@@ -1650,7 +1650,7 @@
     {
       "id": 1790722496857,
       "name": "HARI",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1680,7 +1680,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-30T00:05:37.477Z"
+    "heartbeatAt": "2026-09-30T00:23:46.026Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1698,6 +1698,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790727810415_k0jl",
+      "time": "2026-09-30 05:53:30",
+      "text": "Buy-in increased for HARI: count = 2. • by sandeep mac"
+    },
     {
       "id": "L_1790726721541_0ga3",
       "time": "2026-09-30 05:35:21",
@@ -3692,11 +3697,6 @@
       "id": "L_1789819973744_r9q0",
       "time": "2026-09-19 17:42:53",
       "text": "Cleared active session dashboard. • by sandeep mac"
-    },
-    {
-      "id": "L_1789819964086_072q",
-      "time": "2026-09-19 17:42:44",
-      "text": "Took over hosting from Sandeep (inactive 8h+). • by sandeep mac"
     }
   ],
   "knownRoster": [
