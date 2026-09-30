@@ -1643,14 +1643,14 @@
     {
       "id": 1790722481479,
       "name": "SANDEEP",
-      "buyIns": 3,
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
     {
       "id": 1790722496857,
       "name": "HARI",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1680,7 +1680,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-30T00:47:51.610Z"
+    "heartbeatAt": "2026-09-30T02:20:22.968Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1698,6 +1698,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790734804472_7zis",
+      "time": "2026-09-30 07:50:04",
+      "text": "Buy-in increased for HARI: count = 3. • by sandeep mac"
+    },
+    {
+      "id": "L_1790734799039_hak9",
+      "time": "2026-09-30 07:49:59",
+      "text": "Buy-in increased for SANDEEP: count = 4. • by sandeep mac"
+    },
     {
       "id": "L_1790729255452_76gu",
       "time": "2026-09-30 06:17:35",
@@ -3687,16 +3697,6 @@
       "id": "L_1789820028019_w22z",
       "time": "2026-09-19 17:43:48",
       "text": "Added \"RISHI\" with 1 buy-in (1000c). • by sandeep mac"
-    },
-    {
-      "id": "L_1789820023985_7nf7",
-      "time": "2026-09-19 17:43:43",
-      "text": "Added \"RAVI\" with 1 buy-in (1000c). • by sandeep mac"
-    },
-    {
-      "id": "L_1789820017785_e9m2",
-      "time": "2026-09-19 17:43:37",
-      "text": "Added \"MOHINI\" with 1 buy-in (1000c). • by sandeep mac"
     }
   ],
   "knownRoster": [
