@@ -1657,7 +1657,7 @@
     {
       "id": 1790722501107,
       "name": "AKSHAY",
-      "buyIns": 6,
+      "buyIns": 8,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1680,7 +1680,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-30T00:34:45.138Z"
+    "heartbeatAt": "2026-09-30T00:47:51.610Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1698,6 +1698,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790729255452_76gu",
+      "time": "2026-09-30 06:17:35",
+      "text": "Buy-in increased for AKSHAY: count = 8. • by sandeep mac"
+    },
+    {
+      "id": "L_1790729255171_p346",
+      "time": "2026-09-30 06:17:35",
+      "text": "Buy-in increased for AKSHAY: count = 7. • by sandeep mac"
+    },
     {
       "id": "L_1790728469617_by09",
       "time": "2026-09-30 06:04:29",
@@ -3687,16 +3697,6 @@
       "id": "L_1789820017785_e9m2",
       "time": "2026-09-19 17:43:37",
       "text": "Added \"MOHINI\" with 1 buy-in (1000c). • by sandeep mac"
-    },
-    {
-      "id": "L_1789820006540_2yw8",
-      "time": "2026-09-19 17:43:26",
-      "text": "Added \"ALOK\" with 1 buy-in (1000c). • by sandeep mac"
-    },
-    {
-      "id": "L_1789819990784_wchl",
-      "time": "2026-09-19 17:43:10",
-      "text": "Added \"GAGAN\" with 1 buy-in (1000c). • by sandeep mac"
     }
   ],
   "knownRoster": [
