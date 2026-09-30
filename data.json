@@ -1659,28 +1659,28 @@
       "name": "AKSHAY",
       "buyIns": 8,
       "buyInCoins": 1000,
-      "cashOutCoins": 8550
+      "cashOutCoins": 8000
     },
     {
       "id": 1790722506241,
       "name": "KUNAL",
       "buyIns": 3,
       "buyInCoins": 1000,
-      "cashOutCoins": 5050
+      "cashOutCoins": 4800
     },
     {
       "id": 1790722523407,
       "name": "RISHI",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 3110
+      "cashOutCoins": 2888
     }
   ],
   "activeSessionId": "S_mun9xhs2mp8cki",
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-30T02:54:02.336Z"
+    "heartbeatAt": "2026-09-30T02:55:06.978Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1698,6 +1698,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790736890113_1mgk",
+      "time": "2026-09-30 08:24:50",
+      "text": "Set final coins for KUNAL: 4800 coins. • by sandeep mac"
+    },
+    {
+      "id": "L_1790736881263_y7a7",
+      "time": "2026-09-30 08:24:41",
+      "text": "Set final coins for AKSHAY: 8000 coins. • by sandeep mac"
+    },
     {
       "id": "L_1790736826443_zw62",
       "time": "2026-09-30 08:23:46",
@@ -3687,16 +3697,6 @@
       "id": "L_1789829373620_0xsc",
       "time": "2026-09-19 20:19:33",
       "text": "Buy-in increased for ABHISHEK: count = 2. • by sandeep mac"
-    },
-    {
-      "id": "L_1789827502140_tc4s",
-      "time": "2026-09-19 19:48:22",
-      "text": "Buy-in increased for GAGAN: count = 5. • by sandeep mac"
-    },
-    {
-      "id": "L_1789827498959_hiou",
-      "time": "2026-09-19 19:48:18",
-      "text": "Buy-in increased for ALOK: count = 2. • by sandeep mac"
     }
   ],
   "knownRoster": [
