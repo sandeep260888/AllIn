@@ -1713,11 +1713,7 @@
     }
   ],
   "activeSessionId": "S_mun9xhs2mp8cki",
-  "activeHost": {
-    "deviceId": "dev_w3f5ipa6",
-    "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-30T02:55:28.706Z"
-  },
+  "activeHost": null,
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -1734,6 +1730,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790736935447_i6ag",
+      "time": "2026-09-30 08:25:35",
+      "text": "Published session — hosting released automatically. • by sandeep mac"
+    },
+    {
+      "id": "L_1790736934174_ah5s",
+      "time": "2026-09-30 08:25:34",
+      "text": "Pushed live state to GitHub repo. • by sandeep mac"
+    },
     {
       "id": "L_1790736927647_7y70",
       "time": "2026-09-30 08:25:27",
@@ -3723,16 +3729,6 @@
       "id": "L_1789834120903_v6ch",
       "time": "2026-09-19 21:38:40",
       "text": "Buy-in increased for ABHISHEK: count = 4. • by sandeep mac"
-    },
-    {
-      "id": "L_1789832920164_adg1",
-      "time": "2026-09-19 21:18:40",
-      "text": "Buy-in increased for ABHISHEK: count = 3. • by sandeep mac"
-    },
-    {
-      "id": "L_1789831993877_n5zj",
-      "time": "2026-09-19 21:03:13",
-      "text": "Buy-in increased for RAVI: count = 4. • by sandeep mac"
     }
   ],
   "knownRoster": [
