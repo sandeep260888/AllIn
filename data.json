@@ -1659,7 +1659,7 @@
       "name": "AKSHAY",
       "buyIns": 8,
       "buyInCoins": 1000,
-      "cashOutCoins": 5
+      "cashOutCoins": 8550
     },
     {
       "id": 1790722506241,
@@ -1680,7 +1680,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-30T02:53:44.770Z"
+    "heartbeatAt": "2026-09-30T02:54:02.336Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1698,6 +1698,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790736826443_zw62",
+      "time": "2026-09-30 08:23:46",
+      "text": "Set final coins for AKSHAY: 8550 coins. • by sandeep mac"
+    },
     {
       "id": "L_1790736808996_hlc5",
       "time": "2026-09-30 08:23:28",
@@ -3692,11 +3697,6 @@
       "id": "L_1789827498959_hiou",
       "time": "2026-09-19 19:48:18",
       "text": "Buy-in increased for ALOK: count = 2. • by sandeep mac"
-    },
-    {
-      "id": "L_1789826728388_away",
-      "time": "2026-09-19 19:35:28",
-      "text": "Buy-in increased for GAGAN: count = 4. • by sandeep mac"
     }
   ],
   "knownRoster": [
