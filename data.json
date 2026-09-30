@@ -1,6 +1,42 @@
 {
   "savedSessions": [
     {
+      "sessionId": "S_mun9xhs2mp8cki",
+      "date": "2026-09-30T02:55:27.647Z",
+      "entries": [
+        {
+          "name": "SANDEEP",
+          "investedCoins": 6000,
+          "finalCoins": 3200,
+          "netVal": -1400
+        },
+        {
+          "name": "HARI",
+          "investedCoins": 4000,
+          "finalCoins": 3100,
+          "netVal": -450
+        },
+        {
+          "name": "AKSHAY",
+          "investedCoins": 8000,
+          "finalCoins": 8000,
+          "netVal": 0
+        },
+        {
+          "name": "KUNAL",
+          "investedCoins": 3000,
+          "finalCoins": 4800,
+          "netVal": 900
+        },
+        {
+          "name": "RISHI",
+          "investedCoins": 1000,
+          "finalCoins": 2900,
+          "netVal": 950
+        }
+      ]
+    },
+    {
       "sessionId": "S_mulvcns7khxu6z",
       "date": "2026-09-29T02:03:03.584Z",
       "entries": [
@@ -1673,14 +1709,14 @@
       "name": "RISHI",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 2888
+      "cashOutCoins": 2900
     }
   ],
   "activeSessionId": "S_mun9xhs2mp8cki",
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-09-30T02:55:06.978Z"
+    "heartbeatAt": "2026-09-30T02:55:28.706Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1698,6 +1734,41 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790736927647_7y70",
+      "time": "2026-09-30 08:25:27",
+      "text": "Saved session to database. • by sandeep mac"
+    },
+    {
+      "id": "L_1790736916305_1vvq",
+      "time": "2026-09-30 08:25:16",
+      "text": "Settlement: HARI pays KUNAL ₹450.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1790736916302_ees3",
+      "time": "2026-09-30 08:25:16",
+      "text": "Settlement: SANDEEP pays KUNAL ₹450.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1790736916300_kmuz",
+      "time": "2026-09-30 08:25:16",
+      "text": "Settlement: SANDEEP pays RISHI ₹950.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1790736916297_zu02",
+      "time": "2026-09-30 08:25:16",
+      "text": "Settlement calculated (3 transfers). • by sandeep mac"
+    },
+    {
+      "id": "L_1790736916182_dnsq",
+      "time": "2026-09-30 08:25:16",
+      "text": "Set final coins for RISHI: 2900 coins. • by sandeep mac"
+    },
+    {
+      "id": "L_1790736908720_3qn5",
+      "time": "2026-09-30 08:25:08",
+      "text": "Set final coins for RISHI: 2888 coins. • by sandeep mac"
+    },
     {
       "id": "L_1790736890113_1mgk",
       "time": "2026-09-30 08:24:50",
@@ -3662,41 +3733,6 @@
       "id": "L_1789831993877_n5zj",
       "time": "2026-09-19 21:03:13",
       "text": "Buy-in increased for RAVI: count = 4. • by sandeep mac"
-    },
-    {
-      "id": "L_1789830611237_qghg",
-      "time": "2026-09-19 20:40:11",
-      "text": "Buy-in increased for RAVI: count = 3. • by sandeep mac"
-    },
-    {
-      "id": "L_1789830606004_9oi9",
-      "time": "2026-09-19 20:40:06",
-      "text": "Buy-in decreased for RISHI: count = 2. • by sandeep mac"
-    },
-    {
-      "id": "L_1789830600853_f1be",
-      "time": "2026-09-19 20:40:00",
-      "text": "Buy-in increased for RISHI: count = 3. • by sandeep mac"
-    },
-    {
-      "id": "L_1789829849135_7560",
-      "time": "2026-09-19 20:27:29",
-      "text": "Buy-in increased for ALOK: count = 3. • by sandeep mac"
-    },
-    {
-      "id": "L_1789829389765_dcb8",
-      "time": "2026-09-19 20:19:49",
-      "text": "Buy-in decreased for ABHISHEK: count = 2. • by sandeep mac"
-    },
-    {
-      "id": "L_1789829376147_uimu",
-      "time": "2026-09-19 20:19:36",
-      "text": "Buy-in increased for ABHISHEK: count = 3. • by sandeep mac"
-    },
-    {
-      "id": "L_1789829373620_0xsc",
-      "time": "2026-09-19 20:19:33",
-      "text": "Buy-in increased for ABHISHEK: count = 2. • by sandeep mac"
     }
   ],
   "knownRoster": [
