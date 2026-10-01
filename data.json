@@ -1762,11 +1762,7 @@
     }
   ],
   "activeSessionId": "S_muoq4vnolylhgl",
-  "activeHost": {
-    "deviceId": "dev_pt3v9f2c",
-    "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-01T03:05:01.788Z"
-  },
+  "activeHost": null,
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -1777,6 +1773,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790823904691_gnw6",
+      "time": "2026-10-01 08:35:04",
+      "text": "Published session — hosting released automatically. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790823903521_5yue",
+      "time": "2026-10-01 08:35:03",
+      "text": "Pushed live state to GitHub repo. • by Hari's Macbook"
+    },
     {
       "id": "L_1790823900517_8tem",
       "time": "2026-10-01 08:35:00",
@@ -3766,16 +3772,6 @@
       "id": "L_1790186424388_3bey",
       "time": "2026-09-23 23:30:24",
       "text": "Added \"ALOK\" with 1 buy-in (1000c). • by sandeep mac"
-    },
-    {
-      "id": "L_1790186420406_euc8",
-      "time": "2026-09-23 23:30:20",
-      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by sandeep mac"
-    },
-    {
-      "id": "L_1790186420404_uyos",
-      "time": "2026-09-23 23:30:20",
-      "text": "Started new session and claimed host. • by sandeep mac"
     }
   ],
   "knownRoster": [
