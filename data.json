@@ -1695,7 +1695,7 @@
       "name": "HARI",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 6650
     },
     {
       "id": 1790810176942,
@@ -1723,7 +1723,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-01T01:45:52.422Z"
+    "heartbeatAt": "2026-10-01T02:10:48.699Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1735,6 +1735,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790820632249_h7q4",
+      "time": "2026-10-01 07:40:32",
+      "text": "Set final coins for HARI: 6650 coins. • by Hari's Macbook"
+    },
     {
       "id": "L_1790819136015_iguv",
       "time": "2026-10-01 07:15:36",
@@ -3729,11 +3734,6 @@
       "id": "L_1789859932231_ckzx",
       "time": "2026-09-20 04:48:52",
       "text": "Set final coins for MOHINI: 5030 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1789859921149_94v4",
-      "time": "2026-09-20 04:48:41",
-      "text": "Set final coins for ALOK: 10500 coins. • by sandeep mac"
     }
   ],
   "knownRoster": [
