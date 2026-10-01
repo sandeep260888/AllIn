@@ -1686,7 +1686,7 @@
     {
       "id": 1790810169692,
       "name": "ABHISHEK",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1714,7 +1714,7 @@
     {
       "id": 1790815105016,
       "name": "KUNAL",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -1723,7 +1723,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-01T00:39:24.239Z"
+    "heartbeatAt": "2026-10-01T00:53:45.795Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1735,6 +1735,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790816008335_wonn",
+      "time": "2026-10-01 06:23:28",
+      "text": "Buy-in increased for ABHISHEK: count = 2. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790816006719_g86m",
+      "time": "2026-10-01 06:23:26",
+      "text": "Buy-in increased for KUNAL: count = 2. • by Hari's Macbook"
+    },
     {
       "id": "L_1790815147837_oaof",
       "time": "2026-10-01 06:09:07",
@@ -3724,16 +3734,6 @@
       "id": "L_1789859867964_y2hh",
       "time": "2026-09-20 04:47:47",
       "text": "Set final coins for SANDEEP: 10250 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1789859857430_isn2",
-      "time": "2026-09-20 04:47:37",
-      "text": "Set final coins for MOHINI: 4980 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1789859851230_18sy",
-      "time": "2026-09-20 04:47:31",
-      "text": "Set final coins for ALOK: 10500 coins. • by sandeep mac"
     }
   ],
   "knownRoster": [
