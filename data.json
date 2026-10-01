@@ -1681,7 +1681,7 @@
       "name": "AKSHAY",
       "buyIns": 7,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 50000
     },
     {
       "id": 1790810169692,
@@ -1723,7 +1723,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-01T02:58:44.956Z"
+    "heartbeatAt": "2026-10-01T03:00:14.996Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1735,6 +1735,51 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790823598685_ugoq",
+      "time": "2026-10-01 08:29:58",
+      "text": "Settlement: AKSHAY pays HARI ₹810.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790823598683_beep",
+      "time": "2026-10-01 08:29:58",
+      "text": "Settlement: KUNAL pays HARI ₹1500.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790823598681_gh37",
+      "time": "2026-10-01 08:29:58",
+      "text": "Settlement: ABHISHEK pays HARI ₹1035.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790823598680_p7yu",
+      "time": "2026-10-01 08:29:58",
+      "text": "Settlement: ABHISHEK pays RISHI ₹965.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790823598678_khum",
+      "time": "2026-10-01 08:29:58",
+      "text": "Settlement: SANDEEP pays RISHI ₹2925.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790823598676_knr0",
+      "time": "2026-10-01 08:29:58",
+      "text": "Settlement calculated (5 transfers). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790823598570_d0hc",
+      "time": "2026-10-01 08:29:58",
+      "text": "Set final coins for KUNAL: 0 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790823596097_i1lx",
+      "time": "2026-10-01 08:29:56",
+      "text": "Set final coins for ABHISHEK: 0 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790823592477_ppfy",
+      "time": "2026-10-01 08:29:52",
+      "text": "Set final coins for AKSHAY: 5380 coins. • by Hari's Macbook"
+    },
     {
       "id": "L_1790823507407_t3se",
       "time": "2026-10-01 08:28:27",
@@ -3689,51 +3734,6 @@
       "id": "L_1789860171660_svw6",
       "time": "2026-09-20 04:52:51",
       "text": "Settlement: MOHINI pays ALOK ₹985.00 • by Sandeep"
-    },
-    {
-      "id": "L_1789860171659_0hm5",
-      "time": "2026-09-20 04:52:51",
-      "text": "Settlement: RAVI pays ALOK ₹1465.00 • by Sandeep"
-    },
-    {
-      "id": "L_1789860171656_vx2x",
-      "time": "2026-09-20 04:52:51",
-      "text": "Settlement: RISHI pays ALOK ₹800.00 • by Sandeep"
-    },
-    {
-      "id": "L_1789860171653_754d",
-      "time": "2026-09-20 04:52:51",
-      "text": "Settlement: RISHI pays SANDEEP ₹1150.00 • by Sandeep"
-    },
-    {
-      "id": "L_1789860171651_peyt",
-      "time": "2026-09-20 04:52:51",
-      "text": "Settlement: ABHISHEK pays SANDEEP ₹2975.00 • by Sandeep"
-    },
-    {
-      "id": "L_1789860171644_tc7a",
-      "time": "2026-09-20 04:52:51",
-      "text": "Settlement calculated (6 transfers). • by Sandeep"
-    },
-    {
-      "id": "L_1789860112397_s2tb",
-      "time": "2026-09-20 04:51:52",
-      "text": "Random picker chose SANDEEP. • by sandeep mac"
-    },
-    {
-      "id": "L_1789860112231_7qb7",
-      "time": "2026-09-20 04:51:52",
-      "text": "Random picker chose SANDEEP. • by sandeep mac"
-    },
-    {
-      "id": "L_1789860111897_q6lv",
-      "time": "2026-09-20 04:51:51",
-      "text": "Random picker chose RAVI. • by sandeep mac"
-    },
-    {
-      "id": "L_1789860111730_mq9u",
-      "time": "2026-09-20 04:51:51",
-      "text": "Random picker chose SANDEEP. • by sandeep mac"
     }
   ],
   "knownRoster": [
