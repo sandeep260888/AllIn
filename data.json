@@ -1695,7 +1695,7 @@
       "name": "HARI",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 8450
     },
     {
       "id": 1790810176942,
@@ -1723,7 +1723,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-01T02:41:38.304Z"
+    "heartbeatAt": "2026-10-01T02:52:22.227Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1735,6 +1735,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790823125706_jg70",
+      "time": "2026-10-01 08:22:05",
+      "text": "Set final coins for ABHISHEK: 0 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790823119703_a71j",
+      "time": "2026-10-01 08:21:59",
+      "text": "Set final coins for HARI: 8450 coins. • by Hari's Macbook"
+    },
     {
       "id": "L_1790822482807_vsvc",
       "time": "2026-10-01 08:11:22",
@@ -3724,16 +3734,6 @@
       "id": "L_1789860103338_spy5",
       "time": "2026-09-20 04:51:43",
       "text": "Pushed live state to GitHub repo. • by sandeep mac"
-    },
-    {
-      "id": "L_1789860100681_4fi3",
-      "time": "2026-09-20 04:51:40",
-      "text": "Saved session to database. • by sandeep mac"
-    },
-    {
-      "id": "L_1789859979124_daq4",
-      "time": "2026-09-20 04:49:39",
-      "text": "Settlement: GAGAN pays ALOK ₹500.00 • by sandeep mac"
     }
   ],
   "knownRoster": [
