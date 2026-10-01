@@ -1723,7 +1723,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-01T02:53:17.561Z"
+    "heartbeatAt": "2026-10-01T02:58:44.956Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1735,6 +1735,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790823507407_t3se",
+      "time": "2026-10-01 08:28:27",
+      "text": "Set final coins for KUNAL: 0 coins. • by Hari's Macbook"
+    },
     {
       "id": "L_1790823181265_txa1",
       "time": "2026-10-01 08:23:01",
@@ -3729,11 +3734,6 @@
       "id": "L_1789860111730_mq9u",
       "time": "2026-09-20 04:51:51",
       "text": "Random picker chose SANDEEP. • by sandeep mac"
-    },
-    {
-      "id": "L_1789860105531_ki1g",
-      "time": "2026-09-20 04:51:45",
-      "text": "Published session — hosting released automatically. • by sandeep mac"
     }
   ],
   "knownRoster": [
