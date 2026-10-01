@@ -1679,7 +1679,7 @@
     {
       "id": 1790810166088,
       "name": "AKSHAY",
-      "buyIns": 4,
+      "buyIns": 6,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1723,7 +1723,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-01T02:24:15.545Z"
+    "heartbeatAt": "2026-10-01T02:24:41.932Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1735,6 +1735,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790821466043_ypnl",
+      "time": "2026-10-01 07:54:26",
+      "text": "Buy-in increased for AKSHAY: count = 6. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790821465382_c2fz",
+      "time": "2026-10-01 07:54:25",
+      "text": "Buy-in increased for AKSHAY: count = 5. • by Hari's Macbook"
+    },
     {
       "id": "L_1790821439132_jljk",
       "time": "2026-10-01 07:53:59",
@@ -3724,16 +3734,6 @@
       "id": "L_1789859979118_lhn7",
       "time": "2026-09-20 04:49:39",
       "text": "Settlement: ABHISHEK pays SANDEEP ₹2975.00 • by sandeep mac"
-    },
-    {
-      "id": "L_1789859979114_fq6j",
-      "time": "2026-09-20 04:49:39",
-      "text": "Settlement calculated (6 transfers). • by sandeep mac"
-    },
-    {
-      "id": "L_1789859978998_hxi4",
-      "time": "2026-09-20 04:49:38",
-      "text": "Set final coins for RAVI: 1070 coins. • by sandeep mac"
     }
   ],
   "knownRoster": [
