@@ -1717,51 +1717,8 @@
       ]
     }
   ],
-  "activePlayers": [
-    {
-      "id": 1790810166088,
-      "name": "AKSHAY",
-      "buyIns": 7,
-      "buyInCoins": 1000,
-      "cashOutCoins": 5120
-    },
-    {
-      "id": 1790810169692,
-      "name": "ABHISHEK",
-      "buyIns": 4,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1790810173675,
-      "name": "HARI",
-      "buyIns": 1,
-      "buyInCoins": 1000,
-      "cashOutCoins": 8230
-    },
-    {
-      "id": 1790810176942,
-      "name": "RISHI",
-      "buyIns": 3,
-      "buyInCoins": 1000,
-      "cashOutCoins": 10500
-    },
-    {
-      "id": 1790810180567,
-      "name": "SANDEEP",
-      "buyIns": 7,
-      "buyInCoins": 1000,
-      "cashOutCoins": 1150
-    },
-    {
-      "id": 1790815105016,
-      "name": "KUNAL",
-      "buyIns": 3,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    }
-  ],
-  "activeSessionId": "S_muoq4vnolylhgl",
+  "activePlayers": [],
+  "activeSessionId": null,
   "activeHost": null,
   "settings": {
     "coinCount": "2",
@@ -1773,6 +1730,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790898603223_il75",
+      "time": "2026-10-02 05:20:03",
+      "text": "Cleared active session dashboard. • by Hari's Macbook"
+    },
     {
       "id": "L_1790823908050_ow01",
       "time": "2026-10-01 08:35:08",
@@ -3767,11 +3729,6 @@
       "id": "L_1790186441754_uyr0",
       "time": "2026-09-23 23:30:41",
       "text": "Added \"HARSHIT\" with 1 buy-in (1000c). • by sandeep mac"
-    },
-    {
-      "id": "L_1790186437256_hjhl",
-      "time": "2026-09-23 23:30:37",
-      "text": "Added \"GAGAN\" with 1 buy-in (1000c). • by sandeep mac"
     }
   ],
   "knownRoster": [
