@@ -1710,13 +1710,20 @@
       "buyIns": 5,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1790815105016,
+      "name": "KUNAL",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "activeSessionId": "S_muoq4vnolylhgl",
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-01T00:24:36.752Z"
+    "heartbeatAt": "2026-10-01T00:38:41.663Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1728,6 +1735,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790815105016_0ivj",
+      "time": "2026-10-01 06:08:25",
+      "text": "Added \"KUNAL\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
     {
       "id": "L_1790814260186_d4qg",
       "time": "2026-10-01 05:54:20",
@@ -3722,11 +3734,6 @@
       "id": "L_1789859841628_xab2",
       "time": "2026-09-20 04:47:21",
       "text": "Set final coins for RISHI: 1800 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1789859837980_0tva",
-      "time": "2026-09-20 04:47:17",
-      "text": "Set final coins for ALOK: 11500 coins. • by sandeep mac"
     }
   ],
   "knownRoster": [
