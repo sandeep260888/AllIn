@@ -1686,7 +1686,7 @@
     {
       "id": 1790810169692,
       "name": "ABHISHEK",
-      "buyIns": 3,
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1723,7 +1723,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-01T01:24:36.592Z"
+    "heartbeatAt": "2026-10-01T01:44:05.188Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1735,6 +1735,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790819028708_cmya",
+      "time": "2026-10-01 07:13:48",
+      "text": "Buy-in increased for ABHISHEK: count = 4. • by Hari's Macbook"
+    },
     {
       "id": "L_1790817858671_ons3",
       "time": "2026-10-01 06:54:18",
@@ -3729,11 +3734,6 @@
       "id": "L_1789859906998_xae3",
       "time": "2026-09-20 04:48:26",
       "text": "Set final coins for ALOK: 10 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1789859889793_kv5x",
-      "time": "2026-09-20 04:48:09",
-      "text": "Set final coins for ABHISHEK: 2050 coins. • by sandeep mac"
     }
   ],
   "knownRoster": [
