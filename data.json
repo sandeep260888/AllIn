@@ -1723,7 +1723,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-01T02:39:36.503Z"
+    "heartbeatAt": "2026-10-01T02:41:22.891Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1735,6 +1735,26 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790822482807_vsvc",
+      "time": "2026-10-01 08:11:22",
+      "text": "Buy-in decreased for AKSHAY: count = 7. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790822481623_btui",
+      "time": "2026-10-01 08:11:21",
+      "text": "Buy-in decreased for AKSHAY: count = 8. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790822466486_vc8v",
+      "time": "2026-10-01 08:11:06",
+      "text": "Buy-in increased for AKSHAY: count = 9. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790822457819_bo9p",
+      "time": "2026-10-01 08:10:57",
+      "text": "Buy-in increased for AKSHAY: count = 8. • by Hari's Macbook"
+    },
     {
       "id": "L_1790822360076_5bjc",
       "time": "2026-10-01 08:09:20",
@@ -3714,26 +3734,6 @@
       "id": "L_1789859979124_daq4",
       "time": "2026-09-20 04:49:39",
       "text": "Settlement: GAGAN pays ALOK ₹500.00 • by sandeep mac"
-    },
-    {
-      "id": "L_1789859979123_wkov",
-      "time": "2026-09-20 04:49:39",
-      "text": "Settlement: MOHINI pays ALOK ₹985.00 • by sandeep mac"
-    },
-    {
-      "id": "L_1789859979121_5u9w",
-      "time": "2026-09-20 04:49:39",
-      "text": "Settlement: RAVI pays ALOK ₹1465.00 • by sandeep mac"
-    },
-    {
-      "id": "L_1789859979120_puwd",
-      "time": "2026-09-20 04:49:39",
-      "text": "Settlement: RISHI pays ALOK ₹800.00 • by sandeep mac"
-    },
-    {
-      "id": "L_1789859979119_0sl8",
-      "time": "2026-09-20 04:49:39",
-      "text": "Settlement: RISHI pays SANDEEP ₹1150.00 • by sandeep mac"
     }
   ],
   "knownRoster": [
