@@ -1707,7 +1707,7 @@
     {
       "id": 1790810180567,
       "name": "SANDEEP",
-      "buyIns": 4,
+      "buyIns": 5,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -1716,7 +1716,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-01T00:10:49.210Z"
+    "heartbeatAt": "2026-10-01T00:24:36.752Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1728,6 +1728,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790814260186_d4qg",
+      "time": "2026-10-01 05:54:20",
+      "text": "Buy-in increased for SANDEEP: count = 5. • by Hari's Macbook"
+    },
     {
       "id": "L_1790813432803_1tdp",
       "time": "2026-10-01 05:40:32",
@@ -3722,11 +3727,6 @@
       "id": "L_1789859837980_0tva",
       "time": "2026-09-20 04:47:17",
       "text": "Set final coins for ALOK: 11500 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1789859824995_jaan",
-      "time": "2026-09-20 04:47:04",
-      "text": "Set final coins for RAVI: 610 coins. • by sandeep mac"
     }
   ],
   "knownRoster": [
