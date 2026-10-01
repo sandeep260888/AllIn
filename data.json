@@ -1681,7 +1681,7 @@
       "name": "AKSHAY",
       "buyIns": 7,
       "buyInCoins": 1000,
-      "cashOutCoins": 50000
+      "cashOutCoins": 5120
     },
     {
       "id": 1790810169692,
@@ -1723,7 +1723,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-01T03:00:14.996Z"
+    "heartbeatAt": "2026-10-01T03:00:43.220Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1735,6 +1735,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790823627490_j2bw",
+      "time": "2026-10-01 08:30:27",
+      "text": "Set final coins for AKSHAY: 5120 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790823623280_f5i8",
+      "time": "2026-10-01 08:30:23",
+      "text": "Set final coins for KUNAL: 0 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790823616989_xzl5",
+      "time": "2026-10-01 08:30:16",
+      "text": "Set final coins for AKSHAY: 5000 coins. • by Hari's Macbook"
+    },
     {
       "id": "L_1790823598685_ugoq",
       "time": "2026-10-01 08:29:58",
@@ -3719,21 +3734,6 @@
       "id": "L_1789886291939_o8vz",
       "time": "2026-09-20 12:08:11",
       "text": "Random picker chose SANDEEP. • by Sandeep"
-    },
-    {
-      "id": "L_1789886291746_fi5h",
-      "time": "2026-09-20 12:08:11",
-      "text": "Random picker chose RISHI. • by Sandeep"
-    },
-    {
-      "id": "L_1789860171661_6rgy",
-      "time": "2026-09-20 04:52:51",
-      "text": "Settlement: GAGAN pays ALOK ₹500.00 • by Sandeep"
-    },
-    {
-      "id": "L_1789860171660_svw6",
-      "time": "2026-09-20 04:52:51",
-      "text": "Settlement: MOHINI pays ALOK ₹985.00 • by Sandeep"
     }
   ],
   "knownRoster": [
