@@ -1707,7 +1707,7 @@
     {
       "id": 1790810180567,
       "name": "SANDEEP",
-      "buyIns": 6,
+      "buyIns": 7,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1723,7 +1723,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-01T00:58:02.894Z"
+    "heartbeatAt": "2026-10-01T01:24:36.592Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1735,6 +1735,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790817858671_ons3",
+      "time": "2026-10-01 06:54:18",
+      "text": "Buy-in increased for SANDEEP: count = 7. • by Hari's Macbook"
+    },
     {
       "id": "L_1790816265925_6g63",
       "time": "2026-10-01 06:27:45",
@@ -3729,11 +3734,6 @@
       "id": "L_1789859889793_kv5x",
       "time": "2026-09-20 04:48:09",
       "text": "Set final coins for ABHISHEK: 2050 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1789859872297_suq2",
-      "time": "2026-09-20 04:47:52",
-      "text": "Set final coins for GAGAN: 5000 coins. • by sandeep mac"
     }
   ],
   "knownRoster": [
