@@ -1702,7 +1702,7 @@
       "name": "RISHI",
       "buyIns": 3,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 10780
     },
     {
       "id": 1790810180567,
@@ -1723,7 +1723,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-01T02:52:22.227Z"
+    "heartbeatAt": "2026-10-01T02:53:17.561Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1735,6 +1735,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790823181265_txa1",
+      "time": "2026-10-01 08:23:01",
+      "text": "Set final coins for RISHI: 10780 coins. • by Hari's Macbook"
+    },
     {
       "id": "L_1790823125706_jg70",
       "time": "2026-10-01 08:22:05",
@@ -3729,11 +3734,6 @@
       "id": "L_1789860105531_ki1g",
       "time": "2026-09-20 04:51:45",
       "text": "Published session — hosting released automatically. • by sandeep mac"
-    },
-    {
-      "id": "L_1789860103338_spy5",
-      "time": "2026-09-20 04:51:43",
-      "text": "Pushed live state to GitHub repo. • by sandeep mac"
     }
   ],
   "knownRoster": [
