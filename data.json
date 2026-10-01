@@ -1,6 +1,48 @@
 {
   "savedSessions": [
     {
+      "sessionId": "S_muoq4vnolylhgl",
+      "date": "2026-10-01T03:05:00.516Z",
+      "entries": [
+        {
+          "name": "AKSHAY",
+          "investedCoins": 7000,
+          "finalCoins": 5120,
+          "netVal": -940
+        },
+        {
+          "name": "ABHISHEK",
+          "investedCoins": 4000,
+          "finalCoins": 0,
+          "netVal": -2000
+        },
+        {
+          "name": "HARI",
+          "investedCoins": 1000,
+          "finalCoins": 8230,
+          "netVal": 3615
+        },
+        {
+          "name": "RISHI",
+          "investedCoins": 3000,
+          "finalCoins": 10500,
+          "netVal": 3750
+        },
+        {
+          "name": "SANDEEP",
+          "investedCoins": 7000,
+          "finalCoins": 1150,
+          "netVal": -2925
+        },
+        {
+          "name": "KUNAL",
+          "investedCoins": 3000,
+          "finalCoins": 0,
+          "netVal": -1500
+        }
+      ]
+    },
+    {
       "sessionId": "S_mun9xhs2mp8cki",
       "date": "2026-09-30T02:55:27.647Z",
       "entries": [
@@ -1723,7 +1765,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-01T03:04:54.707Z"
+    "heartbeatAt": "2026-10-01T03:05:01.788Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1735,6 +1777,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790823900517_8tem",
+      "time": "2026-10-01 08:35:00",
+      "text": "Saved session to database. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790823896702_xm59",
+      "time": "2026-10-01 08:34:56",
+      "text": "Set final coins for HARI: 8230 coins. • by Hari's Macbook"
+    },
     {
       "id": "L_1790823878196_zwor",
       "time": "2026-10-01 08:34:38",
@@ -3724,16 +3776,6 @@
       "id": "L_1790186420404_uyos",
       "time": "2026-09-23 23:30:20",
       "text": "Started new session and claimed host. • by sandeep mac"
-    },
-    {
-      "id": "L_1790186412312_7e9w",
-      "time": "2026-09-23 23:30:12",
-      "text": "Cleared active session dashboard. • by sandeep mac"
-    },
-    {
-      "id": "L_1790186371509_6izr",
-      "time": "2026-09-23 23:29:31",
-      "text": "Cleared active session dashboard. • by sandeep mac"
     }
   ],
   "knownRoster": [
