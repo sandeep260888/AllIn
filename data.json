@@ -1695,14 +1695,14 @@
       "name": "HARI",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 8450
+      "cashOutCoins": 8230
     },
     {
       "id": 1790810176942,
       "name": "RISHI",
       "buyIns": 3,
       "buyInCoins": 1000,
-      "cashOutCoins": 10780
+      "cashOutCoins": 10500
     },
     {
       "id": 1790810180567,
@@ -1723,7 +1723,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-01T03:02:43.815Z"
+    "heartbeatAt": "2026-10-01T03:04:54.707Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1735,6 +1735,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790823878196_zwor",
+      "time": "2026-10-01 08:34:38",
+      "text": "Set final coins for HARI: 8200 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790823872379_g9go",
+      "time": "2026-10-01 08:34:32",
+      "text": "Set final coins for RISHI: 10500 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790823765319_ooxa",
+      "time": "2026-10-01 08:32:45",
+      "text": "Pushed live state to GitHub repo. • by Hari's Macbook"
+    },
     {
       "id": "L_1790823734730_agrs",
       "time": "2026-10-01 08:32:14",
@@ -3719,21 +3734,6 @@
       "id": "L_1790186371509_6izr",
       "time": "2026-09-23 23:29:31",
       "text": "Cleared active session dashboard. • by sandeep mac"
-    },
-    {
-      "id": "L_1790019352053_6dtp",
-      "time": "2026-09-22 01:05:52",
-      "text": "Random picker chose ABHISHEK. • by Sandeep"
-    },
-    {
-      "id": "L_1790019351519_g8k7",
-      "time": "2026-09-22 01:05:51",
-      "text": "Random picker chose GAGAN. • by Sandeep"
-    },
-    {
-      "id": "L_1790019351020_wlwk",
-      "time": "2026-09-22 01:05:51",
-      "text": "Random picker chose RISHI. • by Sandeep"
     }
   ],
   "knownRoster": [
