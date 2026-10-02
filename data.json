@@ -1751,7 +1751,7 @@
       "name": "HARI",
       "buyIns": 5,
       "buyInCoins": 1000,
-      "cashOutCoins": 15670
+      "cashOutCoins": 15600
     },
     {
       "id": 1790898918413,
@@ -1772,7 +1772,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-02T07:30:45.050Z"
+    "heartbeatAt": "2026-10-02T07:31:30.263Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1784,6 +1784,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790926274616_wuyc",
+      "time": "2026-10-02 13:01:14",
+      "text": "Set final coins for KUNAL: 0 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790926266407_av2k",
+      "time": "2026-10-02 13:01:06",
+      "text": "Set final coins for HARI: 15600 coins. • by Hari's Macbook"
+    },
     {
       "id": "L_1790926228542_62ip",
       "time": "2026-10-02 13:00:28",
@@ -3773,16 +3783,6 @@
       "id": "L_1790216771213_mvb2",
       "time": "2026-09-24 07:56:11",
       "text": "Set final coins for KUNAL: 0 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1790216754569_nqdq",
-      "time": "2026-09-24 07:55:54",
-      "text": "Set final coins for GAGAN: 5000 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1790216736828_v4ny",
-      "time": "2026-09-24 07:55:36",
-      "text": "Set final coins for HARSHIT: 2370 coins. • by sandeep mac"
     }
   ],
   "knownRoster": [
