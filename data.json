@@ -1765,14 +1765,14 @@
       "name": "RAM",
       "buyIns": 9,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 3090
     }
   ],
   "activeSessionId": "S_muq6t6ospnnyzf",
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-02T04:23:52.535Z"
+    "heartbeatAt": "2026-10-02T04:48:24.439Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1784,6 +1784,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790916487867_rkdc",
+      "time": "2026-10-02 10:18:07",
+      "text": "Set final coins for RAM: 3090 coins. • by Hari's Macbook"
+    },
     {
       "id": "L_1790915016621_j6p5",
       "time": "2026-10-02 09:53:36",
@@ -3778,11 +3783,6 @@
       "id": "L_1790208949579_hvtu",
       "time": "2026-09-24 05:45:49",
       "text": "Buy-in increased for HARI: count = 9. • by sandeep mac"
-    },
-    {
-      "id": "L_1790208948480_wbnq",
-      "time": "2026-09-24 05:45:48",
-      "text": "Buy-in increased for AKSHAY: count = 10. • by sandeep mac"
     }
   ],
   "knownRoster": [
