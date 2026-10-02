@@ -1749,7 +1749,7 @@
     {
       "id": 1790898658980,
       "name": "HARI",
-      "buyIns": 3,
+      "buyIns": 5,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1772,7 +1772,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-02T03:27:23.796Z"
+    "heartbeatAt": "2026-10-02T04:00:13.069Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1784,6 +1784,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790913596905_a0qg",
+      "time": "2026-10-02 09:29:56",
+      "text": "Buy-in increased for HARI: count = 5. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790913595206_yc5b",
+      "time": "2026-10-02 09:29:55",
+      "text": "Buy-in increased for HARI: count = 4. • by Hari's Macbook"
+    },
     {
       "id": "L_1790911627827_rei8",
       "time": "2026-10-02 08:57:07",
@@ -3773,16 +3783,6 @@
       "id": "L_1790208556775_9y90",
       "time": "2026-09-24 05:39:16",
       "text": "Random picker chose AKSHAY. • by sandeep mac"
-    },
-    {
-      "id": "L_1790208556558_3268",
-      "time": "2026-09-24 05:39:16",
-      "text": "Random picker chose HARI. • by sandeep mac"
-    },
-    {
-      "id": "L_1790208556236_xet8",
-      "time": "2026-09-24 05:39:16",
-      "text": "Random picker chose HARI. • by sandeep mac"
     }
   ],
   "knownRoster": [
