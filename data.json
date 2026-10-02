@@ -1730,21 +1730,21 @@
       "name": "SANDEEP",
       "buyIns": 6,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 7500
     },
     {
       "id": 1790898649284,
       "name": "GAGAN",
       "buyIns": 10,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 4650
     },
     {
       "id": 1790898655880,
       "name": "RISHI",
       "buyIns": 4,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 13660
     },
     {
       "id": 1790898658980,
@@ -1772,7 +1772,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-02T07:31:56.571Z"
+    "heartbeatAt": "2026-10-02T07:33:07.450Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1784,6 +1784,26 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790926371668_4ixq",
+      "time": "2026-10-02 13:02:51",
+      "text": "Set final coins for SANDEEP: 7500 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790926358201_3j3s",
+      "time": "2026-10-02 13:02:38",
+      "text": "Set final coins for KUNAL: 0 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790926356197_r5az",
+      "time": "2026-10-02 13:02:36",
+      "text": "Set final coins for GAGAN: 4650 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790926343928_oopu",
+      "time": "2026-10-02 13:02:23",
+      "text": "Set final coins for RISHI: 13660 coins. • by Hari's Macbook"
+    },
     {
       "id": "L_1790926301144_48zy",
       "time": "2026-10-02 13:01:41",
@@ -3763,26 +3783,6 @@
       "id": "L_1790216832269_gczv",
       "time": "2026-09-24 07:57:12",
       "text": "Settlement: HARI pays RISHI ₹3575.00 • by sandeep mac"
-    },
-    {
-      "id": "L_1790216832265_ndkr",
-      "time": "2026-09-24 07:57:12",
-      "text": "Settlement calculated (6 transfers). • by sandeep mac"
-    },
-    {
-      "id": "L_1790216831715_4xq5",
-      "time": "2026-09-24 07:57:11",
-      "text": "Set final coins for KUNAL: 10910 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1790216814465_dcn9",
-      "time": "2026-09-24 07:56:54",
-      "text": "Set final coins for RISHI: 11150 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1790216803597_lz8o",
-      "time": "2026-09-24 07:56:43",
-      "text": "Set final coins for KUNAL: 10900 coins. • by sandeep mac"
     }
   ],
   "knownRoster": [
