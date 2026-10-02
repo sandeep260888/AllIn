@@ -1763,7 +1763,7 @@
     {
       "id": 1790899562466,
       "name": "RAM",
-      "buyIns": 5,
+      "buyIns": 6,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -1772,7 +1772,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-02T01:35:49.901Z"
+    "heartbeatAt": "2026-10-02T01:47:34.143Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1784,6 +1784,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790905638402_w1yg",
+      "time": "2026-10-02 07:17:18",
+      "text": "Buy-in increased for RAM: count = 6. • by Hari's Macbook"
+    },
     {
       "id": "L_1790904934279_q8eg",
       "time": "2026-10-02 07:05:34",
@@ -3778,11 +3783,6 @@
       "id": "L_1790197742058_hekr",
       "time": "2026-09-24 02:39:02",
       "text": "Buy-in increased for KUNAL: count = 3. • by sandeep mac"
-    },
-    {
-      "id": "L_1790197617206_ywz7",
-      "time": "2026-09-24 02:36:57",
-      "text": "Buy-in increased for HARI: count = 2. • by sandeep mac"
     }
   ],
   "knownRoster": [
