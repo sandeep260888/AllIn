@@ -1756,7 +1756,7 @@
     {
       "id": 1790898918413,
       "name": "KUNAL",
-      "buyIns": 4,
+      "buyIns": 6,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1772,7 +1772,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-02T06:33:33.438Z"
+    "heartbeatAt": "2026-10-02T06:57:36.063Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1784,6 +1784,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790924239669_0nqb",
+      "time": "2026-10-02 12:27:19",
+      "text": "Buy-in increased for KUNAL: count = 6. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1790924228170_v9z6",
+      "time": "2026-10-02 12:27:08",
+      "text": "Buy-in increased for KUNAL: count = 5. • by Hari's Macbook"
+    },
     {
       "id": "L_1790922797690_jy6o",
       "time": "2026-10-02 12:03:17",
@@ -3773,16 +3783,6 @@
       "id": "L_1790216733232_dzt1",
       "time": "2026-09-24 07:55:33",
       "text": "Set final coins for SANDEEP: 8940 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1790216729663_cghc",
-      "time": "2026-09-24 07:55:29",
-      "text": "Set final coins for ALOK: 8630 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1790216721099_mmno",
-      "time": "2026-09-24 07:55:21",
-      "text": "Set final coins for KUNAL: 9400 coins. • by sandeep mac"
     }
   ],
   "knownRoster": [
