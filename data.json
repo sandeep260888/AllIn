@@ -1,6 +1,54 @@
 {
   "savedSessions": [
     {
+      "sessionId": "S_muq6t6ospnnyzf",
+      "date": "2026-10-02T07:36:07.054Z",
+      "entries": [
+        {
+          "name": "AKSHAY",
+          "investedCoins": 8000,
+          "finalCoins": 2500,
+          "netVal": -2750
+        },
+        {
+          "name": "SANDEEP",
+          "investedCoins": 6000,
+          "finalCoins": 7600,
+          "netVal": 800
+        },
+        {
+          "name": "GAGAN",
+          "investedCoins": 10000,
+          "finalCoins": 5350,
+          "netVal": -2325
+        },
+        {
+          "name": "RISHI",
+          "investedCoins": 4000,
+          "finalCoins": 13660,
+          "netVal": 4830
+        },
+        {
+          "name": "HARI",
+          "investedCoins": 5000,
+          "finalCoins": 15800,
+          "netVal": 5400
+        },
+        {
+          "name": "KUNAL",
+          "investedCoins": 6000,
+          "finalCoins": 0,
+          "netVal": -3000
+        },
+        {
+          "name": "RAM",
+          "investedCoins": 9000,
+          "finalCoins": 3090,
+          "netVal": -2955
+        }
+      ]
+    },
+    {
       "sessionId": "S_muoq4vnolylhgl",
       "date": "2026-10-01T03:05:00.516Z",
       "entries": [
@@ -1772,7 +1820,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-02T07:35:55.697Z"
+    "heartbeatAt": "2026-10-02T07:36:08.902Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1784,6 +1832,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790926567055_5806",
+      "time": "2026-10-02 13:06:07",
+      "text": "Saved session to database. • by Hari's Macbook"
+    },
     {
       "id": "L_1790926544517_bwds",
       "time": "2026-10-02 13:05:44",
@@ -3778,11 +3831,6 @@
       "id": "L_1790380752877_4xs9",
       "time": "2026-09-26 05:29:12",
       "text": "Added \"ABHISHEK\" with 1 buy-in (1000c). • by Sandeep"
-    },
-    {
-      "id": "L_1790380747120_qlqt",
-      "time": "2026-09-26 05:29:07",
-      "text": "Added \"HARI\" with 1 buy-in (1000c). • by Sandeep"
     }
   ],
   "knownRoster": [
