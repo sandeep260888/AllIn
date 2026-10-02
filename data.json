@@ -1759,13 +1759,20 @@
       "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1790899562466,
+      "name": "RAM",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "activeSessionId": "S_muq6t6ospnnyzf",
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-01T23:55:34.662Z"
+    "heartbeatAt": "2026-10-02T00:06:18.558Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1777,6 +1784,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790899562466_japz",
+      "time": "2026-10-02 05:36:02",
+      "text": "Added \"RAM\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
     {
       "id": "L_1790898918413_cfos",
       "time": "2026-10-02 05:25:18",
@@ -3771,11 +3783,6 @@
       "id": "L_1790192256738_i9jx",
       "time": "2026-09-24 01:07:36",
       "text": "Buy-in increased for AKSHAY: count = 3. • by sandeep mac"
-    },
-    {
-      "id": "L_1790187754399_7lj3",
-      "time": "2026-09-23 23:52:34",
-      "text": "Buy-in increased for ALOK: count = 3. • by sandeep mac"
     }
   ],
   "knownRoster": [
@@ -3787,6 +3794,7 @@
     "AKSHAY",
     "RAVI",
     "GAGAN",
-    "ALOK"
+    "ALOK",
+    "RAM"
   ]
 }
