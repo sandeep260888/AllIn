@@ -1728,7 +1728,7 @@
     {
       "id": 1790898644318,
       "name": "SANDEEP",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1772,7 +1772,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-02T00:21:33.045Z"
+    "heartbeatAt": "2026-10-02T00:32:04.936Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1784,6 +1784,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1790901108170_dzn3",
+      "time": "2026-10-02 06:01:48",
+      "text": "Buy-in increased for SANDEEP: count = 3. • by Hari's Macbook"
+    },
     {
       "id": "L_1790900476942_nts3",
       "time": "2026-10-02 05:51:16",
@@ -3778,11 +3783,6 @@
       "id": "L_1790192357033_ll48",
       "time": "2026-09-24 01:09:17",
       "text": "Buy-in increased for KUNAL: count = 2. • by sandeep mac"
-    },
-    {
-      "id": "L_1790192345816_zwi9",
-      "time": "2026-09-24 01:09:05",
-      "text": "Buy-in increased for HARSHIT: count = 2. • by sandeep mac"
     }
   ],
   "knownRoster": [
