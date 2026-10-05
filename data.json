@@ -1803,46 +1803,32 @@
   ],
   "activePlayers": [
     {
-      "id": 1790722481479,
-      "name": "SANDEEP",
-      "buyIns": 6,
-      "buyInCoins": 1000,
-      "cashOutCoins": 3200
-    },
-    {
-      "id": 1790722496857,
-      "name": "HARI",
-      "buyIns": 4,
-      "buyInCoins": 1000,
-      "cashOutCoins": 3100
-    },
-    {
-      "id": 1790722501107,
+      "id": 1791239432944,
       "name": "AKSHAY",
-      "buyIns": 8,
+      "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 8000
+      "cashOutCoins": 0
     },
     {
-      "id": 1790722506241,
-      "name": "KUNAL",
-      "buyIns": 3,
+      "id": 1791239437308,
+      "name": "SHUBHAM",
+      "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 4800
+      "cashOutCoins": 0
     },
     {
-      "id": 1790722523407,
+      "id": 1791239441625,
       "name": "RISHI",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 2900
+      "cashOutCoins": 0
     }
   ],
-  "activeSessionId": "S_mun9xhs2mp8cki",
+  "activeSessionId": "S_muvtpk31osk3xh",
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-05T22:30:23.011Z"
+    "heartbeatAt": "2026-10-05T22:30:42.062Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1860,6 +1846,31 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791239441625_z0h1",
+      "time": "2026-10-06 04:00:41",
+      "text": "Added \"RISHI\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1791239437308_ekcz",
+      "time": "2026-10-06 04:00:37",
+      "text": "Added \"SHUBHAM\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1791239432944_tavc",
+      "time": "2026-10-06 04:00:32",
+      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1791239432941_8n58",
+      "time": "2026-10-06 04:00:32",
+      "text": "Started new session and claimed host. • by sandeep mac"
+    },
+    {
+      "id": "L_1791239426648_kyl3",
+      "time": "2026-10-06 04:00:26",
+      "text": "Cleared active session dashboard. • by sandeep mac"
+    },
     {
       "id": "L_1791239406058_kv7b",
       "time": "2026-10-06 04:00:06",
@@ -3834,31 +3845,6 @@
       "id": "L_1790386286447_dw9d",
       "time": "2026-09-26 07:01:26",
       "text": "Buy-in increased for HARI: count = 7. • by Sandeep"
-    },
-    {
-      "id": "L_1790386286005_wr8q",
-      "time": "2026-09-26 07:01:26",
-      "text": "Buy-in increased for HARI: count = 6. • by Sandeep"
-    },
-    {
-      "id": "L_1790385653040_eu6a",
-      "time": "2026-09-26 06:50:53",
-      "text": "Buy-in increased for HARI: count = 5. • by Sandeep"
-    },
-    {
-      "id": "L_1790384392332_8f6o",
-      "time": "2026-09-26 06:29:52",
-      "text": "Buy-in increased for HARI: count = 4. • by Sandeep"
-    },
-    {
-      "id": "L_1790382890199_qge4",
-      "time": "2026-09-26 06:04:50",
-      "text": "Buy-in increased for RISHI: count = 3. • by Sandeep"
-    },
-    {
-      "id": "L_1790382197552_3oud",
-      "time": "2026-09-26 05:53:17",
-      "text": "Buy-in increased for RISHI: count = 2. • by Sandeep"
     }
   ],
   "knownRoster": [
