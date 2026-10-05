@@ -1826,7 +1826,7 @@
     {
       "id": 1791239447708,
       "name": "HARI",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1842,7 +1842,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-05T22:31:09.973Z"
+    "heartbeatAt": "2026-10-05T22:33:56.052Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1860,6 +1860,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791239620140_cxyy",
+      "time": "2026-10-06 04:03:40",
+      "text": "Buy-in increased for HARI: count = 2. • by sandeep mac"
+    },
     {
       "id": "L_1791239454391_07h7",
       "time": "2026-10-06 04:00:54",
@@ -3854,11 +3859,6 @@
       "id": "L_1790390398213_m0j1",
       "time": "2026-09-26 08:09:58",
       "text": "Set final coins for RISHI: 8000 coins. • by Sandeep"
-    },
-    {
-      "id": "L_1790390334814_2l7l",
-      "time": "2026-09-26 08:08:54",
-      "text": "Set final coins for ABHISHEK: 2550 coins. • by Sandeep"
     }
   ],
   "knownRoster": [
