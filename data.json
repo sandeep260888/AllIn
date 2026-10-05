@@ -1814,7 +1814,7 @@
       "name": "SHUBHAM",
       "buyIns": 2,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 1000
     },
     {
       "id": 1791239441625,
@@ -1849,7 +1849,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-05T23:38:44.326Z"
+    "heartbeatAt": "2026-10-05T23:45:19.763Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1867,6 +1867,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791243903884_l6c5",
+      "time": "2026-10-06 05:15:03",
+      "text": "Set final coins for SHUBHAM: 1000 coins. • by sandeep mac"
+    },
     {
       "id": "L_1791243508527_b9bn",
       "time": "2026-10-06 05:08:28",
@@ -3860,11 +3865,6 @@
     {
       "id": "L_1790390749122_nbpg",
       "time": "2026-09-26 08:15:49",
-      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
-    },
-    {
-      "id": "L_1790390748932_zk2r",
-      "time": "2026-09-26 08:15:48",
       "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
     }
   ],
