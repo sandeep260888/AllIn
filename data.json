@@ -1812,7 +1812,7 @@
     {
       "id": 1791239437308,
       "name": "SHUBHAM",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1822,13 +1822,27 @@
       "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1791239447708,
+      "name": "HARI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1791239451891,
+      "name": "SANDEEP",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "activeSessionId": "S_muvtpk31osk3xh",
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-05T22:30:42.062Z"
+    "heartbeatAt": "2026-10-05T22:30:57.111Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1846,6 +1860,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791239454391_07h7",
+      "time": "2026-10-06 04:00:54",
+      "text": "Buy-in increased for SHUBHAM: count = 2. • by sandeep mac"
+    },
+    {
+      "id": "L_1791239451891_2g5g",
+      "time": "2026-10-06 04:00:51",
+      "text": "Added \"SANDEEP\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1791239447708_xym7",
+      "time": "2026-10-06 04:00:47",
+      "text": "Added \"HARI\" with 1 buy-in (1000c). • by sandeep mac"
+    },
     {
       "id": "L_1791239441625_z0h1",
       "time": "2026-10-06 04:00:41",
@@ -3830,21 +3859,6 @@
       "id": "L_1790390334814_2l7l",
       "time": "2026-09-26 08:08:54",
       "text": "Set final coins for ABHISHEK: 2550 coins. • by Sandeep"
-    },
-    {
-      "id": "L_1790390312731_t4mb",
-      "time": "2026-09-26 08:08:32",
-      "text": "Set final coins for HARI: 2000 coins. • by Sandeep"
-    },
-    {
-      "id": "L_1790390257981_osee",
-      "time": "2026-09-26 08:07:37",
-      "text": "Set final coins for SANDEEP: 1540 coins. • by Sandeep"
-    },
-    {
-      "id": "L_1790386286447_dw9d",
-      "time": "2026-09-26 07:01:26",
-      "text": "Buy-in increased for HARI: count = 7. • by Sandeep"
     }
   ],
   "knownRoster": [
