@@ -1799,14 +1799,14 @@
       "name": "RISHI",
       "buyIns": 3,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 2240
     }
   ],
   "activeSessionId": "S_muufl0pv7fwvd3",
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-05T01:42:17.235Z"
+    "heartbeatAt": "2026-10-05T01:43:43.573Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1818,6 +1818,56 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791164610672_ji79",
+      "time": "2026-10-05 07:13:30",
+      "text": "Settlement: RISHI pays AKSHAY ₹380.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1791164610671_ci1l",
+      "time": "2026-10-05 07:13:30",
+      "text": "Settlement: ABHISHEK pays AKSHAY ₹1000.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1791164610669_f9ju",
+      "time": "2026-10-05 07:13:30",
+      "text": "Settlement: HARI pays AKSHAY ₹20.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1791164610667_a08r",
+      "time": "2026-10-05 07:13:30",
+      "text": "Settlement: HARI pays SANDEEP ₹1955.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1791164610663_zqq1",
+      "time": "2026-10-05 07:13:30",
+      "text": "Settlement calculated (4 transfers). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1791164607092_unf7",
+      "time": "2026-10-05 07:13:27",
+      "text": "Set final coins for RISHI: 2240 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1791164538762_rn98",
+      "time": "2026-10-05 07:12:18",
+      "text": "Random picker chose ABHISHEK. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1791164538579_v9x8",
+      "time": "2026-10-05 07:12:18",
+      "text": "Random picker chose RISHI. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1791164538396_wnns",
+      "time": "2026-10-05 07:12:18",
+      "text": "Random picker chose SANDEEP. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1791164538205_jbwj",
+      "time": "2026-10-05 07:12:18",
+      "text": "Random picker chose RISHI. • by Hari's Macbook"
+    },
     {
       "id": "L_1791164521313_klov",
       "time": "2026-10-05 07:12:01",
@@ -3766,56 +3816,6 @@
     {
       "id": "L_1790390784538_oi0b",
       "time": "2026-09-26 08:16:24",
-      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
-    },
-    {
-      "id": "L_1790390784531_xzc2",
-      "time": "2026-09-26 08:16:24",
-      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
-    },
-    {
-      "id": "L_1790390784508_j3d0",
-      "time": "2026-09-26 08:16:24",
-      "text": "Updated existing session in database. • by Sandeep"
-    },
-    {
-      "id": "L_1790390780039_3vqa",
-      "time": "2026-09-26 08:16:20",
-      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
-    },
-    {
-      "id": "L_1790390771845_vcr4",
-      "time": "2026-09-26 08:16:11",
-      "text": "Saved session to database. • by Sandeep"
-    },
-    {
-      "id": "L_1790390761526_zjhn",
-      "time": "2026-09-26 08:16:01",
-      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
-    },
-    {
-      "id": "L_1790390760940_fhjl",
-      "time": "2026-09-26 08:16:00",
-      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
-    },
-    {
-      "id": "L_1790390760685_td5t",
-      "time": "2026-09-26 08:16:00",
-      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
-    },
-    {
-      "id": "L_1790390760551_wwh8",
-      "time": "2026-09-26 08:16:00",
-      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
-    },
-    {
-      "id": "L_1790390760514_grkt",
-      "time": "2026-09-26 08:16:00",
-      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
-    },
-    {
-      "id": "L_1790390760255_ht0t",
-      "time": "2026-09-26 08:16:00",
       "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
     }
   ],
