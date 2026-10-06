@@ -1905,7 +1905,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-06T20:09:13.369Z"
+    "heartbeatAt": "2026-10-06T20:13:39.089Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1923,6 +1923,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791317602974_nib2",
+      "time": "2026-10-07 01:43:22",
+      "text": "Buy-in decreased for MOHINI: count = 1. • by sandeep mac"
+    },
+    {
+      "id": "L_1791317590125_jhz7",
+      "time": "2026-10-07 01:43:10",
+      "text": "Buy-in increased for MOHINI: count = 2. • by sandeep mac"
+    },
     {
       "id": "L_1791317337776_h480",
       "time": "2026-10-07 01:38:57",
@@ -3912,16 +3922,6 @@
       "id": "L_1790390935020_bgmx",
       "time": "2026-09-26 08:18:55",
       "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
-    },
-    {
-      "id": "L_1790390930286_cfju",
-      "time": "2026-09-26 08:18:50",
-      "text": "Auto-push failed: is at f14c239ce714f7fa80f1f3bf3857486a9bb16a03 but expected d7d375327a63c740882b2af38ec124890ad77791 • by Sandeep"
-    },
-    {
-      "id": "L_1790390927942_jqw6",
-      "time": "2026-09-26 08:18:47",
-      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
     }
   ],
   "knownRoster": [
