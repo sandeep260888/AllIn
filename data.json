@@ -1861,14 +1861,14 @@
     {
       "id": 1791311541047,
       "name": "ALOK",
-      "buyIns": 3,
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
     {
       "id": 1791311544628,
       "name": "SANDEEP",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1898,7 +1898,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-06T18:33:20.934Z"
+    "heartbeatAt": "2026-10-06T18:43:22.865Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1916,6 +1916,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791312187217_vcp7",
+      "time": "2026-10-07 00:13:07",
+      "text": "Buy-in increased for SANDEEP: count = 2. • by sandeep mac"
+    },
+    {
+      "id": "L_1791312183468_1u3z",
+      "time": "2026-10-07 00:13:03",
+      "text": "Buy-in increased for ALOK: count = 4. • by sandeep mac"
+    },
     {
       "id": "L_1791311584796_juaa",
       "time": "2026-10-07 00:03:04",
@@ -3904,16 +3914,6 @@
     {
       "id": "L_1790390906854_bpu2",
       "time": "2026-09-26 08:18:26",
-      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
-    },
-    {
-      "id": "L_1790390905938_3n2g",
-      "time": "2026-09-26 08:18:25",
-      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
-    },
-    {
-      "id": "L_1790390905581_00yx",
-      "time": "2026-09-26 08:18:25",
       "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
     }
   ],
