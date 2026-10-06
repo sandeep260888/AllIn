@@ -1899,13 +1899,20 @@
       "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1791322134845,
+      "name": "HARI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "activeSessionId": "S_mux0lw29x8blsn",
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-06T21:24:47.935Z"
+    "heartbeatAt": "2026-10-06T21:29:10.507Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1923,6 +1930,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791322134845_ubjs",
+      "time": "2026-10-07 02:58:54",
+      "text": "Added \"HARI\" with 1 buy-in (1000c). • by sandeep mac"
+    },
     {
       "id": "L_1791321872360_m22b",
       "time": "2026-10-07 02:54:32",
@@ -3916,11 +3928,6 @@
     {
       "id": "L_1790390958914_higk",
       "time": "2026-09-26 08:19:18",
-      "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
-    },
-    {
-      "id": "L_1790390955393_x2fc",
-      "time": "2026-09-26 08:19:15",
       "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
     }
   ],
