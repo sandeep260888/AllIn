@@ -1896,7 +1896,7 @@
     {
       "id": 1791315224947,
       "name": "KUNAL",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1912,7 +1912,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-06T22:50:32.690Z"
+    "heartbeatAt": "2026-10-06T23:05:45.290Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1930,6 +1930,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791327928521_1sst",
+      "time": "2026-10-07 04:35:28",
+      "text": "Buy-in increased for KUNAL: count = 3. • by sandeep mac"
+    },
+    {
+      "id": "L_1791327920954_5onq",
+      "time": "2026-10-07 04:35:20",
+      "text": "Buy-in decreased for ALOK: count = 5. • by sandeep mac"
+    },
+    {
+      "id": "L_1791327919121_c7ju",
+      "time": "2026-10-07 04:35:19",
+      "text": "Buy-in increased for ALOK: count = 6. • by sandeep mac"
+    },
     {
       "id": "L_1791327015551_jrxx",
       "time": "2026-10-07 04:20:15",
@@ -3914,21 +3929,6 @@
       "id": "L_1790637293323_a3lj",
       "time": "2026-09-29 04:44:53",
       "text": "Cleared active session dashboard. • by sandeep mac"
-    },
-    {
-      "id": "L_1790637285814_zk15",
-      "time": "2026-09-29 04:44:45",
-      "text": "Took over hosting from Sandeep (inactive 8h+). • by sandeep mac"
-    },
-    {
-      "id": "L_1790390987465_jtfl",
-      "time": "2026-09-26 08:19:47",
-      "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
-    },
-    {
-      "id": "L_1790390985817_6st8",
-      "time": "2026-09-26 08:19:45",
-      "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
     }
   ],
   "knownRoster": [
