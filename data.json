@@ -1807,7 +1807,7 @@
       "name": "AKSHAY",
       "buyIns": 4,
       "buyInCoins": 1000,
-      "cashOutCoins": -30
+      "cashOutCoins": 0
     },
     {
       "id": 1791239437308,
@@ -1863,6 +1863,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791302710182_qxe9",
+      "time": "2026-10-06 21:35:10",
+      "text": "Set final coins for AKSHAY: 0 coins. • by sandeep mac"
+    },
+    {
+      "id": "L_1791302696981_gmsy",
+      "time": "2026-10-06 21:34:56",
+      "text": "Set final coins for KUNAL: 2700 coins. • by sandeep mac"
+    },
     {
       "id": "L_1791302680728_c8l9",
       "time": "2026-10-06 21:34:40",
@@ -3851,16 +3861,6 @@
     {
       "id": "L_1790390863820_h0xx",
       "time": "2026-09-26 08:17:43",
-      "text": "Auto-push failed: data.json does not match e995dbd48687ba3211a8f2b8a7486ab122a09e58 • by Sandeep"
-    },
-    {
-      "id": "L_1790390858383_dpsp",
-      "time": "2026-09-26 08:17:38",
-      "text": "Auto-push failed: data.json does not match e995dbd48687ba3211a8f2b8a7486ab122a09e58 • by Sandeep"
-    },
-    {
-      "id": "L_1790390858352_6bi0",
-      "time": "2026-09-26 08:17:38",
       "text": "Auto-push failed: data.json does not match e995dbd48687ba3211a8f2b8a7486ab122a09e58 • by Sandeep"
     }
   ],
