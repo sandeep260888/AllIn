@@ -1805,9 +1805,9 @@
     {
       "id": 1791239432944,
       "name": "AKSHAY",
-      "buyIns": 5,
+      "buyIns": 4,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": -30
     },
     {
       "id": 1791239437308,
@@ -1821,21 +1821,21 @@
       "name": "RISHI",
       "buyIns": 5,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 5980
     },
     {
       "id": 1791239447708,
       "name": "HARI",
       "buyIns": 6,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 5130
     },
     {
       "id": 1791239451891,
       "name": "SANDEEP",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 5200
     },
     {
       "id": 1791239905890,
@@ -1863,6 +1863,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791302661118_hxpc",
+      "time": "2026-10-06 21:34:21",
+      "text": "Set final coins for RISHI: 5980 coins. • by sandeep mac"
+    },
+    {
+      "id": "L_1791302656552_bc8b",
+      "time": "2026-10-06 21:34:16",
+      "text": "Set final coins for HARI: 5130 coins. • by sandeep mac"
+    },
     {
       "id": "L_1791253142695_bal7",
       "time": "2026-10-06 07:49:02",
@@ -3851,16 +3861,6 @@
     {
       "id": "L_1790390858043_br9u",
       "time": "2026-09-26 08:17:38",
-      "text": "Auto-push failed: data.json does not match e995dbd48687ba3211a8f2b8a7486ab122a09e58 • by Sandeep"
-    },
-    {
-      "id": "L_1790390858020_ktbx",
-      "time": "2026-09-26 08:17:38",
-      "text": "Auto-push failed: data.json does not match e995dbd48687ba3211a8f2b8a7486ab122a09e58 • by Sandeep"
-    },
-    {
-      "id": "L_1790390856912_5zsm",
-      "time": "2026-09-26 08:17:36",
       "text": "Auto-push failed: data.json does not match e995dbd48687ba3211a8f2b8a7486ab122a09e58 • by Sandeep"
     }
   ],
