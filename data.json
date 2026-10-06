@@ -1805,7 +1805,7 @@
     {
       "id": 1791239432944,
       "name": "AKSHAY",
-      "buyIns": 3,
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1849,7 +1849,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-06T01:34:11.099Z"
+    "heartbeatAt": "2026-10-06T01:36:17.229Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1867,6 +1867,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791250561385_0w31",
+      "time": "2026-10-06 07:06:01",
+      "text": "Buy-in increased for AKSHAY: count = 4. • by sandeep mac"
+    },
     {
       "id": "L_1791250435220_onvc",
       "time": "2026-10-06 07:03:55",
@@ -3859,11 +3864,6 @@
     },
     {
       "id": "L_1790390784538_oi0b",
-      "time": "2026-09-26 08:16:24",
-      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
-    },
-    {
-      "id": "L_1790390784531_xzc2",
       "time": "2026-09-26 08:16:24",
       "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
     }
