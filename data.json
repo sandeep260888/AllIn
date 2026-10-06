@@ -1889,7 +1889,7 @@
     {
       "id": 1791311574296,
       "name": "MOHINI",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1905,7 +1905,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-06T20:19:20.743Z"
+    "heartbeatAt": "2026-10-06T20:22:31.202Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1923,6 +1923,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791318135611_58ka",
+      "time": "2026-10-07 01:52:15",
+      "text": "Buy-in increased for MOHINI: count = 3. • by sandeep mac"
+    },
     {
       "id": "L_1791317944876_hb6j",
       "time": "2026-10-07 01:49:04",
@@ -3916,11 +3921,6 @@
     {
       "id": "L_1790390943020_td5a",
       "time": "2026-09-26 08:19:03",
-      "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
-    },
-    {
-      "id": "L_1790390939862_wksi",
-      "time": "2026-09-26 08:18:59",
       "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
     }
   ],
