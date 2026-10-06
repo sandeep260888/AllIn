@@ -1835,14 +1835,14 @@
       "name": "SANDEEP",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 5200
+      "cashOutCoins": 4900
     },
     {
       "id": 1791239905890,
       "name": "KUNAL",
       "buyIns": 4,
       "buyInCoins": 1000,
-      "cashOutCoins": 6700
+      "cashOutCoins": 6000
     }
   ],
   "activeSessionId": "S_muvtpk31osk3xh",
@@ -1863,6 +1863,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791311385870_7mjt",
+      "time": "2026-10-06 23:59:45",
+      "text": "Set final coins for SANDEEP: 4900 coins. • by sandeep mac"
+    },
     {
       "id": "L_1791302797870_0kri",
       "time": "2026-10-06 21:36:37",
@@ -3856,11 +3861,6 @@
     {
       "id": "L_1790390876139_j30b",
       "time": "2026-09-26 08:17:56",
-      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
-    },
-    {
-      "id": "L_1790390871661_8mc4",
-      "time": "2026-09-26 08:17:51",
       "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
     }
   ],
