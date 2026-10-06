@@ -1882,7 +1882,7 @@
     {
       "id": 1791311570513,
       "name": "RAVI",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1898,7 +1898,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-06T18:53:08.567Z"
+    "heartbeatAt": "2026-10-06T18:56:27.591Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1916,6 +1916,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791312971952_3cq5",
+      "time": "2026-10-07 00:26:11",
+      "text": "Buy-in increased for RAVI: count = 2. • by sandeep mac"
+    },
     {
       "id": "L_1791312772854_txr1",
       "time": "2026-10-07 00:22:52",
@@ -3909,11 +3914,6 @@
     {
       "id": "L_1790390916492_8ad3",
       "time": "2026-09-26 08:18:36",
-      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
-    },
-    {
-      "id": "L_1790390914841_l55z",
-      "time": "2026-09-26 08:18:34",
       "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
     }
   ],
