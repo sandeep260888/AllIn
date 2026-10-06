@@ -1835,7 +1835,7 @@
       "name": "SANDEEP",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 5200
     },
     {
       "id": 1791239905890,
@@ -1863,6 +1863,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791250840485_g2le",
+      "time": "2026-10-06 07:10:40",
+      "text": "Set final coins for SANDEEP: 5200 coins. • by sandeep mac"
+    },
     {
       "id": "L_1791250798051_yfid",
       "time": "2026-10-06 07:09:58",
@@ -3855,11 +3860,6 @@
     },
     {
       "id": "L_1790390785616_kwkh",
-      "time": "2026-09-26 08:16:25",
-      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
-    },
-    {
-      "id": "L_1790390785602_wuzu",
       "time": "2026-09-26 08:16:25",
       "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
     }
