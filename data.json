@@ -1892,13 +1892,20 @@
       "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1791315224947,
+      "name": "KUNAL",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "activeSessionId": "S_mux0lw29x8blsn",
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-06T19:19:10.854Z"
+    "heartbeatAt": "2026-10-06T19:34:00.849Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1916,6 +1923,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791315224948_qhg2",
+      "time": "2026-10-07 01:03:44",
+      "text": "Added \"KUNAL\" with 1 buy-in (1000c). • by sandeep mac"
+    },
     {
       "id": "L_1791314335112_x5cm",
       "time": "2026-10-07 00:48:55",
@@ -3909,11 +3921,6 @@
     {
       "id": "L_1790390919020_wyho",
       "time": "2026-09-26 08:18:39",
-      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
-    },
-    {
-      "id": "L_1790390917741_bene",
-      "time": "2026-09-26 08:18:37",
       "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
     }
   ],
