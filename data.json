@@ -1905,7 +1905,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-06T20:18:28.810Z"
+    "heartbeatAt": "2026-10-06T20:19:20.743Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1923,6 +1923,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791317944876_hb6j",
+      "time": "2026-10-07 01:49:04",
+      "text": "Buy-in decreased for SANDEEP: count = 4. • by sandeep mac"
+    },
+    {
+      "id": "L_1791317942908_6zis",
+      "time": "2026-10-07 01:49:02",
+      "text": "Buy-in increased for SANDEEP: count = 5. • by sandeep mac"
+    },
     {
       "id": "L_1791317892960_2vw3",
       "time": "2026-10-07 01:48:12",
@@ -3910,16 +3920,6 @@
     },
     {
       "id": "L_1790390939862_wksi",
-      "time": "2026-09-26 08:18:59",
-      "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
-    },
-    {
-      "id": "L_1790390939814_mjp3",
-      "time": "2026-09-26 08:18:59",
-      "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
-    },
-    {
-      "id": "L_1790390939035_fkie",
       "time": "2026-09-26 08:18:59",
       "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
     }
