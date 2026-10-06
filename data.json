@@ -1868,7 +1868,7 @@
     {
       "id": 1791311544628,
       "name": "SANDEEP",
-      "buyIns": 7,
+      "buyIns": 8,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1912,7 +1912,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-06T23:05:45.290Z"
+    "heartbeatAt": "2026-10-06T23:15:02.079Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1930,6 +1930,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791328485826_miwu",
+      "time": "2026-10-07 04:44:45",
+      "text": "Buy-in increased for SANDEEP: count = 8. • by sandeep mac"
+    },
     {
       "id": "L_1791327928521_1sst",
       "time": "2026-10-07 04:35:28",
@@ -3924,11 +3929,6 @@
       "id": "L_1790637528679_kzqu",
       "time": "2026-09-29 04:48:48",
       "text": "Started new session and claimed host. • by sandeep mac"
-    },
-    {
-      "id": "L_1790637293323_a3lj",
-      "time": "2026-09-29 04:44:53",
-      "text": "Cleared active session dashboard. • by sandeep mac"
     }
   ],
   "knownRoster": [
