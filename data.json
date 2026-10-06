@@ -1864,6 +1864,16 @@
   },
   "logs": [
     {
+      "id": "L_1791250798051_yfid",
+      "time": "2026-10-06 07:09:58",
+      "text": "Stopped hosting. • by sandeep mac"
+    },
+    {
+      "id": "L_1791250791022_hhvw",
+      "time": "2026-10-06 07:09:51",
+      "text": "Manual refresh synchronized with GitHub. • by sandeep mac"
+    },
+    {
       "id": "L_1791250718738_7ssx",
       "time": "2026-10-06 07:08:38",
       "text": "Stopped hosting. • by sandeep mac"
@@ -3851,16 +3861,6 @@
     {
       "id": "L_1790390785602_wuzu",
       "time": "2026-09-26 08:16:25",
-      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
-    },
-    {
-      "id": "L_1790390785450_0nn8",
-      "time": "2026-09-26 08:16:25",
-      "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
-    },
-    {
-      "id": "L_1790390784546_ql7t",
-      "time": "2026-09-26 08:16:24",
       "text": "Auto-push failed: data.json does not match 58c8b8dbec535aa6e0c050f4474a16481a25bc38 • by Sandeep"
     }
   ],
