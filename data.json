@@ -1861,7 +1861,7 @@
     {
       "id": 1791311541047,
       "name": "ALOK",
-      "buyIns": 1,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1878,13 +1878,27 @@
       "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1791311570513,
+      "name": "RAVI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1791311574296,
+      "name": "MOHINI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "activeSessionId": "S_mux0lw29x8blsn",
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-06T18:32:47.780Z"
+    "heartbeatAt": "2026-10-06T18:33:20.934Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1902,6 +1916,26 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791311584796_juaa",
+      "time": "2026-10-07 00:03:04",
+      "text": "Buy-in increased for ALOK: count = 3. • by sandeep mac"
+    },
+    {
+      "id": "L_1791311583746_6pdu",
+      "time": "2026-10-07 00:03:03",
+      "text": "Buy-in increased for ALOK: count = 2. • by sandeep mac"
+    },
+    {
+      "id": "L_1791311574296_i0jn",
+      "time": "2026-10-07 00:02:54",
+      "text": "Added \"MOHINI\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1791311570513_y019",
+      "time": "2026-10-07 00:02:50",
+      "text": "Added \"RAVI\" with 1 buy-in (1000c). • by sandeep mac"
+    },
     {
       "id": "L_1791311551814_ev7j",
       "time": "2026-10-07 00:02:31",
@@ -3880,26 +3914,6 @@
     {
       "id": "L_1790390905581_00yx",
       "time": "2026-09-26 08:18:25",
-      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
-    },
-    {
-      "id": "L_1790390904756_u2so",
-      "time": "2026-09-26 08:18:24",
-      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
-    },
-    {
-      "id": "L_1790390903014_yrbf",
-      "time": "2026-09-26 08:18:23",
-      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
-    },
-    {
-      "id": "L_1790390900142_xieq",
-      "time": "2026-09-26 08:18:20",
-      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
-    },
-    {
-      "id": "L_1790390894423_rmqh",
-      "time": "2026-09-26 08:18:14",
       "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
     }
   ],
