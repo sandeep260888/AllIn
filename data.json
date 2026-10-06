@@ -1845,50 +1845,19 @@
   ],
   "activePlayers": [
     {
-      "id": 1791239432944,
-      "name": "AKSHAY",
-      "buyIns": 5,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1791239437308,
-      "name": "SHUBHAM",
-      "buyIns": 2,
-      "buyInCoins": 1000,
-      "cashOutCoins": 1000
-    },
-    {
-      "id": 1791239441625,
-      "name": "RISHI",
-      "buyIns": 5,
-      "buyInCoins": 1000,
-      "cashOutCoins": 5970
-    },
-    {
-      "id": 1791239447708,
-      "name": "HARI",
-      "buyIns": 6,
-      "buyInCoins": 1000,
-      "cashOutCoins": 5130
-    },
-    {
-      "id": 1791239451891,
-      "name": "SANDEEP",
+      "id": 1791311485330,
+      "name": "HARSHIT",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 4900
-    },
-    {
-      "id": 1791239905890,
-      "name": "KUNAL",
-      "buyIns": 4,
-      "buyInCoins": 1000,
-      "cashOutCoins": 6000
+      "cashOutCoins": 0
     }
   ],
-  "activeSessionId": "S_muvtpk31osk3xh",
-  "activeHost": null,
+  "activeSessionId": "S_mux0lw29x8blsn",
+  "activeHost": {
+    "deviceId": "dev_w3f5ipa6",
+    "deviceName": "sandeep mac",
+    "heartbeatAt": "2026-10-06T18:31:41.473Z"
+  },
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -1905,6 +1874,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791311485330_121q",
+      "time": "2026-10-07 00:01:25",
+      "text": "Added \"HARSHIT\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1791311485329_fv51",
+      "time": "2026-10-07 00:01:25",
+      "text": "Started new session and claimed host. • by sandeep mac"
+    },
+    {
+      "id": "L_1791311474987_8pqf",
+      "time": "2026-10-07 00:01:14",
+      "text": "Cleared active session dashboard. • by sandeep mac"
+    },
     {
       "id": "L_1791311430510_z257",
       "time": "2026-10-07 00:00:30",
@@ -3888,21 +3872,6 @@
     {
       "id": "L_1790390891274_95il",
       "time": "2026-09-26 08:18:11",
-      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
-    },
-    {
-      "id": "L_1790390888367_q1qy",
-      "time": "2026-09-26 08:18:08",
-      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
-    },
-    {
-      "id": "L_1790390882721_fbwy",
-      "time": "2026-09-26 08:18:02",
-      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
-    },
-    {
-      "id": "L_1790390882637_vehw",
-      "time": "2026-09-26 08:18:02",
       "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
     }
   ],
