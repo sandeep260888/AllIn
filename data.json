@@ -1805,7 +1805,7 @@
     {
       "id": 1791239432944,
       "name": "AKSHAY",
-      "buyIns": 6,
+      "buyIns": 5,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1863,6 +1863,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791302797870_0kri",
+      "time": "2026-10-06 21:36:37",
+      "text": "Buy-in decreased for AKSHAY: count = 5. • by sandeep mac"
+    },
     {
       "id": "L_1791302791951_wdgp",
       "time": "2026-10-06 21:36:31",
@@ -3855,11 +3860,6 @@
     },
     {
       "id": "L_1790390871661_8mc4",
-      "time": "2026-09-26 08:17:51",
-      "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
-    },
-    {
-      "id": "L_1790390871654_arpj",
       "time": "2026-09-26 08:17:51",
       "text": "Auto-push failed: data.json does not match 5e32c861b1a927a8330ce77c96bcab855ce9384d • by Sandeep"
     }
