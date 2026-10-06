@@ -1849,7 +1849,7 @@
       "name": "HARSHIT",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 7500
     },
     {
       "id": 1791311529832,
@@ -1905,7 +1905,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-06T21:14:26.347Z"
+    "heartbeatAt": "2026-10-06T21:24:47.935Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1923,6 +1923,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791321872360_m22b",
+      "time": "2026-10-07 02:54:32",
+      "text": "Set final coins for HARSHIT: 7500 coins. • by sandeep mac"
+    },
     {
       "id": "L_1791321250675_yzso",
       "time": "2026-10-07 02:44:10",
@@ -3916,11 +3921,6 @@
     {
       "id": "L_1790390955393_x2fc",
       "time": "2026-09-26 08:19:15",
-      "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
-    },
-    {
-      "id": "L_1790390951316_nxli",
-      "time": "2026-09-26 08:19:11",
       "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
     }
   ],
