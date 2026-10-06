@@ -1903,7 +1903,7 @@
     {
       "id": 1791322134845,
       "name": "HARI",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -1912,7 +1912,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-06T21:56:23.580Z"
+    "heartbeatAt": "2026-10-06T22:05:54.464Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1930,6 +1930,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791324338857_f2ad",
+      "time": "2026-10-07 03:35:38",
+      "text": "Buy-in increased for HARI: count = 3. • by sandeep mac"
+    },
     {
       "id": "L_1791323767686_r83x",
       "time": "2026-10-07 03:26:07",
@@ -3923,11 +3928,6 @@
     {
       "id": "L_1790390973893_wcmf",
       "time": "2026-09-26 08:19:33",
-      "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
-    },
-    {
-      "id": "L_1790390970826_zbdu",
-      "time": "2026-09-26 08:19:30",
       "text": "Auto-push failed: data.json does not match 1060a8a23df5d7a5ed432ee68fe78806757058e0 • by Sandeep"
     }
   ],
