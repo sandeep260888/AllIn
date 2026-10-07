@@ -1861,14 +1861,14 @@
     {
       "id": 1791311541047,
       "name": "ALOK",
-      "buyIns": 5,
+      "buyIns": 6,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
     {
       "id": 1791311544628,
       "name": "SANDEEP",
-      "buyIns": 10,
+      "buyIns": 11,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1912,7 +1912,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-07T01:34:01.260Z"
+    "heartbeatAt": "2026-10-07T01:57:31.187Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1930,6 +1930,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791338235583_7a3b",
+      "time": "2026-10-07 07:27:15",
+      "text": "Buy-in increased for ALOK: count = 6. • by sandeep mac"
+    },
+    {
+      "id": "L_1791338230233_6x4n",
+      "time": "2026-10-07 07:27:10",
+      "text": "Buy-in increased for SANDEEP: count = 11. • by sandeep mac"
+    },
     {
       "id": "L_1791336825068_juel",
       "time": "2026-10-07 07:03:45",
@@ -3919,16 +3929,6 @@
       "id": "L_1790647192284_upev",
       "time": "2026-09-29 07:29:52",
       "text": "Set final coins for RISHI: 2520 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1790647184854_ywvt",
-      "time": "2026-09-29 07:29:44",
-      "text": "Set final coins for KUNAL: 2220 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1790647181537_c7dn",
-      "time": "2026-09-29 07:29:41",
-      "text": "Set final coins for AKSHAY: 2910 coins. • by sandeep mac"
     }
   ],
   "knownRoster": [
