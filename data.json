@@ -1868,7 +1868,7 @@
     {
       "id": 1791311544628,
       "name": "SANDEEP",
-      "buyIns": 11,
+      "buyIns": 12,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1912,7 +1912,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-07T01:57:31.187Z"
+    "heartbeatAt": "2026-10-07T02:00:01.850Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1930,6 +1930,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791338386269_r3hk",
+      "time": "2026-10-07 07:29:46",
+      "text": "Buy-in increased for SANDEEP: count = 12. • by sandeep mac"
+    },
     {
       "id": "L_1791338235583_7a3b",
       "time": "2026-10-07 07:27:15",
@@ -3924,11 +3929,6 @@
       "id": "L_1790647208351_llf8",
       "time": "2026-09-29 07:30:08",
       "text": "Set final coins for SANDEEP: 4410 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1790647192284_upev",
-      "time": "2026-09-29 07:29:52",
-      "text": "Set final coins for RISHI: 2520 coins. • by sandeep mac"
     }
   ],
   "knownRoster": [
