@@ -1,6 +1,66 @@
 {
   "savedSessions": [
     {
+      "sessionId": "S_mux0lw29x8blsn",
+      "date": "2026-10-07T02:08:50.038Z",
+      "entries": [
+        {
+          "name": "HARSHIT",
+          "investedCoins": 1000,
+          "finalCoins": 7500,
+          "netVal": 3250
+        },
+        {
+          "name": "RISHI",
+          "investedCoins": 1000,
+          "finalCoins": 29190,
+          "netVal": 14095
+        },
+        {
+          "name": "ALOK",
+          "investedCoins": 6000,
+          "finalCoins": 0,
+          "netVal": -3000
+        },
+        {
+          "name": "SANDEEP",
+          "investedCoins": 12000,
+          "finalCoins": 4400,
+          "netVal": -3800
+        },
+        {
+          "name": "AKSHAY",
+          "investedCoins": 4000,
+          "finalCoins": 4110,
+          "netVal": 55
+        },
+        {
+          "name": "RAVI",
+          "investedCoins": 10000,
+          "finalCoins": 4660,
+          "netVal": -2670
+        },
+        {
+          "name": "MOHINI",
+          "investedCoins": 7000,
+          "finalCoins": 0,
+          "netVal": -3500
+        },
+        {
+          "name": "KUNAL",
+          "investedCoins": 4000,
+          "finalCoins": 5140,
+          "netVal": 570
+        },
+        {
+          "name": "HARI",
+          "investedCoins": 10000,
+          "finalCoins": 0,
+          "netVal": -5000
+        }
+      ]
+    },
+    {
       "sessionId": "S_muvtpk31osk3xh",
       "date": "2026-10-06T18:30:28.279Z",
       "entries": [
@@ -1912,7 +1972,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-07T02:06:43.043Z"
+    "heartbeatAt": "2026-10-07T02:08:50.645Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1930,6 +1990,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791338930039_pd6f",
+      "time": "2026-10-07 07:38:50",
+      "text": "Saved session to database. • by sandeep mac"
+    },
     {
       "id": "L_1791338787397_2jc5",
       "time": "2026-10-07 07:36:27",
@@ -3924,11 +3989,6 @@
       "id": "L_1790647286438_nd3g",
       "time": "2026-09-29 07:31:26",
       "text": "Settlement: RISHI pays AKSHAY ₹240.00 • by sandeep mac"
-    },
-    {
-      "id": "L_1790647286436_8nsq",
-      "time": "2026-09-29 07:31:26",
-      "text": "Settlement: RISHI pays SANDEEP ₹1500.00 • by sandeep mac"
     }
   ],
   "knownRoster": [
