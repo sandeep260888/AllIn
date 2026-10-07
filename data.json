@@ -1856,7 +1856,7 @@
       "name": "RISHI",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 29500
+      "cashOutCoins": 29190
     },
     {
       "id": 1791311541047,
@@ -1912,7 +1912,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-07T02:06:12.183Z"
+    "heartbeatAt": "2026-10-07T02:06:43.043Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1930,6 +1930,56 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791338787397_2jc5",
+      "time": "2026-10-07 07:36:27",
+      "text": "Settlement: RAVI pays AKSHAY ₹55.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1791338787397_7t5m",
+      "time": "2026-10-07 07:36:27",
+      "text": "Settlement: RAVI pays KUNAL ₹570.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1791338787396_goak",
+      "time": "2026-10-07 07:36:27",
+      "text": "Settlement: RAVI pays HARSHIT ₹2045.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1791338787395_u2bw",
+      "time": "2026-10-07 07:36:27",
+      "text": "Settlement: ALOK pays HARSHIT ₹1205.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1791338787394_l2r1",
+      "time": "2026-10-07 07:36:27",
+      "text": "Settlement: ALOK pays RISHI ₹1795.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1791338787393_sdoh",
+      "time": "2026-10-07 07:36:27",
+      "text": "Settlement: MOHINI pays RISHI ₹3500.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1791338787392_k8ms",
+      "time": "2026-10-07 07:36:27",
+      "text": "Settlement: SANDEEP pays RISHI ₹3800.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1791338787391_ooll",
+      "time": "2026-10-07 07:36:27",
+      "text": "Settlement: HARI pays RISHI ₹5000.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1791338787387_ez0v",
+      "time": "2026-10-07 07:36:27",
+      "text": "Settlement calculated (8 transfers). • by sandeep mac"
+    },
+    {
+      "id": "L_1791338787272_gc3w",
+      "time": "2026-10-07 07:36:27",
+      "text": "Set final coins for RISHI: 29190 coins. • by sandeep mac"
+    },
     {
       "id": "L_1791338756406_05w2",
       "time": "2026-10-07 07:35:56",
@@ -3879,56 +3929,6 @@
       "id": "L_1790647286436_8nsq",
       "time": "2026-09-29 07:31:26",
       "text": "Settlement: RISHI pays SANDEEP ₹1500.00 • by sandeep mac"
-    },
-    {
-      "id": "L_1790647286432_7oui",
-      "time": "2026-09-29 07:31:26",
-      "text": "Settlement calculated (4 transfers). • by sandeep mac"
-    },
-    {
-      "id": "L_1790647285158_9x3l",
-      "time": "2026-09-29 07:31:25",
-      "text": "Settlement: HARI pays KUNAL ₹580.00 • by sandeep mac"
-    },
-    {
-      "id": "L_1790647285156_dhr9",
-      "time": "2026-09-29 07:31:25",
-      "text": "Settlement: HARI pays AKSHAY ₹715.00 • by sandeep mac"
-    },
-    {
-      "id": "L_1790647285153_lf9f",
-      "time": "2026-09-29 07:31:25",
-      "text": "Settlement: RISHI pays AKSHAY ₹240.00 • by sandeep mac"
-    },
-    {
-      "id": "L_1790647285151_o09v",
-      "time": "2026-09-29 07:31:25",
-      "text": "Settlement: RISHI pays SANDEEP ₹1500.00 • by sandeep mac"
-    },
-    {
-      "id": "L_1790647285148_33d2",
-      "time": "2026-09-29 07:31:25",
-      "text": "Settlement calculated (4 transfers). • by sandeep mac"
-    },
-    {
-      "id": "L_1790647279698_e395",
-      "time": "2026-09-29 07:31:19",
-      "text": "Set final coins for SANDEEP: 4000 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1790647273183_zvdr",
-      "time": "2026-09-29 07:31:13",
-      "text": "Set final coins for HARI: 410 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1790647238126_2u2e",
-      "time": "2026-09-29 07:30:38",
-      "text": "Settlement: HARI pays KUNAL ₹610.00 • by sandeep mac"
-    },
-    {
-      "id": "L_1790647238124_30u9",
-      "time": "2026-09-29 07:30:38",
-      "text": "Settlement: HARI pays AKSHAY ₹890.00 • by sandeep mac"
     }
   ],
   "knownRoster": [
