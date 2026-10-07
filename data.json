@@ -1889,7 +1889,7 @@
     {
       "id": 1791311574296,
       "name": "MOHINI",
-      "buyIns": 8,
+      "buyIns": 7,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -1912,7 +1912,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-07T01:07:10.128Z"
+    "heartbeatAt": "2026-10-07T01:07:56.963Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1930,6 +1930,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791335261320_uzu3",
+      "time": "2026-10-07 06:37:41",
+      "text": "Buy-in decreased for MOHINI: count = 7. • by sandeep mac"
+    },
     {
       "id": "L_1791335214022_6vq0",
       "time": "2026-10-07 06:36:54",
@@ -3924,11 +3929,6 @@
       "id": "L_1790644676950_v42z",
       "time": "2026-09-29 06:47:56",
       "text": "Buy-in increased for HARI: count = 2. • by sandeep mac"
-    },
-    {
-      "id": "L_1790641122532_kdjz",
-      "time": "2026-09-29 05:48:42",
-      "text": "Buy-in increased for RISHI: count = 6. • by sandeep mac"
     }
   ],
   "knownRoster": [
