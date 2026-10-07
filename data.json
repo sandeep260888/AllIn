@@ -1870,7 +1870,7 @@
       "name": "SANDEEP",
       "buyIns": 12,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 4400
     },
     {
       "id": 1791311551814,
@@ -1912,7 +1912,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-07T02:04:39.128Z"
+    "heartbeatAt": "2026-10-07T02:05:24.867Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1930,6 +1930,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791338709189_0wls",
+      "time": "2026-10-07 07:35:09",
+      "text": "Set final coins for ALOK: 0 coins. • by sandeep mac"
+    },
+    {
+      "id": "L_1791338706737_p1gd",
+      "time": "2026-10-07 07:35:06",
+      "text": "Set final coins for MOHINI: 0 coins. • by sandeep mac"
+    },
+    {
+      "id": "L_1791338700503_t6q7",
+      "time": "2026-10-07 07:35:00",
+      "text": "Set final coins for SANDEEP: 4400 coins. • by sandeep mac"
+    },
     {
       "id": "L_1791338663221_u64l",
       "time": "2026-10-07 07:34:23",
@@ -3914,21 +3929,6 @@
       "id": "L_1790647238115_1a6m",
       "time": "2026-09-29 07:30:38",
       "text": "Settlement calculated (4 transfers). • by sandeep mac"
-    },
-    {
-      "id": "L_1790647235479_b24k",
-      "time": "2026-09-29 07:30:35",
-      "text": "Set final coins for SANDEEP: 4350 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1790647226193_09we",
-      "time": "2026-09-29 07:30:26",
-      "text": "Set final coins for SANDEEP: 438 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1790647217899_z332",
-      "time": "2026-09-29 07:30:17",
-      "text": "Buy-in increased for HARI: count = 3. • by sandeep mac"
     }
   ],
   "knownRoster": [
