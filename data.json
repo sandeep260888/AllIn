@@ -1896,14 +1896,14 @@
     {
       "id": 1791315224947,
       "name": "KUNAL",
-      "buyIns": 3,
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
     {
       "id": 1791322134845,
       "name": "HARI",
-      "buyIns": 6,
+      "buyIns": 8,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -1912,7 +1912,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-07T00:49:23.850Z"
+    "heartbeatAt": "2026-10-07T01:00:45.981Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1930,6 +1930,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791334830285_z39b",
+      "time": "2026-10-07 06:30:30",
+      "text": "Buy-in increased for KUNAL: count = 4. • by sandeep mac"
+    },
+    {
+      "id": "L_1791334827003_c8jy",
+      "time": "2026-10-07 06:30:27",
+      "text": "Buy-in increased for HARI: count = 8. • by sandeep mac"
+    },
+    {
+      "id": "L_1791334826552_revf",
+      "time": "2026-10-07 06:30:26",
+      "text": "Buy-in increased for HARI: count = 7. • by sandeep mac"
+    },
     {
       "id": "L_1791334148233_vnhd",
       "time": "2026-10-07 06:19:08",
@@ -3914,21 +3929,6 @@
       "id": "L_1790640164312_9352",
       "time": "2026-09-29 05:32:44",
       "text": "Buy-in decreased for RISHI: count = 4. • by sandeep mac"
-    },
-    {
-      "id": "L_1790640153184_hr2v",
-      "time": "2026-09-29 05:32:33",
-      "text": "Buy-in increased for RISHI: count = 5. • by sandeep mac"
-    },
-    {
-      "id": "L_1790640152850_dyg7",
-      "time": "2026-09-29 05:32:32",
-      "text": "Buy-in increased for RISHI: count = 4. • by sandeep mac"
-    },
-    {
-      "id": "L_1790639694648_6ens",
-      "time": "2026-09-29 05:24:54",
-      "text": "Buy-in increased for RISHI: count = 3. • by sandeep mac"
     }
   ],
   "knownRoster": [
