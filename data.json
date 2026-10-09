@@ -2011,7 +2011,7 @@
       "name": "SANDEEP",
       "buyIns": 2,
       "buyInCoins": 1000,
-      "cashOutCoins": 16100
+      "cashOutCoins": 15350
     },
     {
       "id": 1791519608485,
@@ -2067,6 +2067,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791539461006_kpcv",
+      "time": "2026-10-09 15:21:01",
+      "text": "Set final coins for SANDEEP: 15350 coins. • by sandeep mac"
+    },
     {
       "id": "L_1791539394371_0mqi",
       "time": "2026-10-09 15:19:54",
@@ -4061,11 +4066,6 @@
       "id": "L_1790926518288_nxwi",
       "time": "2026-10-02 13:05:18",
       "text": "Set final coins for GAGAN: 5000 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790926512530_p2po",
-      "time": "2026-10-02 13:05:12",
-      "text": "Set final coins for GAGAN: 4660 coins. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
