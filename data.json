@@ -2076,13 +2076,20 @@
       "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1791590049450,
+      "name": "SANDEEP",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "activeSessionId": "S_mv1mds2rqmm1h6",
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-09T23:53:08.397Z"
+    "heartbeatAt": "2026-10-09T23:54:25.012Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2100,6 +2107,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791590049450_e6ec",
+      "time": "2026-10-10 05:24:09",
+      "text": "Added \"SANDEEP\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
     {
       "id": "L_1791589972775_h013",
       "time": "2026-10-10 05:22:52",
@@ -4094,11 +4106,6 @@
       "id": "L_1791164491942_szeb",
       "time": "2026-10-05 07:11:31",
       "text": "Set final coins for HARI: 1050 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791163457931_9grl",
-      "time": "2026-10-05 06:54:17",
-      "text": "Buy-in increased for HARI: count = 5. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
