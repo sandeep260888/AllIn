@@ -2044,7 +2044,7 @@
     {
       "id": 1791519652803,
       "name": "ALOK",
-      "buyIns": 16,
+      "buyIns": 20,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -2053,7 +2053,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-09T04:24:59.050Z"
+    "heartbeatAt": "2026-10-09T04:56:49.596Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2071,6 +2071,26 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791521793625_lm61",
+      "time": "2026-10-09 10:26:33",
+      "text": "Buy-in increased for ALOK: count = 20. • by sandeep mac"
+    },
+    {
+      "id": "L_1791521792895_vmmh",
+      "time": "2026-10-09 10:26:32",
+      "text": "Buy-in increased for ALOK: count = 19. • by sandeep mac"
+    },
+    {
+      "id": "L_1791521792597_y08p",
+      "time": "2026-10-09 10:26:32",
+      "text": "Buy-in increased for ALOK: count = 18. • by sandeep mac"
+    },
+    {
+      "id": "L_1791521792243_85gg",
+      "time": "2026-10-09 10:26:32",
+      "text": "Buy-in increased for ALOK: count = 17. • by sandeep mac"
+    },
     {
       "id": "L_1791519882713_josb",
       "time": "2026-10-09 09:54:42",
@@ -4050,26 +4070,6 @@
       "id": "L_1790919556962_oyb1",
       "time": "2026-10-02 11:09:16",
       "text": "Buy-in increased for AKSHAY: count = 6. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790918604014_va46",
-      "time": "2026-10-02 10:53:24",
-      "text": "Buy-in increased for AKSHAY: count = 5. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790918602410_rvth",
-      "time": "2026-10-02 10:53:22",
-      "text": "Buy-in increased for AKSHAY: count = 4. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790916487867_rkdc",
-      "time": "2026-10-02 10:18:07",
-      "text": "Set final coins for RAM: 3090 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790915016621_j6p5",
-      "time": "2026-10-02 09:53:36",
-      "text": "Buy-in increased for AKSHAY: count = 3. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
