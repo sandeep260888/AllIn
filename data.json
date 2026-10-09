@@ -1974,14 +1974,14 @@
     {
       "id": 1791519576606,
       "name": "RAVI",
-      "buyIns": 1,
+      "buyIns": 8,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
     {
       "id": 1791519581544,
       "name": "GAGAN",
-      "buyIns": 1,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2040,13 +2040,20 @@
       "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1791519652803,
+      "name": "ALOK",
+      "buyIns": 16,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "activeSessionId": "S_mv0ghvxuwakmrz",
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-09T04:20:43.937Z"
+    "heartbeatAt": "2026-10-09T04:21:49.534Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2064,6 +2071,131 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791519709328_iix0",
+      "time": "2026-10-09 09:51:49",
+      "text": "Buy-in increased for GAGAN: count = 3. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519709012_n3ue",
+      "time": "2026-10-09 09:51:49",
+      "text": "Buy-in increased for GAGAN: count = 2. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519693442_xvef",
+      "time": "2026-10-09 09:51:33",
+      "text": "Buy-in increased for RAVI: count = 8. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519692944_kpeo",
+      "time": "2026-10-09 09:51:32",
+      "text": "Buy-in increased for RAVI: count = 7. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519692447_89s7",
+      "time": "2026-10-09 09:51:32",
+      "text": "Buy-in increased for RAVI: count = 6. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519691994_308h",
+      "time": "2026-10-09 09:51:31",
+      "text": "Buy-in increased for RAVI: count = 5. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519691495_kf1h",
+      "time": "2026-10-09 09:51:31",
+      "text": "Buy-in increased for RAVI: count = 4. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519691031_geaj",
+      "time": "2026-10-09 09:51:31",
+      "text": "Buy-in increased for RAVI: count = 3. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519690462_v3yh",
+      "time": "2026-10-09 09:51:30",
+      "text": "Buy-in increased for RAVI: count = 2. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519679974_icdh",
+      "time": "2026-10-09 09:51:19",
+      "text": "Buy-in increased for ALOK: count = 16. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519677428_9ood",
+      "time": "2026-10-09 09:51:17",
+      "text": "Buy-in increased for ALOK: count = 15. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519676795_7xpy",
+      "time": "2026-10-09 09:51:16",
+      "text": "Buy-in increased for ALOK: count = 14. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519676094_6o81",
+      "time": "2026-10-09 09:51:16",
+      "text": "Buy-in increased for ALOK: count = 13. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519674728_4ozl",
+      "time": "2026-10-09 09:51:14",
+      "text": "Buy-in increased for ALOK: count = 12. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519673962_a4oc",
+      "time": "2026-10-09 09:51:13",
+      "text": "Buy-in increased for ALOK: count = 11. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519671911_j4be",
+      "time": "2026-10-09 09:51:11",
+      "text": "Buy-in increased for ALOK: count = 10. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519671310_k0gx",
+      "time": "2026-10-09 09:51:11",
+      "text": "Buy-in increased for ALOK: count = 9. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519670811_0ap4",
+      "time": "2026-10-09 09:51:10",
+      "text": "Buy-in increased for ALOK: count = 8. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519670293_eg5r",
+      "time": "2026-10-09 09:51:10",
+      "text": "Buy-in increased for ALOK: count = 7. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519669662_7afs",
+      "time": "2026-10-09 09:51:09",
+      "text": "Buy-in increased for ALOK: count = 6. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519669123_zl1z",
+      "time": "2026-10-09 09:51:09",
+      "text": "Buy-in increased for ALOK: count = 5. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519668594_s8kd",
+      "time": "2026-10-09 09:51:08",
+      "text": "Buy-in increased for ALOK: count = 4. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519668111_zhqg",
+      "time": "2026-10-09 09:51:08",
+      "text": "Buy-in increased for ALOK: count = 3. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519667661_6wz4",
+      "time": "2026-10-09 09:51:07",
+      "text": "Buy-in increased for ALOK: count = 2. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519652803_prwb",
+      "time": "2026-10-09 09:50:52",
+      "text": "Added \"ALOK\" with 1 buy-in (1000c). • by sandeep mac"
+    },
     {
       "id": "L_1791519628429_uy0h",
       "time": "2026-10-09 09:50:28",
@@ -3938,131 +4070,6 @@
       "id": "L_1790902687023_35jt",
       "time": "2026-10-02 06:28:07",
       "text": "Buy-in increased for RAM: count = 4. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790902659448_d2dh",
-      "time": "2026-10-02 06:27:39",
-      "text": "Buy-in increased for RISHI: count = 4. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790902358215_btf9",
-      "time": "2026-10-02 06:22:38",
-      "text": "Buy-in increased for RISHI: count = 3. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790901993750_epfs",
-      "time": "2026-10-02 06:16:33",
-      "text": "Buy-in increased for RISHI: count = 2. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790901340918_samc",
-      "time": "2026-10-02 06:05:40",
-      "text": "Buy-in increased for RAM: count = 3. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790901108170_dzn3",
-      "time": "2026-10-02 06:01:48",
-      "text": "Buy-in increased for SANDEEP: count = 3. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790900476942_nts3",
-      "time": "2026-10-02 05:51:16",
-      "text": "Buy-in increased for SANDEEP: count = 2. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790900370731_fqf3",
-      "time": "2026-10-02 05:49:30",
-      "text": "Buy-in increased for GAGAN: count = 3. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790899702333_mtrj",
-      "time": "2026-10-02 05:38:22",
-      "text": "Buy-in increased for RAM: count = 2. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790899562466_japz",
-      "time": "2026-10-02 05:36:02",
-      "text": "Added \"RAM\" with 1 buy-in (1000c). • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790898918413_cfos",
-      "time": "2026-10-02 05:25:18",
-      "text": "Added \"KUNAL\" with 1 buy-in (1000c). • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790898660456_691y",
-      "time": "2026-10-02 05:21:00",
-      "text": "Buy-in increased for GAGAN: count = 2. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790898658980_nhgi",
-      "time": "2026-10-02 05:20:58",
-      "text": "Added \"HARI\" with 1 buy-in (1000c). • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790898655880_e6rm",
-      "time": "2026-10-02 05:20:55",
-      "text": "Added \"RISHI\" with 1 buy-in (1000c). • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790898649285_o9aa",
-      "time": "2026-10-02 05:20:49",
-      "text": "Added \"GAGAN\" with 1 buy-in (1000c). • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790898644318_l7gl",
-      "time": "2026-10-02 05:20:44",
-      "text": "Added \"SANDEEP\" with 1 buy-in (1000c). • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790898640158_h3qj",
-      "time": "2026-10-02 05:20:40",
-      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790898640156_e5wk",
-      "time": "2026-10-02 05:20:40",
-      "text": "Started new session and claimed host. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790898603223_il75",
-      "time": "2026-10-02 05:20:03",
-      "text": "Cleared active session dashboard. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790890862359_lwyf",
-      "time": "2026-10-02 03:11:02",
-      "text": "Random picker chose RISHI. • by sandeep mac"
-    },
-    {
-      "id": "L_1790890861973_goxk",
-      "time": "2026-10-02 03:11:01",
-      "text": "Random picker chose AKSHAY. • by sandeep mac"
-    },
-    {
-      "id": "L_1790890861523_i737",
-      "time": "2026-10-02 03:11:01",
-      "text": "Random picker chose HARI. • by sandeep mac"
-    },
-    {
-      "id": "L_1790890860890_dwtz",
-      "time": "2026-10-02 03:11:00",
-      "text": "Random picker chose HARI. • by sandeep mac"
-    },
-    {
-      "id": "L_1790838078195_rd8x",
-      "time": "2026-10-01 12:31:18",
-      "text": "Manual refresh synchronized with GitHub. • by Device-7HZ4"
-    },
-    {
-      "id": "L_1790823908050_ow01",
-      "time": "2026-10-01 08:35:08",
-      "text": "Pushed live state to GitHub repo. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790823904691_gnw6",
-      "time": "2026-10-01 08:35:04",
-      "text": "Published session — hosting released automatically. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
