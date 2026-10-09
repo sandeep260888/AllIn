@@ -1988,7 +1988,7 @@
     {
       "id": 1791519586924,
       "name": "RISHI",
-      "buyIns": 1,
+      "buyIns": 6,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2053,7 +2053,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-09T04:22:07.207Z"
+    "heartbeatAt": "2026-10-09T04:22:15.902Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2071,6 +2071,31 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791519732295_ny47",
+      "time": "2026-10-09 09:52:12",
+      "text": "Buy-in increased for RISHI: count = 6. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519731760_woh4",
+      "time": "2026-10-09 09:52:11",
+      "text": "Buy-in increased for RISHI: count = 5. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519731560_ge4p",
+      "time": "2026-10-09 09:52:11",
+      "text": "Buy-in increased for RISHI: count = 4. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519731277_zcaf",
+      "time": "2026-10-09 09:52:11",
+      "text": "Buy-in increased for RISHI: count = 3. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519731015_q5xk",
+      "time": "2026-10-09 09:52:11",
+      "text": "Buy-in increased for RISHI: count = 2. • by sandeep mac"
+    },
     {
       "id": "L_1791519720184_ywul",
       "time": "2026-10-09 09:52:00",
@@ -4045,31 +4070,6 @@
       "id": "L_1790909612349_i69z",
       "time": "2026-10-02 08:23:32",
       "text": "Buy-in increased for KUNAL: count = 4. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790909363398_3zv1",
-      "time": "2026-10-02 08:19:23",
-      "text": "Buy-in increased for GAGAN: count = 8. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790909355396_qux8",
-      "time": "2026-10-02 08:19:15",
-      "text": "Buy-in increased for RAM: count = 8. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790909227375_47ir",
-      "time": "2026-10-02 08:17:07",
-      "text": "Buy-in increased for RAM: count = 7. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790908518447_sc1e",
-      "time": "2026-10-02 08:05:18",
-      "text": "Buy-in increased for GAGAN: count = 7. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790907424596_dbem",
-      "time": "2026-10-02 07:47:04",
-      "text": "Buy-in increased for KUNAL: count = 3. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
