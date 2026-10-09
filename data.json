@@ -2011,7 +2011,7 @@
       "name": "SANDEEP",
       "buyIns": 2,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 16060
     },
     {
       "id": 1791519608485,
@@ -2053,7 +2053,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-09T07:41:43.593Z"
+    "heartbeatAt": "2026-10-09T07:47:09.171Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2071,6 +2071,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791532013265_zijl",
+      "time": "2026-10-09 13:16:53",
+      "text": "Set final coins for SANDEEP: 16060 coins. • by sandeep mac"
+    },
     {
       "id": "L_1791531687999_4gcf",
       "time": "2026-10-09 13:11:27",
@@ -4065,11 +4070,6 @@
       "id": "L_1790926228542_62ip",
       "time": "2026-10-02 13:00:28",
       "text": "Set final coins for HARI: 15670 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790924239669_0nqb",
-      "time": "2026-10-02 12:27:19",
-      "text": "Buy-in increased for KUNAL: count = 6. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
