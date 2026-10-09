@@ -1984,13 +1984,34 @@
       "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1791519586924,
+      "name": "RISHI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1791519593687,
+      "name": "RAM",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1791519599296,
+      "name": "HARI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "activeSessionId": "S_mv0ghvxuwakmrz",
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-09T04:19:46.325Z"
+    "heartbeatAt": "2026-10-09T04:20:02.729Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2008,6 +2029,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791519599296_vimh",
+      "time": "2026-10-09 09:49:59",
+      "text": "Added \"HARI\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1791519593687_lkuo",
+      "time": "2026-10-09 09:49:53",
+      "text": "Added \"RAM\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1791519586924_u9ue",
+      "time": "2026-10-09 09:49:46",
+      "text": "Added \"RISHI\" with 1 buy-in (1000c). • by sandeep mac"
+    },
     {
       "id": "L_1791519581544_0u1z",
       "time": "2026-10-09 09:49:41",
@@ -3992,21 +4028,6 @@
       "id": "L_1790823872379_g9go",
       "time": "2026-10-01 08:34:32",
       "text": "Set final coins for RISHI: 10500 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790823765319_ooxa",
-      "time": "2026-10-01 08:32:45",
-      "text": "Pushed live state to GitHub repo. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790823734730_agrs",
-      "time": "2026-10-01 08:32:14",
-      "text": "Random picker chose AKSHAY. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790823734463_s8k5",
-      "time": "2026-10-01 08:32:14",
-      "text": "Random picker chose ABHISHEK. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
