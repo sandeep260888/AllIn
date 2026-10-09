@@ -1963,12 +1963,34 @@
       ]
     }
   ],
-  "activePlayers": [],
-  "activeSessionId": null,
+  "activePlayers": [
+    {
+      "id": 1791519570933,
+      "name": "ABHISHEK",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1791519576606,
+      "name": "RAVI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1791519581544,
+      "name": "GAGAN",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    }
+  ],
+  "activeSessionId": "S_mv0ghvxuwakmrz",
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-09T04:19:29.618Z"
+    "heartbeatAt": "2026-10-09T04:19:46.325Z"
   },
   "settings": {
     "coinCount": "2",
@@ -1986,6 +2008,26 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791519581544_0u1z",
+      "time": "2026-10-09 09:49:41",
+      "text": "Added \"GAGAN\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1791519576606_6bud",
+      "time": "2026-10-09 09:49:36",
+      "text": "Added \"RAVI\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1791519570934_v4sy",
+      "time": "2026-10-09 09:49:30",
+      "text": "Added \"ABHISHEK\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1791519570930_pf3c",
+      "time": "2026-10-09 09:49:30",
+      "text": "Started new session and claimed host. • by sandeep mac"
+    },
     {
       "id": "L_1791519560116_k3z6",
       "time": "2026-10-09 09:49:20",
@@ -3965,26 +4007,6 @@
       "id": "L_1790823734463_s8k5",
       "time": "2026-10-01 08:32:14",
       "text": "Random picker chose ABHISHEK. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790823734347_si28",
-      "time": "2026-10-01 08:32:14",
-      "text": "Random picker chose SANDEEP. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790823734172_llfk",
-      "time": "2026-10-01 08:32:14",
-      "text": "Random picker chose KUNAL. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790823661679_11t8",
-      "time": "2026-10-01 08:31:01",
-      "text": "Set final coins for ABHISHEK: 0 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790823658557_voln",
-      "time": "2026-10-01 08:30:58",
-      "text": "Set final coins for KUNAL: 0 coins. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
