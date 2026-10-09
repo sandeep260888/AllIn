@@ -2026,13 +2026,27 @@
       "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1791519618244,
+      "name": "MOHINI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1791519628429,
+      "name": "SHUBHAM",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "activeSessionId": "S_mv0ghvxuwakmrz",
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-09T04:20:18.192Z"
+    "heartbeatAt": "2026-10-09T04:20:34.435Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2050,6 +2064,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791519628429_uy0h",
+      "time": "2026-10-09 09:50:28",
+      "text": "Added \"SHUBHAM\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1791519618244_t6z0",
+      "time": "2026-10-09 09:50:18",
+      "text": "Added \"MOHINI\" with 1 buy-in (1000c). • by sandeep mac"
+    },
     {
       "id": "L_1791519612278_faxr",
       "time": "2026-10-09 09:50:12",
@@ -4039,16 +4063,6 @@
       "id": "L_1790823904691_gnw6",
       "time": "2026-10-01 08:35:04",
       "text": "Published session — hosting released automatically. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790823903521_5yue",
-      "time": "2026-10-01 08:35:03",
-      "text": "Pushed live state to GitHub repo. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790823900517_8tem",
-      "time": "2026-10-01 08:35:00",
-      "text": "Saved session to database. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
