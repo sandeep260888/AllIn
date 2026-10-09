@@ -2041,9 +2041,21 @@
       ]
     }
   ],
-  "activePlayers": [],
-  "activeSessionId": null,
-  "activeHost": null,
+  "activePlayers": [
+    {
+      "id": 1791589923174,
+      "name": "HARI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    }
+  ],
+  "activeSessionId": "S_mv1mds2rqmm1h6",
+  "activeHost": {
+    "deviceId": "dev_pt3v9f2c",
+    "deviceName": "Hari's Macbook",
+    "heartbeatAt": "2026-10-09T23:52:18.570Z"
+  },
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -2060,6 +2072,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791589923174_dbfd",
+      "time": "2026-10-10 05:22:03",
+      "text": "Added \"HARI\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1791589923171_uib9",
+      "time": "2026-10-10 05:22:03",
+      "text": "Started new session and claimed host. • by Hari's Macbook"
+    },
     {
       "id": "L_1791589899967_mq9o",
       "time": "2026-10-10 05:21:39",
@@ -4049,16 +4071,6 @@
       "id": "L_1791159222630_yd16",
       "time": "2026-10-05 05:43:42",
       "text": "Buy-in decreased for ABHISHEK: count = 2. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791159201652_ntze",
-      "time": "2026-10-05 05:43:21",
-      "text": "Buy-in increased for ABHISHEK: count = 3. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791158425153_665x",
-      "time": "2026-10-05 05:30:25",
-      "text": "Buy-in increased for ABHISHEK: count = 2. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
