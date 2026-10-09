@@ -2048,13 +2048,41 @@
       "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1791589953767,
+      "name": "AKSHAY",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1791589960941,
+      "name": "RAM",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1791589963791,
+      "name": "RISHI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1791589972775,
+      "name": "MOHINI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "activeSessionId": "S_mv1mds2rqmm1h6",
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-09T23:52:18.570Z"
+    "heartbeatAt": "2026-10-09T23:53:08.397Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2072,6 +2100,26 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791589972775_h013",
+      "time": "2026-10-10 05:22:52",
+      "text": "Added \"MOHINI\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1791589963791_tt27",
+      "time": "2026-10-10 05:22:43",
+      "text": "Added \"RISHI\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1791589960941_pllh",
+      "time": "2026-10-10 05:22:40",
+      "text": "Added \"RAM\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1791589953767_h3gs",
+      "time": "2026-10-10 05:22:33",
+      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
     {
       "id": "L_1791589923174_dbfd",
       "time": "2026-10-10 05:22:03",
@@ -4051,26 +4099,6 @@
       "id": "L_1791163457931_9grl",
       "time": "2026-10-05 06:54:17",
       "text": "Buy-in increased for HARI: count = 5. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791162919023_hetx",
-      "time": "2026-10-05 06:45:19",
-      "text": "Buy-in increased for HARI: count = 4. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791162530850_ftto",
-      "time": "2026-10-05 06:38:50",
-      "text": "Buy-in increased for HARI: count = 3. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791161190589_33i4",
-      "time": "2026-10-05 06:16:30",
-      "text": "Buy-in increased for HARI: count = 2. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791159222630_yd16",
-      "time": "2026-10-05 05:43:42",
-      "text": "Buy-in decreased for ABHISHEK: count = 2. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
