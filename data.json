@@ -1990,7 +1990,7 @@
       "name": "RISHI",
       "buyIns": 6,
       "buyInCoins": 1000,
-      "cashOutCoins": 29
+      "cashOutCoins": 29670
     },
     {
       "id": 1791519593687,
@@ -2067,6 +2067,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791538528896_r764",
+      "time": "2026-10-09 15:05:28",
+      "text": "Set final coins for RISHI: 29670 coins. • by sandeep mac"
+    },
     {
       "id": "L_1791538511369_5lbj",
       "time": "2026-10-09 15:05:11",
@@ -4061,11 +4066,6 @@
       "id": "L_1790926475604_1ejj",
       "time": "2026-10-02 13:04:35",
       "text": "Set final coins for GAGAN: 4490 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790926462946_flpx",
-      "time": "2026-10-02 13:04:22",
-      "text": "Set final coins for RISHI: 13860 coins. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
