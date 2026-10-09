@@ -2041,93 +2041,8 @@
       ]
     }
   ],
-  "activePlayers": [
-    {
-      "id": 1791519570933,
-      "name": "ABHISHEK",
-      "buyIns": 4,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1791519576606,
-      "name": "RAVI",
-      "buyIns": 10,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1791519581544,
-      "name": "GAGAN",
-      "buyIns": 12,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1791519586924,
-      "name": "RISHI",
-      "buyIns": 6,
-      "buyInCoins": 1000,
-      "cashOutCoins": 28370
-    },
-    {
-      "id": 1791519593687,
-      "name": "RAM",
-      "buyIns": 1,
-      "buyInCoins": 1000,
-      "cashOutCoins": 2930
-    },
-    {
-      "id": 1791519599296,
-      "name": "HARI",
-      "buyIns": 1,
-      "buyInCoins": 1000,
-      "cashOutCoins": 5740
-    },
-    {
-      "id": 1791519602744,
-      "name": "SANDEEP",
-      "buyIns": 2,
-      "buyInCoins": 1000,
-      "cashOutCoins": 15350
-    },
-    {
-      "id": 1791519608485,
-      "name": "KUNAL",
-      "buyIns": 3,
-      "buyInCoins": 1000,
-      "cashOutCoins": 12260
-    },
-    {
-      "id": 1791519612278,
-      "name": "AKSHAY",
-      "buyIns": 4,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1791519618244,
-      "name": "MOHINI",
-      "buyIns": 7,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1791519628429,
-      "name": "SHUBHAM",
-      "buyIns": 2,
-      "buyInCoins": 1000,
-      "cashOutCoins": 3350
-    },
-    {
-      "id": 1791519652803,
-      "name": "ALOK",
-      "buyIns": 21,
-      "buyInCoins": 1000,
-      "cashOutCoins": 5000
-    }
-  ],
-  "activeSessionId": "S_mv0ghvxuwakmrz",
+  "activePlayers": [],
+  "activeSessionId": null,
   "activeHost": null,
   "settings": {
     "coinCount": "2",
@@ -2145,6 +2060,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791589899967_mq9o",
+      "time": "2026-10-10 05:21:39",
+      "text": "Cleared active session dashboard. • by Hari's Macbook"
+    },
     {
       "id": "L_1791540665007_ni52",
       "time": "2026-10-09 15:41:05",
@@ -3566,6 +3486,11 @@
       "text": "Buy-in increased for RAVI: count = 8. • by sandeep mac"
     },
     {
+      "id": "L_1791319506385_p2ni",
+      "time": "2026-10-07 02:15:06",
+      "text": "Manual refresh synchronized with GitHub. • by Hari's Macbook"
+    },
+    {
       "id": "L_1791318940430_qw11",
       "time": "2026-10-07 02:05:40",
       "text": "Buy-in increased for RAVI: count = 7. • by sandeep mac"
@@ -3599,6 +3524,11 @@
       "id": "L_1791317590125_jhz7",
       "time": "2026-10-07 01:43:10",
       "text": "Buy-in increased for MOHINI: count = 2. • by sandeep mac"
+    },
+    {
+      "id": "L_1791317583738_g8z8",
+      "time": "2026-10-07 01:43:03",
+      "text": "Manual refresh synchronized with GitHub. • by Hari's Macbook"
     },
     {
       "id": "L_1791317337776_h480",
@@ -4129,21 +4059,6 @@
       "id": "L_1791158425153_665x",
       "time": "2026-10-05 05:30:25",
       "text": "Buy-in increased for ABHISHEK: count = 2. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791158423281_60ct",
-      "time": "2026-10-05 05:30:23",
-      "text": "Buy-in increased for AKSHAY: count = 2. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791156258577_wj7z",
-      "time": "2026-10-05 04:54:18",
-      "text": "Buy-in increased for RISHI: count = 3. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791155269448_sy9e",
-      "time": "2026-10-05 04:37:49",
-      "text": "Buy-in increased for RISHI: count = 2. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
