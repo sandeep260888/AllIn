@@ -1981,7 +1981,7 @@
     {
       "id": 1791519581544,
       "name": "GAGAN",
-      "buyIns": 3,
+      "buyIns": 8,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2030,7 +2030,7 @@
     {
       "id": 1791519618244,
       "name": "MOHINI",
-      "buyIns": 1,
+      "buyIns": 7,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2053,7 +2053,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-09T04:21:49.534Z"
+    "heartbeatAt": "2026-10-09T04:22:07.207Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2071,6 +2071,61 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791519720184_ywul",
+      "time": "2026-10-09 09:52:00",
+      "text": "Buy-in increased for MOHINI: count = 7. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519719746_7inw",
+      "time": "2026-10-09 09:51:59",
+      "text": "Buy-in increased for MOHINI: count = 6. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519719311_la8a",
+      "time": "2026-10-09 09:51:59",
+      "text": "Buy-in increased for MOHINI: count = 5. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519718933_eq5c",
+      "time": "2026-10-09 09:51:58",
+      "text": "Buy-in increased for MOHINI: count = 4. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519718616_r228",
+      "time": "2026-10-09 09:51:58",
+      "text": "Buy-in increased for MOHINI: count = 3. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519718277_42kb",
+      "time": "2026-10-09 09:51:58",
+      "text": "Buy-in increased for MOHINI: count = 2. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519711343_oxbh",
+      "time": "2026-10-09 09:51:51",
+      "text": "Buy-in increased for GAGAN: count = 8. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519710711_jc5b",
+      "time": "2026-10-09 09:51:50",
+      "text": "Buy-in increased for GAGAN: count = 7. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519710128_p03f",
+      "time": "2026-10-09 09:51:50",
+      "text": "Buy-in increased for GAGAN: count = 6. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519709908_dw9q",
+      "time": "2026-10-09 09:51:49",
+      "text": "Buy-in increased for GAGAN: count = 5. • by sandeep mac"
+    },
+    {
+      "id": "L_1791519709595_omln",
+      "time": "2026-10-09 09:51:49",
+      "text": "Buy-in increased for GAGAN: count = 4. • by sandeep mac"
+    },
     {
       "id": "L_1791519709328_iix0",
       "time": "2026-10-09 09:51:49",
@@ -4015,61 +4070,6 @@
       "id": "L_1790907424596_dbem",
       "time": "2026-10-02 07:47:04",
       "text": "Buy-in increased for KUNAL: count = 3. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790906751402_9ik7",
-      "time": "2026-10-02 07:35:51",
-      "text": "Buy-in increased for GAGAN: count = 6. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790906208262_u6om",
-      "time": "2026-10-02 07:26:48",
-      "text": "Buy-in increased for KUNAL: count = 2. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790906203401_ii4b",
-      "time": "2026-10-02 07:26:43",
-      "text": "Buy-in increased for GAGAN: count = 5. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790905948308_5v13",
-      "time": "2026-10-02 07:22:28",
-      "text": "Buy-in increased for GAGAN: count = 4. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790905638402_w1yg",
-      "time": "2026-10-02 07:17:18",
-      "text": "Buy-in increased for RAM: count = 6. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790904934279_q8eg",
-      "time": "2026-10-02 07:05:34",
-      "text": "Buy-in increased for RAM: count = 5. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790904779300_zo3o",
-      "time": "2026-10-02 07:02:59",
-      "text": "Buy-in increased for SANDEEP: count = 5. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790904549247_5t1s",
-      "time": "2026-10-02 06:59:09",
-      "text": "Buy-in increased for HARI: count = 3. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790903926532_qep6",
-      "time": "2026-10-02 06:48:46",
-      "text": "Buy-in increased for SANDEEP: count = 4. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790903459208_7t3v",
-      "time": "2026-10-02 06:40:59",
-      "text": "Buy-in increased for HARI: count = 2. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790902687023_35jt",
-      "time": "2026-10-02 06:28:07",
-      "text": "Buy-in increased for RAM: count = 4. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
