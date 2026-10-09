@@ -2045,7 +2045,7 @@
     {
       "id": 1791589923174,
       "name": "HARI",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2089,7 +2089,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-09T23:55:09.344Z"
+    "heartbeatAt": "2026-10-09T23:58:12.488Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2107,6 +2107,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791590276894_plso",
+      "time": "2026-10-10 05:27:56",
+      "text": "Buy-in increased for HARI: count = 2. • by Hari's Macbook"
+    },
     {
       "id": "L_1791590093300_9bw0",
       "time": "2026-10-10 05:24:53",
@@ -4101,11 +4106,6 @@
       "id": "L_1791164538579_v9x8",
       "time": "2026-10-05 07:12:18",
       "text": "Random picker chose RISHI. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791164538396_wnns",
-      "time": "2026-10-05 07:12:18",
-      "text": "Random picker chose SANDEEP. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
