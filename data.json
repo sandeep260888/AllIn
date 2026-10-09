@@ -1997,7 +1997,7 @@
       "name": "RAM",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 3030
+      "cashOutCoins": 2924
     },
     {
       "id": 1791519599296,
@@ -2067,6 +2067,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791539528004_ovsl",
+      "time": "2026-10-09 15:22:08",
+      "text": "Set final coins for RAM: 2924 coins. • by sandeep mac"
+    },
     {
       "id": "L_1791539495555_g8pq",
       "time": "2026-10-09 15:21:35",
@@ -4061,11 +4066,6 @@
       "id": "L_1790926540036_be6y",
       "time": "2026-10-02 13:05:40",
       "text": "Set final coins for GAGAN: 5350 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790926532752_evsr",
-      "time": "2026-10-02 13:05:32",
-      "text": "Set final coins for SANDEEP: 7600 coins. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
