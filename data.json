@@ -2068,6 +2068,11 @@
   },
   "logs": [
     {
+      "id": "L_1791538641635_w1mq",
+      "time": "2026-10-09 15:07:21",
+      "text": "Set final coins for RAVI: 1000 coins. • by sandeep mac"
+    },
+    {
       "id": "L_1791538528896_r764",
       "time": "2026-10-09 15:05:28",
       "text": "Set final coins for RISHI: 29670 coins. • by sandeep mac"
@@ -4061,11 +4066,6 @@
       "id": "L_1790926479510_acpa",
       "time": "2026-10-02 13:04:39",
       "text": "Set final coins for GAGAN: 4498 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790926475604_1ejj",
-      "time": "2026-10-02 13:04:35",
-      "text": "Set final coins for GAGAN: 4490 coins. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
