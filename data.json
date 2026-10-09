@@ -2039,7 +2039,7 @@
       "name": "SHUBHAM",
       "buyIns": 2,
       "buyInCoins": 1000,
-      "cashOutCoins": 3480
+      "cashOutCoins": 3350
     },
     {
       "id": 1791519652803,
@@ -2067,6 +2067,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791539569522_4dh7",
+      "time": "2026-10-09 15:22:49",
+      "text": "Set final coins for SHUBHAM: 3350 coins. • by sandeep mac"
+    },
+    {
+      "id": "L_1791539555571_zlbd",
+      "time": "2026-10-09 15:22:35",
+      "text": "Set final coins for SHUBHAM: 3400 coins. • by sandeep mac"
+    },
     {
       "id": "L_1791539528004_ovsl",
       "time": "2026-10-09 15:22:08",
@@ -4056,16 +4066,6 @@
       "id": "L_1790926544503_ivtj",
       "time": "2026-10-02 13:05:44",
       "text": "Settlement: KUNAL pays HARI ₹3000.00 • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790926544496_5j3i",
-      "time": "2026-10-02 13:05:44",
-      "text": "Settlement calculated (6 transfers). • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790926540036_be6y",
-      "time": "2026-10-02 13:05:40",
-      "text": "Set final coins for GAGAN: 5350 coins. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
