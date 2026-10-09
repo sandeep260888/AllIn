@@ -2050,11 +2050,7 @@
     }
   ],
   "activeSessionId": "S_mv0ghvxuwakmrz",
-  "activeHost": {
-    "deviceId": "dev_w3f5ipa6",
-    "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-09T07:47:09.171Z"
-  },
+  "activeHost": null,
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -2071,6 +2067,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791532053266_0u1v",
+      "time": "2026-10-09 13:17:33",
+      "text": "Stopped hosting. • by sandeep mac"
+    },
     {
       "id": "L_1791532013265_zijl",
       "time": "2026-10-09 13:16:53",
@@ -4065,11 +4066,6 @@
       "id": "L_1790926266407_av2k",
       "time": "2026-10-02 13:01:06",
       "text": "Set final coins for HARI: 15600 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790926228542_62ip",
-      "time": "2026-10-02 13:00:28",
-      "text": "Set final coins for HARI: 15670 coins. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
