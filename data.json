@@ -1,6 +1,84 @@
 {
   "savedSessions": [
     {
+      "sessionId": "S_mv0ghvxuwakmrz",
+      "date": "2026-10-09T10:11:05.007Z",
+      "entries": [
+        {
+          "name": "ABHISHEK",
+          "investedCoins": 4000,
+          "finalCoins": 0,
+          "netVal": -2000
+        },
+        {
+          "name": "RAVI",
+          "investedCoins": 10000,
+          "finalCoins": 0,
+          "netVal": -5000
+        },
+        {
+          "name": "GAGAN",
+          "investedCoins": 12000,
+          "finalCoins": 0,
+          "netVal": -6000
+        },
+        {
+          "name": "RISHI",
+          "investedCoins": 6000,
+          "finalCoins": 28370,
+          "netVal": 11185
+        },
+        {
+          "name": "RAM",
+          "investedCoins": 1000,
+          "finalCoins": 2930,
+          "netVal": 965
+        },
+        {
+          "name": "HARI",
+          "investedCoins": 1000,
+          "finalCoins": 5740,
+          "netVal": 2370
+        },
+        {
+          "name": "SANDEEP",
+          "investedCoins": 2000,
+          "finalCoins": 15350,
+          "netVal": 6675
+        },
+        {
+          "name": "KUNAL",
+          "investedCoins": 3000,
+          "finalCoins": 12260,
+          "netVal": 4630
+        },
+        {
+          "name": "AKSHAY",
+          "investedCoins": 4000,
+          "finalCoins": 0,
+          "netVal": -2000
+        },
+        {
+          "name": "MOHINI",
+          "investedCoins": 7000,
+          "finalCoins": 0,
+          "netVal": -3500
+        },
+        {
+          "name": "SHUBHAM",
+          "investedCoins": 2000,
+          "finalCoins": 3350,
+          "netVal": 675
+        },
+        {
+          "name": "ALOK",
+          "investedCoins": 21000,
+          "finalCoins": 5000,
+          "netVal": -8000
+        }
+      ]
+    },
+    {
       "sessionId": "S_muylb54mmhu0fd",
       "date": "2026-10-08T07:41:43.730Z",
       "entries": [
@@ -2068,6 +2146,11 @@
   },
   "logs": [
     {
+      "id": "L_1791540665007_ni52",
+      "time": "2026-10-09 15:41:05",
+      "text": "Saved session to database. • by sandeep mac"
+    },
+    {
       "id": "L_1791539642739_ss7j",
       "time": "2026-10-09 15:24:02",
       "text": "Settlement: AKSHAY pays SHUBHAM ₹675.00 • by sandeep mac"
@@ -4061,11 +4144,6 @@
       "id": "L_1791155269448_sy9e",
       "time": "2026-10-05 04:37:49",
       "text": "Buy-in increased for RISHI: count = 2. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791155267006_ccvj",
-      "time": "2026-10-05 04:37:47",
-      "text": "Added \"RISHI\" with 1 buy-in (1000c). • by Hari's Macbook"
     }
   ],
   "knownRoster": [
