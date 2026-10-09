@@ -2004,7 +2004,7 @@
       "name": "HARI",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 6000
+      "cashOutCoins": 5740
     },
     {
       "id": 1791519602744,
@@ -2067,6 +2067,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791539495555_g8pq",
+      "time": "2026-10-09 15:21:35",
+      "text": "Set final coins for HARI: 5740 coins. • by sandeep mac"
+    },
     {
       "id": "L_1791539461006_kpcv",
       "time": "2026-10-09 15:21:01",
@@ -4061,11 +4066,6 @@
       "id": "L_1790926532752_evsr",
       "time": "2026-10-02 13:05:32",
       "text": "Set final coins for SANDEEP: 7600 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790926518288_nxwi",
-      "time": "2026-10-02 13:05:18",
-      "text": "Set final coins for GAGAN: 5000 coins. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
