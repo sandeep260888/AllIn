@@ -1974,7 +1974,7 @@
     {
       "id": 1791519576606,
       "name": "RAVI",
-      "buyIns": 8,
+      "buyIns": 10,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2044,7 +2044,7 @@
     {
       "id": 1791519652803,
       "name": "ALOK",
-      "buyIns": 20,
+      "buyIns": 21,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -2067,6 +2067,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791538459316_ik2c",
+      "time": "2026-10-09 15:04:19",
+      "text": "Buy-in increased for ALOK: count = 21. • by sandeep mac"
+    },
+    {
+      "id": "L_1791538442321_fp0u",
+      "time": "2026-10-09 15:04:02",
+      "text": "Buy-in increased for RAVI: count = 10. • by sandeep mac"
+    },
+    {
+      "id": "L_1791538441934_4zky",
+      "time": "2026-10-09 15:04:01",
+      "text": "Buy-in increased for RAVI: count = 9. • by sandeep mac"
+    },
     {
       "id": "L_1791532053266_0u1v",
       "time": "2026-10-09 13:17:33",
@@ -4051,21 +4066,6 @@
       "id": "L_1790926343928_oopu",
       "time": "2026-10-02 13:02:23",
       "text": "Set final coins for RISHI: 13660 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790926301144_48zy",
-      "time": "2026-10-02 13:01:41",
-      "text": "Set final coins for AKSHAY: 2500 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790926274616_wuyc",
-      "time": "2026-10-02 13:01:14",
-      "text": "Set final coins for KUNAL: 0 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790926266407_av2k",
-      "time": "2026-10-02 13:01:06",
-      "text": "Set final coins for HARI: 15600 coins. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
