@@ -1981,7 +1981,7 @@
     {
       "id": 1791519581544,
       "name": "GAGAN",
-      "buyIns": 9,
+      "buyIns": 12,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2067,6 +2067,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791538465367_5sjl",
+      "time": "2026-10-09 15:04:25",
+      "text": "Buy-in increased for GAGAN: count = 12. • by sandeep mac"
+    },
+    {
+      "id": "L_1791538464750_myz3",
+      "time": "2026-10-09 15:04:24",
+      "text": "Buy-in increased for GAGAN: count = 11. • by sandeep mac"
+    },
+    {
+      "id": "L_1791538464383_byux",
+      "time": "2026-10-09 15:04:24",
+      "text": "Buy-in increased for GAGAN: count = 10. • by sandeep mac"
+    },
     {
       "id": "L_1791538459316_ik2c",
       "time": "2026-10-09 15:04:19",
@@ -4051,21 +4066,6 @@
       "id": "L_1790926371668_4ixq",
       "time": "2026-10-02 13:02:51",
       "text": "Set final coins for SANDEEP: 7500 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790926358201_3j3s",
-      "time": "2026-10-02 13:02:38",
-      "text": "Set final coins for KUNAL: 0 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790926356197_r5az",
-      "time": "2026-10-02 13:02:36",
-      "text": "Set final coins for GAGAN: 4650 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790926343928_oopu",
-      "time": "2026-10-02 13:02:23",
-      "text": "Set final coins for RISHI: 13660 coins. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
