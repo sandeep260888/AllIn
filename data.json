@@ -1997,7 +1997,7 @@
       "name": "RAM",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 2924
+      "cashOutCoins": 2930
     },
     {
       "id": 1791519599296,
@@ -2067,6 +2067,76 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791539642739_ss7j",
+      "time": "2026-10-09 15:24:02",
+      "text": "Settlement: AKSHAY pays SHUBHAM ₹675.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1791539642738_aqhy",
+      "time": "2026-10-09 15:24:02",
+      "text": "Settlement: AKSHAY pays RAM ₹965.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1791539642737_fa6d",
+      "time": "2026-10-09 15:24:02",
+      "text": "Settlement: AKSHAY pays HARI ₹360.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1791539642736_zaid",
+      "time": "2026-10-09 15:24:02",
+      "text": "Settlement: ABHISHEK pays HARI ₹2000.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1791539642736_gnxw",
+      "time": "2026-10-09 15:24:02",
+      "text": "Settlement: MOHINI pays HARI ₹10.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1791539642734_t649",
+      "time": "2026-10-09 15:24:02",
+      "text": "Settlement: MOHINI pays KUNAL ₹3490.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1791539642733_ry8l",
+      "time": "2026-10-09 15:24:02",
+      "text": "Settlement: RAVI pays KUNAL ₹1140.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1791539642730_wvmb",
+      "time": "2026-10-09 15:24:02",
+      "text": "Settlement: RAVI pays SANDEEP ₹3860.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1791539642729_4pmj",
+      "time": "2026-10-09 15:24:02",
+      "text": "Settlement: GAGAN pays SANDEEP ₹2815.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1791539642727_t144",
+      "time": "2026-10-09 15:24:02",
+      "text": "Settlement: GAGAN pays RISHI ₹3185.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1791539642724_6dkj",
+      "time": "2026-10-09 15:24:02",
+      "text": "Settlement: ALOK pays RISHI ₹8000.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1791539642722_ygdn",
+      "time": "2026-10-09 15:24:02",
+      "text": "Settlement calculated (11 transfers). • by sandeep mac"
+    },
+    {
+      "id": "L_1791539631037_7al3",
+      "time": "2026-10-09 15:23:51",
+      "text": "Set final coins for RAM: 2930 coins. • by sandeep mac"
+    },
+    {
+      "id": "L_1791539622206_hlz2",
+      "time": "2026-10-09 15:23:42",
+      "text": "Set final coins for RISHI: 28370 coins. • by sandeep mac"
+    },
     {
       "id": "L_1791539604639_rado",
       "time": "2026-10-09 15:23:24",
@@ -3996,76 +4066,6 @@
       "id": "L_1791155267006_ccvj",
       "time": "2026-10-05 04:37:47",
       "text": "Added \"RISHI\" with 1 buy-in (1000c). • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791155263181_4pfi",
-      "time": "2026-10-05 04:37:43",
-      "text": "Added \"ABHISHEK\" with 1 buy-in (1000c). • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791155254268_bwyp",
-      "time": "2026-10-05 04:37:34",
-      "text": "Added \"SANDEEP\" with 1 buy-in (1000c). • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791155250369_9bpc",
-      "time": "2026-10-05 04:37:30",
-      "text": "Added \"HARI\" with 1 buy-in (1000c). • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791155240422_bmmk",
-      "time": "2026-10-05 04:37:20",
-      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791155240419_rf59",
-      "time": "2026-10-05 04:37:20",
-      "text": "Started new session and claimed host. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791155234845_qbkr",
-      "time": "2026-10-05 04:37:14",
-      "text": "Cleared active session dashboard. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790926573786_86yk",
-      "time": "2026-10-02 13:06:13",
-      "text": "Pushed live state to GitHub repo. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790926571885_5lwo",
-      "time": "2026-10-02 13:06:11",
-      "text": "Published session — hosting released automatically. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790926570571_rlwd",
-      "time": "2026-10-02 13:06:10",
-      "text": "Pushed live state to GitHub repo. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790926567055_5806",
-      "time": "2026-10-02 13:06:07",
-      "text": "Saved session to database. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790926544517_bwds",
-      "time": "2026-10-02 13:05:44",
-      "text": "Settlement: GAGAN pays SANDEEP ₹800.00 • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790926544515_u8xv",
-      "time": "2026-10-02 13:05:44",
-      "text": "Settlement: GAGAN pays RISHI ₹1525.00 • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790926544512_0pnf",
-      "time": "2026-10-02 13:05:44",
-      "text": "Settlement: AKSHAY pays RISHI ₹2750.00 • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790926544510_ofu9",
-      "time": "2026-10-02 13:05:44",
-      "text": "Settlement: RAM pays RISHI ₹555.00 • by Hari's Macbook"
     }
   ],
   "knownRoster": [
