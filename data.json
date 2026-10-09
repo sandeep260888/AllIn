@@ -1963,76 +1963,12 @@
       ]
     }
   ],
-  "activePlayers": [
-    {
-      "id": 1791406725242,
-      "name": "RAVI",
-      "buyIns": 6,
-      "buyInCoins": 1000,
-      "cashOutCoins": 6640
-    },
-    {
-      "id": 1791406730199,
-      "name": "ALOK",
-      "buyIns": 15,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1791406735748,
-      "name": "GAGAN",
-      "buyIns": 15,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1791406739852,
-      "name": "ABHISHEK",
-      "buyIns": 8,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1791406745725,
-      "name": "MOHINI",
-      "buyIns": 3,
-      "buyInCoins": 1000,
-      "cashOutCoins": 3000
-    },
-    {
-      "id": 1791406750643,
-      "name": "AKSHAY",
-      "buyIns": 8,
-      "buyInCoins": 1000,
-      "cashOutCoins": 10800
-    },
-    {
-      "id": 1791406755988,
-      "name": "RISHI",
-      "buyIns": 11,
-      "buyInCoins": 1000,
-      "cashOutCoins": 15190
-    },
-    {
-      "id": 1791406759108,
-      "name": "HARI",
-      "buyIns": 2,
-      "buyInCoins": 1000,
-      "cashOutCoins": 23050
-    },
-    {
-      "id": 1791407147616,
-      "name": "KUNAL",
-      "buyIns": 1,
-      "buyInCoins": 1000,
-      "cashOutCoins": 10320
-    }
-  ],
-  "activeSessionId": "S_muylb54mmhu0fd",
+  "activePlayers": [],
+  "activeSessionId": null,
   "activeHost": {
-    "deviceId": "dev_awu17hz4",
-    "deviceName": "Ravi",
-    "heartbeatAt": "2026-10-08T07:41:47.918Z"
+    "deviceId": "dev_w3f5ipa6",
+    "deviceName": "sandeep mac",
+    "heartbeatAt": "2026-10-09T04:19:22.659Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2050,6 +1986,36 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791519560116_k3z6",
+      "time": "2026-10-09 09:49:20",
+      "text": "Took over hosting from Ravi (inactive 8h+). • by sandeep mac"
+    },
+    {
+      "id": "L_1791519553630_9kl4",
+      "time": "2026-10-09 09:49:13",
+      "text": "Cleared active session dashboard. • by sandeep mac"
+    },
+    {
+      "id": "L_1791460406167_e8np",
+      "time": "2026-10-08 17:23:26",
+      "text": "Random picker chose HARI. • by sandeep mac"
+    },
+    {
+      "id": "L_1791460405784_92u0",
+      "time": "2026-10-08 17:23:25",
+      "text": "Random picker chose MOHINI. • by sandeep mac"
+    },
+    {
+      "id": "L_1791460405318_9cly",
+      "time": "2026-10-08 17:23:25",
+      "text": "Random picker chose ALOK. • by sandeep mac"
+    },
+    {
+      "id": "L_1791460404869_ou6e",
+      "time": "2026-10-08 17:23:24",
+      "text": "Random picker chose ABHISHEK. • by sandeep mac"
+    },
     {
       "id": "L_1791445303730_po07",
       "time": "2026-10-08 13:11:43",
@@ -2564,6 +2530,16 @@
       "id": "L_1791406716175_tnsz",
       "time": "2026-10-08 02:28:36",
       "text": "Cleared active session dashboard. • by Device-7HZ4"
+    },
+    {
+      "id": "L_1791338944521_bede",
+      "time": "2026-10-07 07:39:04",
+      "text": "Published session — hosting released automatically. • by sandeep mac"
+    },
+    {
+      "id": "L_1791338932153_3jir",
+      "time": "2026-10-07 07:38:52",
+      "text": "Pushed live state to GitHub repo. • by sandeep mac"
     },
     {
       "id": "L_1791338930039_pd6f",
@@ -4009,46 +3985,6 @@
       "id": "L_1790823658557_voln",
       "time": "2026-10-01 08:30:58",
       "text": "Set final coins for KUNAL: 0 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790823627490_j2bw",
-      "time": "2026-10-01 08:30:27",
-      "text": "Set final coins for AKSHAY: 5120 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790823623280_f5i8",
-      "time": "2026-10-01 08:30:23",
-      "text": "Set final coins for KUNAL: 0 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790823616989_xzl5",
-      "time": "2026-10-01 08:30:16",
-      "text": "Set final coins for AKSHAY: 5000 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790823598685_ugoq",
-      "time": "2026-10-01 08:29:58",
-      "text": "Settlement: AKSHAY pays HARI ₹810.00 • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790823598683_beep",
-      "time": "2026-10-01 08:29:58",
-      "text": "Settlement: KUNAL pays HARI ₹1500.00 • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790823598681_gh37",
-      "time": "2026-10-01 08:29:58",
-      "text": "Settlement: ABHISHEK pays HARI ₹1035.00 • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790823598680_p7yu",
-      "time": "2026-10-01 08:29:58",
-      "text": "Settlement: ABHISHEK pays RISHI ₹965.00 • by Hari's Macbook"
-    },
-    {
-      "id": "L_1790823598678_khum",
-      "time": "2026-10-01 08:29:58",
-      "text": "Settlement: SANDEEP pays RISHI ₹2925.00 • by Hari's Macbook"
     }
   ],
   "knownRoster": [
