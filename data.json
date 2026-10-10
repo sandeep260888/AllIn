@@ -2045,7 +2045,7 @@
     {
       "id": 1791589923174,
       "name": "HARI",
-      "buyIns": 3,
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2089,7 +2089,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-10T00:23:31.479Z"
+    "heartbeatAt": "2026-10-10T00:36:52.173Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2107,6 +2107,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791592595802_sy8l",
+      "time": "2026-10-10 06:06:35",
+      "text": "Buy-in increased for HARI: count = 4. • by Hari's Macbook"
+    },
     {
       "id": "L_1791591795918_d5cn",
       "time": "2026-10-10 05:53:15",
@@ -4101,11 +4106,6 @@
       "id": "L_1791164610667_a08r",
       "time": "2026-10-05 07:13:30",
       "text": "Settlement: HARI pays SANDEEP ₹1955.00 • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791164610663_zqq1",
-      "time": "2026-10-05 07:13:30",
-      "text": "Settlement calculated (4 transfers). • by Hari's Macbook"
     }
   ],
   "knownRoster": [
