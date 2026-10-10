@@ -2080,7 +2080,7 @@
     {
       "id": 1791590049450,
       "name": "SANDEEP",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -2089,7 +2089,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-10T00:17:39.733Z"
+    "heartbeatAt": "2026-10-10T00:23:31.479Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2107,6 +2107,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791591795918_d5cn",
+      "time": "2026-10-10 05:53:15",
+      "text": "Buy-in increased for SANDEEP: count = 3. • by Hari's Macbook"
+    },
     {
       "id": "L_1791591441931_fbya",
       "time": "2026-10-10 05:47:21",
@@ -4101,11 +4106,6 @@
       "id": "L_1791164610663_zqq1",
       "time": "2026-10-05 07:13:30",
       "text": "Settlement calculated (4 transfers). • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791164607092_unf7",
-      "time": "2026-10-05 07:13:27",
-      "text": "Set final coins for RISHI: 2240 coins. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
