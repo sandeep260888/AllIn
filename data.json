@@ -2128,11 +2128,7 @@
     }
   ],
   "activeSessionId": "S_mv1mds2rqmm1h6",
-  "activeHost": {
-    "deviceId": "dev_pt3v9f2c",
-    "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-10T02:42:02.896Z"
-  },
+  "activeHost": null,
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -2149,6 +2145,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791600126000_3i3x",
+      "time": "2026-10-10 08:12:06",
+      "text": "Published session — hosting released automatically. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1791600124373_0dsh",
+      "time": "2026-10-10 08:12:04",
+      "text": "Pushed live state to GitHub repo. • by Hari's Macbook"
+    },
     {
       "id": "L_1791600122459_ytc6",
       "time": "2026-10-10 08:12:02",
@@ -4138,16 +4144,6 @@
       "id": "L_1791244228196_ht1s",
       "time": "2026-10-06 05:20:28",
       "text": "Random picker chose KUNAL. • by Device-7HZ4"
-    },
-    {
-      "id": "L_1791244198060_8gqi",
-      "time": "2026-10-06 05:19:58",
-      "text": "Manual refresh synchronized with GitHub. • by Device-7HZ4"
-    },
-    {
-      "id": "L_1791243903884_l6c5",
-      "time": "2026-10-06 05:15:03",
-      "text": "Set final coins for SHUBHAM: 1000 coins. • by sandeep mac"
     }
   ],
   "knownRoster": [
