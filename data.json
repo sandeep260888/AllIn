@@ -2052,7 +2052,7 @@
     {
       "id": 1791589953767,
       "name": "AKSHAY",
-      "buyIns": 3,
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2089,7 +2089,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-10T01:18:04.770Z"
+    "heartbeatAt": "2026-10-10T01:33:10.595Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2107,6 +2107,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791595974913_i4dp",
+      "time": "2026-10-10 07:02:54",
+      "text": "Buy-in increased for AKSHAY: count = 4. • by Hari's Macbook"
+    },
     {
       "id": "L_1791595068158_jn3x",
       "time": "2026-10-10 06:47:48",
@@ -4101,11 +4106,6 @@
       "id": "L_1791164610672_ji79",
       "time": "2026-10-05 07:13:30",
       "text": "Settlement: RISHI pays AKSHAY ₹380.00 • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791164610671_ci1l",
-      "time": "2026-10-05 07:13:30",
-      "text": "Settlement: ABHISHEK pays AKSHAY ₹1000.00 • by Hari's Macbook"
     }
   ],
   "knownRoster": [
