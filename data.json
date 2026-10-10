@@ -2073,7 +2073,7 @@
     {
       "id": 1791589972775,
       "name": "MOHINI",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2089,7 +2089,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-10T01:33:10.595Z"
+    "heartbeatAt": "2026-10-10T01:39:06.902Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2107,6 +2107,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791596330679_m2fk",
+      "time": "2026-10-10 07:08:50",
+      "text": "Buy-in increased for MOHINI: count = 2. • by Hari's Macbook"
+    },
     {
       "id": "L_1791595974913_i4dp",
       "time": "2026-10-10 07:02:54",
@@ -4101,11 +4106,6 @@
       "id": "L_1791164638655_u7ky",
       "time": "2026-10-05 07:13:58",
       "text": "Saved session to database. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791164610672_ji79",
-      "time": "2026-10-05 07:13:30",
-      "text": "Settlement: RISHI pays AKSHAY ₹380.00 • by Hari's Macbook"
     }
   ],
   "knownRoster": [
