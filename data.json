@@ -2066,7 +2066,7 @@
     {
       "id": 1791589963791,
       "name": "RISHI",
-      "buyIns": 3,
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2089,7 +2089,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-10T01:48:58.086Z"
+    "heartbeatAt": "2026-10-10T01:55:03.391Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2107,6 +2107,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791597287703_ccym",
+      "time": "2026-10-10 07:24:47",
+      "text": "Buy-in increased for RISHI: count = 4. • by Hari's Macbook"
+    },
     {
       "id": "L_1791596922463_hvvh",
       "time": "2026-10-10 07:18:42",
@@ -4101,11 +4106,6 @@
       "id": "L_1791239426648_kyl3",
       "time": "2026-10-06 04:00:26",
       "text": "Cleared active session dashboard. • by sandeep mac"
-    },
-    {
-      "id": "L_1791239406058_kv7b",
-      "time": "2026-10-06 04:00:06",
-      "text": "Took over hosting from Hari's Macbook (inactive 8h+). • by sandeep mac"
     }
   ],
   "knownRoster": [
