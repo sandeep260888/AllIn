@@ -1,6 +1,48 @@
 {
   "savedSessions": [
     {
+      "sessionId": "S_mv1mds2rqmm1h6",
+      "date": "2026-10-10T02:42:02.458Z",
+      "entries": [
+        {
+          "name": "HARI",
+          "investedCoins": 4000,
+          "finalCoins": 8080,
+          "netVal": 2040
+        },
+        {
+          "name": "AKSHAY",
+          "investedCoins": 4000,
+          "finalCoins": 4000,
+          "netVal": 0
+        },
+        {
+          "name": "RAM",
+          "investedCoins": 2000,
+          "finalCoins": 3900,
+          "netVal": 950
+        },
+        {
+          "name": "RISHI",
+          "investedCoins": 5000,
+          "finalCoins": 3500,
+          "netVal": -750
+        },
+        {
+          "name": "MOHINI",
+          "investedCoins": 5000,
+          "finalCoins": 1020,
+          "netVal": -1990
+        },
+        {
+          "name": "SANDEEP",
+          "investedCoins": 3000,
+          "finalCoins": 2500,
+          "netVal": -250
+        }
+      ]
+    },
+    {
       "sessionId": "S_mv0ghvxuwakmrz",
       "date": "2026-10-09T10:11:05.007Z",
       "entries": [
@@ -2089,7 +2131,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-10T02:41:31.721Z"
+    "heartbeatAt": "2026-10-10T02:42:02.896Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2107,6 +2149,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791600122459_ytc6",
+      "time": "2026-10-10 08:12:02",
+      "text": "Saved session to database. • by Hari's Macbook"
+    },
     {
       "id": "L_1791600079630_yak7",
       "time": "2026-10-10 08:11:19",
@@ -4101,11 +4148,6 @@
       "id": "L_1791243903884_l6c5",
       "time": "2026-10-06 05:15:03",
       "text": "Set final coins for SHUBHAM: 1000 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1791243508527_b9bn",
-      "time": "2026-10-06 05:08:28",
-      "text": "Buy-in increased for RISHI: count = 3. • by sandeep mac"
     }
   ],
   "knownRoster": [
