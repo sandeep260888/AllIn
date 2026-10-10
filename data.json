@@ -2068,14 +2068,14 @@
       "name": "RISHI",
       "buyIns": 5,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 3500
     },
     {
       "id": 1791589972775,
       "name": "MOHINI",
       "buyIns": 5,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 1000
     },
     {
       "id": 1791590049450,
@@ -2089,7 +2089,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-10T02:40:24.160Z"
+    "heartbeatAt": "2026-10-10T02:40:56.277Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2107,6 +2107,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791600040688_fy5h",
+      "time": "2026-10-10 08:10:40",
+      "text": "Set final coins for RISHI: 3500 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1791600029188_j0c8",
+      "time": "2026-10-10 08:10:29",
+      "text": "Set final coins for MOHINI: 1000 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1791600025634_v932",
+      "time": "2026-10-10 08:10:25",
+      "text": "Set final coins for MOHINI: 1 coins. • by Hari's Macbook"
+    },
     {
       "id": "L_1791600008288_eik2",
       "time": "2026-10-10 08:10:08",
@@ -4091,21 +4106,6 @@
       "id": "L_1791239620140_cxyy",
       "time": "2026-10-06 04:03:40",
       "text": "Buy-in increased for HARI: count = 2. • by sandeep mac"
-    },
-    {
-      "id": "L_1791239454391_07h7",
-      "time": "2026-10-06 04:00:54",
-      "text": "Buy-in increased for SHUBHAM: count = 2. • by sandeep mac"
-    },
-    {
-      "id": "L_1791239451891_2g5g",
-      "time": "2026-10-06 04:00:51",
-      "text": "Added \"SANDEEP\" with 1 buy-in (1000c). • by sandeep mac"
-    },
-    {
-      "id": "L_1791239447708_xym7",
-      "time": "2026-10-06 04:00:47",
-      "text": "Added \"HARI\" with 1 buy-in (1000c). • by sandeep mac"
     }
   ],
   "knownRoster": [
