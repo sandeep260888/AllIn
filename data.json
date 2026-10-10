@@ -2075,7 +2075,7 @@
       "name": "MOHINI",
       "buyIns": 5,
       "buyInCoins": 1000,
-      "cashOutCoins": 1000
+      "cashOutCoins": 1020
     },
     {
       "id": 1791590049450,
@@ -2089,7 +2089,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-10T02:40:56.277Z"
+    "heartbeatAt": "2026-10-10T02:41:31.721Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2107,6 +2107,36 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791600079630_yak7",
+      "time": "2026-10-10 08:11:19",
+      "text": "Settlement: SANDEEP pays RAM ₹250.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1791600079629_4zoj",
+      "time": "2026-10-10 08:11:19",
+      "text": "Settlement: RISHI pays RAM ₹700.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1791600079628_2qex",
+      "time": "2026-10-10 08:11:19",
+      "text": "Settlement: RISHI pays HARI ₹50.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1791600079627_tvu0",
+      "time": "2026-10-10 08:11:19",
+      "text": "Settlement: MOHINI pays HARI ₹1990.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1791600079626_eg2o",
+      "time": "2026-10-10 08:11:19",
+      "text": "Settlement calculated (4 transfers). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1791600075659_gy2x",
+      "time": "2026-10-10 08:11:15",
+      "text": "Set final coins for MOHINI: 1020 coins. • by Hari's Macbook"
+    },
     {
       "id": "L_1791600040688_fy5h",
       "time": "2026-10-10 08:10:40",
@@ -4076,36 +4106,6 @@
       "id": "L_1791243508527_b9bn",
       "time": "2026-10-06 05:08:28",
       "text": "Buy-in increased for RISHI: count = 3. • by sandeep mac"
-    },
-    {
-      "id": "L_1791243090079_cqas",
-      "time": "2026-10-06 05:01:30",
-      "text": "Buy-in increased for HARI: count = 4. • by sandeep mac"
-    },
-    {
-      "id": "L_1791242645630_riwm",
-      "time": "2026-10-06 04:54:05",
-      "text": "Buy-in increased for HARI: count = 3. • by sandeep mac"
-    },
-    {
-      "id": "L_1791241944383_gr9m",
-      "time": "2026-10-06 04:42:24",
-      "text": "Buy-in increased for RISHI: count = 2. • by sandeep mac"
-    },
-    {
-      "id": "L_1791240046023_9eko",
-      "time": "2026-10-06 04:10:46",
-      "text": "Buy-in increased for KUNAL: count = 2. • by sandeep mac"
-    },
-    {
-      "id": "L_1791239905890_bf0z",
-      "time": "2026-10-06 04:08:25",
-      "text": "Added \"KUNAL\" with 1 buy-in (1000c). • by sandeep mac"
-    },
-    {
-      "id": "L_1791239620140_cxyy",
-      "time": "2026-10-06 04:03:40",
-      "text": "Buy-in increased for HARI: count = 2. • by sandeep mac"
     }
   ],
   "knownRoster": [
