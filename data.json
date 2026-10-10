@@ -2061,7 +2061,7 @@
       "name": "RAM",
       "buyIns": 2,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 3900
     },
     {
       "id": 1791589963791,
@@ -2073,7 +2073,7 @@
     {
       "id": 1791589972775,
       "name": "MOHINI",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2082,14 +2082,14 @@
       "name": "SANDEEP",
       "buyIns": 3,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 2500
     }
   ],
   "activeSessionId": "S_mv1mds2rqmm1h6",
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-10T01:39:06.902Z"
+    "heartbeatAt": "2026-10-10T01:48:58.086Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2107,6 +2107,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791596922463_hvvh",
+      "time": "2026-10-10 07:18:42",
+      "text": "Buy-in increased for MOHINI: count = 3. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1791596916897_fb28",
+      "time": "2026-10-10 07:18:36",
+      "text": "Set final coins for SANDEEP: 2500 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1791596908822_9eoz",
+      "time": "2026-10-10 07:18:28",
+      "text": "Set final coins for RAM: 3900 coins. • by Hari's Macbook"
+    },
     {
       "id": "L_1791596330679_m2fk",
       "time": "2026-10-10 07:08:50",
@@ -4091,21 +4106,6 @@
       "id": "L_1791239406058_kv7b",
       "time": "2026-10-06 04:00:06",
       "text": "Took over hosting from Hari's Macbook (inactive 8h+). • by sandeep mac"
-    },
-    {
-      "id": "L_1791164641937_r1j9",
-      "time": "2026-10-05 07:14:01",
-      "text": "Published session — hosting released automatically. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791164640529_fknh",
-      "time": "2026-10-05 07:14:00",
-      "text": "Pushed live state to GitHub repo. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791164638655_u7ky",
-      "time": "2026-10-05 07:13:58",
-      "text": "Saved session to database. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
