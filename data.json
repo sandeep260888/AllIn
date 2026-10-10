@@ -2045,7 +2045,7 @@
     {
       "id": 1791589923174,
       "name": "HARI",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2080,7 +2080,7 @@
     {
       "id": 1791590049450,
       "name": "SANDEEP",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -2089,7 +2089,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-09T23:58:12.488Z"
+    "heartbeatAt": "2026-10-10T00:17:39.733Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2107,6 +2107,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791591441931_fbya",
+      "time": "2026-10-10 05:47:21",
+      "text": "Buy-in increased for HARI: count = 3. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1791591141084_3icq",
+      "time": "2026-10-10 05:42:21",
+      "text": "Buy-in increased for SANDEEP: count = 2. • by Hari's Macbook"
+    },
     {
       "id": "L_1791590276894_plso",
       "time": "2026-10-10 05:27:56",
@@ -4096,16 +4106,6 @@
       "id": "L_1791164607092_unf7",
       "time": "2026-10-05 07:13:27",
       "text": "Set final coins for RISHI: 2240 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791164538762_rn98",
-      "time": "2026-10-05 07:12:18",
-      "text": "Random picker chose ABHISHEK. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791164538579_v9x8",
-      "time": "2026-10-05 07:12:18",
-      "text": "Random picker chose RISHI. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
