@@ -2096,35 +2096,35 @@
       "name": "SANDEEP",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 2870
     },
     {
       "id": 1791985573930,
       "name": "KUNAL",
       "buyIns": 2,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 1650
     },
     {
       "id": 1791985581231,
       "name": "HARI",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 1000
     },
     {
       "id": 1791985673285,
       "name": "RISHI",
       "buyIns": 3,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 650
     }
   ],
   "activeSessionId": "S_mv85xs0c3ldt3q",
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-14T14:36:23.885Z"
+    "heartbeatAt": "2026-10-14T14:37:36.529Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2142,6 +2142,46 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791988649187_1411",
+      "time": "2026-10-14 20:07:29",
+      "text": "Settlement: KUNAL pays AKSHAY ₹175.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1791988649185_2n19",
+      "time": "2026-10-14 20:07:29",
+      "text": "Settlement: RISHI pays AKSHAY ₹240.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1791988649184_ojmb",
+      "time": "2026-10-14 20:07:29",
+      "text": "Settlement: RISHI pays SANDEEP ₹935.00 • by sandeep mac"
+    },
+    {
+      "id": "L_1791988649182_chij",
+      "time": "2026-10-14 20:07:29",
+      "text": "Settlement calculated (3 transfers). • by sandeep mac"
+    },
+    {
+      "id": "L_1791988639948_in8s",
+      "time": "2026-10-14 20:07:19",
+      "text": "Set final coins for HARI: 1000 coins. • by sandeep mac"
+    },
+    {
+      "id": "L_1791988627731_i7eq",
+      "time": "2026-10-14 20:07:07",
+      "text": "Set final coins for RISHI: 650 coins. • by sandeep mac"
+    },
+    {
+      "id": "L_1791988618665_5koj",
+      "time": "2026-10-14 20:06:58",
+      "text": "Set final coins for SANDEEP: 2870 coins. • by sandeep mac"
+    },
+    {
+      "id": "L_1791988614467_0r3k",
+      "time": "2026-10-14 20:06:54",
+      "text": "Set final coins for KUNAL: 1650 coins. • by sandeep mac"
+    },
     {
       "id": "L_1791988568148_00k6",
       "time": "2026-10-14 20:06:08",
@@ -4101,46 +4141,6 @@
       "id": "L_1791250840485_g2le",
       "time": "2026-10-06 07:10:40",
       "text": "Set final coins for SANDEEP: 5200 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1791250798051_yfid",
-      "time": "2026-10-06 07:09:58",
-      "text": "Stopped hosting. • by sandeep mac"
-    },
-    {
-      "id": "L_1791250797857_ailg",
-      "time": "2026-10-06 07:09:57",
-      "text": "Manual refresh synchronized with GitHub. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791250796722_tlut",
-      "time": "2026-10-06 07:09:56",
-      "text": "Manual refresh synchronized with GitHub. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791250791022_hhvw",
-      "time": "2026-10-06 07:09:51",
-      "text": "Manual refresh synchronized with GitHub. • by sandeep mac"
-    },
-    {
-      "id": "L_1791250774728_xiju",
-      "time": "2026-10-06 07:09:34",
-      "text": "Manual refresh synchronized with GitHub. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791250767626_4r22",
-      "time": "2026-10-06 07:09:27",
-      "text": "Manual refresh synchronized with GitHub. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791250718738_7ssx",
-      "time": "2026-10-06 07:08:38",
-      "text": "Stopped hosting. • by sandeep mac"
-    },
-    {
-      "id": "L_1791250561385_0w31",
-      "time": "2026-10-06 07:06:01",
-      "text": "Buy-in increased for AKSHAY: count = 4. • by sandeep mac"
     }
   ],
   "knownRoster": [
