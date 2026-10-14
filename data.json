@@ -2089,7 +2089,7 @@
       "name": "AKSHAY",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 1830
     },
     {
       "id": 1791985570131,
@@ -2124,7 +2124,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-10-14T14:02:48.638Z"
+    "heartbeatAt": "2026-10-14T14:36:23.885Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2142,6 +2142,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1791988568148_00k6",
+      "time": "2026-10-14 20:06:08",
+      "text": "Set final coins for AKSHAY: 1830 coins. • by sandeep mac"
+    },
     {
       "id": "L_1791986553016_2h2m",
       "time": "2026-10-14 19:32:33",
@@ -4136,11 +4141,6 @@
       "id": "L_1791250561385_0w31",
       "time": "2026-10-06 07:06:01",
       "text": "Buy-in increased for AKSHAY: count = 4. • by sandeep mac"
-    },
-    {
-      "id": "L_1791250435220_onvc",
-      "time": "2026-10-06 07:03:55",
-      "text": "Buy-in increased for KUNAL: count = 4. • by sandeep mac"
     }
   ],
   "knownRoster": [
