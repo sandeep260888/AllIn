@@ -2254,11 +2254,7 @@
     }
   ],
   "activeSessionId": "S_mvfep2mqr1d5ws",
-  "activeHost": {
-    "deviceId": "dev_pt3v9f2c",
-    "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-19T15:44:15.474Z"
-  },
+  "activeHost": null,
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -2275,6 +2271,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792424662374_ymqf",
+      "time": "2026-10-19 21:14:22",
+      "text": "Published session — hosting released automatically. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792424660974_eya6",
+      "time": "2026-10-19 21:14:20",
+      "text": "Pushed live state to GitHub repo. • by Hari's Macbook"
+    },
     {
       "id": "L_1792424653978_o581",
       "time": "2026-10-19 21:14:13",
@@ -4264,16 +4270,6 @@
       "id": "L_1791338787387_ez0v",
       "time": "2026-10-07 07:36:27",
       "text": "Settlement calculated (8 transfers). • by sandeep mac"
-    },
-    {
-      "id": "L_1791338787272_gc3w",
-      "time": "2026-10-07 07:36:27",
-      "text": "Set final coins for RISHI: 29190 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1791338756406_05w2",
-      "time": "2026-10-07 07:35:56",
-      "text": "Set final coins for RISHI: 29500 coins. • by sandeep mac"
     }
   ],
   "knownRoster": [
