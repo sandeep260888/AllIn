@@ -2169,50 +2169,19 @@
   ],
   "activePlayers": [
     {
-      "id": 1791589923174,
-      "name": "HARI",
-      "buyIns": 4,
-      "buyInCoins": 1000,
-      "cashOutCoins": 8080
-    },
-    {
-      "id": 1791589953767,
-      "name": "AKSHAY",
-      "buyIns": 4,
-      "buyInCoins": 1000,
-      "cashOutCoins": 4000
-    },
-    {
-      "id": 1791589960941,
-      "name": "RAM",
-      "buyIns": 2,
-      "buyInCoins": 1000,
-      "cashOutCoins": 3900
-    },
-    {
-      "id": 1791589963791,
+      "id": 1792423539609,
       "name": "RISHI",
-      "buyIns": 5,
+      "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 3500
-    },
-    {
-      "id": 1791589972775,
-      "name": "MOHINI",
-      "buyIns": 5,
-      "buyInCoins": 1000,
-      "cashOutCoins": 1020
-    },
-    {
-      "id": 1791590049450,
-      "name": "SANDEEP",
-      "buyIns": 3,
-      "buyInCoins": 1000,
-      "cashOutCoins": 2500
+      "cashOutCoins": 0
     }
   ],
-  "activeSessionId": "S_mv1mds2rqmm1h6",
-  "activeHost": null,
+  "activeSessionId": "S_mvfep2mqr1d5ws",
+  "activeHost": {
+    "deviceId": "dev_pt3v9f2c",
+    "deviceName": "Hari's Macbook",
+    "heartbeatAt": "2026-10-19T15:25:40.638Z"
+  },
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -2229,6 +2198,26 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792423539609_rvnv",
+      "time": "2026-10-19 20:55:39",
+      "text": "Added \"RISHI\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792423539602_3ad2",
+      "time": "2026-10-19 20:55:39",
+      "text": "Started new session and claimed host. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792423526455_t8qd",
+      "time": "2026-10-19 20:55:26",
+      "text": "Pushed live state to GitHub repo. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792423524909_b13l",
+      "time": "2026-10-19 20:55:24",
+      "text": "Cleared active session dashboard. • by Hari's Macbook"
+    },
     {
       "id": "L_1792423512832_odpw",
       "time": "2026-10-19 20:55:12",
@@ -4208,26 +4197,6 @@
       "id": "L_1791327015551_jrxx",
       "time": "2026-10-07 04:20:15",
       "text": "Buy-in increased for MOHINI: count = 7. • by sandeep mac"
-    },
-    {
-      "id": "L_1791327015034_anzv",
-      "time": "2026-10-07 04:20:15",
-      "text": "Buy-in increased for MOHINI: count = 6. • by sandeep mac"
-    },
-    {
-      "id": "L_1791326406430_ivxa",
-      "time": "2026-10-07 04:10:06",
-      "text": "Buy-in increased for AKSHAY: count = 2. • by sandeep mac"
-    },
-    {
-      "id": "L_1791326100112_kctj",
-      "time": "2026-10-07 04:05:00",
-      "text": "Buy-in increased for HARI: count = 5. • by sandeep mac"
-    },
-    {
-      "id": "L_1791326083512_7ff2",
-      "time": "2026-10-07 04:04:43",
-      "text": "Buy-in increased for HARI: count = 4. • by sandeep mac"
     }
   ],
   "knownRoster": [
