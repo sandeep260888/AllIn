@@ -2201,7 +2201,7 @@
       "name": "HARI",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 6000
     },
     {
       "id": 1792423564802,
@@ -2215,7 +2215,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-19T15:28:01.709Z"
+    "heartbeatAt": "2026-10-19T15:29:24.255Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2233,6 +2233,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792423747672_c6si",
+      "time": "2026-10-19 20:59:07",
+      "text": "Set final coins for HARI: 6000 coins. • by Hari's Macbook"
+    },
     {
       "id": "L_1792423665263_q4ga",
       "time": "2026-10-19 20:57:45",
@@ -4227,11 +4232,6 @@
       "id": "L_1791338386269_r3hk",
       "time": "2026-10-07 07:29:46",
       "text": "Buy-in increased for SANDEEP: count = 12. • by sandeep mac"
-    },
-    {
-      "id": "L_1791338235583_7a3b",
-      "time": "2026-10-07 07:27:15",
-      "text": "Buy-in increased for ALOK: count = 6. • by sandeep mac"
     }
   ],
   "knownRoster": [
