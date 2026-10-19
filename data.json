@@ -2208,14 +2208,14 @@
       "name": "NIKITHA",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 1500
+      "cashOutCoins": 2500
     }
   ],
   "activeSessionId": "S_mvfep2mqr1d5ws",
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-19T15:26:47.972Z"
+    "heartbeatAt": "2026-10-19T15:28:01.709Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2233,6 +2233,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792423665263_q4ga",
+      "time": "2026-10-19 20:57:45",
+      "text": "Set final coins for NIKITHA: 2500 coins. • by Hari's Macbook"
+    },
     {
       "id": "L_1792423592479_zcbr",
       "time": "2026-10-19 20:56:32",
@@ -4227,11 +4232,6 @@
       "id": "L_1791338235583_7a3b",
       "time": "2026-10-07 07:27:15",
       "text": "Buy-in increased for ALOK: count = 6. • by sandeep mac"
-    },
-    {
-      "id": "L_1791338230233_6x4n",
-      "time": "2026-10-07 07:27:10",
-      "text": "Buy-in increased for SANDEEP: count = 11. • by sandeep mac"
     }
   ],
   "knownRoster": [
