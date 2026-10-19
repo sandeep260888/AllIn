@@ -2173,7 +2173,7 @@
       "name": "RISHI",
       "buyIns": 6,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 2400
     },
     {
       "id": 1792423544892,
@@ -2187,21 +2187,21 @@
       "name": "AKSHAY",
       "buyIns": 3,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 3000
     },
     {
       "id": 1792423555721,
       "name": "KUNAL",
       "buyIns": 2,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 1900
     },
     {
       "id": 1792423559179,
       "name": "HARI",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 6000
+      "cashOutCoins": 6200
     },
     {
       "id": 1792423564802,
@@ -2215,7 +2215,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-19T15:29:24.255Z"
+    "heartbeatAt": "2026-10-19T15:43:35.418Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2233,6 +2233,61 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792424604070_jbbr",
+      "time": "2026-10-19 21:13:24",
+      "text": "Settlement: KUNAL pays NIKITHA ₹50.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792424604069_xohv",
+      "time": "2026-10-19 21:13:24",
+      "text": "Settlement: MOHINI pays NIKITHA ₹700.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792424604067_zsxp",
+      "time": "2026-10-19 21:13:24",
+      "text": "Settlement: MOHINI pays HARI ₹800.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792424604065_032m",
+      "time": "2026-10-19 21:13:24",
+      "text": "Settlement: RISHI pays HARI ₹1800.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792424604061_nz8v",
+      "time": "2026-10-19 21:13:24",
+      "text": "Settlement calculated (4 transfers). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792424598978_eo83",
+      "time": "2026-10-19 21:13:18",
+      "text": "Set final coins for RISHI: 2400 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792424586411_e1zr",
+      "time": "2026-10-19 21:13:06",
+      "text": "Set final coins for AKSHAY: 3000 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792424579003_5n68",
+      "time": "2026-10-19 21:12:59",
+      "text": "Set final coins for AKSHAY: 0 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792424574702_5ud1",
+      "time": "2026-10-19 21:12:54",
+      "text": "Set final coins for KUNAL: 1900 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792424566561_s2dp",
+      "time": "2026-10-19 21:12:46",
+      "text": "Set final coins for HARI: 6200 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792424553954_o48s",
+      "time": "2026-10-19 21:12:33",
+      "text": "Set final coins for MOHINI: 0 coins. • by Hari's Macbook"
+    },
     {
       "id": "L_1792423747672_c6si",
       "time": "2026-10-19 20:59:07",
@@ -4177,61 +4232,6 @@
       "id": "L_1791338743956_j1t6",
       "time": "2026-10-07 07:35:43",
       "text": "Set final coins for RISHI: 29533 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1791338726376_vhj4",
-      "time": "2026-10-07 07:35:26",
-      "text": "Set final coins for HARI: 0 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1791338709189_0wls",
-      "time": "2026-10-07 07:35:09",
-      "text": "Set final coins for ALOK: 0 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1791338706737_p1gd",
-      "time": "2026-10-07 07:35:06",
-      "text": "Set final coins for MOHINI: 0 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1791338700503_t6q7",
-      "time": "2026-10-07 07:35:00",
-      "text": "Set final coins for SANDEEP: 4400 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1791338663221_u64l",
-      "time": "2026-10-07 07:34:23",
-      "text": "Set final coins for RAVI: 4660 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1791338659220_ng5j",
-      "time": "2026-10-07 07:34:19",
-      "text": "Set final coins for HARI: 0 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1791338657021_bkw1",
-      "time": "2026-10-07 07:34:17",
-      "text": "Set final coins for ALOK: 0 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1791338655004_3ej5",
-      "time": "2026-10-07 07:34:15",
-      "text": "Set final coins for MOHINI: 0 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1791338653288_81rq",
-      "time": "2026-10-07 07:34:13",
-      "text": "Set final coins for KUNAL: 5140 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1791338640723_7qq3",
-      "time": "2026-10-07 07:34:00",
-      "text": "Set final coins for AKSHAY: 4110 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1791338386269_r3hk",
-      "time": "2026-10-07 07:29:46",
-      "text": "Buy-in increased for SANDEEP: count = 12. • by sandeep mac"
     }
   ],
   "knownRoster": [
