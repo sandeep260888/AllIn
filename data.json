@@ -2230,6 +2230,11 @@
   },
   "logs": [
     {
+      "id": "L_1792423512832_odpw",
+      "time": "2026-10-19 20:55:12",
+      "text": "Pushed live state to GitHub repo. • by Hari's Macbook"
+    },
+    {
       "id": "L_1792423507502_hvae",
       "time": "2026-10-19 20:55:07",
       "text": "Updated existing session in database. • by Hari's Macbook"
@@ -4223,11 +4228,6 @@
       "id": "L_1791326083512_7ff2",
       "time": "2026-10-07 04:04:43",
       "text": "Buy-in increased for HARI: count = 4. • by sandeep mac"
-    },
-    {
-      "id": "L_1791325742196_h498",
-      "time": "2026-10-07 03:59:02",
-      "text": "Buy-in increased for SANDEEP: count = 7. • by sandeep mac"
     }
   ],
   "knownRoster": [
