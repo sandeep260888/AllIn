@@ -2171,28 +2171,28 @@
     {
       "id": 1792423539609,
       "name": "RISHI",
-      "buyIns": 1,
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
     {
       "id": 1792423544892,
       "name": "MOHINI",
-      "buyIns": 1,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
     {
       "id": 1792423549547,
       "name": "AKSHAY",
-      "buyIns": 1,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
     {
       "id": 1792423555721,
       "name": "KUNAL",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2202,13 +2202,20 @@
       "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1792423564802,
+      "name": "NIKITHA",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "activeSessionId": "S_mvfep2mqr1d5ws",
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-19T15:26:01.108Z"
+    "heartbeatAt": "2026-10-19T15:26:20.433Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2226,6 +2233,51 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792423580268_noo4",
+      "time": "2026-10-19 20:56:20",
+      "text": "Buy-in increased for RISHI: count = 4. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792423579867_blq1",
+      "time": "2026-10-19 20:56:19",
+      "text": "Buy-in increased for RISHI: count = 3. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792423579454_92uk",
+      "time": "2026-10-19 20:56:19",
+      "text": "Buy-in increased for RISHI: count = 2. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792423577917_gmpc",
+      "time": "2026-10-19 20:56:17",
+      "text": "Buy-in increased for KUNAL: count = 2. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792423576121_ejfz",
+      "time": "2026-10-19 20:56:16",
+      "text": "Buy-in increased for AKSHAY: count = 3. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792423575738_dewk",
+      "time": "2026-10-19 20:56:15",
+      "text": "Buy-in increased for AKSHAY: count = 2. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792423572163_c2x2",
+      "time": "2026-10-19 20:56:12",
+      "text": "Buy-in increased for MOHINI: count = 3. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792423571589_kbyo",
+      "time": "2026-10-19 20:56:11",
+      "text": "Buy-in increased for MOHINI: count = 2. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792423564802_3c81",
+      "time": "2026-10-19 20:56:04",
+      "text": "Added \"NIKITHA\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
     {
       "id": "L_1792423559179_njpv",
       "time": "2026-10-19 20:55:59",
@@ -4180,51 +4232,6 @@
       "id": "L_1791334830285_z39b",
       "time": "2026-10-07 06:30:30",
       "text": "Buy-in increased for KUNAL: count = 4. • by sandeep mac"
-    },
-    {
-      "id": "L_1791334827003_c8jy",
-      "time": "2026-10-07 06:30:27",
-      "text": "Buy-in increased for HARI: count = 8. • by sandeep mac"
-    },
-    {
-      "id": "L_1791334826552_revf",
-      "time": "2026-10-07 06:30:26",
-      "text": "Buy-in increased for HARI: count = 7. • by sandeep mac"
-    },
-    {
-      "id": "L_1791334148233_vnhd",
-      "time": "2026-10-07 06:19:08",
-      "text": "Buy-in decreased for KUNAL: count = 3. • by sandeep mac"
-    },
-    {
-      "id": "L_1791334084648_74yh",
-      "time": "2026-10-07 06:18:04",
-      "text": "Buy-in increased for KUNAL: count = 4. • by sandeep mac"
-    },
-    {
-      "id": "L_1791331173518_y9cl",
-      "time": "2026-10-07 05:29:33",
-      "text": "Buy-in increased for AKSHAY: count = 4. • by sandeep mac"
-    },
-    {
-      "id": "L_1791331145187_iti5",
-      "time": "2026-10-07 05:29:05",
-      "text": "Buy-in increased for AKSHAY: count = 3. • by sandeep mac"
-    },
-    {
-      "id": "L_1791330805450_cfrf",
-      "time": "2026-10-07 05:23:25",
-      "text": "Buy-in increased for HARI: count = 6. • by sandeep mac"
-    },
-    {
-      "id": "L_1791330803433_wn7f",
-      "time": "2026-10-07 05:23:23",
-      "text": "Buy-in increased for SANDEEP: count = 9. • by sandeep mac"
-    },
-    {
-      "id": "L_1791328485826_miwu",
-      "time": "2026-10-07 04:44:45",
-      "text": "Buy-in increased for SANDEEP: count = 8. • by sandeep mac"
     }
   ],
   "knownRoster": [
@@ -4236,6 +4243,7 @@
     "AKSHAY",
     "RAVI",
     "GAGAN",
-    "ALOK"
+    "ALOK",
+    "NIKITHA"
   ]
 }
