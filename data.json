@@ -2169,61 +2169,50 @@
   ],
   "activePlayers": [
     {
-      "id": 1792156782648,
-      "name": "RAM",
-      "buyIns": 4,
-      "buyInCoins": 1000,
-      "cashOutCoins": 1500
-    },
-    {
-      "id": 1792156787825,
-      "name": "GAGAN",
-      "buyIns": 8,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1792156791681,
-      "name": "AKSHAY",
-      "buyIns": 2,
-      "buyInCoins": 1000,
-      "cashOutCoins": 1770
-    },
-    {
-      "id": 1792156795390,
-      "name": "KUNAL",
-      "buyIns": 2,
-      "buyInCoins": 1000,
-      "cashOutCoins": 2690
-    },
-    {
-      "id": 1792156798766,
+      "id": 1791589923174,
       "name": "HARI",
-      "buyIns": 6,
-      "buyInCoins": 1000,
-      "cashOutCoins": 11540
-    },
-    {
-      "id": 1792156814475,
-      "name": "MOHINI",
       "buyIns": 4,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 8080
     },
     {
-      "id": 1792156826135,
-      "name": "RISHI",
-      "buyIns": 1,
+      "id": 1791589953767,
+      "name": "AKSHAY",
+      "buyIns": 4,
       "buyInCoins": 1000,
-      "cashOutCoins": 9500
+      "cashOutCoins": 4000
+    },
+    {
+      "id": 1791589960941,
+      "name": "RAM",
+      "buyIns": 2,
+      "buyInCoins": 1000,
+      "cashOutCoins": 3900
+    },
+    {
+      "id": 1791589963791,
+      "name": "RISHI",
+      "buyIns": 5,
+      "buyInCoins": 1000,
+      "cashOutCoins": 3500
+    },
+    {
+      "id": 1791589972775,
+      "name": "MOHINI",
+      "buyIns": 5,
+      "buyInCoins": 1000,
+      "cashOutCoins": 1020
+    },
+    {
+      "id": 1791590049450,
+      "name": "SANDEEP",
+      "buyIns": 3,
+      "buyInCoins": 1000,
+      "cashOutCoins": 2500
     }
   ],
-  "activeSessionId": "S_mvazvjna6209ap",
-  "activeHost": {
-    "deviceId": "dev_j8ab5h0f",
-    "deviceName": "Kunal",
-    "heartbeatAt": "2026-10-16T17:09:45.618Z"
-  },
+  "activeSessionId": "S_mv1mds2rqmm1h6",
+  "activeHost": null,
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -2240,6 +2229,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792423387277_ifv2",
+      "time": "2026-10-19 20:53:07",
+      "text": "Stopped hosting. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792423384657_9d72",
+      "time": "2026-10-19 20:53:04",
+      "text": "Took over hosting from Kunal (inactive 8h+). • by Hari's Macbook"
+    },
     {
       "id": "L_1792170469374_rvaf",
       "time": "2026-10-16 22:37:49",
@@ -2594,6 +2593,31 @@
       "id": "L_1791985560432_2wop",
       "time": "2026-10-14 19:16:00",
       "text": "Cleared active session dashboard. • by sandeep mac"
+    },
+    {
+      "id": "L_1791600136704_ho7z",
+      "time": "2026-10-10 08:12:16",
+      "text": "Random picker chose AKSHAY. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1791600136496_wjji",
+      "time": "2026-10-10 08:12:16",
+      "text": "Random picker chose RAM. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1791600136279_p6vo",
+      "time": "2026-10-10 08:12:16",
+      "text": "Random picker chose RISHI. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1791600136080_0nyd",
+      "time": "2026-10-10 08:12:16",
+      "text": "Random picker chose SANDEEP. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1791600128331_gyuz",
+      "time": "2026-10-10 08:12:08",
+      "text": "Pushed live state to GitHub repo. • by Hari's Macbook"
     },
     {
       "id": "L_1791600126000_3i3x",
@@ -4204,41 +4228,6 @@
       "id": "L_1791324338857_f2ad",
       "time": "2026-10-07 03:35:38",
       "text": "Buy-in increased for HARI: count = 3. • by sandeep mac"
-    },
-    {
-      "id": "L_1791323767686_r83x",
-      "time": "2026-10-07 03:26:07",
-      "text": "Buy-in increased for RAVI: count = 10. • by sandeep mac"
-    },
-    {
-      "id": "L_1791323767203_wb9e",
-      "time": "2026-10-07 03:26:07",
-      "text": "Buy-in increased for RAVI: count = 9. • by sandeep mac"
-    },
-    {
-      "id": "L_1791323438918_8nhe",
-      "time": "2026-10-07 03:20:38",
-      "text": "Buy-in increased for MOHINI: count = 5. • by sandeep mac"
-    },
-    {
-      "id": "L_1791322976631_ibt8",
-      "time": "2026-10-07 03:12:56",
-      "text": "Buy-in increased for HARI: count = 2. • by sandeep mac"
-    },
-    {
-      "id": "L_1791322543548_jc3x",
-      "time": "2026-10-07 03:05:43",
-      "text": "Buy-in increased for SANDEEP: count = 6. • by sandeep mac"
-    },
-    {
-      "id": "L_1791322134845_ubjs",
-      "time": "2026-10-07 02:58:54",
-      "text": "Added \"HARI\" with 1 buy-in (1000c). • by sandeep mac"
-    },
-    {
-      "id": "L_1791321872360_m22b",
-      "time": "2026-10-07 02:54:32",
-      "text": "Set final coins for HARSHIT: 7500 coins. • by sandeep mac"
     }
   ],
   "knownRoster": [
