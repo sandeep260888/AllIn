@@ -2244,13 +2244,20 @@
       "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1792496154039,
+      "name": "GAGAN",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "activeSessionId": "S_mvglndfg1dah1x",
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-20T11:28:36.140Z"
+    "heartbeatAt": "2026-10-20T11:36:10.274Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2268,6 +2275,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792496154040_nf3e",
+      "time": "2026-10-20 17:05:54",
+      "text": "Added \"GAGAN\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
     {
       "id": "L_1792495699888_nio6",
       "time": "2026-10-20 16:58:19",
@@ -4262,11 +4274,6 @@
       "id": "L_1791406735748_a0x1",
       "time": "2026-10-08 02:28:55",
       "text": "Added \"GAGAN\" with 1 buy-in (1000c). • by Ravi"
-    },
-    {
-      "id": "L_1791406730199_hcny",
-      "time": "2026-10-08 02:28:50",
-      "text": "Added \"ALOK\" with 1 buy-in (1000c). • by Ravi"
     }
   ],
   "knownRoster": [
