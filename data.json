@@ -1,6 +1,60 @@
 {
   "savedSessions": [
     {
+      "sessionId": "S_mvglndfg1dah1x",
+      "date": "2026-10-20T14:35:58.660Z",
+      "entries": [
+        {
+          "name": "RAM",
+          "investedCoins": 4000,
+          "finalCoins": 5540,
+          "netVal": 770
+        },
+        {
+          "name": "RISHI",
+          "investedCoins": 5000,
+          "finalCoins": 2600,
+          "netVal": -1200
+        },
+        {
+          "name": "AKSHAY",
+          "investedCoins": 1000,
+          "finalCoins": 3600,
+          "netVal": 1300
+        },
+        {
+          "name": "HARI",
+          "investedCoins": 3000,
+          "finalCoins": 6000,
+          "netVal": 1500
+        },
+        {
+          "name": "MOHINI",
+          "investedCoins": 4000,
+          "finalCoins": 0,
+          "netVal": -2000
+        },
+        {
+          "name": "GAGAN",
+          "investedCoins": 1000,
+          "finalCoins": 3640,
+          "netVal": 1320
+        },
+        {
+          "name": "RAVI",
+          "investedCoins": 5000,
+          "finalCoins": 1620,
+          "netVal": -1690
+        },
+        {
+          "name": "KUNAL",
+          "investedCoins": 1000,
+          "finalCoins": 1000,
+          "netVal": 0
+        }
+      ]
+    },
+    {
       "sessionId": "S_mvfep2mqr1d5ws",
       "date": "2026-10-19T15:44:13.978Z",
       "entries": [
@@ -2271,7 +2325,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-20T14:34:43.072Z"
+    "heartbeatAt": "2026-10-20T14:35:59.331Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2289,6 +2343,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792506958661_wh0b",
+      "time": "2026-10-20 20:05:58",
+      "text": "Saved session to database. • by Hari's Macbook"
+    },
     {
       "id": "L_1792506870431_ztgh",
       "time": "2026-10-20 20:04:30",
@@ -4283,11 +4342,6 @@
       "id": "L_1791426656122_xj1v",
       "time": "2026-10-08 08:00:56",
       "text": "Buy-in increased for RAVI: count = 6. • by Ravi"
-    },
-    {
-      "id": "L_1791426006077_9ckl",
-      "time": "2026-10-08 07:50:06",
-      "text": "Buy-in increased for RAVI: count = 5. • by Ravi"
     }
   ],
   "knownRoster": [
