@@ -2255,7 +2255,7 @@
     {
       "id": 1792501182836,
       "name": "RAVI",
-      "buyIns": 4,
+      "buyIns": 5,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2271,7 +2271,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-20T13:36:50.118Z"
+    "heartbeatAt": "2026-10-20T13:47:28.857Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2289,6 +2289,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792504032921_1lez",
+      "time": "2026-10-20 19:17:12",
+      "text": "Buy-in increased for RAVI: count = 5. • by Hari's Macbook"
+    },
     {
       "id": "L_1792503394384_vdd4",
       "time": "2026-10-20 19:06:34",
@@ -4283,11 +4288,6 @@
       "id": "L_1791410401562_4n21",
       "time": "2026-10-08 03:30:01",
       "text": "Set final coins for MOHINI: 760 coins. • by Ravi"
-    },
-    {
-      "id": "L_1791410335019_zf7j",
-      "time": "2026-10-08 03:28:55",
-      "text": "Buy-in increased for ALOK: count = 3. • by Ravi"
     }
   ],
   "knownRoster": [
