@@ -2213,7 +2213,7 @@
     {
       "id": 1792495683776,
       "name": "RAM",
-      "buyIns": 4,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 5540
     },
@@ -2271,7 +2271,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-20T14:32:27.405Z"
+    "heartbeatAt": "2026-10-20T14:33:05.436Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2289,6 +2289,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792506769318_2tii",
+      "time": "2026-10-20 20:02:49",
+      "text": "Buy-in decreased for RAM: count = 3. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792506759781_szlp",
+      "time": "2026-10-20 20:02:39",
+      "text": "Set final coins for MOHINI: 0 coins. • by Hari's Macbook"
+    },
     {
       "id": "L_1792506731418_zoge",
       "time": "2026-10-20 20:02:11",
@@ -4278,16 +4288,6 @@
       "id": "L_1791419839424_5np8",
       "time": "2026-10-08 06:07:19",
       "text": "Buy-in decreased for RISHI: count = 7. • by Ravi"
-    },
-    {
-      "id": "L_1791419838232_2290",
-      "time": "2026-10-08 06:07:18",
-      "text": "Buy-in increased for RISHI: count = 8. • by Ravi"
-    },
-    {
-      "id": "L_1791419837797_2pj3",
-      "time": "2026-10-08 06:07:17",
-      "text": "Buy-in increased for RISHI: count = 7. • by Ravi"
     }
   ],
   "knownRoster": [
