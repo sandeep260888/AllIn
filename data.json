@@ -2215,7 +2215,7 @@
       "name": "RAM",
       "buyIns": 4,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 5540
     },
     {
       "id": 1792495686571,
@@ -2250,7 +2250,7 @@
       "name": "GAGAN",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 3640
     },
     {
       "id": 1792501182836,
@@ -2271,7 +2271,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-20T14:01:46.531Z"
+    "heartbeatAt": "2026-10-20T14:22:18.767Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2289,6 +2289,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792506123070_icr5",
+      "time": "2026-10-20 19:52:03",
+      "text": "Set final coins for GAGAN: 3640 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792506113685_78s4",
+      "time": "2026-10-20 19:51:53",
+      "text": "Set final coins for RAM: 5540 coins. • by Hari's Macbook"
+    },
     {
       "id": "L_1792504890593_ikso",
       "time": "2026-10-20 19:31:30",
@@ -4278,16 +4288,6 @@
       "id": "L_1791411007703_vugs",
       "time": "2026-10-08 03:40:07",
       "text": "Buy-in increased for ALOK: count = 4. • by Ravi"
-    },
-    {
-      "id": "L_1791410995510_iwou",
-      "time": "2026-10-08 03:39:55",
-      "text": "Buy-in increased for RISHI: count = 3. • by Ravi"
-    },
-    {
-      "id": "L_1791410788794_6cfn",
-      "time": "2026-10-08 03:36:28",
-      "text": "Buy-in increased for RISHI: count = 2. • by Ravi"
     }
   ],
   "knownRoster": [
