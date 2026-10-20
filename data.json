@@ -2271,7 +2271,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-20T14:31:36.425Z"
+    "heartbeatAt": "2026-10-20T14:32:27.405Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2289,6 +2289,26 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792506731418_zoge",
+      "time": "2026-10-20 20:02:11",
+      "text": "Set final coins for AKSHAY: 3600 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792506727576_hzsf",
+      "time": "2026-10-20 20:02:07",
+      "text": "Set final coins for HARI: 6000 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792506720259_x4pb",
+      "time": "2026-10-20 20:02:00",
+      "text": "Set final coins for AKSHAY: 3400 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792506715503_oshr",
+      "time": "2026-10-20 20:01:55",
+      "text": "Set final coins for HARI: 5800 coins. • by Hari's Macbook"
+    },
     {
       "id": "L_1792506680805_wgjw",
       "time": "2026-10-20 20:01:20",
@@ -4268,26 +4288,6 @@
       "id": "L_1791419837797_2pj3",
       "time": "2026-10-08 06:07:17",
       "text": "Buy-in increased for RISHI: count = 7. • by Ravi"
-    },
-    {
-      "id": "L_1791419804857_ckpa",
-      "time": "2026-10-08 06:06:44",
-      "text": "Buy-in increased for ALOK: count = 8. • by Ravi"
-    },
-    {
-      "id": "L_1791419804438_nu49",
-      "time": "2026-10-08 06:06:44",
-      "text": "Buy-in increased for ALOK: count = 7. • by Ravi"
-    },
-    {
-      "id": "L_1791419803949_twbi",
-      "time": "2026-10-08 06:06:43",
-      "text": "Buy-in increased for ALOK: count = 6. • by Ravi"
-    },
-    {
-      "id": "L_1791418906776_iue5",
-      "time": "2026-10-08 05:51:46",
-      "text": "Buy-in increased for GAGAN: count = 9. • by Ravi"
     }
   ],
   "knownRoster": [
