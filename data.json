@@ -2222,21 +2222,21 @@
       "name": "RISHI",
       "buyIns": 5,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 2600
     },
     {
       "id": 1792495689637,
       "name": "AKSHAY",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 3600
     },
     {
       "id": 1792495692545,
       "name": "HARI",
       "buyIns": 3,
       "buyInCoins": 1000,
-      "cashOutCoins": 6010
+      "cashOutCoins": 6000
     },
     {
       "id": 1792495695529,
@@ -2257,7 +2257,7 @@
       "name": "RAVI",
       "buyIns": 5,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 1620
     },
     {
       "id": 1792501187936,
@@ -2271,7 +2271,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-20T14:30:30.833Z"
+    "heartbeatAt": "2026-10-20T14:31:36.425Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2289,6 +2289,41 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792506680805_wgjw",
+      "time": "2026-10-20 20:01:20",
+      "text": "Set final coins for RISHI: 2600 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792506679009_lsld",
+      "time": "2026-10-20 20:01:19",
+      "text": "Set final coins for RAVI: 1620 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792506667431_2npw",
+      "time": "2026-10-20 20:01:07",
+      "text": "Set final coins for MOHINI: 0 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792506661542_v65q",
+      "time": "2026-10-20 20:01:01",
+      "text": "Set final coins for AKSHAY: 3600 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792506659780_72n7",
+      "time": "2026-10-20 20:00:59",
+      "text": "Set final coins for KUNAL: 0 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792506656247_rc4k",
+      "time": "2026-10-20 20:00:56",
+      "text": "Set final coins for HARI: 6000 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792506645582_scqh",
+      "time": "2026-10-20 20:00:45",
+      "text": "Set final coins for AKSHAY: 3610 coins. • by Hari's Macbook"
+    },
     {
       "id": "L_1792506615088_h7a3",
       "time": "2026-10-20 20:00:15",
@@ -4253,41 +4288,6 @@
       "id": "L_1791418906776_iue5",
       "time": "2026-10-08 05:51:46",
       "text": "Buy-in increased for GAGAN: count = 9. • by Ravi"
-    },
-    {
-      "id": "L_1791418685594_v24p",
-      "time": "2026-10-08 05:48:05",
-      "text": "Buy-in increased for GAGAN: count = 8. • by Ravi"
-    },
-    {
-      "id": "L_1791418092915_ahxy",
-      "time": "2026-10-08 05:38:12",
-      "text": "Buy-in increased for GAGAN: count = 7. • by Ravi"
-    },
-    {
-      "id": "L_1791417971395_io7f",
-      "time": "2026-10-08 05:36:11",
-      "text": "Buy-in increased for GAGAN: count = 6. • by Ravi"
-    },
-    {
-      "id": "L_1791417247596_g8iv",
-      "time": "2026-10-08 05:24:07",
-      "text": "Buy-in increased for RISHI: count = 6. • by Ravi"
-    },
-    {
-      "id": "L_1791416487406_pgyu",
-      "time": "2026-10-08 05:11:27",
-      "text": "Buy-in increased for RISHI: count = 5. • by Ravi"
-    },
-    {
-      "id": "L_1791414956054_nmua",
-      "time": "2026-10-08 04:45:56",
-      "text": "Buy-in increased for AKSHAY: count = 4. • by Ravi"
-    },
-    {
-      "id": "L_1791414955513_nk3w",
-      "time": "2026-10-08 04:45:55",
-      "text": "Buy-in increased for AKSHAY: count = 3. • by Ravi"
     }
   ],
   "knownRoster": [
