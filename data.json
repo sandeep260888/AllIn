@@ -2220,7 +2220,7 @@
     {
       "id": 1792495686571,
       "name": "RISHI",
-      "buyIns": 3,
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2271,7 +2271,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-20T13:28:11.773Z"
+    "heartbeatAt": "2026-10-20T13:36:50.118Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2289,6 +2289,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792503394384_vdd4",
+      "time": "2026-10-20 19:06:34",
+      "text": "Buy-in increased for RISHI: count = 4. • by Hari's Macbook"
+    },
     {
       "id": "L_1792502876037_4d6r",
       "time": "2026-10-20 18:57:56",
@@ -4283,11 +4288,6 @@
       "id": "L_1791410335019_zf7j",
       "time": "2026-10-08 03:28:55",
       "text": "Buy-in increased for ALOK: count = 3. • by Ravi"
-    },
-    {
-      "id": "L_1791410012925_xfup",
-      "time": "2026-10-08 03:23:32",
-      "text": "Buy-in increased for ABHISHEK: count = 3. • by Ravi"
     }
   ],
   "knownRoster": [
