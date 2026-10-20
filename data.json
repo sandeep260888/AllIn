@@ -2209,9 +2209,49 @@
       ]
     }
   ],
-  "activePlayers": [],
-  "activeSessionId": null,
-  "activeHost": null,
+  "activePlayers": [
+    {
+      "id": 1792495683776,
+      "name": "RAM",
+      "buyIns": 3,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1792495686571,
+      "name": "RISHI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1792495689637,
+      "name": "AKSHAY",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1792495692545,
+      "name": "HARI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1792495695529,
+      "name": "MOHINI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    }
+  ],
+  "activeSessionId": "S_mvglndfg1dah1x",
+  "activeHost": {
+    "deviceId": "dev_pt3v9f2c",
+    "deviceName": "Hari's Macbook",
+    "heartbeatAt": "2026-10-20T11:28:36.140Z"
+  },
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -2228,6 +2268,46 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792495699888_nio6",
+      "time": "2026-10-20 16:58:19",
+      "text": "Buy-in increased for RAM: count = 3. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792495699162_3a2e",
+      "time": "2026-10-20 16:58:19",
+      "text": "Buy-in increased for RAM: count = 2. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792495695529_l2x6",
+      "time": "2026-10-20 16:58:15",
+      "text": "Added \"MOHINI\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792495692545_fiml",
+      "time": "2026-10-20 16:58:12",
+      "text": "Added \"HARI\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792495689637_yz5l",
+      "time": "2026-10-20 16:58:09",
+      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792495686571_6ycc",
+      "time": "2026-10-20 16:58:06",
+      "text": "Added \"RISHI\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792495683776_dxek",
+      "time": "2026-10-20 16:58:03",
+      "text": "Added \"RAM\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792495683772_h74c",
+      "time": "2026-10-20 16:58:03",
+      "text": "Started new session and claimed host. • by Hari's Macbook"
+    },
     {
       "id": "L_1792461825848_x2iq",
       "time": "2026-10-20 07:33:45",
@@ -4187,46 +4267,6 @@
       "id": "L_1791406730199_hcny",
       "time": "2026-10-08 02:28:50",
       "text": "Added \"ALOK\" with 1 buy-in (1000c). • by Ravi"
-    },
-    {
-      "id": "L_1791406725242_kh11",
-      "time": "2026-10-08 02:28:45",
-      "text": "Added \"RAVI\" with 1 buy-in (1000c). • by Ravi"
-    },
-    {
-      "id": "L_1791406725233_g8xt",
-      "time": "2026-10-08 02:28:45",
-      "text": "Started new session and claimed host. • by Ravi"
-    },
-    {
-      "id": "L_1791406716175_tnsz",
-      "time": "2026-10-08 02:28:36",
-      "text": "Cleared active session dashboard. • by Device-7HZ4"
-    },
-    {
-      "id": "L_1791338944521_bede",
-      "time": "2026-10-07 07:39:04",
-      "text": "Published session — hosting released automatically. • by sandeep mac"
-    },
-    {
-      "id": "L_1791338932153_3jir",
-      "time": "2026-10-07 07:38:52",
-      "text": "Pushed live state to GitHub repo. • by sandeep mac"
-    },
-    {
-      "id": "L_1791338930039_pd6f",
-      "time": "2026-10-07 07:38:50",
-      "text": "Saved session to database. • by sandeep mac"
-    },
-    {
-      "id": "L_1791338787397_2jc5",
-      "time": "2026-10-07 07:36:27",
-      "text": "Settlement: RAVI pays AKSHAY ₹55.00 • by sandeep mac"
-    },
-    {
-      "id": "L_1791338787397_7t5m",
-      "time": "2026-10-07 07:36:27",
-      "text": "Settlement: RAVI pays KUNAL ₹570.00 • by sandeep mac"
     }
   ],
   "knownRoster": [
