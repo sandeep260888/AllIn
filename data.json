@@ -2255,7 +2255,7 @@
     {
       "id": 1792501182836,
       "name": "RAVI",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2271,7 +2271,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-20T13:00:05.339Z"
+    "heartbeatAt": "2026-10-20T13:03:18.722Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2289,6 +2289,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792501382662_xkmi",
+      "time": "2026-10-20 18:33:02",
+      "text": "Buy-in increased for RAVI: count = 3. • by Hari's Macbook"
+    },
     {
       "id": "L_1792501189682_aljl",
       "time": "2026-10-20 18:29:49",
@@ -4283,11 +4288,6 @@
       "id": "L_1791407609956_h6nn",
       "time": "2026-10-08 02:43:29",
       "text": "Buy-in increased for ABHISHEK: count = 2. • by Ravi"
-    },
-    {
-      "id": "L_1791407147616_ubes",
-      "time": "2026-10-08 02:35:47",
-      "text": "Added \"KUNAL\" with 1 buy-in (1000c). • by Ravi"
     }
   ],
   "knownRoster": [
