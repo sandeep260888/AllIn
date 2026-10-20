@@ -2213,7 +2213,7 @@
     {
       "id": 1792495683776,
       "name": "RAM",
-      "buyIns": 3,
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 5540
     },
@@ -2264,14 +2264,14 @@
       "name": "KUNAL",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 1000
     }
   ],
   "activeSessionId": "S_mvglndfg1dah1x",
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-20T14:33:05.436Z"
+    "heartbeatAt": "2026-10-20T14:34:43.072Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2289,6 +2289,111 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792506870431_ztgh",
+      "time": "2026-10-20 20:04:30",
+      "text": "Settlement: RISHI pays RAM ₹770.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792506870430_7ldt",
+      "time": "2026-10-20 20:04:30",
+      "text": "Settlement: RISHI pays AKSHAY ₹430.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792506870429_8idk",
+      "time": "2026-10-20 20:04:30",
+      "text": "Settlement: RAVI pays AKSHAY ₹870.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792506870427_fcnu",
+      "time": "2026-10-20 20:04:30",
+      "text": "Settlement: RAVI pays GAGAN ₹820.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792506870426_lvkn",
+      "time": "2026-10-20 20:04:30",
+      "text": "Settlement: MOHINI pays GAGAN ₹500.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792506870424_xdbn",
+      "time": "2026-10-20 20:04:30",
+      "text": "Settlement: MOHINI pays HARI ₹1500.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792506870422_28vt",
+      "time": "2026-10-20 20:04:30",
+      "text": "Settlement calculated (6 transfers). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792506867368_cvne",
+      "time": "2026-10-20 20:04:27",
+      "text": "Buy-in increased for RAM: count = 4. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792506864701_9qqp",
+      "time": "2026-10-20 20:04:24",
+      "text": "Buy-in increased for RAVI: count = 5. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792506863543_r6aq",
+      "time": "2026-10-20 20:04:23",
+      "text": "Buy-in decreased for RAVI: count = 4. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792506863197_tg7z",
+      "time": "2026-10-20 20:04:23",
+      "text": "Buy-in decreased for RAVI: count = 5. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792506862022_ub75",
+      "time": "2026-10-20 20:04:22",
+      "text": "Buy-in increased for RAVI: count = 6. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792506859606_odcx",
+      "time": "2026-10-20 20:04:19",
+      "text": "Set final coins for KUNAL: 1000 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792506796254_wn6j",
+      "time": "2026-10-20 20:03:16",
+      "text": "Settlement: KUNAL pays RAM ₹500.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792506796253_5n1b",
+      "time": "2026-10-20 20:03:16",
+      "text": "Settlement: RISHI pays RAM ₹770.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792506796251_lndx",
+      "time": "2026-10-20 20:03:16",
+      "text": "Settlement: RISHI pays AKSHAY ₹430.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792506796250_06yf",
+      "time": "2026-10-20 20:03:16",
+      "text": "Settlement: RAVI pays AKSHAY ₹870.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792506796248_pifw",
+      "time": "2026-10-20 20:03:16",
+      "text": "Settlement: RAVI pays GAGAN ₹820.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792506796246_97ku",
+      "time": "2026-10-20 20:03:16",
+      "text": "Settlement: MOHINI pays GAGAN ₹500.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792506796244_265f",
+      "time": "2026-10-20 20:03:16",
+      "text": "Settlement: MOHINI pays HARI ₹1500.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792506796241_i3zf",
+      "time": "2026-10-20 20:03:16",
+      "text": "Settlement calculated (7 transfers). • by Hari's Macbook"
+    },
     {
       "id": "L_1792506769318_2tii",
       "time": "2026-10-20 20:02:49",
@@ -4183,111 +4288,6 @@
       "id": "L_1791426006077_9ckl",
       "time": "2026-10-08 07:50:06",
       "text": "Buy-in increased for RAVI: count = 5. • by Ravi"
-    },
-    {
-      "id": "L_1791425732427_6r6y",
-      "time": "2026-10-08 07:45:32",
-      "text": "Buy-in decreased for RAVI: count = 4. • by Ravi"
-    },
-    {
-      "id": "L_1791425713926_2t0d",
-      "time": "2026-10-08 07:45:13",
-      "text": "Buy-in increased for RAVI: count = 5. • by Ravi"
-    },
-    {
-      "id": "L_1791425705678_5rvq",
-      "time": "2026-10-08 07:45:05",
-      "text": "Buy-in increased for RAVI: count = 4. • by Ravi"
-    },
-    {
-      "id": "L_1791424481754_9k4h",
-      "time": "2026-10-08 07:24:41",
-      "text": "Buy-in increased for ABHISHEK: count = 5. • by Ravi"
-    },
-    {
-      "id": "L_1791423975114_dx8i",
-      "time": "2026-10-08 07:16:15",
-      "text": "Buy-in increased for RISHI: count = 9. • by Ravi"
-    },
-    {
-      "id": "L_1791423774997_mwpw",
-      "time": "2026-10-08 07:12:54",
-      "text": "Buy-in increased for ABHISHEK: count = 4. • by Ravi"
-    },
-    {
-      "id": "L_1791423400497_ebyv",
-      "time": "2026-10-08 07:06:40",
-      "text": "Buy-in increased for AKSHAY: count = 8. • by Ravi"
-    },
-    {
-      "id": "L_1791423400203_c8eu",
-      "time": "2026-10-08 07:06:40",
-      "text": "Buy-in increased for AKSHAY: count = 7. • by Ravi"
-    },
-    {
-      "id": "L_1791423244761_iuvs",
-      "time": "2026-10-08 07:04:04",
-      "text": "Buy-in increased for AKSHAY: count = 6. • by Ravi"
-    },
-    {
-      "id": "L_1791422528183_2zk6",
-      "time": "2026-10-08 06:52:08",
-      "text": "Buy-in increased for AKSHAY: count = 5. • by Ravi"
-    },
-    {
-      "id": "L_1791422523872_519w",
-      "time": "2026-10-08 06:52:03",
-      "text": "Buy-in increased for RISHI: count = 8. • by Ravi"
-    },
-    {
-      "id": "L_1791422170436_99td",
-      "time": "2026-10-08 06:46:10",
-      "text": "Buy-in increased for ALOK: count = 12. • by Ravi"
-    },
-    {
-      "id": "L_1791422170139_jrgm",
-      "time": "2026-10-08 06:46:10",
-      "text": "Buy-in increased for ALOK: count = 11. • by Ravi"
-    },
-    {
-      "id": "L_1791421464246_9yto",
-      "time": "2026-10-08 06:34:24",
-      "text": "Buy-in increased for RISHI: count = 7. • by Ravi"
-    },
-    {
-      "id": "L_1791421462547_7vy7",
-      "time": "2026-10-08 06:34:22",
-      "text": "Buy-in decreased for RISHI: count = 6. • by Ravi"
-    },
-    {
-      "id": "L_1791421434722_e5rk",
-      "time": "2026-10-08 06:33:54",
-      "text": "Buy-in increased for RISHI: count = 7. • by Ravi"
-    },
-    {
-      "id": "L_1791421431197_z8ur",
-      "time": "2026-10-08 06:33:51",
-      "text": "Buy-in increased for MOHINI: count = 2. • by Ravi"
-    },
-    {
-      "id": "L_1791419842082_52vh",
-      "time": "2026-10-08 06:07:22",
-      "text": "Buy-in increased for ALOK: count = 10. • by Ravi"
-    },
-    {
-      "id": "L_1791419841715_j2pt",
-      "time": "2026-10-08 06:07:21",
-      "text": "Buy-in increased for ALOK: count = 9. • by Ravi"
-    },
-    {
-      "id": "L_1791419839807_wz28",
-      "time": "2026-10-08 06:07:19",
-      "text": "Buy-in decreased for RISHI: count = 6. • by Ravi"
-    },
-    {
-      "id": "L_1791419839424_5np8",
-      "time": "2026-10-08 06:07:19",
-      "text": "Buy-in decreased for RISHI: count = 7. • by Ravi"
     }
   ],
   "knownRoster": [
