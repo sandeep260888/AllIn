@@ -2281,7 +2281,7 @@
     {
       "id": 1792588019810,
       "name": "MOHINI",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2302,7 +2302,7 @@
     {
       "id": 1792588423170,
       "name": "KUNAL",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -2311,7 +2311,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-21T13:13:59.629Z"
+    "heartbeatAt": "2026-10-21T13:37:34.998Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2329,6 +2329,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792589838178_8gry",
+      "time": "2026-10-21 19:07:18",
+      "text": "Buy-in increased for KUNAL: count = 2. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792589836760_h0cj",
+      "time": "2026-10-21 19:07:16",
+      "text": "Buy-in increased for MOHINI: count = 2. • by Hari's Macbook"
+    },
     {
       "id": "L_1792588423170_55sb",
       "time": "2026-10-21 18:43:43",
@@ -4318,16 +4328,6 @@
       "id": "L_1791437839252_3epa",
       "time": "2026-10-08 11:07:19",
       "text": "Buy-in increased for ALOK: count = 15. • by Ravi"
-    },
-    {
-      "id": "L_1791437838771_qobv",
-      "time": "2026-10-08 11:07:18",
-      "text": "Buy-in increased for ALOK: count = 14. • by Ravi"
-    },
-    {
-      "id": "L_1791437648074_vhya",
-      "time": "2026-10-08 11:04:08",
-      "text": "Buy-in increased for ALOK: count = 13. • by Ravi"
     }
   ],
   "knownRoster": [
