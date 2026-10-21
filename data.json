@@ -2288,7 +2288,7 @@
     {
       "id": 1792588030677,
       "name": "HARI",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2304,7 +2304,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-21T13:08:18.518Z"
+    "heartbeatAt": "2026-10-21T13:12:14.020Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2322,6 +2322,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792588317177_g61t",
+      "time": "2026-10-21 18:41:57",
+      "text": "Buy-in increased for HARI: count = 3. • by Hari's Macbook"
+    },
     {
       "id": "L_1792588081898_s4nx",
       "time": "2026-10-21 18:38:01",
@@ -4316,11 +4321,6 @@
       "id": "L_1791435845251_jkmf",
       "time": "2026-10-08 10:34:05",
       "text": "Buy-in increased for GAGAN: count = 15. • by Ravi"
-    },
-    {
-      "id": "L_1791435645671_mlam",
-      "time": "2026-10-08 10:30:45",
-      "text": "Buy-in increased for MOHINI: count = 3. • by Ravi"
     }
   ],
   "knownRoster": [
