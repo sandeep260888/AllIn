@@ -2265,64 +2265,47 @@
   ],
   "activePlayers": [
     {
-      "id": 1792495683776,
-      "name": "RAM",
-      "buyIns": 4,
-      "buyInCoins": 1000,
-      "cashOutCoins": 5540
-    },
-    {
-      "id": 1792495686571,
-      "name": "RISHI",
-      "buyIns": 5,
-      "buyInCoins": 1000,
-      "cashOutCoins": 2600
-    },
-    {
-      "id": 1792495689637,
-      "name": "AKSHAY",
+      "id": 1792588013257,
+      "name": "GAGAN",
       "buyIns": 1,
-      "buyInCoins": 1000,
-      "cashOutCoins": 3600
-    },
-    {
-      "id": 1792495692545,
-      "name": "HARI",
-      "buyIns": 3,
-      "buyInCoins": 1000,
-      "cashOutCoins": 6000
-    },
-    {
-      "id": 1792495695529,
-      "name": "MOHINI",
-      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
     {
-      "id": 1792496154039,
-      "name": "GAGAN",
+      "id": 1792588016477,
+      "name": "AKSHAY",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 3640
+      "cashOutCoins": 0
     },
     {
-      "id": 1792501182836,
-      "name": "RAVI",
-      "buyIns": 5,
-      "buyInCoins": 1000,
-      "cashOutCoins": 1620
-    },
-    {
-      "id": 1792501187936,
-      "name": "KUNAL",
+      "id": 1792588019810,
+      "name": "MOHINI",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 1000
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1792588030677,
+      "name": "HARI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1792588033852,
+      "name": "RISHI",
+      "buyIns": 2,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
-  "activeSessionId": "S_mvglndfg1dah1x",
-  "activeHost": null,
+  "activeSessionId": "S_mvi4mbbbbokict",
+  "activeHost": {
+    "deviceId": "dev_pt3v9f2c",
+    "deviceName": "Hari's Macbook",
+    "heartbeatAt": "2026-10-21T13:07:32.450Z"
+  },
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -2339,6 +2322,51 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792588035456_ww6h",
+      "time": "2026-10-21 18:37:15",
+      "text": "Buy-in increased for RISHI: count = 2. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792588033852_223z",
+      "time": "2026-10-21 18:37:13",
+      "text": "Added \"RISHI\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792588030677_a9i1",
+      "time": "2026-10-21 18:37:10",
+      "text": "Added \"HARI\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792588019810_kyc5",
+      "time": "2026-10-21 18:36:59",
+      "text": "Added \"MOHINI\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792588016477_bt6v",
+      "time": "2026-10-21 18:36:56",
+      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792588013257_vd7g",
+      "time": "2026-10-21 18:36:53",
+      "text": "Added \"GAGAN\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792588013255_31fq",
+      "time": "2026-10-21 18:36:53",
+      "text": "Started new session and claimed host. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792588002531_zlll",
+      "time": "2026-10-21 18:36:42",
+      "text": "Cleared active session dashboard. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792506967194_xhbs",
+      "time": "2026-10-20 20:06:07",
+      "text": "Pushed live state to GitHub repo. • by Hari's Macbook"
+    },
     {
       "id": "L_1792506963977_wnzy",
       "time": "2026-10-20 20:06:03",
@@ -4293,51 +4321,6 @@
       "id": "L_1791434834153_ddmy",
       "time": "2026-10-08 10:17:14",
       "text": "Buy-in increased for ABHISHEK: count = 8. • by Ravi"
-    },
-    {
-      "id": "L_1791434212179_4062",
-      "time": "2026-10-08 10:06:52",
-      "text": "Buy-in increased for GAGAN: count = 14. • by Ravi"
-    },
-    {
-      "id": "L_1791434194371_2oul",
-      "time": "2026-10-08 10:06:34",
-      "text": "Buy-in increased for GAGAN: count = 13. • by Ravi"
-    },
-    {
-      "id": "L_1791433345797_vei0",
-      "time": "2026-10-08 09:52:25",
-      "text": "Buy-in increased for GAGAN: count = 12. • by Ravi"
-    },
-    {
-      "id": "L_1791432937834_0i2v",
-      "time": "2026-10-08 09:45:37",
-      "text": "Buy-in increased for GAGAN: count = 11. • by Ravi"
-    },
-    {
-      "id": "L_1791432348056_5d1i",
-      "time": "2026-10-08 09:35:48",
-      "text": "Buy-in increased for ABHISHEK: count = 7. • by Ravi"
-    },
-    {
-      "id": "L_1791431881231_p3ft",
-      "time": "2026-10-08 09:28:01",
-      "text": "Buy-in increased for GAGAN: count = 10. • by Ravi"
-    },
-    {
-      "id": "L_1791430418258_lr43",
-      "time": "2026-10-08 09:03:38",
-      "text": "Buy-in increased for ABHISHEK: count = 6. • by Ravi"
-    },
-    {
-      "id": "L_1791429480468_nxif",
-      "time": "2026-10-08 08:48:00",
-      "text": "Buy-in increased for RISHI: count = 11. • by Ravi"
-    },
-    {
-      "id": "L_1791429306541_kvks",
-      "time": "2026-10-08 08:45:06",
-      "text": "Buy-in increased for RISHI: count = 10. • by Ravi"
     }
   ],
   "knownRoster": [
