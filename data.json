@@ -2269,14 +2269,14 @@
       "name": "GAGAN",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 5060
     },
     {
       "id": 1792588016477,
       "name": "AKSHAY",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 3250
     },
     {
       "id": 1792588019810,
@@ -2290,14 +2290,14 @@
       "name": "HARI",
       "buyIns": 6,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 950
     },
     {
       "id": 1792588033852,
       "name": "RISHI",
       "buyIns": 3,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 1060
     },
     {
       "id": 1792588423170,
@@ -2311,7 +2311,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-21T14:04:31.657Z"
+    "heartbeatAt": "2026-10-21T14:14:38.546Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2329,6 +2329,31 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792592062097_wtpd",
+      "time": "2026-10-21 19:44:22",
+      "text": "Set final coins for GAGAN: 5060 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792592056634_hwqi",
+      "time": "2026-10-21 19:44:16",
+      "text": "Set final coins for MOHINI: 0 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792592049105_m5m0",
+      "time": "2026-10-21 19:44:09",
+      "text": "Set final coins for RISHI: 1060 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792592046809_zrud",
+      "time": "2026-10-21 19:44:06",
+      "text": "Set final coins for AKSHAY: 3250 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792592040476_ac8x",
+      "time": "2026-10-21 19:44:00",
+      "text": "Set final coins for HARI: 950 coins. • by Hari's Macbook"
+    },
     {
       "id": "L_1792591455221_42hg",
       "time": "2026-10-21 19:34:15",
@@ -4303,31 +4328,6 @@
       "id": "L_1791440922539_84mm",
       "time": "2026-10-08 11:58:42",
       "text": "Set final coins for AKSHAY: 10470 coins. • by Ravi"
-    },
-    {
-      "id": "L_1791440906563_ofco",
-      "time": "2026-10-08 11:58:26",
-      "text": "Set final coins for MOHINI: 3000 coins. • by Ravi"
-    },
-    {
-      "id": "L_1791440893588_p15x",
-      "time": "2026-10-08 11:58:13",
-      "text": "Set final coins for AKSHAY: 10300 coins. • by Ravi"
-    },
-    {
-      "id": "L_1791440879109_who5",
-      "time": "2026-10-08 11:57:59",
-      "text": "Set final coins for HARI: 23050 coins. • by Ravi"
-    },
-    {
-      "id": "L_1791440866025_08gt",
-      "time": "2026-10-08 11:57:46",
-      "text": "Set final coins for GAGAN: 0 coins. • by Ravi"
-    },
-    {
-      "id": "L_1791440863016_d9e2",
-      "time": "2026-10-08 11:57:43",
-      "text": "Set final coins for ALOK: 0 coins. • by Ravi"
     }
   ],
   "knownRoster": [
