@@ -2290,28 +2290,28 @@
       "name": "HARI",
       "buyIns": 6,
       "buyInCoins": 1000,
-      "cashOutCoins": 950
+      "cashOutCoins": 1040
     },
     {
       "id": 1792588033852,
       "name": "RISHI",
       "buyIns": 3,
       "buyInCoins": 1000,
-      "cashOutCoins": 1060
+      "cashOutCoins": 1050
     },
     {
       "id": 1792588423170,
       "name": "KUNAL",
       "buyIns": 2,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 4600
     }
   ],
   "activeSessionId": "S_mvi4mbbbbokict",
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-21T14:14:38.546Z"
+    "heartbeatAt": "2026-10-21T14:15:30.763Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2329,6 +2329,51 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792592116990_akse",
+      "time": "2026-10-21 19:45:16",
+      "text": "Settlement: RISHI pays AKSHAY ₹975.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792592116989_7dvj",
+      "time": "2026-10-21 19:45:16",
+      "text": "Settlement: MOHINI pays AKSHAY ₹150.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792592116988_itl5",
+      "time": "2026-10-21 19:45:16",
+      "text": "Settlement: MOHINI pays KUNAL ₹850.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792592116986_3aba",
+      "time": "2026-10-21 19:45:16",
+      "text": "Settlement: HARI pays KUNAL ₹450.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792592116985_hqrw",
+      "time": "2026-10-21 19:45:16",
+      "text": "Settlement: HARI pays GAGAN ₹2030.00 • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792592116983_23kl",
+      "time": "2026-10-21 19:45:16",
+      "text": "Settlement calculated (5 transfers). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792592114108_tsv2",
+      "time": "2026-10-21 19:45:14",
+      "text": "Set final coins for RISHI: 1050 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792592104454_l781",
+      "time": "2026-10-21 19:45:04",
+      "text": "Set final coins for KUNAL: 4600 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792592099585_nz04",
+      "time": "2026-10-21 19:44:59",
+      "text": "Set final coins for HARI: 1040 coins. • by Hari's Macbook"
+    },
     {
       "id": "L_1792592062097_wtpd",
       "time": "2026-10-21 19:44:22",
@@ -4283,51 +4328,6 @@
       "id": "L_1791440966013_o2v8",
       "time": "2026-10-08 11:59:26",
       "text": "Settlement: ABHISHEK pays AKSHAY ₹1400.00 • by Ravi"
-    },
-    {
-      "id": "L_1791440966011_k12s",
-      "time": "2026-10-08 11:59:26",
-      "text": "Settlement: ABHISHEK pays RISHI ₹2095.00 • by Ravi"
-    },
-    {
-      "id": "L_1791440966009_rqos",
-      "time": "2026-10-08 11:59:26",
-      "text": "Settlement: ABHISHEK pays KUNAL ₹185.00 • by Ravi"
-    },
-    {
-      "id": "L_1791440966008_mtqy",
-      "time": "2026-10-08 11:59:26",
-      "text": "Settlement: GAGAN pays KUNAL ₹4475.00 • by Ravi"
-    },
-    {
-      "id": "L_1791440966006_cvrh",
-      "time": "2026-10-08 11:59:26",
-      "text": "Settlement: GAGAN pays HARI ₹3025.00 • by Ravi"
-    },
-    {
-      "id": "L_1791440966005_50cu",
-      "time": "2026-10-08 11:59:26",
-      "text": "Settlement: ALOK pays HARI ₹7500.00 • by Ravi"
-    },
-    {
-      "id": "L_1791440966003_xdz4",
-      "time": "2026-10-08 11:59:26",
-      "text": "Settlement calculated (7 transfers). • by Ravi"
-    },
-    {
-      "id": "L_1791440965885_75pc",
-      "time": "2026-10-08 11:59:25",
-      "text": "Set final coins for KUNAL: 10320 coins. • by Ravi"
-    },
-    {
-      "id": "L_1791440952219_z58g",
-      "time": "2026-10-08 11:59:12",
-      "text": "Set final coins for AKSHAY: 10800 coins. • by Ravi"
-    },
-    {
-      "id": "L_1791440922539_84mm",
-      "time": "2026-10-08 11:58:42",
-      "text": "Set final coins for AKSHAY: 10470 coins. • by Ravi"
     }
   ],
   "knownRoster": [
