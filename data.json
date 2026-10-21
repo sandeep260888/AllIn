@@ -2295,7 +2295,7 @@
     {
       "id": 1792588033852,
       "name": "RISHI",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2311,7 +2311,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-21T13:37:34.998Z"
+    "heartbeatAt": "2026-10-21T13:47:15.779Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2329,6 +2329,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792590418742_3k1n",
+      "time": "2026-10-21 19:16:58",
+      "text": "Buy-in increased for RISHI: count = 3. • by Hari's Macbook"
+    },
     {
       "id": "L_1792589838178_8gry",
       "time": "2026-10-21 19:07:18",
@@ -4323,11 +4328,6 @@
       "id": "L_1791440777435_5lst",
       "time": "2026-10-08 11:56:17",
       "text": "Set final coins for ABHISHEK: 0 coins. • by Ravi"
-    },
-    {
-      "id": "L_1791437839252_3epa",
-      "time": "2026-10-08 11:07:19",
-      "text": "Buy-in increased for ALOK: count = 15. • by Ravi"
     }
   ],
   "knownRoster": [
