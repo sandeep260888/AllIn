@@ -2350,11 +2350,7 @@
     }
   ],
   "activeSessionId": "S_mvi4mbbbbokict",
-  "activeHost": {
-    "deviceId": "dev_pt3v9f2c",
-    "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-21T14:16:58.056Z"
-  },
+  "activeHost": null,
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -2371,6 +2367,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792592222300_ip7t",
+      "time": "2026-10-21 19:47:02",
+      "text": "Published session — hosting released automatically. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792592220776_ebbi",
+      "time": "2026-10-21 19:47:00",
+      "text": "Pushed live state to GitHub repo. • by Hari's Macbook"
+    },
     {
       "id": "L_1792592216605_y9uz",
       "time": "2026-10-21 19:46:56",
@@ -4360,16 +4366,6 @@
       "id": "L_1791445303730_po07",
       "time": "2026-10-08 13:11:43",
       "text": "Updated existing session in database. • by Ravi"
-    },
-    {
-      "id": "L_1791441083100_pyxh",
-      "time": "2026-10-08 12:01:23",
-      "text": "Saved session to database. • by Ravi"
-    },
-    {
-      "id": "L_1791440966015_wqx5",
-      "time": "2026-10-08 11:59:26",
-      "text": "Settlement: ABHISHEK pays RAVI ₹320.00 • by Ravi"
     }
   ],
   "knownRoster": [
