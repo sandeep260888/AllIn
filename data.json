@@ -2351,7 +2351,7 @@
     {
       "id": 1792659875726,
       "name": "ALOK",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -2360,7 +2360,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-22T09:23:18.189Z"
+    "heartbeatAt": "2026-10-22T09:46:57.737Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2378,6 +2378,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792662401682_qyvv",
+      "time": "2026-10-22 15:16:41",
+      "text": "Buy-in increased for ALOK: count = 3. • by Hari's Macbook"
+    },
     {
       "id": "L_1792660982595_g6yr",
       "time": "2026-10-22 14:53:02",
@@ -4372,11 +4377,6 @@
       "id": "L_1791519667661_6wz4",
       "time": "2026-10-09 09:51:07",
       "text": "Buy-in increased for ALOK: count = 2. • by sandeep mac"
-    },
-    {
-      "id": "L_1791519652803_prwb",
-      "time": "2026-10-09 09:50:52",
-      "text": "Added \"ALOK\" with 1 buy-in (1000c). • by sandeep mac"
     }
   ],
   "knownRoster": [
