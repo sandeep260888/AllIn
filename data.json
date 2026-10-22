@@ -2375,6 +2375,16 @@
   },
   "logs": [
     {
+      "id": "L_1792671014480_ms8e",
+      "time": "2026-10-22 17:40:14",
+      "text": "Stopped hosting. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792671004868_tmof",
+      "time": "2026-10-22 17:40:04",
+      "text": "Manual refresh synchronized with GitHub. • by Hari's Macbook"
+    },
+    {
       "id": "L_1792670949203_ix8m",
       "time": "2026-10-22 17:39:09",
       "text": "Stopped hosting. • by Hari's Macbook"
@@ -4363,16 +4373,6 @@
       "id": "L_1791519710128_p03f",
       "time": "2026-10-09 09:51:50",
       "text": "Buy-in increased for GAGAN: count = 6. • by sandeep mac"
-    },
-    {
-      "id": "L_1791519709908_dw9q",
-      "time": "2026-10-09 09:51:49",
-      "text": "Buy-in increased for GAGAN: count = 5. • by sandeep mac"
-    },
-    {
-      "id": "L_1791519709595_omln",
-      "time": "2026-10-09 09:51:49",
-      "text": "Buy-in increased for GAGAN: count = 4. • by sandeep mac"
     }
   ],
   "knownRoster": [
