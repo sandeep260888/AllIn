@@ -2305,8 +2305,58 @@
       ]
     }
   ],
-  "activePlayers": [],
-  "activeSessionId": null,
+  "activePlayers": [
+    {
+      "id": 1792656005178,
+      "name": "AKSHAY",
+      "buyIns": 2,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1792656009357,
+      "name": "MOHINI",
+      "buyIns": 2,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1792656012599,
+      "name": "RISHI",
+      "buyIns": 2,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1792656016332,
+      "name": "HARI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 7000
+    },
+    {
+      "id": 1792656019524,
+      "name": "GAGAN",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1792656022748,
+      "name": "RAVI",
+      "buyIns": 7,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1792659875726,
+      "name": "ALOK",
+      "buyIns": 12,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    }
+  ],
+  "activeSessionId": "S_mvj93m7qdfa1fh",
   "activeHost": null,
   "settings": {
     "coinCount": "2",
@@ -2325,9 +2375,19 @@
   },
   "logs": [
     {
-      "id": "L_1792671085672_9127",
-      "time": "2026-10-22 17:41:25",
-      "text": "Cleared active session dashboard. • by Hari's Macbook"
+      "id": "L_1792671112722_mrsd",
+      "time": "2026-10-22 17:41:52",
+      "text": "Set final coins for HARI: 7000 coins. • by Ravi"
+    },
+    {
+      "id": "L_1792671105177_2l49",
+      "time": "2026-10-22 17:41:45",
+      "text": "Manual refresh synchronized with GitHub. • by Ravi"
+    },
+    {
+      "id": "L_1792671100994_492z",
+      "time": "2026-10-22 17:41:40",
+      "text": "Set final coins for HARI: 7000 coins. • by Ravi"
     },
     {
       "id": "L_1792671014480_ms8e",
@@ -3028,6 +3088,31 @@
       "id": "L_1792499682501_dk8q",
       "time": "2026-10-20 18:04:42",
       "text": "Buy-in increased for RISHI: count = 2. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792498327743_7y3b",
+      "time": "2026-10-20 17:42:07",
+      "text": "Random picker chose MOHINI. • by Ravi"
+    },
+    {
+      "id": "L_1792498327544_lecy",
+      "time": "2026-10-20 17:42:07",
+      "text": "Random picker chose GAGAN. • by Ravi"
+    },
+    {
+      "id": "L_1792498327342_13jk",
+      "time": "2026-10-20 17:42:07",
+      "text": "Random picker chose HARI. • by Ravi"
+    },
+    {
+      "id": "L_1792498327169_kz6m",
+      "time": "2026-10-20 17:42:07",
+      "text": "Random picker chose RISHI. • by Ravi"
+    },
+    {
+      "id": "L_1792498283777_xe9e",
+      "time": "2026-10-20 17:41:23",
+      "text": "Manual refresh synchronized with GitHub. • by Ravi"
     },
     {
       "id": "L_1792497746632_dexn",
@@ -4288,41 +4373,6 @@
       "id": "L_1791519720184_ywul",
       "time": "2026-10-09 09:52:00",
       "text": "Buy-in increased for MOHINI: count = 7. • by sandeep mac"
-    },
-    {
-      "id": "L_1791519719746_7inw",
-      "time": "2026-10-09 09:51:59",
-      "text": "Buy-in increased for MOHINI: count = 6. • by sandeep mac"
-    },
-    {
-      "id": "L_1791519719311_la8a",
-      "time": "2026-10-09 09:51:59",
-      "text": "Buy-in increased for MOHINI: count = 5. • by sandeep mac"
-    },
-    {
-      "id": "L_1791519718933_eq5c",
-      "time": "2026-10-09 09:51:58",
-      "text": "Buy-in increased for MOHINI: count = 4. • by sandeep mac"
-    },
-    {
-      "id": "L_1791519718616_r228",
-      "time": "2026-10-09 09:51:58",
-      "text": "Buy-in increased for MOHINI: count = 3. • by sandeep mac"
-    },
-    {
-      "id": "L_1791519718277_42kb",
-      "time": "2026-10-09 09:51:58",
-      "text": "Buy-in increased for MOHINI: count = 2. • by sandeep mac"
-    },
-    {
-      "id": "L_1791519711343_oxbh",
-      "time": "2026-10-09 09:51:51",
-      "text": "Buy-in increased for GAGAN: count = 8. • by sandeep mac"
-    },
-    {
-      "id": "L_1791519710711_jc5b",
-      "time": "2026-10-09 09:51:50",
-      "text": "Buy-in increased for GAGAN: count = 7. • by sandeep mac"
     }
   ],
   "knownRoster": [
