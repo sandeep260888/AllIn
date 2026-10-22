@@ -2309,7 +2309,7 @@
     {
       "id": 1792656005178,
       "name": "AKSHAY",
-      "buyIns": 2,
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2374,6 +2374,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792671734604_fbvx",
+      "time": "2026-10-22 17:52:14",
+      "text": "Buy-in increased for AKSHAY: count = 4. • by Ravi"
+    },
+    {
+      "id": "L_1792671734312_cji4",
+      "time": "2026-10-22 17:52:14",
+      "text": "Buy-in increased for AKSHAY: count = 3. • by Ravi"
+    },
     {
       "id": "L_1792671112722_mrsd",
       "time": "2026-10-22 17:41:52",
@@ -4363,16 +4373,6 @@
       "id": "L_1791519731277_zcaf",
       "time": "2026-10-09 09:52:11",
       "text": "Buy-in increased for RISHI: count = 3. • by sandeep mac"
-    },
-    {
-      "id": "L_1791519731015_q5xk",
-      "time": "2026-10-09 09:52:11",
-      "text": "Buy-in increased for RISHI: count = 2. • by sandeep mac"
-    },
-    {
-      "id": "L_1791519720184_ywul",
-      "time": "2026-10-09 09:52:00",
-      "text": "Buy-in increased for MOHINI: count = 7. • by sandeep mac"
     }
   ],
   "knownRoster": [
