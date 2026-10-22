@@ -2316,7 +2316,7 @@
     {
       "id": 1792656009357,
       "name": "MOHINI",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2360,7 +2360,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-22T09:04:51.485Z"
+    "heartbeatAt": "2026-10-22T09:08:24.639Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2378,6 +2378,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792660088449_8ztv",
+      "time": "2026-10-22 14:38:08",
+      "text": "Buy-in increased for MOHINI: count = 2. • by Hari's Macbook"
+    },
     {
       "id": "L_1792659875727_355q",
       "time": "2026-10-22 14:34:35",
@@ -4372,11 +4377,6 @@
       "id": "L_1791519608485_xfa7",
       "time": "2026-10-09 09:50:08",
       "text": "Added \"KUNAL\" with 1 buy-in (1000c). • by sandeep mac"
-    },
-    {
-      "id": "L_1791519602745_fbsm",
-      "time": "2026-10-09 09:50:02",
-      "text": "Added \"SANDEEP\" with 1 buy-in (1000c). • by sandeep mac"
     }
   ],
   "knownRoster": [
