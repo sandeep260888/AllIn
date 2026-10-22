@@ -2347,13 +2347,20 @@
       "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1792659875726,
+      "name": "ALOK",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "activeSessionId": "S_mvj93m7qdfa1fh",
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-22T08:08:37.657Z"
+    "heartbeatAt": "2026-10-22T09:04:51.485Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2371,6 +2378,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792659875727_355q",
+      "time": "2026-10-22 14:34:35",
+      "text": "Added \"ALOK\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
     {
       "id": "L_1792656501227_kblg",
       "time": "2026-10-22 13:38:21",
@@ -4365,11 +4377,6 @@
       "id": "L_1791519602745_fbsm",
       "time": "2026-10-09 09:50:02",
       "text": "Added \"SANDEEP\" with 1 buy-in (1000c). • by sandeep mac"
-    },
-    {
-      "id": "L_1791519599296_vimh",
-      "time": "2026-10-09 09:49:59",
-      "text": "Added \"HARI\" with 1 buy-in (1000c). • by sandeep mac"
     }
   ],
   "knownRoster": [
