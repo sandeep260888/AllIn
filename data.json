@@ -2351,7 +2351,7 @@
     {
       "id": 1792659875726,
       "name": "ALOK",
-      "buyIns": 14,
+      "buyIns": 15,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2381,6 +2381,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792676892559_705v",
+      "time": "2026-10-22 19:18:12",
+      "text": "Buy-in increased for ALOK: count = 15. • by Ravi"
+    },
     {
       "id": "L_1792674834423_3xbp",
       "time": "2026-10-22 18:43:54",
@@ -4375,11 +4380,6 @@
       "id": "L_1791519736978_ibns",
       "time": "2026-10-09 09:52:16",
       "text": "Buy-in increased for ABHISHEK: count = 3. • by sandeep mac"
-    },
-    {
-      "id": "L_1791519736677_2w40",
-      "time": "2026-10-09 09:52:16",
-      "text": "Buy-in increased for ABHISHEK: count = 2. • by sandeep mac"
     }
   ],
   "knownRoster": [
