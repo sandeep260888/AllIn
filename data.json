@@ -2332,7 +2332,7 @@
       "name": "HARI",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 6700
     },
     {
       "id": 1792656019524,
@@ -2381,6 +2381,51 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792677270084_o7qj",
+      "time": "2026-10-22 19:24:30",
+      "text": "Settlement: RAVI pays MOHINI ₹850.00 • by Ravi"
+    },
+    {
+      "id": "L_1792677270082_iz5h",
+      "time": "2026-10-22 19:24:30",
+      "text": "Settlement: RAVI pays SONAK ₹1015.00 • by Ravi"
+    },
+    {
+      "id": "L_1792677270080_0f30",
+      "time": "2026-10-22 19:24:30",
+      "text": "Settlement: RAVI pays GAGAN ₹750.00 • by Ravi"
+    },
+    {
+      "id": "L_1792677270078_k8dj",
+      "time": "2026-10-22 19:24:30",
+      "text": "Settlement: ALOK pays GAGAN ₹350.00 • by Ravi"
+    },
+    {
+      "id": "L_1792677270074_hhdt",
+      "time": "2026-10-22 19:24:30",
+      "text": "Settlement: ALOK pays RISHI ₹1200.00 • by Ravi"
+    },
+    {
+      "id": "L_1792677270072_42n7",
+      "time": "2026-10-22 19:24:30",
+      "text": "Settlement: ALOK pays AKSHAY ₹2600.00 • by Ravi"
+    },
+    {
+      "id": "L_1792677270068_dlm2",
+      "time": "2026-10-22 19:24:30",
+      "text": "Settlement: ALOK pays HARI ₹2850.00 • by Ravi"
+    },
+    {
+      "id": "L_1792677270063_g7sl",
+      "time": "2026-10-22 19:24:30",
+      "text": "Settlement calculated (7 transfers). • by Ravi"
+    },
+    {
+      "id": "L_1792677258677_41pk",
+      "time": "2026-10-22 19:24:18",
+      "text": "Set final coins for HARI: 6700 coins. • by Ravi"
+    },
     {
       "id": "L_1792677255227_bk1r",
       "time": "2026-10-22 19:24:15",
@@ -4335,51 +4380,6 @@
       "id": "L_1791531687999_4gcf",
       "time": "2026-10-09 13:11:27",
       "text": "Buy-in increased for GAGAN: count = 9. • by sandeep mac"
-    },
-    {
-      "id": "L_1791531240552_02nb",
-      "time": "2026-10-09 13:04:00",
-      "text": "Set final coins for HARI: 6000 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1791526203820_s0it",
-      "time": "2026-10-09 11:40:03",
-      "text": "Buy-in increased for KUNAL: count = 3. • by sandeep mac"
-    },
-    {
-      "id": "L_1791525923621_tbwx",
-      "time": "2026-10-09 11:35:23",
-      "text": "Buy-in increased for KUNAL: count = 2. • by sandeep mac"
-    },
-    {
-      "id": "L_1791521793625_lm61",
-      "time": "2026-10-09 10:26:33",
-      "text": "Buy-in increased for ALOK: count = 20. • by sandeep mac"
-    },
-    {
-      "id": "L_1791521792895_vmmh",
-      "time": "2026-10-09 10:26:32",
-      "text": "Buy-in increased for ALOK: count = 19. • by sandeep mac"
-    },
-    {
-      "id": "L_1791521792597_y08p",
-      "time": "2026-10-09 10:26:32",
-      "text": "Buy-in increased for ALOK: count = 18. • by sandeep mac"
-    },
-    {
-      "id": "L_1791521792243_85gg",
-      "time": "2026-10-09 10:26:32",
-      "text": "Buy-in increased for ALOK: count = 17. • by sandeep mac"
-    },
-    {
-      "id": "L_1791519882713_josb",
-      "time": "2026-10-09 09:54:42",
-      "text": "Set final coins for RAM: 3030 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1791519868501_jhah",
-      "time": "2026-10-09 09:54:28",
-      "text": "Buy-in increased for SHUBHAM: count = 2. • by sandeep mac"
     }
   ],
   "knownRoster": [
