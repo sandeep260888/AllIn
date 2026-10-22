@@ -2332,7 +2332,7 @@
       "name": "HARI",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 7000
+      "cashOutCoins": 0
     },
     {
       "id": 1792656019524,
@@ -2374,6 +2374,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792670888703_e33s",
+      "time": "2026-10-22 17:38:08",
+      "text": "Stopped hosting. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792670884279_32ov",
+      "time": "2026-10-22 17:38:04",
+      "text": "Manual refresh synchronized with GitHub. • by Hari's Macbook"
+    },
     {
       "id": "L_1792670867554_tjmw",
       "time": "2026-10-22 17:37:47",
@@ -4363,16 +4373,6 @@
       "id": "L_1791519709328_iix0",
       "time": "2026-10-09 09:51:49",
       "text": "Buy-in increased for GAGAN: count = 3. • by sandeep mac"
-    },
-    {
-      "id": "L_1791519709012_n3ue",
-      "time": "2026-10-09 09:51:49",
-      "text": "Buy-in increased for GAGAN: count = 2. • by sandeep mac"
-    },
-    {
-      "id": "L_1791519693442_xvef",
-      "time": "2026-10-09 09:51:33",
-      "text": "Buy-in increased for RAVI: count = 8. • by sandeep mac"
     }
   ],
   "knownRoster": [
