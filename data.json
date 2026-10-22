@@ -2375,6 +2375,11 @@
   },
   "logs": [
     {
+      "id": "L_1792670813222_0rsv",
+      "time": "2026-10-22 17:36:53",
+      "text": "Stopped hosting. • by Hari's Macbook"
+    },
+    {
       "id": "L_1792670756971_okkd",
       "time": "2026-10-22 17:35:56",
       "text": "Stopped hosting. • by Hari's Macbook"
@@ -4368,11 +4373,6 @@
       "id": "L_1791519692447_89s7",
       "time": "2026-10-09 09:51:32",
       "text": "Buy-in increased for RAVI: count = 6. • by sandeep mac"
-    },
-    {
-      "id": "L_1791519691994_308h",
-      "time": "2026-10-09 09:51:31",
-      "text": "Buy-in increased for RAVI: count = 5. • by sandeep mac"
     }
   ],
   "knownRoster": [
