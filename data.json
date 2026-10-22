@@ -2318,7 +2318,7 @@
       "name": "MOHINI",
       "buyIns": 2,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 3700
     },
     {
       "id": 1792656012599,
@@ -2381,6 +2381,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792674357207_sicm",
+      "time": "2026-10-22 18:35:57",
+      "text": "Set final coins for MOHINI: 3700 coins. • by Ravi"
+    },
     {
       "id": "L_1792673190763_xty2",
       "time": "2026-10-22 18:16:30",
@@ -4375,11 +4380,6 @@
       "id": "L_1791519731760_woh4",
       "time": "2026-10-09 09:52:11",
       "text": "Buy-in increased for RISHI: count = 5. • by sandeep mac"
-    },
-    {
-      "id": "L_1791519731560_ge4p",
-      "time": "2026-10-09 09:52:11",
-      "text": "Buy-in increased for RISHI: count = 4. • by sandeep mac"
     }
   ],
   "knownRoster": [
