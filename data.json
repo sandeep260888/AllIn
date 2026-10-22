@@ -2305,9 +2305,56 @@
       ]
     }
   ],
-  "activePlayers": [],
-  "activeSessionId": null,
-  "activeHost": null,
+  "activePlayers": [
+    {
+      "id": 1792656005178,
+      "name": "AKSHAY",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1792656009357,
+      "name": "MOHINI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1792656012599,
+      "name": "RISHI",
+      "buyIns": 2,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1792656016332,
+      "name": "HARI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1792656019524,
+      "name": "GAGAN",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1792656022748,
+      "name": "RAVI",
+      "buyIns": 2,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    }
+  ],
+  "activeSessionId": "S_mvj93m7qdfa1fh",
+  "activeHost": {
+    "deviceId": "dev_pt3v9f2c",
+    "deviceName": "Hari's Macbook",
+    "heartbeatAt": "2026-10-22T08:00:44.420Z"
+  },
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -2324,6 +2371,51 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792656028340_7m3n",
+      "time": "2026-10-22 13:30:28",
+      "text": "Buy-in increased for RISHI: count = 2. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792656026257_uu2n",
+      "time": "2026-10-22 13:30:26",
+      "text": "Buy-in increased for RAVI: count = 2. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792656022748_j8zd",
+      "time": "2026-10-22 13:30:22",
+      "text": "Added \"RAVI\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792656019525_y2tl",
+      "time": "2026-10-22 13:30:19",
+      "text": "Added \"GAGAN\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792656016332_shjt",
+      "time": "2026-10-22 13:30:16",
+      "text": "Added \"HARI\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792656012599_5lcy",
+      "time": "2026-10-22 13:30:12",
+      "text": "Added \"RISHI\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792656009357_nv8r",
+      "time": "2026-10-22 13:30:09",
+      "text": "Added \"MOHINI\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792656005178_r6ac",
+      "time": "2026-10-22 13:30:05",
+      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792656005175_398a",
+      "time": "2026-10-22 13:30:05",
+      "text": "Started new session and claimed host. • by Hari's Macbook"
+    },
     {
       "id": "L_1792655997082_7dcy",
       "time": "2026-10-22 13:29:57",
@@ -4278,51 +4370,6 @@
       "id": "L_1791519593687_lkuo",
       "time": "2026-10-09 09:49:53",
       "text": "Added \"RAM\" with 1 buy-in (1000c). • by sandeep mac"
-    },
-    {
-      "id": "L_1791519586924_u9ue",
-      "time": "2026-10-09 09:49:46",
-      "text": "Added \"RISHI\" with 1 buy-in (1000c). • by sandeep mac"
-    },
-    {
-      "id": "L_1791519581544_0u1z",
-      "time": "2026-10-09 09:49:41",
-      "text": "Added \"GAGAN\" with 1 buy-in (1000c). • by sandeep mac"
-    },
-    {
-      "id": "L_1791519576606_6bud",
-      "time": "2026-10-09 09:49:36",
-      "text": "Added \"RAVI\" with 1 buy-in (1000c). • by sandeep mac"
-    },
-    {
-      "id": "L_1791519570934_v4sy",
-      "time": "2026-10-09 09:49:30",
-      "text": "Added \"ABHISHEK\" with 1 buy-in (1000c). • by sandeep mac"
-    },
-    {
-      "id": "L_1791519570930_pf3c",
-      "time": "2026-10-09 09:49:30",
-      "text": "Started new session and claimed host. • by sandeep mac"
-    },
-    {
-      "id": "L_1791519560116_k3z6",
-      "time": "2026-10-09 09:49:20",
-      "text": "Took over hosting from Ravi (inactive 8h+). • by sandeep mac"
-    },
-    {
-      "id": "L_1791519553630_9kl4",
-      "time": "2026-10-09 09:49:13",
-      "text": "Cleared active session dashboard. • by sandeep mac"
-    },
-    {
-      "id": "L_1791460406167_e8np",
-      "time": "2026-10-08 17:23:26",
-      "text": "Random picker chose HARI. • by sandeep mac"
-    },
-    {
-      "id": "L_1791460405784_92u0",
-      "time": "2026-10-08 17:23:25",
-      "text": "Random picker chose MOHINI. • by sandeep mac"
     }
   ],
   "knownRoster": [
