@@ -2344,7 +2344,7 @@
     {
       "id": 1792656022748,
       "name": "RAVI",
-      "buyIns": 6,
+      "buyIns": 7,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2360,7 +2360,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-22T10:46:26.386Z"
+    "heartbeatAt": "2026-10-22T10:59:57.164Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2378,6 +2378,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792666781455_xpy9",
+      "time": "2026-10-22 16:29:41",
+      "text": "Buy-in increased for RAVI: count = 7. • by Hari's Macbook"
+    },
     {
       "id": "L_1792665970238_3slh",
       "time": "2026-10-22 16:16:10",
@@ -4372,11 +4377,6 @@
       "id": "L_1791519673962_a4oc",
       "time": "2026-10-09 09:51:13",
       "text": "Buy-in increased for ALOK: count = 11. • by sandeep mac"
-    },
-    {
-      "id": "L_1791519671911_j4be",
-      "time": "2026-10-09 09:51:11",
-      "text": "Buy-in increased for ALOK: count = 10. • by sandeep mac"
     }
   ],
   "knownRoster": [
