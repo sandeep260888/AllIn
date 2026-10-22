@@ -2305,51 +2305,8 @@
       ]
     }
   ],
-  "activePlayers": [
-    {
-      "id": 1792588013257,
-      "name": "GAGAN",
-      "buyIns": 1,
-      "buyInCoins": 1000,
-      "cashOutCoins": 5060
-    },
-    {
-      "id": 1792588016477,
-      "name": "AKSHAY",
-      "buyIns": 1,
-      "buyInCoins": 1000,
-      "cashOutCoins": 3250
-    },
-    {
-      "id": 1792588019810,
-      "name": "MOHINI",
-      "buyIns": 2,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1792588030677,
-      "name": "HARI",
-      "buyIns": 6,
-      "buyInCoins": 1000,
-      "cashOutCoins": 1040
-    },
-    {
-      "id": 1792588033852,
-      "name": "RISHI",
-      "buyIns": 3,
-      "buyInCoins": 1000,
-      "cashOutCoins": 1050
-    },
-    {
-      "id": 1792588423170,
-      "name": "KUNAL",
-      "buyIns": 2,
-      "buyInCoins": 1000,
-      "cashOutCoins": 4600
-    }
-  ],
-  "activeSessionId": "S_mvi4mbbbbokict",
+  "activePlayers": [],
+  "activeSessionId": null,
   "activeHost": null,
   "settings": {
     "coinCount": "2",
@@ -2367,6 +2324,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792655997082_7dcy",
+      "time": "2026-10-22 13:29:57",
+      "text": "Settlement: all balances are zero — no transfers needed. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792655986585_qcj1",
+      "time": "2026-10-22 13:29:46",
+      "text": "Cleared active session dashboard. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792592226878_pirm",
+      "time": "2026-10-21 19:47:06",
+      "text": "Pushed live state to GitHub repo. • by Hari's Macbook"
+    },
     {
       "id": "L_1792592222300_ip7t",
       "time": "2026-10-21 19:47:02",
@@ -4351,21 +4323,6 @@
       "id": "L_1791460405784_92u0",
       "time": "2026-10-08 17:23:25",
       "text": "Random picker chose MOHINI. • by sandeep mac"
-    },
-    {
-      "id": "L_1791460405318_9cly",
-      "time": "2026-10-08 17:23:25",
-      "text": "Random picker chose ALOK. • by sandeep mac"
-    },
-    {
-      "id": "L_1791460404869_ou6e",
-      "time": "2026-10-08 17:23:24",
-      "text": "Random picker chose ABHISHEK. • by sandeep mac"
-    },
-    {
-      "id": "L_1791445303730_po07",
-      "time": "2026-10-08 13:11:43",
-      "text": "Updated existing session in database. • by Ravi"
     }
   ],
   "knownRoster": [
