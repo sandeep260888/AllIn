@@ -2311,7 +2311,7 @@
       "name": "AKSHAY",
       "buyIns": 4,
       "buyInCoins": 1000,
-      "cashOutCoins": 9500
+      "cashOutCoins": 9200
     },
     {
       "id": 1792656009357,
@@ -2332,7 +2332,7 @@
       "name": "HARI",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 7000
+      "cashOutCoins": 0
     },
     {
       "id": 1792656019524,
@@ -2381,6 +2381,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792677255227_bk1r",
+      "time": "2026-10-22 19:24:15",
+      "text": "Set final coins for AKSHAY: 9200 coins. • by Ravi"
+    },
+    {
+      "id": "L_1792677241147_i72k",
+      "time": "2026-10-22 19:24:01",
+      "text": "Set final coins for RAVI: 1770 coins. • by Ravi"
+    },
     {
       "id": "L_1792677224364_rvak",
       "time": "2026-10-22 19:23:44",
@@ -4370,16 +4380,6 @@
       "id": "L_1791519868501_jhah",
       "time": "2026-10-09 09:54:28",
       "text": "Buy-in increased for SHUBHAM: count = 2. • by sandeep mac"
-    },
-    {
-      "id": "L_1791519795477_0z9p",
-      "time": "2026-10-09 09:53:15",
-      "text": "Set final coins for SHUBHAM: 3480 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1791519783877_up3t",
-      "time": "2026-10-09 09:53:03",
-      "text": "Buy-in increased for SANDEEP: count = 2. • by sandeep mac"
     }
   ],
   "knownRoster": [
