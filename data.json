@@ -2360,7 +2360,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-22T09:08:24.639Z"
+    "heartbeatAt": "2026-10-22T09:13:55.689Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2378,6 +2378,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792660420050_ox0t",
+      "time": "2026-10-22 14:43:40",
+      "text": "Buy-in decreased for ALOK: count = 1. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792660411142_o5lz",
+      "time": "2026-10-22 14:43:31",
+      "text": "Buy-in increased for ALOK: count = 2. • by Hari's Macbook"
+    },
     {
       "id": "L_1792660088449_8ztv",
       "time": "2026-10-22 14:38:08",
@@ -4367,16 +4377,6 @@
       "id": "L_1791519618244_t6z0",
       "time": "2026-10-09 09:50:18",
       "text": "Added \"MOHINI\" with 1 buy-in (1000c). • by sandeep mac"
-    },
-    {
-      "id": "L_1791519612278_faxr",
-      "time": "2026-10-09 09:50:12",
-      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by sandeep mac"
-    },
-    {
-      "id": "L_1791519608485_xfa7",
-      "time": "2026-10-09 09:50:08",
-      "text": "Added \"KUNAL\" with 1 buy-in (1000c). • by sandeep mac"
     }
   ],
   "knownRoster": [
