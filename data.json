@@ -2344,7 +2344,7 @@
     {
       "id": 1792656022748,
       "name": "RAVI",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -2353,7 +2353,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-22T08:00:44.420Z"
+    "heartbeatAt": "2026-10-22T08:08:37.657Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2371,6 +2371,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792656501227_kblg",
+      "time": "2026-10-22 13:38:21",
+      "text": "Buy-in increased for RAVI: count = 3. • by Hari's Macbook"
+    },
     {
       "id": "L_1792656028340_7m3n",
       "time": "2026-10-22 13:30:28",
@@ -4365,11 +4370,6 @@
       "id": "L_1791519599296_vimh",
       "time": "2026-10-09 09:49:59",
       "text": "Added \"HARI\" with 1 buy-in (1000c). • by sandeep mac"
-    },
-    {
-      "id": "L_1791519593687_lkuo",
-      "time": "2026-10-09 09:49:53",
-      "text": "Added \"RAM\" with 1 buy-in (1000c). • by sandeep mac"
     }
   ],
   "knownRoster": [
