@@ -2351,7 +2351,7 @@
     {
       "id": 1792659875726,
       "name": "ALOK",
-      "buyIns": 7,
+      "buyIns": 10,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -2360,7 +2360,7 @@
   "activeHost": {
     "deviceId": "dev_pt3v9f2c",
     "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-22T11:13:15.089Z"
+    "heartbeatAt": "2026-10-22T11:19:09.864Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2378,6 +2378,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792667934148_bbh6",
+      "time": "2026-10-22 16:48:54",
+      "text": "Buy-in increased for ALOK: count = 10. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792667933637_fxm3",
+      "time": "2026-10-22 16:48:53",
+      "text": "Buy-in increased for ALOK: count = 9. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792667921174_h800",
+      "time": "2026-10-22 16:48:41",
+      "text": "Buy-in increased for ALOK: count = 8. • by Hari's Macbook"
+    },
     {
       "id": "L_1792667579399_8az4",
       "time": "2026-10-22 16:42:59",
@@ -4362,21 +4377,6 @@
       "id": "L_1791519677428_9ood",
       "time": "2026-10-09 09:51:17",
       "text": "Buy-in increased for ALOK: count = 15. • by sandeep mac"
-    },
-    {
-      "id": "L_1791519676795_7xpy",
-      "time": "2026-10-09 09:51:16",
-      "text": "Buy-in increased for ALOK: count = 14. • by sandeep mac"
-    },
-    {
-      "id": "L_1791519676094_6o81",
-      "time": "2026-10-09 09:51:16",
-      "text": "Buy-in increased for ALOK: count = 13. • by sandeep mac"
-    },
-    {
-      "id": "L_1791519674728_4ozl",
-      "time": "2026-10-09 09:51:14",
-      "text": "Buy-in increased for ALOK: count = 12. • by sandeep mac"
     }
   ],
   "knownRoster": [
