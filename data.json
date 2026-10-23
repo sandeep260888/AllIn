@@ -2398,7 +2398,7 @@
     {
       "id": 1792743383992,
       "name": "HARI",
-      "buyIns": 4,
+      "buyIns": 5,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2419,7 +2419,7 @@
     {
       "id": 1792752435828,
       "name": "SONAK",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -2442,6 +2442,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792758539067_vclo",
+      "time": "2026-10-23 17:58:59",
+      "text": "Buy-in increased for SONAK: count = 3. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792758529755_n2r1",
+      "time": "2026-10-23 17:58:49",
+      "text": "Buy-in increased for HARI: count = 5. • by Hari's Macbook"
+    },
     {
       "id": "L_1792757851717_xy83",
       "time": "2026-10-23 17:47:31",
@@ -4431,16 +4441,6 @@
       "id": "L_1791589923171_uib9",
       "time": "2026-10-10 05:22:03",
       "text": "Started new session and claimed host. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791589899967_mq9o",
-      "time": "2026-10-10 05:21:39",
-      "text": "Cleared active session dashboard. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791578457639_abmn",
-      "time": "2026-10-10 02:10:57",
-      "text": "Random picker chose GAGAN. • by sandeep mac"
     }
   ],
   "knownRoster": [
