@@ -2407,7 +2407,7 @@
       "name": "SANDEEP",
       "buyIns": 3,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 6850
     },
     {
       "id": 1792744100941,
@@ -2442,6 +2442,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792767905914_8fyz",
+      "time": "2026-10-23 20:35:05",
+      "text": "Set final coins for SANDEEP: 6850 coins. • by Hari's Macbook"
+    },
     {
       "id": "L_1792767874218_im89",
       "time": "2026-10-23 20:34:34",
@@ -4436,11 +4441,6 @@
       "id": "L_1791595068158_jn3x",
       "time": "2026-10-10 06:47:48",
       "text": "Buy-in increased for AKSHAY: count = 3. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791593695602_ziiz",
-      "time": "2026-10-10 06:24:55",
-      "text": "Buy-in increased for AKSHAY: count = 2. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
