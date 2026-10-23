@@ -2443,6 +2443,21 @@
   },
   "logs": [
     {
+      "id": "L_1792767874218_im89",
+      "time": "2026-10-23 20:34:34",
+      "text": "Set final coins for SONAK: 0 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792767871334_zttb",
+      "time": "2026-10-23 20:34:31",
+      "text": "Set final coins for ALOK: 0 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792767868626_yxnl",
+      "time": "2026-10-23 20:34:28",
+      "text": "Set final coins for RAM: 0 coins. • by Hari's Macbook"
+    },
+    {
       "id": "L_1792767804070_99uz",
       "time": "2026-10-23 20:33:24",
       "text": "Set final coins for GAGAN: 10410 coins. • by Hari's Macbook"
@@ -4426,21 +4441,6 @@
       "id": "L_1791593695602_ziiz",
       "time": "2026-10-10 06:24:55",
       "text": "Buy-in increased for AKSHAY: count = 2. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791592595802_sy8l",
-      "time": "2026-10-10 06:06:35",
-      "text": "Buy-in increased for HARI: count = 4. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791591795918_d5cn",
-      "time": "2026-10-10 05:53:15",
-      "text": "Buy-in increased for SANDEEP: count = 3. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791591441931_fbya",
-      "time": "2026-10-10 05:47:21",
-      "text": "Buy-in increased for HARI: count = 3. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
