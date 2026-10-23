@@ -2384,7 +2384,7 @@
     {
       "id": 1792743377958,
       "name": "ALOK",
-      "buyIns": 17,
+      "buyIns": 18,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2442,6 +2442,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792765819090_745p",
+      "time": "2026-10-23 20:00:19",
+      "text": "Buy-in increased for ALOK: count = 18. • by Hari's Macbook"
+    },
     {
       "id": "L_1792765524477_0oe6",
       "time": "2026-10-23 19:55:24",
@@ -4436,11 +4441,6 @@
       "id": "L_1791590093300_9bw0",
       "time": "2026-10-10 05:24:53",
       "text": "Buy-in increased for RAM: count = 2. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791590093217_u6wh",
-      "time": "2026-10-10 05:24:53",
-      "text": "Set final coins for RAM: 0 coins. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
