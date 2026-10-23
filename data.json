@@ -2363,7 +2363,7 @@
     {
       "id": 1792743367068,
       "name": "RAM",
-      "buyIns": 5,
+      "buyIns": 6,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2435,6 +2435,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792746158107_migm",
+      "time": "2026-10-23 14:32:38",
+      "text": "Buy-in increased for RAM: count = 6. • by Hari's Macbook"
+    },
     {
       "id": "L_1792745863506_vv1w",
       "time": "2026-10-23 14:27:43",
@@ -4429,11 +4434,6 @@
       "id": "L_1791539461006_kpcv",
       "time": "2026-10-09 15:21:01",
       "text": "Set final coins for SANDEEP: 15350 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1791539394371_0mqi",
-      "time": "2026-10-09 15:19:54",
-      "text": "Set final coins for KUNAL: 12460 coins. • by sandeep mac"
     }
   ],
   "knownRoster": [
