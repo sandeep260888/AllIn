@@ -2379,7 +2379,7 @@
       "name": "AKSHAY",
       "buyIns": 2,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 11760
     },
     {
       "id": 1792743377958,
@@ -2442,6 +2442,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792765444123_wc2x",
+      "time": "2026-10-23 19:54:04",
+      "text": "Set final coins for AKSHAY: 11760 coins. • by Hari's Macbook"
+    },
     {
       "id": "L_1792764005570_bmoc",
       "time": "2026-10-23 19:30:05",
@@ -4436,11 +4441,6 @@
       "id": "L_1791590090295_8nf3",
       "time": "2026-10-10 05:24:50",
       "text": "Buy-in increased for RISHI: count = 3. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791590090087_n8pd",
-      "time": "2026-10-10 05:24:50",
-      "text": "Buy-in increased for RISHI: count = 2. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
