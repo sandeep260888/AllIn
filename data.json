@@ -2400,7 +2400,7 @@
       "name": "HARI",
       "buyIns": 5,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 5000
     },
     {
       "id": 1792743845046,
@@ -2442,6 +2442,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792767786022_fjt0",
+      "time": "2026-10-23 20:33:06",
+      "text": "Set final coins for HARI: 5000 coins. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792767783406_el8o",
+      "time": "2026-10-23 20:33:03",
+      "text": "Set final coins for SONAK: 0 coins. • by Hari's Macbook"
+    },
     {
       "id": "L_1792765819090_745p",
       "time": "2026-10-23 20:00:19",
@@ -4431,16 +4441,6 @@
       "id": "L_1791591141084_3icq",
       "time": "2026-10-10 05:42:21",
       "text": "Buy-in increased for SANDEEP: count = 2. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791590276894_plso",
-      "time": "2026-10-10 05:27:56",
-      "text": "Buy-in increased for HARI: count = 2. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791590093300_9bw0",
-      "time": "2026-10-10 05:24:53",
-      "text": "Buy-in increased for RAM: count = 2. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
