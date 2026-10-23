@@ -2370,7 +2370,7 @@
     {
       "id": 1792743370658,
       "name": "GAGAN",
-      "buyIns": 4,
+      "buyIns": 5,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2442,6 +2442,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792755015123_hb07",
+      "time": "2026-10-23 17:00:15",
+      "text": "Buy-in increased for GAGAN: count = 5. • by Hari's Macbook"
+    },
     {
       "id": "L_1792754843873_vg68",
       "time": "2026-10-23 16:57:23",
@@ -4436,11 +4441,6 @@
       "id": "L_1791539642739_ss7j",
       "time": "2026-10-09 15:24:02",
       "text": "Settlement: AKSHAY pays SHUBHAM ₹675.00 • by sandeep mac"
-    },
-    {
-      "id": "L_1791539642738_aqhy",
-      "time": "2026-10-09 15:24:02",
-      "text": "Settlement: AKSHAY pays RAM ₹965.00 • by sandeep mac"
     }
   ],
   "knownRoster": [
