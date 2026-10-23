@@ -2419,7 +2419,7 @@
     {
       "id": 1792752435828,
       "name": "SONAK",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -2442,6 +2442,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792755749418_6rs3",
+      "time": "2026-10-23 17:12:29",
+      "text": "Buy-in increased for SONAK: count = 2. • by Hari's Macbook"
+    },
     {
       "id": "L_1792755015123_hb07",
       "time": "2026-10-23 17:00:15",
@@ -4436,11 +4441,6 @@
       "id": "L_1791540665007_ni52",
       "time": "2026-10-09 15:41:05",
       "text": "Saved session to database. • by sandeep mac"
-    },
-    {
-      "id": "L_1791539642739_ss7j",
-      "time": "2026-10-09 15:24:02",
-      "text": "Settlement: AKSHAY pays SHUBHAM ₹675.00 • by sandeep mac"
     }
   ],
   "knownRoster": [
