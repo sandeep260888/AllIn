@@ -2401,14 +2401,17 @@
       "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1792743845046,
+      "name": "SANDEEP",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "activeSessionId": "S_mvkp432y1vmo1g",
-  "activeHost": {
-    "deviceId": "dev_pt3v9f2c",
-    "deviceName": "Hari's Macbook",
-    "heartbeatAt": "2026-10-23T08:16:45.617Z"
-  },
+  "activeHost": null,
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -2425,6 +2428,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792743845046_a8hw",
+      "time": "2026-10-23 13:54:05",
+      "text": "Added \"SANDEEP\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
     {
       "id": "L_1792743388812_cu0b",
       "time": "2026-10-23 13:46:28",
@@ -4419,11 +4427,6 @@
       "id": "L_1791538819038_79kl",
       "time": "2026-10-09 15:10:19",
       "text": "Set final coins for SANDEEP: 16100 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1791538659207_sx3y",
-      "time": "2026-10-09 15:07:39",
-      "text": "Set final coins for RAVI: 0 coins. • by sandeep mac"
     }
   ],
   "knownRoster": [
