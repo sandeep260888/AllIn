@@ -2370,7 +2370,7 @@
     {
       "id": 1792743370658,
       "name": "GAGAN",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2435,6 +2435,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792751288108_azeh",
+      "time": "2026-10-23 15:58:08",
+      "text": "Buy-in increased for GAGAN: count = 2. • by Hari's Macbook"
+    },
     {
       "id": "L_1792750987408_edxb",
       "time": "2026-10-23 15:53:07",
@@ -4429,11 +4434,6 @@
       "id": "L_1791539642724_6dkj",
       "time": "2026-10-09 15:24:02",
       "text": "Settlement: ALOK pays RISHI ₹8000.00 • by sandeep mac"
-    },
-    {
-      "id": "L_1791539642722_ygdn",
-      "time": "2026-10-09 15:24:02",
-      "text": "Settlement calculated (11 transfers). • by sandeep mac"
     }
   ],
   "knownRoster": [
