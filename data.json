@@ -2415,6 +2415,13 @@
       "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1792752435828,
+      "name": "SONAK",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "activeSessionId": "S_mvkp432y1vmo1g",
@@ -2435,6 +2442,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792752435828_v1xc",
+      "time": "2026-10-23 16:17:15",
+      "text": "Added \"SONAK\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
     {
       "id": "L_1792751507621_w5xw",
       "time": "2026-10-23 16:01:47",
@@ -4429,11 +4441,6 @@
       "id": "L_1791539642730_wvmb",
       "time": "2026-10-09 15:24:02",
       "text": "Settlement: RAVI pays SANDEEP ₹3860.00 • by sandeep mac"
-    },
-    {
-      "id": "L_1791539642729_4pmj",
-      "time": "2026-10-09 15:24:02",
-      "text": "Settlement: GAGAN pays SANDEEP ₹2815.00 • by sandeep mac"
     }
   ],
   "knownRoster": [
