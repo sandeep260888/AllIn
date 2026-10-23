@@ -2370,7 +2370,7 @@
     {
       "id": 1792743370658,
       "name": "GAGAN",
-      "buyIns": 3,
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2442,6 +2442,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792753780898_9w6a",
+      "time": "2026-10-23 16:39:40",
+      "text": "Buy-in increased for GAGAN: count = 4. • by Hari's Macbook"
+    },
     {
       "id": "L_1792753007502_nvut",
       "time": "2026-10-23 16:26:47",
@@ -4436,11 +4441,6 @@
       "id": "L_1791539642736_zaid",
       "time": "2026-10-09 15:24:02",
       "text": "Settlement: ABHISHEK pays HARI ₹2000.00 • by sandeep mac"
-    },
-    {
-      "id": "L_1791539642736_gnxw",
-      "time": "2026-10-09 15:24:02",
-      "text": "Settlement: MOHINI pays HARI ₹10.00 • by sandeep mac"
     }
   ],
   "knownRoster": [
