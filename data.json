@@ -2398,7 +2398,7 @@
     {
       "id": 1792743383992,
       "name": "HARI",
-      "buyIns": 2,
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2442,6 +2442,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792757561597_3s6f",
+      "time": "2026-10-23 17:42:41",
+      "text": "Buy-in increased for HARI: count = 4. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792757561183_hy5x",
+      "time": "2026-10-23 17:42:41",
+      "text": "Buy-in increased for HARI: count = 3. • by Hari's Macbook"
+    },
     {
       "id": "L_1792755906373_4u6t",
       "time": "2026-10-23 17:15:06",
@@ -4431,16 +4441,6 @@
       "id": "L_1791578457159_w3yg",
       "time": "2026-10-10 02:10:57",
       "text": "Random picker chose MOHINI. • by sandeep mac"
-    },
-    {
-      "id": "L_1791578456874_ktzs",
-      "time": "2026-10-10 02:10:56",
-      "text": "Random picker chose AKSHAY. • by sandeep mac"
-    },
-    {
-      "id": "L_1791540667251_xf03",
-      "time": "2026-10-09 15:41:07",
-      "text": "Pushed live state to GitHub repo. • by sandeep mac"
     }
   ],
   "knownRoster": [
