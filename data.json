@@ -2384,7 +2384,7 @@
     {
       "id": 1792743377958,
       "name": "ALOK",
-      "buyIns": 14,
+      "buyIns": 15,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2442,6 +2442,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792760265800_apwg",
+      "time": "2026-10-23 18:27:45",
+      "text": "Buy-in decreased for ALOK: count = 15. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792760257404_udkj",
+      "time": "2026-10-23 18:27:37",
+      "text": "Buy-in increased for ALOK: count = 16. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792760256838_cc5c",
+      "time": "2026-10-23 18:27:36",
+      "text": "Buy-in increased for ALOK: count = 15. • by Hari's Macbook"
+    },
     {
       "id": "L_1792760029975_mwvj",
       "time": "2026-10-23 18:23:49",
@@ -4426,21 +4441,6 @@
       "id": "L_1791589963791_tt27",
       "time": "2026-10-10 05:22:43",
       "text": "Added \"RISHI\" with 1 buy-in (1000c). • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791589960941_pllh",
-      "time": "2026-10-10 05:22:40",
-      "text": "Added \"RAM\" with 1 buy-in (1000c). • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791589953767_h3gs",
-      "time": "2026-10-10 05:22:33",
-      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791589923174_dbfd",
-      "time": "2026-10-10 05:22:03",
-      "text": "Added \"HARI\" with 1 buy-in (1000c). • by Hari's Macbook"
     }
   ],
   "knownRoster": [
