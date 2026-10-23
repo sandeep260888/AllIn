@@ -2414,7 +2414,7 @@
       "name": "RAVI",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 8870
     },
     {
       "id": 1792752435828,
@@ -2442,6 +2442,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792767976572_0fpn",
+      "time": "2026-10-23 20:36:16",
+      "text": "Set final coins for RAVI: 8870 coins. • by Hari's Macbook"
+    },
     {
       "id": "L_1792767905914_8fyz",
       "time": "2026-10-23 20:35:05",
@@ -4436,11 +4441,6 @@
       "id": "L_1791595974913_i4dp",
       "time": "2026-10-10 07:02:54",
       "text": "Buy-in increased for AKSHAY: count = 4. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791595068158_jn3x",
-      "time": "2026-10-10 06:47:48",
-      "text": "Buy-in increased for AKSHAY: count = 3. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
