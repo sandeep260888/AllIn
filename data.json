@@ -2361,64 +2361,54 @@
   ],
   "activePlayers": [
     {
-      "id": 1792656005178,
-      "name": "AKSHAY",
-      "buyIns": 4,
-      "buyInCoins": 1000,
-      "cashOutCoins": 9200
-    },
-    {
-      "id": 1792656009357,
-      "name": "MOHINI",
+      "id": 1792743367068,
+      "name": "RAM",
       "buyIns": 2,
       "buyInCoins": 1000,
-      "cashOutCoins": 3700
+      "cashOutCoins": 0
     },
     {
-      "id": 1792656012599,
-      "name": "RISHI",
-      "buyIns": 2,
-      "buyInCoins": 1000,
-      "cashOutCoins": 4400
-    },
-    {
-      "id": 1792656016332,
-      "name": "HARI",
-      "buyIns": 1,
-      "buyInCoins": 1000,
-      "cashOutCoins": 6700
-    },
-    {
-      "id": 1792656019524,
+      "id": 1792743370658,
       "name": "GAGAN",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 3200
+      "cashOutCoins": 0
     },
     {
-      "id": 1792656022748,
-      "name": "RAVI",
-      "buyIns": 7,
-      "buyInCoins": 1000,
-      "cashOutCoins": 1770
-    },
-    {
-      "id": 1792659875726,
-      "name": "ALOK",
-      "buyIns": 15,
-      "buyInCoins": 1000,
-      "cashOutCoins": 1000
-    },
-    {
-      "id": 1792673190762,
-      "name": "SONAK",
+      "id": 1792743374242,
+      "name": "AKSHAY",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 3030
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1792743377958,
+      "name": "ALOK",
+      "buyIns": 2,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1792743380883,
+      "name": "RISHI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1792743383992,
+      "name": "HARI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
-  "activeSessionId": "S_mvj93m7qdfa1fh",
-  "activeHost": null,
+  "activeSessionId": "S_mvkp432y1vmo1g",
+  "activeHost": {
+    "deviceId": "dev_pt3v9f2c",
+    "deviceName": "Hari's Macbook",
+    "heartbeatAt": "2026-10-23T08:16:45.617Z"
+  },
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -2435,6 +2425,56 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792743388812_cu0b",
+      "time": "2026-10-23 13:46:28",
+      "text": "Buy-in increased for ALOK: count = 2. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792743387103_40t4",
+      "time": "2026-10-23 13:46:27",
+      "text": "Buy-in increased for RAM: count = 2. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792743383992_km96",
+      "time": "2026-10-23 13:46:23",
+      "text": "Added \"HARI\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792743380883_9bk2",
+      "time": "2026-10-23 13:46:20",
+      "text": "Added \"RISHI\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792743377958_r0xh",
+      "time": "2026-10-23 13:46:17",
+      "text": "Added \"ALOK\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792743374242_zlx4",
+      "time": "2026-10-23 13:46:14",
+      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792743370658_t2v6",
+      "time": "2026-10-23 13:46:10",
+      "text": "Added \"GAGAN\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792743367068_ydxa",
+      "time": "2026-10-23 13:46:07",
+      "text": "Added \"RAM\" with 1 buy-in (1000c). • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792743367066_yjt0",
+      "time": "2026-10-23 13:46:07",
+      "text": "Started new session and claimed host. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792743361334_puns",
+      "time": "2026-10-23 13:46:01",
+      "text": "Cleared active session dashboard. • by Hari's Macbook"
+    },
     {
       "id": "L_1792677353584_y49a",
       "time": "2026-10-22 19:25:53",
@@ -2574,6 +2614,11 @@
       "id": "L_1792671100994_492z",
       "time": "2026-10-22 17:41:40",
       "text": "Set final coins for HARI: 7000 coins. • by Ravi"
+    },
+    {
+      "id": "L_1792671085672_9127",
+      "time": "2026-10-22 17:41:25",
+      "text": "Cleared active session dashboard. • by Hari's Macbook"
     },
     {
       "id": "L_1792671014480_ms8e",
@@ -4379,61 +4424,6 @@
       "id": "L_1791538659207_sx3y",
       "time": "2026-10-09 15:07:39",
       "text": "Set final coins for RAVI: 0 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1791538641635_w1mq",
-      "time": "2026-10-09 15:07:21",
-      "text": "Set final coins for RAVI: 1000 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1791538528896_r764",
-      "time": "2026-10-09 15:05:28",
-      "text": "Set final coins for RISHI: 29670 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1791538511369_5lbj",
-      "time": "2026-10-09 15:05:11",
-      "text": "Set final coins for ALOK: 5000 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1791538500407_8kee",
-      "time": "2026-10-09 15:05:00",
-      "text": "Set final coins for KUNAL: 12720 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1791538465367_5sjl",
-      "time": "2026-10-09 15:04:25",
-      "text": "Buy-in increased for GAGAN: count = 12. • by sandeep mac"
-    },
-    {
-      "id": "L_1791538464750_myz3",
-      "time": "2026-10-09 15:04:24",
-      "text": "Buy-in increased for GAGAN: count = 11. • by sandeep mac"
-    },
-    {
-      "id": "L_1791538464383_byux",
-      "time": "2026-10-09 15:04:24",
-      "text": "Buy-in increased for GAGAN: count = 10. • by sandeep mac"
-    },
-    {
-      "id": "L_1791538459316_ik2c",
-      "time": "2026-10-09 15:04:19",
-      "text": "Buy-in increased for ALOK: count = 21. • by sandeep mac"
-    },
-    {
-      "id": "L_1791538442321_fp0u",
-      "time": "2026-10-09 15:04:02",
-      "text": "Buy-in increased for RAVI: count = 10. • by sandeep mac"
-    },
-    {
-      "id": "L_1791538441934_4zky",
-      "time": "2026-10-09 15:04:01",
-      "text": "Buy-in increased for RAVI: count = 9. • by sandeep mac"
-    },
-    {
-      "id": "L_1791532053266_0u1v",
-      "time": "2026-10-09 13:17:33",
-      "text": "Stopped hosting. • by sandeep mac"
     }
   ],
   "knownRoster": [
