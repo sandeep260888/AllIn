@@ -2384,7 +2384,7 @@
     {
       "id": 1792743377958,
       "name": "ALOK",
-      "buyIns": 12,
+      "buyIns": 14,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2442,6 +2442,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792757851717_xy83",
+      "time": "2026-10-23 17:47:31",
+      "text": "Buy-in increased for ALOK: count = 14. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792757851229_iexd",
+      "time": "2026-10-23 17:47:31",
+      "text": "Buy-in increased for ALOK: count = 13. • by Hari's Macbook"
+    },
     {
       "id": "L_1792757561597_3s6f",
       "time": "2026-10-23 17:42:41",
@@ -4431,16 +4441,6 @@
       "id": "L_1791578457639_abmn",
       "time": "2026-10-10 02:10:57",
       "text": "Random picker chose GAGAN. • by sandeep mac"
-    },
-    {
-      "id": "L_1791578457423_o49a",
-      "time": "2026-10-10 02:10:57",
-      "text": "Random picker chose HARI. • by sandeep mac"
-    },
-    {
-      "id": "L_1791578457159_w3yg",
-      "time": "2026-10-10 02:10:57",
-      "text": "Random picker chose MOHINI. • by sandeep mac"
     }
   ],
   "knownRoster": [
