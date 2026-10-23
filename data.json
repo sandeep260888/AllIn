@@ -2372,7 +2372,7 @@
       "name": "GAGAN",
       "buyIns": 5,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 10410
     },
     {
       "id": 1792743374242,
@@ -2442,6 +2442,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792767804070_99uz",
+      "time": "2026-10-23 20:33:24",
+      "text": "Set final coins for GAGAN: 10410 coins. • by Hari's Macbook"
+    },
     {
       "id": "L_1792767786022_fjt0",
       "time": "2026-10-23 20:33:06",
@@ -4436,11 +4441,6 @@
       "id": "L_1791591441931_fbya",
       "time": "2026-10-10 05:47:21",
       "text": "Buy-in increased for HARI: count = 3. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791591141084_3icq",
-      "time": "2026-10-10 05:42:21",
-      "text": "Buy-in increased for SANDEEP: count = 2. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
