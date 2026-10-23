@@ -2363,7 +2363,7 @@
     {
       "id": 1792743367068,
       "name": "RAM",
-      "buyIns": 8,
+      "buyIns": 9,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2442,6 +2442,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792755906373_4u6t",
+      "time": "2026-10-23 17:15:06",
+      "text": "Buy-in increased for RAM: count = 9. • by Hari's Macbook"
+    },
     {
       "id": "L_1792755749418_6rs3",
       "time": "2026-10-23 17:12:29",
@@ -4436,11 +4441,6 @@
       "id": "L_1791540667251_xf03",
       "time": "2026-10-09 15:41:07",
       "text": "Pushed live state to GitHub repo. • by sandeep mac"
-    },
-    {
-      "id": "L_1791540665007_ni52",
-      "time": "2026-10-09 15:41:05",
-      "text": "Saved session to database. • by sandeep mac"
     }
   ],
   "knownRoster": [
