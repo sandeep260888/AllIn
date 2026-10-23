@@ -2419,7 +2419,7 @@
     {
       "id": 1792752435828,
       "name": "SONAK",
-      "buyIns": 3,
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -2442,6 +2442,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792760029975_mwvj",
+      "time": "2026-10-23 18:23:49",
+      "text": "Buy-in increased for SONAK: count = 4. • by Hari's Macbook"
+    },
     {
       "id": "L_1792758539067_vclo",
       "time": "2026-10-23 17:58:59",
@@ -4436,11 +4441,6 @@
       "id": "L_1791589923174_dbfd",
       "time": "2026-10-10 05:22:03",
       "text": "Added \"HARI\" with 1 buy-in (1000c). • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791589923171_uib9",
-      "time": "2026-10-10 05:22:03",
-      "text": "Started new session and claimed host. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
