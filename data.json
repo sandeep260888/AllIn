@@ -2419,7 +2419,7 @@
     {
       "id": 1792752435828,
       "name": "SONAK",
-      "buyIns": 6,
+      "buyIns": 7,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -2442,6 +2442,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792765524477_0oe6",
+      "time": "2026-10-23 19:55:24",
+      "text": "Buy-in increased for SONAK: count = 7. • by Hari's Macbook"
+    },
     {
       "id": "L_1792765444123_wc2x",
       "time": "2026-10-23 19:54:04",
@@ -4436,11 +4441,6 @@
       "id": "L_1791590093217_u6wh",
       "time": "2026-10-10 05:24:53",
       "text": "Set final coins for RAM: 0 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791590090295_8nf3",
-      "time": "2026-10-10 05:24:50",
-      "text": "Buy-in increased for RISHI: count = 3. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
