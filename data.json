@@ -2363,7 +2363,7 @@
     {
       "id": 1792743367068,
       "name": "RAM",
-      "buyIns": 7,
+      "buyIns": 8,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2435,6 +2435,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792750567213_ja3r",
+      "time": "2026-10-23 15:46:07",
+      "text": "Buy-in increased for RAM: count = 8. • by Hari's Macbook"
+    },
     {
       "id": "L_1792749963992_4138",
       "time": "2026-10-23 15:36:03",
@@ -4429,11 +4434,6 @@
       "id": "L_1791539622206_hlz2",
       "time": "2026-10-09 15:23:42",
       "text": "Set final coins for RISHI: 28370 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1791539604639_rado",
-      "time": "2026-10-09 15:23:24",
-      "text": "Set final coins for RISHI: 28570 coins. • by sandeep mac"
     }
   ],
   "knownRoster": [
