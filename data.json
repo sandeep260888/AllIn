@@ -2384,7 +2384,7 @@
     {
       "id": 1792743377958,
       "name": "ALOK",
-      "buyIns": 5,
+      "buyIns": 6,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2435,6 +2435,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1792750987408_edxb",
+      "time": "2026-10-23 15:53:07",
+      "text": "Buy-in increased for ALOK: count = 6. • by Hari's Macbook"
+    },
     {
       "id": "L_1792750705679_l2n5",
       "time": "2026-10-23 15:48:25",
@@ -4429,11 +4434,6 @@
       "id": "L_1791539642722_ygdn",
       "time": "2026-10-09 15:24:02",
       "text": "Settlement calculated (11 transfers). • by sandeep mac"
-    },
-    {
-      "id": "L_1791539631037_7al3",
-      "time": "2026-10-09 15:23:51",
-      "text": "Set final coins for RAM: 2930 coins. • by sandeep mac"
     }
   ],
   "knownRoster": [
