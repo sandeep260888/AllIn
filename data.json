@@ -1,6 +1,48 @@
 {
   "savedSessions": [
     {
+      "sessionId": "S_mvpadwja3v0lkc",
+      "date": "2026-10-27T15:07:16.759Z",
+      "entries": [
+        {
+          "name": "RISHI",
+          "investedCoins": 8000,
+          "finalCoins": 15500,
+          "netVal": 3750
+        },
+        {
+          "name": "RAVI",
+          "investedCoins": 10000,
+          "finalCoins": 1200,
+          "netVal": -4400
+        },
+        {
+          "name": "AKSHAY",
+          "investedCoins": 10000,
+          "finalCoins": 14200,
+          "netVal": 2100
+        },
+        {
+          "name": "HARI",
+          "investedCoins": 6000,
+          "finalCoins": 2700,
+          "netVal": -1650
+        },
+        {
+          "name": "SANDEEP",
+          "investedCoins": 6000,
+          "finalCoins": 8400,
+          "netVal": 1200
+        },
+        {
+          "name": "SONAK",
+          "investedCoins": 2000,
+          "finalCoins": 0,
+          "netVal": -1000
+        }
+      ]
+    },
+    {
       "sessionId": "S_mvkp432y1vmo1g",
       "date": "2026-10-23T15:07:13.577Z",
       "entries": [
@@ -518,7 +560,7 @@
     },
     {
       "sessionId": "S_mux0lw29x8blsn",
-      "date": "2026-10-07T02:08:50.038Z",
+      "date": "2026-10-08T06:44:02.221Z",
       "entries": [
         {
           "name": "HARSHIT",
@@ -2421,70 +2463,49 @@
   ],
   "activePlayers": [
     {
-      "id": 1792743367068,
-      "name": "RAM",
-      "buyIns": 9,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1792743370658,
-      "name": "GAGAN",
-      "buyIns": 5,
-      "buyInCoins": 1000,
-      "cashOutCoins": 10410
-    },
-    {
-      "id": 1792743374242,
-      "name": "AKSHAY",
-      "buyIns": 2,
-      "buyInCoins": 1000,
-      "cashOutCoins": 11760
-    },
-    {
-      "id": 1792743377958,
-      "name": "ALOK",
-      "buyIns": 18,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1792743380883,
+      "id": 1793020971650,
       "name": "RISHI",
-      "buyIns": 1,
+      "buyIns": 8,
       "buyInCoins": 1000,
-      "cashOutCoins": 8110
+      "cashOutCoins": 15500
     },
     {
-      "id": 1792743383992,
-      "name": "HARI",
-      "buyIns": 5,
-      "buyInCoins": 1000,
-      "cashOutCoins": 5000
-    },
-    {
-      "id": 1792743845046,
-      "name": "SANDEEP",
-      "buyIns": 3,
-      "buyInCoins": 1000,
-      "cashOutCoins": 6850
-    },
-    {
-      "id": 1792744100941,
+      "id": 1793020976795,
       "name": "RAVI",
-      "buyIns": 1,
+      "buyIns": 10,
       "buyInCoins": 1000,
-      "cashOutCoins": 8870
+      "cashOutCoins": 1200
     },
     {
-      "id": 1792752435828,
+      "id": 1793020980904,
+      "name": "AKSHAY",
+      "buyIns": 10,
+      "buyInCoins": 1000,
+      "cashOutCoins": 14200
+    },
+    {
+      "id": 1793020984249,
+      "name": "HARI",
+      "buyIns": 6,
+      "buyInCoins": 1000,
+      "cashOutCoins": 2700
+    },
+    {
+      "id": 1793021423318,
+      "name": "SANDEEP",
+      "buyIns": 6,
+      "buyInCoins": 1000,
+      "cashOutCoins": 8400
+    },
+    {
+      "id": 1793024176681,
       "name": "SONAK",
-      "buyIns": 7,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
   ],
-  "activeSessionId": "S_mvkp432y1vmo1g",
+  "activeSessionId": "S_mvpadwja3v0lkc",
   "activeHost": null,
   "settings": {
     "coinCount": "2",
@@ -2502,6 +2523,321 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1793113636760_q43n",
+      "time": "2026-10-27 20:37:16",
+      "text": "Saved session to database. • by Hari iphone"
+    },
+    {
+      "id": "L_1793062998654_t0fs",
+      "time": "2026-10-27 06:33:18",
+      "text": "Settlement: SONAK pays SANDEEP ₹1000.00 • by Hari iphone"
+    },
+    {
+      "id": "L_1793062998652_pl8n",
+      "time": "2026-10-27 06:33:18",
+      "text": "Settlement: HARI pays SANDEEP ₹200.00 • by Hari iphone"
+    },
+    {
+      "id": "L_1793062998649_gift",
+      "time": "2026-10-27 06:33:18",
+      "text": "Settlement: HARI pays AKSHAY ₹1450.00 • by Hari iphone"
+    },
+    {
+      "id": "L_1793062998647_r0hu",
+      "time": "2026-10-27 06:33:18",
+      "text": "Settlement: RAVI pays AKSHAY ₹650.00 • by Hari iphone"
+    },
+    {
+      "id": "L_1793062998644_k6t7",
+      "time": "2026-10-27 06:33:18",
+      "text": "Settlement: RAVI pays RISHI ₹3750.00 • by Hari iphone"
+    },
+    {
+      "id": "L_1793062998637_a1qx",
+      "time": "2026-10-27 06:33:18",
+      "text": "Settlement calculated (5 transfers). • by Hari iphone"
+    },
+    {
+      "id": "L_1793062994560_ynxt",
+      "time": "2026-10-27 06:33:14",
+      "text": "Set final coins for SANDEEP: 8400 coins. • by Hari iphone"
+    },
+    {
+      "id": "L_1793062989483_wjqa",
+      "time": "2026-10-27 06:33:09",
+      "text": "Set final coins for RAVI: 1200 coins. • by Hari iphone"
+    },
+    {
+      "id": "L_1793062983609_71a3",
+      "time": "2026-10-27 06:33:03",
+      "text": "Set final coins for SONAK: 0 coins. • by Hari iphone"
+    },
+    {
+      "id": "L_1793062979632_nt86",
+      "time": "2026-10-27 06:32:59",
+      "text": "Set final coins for RISHI: 15500 coins. • by Hari iphone"
+    },
+    {
+      "id": "L_1793062969595_e6vq",
+      "time": "2026-10-27 06:32:49",
+      "text": "Set final coins for AKSHAY: 14200 coins. • by Hari iphone"
+    },
+    {
+      "id": "L_1793062952858_xese",
+      "time": "2026-10-27 06:32:32",
+      "text": "Set final coins for RAVI: 1180 coins. • by Hari iphone"
+    },
+    {
+      "id": "L_1793062924046_kh5b",
+      "time": "2026-10-27 06:32:04",
+      "text": "Set final coins for HARI: 2700 coins. • by Hari iphone"
+    },
+    {
+      "id": "L_1793060639659_932s",
+      "time": "2026-10-27 05:53:59",
+      "text": "Buy-in increased for RISHI: count = 8. • by Hari iphone"
+    },
+    {
+      "id": "L_1793057322867_mdxk",
+      "time": "2026-10-27 04:58:42",
+      "text": "Buy-in increased for HARI: count = 6. • by Hari iphone"
+    },
+    {
+      "id": "L_1793056898463_jqn2",
+      "time": "2026-10-27 04:51:38",
+      "text": "Buy-in increased for HARI: count = 5. • by Hari iphone"
+    },
+    {
+      "id": "L_1793056897851_5gl4",
+      "time": "2026-10-27 04:51:37",
+      "text": "Buy-in increased for HARI: count = 4. • by Hari iphone"
+    },
+    {
+      "id": "L_1793056268661_v4nl",
+      "time": "2026-10-27 04:41:08",
+      "text": "Buy-in increased for HARI: count = 3. • by Hari iphone"
+    },
+    {
+      "id": "L_1793043536563_o6wi",
+      "time": "2026-10-27 01:08:56",
+      "text": "Buy-in increased for AKSHAY: count = 10. • by Hari iphone"
+    },
+    {
+      "id": "L_1793043535991_ublb",
+      "time": "2026-10-27 01:08:55",
+      "text": "Buy-in increased for AKSHAY: count = 9. • by Hari iphone"
+    },
+    {
+      "id": "L_1793043097031_pw93",
+      "time": "2026-10-27 01:01:37",
+      "text": "Buy-in increased for AKSHAY: count = 8. • by Hari iphone"
+    },
+    {
+      "id": "L_1793042792178_t3sk",
+      "time": "2026-10-27 00:56:32",
+      "text": "Buy-in increased for AKSHAY: count = 7. • by Hari iphone"
+    },
+    {
+      "id": "L_1793042421711_yi9u",
+      "time": "2026-10-27 00:50:21",
+      "text": "Buy-in increased for RAVI: count = 10. • by Hari iphone"
+    },
+    {
+      "id": "L_1793042307730_oe02",
+      "time": "2026-10-27 00:48:27",
+      "text": "Buy-in increased for SONAK: count = 2. • by Hari iphone"
+    },
+    {
+      "id": "L_1793041629855_f4iv",
+      "time": "2026-10-27 00:37:09",
+      "text": "Buy-in increased for RISHI: count = 7. • by Hari iphone"
+    },
+    {
+      "id": "L_1793039890172_qud1",
+      "time": "2026-10-27 00:08:10",
+      "text": "Buy-in increased for RISHI: count = 6. • by Hari iphone"
+    },
+    {
+      "id": "L_1793039265250_y5ji",
+      "time": "2026-10-26 23:57:45",
+      "text": "Buy-in increased for RISHI: count = 5. • by Hari iphone"
+    },
+    {
+      "id": "L_1793038982913_57nb",
+      "time": "2026-10-26 23:53:02",
+      "text": "Buy-in increased for RAVI: count = 9. • by Hari iphone"
+    },
+    {
+      "id": "L_1793036714776_72ow",
+      "time": "2026-10-26 23:15:14",
+      "text": "Buy-in increased for AKSHAY: count = 6. • by Hari iphone"
+    },
+    {
+      "id": "L_1793036078667_qyh3",
+      "time": "2026-10-26 23:04:38",
+      "text": "Buy-in increased for RAVI: count = 8. • by Hari iphone"
+    },
+    {
+      "id": "L_1793034790068_lbfr",
+      "time": "2026-10-26 22:43:10",
+      "text": "Buy-in increased for RAVI: count = 7. • by Hari iphone"
+    },
+    {
+      "id": "L_1793034788962_9rxp",
+      "time": "2026-10-26 22:43:08",
+      "text": "Buy-in increased for SANDEEP: count = 6. • by Hari iphone"
+    },
+    {
+      "id": "L_1793032347039_vrp9",
+      "time": "2026-10-26 22:02:27",
+      "text": "Buy-in increased for SANDEEP: count = 5. • by Hari iphone"
+    },
+    {
+      "id": "L_1793029751450_xrlj",
+      "time": "2026-10-26 21:19:11",
+      "text": "Buy-in increased for RAVI: count = 6. • by Hari iphone"
+    },
+    {
+      "id": "L_1793029612319_evb6",
+      "time": "2026-10-26 21:16:52",
+      "text": "Buy-in increased for SANDEEP: count = 4. • by Hari iphone"
+    },
+    {
+      "id": "L_1793028709645_92du",
+      "time": "2026-10-26 21:01:49",
+      "text": "Buy-in increased for RAVI: count = 5. • by Hari iphone"
+    },
+    {
+      "id": "L_1793028218773_4y4z",
+      "time": "2026-10-26 20:53:38",
+      "text": "Buy-in increased for AKSHAY: count = 5. • by Hari iphone"
+    },
+    {
+      "id": "L_1793028017034_2izh",
+      "time": "2026-10-26 20:50:17",
+      "text": "Buy-in increased for AKSHAY: count = 4. • by Hari iphone"
+    },
+    {
+      "id": "L_1793027776062_ta4p",
+      "time": "2026-10-26 20:46:16",
+      "text": "Buy-in increased for RAVI: count = 4. • by Hari iphone"
+    },
+    {
+      "id": "L_1793027655134_oto2",
+      "time": "2026-10-26 20:44:15",
+      "text": "Buy-in increased for RAVI: count = 3. • by Hari iphone"
+    },
+    {
+      "id": "L_1793026810411_llp0",
+      "time": "2026-10-26 20:30:10",
+      "text": "Buy-in increased for AKSHAY: count = 3. • by Hari iphone"
+    },
+    {
+      "id": "L_1793026340871_roys",
+      "time": "2026-10-26 20:22:20",
+      "text": "Buy-in increased for RAVI: count = 2. • by Hari iphone"
+    },
+    {
+      "id": "L_1793024514552_44a2",
+      "time": "2026-10-26 19:51:54",
+      "text": "Buy-in increased for RISHI: count = 4. • by Hari iphone"
+    },
+    {
+      "id": "L_1793024176681_ygtw",
+      "time": "2026-10-26 19:46:16",
+      "text": "Added \"SONAK\" with 1 buy-in (1000c). • by Hari iphone"
+    },
+    {
+      "id": "L_1793024155381_0mvz",
+      "time": "2026-10-26 19:45:55",
+      "text": "Buy-in increased for AKSHAY: count = 2. • by Hari iphone"
+    },
+    {
+      "id": "L_1793023115686_cunc",
+      "time": "2026-10-26 19:28:35",
+      "text": "Buy-in increased for SANDEEP: count = 3. • by Hari iphone"
+    },
+    {
+      "id": "L_1793023113875_gwmz",
+      "time": "2026-10-26 19:28:33",
+      "text": "Buy-in increased for RISHI: count = 3. • by Hari iphone"
+    },
+    {
+      "id": "L_1793022752742_drn8",
+      "time": "2026-10-26 19:22:32",
+      "text": "Buy-in increased for SANDEEP: count = 2. • by Hari iphone"
+    },
+    {
+      "id": "L_1793022121874_kn32",
+      "time": "2026-10-26 19:12:01",
+      "text": "Buy-in increased for RISHI: count = 2. • by Hari iphone"
+    },
+    {
+      "id": "L_1793021423318_o96h",
+      "time": "2026-10-26 19:00:23",
+      "text": "Added \"SANDEEP\" with 1 buy-in (1000c). • by Hari iphone"
+    },
+    {
+      "id": "L_1793021393461_18wj",
+      "time": "2026-10-26 18:59:53",
+      "text": "Buy-in increased for HARI: count = 2. • by Hari iphone"
+    },
+    {
+      "id": "L_1793020984249_8rsu",
+      "time": "2026-10-26 18:53:04",
+      "text": "Added \"HARI\" with 1 buy-in (1000c). • by Hari iphone"
+    },
+    {
+      "id": "L_1793020980904_2sj0",
+      "time": "2026-10-26 18:53:00",
+      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by Hari iphone"
+    },
+    {
+      "id": "L_1793020976795_8hbb",
+      "time": "2026-10-26 18:52:56",
+      "text": "Added \"RAVI\" with 1 buy-in (1000c). • by Hari iphone"
+    },
+    {
+      "id": "L_1793020971651_a2xe",
+      "time": "2026-10-26 18:52:51",
+      "text": "Added \"RISHI\" with 1 buy-in (1000c). • by Hari iphone"
+    },
+    {
+      "id": "L_1793020971647_u5lp",
+      "time": "2026-10-26 18:52:51",
+      "text": "Started new session and claimed host. • by Hari iphone"
+    },
+    {
+      "id": "L_1793020955134_psec",
+      "time": "2026-10-26 18:52:35",
+      "text": "Cleared active session dashboard. • by Device-M21K"
+    },
+    {
+      "id": "L_1792769399339_3mb4",
+      "time": "2026-10-23 20:59:59",
+      "text": "Random picker chose RAM. • by Device-M21K"
+    },
+    {
+      "id": "L_1792769399157_1op2",
+      "time": "2026-10-23 20:59:59",
+      "text": "Random picker chose ALOK. • by Device-M21K"
+    },
+    {
+      "id": "L_1792769398973_2fwg",
+      "time": "2026-10-23 20:59:58",
+      "text": "Random picker chose SONAK. • by Device-M21K"
+    },
+    {
+      "id": "L_1792769398794_61gs",
+      "time": "2026-10-23 20:59:58",
+      "text": "Random picker chose RAVI. • by Device-M21K"
+    },
+    {
+      "id": "L_1792769386257_vdvb",
+      "time": "2026-10-23 20:59:46",
+      "text": "Manual refresh synchronized with GitHub. • by Device-M21K"
+    },
     {
       "id": "L_1792768035615_l6kd",
       "time": "2026-10-23 20:37:15",
@@ -2876,6 +3212,11 @@
       "id": "L_1792743361334_puns",
       "time": "2026-10-23 13:46:01",
       "text": "Cleared active session dashboard. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792678041732_wxr1",
+      "time": "2026-10-22 19:37:21",
+      "text": "Manual refresh synchronized with GitHub. • by Device-M21K"
     },
     {
       "id": "L_1792677353584_y49a",
@@ -3421,6 +3762,31 @@
       "id": "L_1792588002531_zlll",
       "time": "2026-10-21 18:36:42",
       "text": "Cleared active session dashboard. • by Hari's Macbook"
+    },
+    {
+      "id": "L_1792569418630_tssw",
+      "time": "2026-10-21 13:26:58",
+      "text": "Random picker chose GAGAN. • by Device-M21K"
+    },
+    {
+      "id": "L_1792569418462_4bmi",
+      "time": "2026-10-21 13:26:58",
+      "text": "Random picker chose AKSHAY. • by Device-M21K"
+    },
+    {
+      "id": "L_1792569418311_jjmv",
+      "time": "2026-10-21 13:26:58",
+      "text": "Random picker chose MOHINI. • by Device-M21K"
+    },
+    {
+      "id": "L_1792569418155_y5gy",
+      "time": "2026-10-21 13:26:58",
+      "text": "Random picker chose HARI. • by Device-M21K"
+    },
+    {
+      "id": "L_1792569410370_1uvh",
+      "time": "2026-10-21 13:26:50",
+      "text": "Manual refresh synchronized with GitHub. • by Device-M21K"
     },
     {
       "id": "L_1792506967194_xhbs",
@@ -4156,351 +4522,6 @@
       "id": "L_1792167677941_4y1e",
       "time": "2026-10-16 21:51:17",
       "text": "Set final coins for RAM: 1500 coins. • by Kunal"
-    },
-    {
-      "id": "L_1792167673833_te3e",
-      "time": "2026-10-16 21:51:13",
-      "text": "Set final coins for RAM: 150 coins. • by Kunal"
-    },
-    {
-      "id": "L_1792167324096_jj09",
-      "time": "2026-10-16 21:45:24",
-      "text": "Buy-in increased for GAGAN: count = 6. • by Kunal"
-    },
-    {
-      "id": "L_1792167209640_l1xz",
-      "time": "2026-10-16 21:43:29",
-      "text": "Buy-in increased for RAM: count = 4. • by Kunal"
-    },
-    {
-      "id": "L_1792166262383_aqz2",
-      "time": "2026-10-16 21:27:42",
-      "text": "Buy-in increased for MOHINI: count = 4. • by Kunal"
-    },
-    {
-      "id": "L_1792165961539_c1no",
-      "time": "2026-10-16 21:22:41",
-      "text": "Buy-in increased for GAGAN: count = 5. • by Kunal"
-    },
-    {
-      "id": "L_1792165822016_uoou",
-      "time": "2026-10-16 21:20:22",
-      "text": "Buy-in increased for MOHINI: count = 3. • by Kunal"
-    },
-    {
-      "id": "L_1792164843134_y7wa",
-      "time": "2026-10-16 21:04:03",
-      "text": "Buy-in increased for RAM: count = 3. • by Kunal"
-    },
-    {
-      "id": "L_1792162988904_snd0",
-      "time": "2026-10-16 20:33:08",
-      "text": "Buy-in increased for GAGAN: count = 4. • by Kunal"
-    },
-    {
-      "id": "L_1792160934851_yj9x",
-      "time": "2026-10-16 19:58:54",
-      "text": "Buy-in increased for HARI: count = 6. • by Kunal"
-    },
-    {
-      "id": "L_1792160934283_kjo9",
-      "time": "2026-10-16 19:58:54",
-      "text": "Buy-in increased for HARI: count = 5. • by Kunal"
-    },
-    {
-      "id": "L_1792160545530_fhky",
-      "time": "2026-10-16 19:52:25",
-      "text": "Set final coins for RAM: 0 coins. • by Kunal"
-    },
-    {
-      "id": "L_1792159729816_y3sc",
-      "time": "2026-10-16 19:38:49",
-      "text": "Buy-in increased for HARI: count = 4. • by Kunal"
-    },
-    {
-      "id": "L_1792159450542_p0f3",
-      "time": "2026-10-16 19:34:10",
-      "text": "Set final coins for RAM: 2970 coins. • by Kunal"
-    },
-    {
-      "id": "L_1792158950642_jjib",
-      "time": "2026-10-16 19:25:50",
-      "text": "Buy-in increased for KUNAL: count = 2. • by Kunal"
-    },
-    {
-      "id": "L_1792158804826_hibu",
-      "time": "2026-10-16 19:23:24",
-      "text": "Buy-in increased for MOHINI: count = 2. • by Kunal"
-    },
-    {
-      "id": "L_1792158222262_yg3r",
-      "time": "2026-10-16 19:13:42",
-      "text": "Buy-in increased for GAGAN: count = 3. • by Kunal"
-    },
-    {
-      "id": "L_1792158061380_zlp9",
-      "time": "2026-10-16 19:11:01",
-      "text": "Set final coins for AKSHAY: 1770 coins. • by Kunal"
-    },
-    {
-      "id": "L_1792158031374_7qnf",
-      "time": "2026-10-16 19:10:31",
-      "text": "Buy-in increased for HARI: count = 3. • by Kunal"
-    },
-    {
-      "id": "L_1792157295848_gzhc",
-      "time": "2026-10-16 18:58:15",
-      "text": "Buy-in increased for GAGAN: count = 2. • by Kunal"
-    },
-    {
-      "id": "L_1792157097968_0lm1",
-      "time": "2026-10-16 18:54:57",
-      "text": "Buy-in increased for AKSHAY: count = 2. • by Kunal"
-    },
-    {
-      "id": "L_1792156831844_wz3m",
-      "time": "2026-10-16 18:50:31",
-      "text": "Buy-in increased for HARI: count = 2. • by Kunal"
-    },
-    {
-      "id": "L_1792156829579_zhtj",
-      "time": "2026-10-16 18:50:29",
-      "text": "Buy-in increased for RAM: count = 2. • by Kunal"
-    },
-    {
-      "id": "L_1792156826135_udzw",
-      "time": "2026-10-16 18:50:26",
-      "text": "Added \"RISHI\" with 1 buy-in (1000c). • by Kunal"
-    },
-    {
-      "id": "L_1792156814475_lxl0",
-      "time": "2026-10-16 18:50:14",
-      "text": "Added \"MOHINI\" with 1 buy-in (1000c). • by Kunal"
-    },
-    {
-      "id": "L_1792156798766_7pll",
-      "time": "2026-10-16 18:49:58",
-      "text": "Added \"HARI\" with 1 buy-in (1000c). • by Kunal"
-    },
-    {
-      "id": "L_1792156795390_sz6k",
-      "time": "2026-10-16 18:49:55",
-      "text": "Added \"KUNAL\" with 1 buy-in (1000c). • by Kunal"
-    },
-    {
-      "id": "L_1792156791681_v7hz",
-      "time": "2026-10-16 18:49:51",
-      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by Kunal"
-    },
-    {
-      "id": "L_1792156787825_epip",
-      "time": "2026-10-16 18:49:47",
-      "text": "Added \"GAGAN\" with 1 buy-in (1000c). • by Kunal"
-    },
-    {
-      "id": "L_1792156782648_47dn",
-      "time": "2026-10-16 18:49:42",
-      "text": "Added \"RAM\" with 1 buy-in (1000c). • by Kunal"
-    },
-    {
-      "id": "L_1792156782646_2812",
-      "time": "2026-10-16 18:49:42",
-      "text": "Started new session and claimed host. • by Kunal"
-    },
-    {
-      "id": "L_1792156766597_5hv0",
-      "time": "2026-10-16 18:49:26",
-      "text": "Took over hosting from sandeep mac (inactive 8h+). • by Kunal"
-    },
-    {
-      "id": "L_1792156755543_c6lj",
-      "time": "2026-10-16 18:49:15",
-      "text": "Cleared active session dashboard. • by Device-5H0F"
-    },
-    {
-      "id": "L_1791988964151_36m3",
-      "time": "2026-10-14 20:12:44",
-      "text": "Saved session to database. • by sandeep mac"
-    },
-    {
-      "id": "L_1791988649187_1411",
-      "time": "2026-10-14 20:07:29",
-      "text": "Settlement: KUNAL pays AKSHAY ₹175.00 • by sandeep mac"
-    },
-    {
-      "id": "L_1791988649185_2n19",
-      "time": "2026-10-14 20:07:29",
-      "text": "Settlement: RISHI pays AKSHAY ₹240.00 • by sandeep mac"
-    },
-    {
-      "id": "L_1791988649184_ojmb",
-      "time": "2026-10-14 20:07:29",
-      "text": "Settlement: RISHI pays SANDEEP ₹935.00 • by sandeep mac"
-    },
-    {
-      "id": "L_1791988649182_chij",
-      "time": "2026-10-14 20:07:29",
-      "text": "Settlement calculated (3 transfers). • by sandeep mac"
-    },
-    {
-      "id": "L_1791988639948_in8s",
-      "time": "2026-10-14 20:07:19",
-      "text": "Set final coins for HARI: 1000 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1791988627731_i7eq",
-      "time": "2026-10-14 20:07:07",
-      "text": "Set final coins for RISHI: 650 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1791988618665_5koj",
-      "time": "2026-10-14 20:06:58",
-      "text": "Set final coins for SANDEEP: 2870 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1791988614467_0r3k",
-      "time": "2026-10-14 20:06:54",
-      "text": "Set final coins for KUNAL: 1650 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1791988568148_00k6",
-      "time": "2026-10-14 20:06:08",
-      "text": "Set final coins for AKSHAY: 1830 coins. • by sandeep mac"
-    },
-    {
-      "id": "L_1791986553016_2h2m",
-      "time": "2026-10-14 19:32:33",
-      "text": "Buy-in increased for KUNAL: count = 2. • by sandeep mac"
-    },
-    {
-      "id": "L_1791986125514_eumo",
-      "time": "2026-10-14 19:25:25",
-      "text": "Buy-in increased for RISHI: count = 3. • by sandeep mac"
-    },
-    {
-      "id": "L_1791985677030_lb27",
-      "time": "2026-10-14 19:17:57",
-      "text": "Buy-in increased for RISHI: count = 2. • by sandeep mac"
-    },
-    {
-      "id": "L_1791985673285_sdzf",
-      "time": "2026-10-14 19:17:53",
-      "text": "Added \"RISHI\" with 1 buy-in (1000c). • by sandeep mac"
-    },
-    {
-      "id": "L_1791985581231_awy4",
-      "time": "2026-10-14 19:16:21",
-      "text": "Added \"HARI\" with 1 buy-in (1000c). • by sandeep mac"
-    },
-    {
-      "id": "L_1791985573930_885d",
-      "time": "2026-10-14 19:16:13",
-      "text": "Added \"KUNAL\" with 1 buy-in (1000c). • by sandeep mac"
-    },
-    {
-      "id": "L_1791985570132_3328",
-      "time": "2026-10-14 19:16:10",
-      "text": "Added \"SANDEEP\" with 1 buy-in (1000c). • by sandeep mac"
-    },
-    {
-      "id": "L_1791985565970_l191",
-      "time": "2026-10-14 19:16:05",
-      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by sandeep mac"
-    },
-    {
-      "id": "L_1791985565965_pe1n",
-      "time": "2026-10-14 19:16:05",
-      "text": "Started new session and claimed host. • by sandeep mac"
-    },
-    {
-      "id": "L_1791985560432_2wop",
-      "time": "2026-10-14 19:16:00",
-      "text": "Cleared active session dashboard. • by sandeep mac"
-    },
-    {
-      "id": "L_1791600136704_ho7z",
-      "time": "2026-10-10 08:12:16",
-      "text": "Random picker chose AKSHAY. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791600136496_wjji",
-      "time": "2026-10-10 08:12:16",
-      "text": "Random picker chose RAM. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791600136279_p6vo",
-      "time": "2026-10-10 08:12:16",
-      "text": "Random picker chose RISHI. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791600136080_0nyd",
-      "time": "2026-10-10 08:12:16",
-      "text": "Random picker chose SANDEEP. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791600128331_gyuz",
-      "time": "2026-10-10 08:12:08",
-      "text": "Pushed live state to GitHub repo. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791600126000_3i3x",
-      "time": "2026-10-10 08:12:06",
-      "text": "Published session — hosting released automatically. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791600124373_0dsh",
-      "time": "2026-10-10 08:12:04",
-      "text": "Pushed live state to GitHub repo. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791600122459_ytc6",
-      "time": "2026-10-10 08:12:02",
-      "text": "Saved session to database. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791600079630_yak7",
-      "time": "2026-10-10 08:11:19",
-      "text": "Settlement: SANDEEP pays RAM ₹250.00 • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791600079629_4zoj",
-      "time": "2026-10-10 08:11:19",
-      "text": "Settlement: RISHI pays RAM ₹700.00 • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791600079628_2qex",
-      "time": "2026-10-10 08:11:19",
-      "text": "Settlement: RISHI pays HARI ₹50.00 • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791600079627_tvu0",
-      "time": "2026-10-10 08:11:19",
-      "text": "Settlement: MOHINI pays HARI ₹1990.00 • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791600079626_eg2o",
-      "time": "2026-10-10 08:11:19",
-      "text": "Settlement calculated (4 transfers). • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791600075659_gy2x",
-      "time": "2026-10-10 08:11:15",
-      "text": "Set final coins for MOHINI: 1020 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791600040688_fy5h",
-      "time": "2026-10-10 08:10:40",
-      "text": "Set final coins for RISHI: 3500 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791600029188_j0c8",
-      "time": "2026-10-10 08:10:29",
-      "text": "Set final coins for MOHINI: 1000 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1791600025634_v932",
-      "time": "2026-10-10 08:10:25",
-      "text": "Set final coins for MOHINI: 1 coins. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
