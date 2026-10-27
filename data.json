@@ -2524,6 +2524,11 @@
   },
   "logs": [
     {
+      "id": "L_1793125973754_btt8",
+      "time": "2026-10-28 00:02:53",
+      "text": "Auto-push failed: data.json does not match fc11bc32fa03130e3dac77adf5a15bf2a056a0b8 • by Hari iphone"
+    },
+    {
       "id": "L_1793123239692_sygv",
       "time": "2026-10-27 23:17:19",
       "text": "Buy-in increased for RAVI: count = 2. • by Hari iphone"
@@ -4517,11 +4522,6 @@
       "id": "L_1792423579454_92uk",
       "time": "2026-10-19 20:56:19",
       "text": "Buy-in increased for RISHI: count = 2. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792423577917_gmpc",
-      "time": "2026-10-19 20:56:17",
-      "text": "Buy-in increased for KUNAL: count = 2. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
