@@ -2493,14 +2493,14 @@
     {
       "id": 1793113799702,
       "name": "ALOK",
-      "buyIns": 3,
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
     {
       "id": 1793115588303,
       "name": "SANDEEP",
-      "buyIns": 4,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -2523,6 +2523,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1793120428145_mn03",
+      "time": "2026-10-27 22:30:28",
+      "text": "Buy-in increased for ALOK: count = 4. • by Hari iphone"
+    },
+    {
+      "id": "L_1793119695197_fwny",
+      "time": "2026-10-27 22:18:15",
+      "text": "Buy-in decreased for SANDEEP: count = 3. • by Hari iphone"
+    },
     {
       "id": "L_1793119689931_da9t",
       "time": "2026-10-27 22:18:09",
@@ -4512,16 +4522,6 @@
       "id": "L_1792423549547_xxpm",
       "time": "2026-10-19 20:55:49",
       "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792423544892_ommw",
-      "time": "2026-10-19 20:55:44",
-      "text": "Added \"MOHINI\" with 1 buy-in (1000c). • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792423539609_rvnv",
-      "time": "2026-10-19 20:55:39",
-      "text": "Added \"RISHI\" with 1 buy-in (1000c). • by Hari's Macbook"
     }
   ],
   "knownRoster": [
