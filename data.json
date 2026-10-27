@@ -2463,49 +2463,42 @@
   ],
   "activePlayers": [
     {
-      "id": 1793020971650,
-      "name": "RISHI",
-      "buyIns": 8,
-      "buyInCoins": 1000,
-      "cashOutCoins": 15500
-    },
-    {
-      "id": 1793020976795,
-      "name": "RAVI",
-      "buyIns": 10,
-      "buyInCoins": 1000,
-      "cashOutCoins": 1200
-    },
-    {
-      "id": 1793020980904,
+      "id": 1793113783055,
       "name": "AKSHAY",
-      "buyIns": 10,
+      "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 14200
+      "cashOutCoins": 0
     },
     {
-      "id": 1793020984249,
+      "id": 1793113789601,
+      "name": "RAVI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1793113792414,
+      "name": "RISHI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1793113795175,
       "name": "HARI",
-      "buyIns": 6,
+      "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 2700
+      "cashOutCoins": 0
     },
     {
-      "id": 1793021423318,
-      "name": "SANDEEP",
-      "buyIns": 6,
-      "buyInCoins": 1000,
-      "cashOutCoins": 8400
-    },
-    {
-      "id": 1793024176681,
-      "name": "SONAK",
-      "buyIns": 2,
+      "id": 1793113799702,
+      "name": "ALOK",
+      "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
   ],
-  "activeSessionId": "S_mvpadwja3v0lkc",
+  "activeSessionId": "S_mvqtndvta4kg5b",
   "activeHost": null,
   "settings": {
     "coinCount": "2",
@@ -2523,6 +2516,61 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1793113799702_ysxl",
+      "time": "2026-10-27 20:39:59",
+      "text": "Added \"ALOK\" with 1 buy-in (1000c). • by Hari iphone"
+    },
+    {
+      "id": "L_1793113795175_mvj9",
+      "time": "2026-10-27 20:39:55",
+      "text": "Added \"HARI\" with 1 buy-in (1000c). • by Hari iphone"
+    },
+    {
+      "id": "L_1793113792414_10zb",
+      "time": "2026-10-27 20:39:52",
+      "text": "Added \"RISHI\" with 1 buy-in (1000c). • by Hari iphone"
+    },
+    {
+      "id": "L_1793113789601_x31e",
+      "time": "2026-10-27 20:39:49",
+      "text": "Added \"RAVI\" with 1 buy-in (1000c). • by Hari iphone"
+    },
+    {
+      "id": "L_1793113783055_0g3a",
+      "time": "2026-10-27 20:39:43",
+      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by Hari iphone"
+    },
+    {
+      "id": "L_1793113783050_lise",
+      "time": "2026-10-27 20:39:43",
+      "text": "Started new session and claimed host. • by Hari iphone"
+    },
+    {
+      "id": "L_1793113776551_3jgy",
+      "time": "2026-10-27 20:39:36",
+      "text": "Cleared active session dashboard. • by Hari iphone"
+    },
+    {
+      "id": "L_1793113762161_iil6",
+      "time": "2026-10-27 20:39:22",
+      "text": "Random picker chose SONAK. • by Hari iphone"
+    },
+    {
+      "id": "L_1793113761961_ah2d",
+      "time": "2026-10-27 20:39:21",
+      "text": "Random picker chose HARI. • by Hari iphone"
+    },
+    {
+      "id": "L_1793113761761_biw7",
+      "time": "2026-10-27 20:39:21",
+      "text": "Random picker chose SONAK. • by Hari iphone"
+    },
+    {
+      "id": "L_1793113761531_layz",
+      "time": "2026-10-27 20:39:21",
+      "text": "Random picker chose SANDEEP. • by Hari iphone"
+    },
     {
       "id": "L_1793113729171_nzno",
       "time": "2026-10-27 20:38:49",
@@ -4467,61 +4515,6 @@
       "id": "L_1792170469369_lybo",
       "time": "2026-10-16 22:37:49",
       "text": "Settlement: MOHINI pays RISHI ₹250.00 • by Kunal"
-    },
-    {
-      "id": "L_1792170469368_jqvl",
-      "time": "2026-10-16 22:37:49",
-      "text": "Settlement: GAGAN pays RISHI ₹4000.00 • by Kunal"
-    },
-    {
-      "id": "L_1792170469366_ki3x",
-      "time": "2026-10-16 22:37:49",
-      "text": "Settlement calculated (6 transfers). • by Kunal"
-    },
-    {
-      "id": "L_1792170463026_dsg6",
-      "time": "2026-10-16 22:37:43",
-      "text": "Saved session to database. • by Kunal"
-    },
-    {
-      "id": "L_1792170454736_74x2",
-      "time": "2026-10-16 22:37:34",
-      "text": "Set final coins for RISHI: 9500 coins. • by Kunal"
-    },
-    {
-      "id": "L_1792170339354_um4c",
-      "time": "2026-10-16 22:35:39",
-      "text": "Set final coins for RISHI: 10000 coins. • by Kunal"
-    },
-    {
-      "id": "L_1792170329966_8k5y",
-      "time": "2026-10-16 22:35:29",
-      "text": "Set final coins for RISHI: 11000 coins. • by Kunal"
-    },
-    {
-      "id": "L_1792170305042_zlfd",
-      "time": "2026-10-16 22:35:05",
-      "text": "Set final coins for HARI: 11540 coins. • by Kunal"
-    },
-    {
-      "id": "L_1792170286549_mmf7",
-      "time": "2026-10-16 22:34:46",
-      "text": "Set final coins for KUNAL: 2690 coins. • by Kunal"
-    },
-    {
-      "id": "L_1792170253279_8gdu",
-      "time": "2026-10-16 22:34:13",
-      "text": "Set final coins for GAGAN: 0 coins. • by Kunal"
-    },
-    {
-      "id": "L_1792170250215_1u64",
-      "time": "2026-10-16 22:34:10",
-      "text": "Set final coins for MOHINI: 0 coins. • by Kunal"
-    },
-    {
-      "id": "L_1792170245857_urhr",
-      "time": "2026-10-16 22:34:05",
-      "text": "Set final coins for HARI: 11740 coins. • by Kunal"
     }
   ],
   "knownRoster": [
