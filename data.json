@@ -2465,7 +2465,7 @@
     {
       "id": 1793113783055,
       "name": "AKSHAY",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2493,14 +2493,14 @@
     {
       "id": 1793113799702,
       "name": "ALOK",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
     {
       "id": 1793115588303,
       "name": "SANDEEP",
-      "buyIns": 2,
+      "buyIns": 4,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -2523,6 +2523,26 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1793119689931_da9t",
+      "time": "2026-10-27 22:18:09",
+      "text": "Buy-in increased for SANDEEP: count = 4. • by Hari iphone"
+    },
+    {
+      "id": "L_1793119123273_cjv3",
+      "time": "2026-10-27 22:08:43",
+      "text": "Buy-in increased for ALOK: count = 3. • by Hari iphone"
+    },
+    {
+      "id": "L_1793118265812_u9ip",
+      "time": "2026-10-27 21:54:25",
+      "text": "Buy-in increased for AKSHAY: count = 3. • by Hari iphone"
+    },
+    {
+      "id": "L_1793117518001_5zgz",
+      "time": "2026-10-27 21:41:58",
+      "text": "Buy-in increased for SANDEEP: count = 3. • by Hari iphone"
+    },
     {
       "id": "L_1793116444028_9c1h",
       "time": "2026-10-27 21:24:04",
@@ -4502,26 +4522,6 @@
       "id": "L_1792423539609_rvnv",
       "time": "2026-10-19 20:55:39",
       "text": "Added \"RISHI\" with 1 buy-in (1000c). • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792423539602_3ad2",
-      "time": "2026-10-19 20:55:39",
-      "text": "Started new session and claimed host. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792423526455_t8qd",
-      "time": "2026-10-19 20:55:26",
-      "text": "Pushed live state to GitHub repo. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792423524909_b13l",
-      "time": "2026-10-19 20:55:24",
-      "text": "Cleared active session dashboard. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792423512832_odpw",
-      "time": "2026-10-19 20:55:12",
-      "text": "Pushed live state to GitHub repo. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
