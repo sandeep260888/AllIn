@@ -2465,7 +2465,7 @@
     {
       "id": 1793113783055,
       "name": "AKSHAY",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2479,14 +2479,14 @@
     {
       "id": 1793113792414,
       "name": "RISHI",
-      "buyIns": 2,
+      "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
     {
       "id": 1793113795175,
       "name": "HARI",
-      "buyIns": 1,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2494,6 +2494,13 @@
       "id": 1793113799702,
       "name": "ALOK",
       "buyIns": 2,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1793115588303,
+      "name": "SANDEEP",
+      "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -2516,6 +2523,31 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1793116265949_nyws",
+      "time": "2026-10-27 21:21:05",
+      "text": "Buy-in increased for AKSHAY: count = 2. • by Hari iphone"
+    },
+    {
+      "id": "L_1793116151528_noi1",
+      "time": "2026-10-27 21:19:11",
+      "text": "Buy-in increased for HARI: count = 3. • by Hari iphone"
+    },
+    {
+      "id": "L_1793115588303_37g5",
+      "time": "2026-10-27 21:09:48",
+      "text": "Added \"SANDEEP\" with 1 buy-in (1000c). • by Hari iphone"
+    },
+    {
+      "id": "L_1793115425485_r2dc",
+      "time": "2026-10-27 21:07:05",
+      "text": "Buy-in increased for HARI: count = 2. • by Hari iphone"
+    },
+    {
+      "id": "L_1793115424786_vtm2",
+      "time": "2026-10-27 21:07:04",
+      "text": "Buy-in decreased for RISHI: count = 1. • by Hari iphone"
+    },
     {
       "id": "L_1793115420957_2gfg",
       "time": "2026-10-27 21:07:00",
@@ -4490,31 +4522,6 @@
       "id": "L_1792423507502_hvae",
       "time": "2026-10-19 20:55:07",
       "text": "Updated existing session in database. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792423387277_ifv2",
-      "time": "2026-10-19 20:53:07",
-      "text": "Stopped hosting. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792423384657_9d72",
-      "time": "2026-10-19 20:53:04",
-      "text": "Took over hosting from Kunal (inactive 8h+). • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792170469374_rvaf",
-      "time": "2026-10-16 22:37:49",
-      "text": "Settlement: AKSHAY pays KUNAL ₹115.00 • by Kunal"
-    },
-    {
-      "id": "L_1792170469373_ras7",
-      "time": "2026-10-16 22:37:49",
-      "text": "Settlement: RAM pays KUNAL ₹230.00 • by Kunal"
-    },
-    {
-      "id": "L_1792170469371_fu4n",
-      "time": "2026-10-16 22:37:49",
-      "text": "Settlement: RAM pays HARI ₹1020.00 • by Kunal"
     }
   ],
   "knownRoster": [
