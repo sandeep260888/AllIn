@@ -2472,7 +2472,7 @@
     {
       "id": 1793113789601,
       "name": "RAVI",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2493,7 +2493,7 @@
     {
       "id": 1793113799702,
       "name": "ALOK",
-      "buyIns": 5,
+      "buyIns": 6,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2523,6 +2523,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1793123239692_sygv",
+      "time": "2026-10-27 23:17:19",
+      "text": "Buy-in increased for RAVI: count = 2. • by Hari iphone"
+    },
+    {
+      "id": "L_1793123236884_uexk",
+      "time": "2026-10-27 23:17:16",
+      "text": "Auto-push failed: data.json does not match aef8f5cfa5ed7e98d0acef731aa77aceb91f0213 • by Hari iphone"
+    },
+    {
+      "id": "L_1793123217456_dp04",
+      "time": "2026-10-27 23:16:57",
+      "text": "Buy-in increased for ALOK: count = 6. • by Hari iphone"
+    },
     {
       "id": "L_1793121128857_u5hk",
       "time": "2026-10-27 22:42:08",
@@ -4507,21 +4522,6 @@
       "id": "L_1792423577917_gmpc",
       "time": "2026-10-19 20:56:17",
       "text": "Buy-in increased for KUNAL: count = 2. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792423576121_ejfz",
-      "time": "2026-10-19 20:56:16",
-      "text": "Buy-in increased for AKSHAY: count = 3. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792423575738_dewk",
-      "time": "2026-10-19 20:56:15",
-      "text": "Buy-in increased for AKSHAY: count = 2. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792423572163_c2x2",
-      "time": "2026-10-19 20:56:12",
-      "text": "Buy-in increased for MOHINI: count = 3. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
