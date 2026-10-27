@@ -2493,7 +2493,7 @@
     {
       "id": 1793113799702,
       "name": "ALOK",
-      "buyIns": 4,
+      "buyIns": 5,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2523,6 +2523,31 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1793121128857_u5hk",
+      "time": "2026-10-27 22:42:08",
+      "text": "Auto-push failed: data.json does not match 5b36f17de44f431696c8a39dee63885c3b2dbad8 • by Hari iphone"
+    },
+    {
+      "id": "L_1793121082303_tlob",
+      "time": "2026-10-27 22:41:22",
+      "text": "Auto-push failed: data.json does not match 5b36f17de44f431696c8a39dee63885c3b2dbad8 • by Hari iphone"
+    },
+    {
+      "id": "L_1793121070288_qem7",
+      "time": "2026-10-27 22:41:10",
+      "text": "Auto-push failed: data.json does not match 5b36f17de44f431696c8a39dee63885c3b2dbad8 • by Hari iphone"
+    },
+    {
+      "id": "L_1793121058218_hbf1",
+      "time": "2026-10-27 22:40:58",
+      "text": "Auto-push failed: data.json does not match 5b36f17de44f431696c8a39dee63885c3b2dbad8 • by Hari iphone"
+    },
+    {
+      "id": "L_1793121040767_eqh1",
+      "time": "2026-10-27 22:40:40",
+      "text": "Buy-in increased for ALOK: count = 5. • by Hari iphone"
+    },
     {
       "id": "L_1793120428145_mn03",
       "time": "2026-10-27 22:30:28",
@@ -4497,31 +4522,6 @@
       "id": "L_1792423572163_c2x2",
       "time": "2026-10-19 20:56:12",
       "text": "Buy-in increased for MOHINI: count = 3. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792423571589_kbyo",
-      "time": "2026-10-19 20:56:11",
-      "text": "Buy-in increased for MOHINI: count = 2. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792423564802_3c81",
-      "time": "2026-10-19 20:56:04",
-      "text": "Added \"NIKITHA\" with 1 buy-in (1000c). • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792423559179_njpv",
-      "time": "2026-10-19 20:55:59",
-      "text": "Added \"HARI\" with 1 buy-in (1000c). • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792423555721_74zr",
-      "time": "2026-10-19 20:55:55",
-      "text": "Added \"KUNAL\" with 1 buy-in (1000c). • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792423549547_xxpm",
-      "time": "2026-10-19 20:55:49",
-      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by Hari's Macbook"
     }
   ],
   "knownRoster": [
