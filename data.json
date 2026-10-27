@@ -2472,14 +2472,14 @@
     {
       "id": 1793113789601,
       "name": "RAVI",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
     {
       "id": 1793113792414,
       "name": "RISHI",
-      "buyIns": 2,
+      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2523,6 +2523,16 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1793129012147_bcn1",
+      "time": "2026-10-28 00:53:32",
+      "text": "Buy-in increased for RISHI: count = 3. • by Hari iphone"
+    },
+    {
+      "id": "L_1793128855263_7xex",
+      "time": "2026-10-28 00:50:55",
+      "text": "Buy-in increased for RAVI: count = 3. • by Hari iphone"
+    },
     {
       "id": "L_1793127471929_3h8u",
       "time": "2026-10-28 00:27:51",
@@ -4512,16 +4522,6 @@
       "id": "L_1792423580676_nilf",
       "time": "2026-10-19 20:56:20",
       "text": "Buy-in increased for RISHI: count = 5. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792423580268_noo4",
-      "time": "2026-10-19 20:56:20",
-      "text": "Buy-in increased for RISHI: count = 4. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792423579867_blq1",
-      "time": "2026-10-19 20:56:19",
-      "text": "Buy-in increased for RISHI: count = 3. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
