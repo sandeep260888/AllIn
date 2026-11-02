@@ -2515,7 +2515,7 @@
       "name": "AKSHAY",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 6550
     },
     {
       "id": 1793623692960,
@@ -2529,7 +2529,7 @@
       "name": "SONAK",
       "buyIns": 6,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 15
     },
     {
       "id": 1793623711610,
@@ -2550,7 +2550,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-11-02T14:31:56.451Z"
+    "heartbeatAt": "2026-11-02T14:42:34.782Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2568,6 +2568,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1793630539199_9ora",
+      "time": "2026-11-02 20:12:19",
+      "text": "Set final coins for AKSHAY: 6550 coins. • by sandeep mac"
+    },
     {
       "id": "L_1793629900085_erih",
       "time": "2026-11-02 20:01:40",
@@ -4562,11 +4567,6 @@
       "id": "L_1792506796253_5n1b",
       "time": "2026-10-20 20:03:16",
       "text": "Settlement: RISHI pays RAM ₹770.00 • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792506796251_lndx",
-      "time": "2026-10-20 20:03:16",
-      "text": "Settlement: RISHI pays AKSHAY ₹430.00 • by Hari's Macbook"
     }
   ],
   "knownRoster": [
