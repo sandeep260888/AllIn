@@ -2543,14 +2543,14 @@
       "name": "RAM",
       "buyIns": 2,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 5530
     }
   ],
   "activeSessionId": "S_mvz98bdnkla4tn",
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-11-02T13:54:23.314Z"
+    "heartbeatAt": "2026-11-02T13:56:26.282Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2568,6 +2568,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1793627770243_7tap",
+      "time": "2026-11-02 19:26:10",
+      "text": "Set final coins for RAM: 5530 coins. • by sandeep mac"
+    },
     {
       "id": "L_1793627647194_rh1p",
       "time": "2026-11-02 19:24:07",
@@ -4562,11 +4567,6 @@
       "id": "L_1792506796241_i3zf",
       "time": "2026-10-20 20:03:16",
       "text": "Settlement calculated (7 transfers). • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792506769318_2tii",
-      "time": "2026-10-20 20:02:49",
-      "text": "Buy-in decreased for RAM: count = 3. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
