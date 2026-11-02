@@ -2550,7 +2550,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-11-02T14:42:34.782Z"
+    "heartbeatAt": "2026-11-02T14:42:52.123Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2568,6 +2568,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1793630556710_lbcd",
+      "time": "2026-11-02 20:12:36",
+      "text": "Set final coins for SONAK: 15 coins. • by sandeep mac"
+    },
     {
       "id": "L_1793630539199_9ora",
       "time": "2026-11-02 20:12:19",
@@ -4562,11 +4567,6 @@
       "id": "L_1792506796254_wn6j",
       "time": "2026-10-20 20:03:16",
       "text": "Settlement: KUNAL pays RAM ₹500.00 • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792506796253_5n1b",
-      "time": "2026-10-20 20:03:16",
-      "text": "Settlement: RISHI pays RAM ₹770.00 • by Hari's Macbook"
     }
   ],
   "knownRoster": [
