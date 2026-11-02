@@ -2520,14 +2520,14 @@
     {
       "id": 1793623692960,
       "name": "RAVI",
-      "buyIns": 4,
+      "buyIns": 5,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
     {
       "id": 1793623697763,
       "name": "SONAK",
-      "buyIns": 3,
+      "buyIns": 5,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2550,7 +2550,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-11-02T13:56:26.282Z"
+    "heartbeatAt": "2026-11-02T14:01:22.162Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2568,6 +2568,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1793628066559_4wop",
+      "time": "2026-11-02 19:31:06",
+      "text": "Buy-in increased for SONAK: count = 5. • by sandeep mac"
+    },
+    {
+      "id": "L_1793628051909_pjxl",
+      "time": "2026-11-02 19:30:51",
+      "text": "Buy-in increased for SONAK: count = 4. • by sandeep mac"
+    },
+    {
+      "id": "L_1793628049942_lkmt",
+      "time": "2026-11-02 19:30:49",
+      "text": "Buy-in increased for RAVI: count = 5. • by sandeep mac"
+    },
     {
       "id": "L_1793627770243_7tap",
       "time": "2026-11-02 19:26:10",
@@ -4552,21 +4567,6 @@
       "id": "L_1792506796248_pifw",
       "time": "2026-10-20 20:03:16",
       "text": "Settlement: RAVI pays GAGAN ₹820.00 • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792506796246_97ku",
-      "time": "2026-10-20 20:03:16",
-      "text": "Settlement: MOHINI pays GAGAN ₹500.00 • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792506796244_265f",
-      "time": "2026-10-20 20:03:16",
-      "text": "Settlement: MOHINI pays HARI ₹1500.00 • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792506796241_i3zf",
-      "time": "2026-10-20 20:03:16",
-      "text": "Settlement calculated (7 transfers). • by Hari's Macbook"
     }
   ],
   "knownRoster": [
