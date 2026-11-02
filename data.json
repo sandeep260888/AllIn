@@ -2541,7 +2541,7 @@
     {
       "id": 1793624056493,
       "name": "RAM",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
@@ -2550,7 +2550,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-11-02T12:54:32.163Z"
+    "heartbeatAt": "2026-11-02T13:06:20.492Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2568,6 +2568,31 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1793624764323_yp8u",
+      "time": "2026-11-02 18:36:04",
+      "text": "Buy-in increased for RAM: count = 2. • by sandeep mac"
+    },
+    {
+      "id": "L_1793624116092_ue8b",
+      "time": "2026-11-02 18:25:16",
+      "text": "Random picker chose SONAK. • by sandeep mac"
+    },
+    {
+      "id": "L_1793624115743_lmf1",
+      "time": "2026-11-02 18:25:15",
+      "text": "Random picker chose SANDEEP. • by sandeep mac"
+    },
+    {
+      "id": "L_1793624115394_0qhq",
+      "time": "2026-11-02 18:25:15",
+      "text": "Random picker chose SANDEEP. • by sandeep mac"
+    },
+    {
+      "id": "L_1793624115043_tt6a",
+      "time": "2026-11-02 18:25:15",
+      "text": "Random picker chose RAM. • by sandeep mac"
+    },
     {
       "id": "L_1793624056493_i21p",
       "time": "2026-11-02 18:24:16",
@@ -4542,31 +4567,6 @@
       "id": "L_1792506715503_oshr",
       "time": "2026-10-20 20:01:55",
       "text": "Set final coins for HARI: 5800 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792506680805_wgjw",
-      "time": "2026-10-20 20:01:20",
-      "text": "Set final coins for RISHI: 2600 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792506679009_lsld",
-      "time": "2026-10-20 20:01:19",
-      "text": "Set final coins for RAVI: 1620 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792506667431_2npw",
-      "time": "2026-10-20 20:01:07",
-      "text": "Set final coins for MOHINI: 0 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792506661542_v65q",
-      "time": "2026-10-20 20:01:01",
-      "text": "Set final coins for AKSHAY: 3600 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792506659780_72n7",
-      "time": "2026-10-20 20:00:59",
-      "text": "Set final coins for KUNAL: 0 coins. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
