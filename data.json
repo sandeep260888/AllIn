@@ -1,6 +1,42 @@
 {
   "savedSessions": [
     {
+      "sessionId": "S_mvz98bdnkla4tn",
+      "date": "2026-11-02T15:31:38.688Z",
+      "entries": [
+        {
+          "name": "AKSHAY",
+          "investedCoins": 1000,
+          "finalCoins": 6150,
+          "netVal": 2575
+        },
+        {
+          "name": "RAVI",
+          "investedCoins": 6000,
+          "finalCoins": 0,
+          "netVal": -3000
+        },
+        {
+          "name": "SONAK",
+          "investedCoins": 6000,
+          "finalCoins": 0,
+          "netVal": -3000
+        },
+        {
+          "name": "SANDEEP",
+          "investedCoins": 1000,
+          "finalCoins": 4620,
+          "netVal": 1810
+        },
+        {
+          "name": "RAM",
+          "investedCoins": 2000,
+          "finalCoins": 5230,
+          "netVal": 1615
+        }
+      ]
+    },
+    {
       "sessionId": "S_mvuygo2zdu27z6",
       "date": "2026-10-31T14:32:01.977Z",
       "entries": [
@@ -2550,7 +2586,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-11-02T15:30:26.307Z"
+    "heartbeatAt": "2026-11-02T15:31:39.583Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2568,6 +2604,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1793633498688_8imw",
+      "time": "2026-11-02 21:01:38",
+      "text": "Saved session to database. • by sandeep mac"
+    },
     {
       "id": "L_1793633416445_fwoq",
       "time": "2026-11-02 21:00:16",
@@ -4562,11 +4603,6 @@
       "id": "L_1792506870430_7ldt",
       "time": "2026-10-20 20:04:30",
       "text": "Settlement: RISHI pays AKSHAY ₹430.00 • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792506870429_8idk",
-      "time": "2026-10-20 20:04:30",
-      "text": "Settlement: RAVI pays AKSHAY ₹870.00 • by Hari's Macbook"
     }
   ],
   "knownRoster": [
