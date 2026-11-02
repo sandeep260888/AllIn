@@ -2520,7 +2520,7 @@
     {
       "id": 1793623692960,
       "name": "RAVI",
-      "buyIns": 1,
+      "buyIns": 2,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
@@ -2550,7 +2550,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-11-02T13:06:20.492Z"
+    "heartbeatAt": "2026-11-02T13:23:31.816Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2568,6 +2568,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1793625795701_o97c",
+      "time": "2026-11-02 18:53:15",
+      "text": "Buy-in increased for RAVI: count = 2. • by sandeep mac"
+    },
     {
       "id": "L_1793624764323_yp8u",
       "time": "2026-11-02 18:36:04",
@@ -4562,11 +4567,6 @@
       "id": "L_1792506720259_x4pb",
       "time": "2026-10-20 20:02:00",
       "text": "Set final coins for AKSHAY: 3400 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792506715503_oshr",
-      "time": "2026-10-20 20:01:55",
-      "text": "Set final coins for HARI: 5800 coins. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
