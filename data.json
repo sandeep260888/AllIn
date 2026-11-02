@@ -2537,13 +2537,20 @@
       "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
+    },
+    {
+      "id": 1793624056493,
+      "name": "RAM",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
     }
   ],
   "activeSessionId": "S_mvz98bdnkla4tn",
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-11-02T12:48:48.490Z"
+    "heartbeatAt": "2026-11-02T12:54:32.163Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2561,6 +2568,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1793624056493_i21p",
+      "time": "2026-11-02 18:24:16",
+      "text": "Added \"RAM\" with 1 buy-in (1000c). • by sandeep mac"
+    },
     {
       "id": "L_1793623711610_s7vi",
       "time": "2026-11-02 18:18:31",
@@ -4555,11 +4567,6 @@
       "id": "L_1792506659780_72n7",
       "time": "2026-10-20 20:00:59",
       "text": "Set final coins for KUNAL: 0 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792506656247_rc4k",
-      "time": "2026-10-20 20:00:56",
-      "text": "Set final coins for HARI: 6000 coins. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
