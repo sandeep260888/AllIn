@@ -2536,7 +2536,7 @@
       "name": "SANDEEP",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 0
+      "cashOutCoins": 4920
     },
     {
       "id": 1793624056493,
@@ -2550,7 +2550,7 @@
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-11-02T14:42:52.123Z"
+    "heartbeatAt": "2026-11-02T15:26:51.403Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2568,6 +2568,11 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1793633195256_zeyy",
+      "time": "2026-11-02 20:56:35",
+      "text": "Set final coins for SANDEEP: 4920 coins. • by sandeep mac"
+    },
     {
       "id": "L_1793630556710_lbcd",
       "time": "2026-11-02 20:12:36",
@@ -4562,11 +4567,6 @@
       "id": "L_1792506859606_odcx",
       "time": "2026-10-20 20:04:19",
       "text": "Set final coins for KUNAL: 1000 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792506796254_wn6j",
-      "time": "2026-10-20 20:03:16",
-      "text": "Settlement: KUNAL pays RAM ₹500.00 • by Hari's Macbook"
     }
   ],
   "knownRoster": [
