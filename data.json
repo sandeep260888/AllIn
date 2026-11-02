@@ -2515,7 +2515,7 @@
       "name": "AKSHAY",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 6550
+      "cashOutCoins": 6150
     },
     {
       "id": 1793623692960,
@@ -2536,21 +2536,21 @@
       "name": "SANDEEP",
       "buyIns": 1,
       "buyInCoins": 1000,
-      "cashOutCoins": 4920
+      "cashOutCoins": 4620
     },
     {
       "id": 1793624056493,
       "name": "RAM",
       "buyIns": 2,
       "buyInCoins": 1000,
-      "cashOutCoins": 5530
+      "cashOutCoins": 530
     }
   ],
   "activeSessionId": "S_mvz98bdnkla4tn",
   "activeHost": {
     "deviceId": "dev_w3f5ipa6",
     "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-11-02T15:26:51.403Z"
+    "heartbeatAt": "2026-11-02T15:29:52.520Z"
   },
   "settings": {
     "coinCount": "2",
@@ -2568,6 +2568,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1793633376638_6z7x",
+      "time": "2026-11-02 20:59:36",
+      "text": "Set final coins for SANDEEP: 4620 coins. • by sandeep mac"
+    },
+    {
+      "id": "L_1793633367038_jpyy",
+      "time": "2026-11-02 20:59:27",
+      "text": "Set final coins for AKSHAY: 6150 coins. • by sandeep mac"
+    },
+    {
+      "id": "L_1793633352688_obow",
+      "time": "2026-11-02 20:59:12",
+      "text": "Switched entry mode to ₹ Value. • by sandeep mac"
+    },
     {
       "id": "L_1793633195256_zeyy",
       "time": "2026-11-02 20:56:35",
@@ -4552,21 +4567,6 @@
       "id": "L_1792506863543_r6aq",
       "time": "2026-10-20 20:04:23",
       "text": "Buy-in decreased for RAVI: count = 4. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792506863197_tg7z",
-      "time": "2026-10-20 20:04:23",
-      "text": "Buy-in decreased for RAVI: count = 5. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792506862022_ub75",
-      "time": "2026-10-20 20:04:22",
-      "text": "Buy-in increased for RAVI: count = 6. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792506859606_odcx",
-      "time": "2026-10-20 20:04:19",
-      "text": "Set final coins for KUNAL: 1000 coins. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
