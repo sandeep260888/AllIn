@@ -2583,11 +2583,7 @@
     }
   ],
   "activeSessionId": "S_mvz98bdnkla4tn",
-  "activeHost": {
-    "deviceId": "dev_w3f5ipa6",
-    "deviceName": "sandeep mac",
-    "heartbeatAt": "2026-11-02T15:31:39.583Z"
-  },
+  "activeHost": null,
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -2604,6 +2600,21 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1793633505773_3hd9",
+      "time": "2026-11-02 21:01:45",
+      "text": "Published session — hosting released automatically. • by sandeep mac"
+    },
+    {
+      "id": "L_1793633504741_nrtl",
+      "time": "2026-11-02 21:01:44",
+      "text": "Pushed live state to GitHub repo. • by sandeep mac"
+    },
+    {
+      "id": "L_1793633504706_e5pp",
+      "time": "2026-11-02 21:01:44",
+      "text": "Updated existing session in database. • by sandeep mac"
+    },
     {
       "id": "L_1793633498688_8imw",
       "time": "2026-11-02 21:01:38",
@@ -4588,21 +4599,6 @@
       "id": "L_1792506962579_ro9i",
       "time": "2026-10-20 20:06:02",
       "text": "Pushed live state to GitHub repo. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792506958661_wh0b",
-      "time": "2026-10-20 20:05:58",
-      "text": "Saved session to database. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792506870431_ztgh",
-      "time": "2026-10-20 20:04:30",
-      "text": "Settlement: RISHI pays RAM ₹770.00 • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792506870430_7ldt",
-      "time": "2026-10-20 20:04:30",
-      "text": "Settlement: RISHI pays AKSHAY ₹430.00 • by Hari's Macbook"
     }
   ],
   "knownRoster": [
