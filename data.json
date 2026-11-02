@@ -2511,57 +2511,40 @@
   ],
   "activePlayers": [
     {
-      "id": 1793363732462,
+      "id": 1793623683230,
       "name": "AKSHAY",
-      "buyIns": 3,
-      "buyInCoins": 1000,
-      "cashOutCoins": 8050
-    },
-    {
-      "id": 1793363739978,
-      "name": "RAM",
       "buyIns": 1,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     },
     {
-      "id": 1793363743560,
+      "id": 1793623692960,
+      "name": "RAVI",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1793623697763,
+      "name": "SONAK",
+      "buyIns": 1,
+      "buyInCoins": 1000,
+      "cashOutCoins": 0
+    },
+    {
+      "id": 1793623711610,
       "name": "SANDEEP",
       "buyIns": 1,
-      "buyInCoins": 1000,
-      "cashOutCoins": 7000
-    },
-    {
-      "id": 1793363747143,
-      "name": "SONAK",
-      "buyIns": 3,
-      "buyInCoins": 1000,
-      "cashOutCoins": 0
-    },
-    {
-      "id": 1793363751010,
-      "name": "HARI",
-      "buyIns": 3,
-      "buyInCoins": 1000,
-      "cashOutCoins": 1230
-    },
-    {
-      "id": 1793363754993,
-      "name": "RAVI",
-      "buyIns": 5,
-      "buyInCoins": 1000,
-      "cashOutCoins": 2720
-    },
-    {
-      "id": 1793365505854,
-      "name": "SHUBHAM",
-      "buyIns": 3,
       "buyInCoins": 1000,
       "cashOutCoins": 0
     }
   ],
-  "activeSessionId": "S_mvuygo2zdu27z6",
-  "activeHost": null,
+  "activeSessionId": "S_mvz98bdnkla4tn",
+  "activeHost": {
+    "deviceId": "dev_w3f5ipa6",
+    "deviceName": "sandeep mac",
+    "heartbeatAt": "2026-11-02T12:48:48.490Z"
+  },
   "settings": {
     "coinCount": "2",
     "currencyVal": "1",
@@ -2578,6 +2561,41 @@
     ]
   },
   "logs": [
+    {
+      "id": "L_1793623711610_s7vi",
+      "time": "2026-11-02 18:18:31",
+      "text": "Added \"SANDEEP\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1793623697763_eow3",
+      "time": "2026-11-02 18:18:17",
+      "text": "Added \"SONAK\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1793623692960_fk7f",
+      "time": "2026-11-02 18:18:12",
+      "text": "Added \"RAVI\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1793623683230_zget",
+      "time": "2026-11-02 18:18:03",
+      "text": "Added \"AKSHAY\" with 1 buy-in (1000c). • by sandeep mac"
+    },
+    {
+      "id": "L_1793623683227_wyla",
+      "time": "2026-11-02 18:18:03",
+      "text": "Started new session and claimed host. • by sandeep mac"
+    },
+    {
+      "id": "L_1793623678061_xvhc",
+      "time": "2026-11-02 18:17:58",
+      "text": "Cleared active session dashboard. • by sandeep mac"
+    },
+    {
+      "id": "L_1793457124476_oqkd",
+      "time": "2026-10-31 20:02:04",
+      "text": "Pushed live state to GitHub repo. • by sandeep mac"
+    },
     {
       "id": "L_1793457121977_6sbc",
       "time": "2026-10-31 20:02:01",
@@ -4542,41 +4560,6 @@
       "id": "L_1792506656247_rc4k",
       "time": "2026-10-20 20:00:56",
       "text": "Set final coins for HARI: 6000 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792506645582_scqh",
-      "time": "2026-10-20 20:00:45",
-      "text": "Set final coins for AKSHAY: 3610 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792506615088_h7a3",
-      "time": "2026-10-20 20:00:15",
-      "text": "Set final coins for HARI: 6010 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792506530513_yjsj",
-      "time": "2026-10-20 19:58:50",
-      "text": "Set final coins for HARI: 0 coins. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792506412882_c9y2",
-      "time": "2026-10-20 19:56:52",
-      "text": "Random picker chose RAM. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792506412713_bc6s",
-      "time": "2026-10-20 19:56:52",
-      "text": "Random picker chose RAVI. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792506412540_r3xh",
-      "time": "2026-10-20 19:56:52",
-      "text": "Random picker chose MOHINI. • by Hari's Macbook"
-    },
-    {
-      "id": "L_1792506412348_c1hi",
-      "time": "2026-10-20 19:56:52",
-      "text": "Random picker chose RAVI. • by Hari's Macbook"
     }
   ],
   "knownRoster": [
